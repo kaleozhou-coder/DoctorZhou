@@ -1,0 +1,24 @@
+{
+  "schema_version": "stage03-1",
+  "frozen_at_utc": "2026-11-08T01:14:12.568711+00:00",
+  "freeze_kind": "local_pre_evaluation_snapshot_not_external_preregistration",
+  "benchmark_freeze_sha256": "99e026b7cc47a87da948b4eaa82af3808e46dcfaab9af67149f4f800de5767b3",
+  "base_commit": "5c8b948b66519f26ecec974160bfdf60c7668f21",
+  "files": {
+    "src/policy_baseline.py": "ded2f89be60605313a0e87c99597856a80af7e8136b90dd6f065ca3f99feec4f",
+    "src/run_policy_baseline.py": "c70525705d4945482abc0612dc2d757a8476936f5044e0a87486a1a93652b7cf",
+    "src/benchmark_eval.py": "59f08846a8477937e621f172c29be12c4335df7c8d39a800a084b741edc99580",
+    "tests/test_policy_baseline.py": "b4cc0c38ad2efcbd139386f9b946bdcf0b79fb59466e9c25083e53839a6818b9",
+    "tests/test_policy_baseline_runner.py": "5167484aa94f32c4fc044563032131f5380cd1fd64362e4a0f7ddab73047108c",
+    "experiments/v1/stage-03-plan.zh.md": "1ed8de847b5488b73465d8d54800e501bfc3a2c5021040a68c8b6e5737b298d7",
+    "experiments/v1/manual-baseline.md": "01c6963058cc27c3abe7f8348be62ffe2b36fba2dcc554f4b2f1807a0f8a7d2c",
+    "results/stage-03/implementation-read-manifest.json": "50044f806602e5a803edfd42ebf512c90cb95ff7104e5a9cecee37e12356647b",
+    "benchmark/v1/model-facing/F01/materials.json": "db7219b05f7a059479b7d6e62ff2c96b8bc7b10f97f56aba997b5492c04730aa",
+    "benchmark/v1/model-facing/F02/materials.json": "72ede95ac83dafb32d7815b884f6985200723ae4552954b8b80dd3e0b479c50d",
+    "benchmark/v1/model-facing/F03/materials.json": "1af670a4f1f857edb409c1ceb129258b514342d401d9b3c0bf34ab127cc38264",
+    "benchmark/v1/model-facing/F04/materials.json": "aff3aed7c03615f49d43788b69b8351abffd8921908097780a5973ac51c2d610",
+    "benchmark/v1/model-facing/F05/materials.json": "cc43f2cfad138108f1a50d7ecee74557912c15a9d18a9a1ce7491940b15fc2c8",
+    "benchmark/v1/model-facing/F06/materials.json": "904dc817df2082a2538ffc9a16e2bc8f6ce1a37b5ef9756194ecd09cb8743cf5"
+  },
+  "note": "Policy implementation froze after self-authored tests and AI code review, before parsing evaluation cases or labels. Coordinator had viewed partial F01 development cases and label field names/types; not full-blind. Hash-only integrity reads of all benchmark files occur before prediction. Public labels are not access-controlled."
+}

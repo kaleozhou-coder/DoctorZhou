@@ -1,0 +1,231 @@
+{
+  "experiment": "manual_policy_baseline",
+  "model_calls": 0,
+  "benchmark": {
+    "files_verified": 19,
+    "freeze_sha256": "99e026b7cc47a87da948b4eaa82af3808e46dcfaab9af67149f4f800de5767b3"
+  },
+  "implementation_freeze_sha256": "fac9ef7fd1691cc8fc5c5ceff5f8c52796c08538c7906fce348c7451da58c225",
+  "claims": "Structured synthetic rule execution only; not an LLM A/B or human study.",
+  "splits": {
+    "development": {
+      "metrics": {
+        "case_n": 20,
+        "positive_n": 6,
+        "negative_n": 14,
+        "missing_n": 0,
+        "completion_rate": 1.0,
+        "exact_decision_correct_n": 20,
+        "exact_decision_accuracy": 1.0,
+        "false_close_n": 0,
+        "false_close_rate": 0.0,
+        "positive_close_recall": 1.0,
+        "conservative_false_close_rate_if_missing_negatives_close": 0.0,
+        "decision_counts": {
+          "close_eligible": 6,
+          "needs_evidence": 7,
+          "needs_review": 7
+        },
+        "false_close_case_ids": [],
+        "missing_case_ids": []
+      },
+      "by_family": {
+        "F01": {
+          "case_n": 10,
+          "positive_n": 3,
+          "negative_n": 7,
+          "missing_n": 0,
+          "completion_rate": 1.0,
+          "exact_decision_correct_n": 10,
+          "exact_decision_accuracy": 1.0,
+          "false_close_n": 0,
+          "false_close_rate": 0.0,
+          "positive_close_recall": 1.0,
+          "conservative_false_close_rate_if_missing_negatives_close": 0.0,
+          "decision_counts": {
+            "close_eligible": 3,
+            "needs_evidence": 3,
+            "needs_review": 4
+          },
+          "false_close_case_ids": [],
+          "missing_case_ids": []
+        },
+        "F02": {
+          "case_n": 10,
+          "positive_n": 3,
+          "negative_n": 7,
+          "missing_n": 0,
+          "completion_rate": 1.0,
+          "exact_decision_correct_n": 10,
+          "exact_decision_accuracy": 1.0,
+          "false_close_n": 0,
+          "false_close_rate": 0.0,
+          "positive_close_recall": 1.0,
+          "conservative_false_close_rate_if_missing_negatives_close": 0.0,
+          "decision_counts": {
+            "close_eligible": 3,
+            "needs_evidence": 4,
+            "needs_review": 3
+          },
+          "false_close_case_ids": [],
+          "missing_case_ids": []
+        }
+      },
+      "primary_reason_correct_n": 20,
+      "source_locator_audit": {
+        "registry_supplied": true,
+        "checked_n": 170,
+        "existing_n": 170,
+        "existence_rate": 1.0,
+        "semantic_support_rate": null,
+        "note": "A locator existing does not show that the cited text supports the claim."
+      }
+    },
+    "validation": {
+      "metrics": {
+        "case_n": 10,
+        "positive_n": 4,
+        "negative_n": 6,
+        "missing_n": 0,
+        "completion_rate": 1.0,
+        "exact_decision_correct_n": 10,
+        "exact_decision_accuracy": 1.0,
+        "false_close_n": 0,
+        "false_close_rate": 0.0,
+        "positive_close_recall": 1.0,
+        "conservative_false_close_rate_if_missing_negatives_close": 0.0,
+        "decision_counts": {
+          "close_eligible": 4,
+          "needs_evidence": 4,
+          "needs_review": 2
+        },
+        "false_close_case_ids": [],
+        "missing_case_ids": []
+      },
+      "by_family": {
+        "F03": {
+          "case_n": 10,
+          "positive_n": 4,
+          "negative_n": 6,
+          "missing_n": 0,
+          "completion_rate": 1.0,
+          "exact_decision_correct_n": 10,
+          "exact_decision_accuracy": 1.0,
+          "false_close_n": 0,
+          "false_close_rate": 0.0,
+          "positive_close_recall": 1.0,
+          "conservative_false_close_rate_if_missing_negatives_close": 0.0,
+          "decision_counts": {
+            "close_eligible": 4,
+            "needs_evidence": 4,
+            "needs_review": 2
+          },
+          "false_close_case_ids": [],
+          "missing_case_ids": []
+        }
+      },
+      "primary_reason_correct_n": 10,
+      "source_locator_audit": {
+        "registry_supplied": true,
+        "checked_n": 80,
+        "existing_n": 80,
+        "existence_rate": 1.0,
+        "semantic_support_rate": null,
+        "note": "A locator existing does not show that the cited text supports the claim."
+      }
+    },
+    "test": {
+      "metrics": {
+        "case_n": 30,
+        "positive_n": 10,
+        "negative_n": 20,
+        "missing_n": 0,
+        "completion_rate": 1.0,
+        "exact_decision_correct_n": 30,
+        "exact_decision_accuracy": 1.0,
+        "false_close_n": 0,
+        "false_close_rate": 0.0,
+        "positive_close_recall": 1.0,
+        "conservative_false_close_rate_if_missing_negatives_close": 0.0,
+        "decision_counts": {
+          "close_eligible": 10,
+          "needs_evidence": 11,
+          "needs_review": 9
+        },
+        "false_close_case_ids": [],
+        "missing_case_ids": []
+      },
+      "by_family": {
+        "F04": {
+          "case_n": 10,
+          "positive_n": 4,
+          "negative_n": 6,
+          "missing_n": 0,
+          "completion_rate": 1.0,
+          "exact_decision_correct_n": 10,
+          "exact_decision_accuracy": 1.0,
+          "false_close_n": 0,
+          "false_close_rate": 0.0,
+          "positive_close_recall": 1.0,
+          "conservative_false_close_rate_if_missing_negatives_close": 0.0,
+          "decision_counts": {
+            "close_eligible": 4,
+            "needs_evidence": 3,
+            "needs_review": 3
+          },
+          "false_close_case_ids": [],
+          "missing_case_ids": []
+        },
+        "F05": {
+          "case_n": 10,
+          "positive_n": 3,
+          "negative_n": 7,
+          "missing_n": 0,
+          "completion_rate": 1.0,
+          "exact_decision_correct_n": 10,
+          "exact_decision_accuracy": 1.0,
+          "false_close_n": 0,
+          "false_close_rate": 0.0,
+          "positive_close_recall": 1.0,
+          "conservative_false_close_rate_if_missing_negatives_close": 0.0,
+          "decision_counts": {
+            "close_eligible": 3,
+            "needs_evidence": 4,
+            "needs_review": 3
+          },
+          "false_close_case_ids": [],
+          "missing_case_ids": []
+        },
+        "F06": {
+          "case_n": 10,
+          "positive_n": 3,
+          "negative_n": 7,
+          "missing_n": 0,
+          "completion_rate": 1.0,
+          "exact_decision_correct_n": 10,
+          "exact_decision_accuracy": 1.0,
+          "false_close_n": 0,
+          "false_close_rate": 0.0,
+          "positive_close_recall": 1.0,
+          "conservative_false_close_rate_if_missing_negatives_close": 0.0,
+          "decision_counts": {
+            "close_eligible": 3,
+            "needs_evidence": 4,
+            "needs_review": 3
+          },
+          "false_close_case_ids": [],
+          "missing_case_ids": []
+        }
+      },
+      "primary_reason_correct_n": 30,
+      "source_locator_audit": {
+        "registry_supplied": true,
+        "checked_n": 300,
+        "existing_n": 300,
+        "existence_rate": 1.0,
+        "semantic_support_rate": null,
+        "note": "A locator existing does not show that the cited text supports the claim."
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "scope": "Explicit task-content reads by the implementer; only allowed materials and own outputs. General instructions supplied in conversation are also inputs.",
+  "preexisting_files_read": [
+    {
+      "path": "materials/F01.json",
+      "sha256": "db7219b05f7a059479b7d6e62ff2c96b8bc7b10f97f56aba997b5492c04730aa"
+    },
+    {
+      "path": "materials/F02.json",
+      "sha256": "72ede95ac83dafb32d7815b884f6985200723ae4552954b8b80dd3e0b479c50d"
+    },
+    {
+      "path": "materials/F03.json",
+      "sha256": "1af670a4f1f857edb409c1ceb129258b514342d401d9b3c0bf34ab127cc38264"
+    },
+    {
+      "path": "materials/F04.json",
+      "sha256": "aff3aed7c03615f49d43788b69b8351abffd8921908097780a5973ac51c2d610"
+    },
+    {
+      "path": "materials/F05.json",
+      "sha256": "cc43f2cfad138108f1a50d7ecee74557912c15a9d18a9a1ce7491940b15fc2c8"
+    },
+    {
+      "path": "materials/F06.json",
+      "sha256": "904dc817df2082a2538ffc9a16e2bc8f6ce1a37b5ef9756194ecd09cb8743cf5"
+    }
+  ],
+  "self_authored_files_read_or_executed": [
+    "src/policy_baseline.py",
+    "tests/test_policy_baseline.py",
+    "README.md",
+    "READ_MANIFEST.json"
+  ],
+  "self_authored_deliverables": [
+    "src/policy_baseline.py",
+    "tests/test_policy_baseline.py",
+    "README.md",
+    "READ_MANIFEST.json"
+  ],
+  "runtime_dependencies": "Python standard library and shell utilities; no external packages, networks, or repositories used.",
+  "not_read": [
+    "Evaluator transaction cases",
+    "Evaluator labels",
+    "Author scripts",
+    "External source registry",
+    "Prior interpreters",
+    "Other repositories"
+  ],
+  "testing": "24 unittest methods with additional parameterized subcases, all authored from the policies; no evaluator scoring.",
+  "integration_material_mapping": "materials/Fxx.json -> benchmark/v1/model-facing/Fxx/materials.json",
+  "provenance": "Independently implemented from policy-only inputs with AI-assisted coding. No human study."
+}

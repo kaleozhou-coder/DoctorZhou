@@ -1,0 +1,1876 @@
+{
+  "run": {
+    "run_id": "stage03-manual-rules-test",
+    "method": "manual_policy_baseline",
+    "execution_kind": "engineering_probe",
+    "baseline_kind": "deterministic_policy_program_not_label_replay",
+    "split": "test",
+    "benchmark_freeze_sha256": "99e026b7cc47a87da948b4eaa82af3808e46dcfaab9af67149f4f800de5767b3",
+    "implementation_freeze_sha256": "fac9ef7fd1691cc8fc5c5ceff5f8c52796c08538c7906fce348c7451da58c225",
+    "implementation_sha256": "ded2f89be60605313a0e87c99597856a80af7e8136b90dd6f065ca3f99feec4f",
+    "model_calls": 0,
+    "human_review_minutes": null
+  },
+  "predictions": [
+    {
+      "case_id": "F04-C01",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F04-C01-DOC#p01",
+        "F04-C01-DOC#p02",
+        "F04-POL#p01",
+        "F04-POL#p02",
+        "F04-POL#p03",
+        "F04-POL#p04",
+        "F04-POL#p05",
+        "F04-POL#p06"
+      ],
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F04-C01-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F04-C01-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p06"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F04-C02",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F04-C02-DOC#p01",
+        "F04-C02-DOC#p02",
+        "F04-POL#p01",
+        "F04-POL#p02",
+        "F04-POL#p03",
+        "F04-POL#p04",
+        "F04-POL#p05",
+        "F04-POL#p06"
+      ],
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F04-C02-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F04-C02-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p06"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F04-C03",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F04-C03-DOC#p01",
+        "F04-C03-DOC#p02",
+        "F04-POL#p01",
+        "F04-POL#p02",
+        "F04-POL#p03",
+        "F04-POL#p04",
+        "F04-POL#p05",
+        "F04-POL#p06"
+      ],
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F04-C03-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F04-C03-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p06"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F04-C04",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F04-C04-DOC#p01",
+        "F04-C04-DOC#p02",
+        "F04-POL#p01",
+        "F04-POL#p02",
+        "F04-POL#p03",
+        "F04-POL#p04",
+        "F04-POL#p05",
+        "F04-POL#p06"
+      ],
+      "reason_codes": [
+        "live_acceptance_missing"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F04-C04-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F04-C04-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p06"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F04-C05",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F04-C05-DOC#p01",
+        "F04-C05-DOC#p02",
+        "F04-POL#p01",
+        "F04-POL#p02",
+        "F04-POL#p03",
+        "F04-POL#p04",
+        "F04-POL#p05",
+        "F04-POL#p06"
+      ],
+      "reason_codes": [
+        "ledger_endpoint_missing"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F04-C05-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F04-C05-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p06"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F04-C06",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F04-C06-DOC#p01",
+        "F04-C06-DOC#p02",
+        "F04-POL#p01",
+        "F04-POL#p02",
+        "F04-POL#p03",
+        "F04-POL#p04",
+        "F04-POL#p05",
+        "F04-POL#p06"
+      ],
+      "reason_codes": [
+        "quantity_shortfall"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F04-C06-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F04-C06-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p06"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F04-C07",
+      "decision": "needs_review",
+      "evidence_ids": [
+        "F04-C07-DOC#p01",
+        "F04-C07-DOC#p02",
+        "F04-POL#p01",
+        "F04-POL#p02",
+        "F04-POL#p03",
+        "F04-POL#p04",
+        "F04-POL#p05",
+        "F04-POL#p06"
+      ],
+      "reason_codes": [
+        "active_rejection"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F04-C07-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F04-C07-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p06"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F04-C08",
+      "decision": "needs_review",
+      "evidence_ids": [
+        "F04-C08-DOC#p01",
+        "F04-C08-DOC#p02",
+        "F04-POL#p01",
+        "F04-POL#p02",
+        "F04-POL#p03",
+        "F04-POL#p04",
+        "F04-POL#p05",
+        "F04-POL#p06"
+      ],
+      "reason_codes": [
+        "supersession_cycle"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F04-C08-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F04-C08-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p06"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F04-C09",
+      "decision": "needs_review",
+      "evidence_ids": [
+        "F04-C09-DOC#p01",
+        "F04-C09-DOC#p02",
+        "F04-POL#p01",
+        "F04-POL#p02",
+        "F04-POL#p03",
+        "F04-POL#p04",
+        "F04-POL#p05",
+        "F04-POL#p06"
+      ],
+      "reason_codes": [
+        "supersession_fork"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F04-C09-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F04-C09-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p06"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F04-C10",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F04-C10-DOC#p01",
+        "F04-C10-DOC#p02",
+        "F04-POL#p01",
+        "F04-POL#p02",
+        "F04-POL#p03",
+        "F04-POL#p04",
+        "F04-POL#p05",
+        "F04-POL#p06"
+      ],
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F04-C10-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F04-C10-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F04-POL",
+          "locator": "p06"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F05-C01",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F05-C01-DOC#p01",
+        "F05-C01-DOC#p02",
+        "F05-C01-DOC#p03",
+        "F05-C01-DOC#p04",
+        "F05-POL#p01",
+        "F05-POL#p02",
+        "F05-POL#p03",
+        "F05-POL#p04",
+        "F05-POL#p05",
+        "F05-POL#p06",
+        "F05-POL#p07"
+      ],
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F05-C01-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F05-C01-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F05-C01-DOC",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F05-C01-DOC",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p06"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p07"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F05-C02",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F05-C02-DOC#p01",
+        "F05-C02-DOC#p02",
+        "F05-C02-DOC#p03",
+        "F05-C02-DOC#p04",
+        "F05-POL#p01",
+        "F05-POL#p02",
+        "F05-POL#p03",
+        "F05-POL#p04",
+        "F05-POL#p05",
+        "F05-POL#p06",
+        "F05-POL#p07"
+      ],
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F05-C02-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F05-C02-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F05-C02-DOC",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F05-C02-DOC",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p06"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p07"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F05-C03",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F05-C03-DOC#p01",
+        "F05-C03-DOC#p02",
+        "F05-C03-DOC#p03",
+        "F05-C03-DOC#p04",
+        "F05-POL#p01",
+        "F05-POL#p02",
+        "F05-POL#p03",
+        "F05-POL#p04",
+        "F05-POL#p05",
+        "F05-POL#p06",
+        "F05-POL#p07"
+      ],
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F05-C03-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F05-C03-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F05-C03-DOC",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F05-C03-DOC",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p06"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p07"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F05-C04",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F05-C04-DOC#p01",
+        "F05-C04-DOC#p02",
+        "F05-C04-DOC#p03",
+        "F05-C04-DOC#p04",
+        "F05-POL#p01",
+        "F05-POL#p02",
+        "F05-POL#p03",
+        "F05-POL#p04",
+        "F05-POL#p05",
+        "F05-POL#p06",
+        "F05-POL#p07"
+      ],
+      "reason_codes": [
+        "receipt_date_missing"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F05-C04-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F05-C04-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F05-C04-DOC",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F05-C04-DOC",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p06"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p07"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F05-C05",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F05-C05-DOC#p01",
+        "F05-C05-DOC#p02",
+        "F05-C05-DOC#p03",
+        "F05-C05-DOC#p04",
+        "F05-POL#p01",
+        "F05-POL#p02",
+        "F05-POL#p03",
+        "F05-POL#p04",
+        "F05-POL#p05",
+        "F05-POL#p06",
+        "F05-POL#p07"
+      ],
+      "reason_codes": [
+        "quality_release_missing"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F05-C05-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F05-C05-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F05-C05-DOC",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F05-C05-DOC",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p06"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p07"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F05-C06",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F05-C06-DOC#p01",
+        "F05-C06-DOC#p02",
+        "F05-C06-DOC#p03",
+        "F05-C06-DOC#p04",
+        "F05-POL#p01",
+        "F05-POL#p02",
+        "F05-POL#p03",
+        "F05-POL#p04",
+        "F05-POL#p05",
+        "F05-POL#p06",
+        "F05-POL#p07"
+      ],
+      "reason_codes": [
+        "grandfathering_unproven"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F05-C06-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F05-C06-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F05-C06-DOC",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F05-C06-DOC",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p06"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p07"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F05-C07",
+      "decision": "needs_review",
+      "evidence_ids": [
+        "F05-C07-DOC#p01",
+        "F05-C07-DOC#p02",
+        "F05-C07-DOC#p03",
+        "F05-C07-DOC#p04",
+        "F05-POL#p01",
+        "F05-POL#p02",
+        "F05-POL#p03",
+        "F05-POL#p04",
+        "F05-POL#p05",
+        "F05-POL#p06",
+        "F05-POL#p07"
+      ],
+      "reason_codes": [
+        "acceptance_before_receipt"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F05-C07-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F05-C07-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F05-C07-DOC",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F05-C07-DOC",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p06"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p07"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F05-C08",
+      "decision": "needs_review",
+      "evidence_ids": [
+        "F05-C08-DOC#p01",
+        "F05-C08-DOC#p02",
+        "F05-C08-DOC#p03",
+        "F05-C08-DOC#p04",
+        "F05-POL#p01",
+        "F05-POL#p02",
+        "F05-POL#p03",
+        "F05-POL#p04",
+        "F05-POL#p05",
+        "F05-POL#p06",
+        "F05-POL#p07"
+      ],
+      "reason_codes": [
+        "regime_mismatch"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F05-C08-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F05-C08-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F05-C08-DOC",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F05-C08-DOC",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p06"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p07"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F05-C09",
+      "decision": "needs_review",
+      "evidence_ids": [
+        "F05-C09-DOC#p01",
+        "F05-C09-DOC#p02",
+        "F05-C09-DOC#p03",
+        "F05-C09-DOC#p04",
+        "F05-POL#p01",
+        "F05-POL#p02",
+        "F05-POL#p03",
+        "F05-POL#p04",
+        "F05-POL#p05",
+        "F05-POL#p06",
+        "F05-POL#p07"
+      ],
+      "reason_codes": [
+        "explicit_rejection"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F05-C09-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F05-C09-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F05-C09-DOC",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F05-C09-DOC",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p06"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p07"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F05-C10",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F05-C10-DOC#p01",
+        "F05-C10-DOC#p02",
+        "F05-C10-DOC#p03",
+        "F05-C10-DOC#p04",
+        "F05-POL#p01",
+        "F05-POL#p02",
+        "F05-POL#p03",
+        "F05-POL#p04",
+        "F05-POL#p05",
+        "F05-POL#p06",
+        "F05-POL#p07"
+      ],
+      "reason_codes": [
+        "quality_release_missing"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F05-C10-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F05-C10-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F05-C10-DOC",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F05-C10-DOC",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p06"
+        },
+        {
+          "source_id": "F05-POL",
+          "locator": "p07"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F06-C01",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F06-C01-ATT#s01",
+        "F06-C01-DOC#p01",
+        "F06-C01-DOC#p02",
+        "F06-C01-DOC#p03",
+        "F06-POL#p01",
+        "F06-POL#p02",
+        "F06-POL#p03",
+        "F06-POL#p04",
+        "F06-POL#p05",
+        "F06-POL#p06",
+        "F06-POL#p07"
+      ],
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F06-C01-ATT",
+          "locator": "s01"
+        },
+        {
+          "source_id": "F06-C01-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F06-C01-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F06-C01-DOC",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p06"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p07"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F06-C02",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F06-C02-ATT#s01",
+        "F06-C02-DOC#p01",
+        "F06-C02-DOC#p02",
+        "F06-C02-DOC#p03",
+        "F06-POL#p01",
+        "F06-POL#p02",
+        "F06-POL#p03",
+        "F06-POL#p04",
+        "F06-POL#p05",
+        "F06-POL#p06",
+        "F06-POL#p07"
+      ],
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F06-C02-ATT",
+          "locator": "s01"
+        },
+        {
+          "source_id": "F06-C02-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F06-C02-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F06-C02-DOC",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p06"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p07"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F06-C03",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F06-C03-ATT#appendix.7",
+        "F06-C03-DOC#p01",
+        "F06-C03-DOC#p02",
+        "F06-C03-DOC#p03",
+        "F06-POL#p01",
+        "F06-POL#p02",
+        "F06-POL#p03",
+        "F06-POL#p04",
+        "F06-POL#p05",
+        "F06-POL#p06",
+        "F06-POL#p07"
+      ],
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F06-C03-ATT",
+          "locator": "appendix.7"
+        },
+        {
+          "source_id": "F06-C03-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F06-C03-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F06-C03-DOC",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p06"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p07"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F06-C04",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F06-C04-ATT#s01",
+        "F06-C04-DOC#p01",
+        "F06-C04-DOC#p02",
+        "F06-C04-DOC#p03",
+        "F06-POL#p01",
+        "F06-POL#p02",
+        "F06-POL#p03",
+        "F06-POL#p04",
+        "F06-POL#p05",
+        "F06-POL#p06",
+        "F06-POL#p07"
+      ],
+      "reason_codes": [
+        "cited_locator_missing"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F06-C04-ATT",
+          "locator": "s01"
+        },
+        {
+          "source_id": "F06-C04-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F06-C04-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F06-C04-DOC",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p06"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p07"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F06-C05",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F06-C05-ATT#s01",
+        "F06-C05-DOC#p01",
+        "F06-C05-DOC#p02",
+        "F06-C05-DOC#p03",
+        "F06-POL#p01",
+        "F06-POL#p02",
+        "F06-POL#p03",
+        "F06-POL#p04",
+        "F06-POL#p05",
+        "F06-POL#p06",
+        "F06-POL#p07"
+      ],
+      "reason_codes": [
+        "source_not_acceptance"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F06-C05-ATT",
+          "locator": "s01"
+        },
+        {
+          "source_id": "F06-C05-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F06-C05-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F06-C05-DOC",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p06"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p07"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F06-C06",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F06-C06-ATT#s01",
+        "F06-C06-DOC#p01",
+        "F06-C06-DOC#p02",
+        "F06-C06-DOC#p03",
+        "F06-POL#p01",
+        "F06-POL#p02",
+        "F06-POL#p03",
+        "F06-POL#p04",
+        "F06-POL#p05",
+        "F06-POL#p06",
+        "F06-POL#p07"
+      ],
+      "reason_codes": [
+        "source_not_acceptance"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F06-C06-ATT",
+          "locator": "s01"
+        },
+        {
+          "source_id": "F06-C06-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F06-C06-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F06-C06-DOC",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p06"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p07"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F06-C07",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F06-C07-ATT#s01",
+        "F06-C07-DOC#p01",
+        "F06-C07-DOC#p02",
+        "F06-C07-DOC#p03",
+        "F06-POL#p01",
+        "F06-POL#p02",
+        "F06-POL#p03",
+        "F06-POL#p04",
+        "F06-POL#p05",
+        "F06-POL#p06",
+        "F06-POL#p07"
+      ],
+      "reason_codes": [
+        "linkage_missing"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F06-C07-ATT",
+          "locator": "s01"
+        },
+        {
+          "source_id": "F06-C07-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F06-C07-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F06-C07-DOC",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p06"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p07"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F06-C08",
+      "decision": "needs_review",
+      "evidence_ids": [
+        "F06-C08-ATT#s01",
+        "F06-C08-DOC#p01",
+        "F06-C08-DOC#p02",
+        "F06-C08-DOC#p03",
+        "F06-POL#p01",
+        "F06-POL#p02",
+        "F06-POL#p03",
+        "F06-POL#p04",
+        "F06-POL#p05",
+        "F06-POL#p06",
+        "F06-POL#p07"
+      ],
+      "reason_codes": [
+        "cited_scope_mismatch"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F06-C08-ATT",
+          "locator": "s01"
+        },
+        {
+          "source_id": "F06-C08-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F06-C08-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F06-C08-DOC",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p06"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p07"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F06-C09",
+      "decision": "needs_review",
+      "evidence_ids": [
+        "F06-C09-ATT#s01",
+        "F06-C09-DOC#p01",
+        "F06-C09-DOC#p02",
+        "F06-C09-DOC#p03",
+        "F06-POL#p01",
+        "F06-POL#p02",
+        "F06-POL#p03",
+        "F06-POL#p04",
+        "F06-POL#p05",
+        "F06-POL#p06",
+        "F06-POL#p07"
+      ],
+      "reason_codes": [
+        "explicit_nonacceptance"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F06-C09-ATT",
+          "locator": "s01"
+        },
+        {
+          "source_id": "F06-C09-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F06-C09-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F06-C09-DOC",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p06"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p07"
+        }
+      ],
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F06-C10",
+      "decision": "needs_review",
+      "evidence_ids": [
+        "F06-C10-ATT#s01",
+        "F06-C10-DOC#p01",
+        "F06-C10-DOC#p02",
+        "F06-C10-DOC#p03",
+        "F06-POL#p01",
+        "F06-POL#p02",
+        "F06-POL#p03",
+        "F06-POL#p04",
+        "F06-POL#p05",
+        "F06-POL#p06",
+        "F06-POL#p07"
+      ],
+      "reason_codes": [
+        "unit_mismatch"
+      ],
+      "source_refs": [
+        {
+          "source_id": "F06-C10-ATT",
+          "locator": "s01"
+        },
+        {
+          "source_id": "F06-C10-DOC",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F06-C10-DOC",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F06-C10-DOC",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p01"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p02"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p03"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p04"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p05"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p06"
+        },
+        {
+          "source_id": "F06-POL",
+          "locator": "p07"
+        }
+      ],
+      "payment_authorized": false
+    }
+  ]
+}

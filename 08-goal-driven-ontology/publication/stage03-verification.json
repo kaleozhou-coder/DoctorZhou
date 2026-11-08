@@ -1,0 +1,57 @@
+{
+  "verified_date_utc": "2026-11-08",
+  "scope": "Stage 3 local pre-publication engineering verification; deterministic rules, not LLM or human outcomes.",
+  "base_commit": "5c8b948b66519f26ecec974160bfdf60c7668f21",
+  "existing_local_snapshot_files_matched_to_remote_git_blobs_before_edit": 122,
+  "python_tests": {
+    "passed": 72,
+    "failed": 0,
+    "command": "python -m unittest discover -s tests -v"
+  },
+  "frozen_benchmark": {
+    "files_verified": 19,
+    "freeze_sha256": "99e026b7cc47a87da948b4eaa82af3808e46dcfaab9af67149f4f800de5767b3"
+  },
+  "implementation_freeze_verified": true,
+  "implementation_freeze_sha256": "fac9ef7fd1691cc8fc5c5ceff5f8c52796c08538c7906fce348c7451da58c225",
+  "baseline": {
+    "cases": 60,
+    "completed": 60,
+    "decision_correct": 60,
+    "primary_reason_correct": 60,
+    "negative_cases": 40,
+    "false_close": 0,
+    "positive_cases": 20,
+    "true_close": 20
+  },
+  "baseline_repeat": {
+    "json_files_compared": 7,
+    "mismatches": [],
+    "sha256": {
+      "development.report.json": "c91914b2c97fe06767955067195bcb59d11125c519b483de5f6ebacf862f82e1",
+      "development.submission.json": "78ff91d71cfa23fe678fe24c1f9a23839d3e8996c7c13247ae26b20b11aa8a89",
+      "summary.json": "3a42840c83ed9be91bb7821675e825eaa575981462b589e686cbf079b241c14f",
+      "test.report.json": "91c1be4db739b015006545c7434db9b94b7a44a56382d8ae89b3eee5720b1572",
+      "test.submission.json": "f251f4c4d786ce1f9982ec767fd65fd3e534338103939ad0a46afe09e0f5c1a6",
+      "validation.report.json": "4322dcc2e4bbb089166eebe74ccc680306f7ae29840c2c70036e0be644f008e7",
+      "validation.submission.json": "975b47e9842f8d9100edca79a0e38d39cdb4de2894cf493acc9bc56bb3f3b0a3"
+    }
+  },
+  "prior_probe_repeat": {
+    "runs": 15,
+    "json_files_compared": 31,
+    "mismatches": []
+  },
+  "models_called": 0,
+  "human_review_minutes": null,
+  "old_files_changed": [
+    "README.md"
+  ],
+  "old_files_changed_note": "Only the topic README changes among previously published files. Root README, frozen benchmark, prior source/tests and all prior results remain unchanged.",
+  "privacy_check": "New files scanned for credential patterns, private workspace/home paths and reviewed as synthetic research code/results. No new third-party datasets or customer inputs added.",
+  "excluded": [
+    "__pycache__/",
+    "*.pyc"
+  ],
+  "publication_note": "Remote publication verification is a subsequent step and is not claimed by this local record."
+}

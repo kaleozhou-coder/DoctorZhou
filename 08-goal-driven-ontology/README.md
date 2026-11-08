@@ -56,7 +56,22 @@ python src/run_evaluator_probes.py --benchmark benchmark/v1 --output results/sta
 
 - 本课题归档于 DoctorZhou 仓库的 `08-goal-driven-ontology/`，请先进入该目录再运行上述命令。
 - 不提交缓存、密钥、本地私人资料及可由源码重建的重复 ZIP。`results/stage-02/model-inputs-only.zip` 可通过上述导出命令生成；校验摘要保留在 `results/stage-02/export-verification.json`。
-- `results/artifact-manifest.json` 和 `results/stage-02/artifact-manifest.json` 是原阶段快照的历史清单。保留它们作为执行证据，不能把它们当成当前 GitHub 目录的完整清单。当前发布文件见 `publication/SHA256SUMS`，发布前复核见 `publication/verification.json`。
+- `results/artifact-manifest.json` 和 `results/stage-02/artifact-manifest.json` 是原阶段快照的历史清单。保留它们作为执行证据，不能把它们当成当前 GitHub 目录的完整清单。首次发布文件见 `publication/SHA256SUMS`，首次发布前复核见 `publication/verification.json`；第三阶段另有 `publication/stage03-SHA256SUMS` 和 `publication/stage03-verification.json`。
 - 冻结基准的 `benchmark/v1/FILE_SHA256.json` 及其19个受校验文件保持原字节；发布整理不修改实验数据、标签、评分器或已有结果。
 - 研究标签和评价案例也在公开仓库中。未来建模者只应获得单独导出的政策输入包，不能读取整个仓库；公开存档不构成隔离访问控制，也不保证训练数据污染隔离。
 - 公共 XML 内的姓名、联系信息、账户示例等来自已列明许可的官方标准示例，不是用户、客户或真实业务资料；原始来源字节及权利声明均保留。
+
+## 第三阶段新增（2026-11-08）
+
+- 实际执行的确定性政策基线：`src/policy_baseline.py`。先按六份政策编写并冻结，再处理交易，不读取答案来生成判断。
+- 首次运行完成 60/60 个合成案例，三态与主理由均符合既有标签；测试集为 30/30、错误关闭 0/20、可关闭识别 10/10。**不是 LLM 建模对照、专家金标准或真实业务准确率。**
+- 72 项工程测试通过，7 个预测/报告 JSON 重跑字节一致。代码与原始证据见 `results/stage-03/`。
+- 完整研究结果与边界：[第三阶段报告](results/stage-03/report.zh.md)。结果说明这组结构化合成题可由规则覆盖，不能据此证明目标驱动分批建模有优势。
+
+```sh
+python src/run_policy_baseline.py --benchmark benchmark/v1 \
+  --implementation-freeze results/stage-03/implementation-freeze.json \
+  --output /tmp/ontology-policy-baseline-new-run
+```
+
+输出目录必须不存在或为空，以保护首次结果。运行器先做哈希完整性检查，生成全部预测，再解析标签评分。现有家族专用规则尚不是供 A/B 模型共同生成的通用本体表示；真实模型调用仍为 0。

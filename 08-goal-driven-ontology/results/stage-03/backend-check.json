@@ -1,0 +1,22 @@
+{
+  "checked_date_utc": "2026-11-08",
+  "scope": "Non-secret inspection of available tool metadata and Python/executable availability, not a comprehensive account or network scan.",
+  "local_inference_executables_found": {
+    "ollama": false,
+    "llama-cli": false,
+    "llama-server": false,
+    "vllm": false
+  },
+  "python_packages_found": {
+    "torch": false,
+    "transformers": false,
+    "vllm": false,
+    "llama_cpp": false,
+    "openai": false
+  },
+  "catalog_note": "Available tooling includes internal coding/assistant activity and creative model tools; no backend satisfying the planned text-model snapshot, usage accounting, and no-new-fee conditions was established.",
+  "model_api_calls_attempted": 0,
+  "paid_calls": 0,
+  "denial_or_failed_model_request": null,
+  "limitation": "Absence of these executables/packages does not prove every possible model service is unavailable. No credentials were inspected or transmitted."
+}

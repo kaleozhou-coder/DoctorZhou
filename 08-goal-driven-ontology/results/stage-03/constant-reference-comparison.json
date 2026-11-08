@@ -1,0 +1,222 @@
+{
+  "scope": "Constant engineering references, not competitive model baselines. Constant outputs in the preexisting probe generator use label IDs; method decisions are fixed, not learned.",
+  "splits": {
+    "development": {
+      "close_all": {
+        "case_n": 20,
+        "positive_n": 6,
+        "negative_n": 14,
+        "missing_n": 0,
+        "completion_rate": 1.0,
+        "exact_decision_correct_n": 6,
+        "exact_decision_accuracy": 0.3,
+        "false_close_n": 14,
+        "false_close_rate": 1.0,
+        "positive_close_recall": 1.0,
+        "conservative_false_close_rate_if_missing_negatives_close": 1.0,
+        "decision_counts": {
+          "close_eligible": 20
+        },
+        "false_close_case_ids": [
+          "F01-C04",
+          "F01-C05",
+          "F01-C06",
+          "F01-C07",
+          "F01-C08",
+          "F01-C09",
+          "F01-C10",
+          "F02-C04",
+          "F02-C05",
+          "F02-C06",
+          "F02-C07",
+          "F02-C08",
+          "F02-C09",
+          "F02-C10"
+        ],
+        "missing_case_ids": []
+      },
+      "review_all": {
+        "case_n": 20,
+        "positive_n": 6,
+        "negative_n": 14,
+        "missing_n": 0,
+        "completion_rate": 1.0,
+        "exact_decision_correct_n": 7,
+        "exact_decision_accuracy": 0.35,
+        "false_close_n": 0,
+        "false_close_rate": 0.0,
+        "positive_close_recall": 0.0,
+        "conservative_false_close_rate_if_missing_negatives_close": 0.0,
+        "decision_counts": {
+          "needs_review": 20
+        },
+        "false_close_case_ids": [],
+        "missing_case_ids": []
+      },
+      "manual_policy_baseline": {
+        "case_n": 20,
+        "positive_n": 6,
+        "negative_n": 14,
+        "missing_n": 0,
+        "completion_rate": 1.0,
+        "exact_decision_correct_n": 20,
+        "exact_decision_accuracy": 1.0,
+        "false_close_n": 0,
+        "false_close_rate": 0.0,
+        "positive_close_recall": 1.0,
+        "conservative_false_close_rate_if_missing_negatives_close": 0.0,
+        "decision_counts": {
+          "close_eligible": 6,
+          "needs_evidence": 7,
+          "needs_review": 7
+        },
+        "false_close_case_ids": [],
+        "missing_case_ids": []
+      }
+    },
+    "validation": {
+      "close_all": {
+        "case_n": 10,
+        "positive_n": 4,
+        "negative_n": 6,
+        "missing_n": 0,
+        "completion_rate": 1.0,
+        "exact_decision_correct_n": 4,
+        "exact_decision_accuracy": 0.4,
+        "false_close_n": 6,
+        "false_close_rate": 1.0,
+        "positive_close_recall": 1.0,
+        "conservative_false_close_rate_if_missing_negatives_close": 1.0,
+        "decision_counts": {
+          "close_eligible": 10
+        },
+        "false_close_case_ids": [
+          "F03-C04",
+          "F03-C05",
+          "F03-C06",
+          "F03-C07",
+          "F03-C08",
+          "F03-C09"
+        ],
+        "missing_case_ids": []
+      },
+      "review_all": {
+        "case_n": 10,
+        "positive_n": 4,
+        "negative_n": 6,
+        "missing_n": 0,
+        "completion_rate": 1.0,
+        "exact_decision_correct_n": 2,
+        "exact_decision_accuracy": 0.2,
+        "false_close_n": 0,
+        "false_close_rate": 0.0,
+        "positive_close_recall": 0.0,
+        "conservative_false_close_rate_if_missing_negatives_close": 0.0,
+        "decision_counts": {
+          "needs_review": 10
+        },
+        "false_close_case_ids": [],
+        "missing_case_ids": []
+      },
+      "manual_policy_baseline": {
+        "case_n": 10,
+        "positive_n": 4,
+        "negative_n": 6,
+        "missing_n": 0,
+        "completion_rate": 1.0,
+        "exact_decision_correct_n": 10,
+        "exact_decision_accuracy": 1.0,
+        "false_close_n": 0,
+        "false_close_rate": 0.0,
+        "positive_close_recall": 1.0,
+        "conservative_false_close_rate_if_missing_negatives_close": 0.0,
+        "decision_counts": {
+          "close_eligible": 4,
+          "needs_evidence": 4,
+          "needs_review": 2
+        },
+        "false_close_case_ids": [],
+        "missing_case_ids": []
+      }
+    },
+    "test": {
+      "close_all": {
+        "case_n": 30,
+        "positive_n": 10,
+        "negative_n": 20,
+        "missing_n": 0,
+        "completion_rate": 1.0,
+        "exact_decision_correct_n": 10,
+        "exact_decision_accuracy": 0.3333333333333333,
+        "false_close_n": 20,
+        "false_close_rate": 1.0,
+        "positive_close_recall": 1.0,
+        "conservative_false_close_rate_if_missing_negatives_close": 1.0,
+        "decision_counts": {
+          "close_eligible": 30
+        },
+        "false_close_case_ids": [
+          "F04-C04",
+          "F04-C05",
+          "F04-C06",
+          "F04-C07",
+          "F04-C08",
+          "F04-C09",
+          "F05-C04",
+          "F05-C05",
+          "F05-C06",
+          "F05-C07",
+          "F05-C08",
+          "F05-C09",
+          "F05-C10",
+          "F06-C04",
+          "F06-C05",
+          "F06-C06",
+          "F06-C07",
+          "F06-C08",
+          "F06-C09",
+          "F06-C10"
+        ],
+        "missing_case_ids": []
+      },
+      "review_all": {
+        "case_n": 30,
+        "positive_n": 10,
+        "negative_n": 20,
+        "missing_n": 0,
+        "completion_rate": 1.0,
+        "exact_decision_correct_n": 9,
+        "exact_decision_accuracy": 0.3,
+        "false_close_n": 0,
+        "false_close_rate": 0.0,
+        "positive_close_recall": 0.0,
+        "conservative_false_close_rate_if_missing_negatives_close": 0.0,
+        "decision_counts": {
+          "needs_review": 30
+        },
+        "false_close_case_ids": [],
+        "missing_case_ids": []
+      },
+      "manual_policy_baseline": {
+        "case_n": 30,
+        "positive_n": 10,
+        "negative_n": 20,
+        "missing_n": 0,
+        "completion_rate": 1.0,
+        "exact_decision_correct_n": 30,
+        "exact_decision_accuracy": 1.0,
+        "false_close_n": 0,
+        "false_close_rate": 0.0,
+        "positive_close_recall": 1.0,
+        "conservative_false_close_rate_if_missing_negatives_close": 0.0,
+        "decision_counts": {
+          "close_eligible": 10,
+          "needs_evidence": 11,
+          "needs_review": 9
+        },
+        "false_close_case_ids": [],
+        "missing_case_ids": []
+      }
+    }
+  }
+}

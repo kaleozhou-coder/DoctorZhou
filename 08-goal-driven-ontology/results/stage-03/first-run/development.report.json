@@ -1,0 +1,702 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "stage03-manual-rules-development",
+    "method": "manual_policy_baseline",
+    "execution_kind": "engineering_probe",
+    "baseline_kind": "deterministic_policy_program_not_label_replay",
+    "split": "development",
+    "benchmark_freeze_sha256": "99e026b7cc47a87da948b4eaa82af3808e46dcfaab9af67149f4f800de5767b3",
+    "implementation_freeze_sha256": "fac9ef7fd1691cc8fc5c5ceff5f8c52796c08538c7906fce348c7451da58c225",
+    "implementation_sha256": "ded2f89be60605313a0e87c99597856a80af7e8136b90dd6f065ca3f99feec4f",
+    "model_calls": 0,
+    "human_review_minutes": null
+  },
+  "evaluation_type": "synthetic_prospective_benchmark",
+  "split": "development",
+  "metrics": {
+    "case_n": 20,
+    "positive_n": 6,
+    "negative_n": 14,
+    "missing_n": 0,
+    "completion_rate": 1.0,
+    "exact_decision_correct_n": 20,
+    "exact_decision_accuracy": 1.0,
+    "false_close_n": 0,
+    "false_close_rate": 0.0,
+    "positive_close_recall": 1.0,
+    "conservative_false_close_rate_if_missing_negatives_close": 0.0,
+    "decision_counts": {
+      "close_eligible": 6,
+      "needs_evidence": 7,
+      "needs_review": 7
+    },
+    "false_close_case_ids": [],
+    "missing_case_ids": []
+  },
+  "by_family": {
+    "F01": {
+      "case_n": 10,
+      "positive_n": 3,
+      "negative_n": 7,
+      "missing_n": 0,
+      "completion_rate": 1.0,
+      "exact_decision_correct_n": 10,
+      "exact_decision_accuracy": 1.0,
+      "false_close_n": 0,
+      "false_close_rate": 0.0,
+      "positive_close_recall": 1.0,
+      "conservative_false_close_rate_if_missing_negatives_close": 0.0,
+      "decision_counts": {
+        "close_eligible": 3,
+        "needs_evidence": 3,
+        "needs_review": 4
+      },
+      "false_close_case_ids": [],
+      "missing_case_ids": []
+    },
+    "F02": {
+      "case_n": 10,
+      "positive_n": 3,
+      "negative_n": 7,
+      "missing_n": 0,
+      "completion_rate": 1.0,
+      "exact_decision_correct_n": 10,
+      "exact_decision_accuracy": 1.0,
+      "false_close_n": 0,
+      "false_close_rate": 0.0,
+      "positive_close_recall": 1.0,
+      "conservative_false_close_rate_if_missing_negatives_close": 0.0,
+      "decision_counts": {
+        "close_eligible": 3,
+        "needs_evidence": 4,
+        "needs_review": 3
+      },
+      "false_close_case_ids": [],
+      "missing_case_ids": []
+    }
+  },
+  "family_n": 2,
+  "source_locator_audit": {
+    "registry_supplied": true,
+    "checked_n": 170,
+    "existing_n": 170,
+    "existence_rate": 1.0,
+    "semantic_support_rate": null,
+    "note": "A locator existing does not show that the cited text supports the claim."
+  },
+  "human_review_minutes": null,
+  "human_time_savings": null,
+  "intervals": null,
+  "interval_note": "No population confidence claim: few deliberately authored families, not an IID sample.",
+  "success_or_superiority_claim": null,
+  "notes": [
+    "Missing predictions remain in accuracy and positive-recall denominators.",
+    "Missing negatives are not silently considered safe; conservative risk is also reported.",
+    "Three states are not interchangeable; low false-close risk alone is not success.",
+    "Source support, ontology quality, human time, and real-world effectiveness require separate assessment."
+  ],
+  "predictions": [
+    {
+      "case_id": "F01-C01",
+      "family_id": "F01",
+      "expected_decision": "close_eligible",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F01-C01-DOC#p01",
+        "F01-C01-DOC#p02",
+        "F01-POL#p01",
+        "F01-POL#p02",
+        "F01-POL#p03",
+        "F01-POL#p04",
+        "F01-POL#p05",
+        "F01-POL#p06"
+      ],
+      "reason_codes": [
+        "criteria_met"
+      ]
+    },
+    {
+      "case_id": "F01-C02",
+      "family_id": "F01",
+      "expected_decision": "close_eligible",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F01-C02-DOC#p01",
+        "F01-C02-DOC#p02",
+        "F01-POL#p01",
+        "F01-POL#p02",
+        "F01-POL#p03",
+        "F01-POL#p04",
+        "F01-POL#p05",
+        "F01-POL#p06"
+      ],
+      "reason_codes": [
+        "criteria_met"
+      ]
+    },
+    {
+      "case_id": "F01-C03",
+      "family_id": "F01",
+      "expected_decision": "close_eligible",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F01-C03-DOC#p01",
+        "F01-C03-DOC#p02",
+        "F01-POL#p01",
+        "F01-POL#p02",
+        "F01-POL#p03",
+        "F01-POL#p04",
+        "F01-POL#p05",
+        "F01-POL#p06"
+      ],
+      "reason_codes": [
+        "criteria_met"
+      ]
+    },
+    {
+      "case_id": "F01-C04",
+      "family_id": "F01",
+      "expected_decision": "needs_evidence",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F01-C04-DOC#p01",
+        "F01-C04-DOC#p02",
+        "F01-POL#p01",
+        "F01-POL#p02",
+        "F01-POL#p03",
+        "F01-POL#p04",
+        "F01-POL#p05",
+        "F01-POL#p06"
+      ],
+      "reason_codes": [
+        "uncovered_serials"
+      ]
+    },
+    {
+      "case_id": "F01-C05",
+      "family_id": "F01",
+      "expected_decision": "needs_evidence",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F01-C05-DOC#p01",
+        "F01-C05-DOC#p02",
+        "F01-POL#p01",
+        "F01-POL#p02",
+        "F01-POL#p03",
+        "F01-POL#p04",
+        "F01-POL#p05",
+        "F01-POL#p06"
+      ],
+      "reason_codes": [
+        "uncovered_serials"
+      ]
+    },
+    {
+      "case_id": "F01-C06",
+      "family_id": "F01",
+      "expected_decision": "needs_evidence",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F01-C06-DOC#p01",
+        "F01-C06-DOC#p02",
+        "F01-POL#p01",
+        "F01-POL#p02",
+        "F01-POL#p03",
+        "F01-POL#p04",
+        "F01-POL#p05",
+        "F01-POL#p06"
+      ],
+      "reason_codes": [
+        "uncovered_serials"
+      ]
+    },
+    {
+      "case_id": "F01-C07",
+      "family_id": "F01",
+      "expected_decision": "needs_review",
+      "decision": "needs_review",
+      "evidence_ids": [
+        "F01-C07-DOC#p01",
+        "F01-C07-DOC#p02",
+        "F01-POL#p01",
+        "F01-POL#p02",
+        "F01-POL#p03",
+        "F01-POL#p04",
+        "F01-POL#p05",
+        "F01-POL#p06"
+      ],
+      "reason_codes": [
+        "overlapping_lots"
+      ]
+    },
+    {
+      "case_id": "F01-C08",
+      "family_id": "F01",
+      "expected_decision": "needs_review",
+      "decision": "needs_review",
+      "evidence_ids": [
+        "F01-C08-DOC#p01",
+        "F01-C08-DOC#p02",
+        "F01-POL#p01",
+        "F01-POL#p02",
+        "F01-POL#p03",
+        "F01-POL#p04",
+        "F01-POL#p05",
+        "F01-POL#p06"
+      ],
+      "reason_codes": [
+        "target_count_mismatch"
+      ]
+    },
+    {
+      "case_id": "F01-C09",
+      "family_id": "F01",
+      "expected_decision": "needs_review",
+      "decision": "needs_review",
+      "evidence_ids": [
+        "F01-C09-DOC#p01",
+        "F01-C09-DOC#p02",
+        "F01-POL#p01",
+        "F01-POL#p02",
+        "F01-POL#p03",
+        "F01-POL#p04",
+        "F01-POL#p05",
+        "F01-POL#p06"
+      ],
+      "reason_codes": [
+        "lot_identity_conflict"
+      ]
+    },
+    {
+      "case_id": "F01-C10",
+      "family_id": "F01",
+      "expected_decision": "needs_review",
+      "decision": "needs_review",
+      "evidence_ids": [
+        "F01-C10-DOC#p01",
+        "F01-C10-DOC#p02",
+        "F01-POL#p01",
+        "F01-POL#p02",
+        "F01-POL#p03",
+        "F01-POL#p04",
+        "F01-POL#p05",
+        "F01-POL#p06"
+      ],
+      "reason_codes": [
+        "overlapping_lots"
+      ]
+    },
+    {
+      "case_id": "F02-C01",
+      "family_id": "F02",
+      "expected_decision": "close_eligible",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F02-C01-DOC#p01",
+        "F02-C01-DOC#p02",
+        "F02-C01-DOC#p03",
+        "F02-POL#p01",
+        "F02-POL#p02",
+        "F02-POL#p03",
+        "F02-POL#p04",
+        "F02-POL#p05",
+        "F02-POL#p06"
+      ],
+      "reason_codes": [
+        "criteria_met"
+      ]
+    },
+    {
+      "case_id": "F02-C02",
+      "family_id": "F02",
+      "expected_decision": "close_eligible",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F02-C02-DOC#p01",
+        "F02-C02-DOC#p02",
+        "F02-C02-DOC#p03",
+        "F02-POL#p01",
+        "F02-POL#p02",
+        "F02-POL#p03",
+        "F02-POL#p04",
+        "F02-POL#p05",
+        "F02-POL#p06"
+      ],
+      "reason_codes": [
+        "criteria_met"
+      ]
+    },
+    {
+      "case_id": "F02-C03",
+      "family_id": "F02",
+      "expected_decision": "close_eligible",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F02-C03-DOC#p01",
+        "F02-C03-DOC#p02",
+        "F02-C03-DOC#p03",
+        "F02-POL#p01",
+        "F02-POL#p02",
+        "F02-POL#p03",
+        "F02-POL#p04",
+        "F02-POL#p05",
+        "F02-POL#p06"
+      ],
+      "reason_codes": [
+        "criteria_met"
+      ]
+    },
+    {
+      "case_id": "F02-C04",
+      "family_id": "F02",
+      "expected_decision": "needs_evidence",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F02-C04-DOC#p01",
+        "F02-C04-DOC#p02",
+        "F02-C04-DOC#p03",
+        "F02-POL#p01",
+        "F02-POL#p02",
+        "F02-POL#p03",
+        "F02-POL#p04",
+        "F02-POL#p05",
+        "F02-POL#p06"
+      ],
+      "reason_codes": [
+        "authority_unproven"
+      ]
+    },
+    {
+      "case_id": "F02-C05",
+      "family_id": "F02",
+      "expected_decision": "needs_evidence",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F02-C05-DOC#p01",
+        "F02-C05-DOC#p02",
+        "F02-C05-DOC#p03",
+        "F02-POL#p01",
+        "F02-POL#p02",
+        "F02-POL#p03",
+        "F02-POL#p04",
+        "F02-POL#p05",
+        "F02-POL#p06"
+      ],
+      "reason_codes": [
+        "authority_unproven"
+      ]
+    },
+    {
+      "case_id": "F02-C06",
+      "family_id": "F02",
+      "expected_decision": "needs_evidence",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F02-C06-DOC#p01",
+        "F02-C06-DOC#p02",
+        "F02-C06-DOC#p03",
+        "F02-POL#p01",
+        "F02-POL#p02",
+        "F02-POL#p03",
+        "F02-POL#p04",
+        "F02-POL#p05",
+        "F02-POL#p06"
+      ],
+      "reason_codes": [
+        "authority_unproven"
+      ]
+    },
+    {
+      "case_id": "F02-C07",
+      "family_id": "F02",
+      "expected_decision": "needs_review",
+      "decision": "needs_review",
+      "evidence_ids": [
+        "F02-C07-DOC#p01",
+        "F02-C07-DOC#p02",
+        "F02-C07-DOC#p03",
+        "F02-POL#p01",
+        "F02-POL#p02",
+        "F02-POL#p03",
+        "F02-POL#p04",
+        "F02-POL#p05",
+        "F02-POL#p06"
+      ],
+      "reason_codes": [
+        "explicit_authority_denial"
+      ]
+    },
+    {
+      "case_id": "F02-C08",
+      "family_id": "F02",
+      "expected_decision": "needs_review",
+      "decision": "needs_review",
+      "evidence_ids": [
+        "F02-C08-DOC#p01",
+        "F02-C08-DOC#p02",
+        "F02-C08-DOC#p03",
+        "F02-POL#p01",
+        "F02-POL#p02",
+        "F02-POL#p03",
+        "F02-POL#p04",
+        "F02-POL#p05",
+        "F02-POL#p06"
+      ],
+      "reason_codes": [
+        "authority_limit_exceeded"
+      ]
+    },
+    {
+      "case_id": "F02-C09",
+      "family_id": "F02",
+      "expected_decision": "needs_review",
+      "decision": "needs_review",
+      "evidence_ids": [
+        "F02-C09-DOC#p01",
+        "F02-C09-DOC#p02",
+        "F02-C09-DOC#p03",
+        "F02-POL#p01",
+        "F02-POL#p02",
+        "F02-POL#p03",
+        "F02-POL#p04",
+        "F02-POL#p05",
+        "F02-POL#p06"
+      ],
+      "reason_codes": [
+        "acceptance_line_mismatch"
+      ]
+    },
+    {
+      "case_id": "F02-C10",
+      "family_id": "F02",
+      "expected_decision": "needs_evidence",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F02-C10-DOC#p01",
+        "F02-C10-DOC#p02",
+        "F02-C10-DOC#p03",
+        "F02-POL#p01",
+        "F02-POL#p02",
+        "F02-POL#p03",
+        "F02-POL#p04",
+        "F02-POL#p05",
+        "F02-POL#p06"
+      ],
+      "reason_codes": [
+        "quantity_shortfall"
+      ]
+    }
+  ],
+  "primary_reason_audit": {
+    "correct_n": 20,
+    "case_n": 20,
+    "rows": [
+      {
+        "case_id": "F01-C01",
+        "predicted": [
+          "criteria_met"
+        ],
+        "expected": [
+          "criteria_met"
+        ],
+        "correct": true
+      },
+      {
+        "case_id": "F01-C02",
+        "predicted": [
+          "criteria_met"
+        ],
+        "expected": [
+          "criteria_met"
+        ],
+        "correct": true
+      },
+      {
+        "case_id": "F01-C03",
+        "predicted": [
+          "criteria_met"
+        ],
+        "expected": [
+          "criteria_met"
+        ],
+        "correct": true
+      },
+      {
+        "case_id": "F01-C04",
+        "predicted": [
+          "uncovered_serials"
+        ],
+        "expected": [
+          "uncovered_serials"
+        ],
+        "correct": true
+      },
+      {
+        "case_id": "F01-C05",
+        "predicted": [
+          "uncovered_serials"
+        ],
+        "expected": [
+          "uncovered_serials"
+        ],
+        "correct": true
+      },
+      {
+        "case_id": "F01-C06",
+        "predicted": [
+          "uncovered_serials"
+        ],
+        "expected": [
+          "uncovered_serials"
+        ],
+        "correct": true
+      },
+      {
+        "case_id": "F01-C07",
+        "predicted": [
+          "overlapping_lots"
+        ],
+        "expected": [
+          "overlapping_lots"
+        ],
+        "correct": true
+      },
+      {
+        "case_id": "F01-C08",
+        "predicted": [
+          "target_count_mismatch"
+        ],
+        "expected": [
+          "target_count_mismatch"
+        ],
+        "correct": true
+      },
+      {
+        "case_id": "F01-C09",
+        "predicted": [
+          "lot_identity_conflict"
+        ],
+        "expected": [
+          "lot_identity_conflict"
+        ],
+        "correct": true
+      },
+      {
+        "case_id": "F01-C10",
+        "predicted": [
+          "overlapping_lots"
+        ],
+        "expected": [
+          "overlapping_lots"
+        ],
+        "correct": true
+      },
+      {
+        "case_id": "F02-C01",
+        "predicted": [
+          "criteria_met"
+        ],
+        "expected": [
+          "criteria_met"
+        ],
+        "correct": true
+      },
+      {
+        "case_id": "F02-C02",
+        "predicted": [
+          "criteria_met"
+        ],
+        "expected": [
+          "criteria_met"
+        ],
+        "correct": true
+      },
+      {
+        "case_id": "F02-C03",
+        "predicted": [
+          "criteria_met"
+        ],
+        "expected": [
+          "criteria_met"
+        ],
+        "correct": true
+      },
+      {
+        "case_id": "F02-C04",
+        "predicted": [
+          "authority_unproven"
+        ],
+        "expected": [
+          "authority_unproven"
+        ],
+        "correct": true
+      },
+      {
+        "case_id": "F02-C05",
+        "predicted": [
+          "authority_unproven"
+        ],
+        "expected": [
+          "authority_unproven"
+        ],
+        "correct": true
+      },
+      {
+        "case_id": "F02-C06",
+        "predicted": [
+          "authority_unproven"
+        ],
+        "expected": [
+          "authority_unproven"
+        ],
+        "correct": true
+      },
+      {
+        "case_id": "F02-C07",
+        "predicted": [
+          "explicit_authority_denial"
+        ],
+        "expected": [
+          "explicit_authority_denial"
+        ],
+        "correct": true
+      },
+      {
+        "case_id": "F02-C08",
+        "predicted": [
+          "authority_limit_exceeded"
+        ],
+        "expected": [
+          "authority_limit_exceeded"
+        ],
+        "correct": true
+      },
+      {
+        "case_id": "F02-C09",
+        "predicted": [
+          "acceptance_line_mismatch"
+        ],
+        "expected": [
+          "acceptance_line_mismatch"
+        ],
+        "correct": true
+      },
+      {
+        "case_id": "F02-C10",
+        "predicted": [
+          "quantity_shortfall"
+        ],
+        "expected": [
+          "quantity_shortfall"
+        ],
+        "correct": true
+      }
+    ]
+  },
+  "input_sha256": {
+    "submission": "78ff91d71cfa23fe678fe24c1f9a23839d3e8996c7c13247ae26b20b11aa8a89",
+    "labels": "6a7eb05981d0e2bea24ff65aa083cd0ed88917334bd172ef3b2c5dfd5037a65b",
+    "scorer": "59f08846a8477937e621f172c29be12c4335df7c8d39a800a084b741edc99580"
+  }
+}
