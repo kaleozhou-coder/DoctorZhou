@@ -1,0 +1,113 @@
+{
+  "run": {
+    "run_id": "development-review_all",
+    "method": "review_all",
+    "execution_kind": "engineering_probe",
+    "benchmark_freeze_sha256": "99e026b7cc47a87da948b4eaa82af3808e46dcfaab9af67149f4f800de5767b3",
+    "split": "development",
+    "uses_labels": true,
+    "purpose": "Evaluator plumbing check; not a model output"
+  },
+  "predictions": [
+    {
+      "case_id": "F01-C01",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F01-C02",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F01-C03",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F01-C04",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F01-C05",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F01-C06",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F01-C07",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F01-C08",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F01-C09",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F01-C10",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F02-C01",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F02-C02",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F02-C03",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F02-C04",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F02-C05",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F02-C06",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F02-C07",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F02-C08",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F02-C09",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F02-C10",
+      "decision": "needs_review",
+      "payment_authorized": false
+    }
+  ]
+}

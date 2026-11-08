@@ -1,0 +1,31 @@
+{
+  "experiment_type": "deterministic_semantic_mutation_test",
+  "claims_not_supported": [
+    "LLM method superiority",
+    "human review savings",
+    "real-world accuracy",
+    "payment readiness"
+  ],
+  "data_type": "authored_synthetic_fixtures",
+  "python": "3.12.14",
+  "sha256": {
+    "ontology/reference_model.json": "b7f153939a0eb74c2763f259a0f4918679c06361ed904e12f60d6548b27223b9",
+    "data/synthetic/acceptance_cases.json": "8a41c7b1d6710502719c0dee31f5a3df042c1606034fd89643f7aa8dedf878ce",
+    "src/pilot.py": "b363ff9b467f2aaf1911f7c96ab60b07de8a1dcea2ed0816e2a128bf5af15435"
+  },
+  "mutation_detection": {
+    "mutants": 10,
+    "killed": 10
+  }
+}
+reference: accuracy=1.000, unsafe_close=0/22
+without_order_line_identity: accuracy=0.929, unsafe_close=1/22
+without_unique_evidence_id: accuracy=0.929, unsafe_close=2/22
+without_policy_version: accuracy=0.964, unsafe_close=1/22
+without_revocation: accuracy=0.964, unsafe_close=1/22
+without_authorization: accuracy=0.929, unsafe_close=2/22
+without_status: accuracy=0.857, unsafe_close=4/22
+without_unit_identity: accuracy=0.964, unsafe_close=1/22
+without_provenance: accuracy=0.929, unsafe_close=2/22
+without_quantity_coverage: accuracy=0.929, unsafe_close=2/22
+delivery_equals_acceptance: accuracy=0.929, unsafe_close=1/22

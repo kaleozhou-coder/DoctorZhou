@@ -1,0 +1,190 @@
+{
+  "type": "offline_source_audit",
+  "data_origin": "official_specification_examples_not_real_transactions",
+  "xml_parse_and_hash_verified": 7,
+  "documents": [
+    {
+      "path": "peppol-billing-2025-Q2/base-example.xml",
+      "sha256_verified": true,
+      "root_type": "Invoice",
+      "id": "Snippet1",
+      "ubl_version": "",
+      "references": [],
+      "quantity_facts": [
+        {
+          "field": "InvoicedQuantity",
+          "value": "7",
+          "unit": "DAY",
+          "locator": "/Invoice/InvoiceLine[1]/InvoicedQuantity[1]"
+        },
+        {
+          "field": "InvoicedQuantity",
+          "value": "-3",
+          "unit": "DAY",
+          "locator": "/Invoice/InvoiceLine[2]/InvoicedQuantity[1]"
+        }
+      ]
+    },
+    {
+      "path": "peppol-billing-2025-Q2/sales-order-example.xml",
+      "sha256_verified": true,
+      "root_type": "Invoice",
+      "id": "Snippet1",
+      "ubl_version": "",
+      "references": [
+        {
+          "relation": "OrderReference",
+          "target_id": "NA",
+          "locator": "/Invoice/OrderReference/ID"
+        }
+      ],
+      "quantity_facts": [
+        {
+          "field": "InvoicedQuantity",
+          "value": "7",
+          "unit": "DAY",
+          "locator": "/Invoice/InvoiceLine[1]/InvoicedQuantity[1]"
+        },
+        {
+          "field": "InvoicedQuantity",
+          "value": "-3",
+          "unit": "DAY",
+          "locator": "/Invoice/InvoiceLine[2]/InvoicedQuantity[1]"
+        }
+      ]
+    },
+    {
+      "path": "peppol-billing-2025-Q2/base-creditnote-correction.xml",
+      "sha256_verified": true,
+      "root_type": "CreditNote",
+      "id": "Snippet1",
+      "ubl_version": "",
+      "references": [],
+      "quantity_facts": [
+        {
+          "field": "CreditedQuantity",
+          "value": "7",
+          "unit": "DAY",
+          "locator": "/CreditNote/CreditNoteLine[1]/CreditedQuantity[1]"
+        },
+        {
+          "field": "CreditedQuantity",
+          "value": "-3",
+          "unit": "DAY",
+          "locator": "/CreditNote/CreditNoteLine[2]/CreditedQuantity[1]"
+        }
+      ]
+    },
+    {
+      "path": "oasis-ubl-2.1-release/UBL-Order-2.0-Example.xml",
+      "sha256_verified": true,
+      "root_type": "Order",
+      "id": "AEG012345",
+      "ubl_version": "2.0",
+      "references": [],
+      "quantity_facts": [
+        {
+          "field": "Quantity",
+          "value": "100",
+          "unit": "KGM",
+          "locator": "/Order/OrderLine[1]/LineItem[1]/Quantity[1]"
+        }
+      ]
+    },
+    {
+      "path": "oasis-ubl-2.1-release/UBL-Invoice-2.0-Example.xml",
+      "sha256_verified": true,
+      "root_type": "Invoice",
+      "id": "A00095678",
+      "ubl_version": "2.0",
+      "references": [
+        {
+          "relation": "OrderReference",
+          "target_id": "AEG012345",
+          "locator": "/Invoice/OrderReference/ID"
+        }
+      ],
+      "quantity_facts": [
+        {
+          "field": "InvoicedQuantity",
+          "value": "100",
+          "unit": "KGM",
+          "locator": "/Invoice/InvoiceLine[1]/InvoicedQuantity[1]"
+        }
+      ]
+    },
+    {
+      "path": "oasis-ubl-2.1-release/UBL-DespatchAdvice-2.0-Example.xml",
+      "sha256_verified": true,
+      "root_type": "DespatchAdvice",
+      "id": "565899",
+      "ubl_version": "2.0",
+      "references": [
+        {
+          "relation": "OrderReference",
+          "target_id": "AEG012345",
+          "locator": "/DespatchAdvice/OrderReference/ID"
+        }
+      ],
+      "quantity_facts": [
+        {
+          "field": "DeliveredQuantity",
+          "value": "90",
+          "unit": "KGM",
+          "locator": "/DespatchAdvice/DespatchLine[1]/DeliveredQuantity[1]"
+        },
+        {
+          "field": "BackorderQuantity",
+          "value": "10",
+          "unit": "KGM",
+          "locator": "/DespatchAdvice/DespatchLine[1]/BackorderQuantity[1]"
+        }
+      ]
+    },
+    {
+      "path": "oasis-ubl-2.1-release/UBL-ReceiptAdvice-2.0-Example.xml",
+      "sha256_verified": true,
+      "root_type": "ReceiptAdvice",
+      "id": "658398",
+      "ubl_version": "2.0",
+      "references": [
+        {
+          "relation": "OrderReference",
+          "target_id": "AEG012345",
+          "locator": "/ReceiptAdvice/OrderReference/ID"
+        },
+        {
+          "relation": "DespatchDocumentReference",
+          "target_id": "565899",
+          "locator": "/ReceiptAdvice/DespatchDocumentReference/ID"
+        }
+      ],
+      "quantity_facts": [
+        {
+          "field": "Quantity",
+          "value": "90",
+          "unit": "KGM",
+          "locator": "/ReceiptAdvice/Shipment[1]/Delivery[1]/Quantity[1]"
+        },
+        {
+          "field": "ReceivedQuantity",
+          "value": "90",
+          "unit": "KGM",
+          "locator": "/ReceiptAdvice/ReceiptLine[1]/ReceivedQuantity[1]"
+        },
+        {
+          "field": "ShortQuantity",
+          "value": "10",
+          "unit": "KGM",
+          "locator": "/ReceiptAdvice/ReceiptLine[1]/ShortQuantity[1]"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "XML well-formedness only; no XSD, Schematron or signature validation was executed.",
+    "Document/header references do not prove a unique invoice-line/receipt-line match.",
+    "These examples do not supply an independent acceptance-policy or payment-authorization gold standard.",
+    "Received quantities are not relabeled as accepted quantities."
+  ]
+}

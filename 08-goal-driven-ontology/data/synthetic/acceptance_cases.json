@@ -1,0 +1,839 @@
+{
+  "dataset_version": "0.1.0",
+  "provenance": "Hand-authored by an AI assistant for engineering tests; not real transactions or a held-out research benchmark.",
+  "cases": [
+    {
+      "id": "C01",
+      "description": "Exact valid acceptance. Does not authorize payment.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "close_eligible"
+    },
+    {
+      "id": "C02",
+      "description": "Invoice alone provides no acceptance evidence.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [],
+      "expected": "needs_evidence"
+    },
+    {
+      "id": "C03",
+      "description": "Delivery is not inspection acceptance, even with status accepted.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "DeliveryRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "needs_evidence"
+    },
+    {
+      "id": "C04",
+      "description": "Invoice is not an acceptance record.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "Invoice",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "needs_evidence"
+    },
+    {
+      "id": "C05",
+      "description": "Acceptance belongs to a different order line.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO2-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "needs_evidence"
+    },
+    {
+      "id": "C06",
+      "description": "Acceptor is explicitly unauthorized under synthetic policy.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": false,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "needs_review"
+    },
+    {
+      "id": "C07",
+      "description": "Unknown authority is not evidence of authority.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": null,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "needs_review"
+    },
+    {
+      "id": "C08",
+      "description": "Accepted quantity does not cover the invoiced quantity.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 9,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "needs_evidence"
+    },
+    {
+      "id": "C09",
+      "description": "Two distinct records sum to sufficient quantity; synthetic policy assumes nonoverlapping lots.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 4,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        },
+        {
+          "id": "E2",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 6,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E2",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "close_eligible"
+    },
+    {
+      "id": "C10",
+      "description": "Duplicate evidence IDs cannot be double-counted.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 5,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        },
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 5,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "needs_review"
+    },
+    {
+      "id": "C11",
+      "description": "Revoked record does not justify closing exception.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": true,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "needs_evidence"
+    },
+    {
+      "id": "C12",
+      "description": "Units require explicit mapping; EA and BOX are not silently equated.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "BOX",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "needs_review"
+    },
+    {
+      "id": "C13",
+      "description": "Unknown applicability of an earlier policy requires review.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P_OLD",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "needs_review"
+    },
+    {
+      "id": "C14",
+      "description": "Evidence exists as a claim but has no checkable location.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": null
+        }
+      ],
+      "expected": "needs_review"
+    },
+    {
+      "id": "C15",
+      "description": "Evidence lacks source identity.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": null,
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "needs_review"
+    },
+    {
+      "id": "C16",
+      "description": "Explicit rejection requires review, not automatic close.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "rejected",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "needs_review"
+    },
+    {
+      "id": "C17",
+      "description": "Conflicting acceptance status requires review.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "conflicting",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "needs_review"
+    },
+    {
+      "id": "C18",
+      "description": "A record with unknown acceptance status is not accepted by default.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": null,
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "needs_evidence"
+    },
+    {
+      "id": "C19",
+      "description": "Invoice lacks an unambiguous order-line link.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": null,
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "needs_review"
+    },
+    {
+      "id": "C20",
+      "description": "Zero accepted quantity is invalid for this positive invoice test.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 0,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "needs_review"
+    },
+    {
+      "id": "C21",
+      "description": "Negative invoices require a return/credit-note model outside the scope.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": -1,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "needs_review"
+    },
+    {
+      "id": "C22",
+      "description": "Acceptance covers quantity; excess quantity does not alone block this narrow exception.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 12,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "close_eligible"
+    },
+    {
+      "id": "C23",
+      "description": "Partial records still total less than invoice quantity.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 4,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        },
+        {
+          "id": "E2",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 5,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E2",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "needs_evidence"
+    },
+    {
+      "id": "C24",
+      "description": "Missing evidence ID prevents reliable deduplication.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": null,
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "needs_review"
+    },
+    {
+      "id": "C25",
+      "description": "Irrelevant delivery record must not replace valid acceptance decision.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        },
+        {
+          "id": "E2",
+          "type": "DeliveryRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "rejected",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "close_eligible"
+    },
+    {
+      "id": "C26",
+      "description": "A different order line must not contaminate the targeted decision.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        },
+        {
+          "id": "E2",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO2-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "rejected",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "close_eligible"
+    },
+    {
+      "id": "C27",
+      "description": "Mixed accepted/rejected evidence on same line has unresolved conflict.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        },
+        {
+          "id": "E2",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "rejected",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "needs_review"
+    },
+    {
+      "id": "C28",
+      "description": "Revoked extra record is ignored when valid evidence independently suffices.",
+      "data_origin": "authored_synthetic",
+      "policy_version": "P0",
+      "invoice_line": {
+        "order_line_id": "PO1-L1",
+        "quantity": 10,
+        "unit": "EA"
+      },
+      "records": [
+        {
+          "id": "E1",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": false,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        },
+        {
+          "id": "E2",
+          "type": "AcceptanceRecord",
+          "order_line_id": "PO1-L1",
+          "quantity": 10,
+          "unit": "EA",
+          "status": "accepted",
+          "authorized": true,
+          "revoked": true,
+          "policy_version": "P0",
+          "source_id": "synthetic:E1",
+          "source_locator": "section:acceptance"
+        }
+      ],
+      "expected": "close_eligible"
+    }
+  ]
+}

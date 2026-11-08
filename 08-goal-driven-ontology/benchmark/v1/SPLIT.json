@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "synthetic-goal-ontology-prospective-v1",
+  "split_method": "Purposive family-level assignment fixed before case authoring. No random row split; no seed is used.",
+  "families": [
+    {"family_id":"F01", "name":"Disjoint serialized lot coverage", "split":"development"},
+    {"family_id":"F02", "name":"Line-specific delegated authority", "split":"development"},
+    {"family_id":"F03", "name":"Negative and conflicting inspection status", "split":"validation"},
+    {"family_id":"F04", "name":"Revocation and supersession ledger", "split":"test"},
+    {"family_id":"F05", "name":"Policy transitions and grandfathering", "split":"test"},
+    {"family_id":"F06", "name":"Locator existence versus semantic support", "split":"test"}
+  ]
+}

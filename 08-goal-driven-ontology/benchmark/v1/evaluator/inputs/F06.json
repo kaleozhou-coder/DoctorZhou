@@ -1,0 +1,746 @@
+{
+  "family_id": "F06",
+  "split": "test",
+  "cases": [
+    {
+      "case_id": "F06-C01",
+      "family_id": "F06",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F06-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F06-C01-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_id\": \"INV-P\", \"invoice_quantity\": 3, \"po_line\": \"PO-P/1\"}}",
+          "facts": {
+            "request": {
+              "invoice_id": "INV-P",
+              "po_line": "PO-P/1",
+              "invoice_quantity": 3
+            }
+          }
+        },
+        {
+          "source_id": "F06-C01-DOC",
+          "locator": "p02",
+          "text": "{\"closure_claim\": {\"locator\": \"s01\", \"source_id\": \"F06-C01-ATT\"}}",
+          "facts": {
+            "closure_claim": {
+              "source_id": "F06-C01-ATT",
+              "locator": "s01"
+            }
+          }
+        },
+        {
+          "source_id": "F06-C01-DOC",
+          "locator": "p03",
+          "text": "{\"source_catalog\": [{\"kind\": \"ACCEPTANCE_RECORD\", \"paragraphs\": [{\"accepted_quantity\": 3, \"invoice_id\": \"INV-P\", \"locator\": \"s01\", \"paragraph_mode\": \"asserted\", \"po_line\": \"PO-P/1\", \"signer_role\": \"RECEIVING_OFFICER\", \"status\": \"accepted\", \"text\": \"asserted record: invoice=INV-P; line=PO-P/1; status=accepted; quantity=3; unit=EA; role=RECEIVING_OFFICER.\", \"unit\": \"EA\"}], \"source_id\": \"F06-C01-ATT\"}]}",
+          "facts": {
+            "source_catalog": [
+              {
+                "source_id": "F06-C01-ATT",
+                "kind": "ACCEPTANCE_RECORD",
+                "paragraphs": [
+                  {
+                    "locator": "s01",
+                    "paragraph_mode": "asserted",
+                    "invoice_id": "INV-P",
+                    "po_line": "PO-P/1",
+                    "status": "accepted",
+                    "accepted_quantity": 3,
+                    "unit": "EA",
+                    "signer_role": "RECEIVING_OFFICER",
+                    "text": "asserted record: invoice=INV-P; line=PO-P/1; status=accepted; quantity=3; unit=EA; role=RECEIVING_OFFICER."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "source_id": "F06-C01-ATT",
+          "locator": "s01",
+          "text": "asserted record: invoice=INV-P; line=PO-P/1; status=accepted; quantity=3; unit=EA; role=RECEIVING_OFFICER.",
+          "facts": {
+            "paragraph_mode": "asserted",
+            "invoice_id": "INV-P",
+            "po_line": "PO-P/1",
+            "status": "accepted",
+            "accepted_quantity": 3,
+            "unit": "EA",
+            "signer_role": "RECEIVING_OFFICER"
+          },
+          "source_kind": "ACCEPTANCE_RECORD"
+        }
+      ]
+    },
+    {
+      "case_id": "F06-C02",
+      "family_id": "F06",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F06-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F06-C02-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_id\": \"INV-P\", \"invoice_quantity\": 3, \"po_line\": \"PO-P/1\"}}",
+          "facts": {
+            "request": {
+              "invoice_id": "INV-P",
+              "po_line": "PO-P/1",
+              "invoice_quantity": 3
+            }
+          }
+        },
+        {
+          "source_id": "F06-C02-DOC",
+          "locator": "p02",
+          "text": "{\"closure_claim\": {\"locator\": \"s01\", \"source_id\": \"F06-C02-ATT\"}}",
+          "facts": {
+            "closure_claim": {
+              "source_id": "F06-C02-ATT",
+              "locator": "s01"
+            }
+          }
+        },
+        {
+          "source_id": "F06-C02-DOC",
+          "locator": "p03",
+          "text": "{\"source_catalog\": [{\"kind\": \"ACCEPTANCE_RECORD\", \"paragraphs\": [{\"accepted_quantity\": 5, \"invoice_id\": \"INV-P\", \"locator\": \"s01\", \"paragraph_mode\": \"asserted\", \"po_line\": \"PO-P/1\", \"signer_role\": \"RECEIVING_OFFICER\", \"status\": \"accepted\", \"text\": \"asserted record: invoice=INV-P; line=PO-P/1; status=accepted; quantity=5; unit=EA; role=RECEIVING_OFFICER.\", \"unit\": \"EA\"}], \"source_id\": \"F06-C02-ATT\"}]}",
+          "facts": {
+            "source_catalog": [
+              {
+                "source_id": "F06-C02-ATT",
+                "kind": "ACCEPTANCE_RECORD",
+                "paragraphs": [
+                  {
+                    "locator": "s01",
+                    "paragraph_mode": "asserted",
+                    "invoice_id": "INV-P",
+                    "po_line": "PO-P/1",
+                    "status": "accepted",
+                    "accepted_quantity": 5,
+                    "unit": "EA",
+                    "signer_role": "RECEIVING_OFFICER",
+                    "text": "asserted record: invoice=INV-P; line=PO-P/1; status=accepted; quantity=5; unit=EA; role=RECEIVING_OFFICER."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "source_id": "F06-C02-ATT",
+          "locator": "s01",
+          "text": "asserted record: invoice=INV-P; line=PO-P/1; status=accepted; quantity=5; unit=EA; role=RECEIVING_OFFICER.",
+          "facts": {
+            "paragraph_mode": "asserted",
+            "invoice_id": "INV-P",
+            "po_line": "PO-P/1",
+            "status": "accepted",
+            "accepted_quantity": 5,
+            "unit": "EA",
+            "signer_role": "RECEIVING_OFFICER"
+          },
+          "source_kind": "ACCEPTANCE_RECORD"
+        }
+      ]
+    },
+    {
+      "case_id": "F06-C03",
+      "family_id": "F06",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F06-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F06-C03-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_id\": \"INV-P\", \"invoice_quantity\": 3, \"po_line\": \"PO-P/1\"}}",
+          "facts": {
+            "request": {
+              "invoice_id": "INV-P",
+              "po_line": "PO-P/1",
+              "invoice_quantity": 3
+            }
+          }
+        },
+        {
+          "source_id": "F06-C03-DOC",
+          "locator": "p02",
+          "text": "{\"closure_claim\": {\"locator\": \"appendix.7\", \"source_id\": \"F06-C03-ATT\"}}",
+          "facts": {
+            "closure_claim": {
+              "source_id": "F06-C03-ATT",
+              "locator": "appendix.7"
+            }
+          }
+        },
+        {
+          "source_id": "F06-C03-DOC",
+          "locator": "p03",
+          "text": "{\"source_catalog\": [{\"kind\": \"ACCEPTANCE_RECORD\", \"paragraphs\": [{\"accepted_quantity\": 3, \"invoice_id\": \"INV-P\", \"locator\": \"appendix.7\", \"paragraph_mode\": \"asserted\", \"po_line\": \"PO-P/1\", \"signer_role\": \"RECEIVING_OFFICER\", \"status\": \"accepted\", \"text\": \"asserted record: invoice=INV-P; line=PO-P/1; status=accepted; quantity=3; unit=EA; role=RECEIVING_OFFICER.\", \"unit\": \"EA\"}], \"source_id\": \"F06-C03-ATT\"}]}",
+          "facts": {
+            "source_catalog": [
+              {
+                "source_id": "F06-C03-ATT",
+                "kind": "ACCEPTANCE_RECORD",
+                "paragraphs": [
+                  {
+                    "locator": "appendix.7",
+                    "paragraph_mode": "asserted",
+                    "invoice_id": "INV-P",
+                    "po_line": "PO-P/1",
+                    "status": "accepted",
+                    "accepted_quantity": 3,
+                    "unit": "EA",
+                    "signer_role": "RECEIVING_OFFICER",
+                    "text": "asserted record: invoice=INV-P; line=PO-P/1; status=accepted; quantity=3; unit=EA; role=RECEIVING_OFFICER."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "source_id": "F06-C03-ATT",
+          "locator": "appendix.7",
+          "text": "asserted record: invoice=INV-P; line=PO-P/1; status=accepted; quantity=3; unit=EA; role=RECEIVING_OFFICER.",
+          "facts": {
+            "paragraph_mode": "asserted",
+            "invoice_id": "INV-P",
+            "po_line": "PO-P/1",
+            "status": "accepted",
+            "accepted_quantity": 3,
+            "unit": "EA",
+            "signer_role": "RECEIVING_OFFICER"
+          },
+          "source_kind": "ACCEPTANCE_RECORD"
+        }
+      ]
+    },
+    {
+      "case_id": "F06-C04",
+      "family_id": "F06",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F06-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F06-C04-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_id\": \"INV-P\", \"invoice_quantity\": 3, \"po_line\": \"PO-P/1\"}}",
+          "facts": {
+            "request": {
+              "invoice_id": "INV-P",
+              "po_line": "PO-P/1",
+              "invoice_quantity": 3
+            }
+          }
+        },
+        {
+          "source_id": "F06-C04-DOC",
+          "locator": "p02",
+          "text": "{\"closure_claim\": {\"locator\": \"s99\", \"source_id\": \"F06-C04-ATT\"}}",
+          "facts": {
+            "closure_claim": {
+              "source_id": "F06-C04-ATT",
+              "locator": "s99"
+            }
+          }
+        },
+        {
+          "source_id": "F06-C04-DOC",
+          "locator": "p03",
+          "text": "{\"source_catalog\": [{\"kind\": \"ACCEPTANCE_RECORD\", \"paragraphs\": [{\"accepted_quantity\": 3, \"invoice_id\": \"INV-P\", \"locator\": \"s01\", \"paragraph_mode\": \"asserted\", \"po_line\": \"PO-P/1\", \"signer_role\": \"RECEIVING_OFFICER\", \"status\": \"accepted\", \"text\": \"asserted record: invoice=INV-P; line=PO-P/1; status=accepted; quantity=3; unit=EA; role=RECEIVING_OFFICER.\", \"unit\": \"EA\"}], \"source_id\": \"F06-C04-ATT\"}]}",
+          "facts": {
+            "source_catalog": [
+              {
+                "source_id": "F06-C04-ATT",
+                "kind": "ACCEPTANCE_RECORD",
+                "paragraphs": [
+                  {
+                    "locator": "s01",
+                    "paragraph_mode": "asserted",
+                    "invoice_id": "INV-P",
+                    "po_line": "PO-P/1",
+                    "status": "accepted",
+                    "accepted_quantity": 3,
+                    "unit": "EA",
+                    "signer_role": "RECEIVING_OFFICER",
+                    "text": "asserted record: invoice=INV-P; line=PO-P/1; status=accepted; quantity=3; unit=EA; role=RECEIVING_OFFICER."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "source_id": "F06-C04-ATT",
+          "locator": "s01",
+          "text": "asserted record: invoice=INV-P; line=PO-P/1; status=accepted; quantity=3; unit=EA; role=RECEIVING_OFFICER.",
+          "facts": {
+            "paragraph_mode": "asserted",
+            "invoice_id": "INV-P",
+            "po_line": "PO-P/1",
+            "status": "accepted",
+            "accepted_quantity": 3,
+            "unit": "EA",
+            "signer_role": "RECEIVING_OFFICER"
+          },
+          "source_kind": "ACCEPTANCE_RECORD"
+        }
+      ]
+    },
+    {
+      "case_id": "F06-C05",
+      "family_id": "F06",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F06-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F06-C05-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_id\": \"INV-P\", \"invoice_quantity\": 3, \"po_line\": \"PO-P/1\"}}",
+          "facts": {
+            "request": {
+              "invoice_id": "INV-P",
+              "po_line": "PO-P/1",
+              "invoice_quantity": 3
+            }
+          }
+        },
+        {
+          "source_id": "F06-C05-DOC",
+          "locator": "p02",
+          "text": "{\"closure_claim\": {\"locator\": \"s01\", \"source_id\": \"F06-C05-ATT\"}}",
+          "facts": {
+            "closure_claim": {
+              "source_id": "F06-C05-ATT",
+              "locator": "s01"
+            }
+          }
+        },
+        {
+          "source_id": "F06-C05-DOC",
+          "locator": "p03",
+          "text": "{\"source_catalog\": [{\"kind\": \"SHIPPING_NOTICE\", \"paragraphs\": [{\"accepted_quantity\": 3, \"invoice_id\": \"INV-P\", \"locator\": \"s01\", \"paragraph_mode\": \"asserted\", \"po_line\": \"PO-P/1\", \"signer_role\": \"RECEIVING_OFFICER\", \"status\": \"accepted\", \"text\": \"asserted record: invoice=INV-P; line=PO-P/1; status=accepted; quantity=3; unit=EA; role=RECEIVING_OFFICER.\", \"unit\": \"EA\"}], \"source_id\": \"F06-C05-ATT\"}]}",
+          "facts": {
+            "source_catalog": [
+              {
+                "source_id": "F06-C05-ATT",
+                "kind": "SHIPPING_NOTICE",
+                "paragraphs": [
+                  {
+                    "locator": "s01",
+                    "paragraph_mode": "asserted",
+                    "invoice_id": "INV-P",
+                    "po_line": "PO-P/1",
+                    "status": "accepted",
+                    "accepted_quantity": 3,
+                    "unit": "EA",
+                    "signer_role": "RECEIVING_OFFICER",
+                    "text": "asserted record: invoice=INV-P; line=PO-P/1; status=accepted; quantity=3; unit=EA; role=RECEIVING_OFFICER."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "source_id": "F06-C05-ATT",
+          "locator": "s01",
+          "text": "asserted record: invoice=INV-P; line=PO-P/1; status=accepted; quantity=3; unit=EA; role=RECEIVING_OFFICER.",
+          "facts": {
+            "paragraph_mode": "asserted",
+            "invoice_id": "INV-P",
+            "po_line": "PO-P/1",
+            "status": "accepted",
+            "accepted_quantity": 3,
+            "unit": "EA",
+            "signer_role": "RECEIVING_OFFICER"
+          },
+          "source_kind": "SHIPPING_NOTICE"
+        }
+      ]
+    },
+    {
+      "case_id": "F06-C06",
+      "family_id": "F06",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F06-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F06-C06-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_id\": \"INV-P\", \"invoice_quantity\": 3, \"po_line\": \"PO-P/1\"}}",
+          "facts": {
+            "request": {
+              "invoice_id": "INV-P",
+              "po_line": "PO-P/1",
+              "invoice_quantity": 3
+            }
+          }
+        },
+        {
+          "source_id": "F06-C06-DOC",
+          "locator": "p02",
+          "text": "{\"closure_claim\": {\"locator\": \"s01\", \"source_id\": \"F06-C06-ATT\"}}",
+          "facts": {
+            "closure_claim": {
+              "source_id": "F06-C06-ATT",
+              "locator": "s01"
+            }
+          }
+        },
+        {
+          "source_id": "F06-C06-DOC",
+          "locator": "p03",
+          "text": "{\"source_catalog\": [{\"kind\": \"ACCEPTANCE_RECORD\", \"paragraphs\": [{\"accepted_quantity\": 3, \"invoice_id\": \"INV-P\", \"locator\": \"s01\", \"paragraph_mode\": \"quoted\", \"po_line\": \"PO-P/1\", \"signer_role\": \"RECEIVING_OFFICER\", \"status\": \"accepted\", \"text\": \"quoted record: invoice=INV-P; line=PO-P/1; status=accepted; quantity=3; unit=EA; role=RECEIVING_OFFICER.\", \"unit\": \"EA\"}], \"source_id\": \"F06-C06-ATT\"}]}",
+          "facts": {
+            "source_catalog": [
+              {
+                "source_id": "F06-C06-ATT",
+                "kind": "ACCEPTANCE_RECORD",
+                "paragraphs": [
+                  {
+                    "locator": "s01",
+                    "paragraph_mode": "quoted",
+                    "invoice_id": "INV-P",
+                    "po_line": "PO-P/1",
+                    "status": "accepted",
+                    "accepted_quantity": 3,
+                    "unit": "EA",
+                    "signer_role": "RECEIVING_OFFICER",
+                    "text": "quoted record: invoice=INV-P; line=PO-P/1; status=accepted; quantity=3; unit=EA; role=RECEIVING_OFFICER."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "source_id": "F06-C06-ATT",
+          "locator": "s01",
+          "text": "quoted record: invoice=INV-P; line=PO-P/1; status=accepted; quantity=3; unit=EA; role=RECEIVING_OFFICER.",
+          "facts": {
+            "paragraph_mode": "quoted",
+            "invoice_id": "INV-P",
+            "po_line": "PO-P/1",
+            "status": "accepted",
+            "accepted_quantity": 3,
+            "unit": "EA",
+            "signer_role": "RECEIVING_OFFICER"
+          },
+          "source_kind": "ACCEPTANCE_RECORD"
+        }
+      ]
+    },
+    {
+      "case_id": "F06-C07",
+      "family_id": "F06",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F06-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F06-C07-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_id\": \"INV-P\", \"invoice_quantity\": 3, \"po_line\": \"PO-P/1\"}}",
+          "facts": {
+            "request": {
+              "invoice_id": "INV-P",
+              "po_line": "PO-P/1",
+              "invoice_quantity": 3
+            }
+          }
+        },
+        {
+          "source_id": "F06-C07-DOC",
+          "locator": "p02",
+          "text": "{\"closure_claim\": {\"locator\": \"s01\", \"source_id\": \"F06-C07-ATT\"}}",
+          "facts": {
+            "closure_claim": {
+              "source_id": "F06-C07-ATT",
+              "locator": "s01"
+            }
+          }
+        },
+        {
+          "source_id": "F06-C07-DOC",
+          "locator": "p03",
+          "text": "{\"source_catalog\": [{\"kind\": \"ACCEPTANCE_RECORD\", \"paragraphs\": [{\"accepted_quantity\": 3, \"invoice_id\": null, \"locator\": \"s01\", \"paragraph_mode\": \"asserted\", \"po_line\": \"PO-P/1\", \"signer_role\": \"RECEIVING_OFFICER\", \"status\": \"accepted\", \"text\": \"asserted record: invoice=None; line=PO-P/1; status=accepted; quantity=3; unit=EA; role=RECEIVING_OFFICER.\", \"unit\": \"EA\"}], \"source_id\": \"F06-C07-ATT\"}]}",
+          "facts": {
+            "source_catalog": [
+              {
+                "source_id": "F06-C07-ATT",
+                "kind": "ACCEPTANCE_RECORD",
+                "paragraphs": [
+                  {
+                    "locator": "s01",
+                    "paragraph_mode": "asserted",
+                    "invoice_id": null,
+                    "po_line": "PO-P/1",
+                    "status": "accepted",
+                    "accepted_quantity": 3,
+                    "unit": "EA",
+                    "signer_role": "RECEIVING_OFFICER",
+                    "text": "asserted record: invoice=None; line=PO-P/1; status=accepted; quantity=3; unit=EA; role=RECEIVING_OFFICER."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "source_id": "F06-C07-ATT",
+          "locator": "s01",
+          "text": "asserted record: invoice=None; line=PO-P/1; status=accepted; quantity=3; unit=EA; role=RECEIVING_OFFICER.",
+          "facts": {
+            "paragraph_mode": "asserted",
+            "invoice_id": null,
+            "po_line": "PO-P/1",
+            "status": "accepted",
+            "accepted_quantity": 3,
+            "unit": "EA",
+            "signer_role": "RECEIVING_OFFICER"
+          },
+          "source_kind": "ACCEPTANCE_RECORD"
+        }
+      ]
+    },
+    {
+      "case_id": "F06-C08",
+      "family_id": "F06",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F06-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F06-C08-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_id\": \"INV-P\", \"invoice_quantity\": 3, \"po_line\": \"PO-P/1\"}}",
+          "facts": {
+            "request": {
+              "invoice_id": "INV-P",
+              "po_line": "PO-P/1",
+              "invoice_quantity": 3
+            }
+          }
+        },
+        {
+          "source_id": "F06-C08-DOC",
+          "locator": "p02",
+          "text": "{\"closure_claim\": {\"locator\": \"s01\", \"source_id\": \"F06-C08-ATT\"}}",
+          "facts": {
+            "closure_claim": {
+              "source_id": "F06-C08-ATT",
+              "locator": "s01"
+            }
+          }
+        },
+        {
+          "source_id": "F06-C08-DOC",
+          "locator": "p03",
+          "text": "{\"source_catalog\": [{\"kind\": \"ACCEPTANCE_RECORD\", \"paragraphs\": [{\"accepted_quantity\": 3, \"invoice_id\": \"INV-P\", \"locator\": \"s01\", \"paragraph_mode\": \"asserted\", \"po_line\": \"PO-P/2\", \"signer_role\": \"RECEIVING_OFFICER\", \"status\": \"accepted\", \"text\": \"asserted record: invoice=INV-P; line=PO-P/2; status=accepted; quantity=3; unit=EA; role=RECEIVING_OFFICER.\", \"unit\": \"EA\"}], \"source_id\": \"F06-C08-ATT\"}]}",
+          "facts": {
+            "source_catalog": [
+              {
+                "source_id": "F06-C08-ATT",
+                "kind": "ACCEPTANCE_RECORD",
+                "paragraphs": [
+                  {
+                    "locator": "s01",
+                    "paragraph_mode": "asserted",
+                    "invoice_id": "INV-P",
+                    "po_line": "PO-P/2",
+                    "status": "accepted",
+                    "accepted_quantity": 3,
+                    "unit": "EA",
+                    "signer_role": "RECEIVING_OFFICER",
+                    "text": "asserted record: invoice=INV-P; line=PO-P/2; status=accepted; quantity=3; unit=EA; role=RECEIVING_OFFICER."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "source_id": "F06-C08-ATT",
+          "locator": "s01",
+          "text": "asserted record: invoice=INV-P; line=PO-P/2; status=accepted; quantity=3; unit=EA; role=RECEIVING_OFFICER.",
+          "facts": {
+            "paragraph_mode": "asserted",
+            "invoice_id": "INV-P",
+            "po_line": "PO-P/2",
+            "status": "accepted",
+            "accepted_quantity": 3,
+            "unit": "EA",
+            "signer_role": "RECEIVING_OFFICER"
+          },
+          "source_kind": "ACCEPTANCE_RECORD"
+        }
+      ]
+    },
+    {
+      "case_id": "F06-C09",
+      "family_id": "F06",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F06-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F06-C09-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_id\": \"INV-P\", \"invoice_quantity\": 3, \"po_line\": \"PO-P/1\"}}",
+          "facts": {
+            "request": {
+              "invoice_id": "INV-P",
+              "po_line": "PO-P/1",
+              "invoice_quantity": 3
+            }
+          }
+        },
+        {
+          "source_id": "F06-C09-DOC",
+          "locator": "p02",
+          "text": "{\"closure_claim\": {\"locator\": \"s01\", \"source_id\": \"F06-C09-ATT\"}}",
+          "facts": {
+            "closure_claim": {
+              "source_id": "F06-C09-ATT",
+              "locator": "s01"
+            }
+          }
+        },
+        {
+          "source_id": "F06-C09-DOC",
+          "locator": "p03",
+          "text": "{\"source_catalog\": [{\"kind\": \"ACCEPTANCE_RECORD\", \"paragraphs\": [{\"accepted_quantity\": 3, \"invoice_id\": \"INV-P\", \"locator\": \"s01\", \"paragraph_mode\": \"asserted\", \"po_line\": \"PO-P/1\", \"signer_role\": \"RECEIVING_OFFICER\", \"status\": \"not_accepted\", \"text\": \"Invoice INV-P, line PO-P/1: goods not accepted. Quantity 3 EA; receiving officer records the negative outcome.\", \"unit\": \"EA\"}], \"source_id\": \"F06-C09-ATT\"}]}",
+          "facts": {
+            "source_catalog": [
+              {
+                "source_id": "F06-C09-ATT",
+                "kind": "ACCEPTANCE_RECORD",
+                "paragraphs": [
+                  {
+                    "locator": "s01",
+                    "paragraph_mode": "asserted",
+                    "invoice_id": "INV-P",
+                    "po_line": "PO-P/1",
+                    "status": "not_accepted",
+                    "accepted_quantity": 3,
+                    "unit": "EA",
+                    "signer_role": "RECEIVING_OFFICER",
+                    "text": "Invoice INV-P, line PO-P/1: goods not accepted. Quantity 3 EA; receiving officer records the negative outcome."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "source_id": "F06-C09-ATT",
+          "locator": "s01",
+          "text": "Invoice INV-P, line PO-P/1: goods not accepted. Quantity 3 EA; receiving officer records the negative outcome.",
+          "facts": {
+            "paragraph_mode": "asserted",
+            "invoice_id": "INV-P",
+            "po_line": "PO-P/1",
+            "status": "not_accepted",
+            "accepted_quantity": 3,
+            "unit": "EA",
+            "signer_role": "RECEIVING_OFFICER"
+          },
+          "source_kind": "ACCEPTANCE_RECORD"
+        }
+      ]
+    },
+    {
+      "case_id": "F06-C10",
+      "family_id": "F06",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F06-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F06-C10-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_id\": \"INV-P\", \"invoice_quantity\": 3, \"po_line\": \"PO-P/1\"}}",
+          "facts": {
+            "request": {
+              "invoice_id": "INV-P",
+              "po_line": "PO-P/1",
+              "invoice_quantity": 3
+            }
+          }
+        },
+        {
+          "source_id": "F06-C10-DOC",
+          "locator": "p02",
+          "text": "{\"closure_claim\": {\"locator\": \"s01\", \"source_id\": \"F06-C10-ATT\"}}",
+          "facts": {
+            "closure_claim": {
+              "source_id": "F06-C10-ATT",
+              "locator": "s01"
+            }
+          }
+        },
+        {
+          "source_id": "F06-C10-DOC",
+          "locator": "p03",
+          "text": "{\"source_catalog\": [{\"kind\": \"ACCEPTANCE_RECORD\", \"paragraphs\": [{\"accepted_quantity\": 3, \"invoice_id\": \"INV-P\", \"locator\": \"s01\", \"paragraph_mode\": \"asserted\", \"po_line\": \"PO-P/1\", \"signer_role\": \"RECEIVING_OFFICER\", \"status\": \"accepted\", \"text\": \"asserted record: invoice=INV-P; line=PO-P/1; status=accepted; quantity=3; unit=BOX; role=RECEIVING_OFFICER.\", \"unit\": \"BOX\"}], \"source_id\": \"F06-C10-ATT\"}]}",
+          "facts": {
+            "source_catalog": [
+              {
+                "source_id": "F06-C10-ATT",
+                "kind": "ACCEPTANCE_RECORD",
+                "paragraphs": [
+                  {
+                    "locator": "s01",
+                    "paragraph_mode": "asserted",
+                    "invoice_id": "INV-P",
+                    "po_line": "PO-P/1",
+                    "status": "accepted",
+                    "accepted_quantity": 3,
+                    "unit": "BOX",
+                    "signer_role": "RECEIVING_OFFICER",
+                    "text": "asserted record: invoice=INV-P; line=PO-P/1; status=accepted; quantity=3; unit=BOX; role=RECEIVING_OFFICER."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "source_id": "F06-C10-ATT",
+          "locator": "s01",
+          "text": "asserted record: invoice=INV-P; line=PO-P/1; status=accepted; quantity=3; unit=BOX; role=RECEIVING_OFFICER.",
+          "facts": {
+            "paragraph_mode": "asserted",
+            "invoice_id": "INV-P",
+            "po_line": "PO-P/1",
+            "status": "accepted",
+            "accepted_quantity": 3,
+            "unit": "BOX",
+            "signer_role": "RECEIVING_OFFICER"
+          },
+          "source_kind": "ACCEPTANCE_RECORD"
+        }
+      ]
+    }
+  ]
+}

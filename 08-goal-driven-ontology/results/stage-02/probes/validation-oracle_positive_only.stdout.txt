@@ -1,0 +1,29 @@
+{
+  "output": "results/stage-02/probes/validation-oracle_positive_only.report.json",
+  "metrics": {
+    "case_n": 10,
+    "positive_n": 4,
+    "negative_n": 6,
+    "missing_n": 6,
+    "completion_rate": 0.4,
+    "exact_decision_correct_n": 4,
+    "exact_decision_accuracy": 0.4,
+    "false_close_n": 0,
+    "false_close_rate": 0.0,
+    "positive_close_recall": 1.0,
+    "conservative_false_close_rate_if_missing_negatives_close": 1.0,
+    "decision_counts": {
+      "close_eligible": 4,
+      "MISSING": 6
+    },
+    "false_close_case_ids": [],
+    "missing_case_ids": [
+      "F03-C04",
+      "F03-C05",
+      "F03-C06",
+      "F03-C07",
+      "F03-C08",
+      "F03-C09"
+    ]
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "checked_on": "2026-11-06",
+  "scope": "Focused scoping review; not systematic review or proof of novelty",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Methodology for the Design and Evaluation of Ontologies",
+      "authors": [
+        "Michael Grüninger",
+        "Mark S. Fox"
+      ],
+      "year": 1995,
+      "doi": null,
+      "url": "https://eil.mie.utoronto.ca/theory/enterprise-modelling/entmethod/",
+      "verification": "作者实验室方法页面，非逐页阅读全文",
+      "contribution": "从动机场景、非形式化 CQ 到术语、形式化 CQ、语义约束，以 CQ 限定本体范围。",
+      "overlap": "业务目标先行、问题驱动建模。",
+      "not_novel": "用 CQ 确定范围或评价本体不是创新。",
+      "gap": "未提供 LLM 证据缺失风险实验。"
+    },
+    {
+      "id": "S02",
+      "title": "eXtreme Design with Content Ontology Design Patterns",
+      "authors": [
+        "Valentina Presutti",
+        "Enrico Daga",
+        "Aldo Gangemi",
+        "Eva Blomqvist"
+      ],
+      "year": 2009,
+      "doi": null,
+      "url": "https://ceur-ws.org/Vol-516/pap21.pdf",
+      "verification": "CEUR 原文 PDF，摘要与方法",
+      "contribution": "协作、增量、迭代的模式化本体设计，并有 NeOn Toolkit 插件。",
+      "overlap": "小步建模、复用、迭代。",
+      "not_novel": "增量与迭代本体工程本身已有成熟先例。",
+      "gap": "没有 LLM 驱动的采购审核证据状态对照。"
+    },
+    {
+      "id": "S03",
+      "title": "Using Goal Modeling to Capture Competency Questions in Ontology-based Systems",
+      "authors": [
+        "Paulo C. Barbosa Fernandes",
+        "Renata S.S. Guizzardi",
+        "Giancarlo Guizzardi"
+      ],
+      "year": 2011,
+      "doi": null,
+      "url": "https://periodicos.ufmg.br/index.php/jidm/article/view/124",
+      "fulltext": "https://www.inf.ufes.br/~gguizzardi/SBBD2011_Revision_5.pdf",
+      "verification": "期刊作者年份及作者版正文；作者版有占位页眉，不用于卷页元数据",
+      "contribution": "用 Tropos 从组织目标推导 CQ，再连接概念；以医疗场景展示方法。",
+      "overlap": "直接覆盖业务目标→CQ→概念链。",
+      "not_novel": "业务目标驱动本体或目标-CQ关联不能作为首次贡献。",
+      "gap": "可研究 LLM 在证据逐步到达下如何控制候选模型的准入与撤回。"
+    },
+    {
+      "id": "S04",
+      "title": "The NeOn Methodology framework: A scenario-based methodology for ontology development",
+      "authors": [
+        "Mari Carmen Suárez-Figueroa",
+        "Asunción Gómez-Pérez",
+        "Mariano Fernández-López"
+      ],
+      "year": 2015,
+      "doi": "10.3233/AO-150145",
+      "url": "https://journals.sagepub.com/doi/10.3233/AO-150145",
+      "verification": "出版社书目与摘要；全文受限，不声称全文核实",
+      "contribution": "九种开发场景、生命周期和过程指南构成方法框架。",
+      "overlap": "需求、复用、演化的工程组织。",
+      "not_novel": "多阶段工程工作流不是新的。",
+      "gap": "不足以直接证明目标导向 LLM 方法在验收证据缺失下的收益。"
+    },
+    {
+      "id": "S05",
+      "title": "LLMs4OL: Large Language Models for Ontology Learning",
+      "authors": [
+        "Hamed Babaei Giglou",
+        "Jennifer D'Souza",
+        "Sören Auer"
+      ],
+      "year": 2023,
+      "arxiv": "2307.16648",
+      "doi": "10.48550/arXiv.2307.16648",
+      "url": "https://arxiv.org/abs/2307.16648",
+      "repository": "https://github.com/HamedBabaei/LLMs4OL",
+      "verification": "作者 arXiv 摘要与接受说明；代码地址来自公开仓库检索，未运行",
+      "contribution": "评估九类 LLM 的术语类型、分类体系、非分类关系三个任务，涉及 WordNet、GeoNames、UMLS。",
+      "overlap": "LLM 辅助本体子任务。",
+      "not_novel": "用 LLM 抽取概念关系不是创新。",
+      "gap": "完整业务 CQ、证据决策和人机成本不是该摘要所述评估目标。"
+    },
+    {
+      "id": "S06",
+      "title": "OntoChat: a Framework for Conversational Ontology Engineering using Language Models",
+      "authors": [
+        "Bohui Zhang",
+        "Valentina Anita Carriero",
+        "Katrin Schreiberhuber",
+        "Stefani Tsaneva",
+        "Lucía Sánchez González",
+        "Jongmo Kim",
+        "Jacopo de Berardinis"
+      ],
+      "year": 2024,
+      "arxiv": "2403.05921",
+      "doi": "10.48550/arXiv.2403.05921",
+      "url": "https://arxiv.org/abs/2403.05921",
+      "fulltext": "https://arxiv.org/html/2403.05921v1",
+      "repository": "https://github.com/King-s-Knowledge-Graph-Lab/OntoChat",
+      "verification": "arXiv 元数据与全文 §§3–4，代码和 MIT 声明来自原文；未执行",
+      "contribution": "对话支持用户故事、CQ 提取过滤分析及本体测试；Music Meta 试验含领域专家和本体工程师反馈。",
+      "overlap": "人在回路的目标澄清与 CQ 工作台。",
+      "not_novel": "对话、人工引导、CQ 生成与覆盖测试不新。",
+      "gap": "以受控不完整证据评估审核错误与必要追问，而非只评价故事和 CQ 质量。"
+    },
+    {
+      "id": "S07",
+      "title": "Ontology Generation using Large Language Models",
+      "authors": [
+        "Anna Sofia Lippolis",
+        "Mohammad Javad Saeedizade",
+        "Robin Keskisärkkä",
+        "Sara Zuppiroli",
+        "Miguel Ceriani",
+        "Aldo Gangemi",
+        "Eva Blomqvist",
+        "Andrea Giovanni Nuzzolese"
+      ],
+      "year": 2025,
+      "arxiv": "2503.05388",
+      "doi": "10.48550/arXiv.2503.05388",
+      "url": "https://arxiv.org/abs/2503.05388",
+      "fulltext": "https://arxiv.org/html/2503.05388v1",
+      "repository": "https://github.com/dersuchendee/Onto-Generation",
+      "verification": "原文 §§4–6 与仓库页面；未运行",
+      "contribution": "Memoryless CQbyCQ 与 Ontogenia，从故事/CQ 生成 OWL；比较独立和增量建模，评价 CQ 覆盖、冗余与专家判断。",
+      "overlap": "最接近 CQ 驱动增量建模及小模型评价。",
+      "not_novel": "增量 CQ 建模和少冗余模型不能独立称新。",
+      "gap": "其增量指多 CQ 合并/累积，并非外部证据随时间到达；可研究证据更新后的修订正确性与业务风险。"
+    },
+    {
+      "id": "S08",
+      "title": "Extended NeOn-GPT: Advancing LLM-Powered Ontology Learning Through Ontology Reuse and Automated Verification",
+      "authors": [
+        "Nadeen Fathallah",
+        "Arunav Das",
+        "Stefano De Giorgis",
+        "Andrea Poltronieri",
+        "Peter Haase",
+        "Liubov Kovriguina",
+        "Albert Meroño-Peñuela",
+        "Elena Simperl",
+        "Steffen Staab",
+        "Alsayed Algergawy"
+      ],
+      "year": 2026,
+      "doi": "10.1177/22104968261453138",
+      "url": "https://journals.sagepub.com/doi/10.1177/22104968261453138",
+      "repository": "https://github.com/NadeenAhmad/neon-gpt-extended",
+      "verification": "出版社全文摘要及代码脚注；仓库页面打开，未运行",
+      "contribution": "NeOn 多步生成，加本体复用、外部工具验证和修复；跨四领域比较多模型。",
+      "overlap": "工程流水线、复用、验证修复。",
+      "not_novel": "多步提示或自动校验修复不是新贡献。",
+      "gap": "本课题应增加审核证据状态与成本约束，而非重复结构/词汇相似性。"
+    },
+    {
+      "id": "S09",
+      "title": "Enhancing Ontology Engineering with Large Language Models: A Stage-Wise Human-in-the-Loop Study",
+      "authors": [
+        "Xuefei Ding",
+        "Omid Pournik",
+        "Saadullah Farooq Abbasi",
+        "Linxue Bai",
+        "Gregory Epiphaniou",
+        "Nicholas Matragkas",
+        "Stuart Harrison",
+        "Carlos Luis Parra-calderón",
+        "Theodoros Arvanitis"
+      ],
+      "year": 2026,
+      "doi": "10.3233/SHTI260304",
+      "url": "https://journals.sagepub.com/doi/full/10.3233/SHTI260304",
+      "verification": "出版社全文 §§2–3 与表1",
+      "contribution": "医疗标准文本三个检查点的人机协同对照：术语、类层次、关系；人工输入改善后续阶段匹配指标。",
+      "overlap": "分阶段人工输入、语料约束、抑制关系过生成。",
+      "not_novel": "HITL 比 LLM-only 好不是新的研究问题。",
+      "gap": "需预算匹配、证据批次控制和实际审核结果指标，避免把多给人工信息误当算法优势。"
+    },
+    {
+      "id": "S10",
+      "title": "CQ4OE: A benchmark for assessing LLM-assisted ontology generation from competency questions",
+      "authors": [
+        "Jiayi Li",
+        "Ziyuan Wang",
+        "Daniel Garijo",
+        "María Poveda-Villalón"
+      ],
+      "year": 2026,
+      "arxiv": "2609.26029",
+      "doi": "10.48550/arXiv.2609.26029",
+      "url": "https://arxiv.org/abs/2609.26029",
+      "fulltext": "https://arxiv.org/html/2609.26029v1",
+      "repository": "https://github.com/oeg-upm/cq4oe-benchmark",
+      "verification": "arXiv 正文及仓库 README；DOI 页面标 pending registration，优先引用 arXiv ID；未运行",
+      "contribution": "CQ→术语/公理金标准，CQ2Term 与 CQ2Onto，六本体；比较一次性、迭代和多智能体。",
+      "overlap": "CQ 溯源、多维评估和强基线。",
+      "not_novel": "CQ 到公理可追踪或一次性与迭代对照本身不新。",
+      "gap": "可增加 ABox 证据批次及审核状态标签；其 CQ 公理覆盖不等于在真实证据上答对业务问题。"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "output": "results/stage-02/probes/development-review_all.report.json",
+  "metrics": {
+    "case_n": 20,
+    "positive_n": 6,
+    "negative_n": 14,
+    "missing_n": 0,
+    "completion_rate": 1.0,
+    "exact_decision_correct_n": 7,
+    "exact_decision_accuracy": 0.35,
+    "false_close_n": 0,
+    "false_close_rate": 0.0,
+    "positive_close_recall": 0.0,
+    "conservative_false_close_rate_if_missing_negatives_close": 0.0,
+    "decision_counts": {
+      "needs_review": 20
+    },
+    "false_close_case_ids": [],
+    "missing_case_ids": []
+  }
+}

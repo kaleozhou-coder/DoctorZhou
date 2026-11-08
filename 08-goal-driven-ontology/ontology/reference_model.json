@@ -1,0 +1,29 @@
+{
+  "id": "goal-driven-ontology/reference-P0",
+  "version": "0.1.0",
+  "status": "AI-authored demonstration; not human-reviewed; not a normative financial policy",
+  "goal": "Determine whether the missing-acceptance-evidence exception on a positive goods invoice line can be proposed for closure under synthetic policy P0.",
+  "classes": ["InvoiceLine", "PurchaseOrderLine", "AcceptanceRecord", "DeliveryRecord", "SourceDocument", "PolicyVersion", "EvidenceAssessment"],
+  "properties": ["orderLineIdentity", "acceptedQuantity", "quantityUnit", "acceptanceStatus", "acceptorAuthorized", "evidenceId", "sourceId", "sourceLocator", "isRevoked", "applicablePolicyVersion"],
+  "semantic_features": {
+    "order_line_identity": true,
+    "unique_evidence_id": true,
+    "policy_version": true,
+    "revocation": true,
+    "authorization": true,
+    "status": true,
+    "unit_identity": true,
+    "provenance": true,
+    "quantity_coverage": true,
+    "accept_delivery_as_acceptance": false
+  },
+  "decision_states": ["close_eligible", "needs_evidence", "needs_review"],
+  "assumptions": [
+    "Synthetic P0 policy is a test specification, not actual company policy or legal advice.",
+    "Quantities of distinct evidence records refer to nonoverlapping lots; overlap cannot be resolved in this pilot.",
+    "A directly supplied authorization flag is trusted for the test; real signer authorization must be separately verified.",
+    "Only positive-quantity goods invoices and exact unit identifiers are supported.",
+    "Closing the acceptance-evidence exception neither approves payment nor verifies prices, tax, fraud, contract compliance or all other controls.",
+    "Missing evidence does not establish that acceptance failed in the world."
+  ]
+}

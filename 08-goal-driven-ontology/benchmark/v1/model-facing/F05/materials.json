@@ -1,0 +1,50 @@
+{
+  "family_id": "F05",
+  "split": "test",
+  "synthetic": true,
+  "source_kind": "invented_policy",
+  "policy_paragraphs": [
+    {
+      "source_id": "F05-POL",
+      "locator": "p01",
+      "text": "This is an invented policy for positive-quantity goods in unit EA, a single invoice line, and its unique explicitly mapped purchase-order line. No service, return, credit, unit conversion, payment approval, or real transaction is covered. All named people, records, dates and organizational roles are synthetic. A closure recommendation never authorizes payment."
+    },
+    {
+      "source_id": "F05-POL",
+      "locator": "p02",
+      "text": "The request includes invoice_quantity, po_line and receipt_on (ISO date or null). The boundary is 2026-07-01 inclusive. Governing regime is selected by receipt_on, never invoice_on, reviewed_on or signed_on. A receipt before the boundary uses OLD; one on or after uses NEW. The regime claim on the acceptance is not itself authoritative. Check 1: null receipt_on returns needs_evidence / receipt_date_missing."
+    },
+    {
+      "source_id": "F05-POL",
+      "locator": "p03",
+      "text": "The single acceptance is signed by an authenticated authorized receiver, maps to the target line, and has signed_on, declared_regime OLD or NEW, quantity, and status accepted or rejected. Check 2: signed_on before receipt_on returns needs_review / acceptance_before_receipt. Check 3: rejected returns needs_review / explicit_rejection."
+    },
+    {
+      "source_id": "F05-POL",
+      "locator": "p04",
+      "text": "Check 4: Under OLD an OLD acceptance is valid even if signed after the boundary; a NEW declaration is needs_review / regime_mismatch. Under NEW a NEW acceptance requires an independent quality_release, whose released value is true and whose released_on is on or after receipt_on. Absent release, released false, null released_on, or released_on before receipt_on returns needs_evidence / quality_release_missing. A false release is no proof of release, not a rejection."
+    },
+    {
+      "source_id": "F05-POL",
+      "locator": "p05",
+      "text": "Under NEW an OLD acceptance is grandfathered only by an independent transition_register entry for the exact po_line, explicitly permitted=true, and grandfather_until on or after receipt_on (inclusive). Missing entry, permitted=false, null grandfather_until, or expired deadline returns needs_evidence / grandfathering_unproven. A valid grandfathered OLD acceptance does not require quality_release. A transition entry for another line cannot be used. No inference from contract or invoice dates is allowed."
+    },
+    {
+      "source_id": "F05-POL",
+      "locator": "p06",
+      "text": "Check 5: After regime evidence is valid, acceptance.quantity must be at least invoice_quantity or return needs_evidence / quantity_shortfall. Otherwise close_eligible / criteria_met. Apply receipt-date, chronology, rejection, regime/evidence and quantity checks in exactly that order. All case dates are valid ISO dates or explicitly null, and the one supplied acceptance has no revocation or dispute."
+    },
+    {
+      "source_id": "F05-POL",
+      "locator": "p07",
+      "text": "Apply the numbered decision checks below in their stated order and return exactly one primary reason code for the first decisive check. If all checks pass return close_eligible / criteria_met. Missing information is not rejection. needs_review means an explicit contradiction, adverse finding or structural inconsistency requiring a person; needs_evidence means evidence is absent or insufficient. Only supplied paragraphs are sources; never invent missing facts or locators."
+    }
+  ],
+  "document_schema": {
+    "request": "{po_line,invoice_quantity,receipt_on:date|null,invoice_on,reviewed_on}",
+    "acceptance": "{signed_on,declared_regime:OLD|NEW,quantity,status:accepted|rejected}",
+    "quality_release": "null or {released:boolean,released_on:date|null}",
+    "transition_register": "null or {po_line,permitted:boolean,grandfather_until:date|null}"
+  },
+  "task": "Derive a source-grounded ontology and operational decision rules. Do not infer payment authorization. Do not read evaluator files."
+}

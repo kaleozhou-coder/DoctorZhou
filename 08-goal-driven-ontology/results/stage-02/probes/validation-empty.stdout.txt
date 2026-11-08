@@ -1,0 +1,32 @@
+{
+  "output": "results/stage-02/probes/validation-empty.report.json",
+  "metrics": {
+    "case_n": 10,
+    "positive_n": 4,
+    "negative_n": 6,
+    "missing_n": 10,
+    "completion_rate": 0.0,
+    "exact_decision_correct_n": 0,
+    "exact_decision_accuracy": 0.0,
+    "false_close_n": 0,
+    "false_close_rate": 0.0,
+    "positive_close_recall": 0.0,
+    "conservative_false_close_rate_if_missing_negatives_close": 1.0,
+    "decision_counts": {
+      "MISSING": 10
+    },
+    "false_close_case_ids": [],
+    "missing_case_ids": [
+      "F03-C01",
+      "F03-C02",
+      "F03-C03",
+      "F03-C04",
+      "F03-C05",
+      "F03-C06",
+      "F03-C07",
+      "F03-C08",
+      "F03-C09",
+      "F03-C10"
+    ]
+  }
+}

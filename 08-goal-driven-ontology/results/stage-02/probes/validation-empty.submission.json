@@ -1,0 +1,12 @@
+{
+  "run": {
+    "run_id": "validation-empty",
+    "method": "empty",
+    "execution_kind": "engineering_probe",
+    "benchmark_freeze_sha256": "99e026b7cc47a87da948b4eaa82af3808e46dcfaab9af67149f4f800de5767b3",
+    "split": "validation",
+    "uses_labels": true,
+    "purpose": "Evaluator plumbing check; not a model output"
+  },
+  "predictions": []
+}

@@ -1,0 +1,14 @@
+{
+  "export_sha256": "dd7e6a9b29fc8ac1bb76adfddea3f9419d680bed538d32622d4654614be24dc1",
+  "files": [
+    "model-facing/F01/materials.json",
+    "model-facing/F02/materials.json",
+    "model-facing/F03/materials.json",
+    "model-facing/F04/materials.json",
+    "model-facing/F05/materials.json",
+    "model-facing/F06/materials.json",
+    "model-input-manifest.json"
+  ],
+  "family_n": 6,
+  "benchmark_freeze_sha256": "99e026b7cc47a87da948b4eaa82af3808e46dcfaab9af67149f4f800de5767b3"
+}

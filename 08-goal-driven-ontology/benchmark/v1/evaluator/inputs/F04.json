@@ -1,0 +1,569 @@
+{
+  "family_id": "F04",
+  "split": "test",
+  "cases": [
+    {
+      "case_id": "F04-C01",
+      "family_id": "F04",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F04-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F04-C01-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"as_of\": \"2026-06-15\", \"invoice_quantity\": 8, \"po_line\": \"PO-R/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-R/1",
+              "invoice_quantity": 8,
+              "as_of": "2026-06-15"
+            }
+          }
+        },
+        {
+          "source_id": "F04-C01-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance_ledger\": {\"events\": [], \"records\": [{\"created_on\": \"2026-05-01\", \"po_line\": \"PO-R/1\", \"quantity\": 8, \"record_id\": \"a\", \"status\": \"accepted\"}]}}",
+          "facts": {
+            "acceptance_ledger": {
+              "records": [
+                {
+                  "record_id": "a",
+                  "po_line": "PO-R/1",
+                  "status": "accepted",
+                  "quantity": 8,
+                  "created_on": "2026-05-01"
+                }
+              ],
+              "events": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F04-C02",
+      "family_id": "F04",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F04-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F04-C02-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"as_of\": \"2026-06-15\", \"invoice_quantity\": 8, \"po_line\": \"PO-R/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-R/1",
+              "invoice_quantity": 8,
+              "as_of": "2026-06-15"
+            }
+          }
+        },
+        {
+          "source_id": "F04-C02-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance_ledger\": {\"events\": [{\"effective_on\": \"2026-06-01\", \"event_id\": \"e\", \"new_id\": \"b\", \"old_id\": \"a\", \"type\": \"supersede\"}], \"records\": [{\"created_on\": \"2026-05-01\", \"po_line\": \"PO-R/1\", \"quantity\": 8, \"record_id\": \"a\", \"status\": \"accepted\"}, {\"created_on\": \"2026-05-01\", \"po_line\": \"PO-R/1\", \"quantity\": 8, \"record_id\": \"b\", \"status\": \"accepted\"}]}}",
+          "facts": {
+            "acceptance_ledger": {
+              "records": [
+                {
+                  "record_id": "a",
+                  "po_line": "PO-R/1",
+                  "status": "accepted",
+                  "quantity": 8,
+                  "created_on": "2026-05-01"
+                },
+                {
+                  "record_id": "b",
+                  "po_line": "PO-R/1",
+                  "status": "accepted",
+                  "quantity": 8,
+                  "created_on": "2026-05-01"
+                }
+              ],
+              "events": [
+                {
+                  "event_id": "e",
+                  "type": "supersede",
+                  "old_id": "a",
+                  "effective_on": "2026-06-01",
+                  "new_id": "b"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F04-C03",
+      "family_id": "F04",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F04-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F04-C03-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"as_of\": \"2026-06-15\", \"invoice_quantity\": 8, \"po_line\": \"PO-R/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-R/1",
+              "invoice_quantity": 8,
+              "as_of": "2026-06-15"
+            }
+          }
+        },
+        {
+          "source_id": "F04-C03-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance_ledger\": {\"events\": [{\"effective_on\": \"2026-06-01\", \"event_id\": \"e1\", \"new_id\": \"b\", \"old_id\": \"a\", \"type\": \"supersede\"}, {\"effective_on\": \"2026-06-01\", \"event_id\": \"e2\", \"new_id\": \"c\", \"old_id\": \"b\", \"type\": \"supersede\"}, {\"effective_on\": \"2026-06-01\", \"event_id\": \"e3\", \"old_id\": \"a\", \"type\": \"revoke\"}], \"records\": [{\"created_on\": \"2026-05-01\", \"po_line\": \"PO-R/1\", \"quantity\": 8, \"record_id\": \"a\", \"status\": \"accepted\"}, {\"created_on\": \"2026-05-01\", \"po_line\": \"PO-R/1\", \"quantity\": 8, \"record_id\": \"b\", \"status\": \"accepted\"}, {\"created_on\": \"2026-05-01\", \"po_line\": \"PO-R/1\", \"quantity\": 8, \"record_id\": \"c\", \"status\": \"accepted\"}]}}",
+          "facts": {
+            "acceptance_ledger": {
+              "records": [
+                {
+                  "record_id": "a",
+                  "po_line": "PO-R/1",
+                  "status": "accepted",
+                  "quantity": 8,
+                  "created_on": "2026-05-01"
+                },
+                {
+                  "record_id": "b",
+                  "po_line": "PO-R/1",
+                  "status": "accepted",
+                  "quantity": 8,
+                  "created_on": "2026-05-01"
+                },
+                {
+                  "record_id": "c",
+                  "po_line": "PO-R/1",
+                  "status": "accepted",
+                  "quantity": 8,
+                  "created_on": "2026-05-01"
+                }
+              ],
+              "events": [
+                {
+                  "event_id": "e1",
+                  "type": "supersede",
+                  "old_id": "a",
+                  "effective_on": "2026-06-01",
+                  "new_id": "b"
+                },
+                {
+                  "event_id": "e2",
+                  "type": "supersede",
+                  "old_id": "b",
+                  "effective_on": "2026-06-01",
+                  "new_id": "c"
+                },
+                {
+                  "event_id": "e3",
+                  "type": "revoke",
+                  "old_id": "a",
+                  "effective_on": "2026-06-01"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F04-C04",
+      "family_id": "F04",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F04-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F04-C04-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"as_of\": \"2026-06-15\", \"invoice_quantity\": 8, \"po_line\": \"PO-R/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-R/1",
+              "invoice_quantity": 8,
+              "as_of": "2026-06-15"
+            }
+          }
+        },
+        {
+          "source_id": "F04-C04-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance_ledger\": {\"events\": [{\"effective_on\": \"2026-06-01\", \"event_id\": \"e\", \"old_id\": \"a\", \"type\": \"revoke\"}], \"records\": [{\"created_on\": \"2026-05-01\", \"po_line\": \"PO-R/1\", \"quantity\": 8, \"record_id\": \"a\", \"status\": \"accepted\"}]}}",
+          "facts": {
+            "acceptance_ledger": {
+              "records": [
+                {
+                  "record_id": "a",
+                  "po_line": "PO-R/1",
+                  "status": "accepted",
+                  "quantity": 8,
+                  "created_on": "2026-05-01"
+                }
+              ],
+              "events": [
+                {
+                  "event_id": "e",
+                  "type": "revoke",
+                  "old_id": "a",
+                  "effective_on": "2026-06-01"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F04-C05",
+      "family_id": "F04",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F04-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F04-C05-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"as_of\": \"2026-06-15\", \"invoice_quantity\": 8, \"po_line\": \"PO-R/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-R/1",
+              "invoice_quantity": 8,
+              "as_of": "2026-06-15"
+            }
+          }
+        },
+        {
+          "source_id": "F04-C05-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance_ledger\": {\"events\": [{\"effective_on\": \"2026-06-01\", \"event_id\": \"e\", \"new_id\": \"missing\", \"old_id\": \"a\", \"type\": \"supersede\"}], \"records\": [{\"created_on\": \"2026-05-01\", \"po_line\": \"PO-R/1\", \"quantity\": 8, \"record_id\": \"a\", \"status\": \"accepted\"}]}}",
+          "facts": {
+            "acceptance_ledger": {
+              "records": [
+                {
+                  "record_id": "a",
+                  "po_line": "PO-R/1",
+                  "status": "accepted",
+                  "quantity": 8,
+                  "created_on": "2026-05-01"
+                }
+              ],
+              "events": [
+                {
+                  "event_id": "e",
+                  "type": "supersede",
+                  "old_id": "a",
+                  "effective_on": "2026-06-01",
+                  "new_id": "missing"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F04-C06",
+      "family_id": "F04",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F04-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F04-C06-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"as_of\": \"2026-06-15\", \"invoice_quantity\": 8, \"po_line\": \"PO-R/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-R/1",
+              "invoice_quantity": 8,
+              "as_of": "2026-06-15"
+            }
+          }
+        },
+        {
+          "source_id": "F04-C06-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance_ledger\": {\"events\": [{\"effective_on\": \"2026-06-01\", \"event_id\": \"e\", \"new_id\": \"b\", \"old_id\": \"a\", \"type\": \"supersede\"}], \"records\": [{\"created_on\": \"2026-05-01\", \"po_line\": \"PO-R/1\", \"quantity\": 8, \"record_id\": \"a\", \"status\": \"accepted\"}, {\"created_on\": \"2026-05-01\", \"po_line\": \"PO-R/1\", \"quantity\": 4, \"record_id\": \"b\", \"status\": \"accepted\"}]}}",
+          "facts": {
+            "acceptance_ledger": {
+              "records": [
+                {
+                  "record_id": "a",
+                  "po_line": "PO-R/1",
+                  "status": "accepted",
+                  "quantity": 8,
+                  "created_on": "2026-05-01"
+                },
+                {
+                  "record_id": "b",
+                  "po_line": "PO-R/1",
+                  "status": "accepted",
+                  "quantity": 4,
+                  "created_on": "2026-05-01"
+                }
+              ],
+              "events": [
+                {
+                  "event_id": "e",
+                  "type": "supersede",
+                  "old_id": "a",
+                  "effective_on": "2026-06-01",
+                  "new_id": "b"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F04-C07",
+      "family_id": "F04",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F04-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F04-C07-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"as_of\": \"2026-06-15\", \"invoice_quantity\": 8, \"po_line\": \"PO-R/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-R/1",
+              "invoice_quantity": 8,
+              "as_of": "2026-06-15"
+            }
+          }
+        },
+        {
+          "source_id": "F04-C07-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance_ledger\": {\"events\": [{\"effective_on\": \"2026-06-01\", \"event_id\": \"e\", \"new_id\": \"b\", \"old_id\": \"a\", \"type\": \"supersede\"}], \"records\": [{\"created_on\": \"2026-05-01\", \"po_line\": \"PO-R/1\", \"quantity\": 8, \"record_id\": \"a\", \"status\": \"accepted\"}, {\"created_on\": \"2026-05-01\", \"po_line\": \"PO-R/1\", \"quantity\": 8, \"record_id\": \"b\", \"status\": \"rejected\"}]}}",
+          "facts": {
+            "acceptance_ledger": {
+              "records": [
+                {
+                  "record_id": "a",
+                  "po_line": "PO-R/1",
+                  "status": "accepted",
+                  "quantity": 8,
+                  "created_on": "2026-05-01"
+                },
+                {
+                  "record_id": "b",
+                  "po_line": "PO-R/1",
+                  "status": "rejected",
+                  "quantity": 8,
+                  "created_on": "2026-05-01"
+                }
+              ],
+              "events": [
+                {
+                  "event_id": "e",
+                  "type": "supersede",
+                  "old_id": "a",
+                  "effective_on": "2026-06-01",
+                  "new_id": "b"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F04-C08",
+      "family_id": "F04",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F04-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F04-C08-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"as_of\": \"2026-06-15\", \"invoice_quantity\": 8, \"po_line\": \"PO-R/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-R/1",
+              "invoice_quantity": 8,
+              "as_of": "2026-06-15"
+            }
+          }
+        },
+        {
+          "source_id": "F04-C08-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance_ledger\": {\"events\": [{\"effective_on\": \"2026-06-01\", \"event_id\": \"e1\", \"new_id\": \"b\", \"old_id\": \"a\", \"type\": \"supersede\"}, {\"effective_on\": \"2026-06-01\", \"event_id\": \"e2\", \"new_id\": \"a\", \"old_id\": \"b\", \"type\": \"supersede\"}], \"records\": [{\"created_on\": \"2026-05-01\", \"po_line\": \"PO-R/1\", \"quantity\": 8, \"record_id\": \"a\", \"status\": \"accepted\"}, {\"created_on\": \"2026-05-01\", \"po_line\": \"PO-R/1\", \"quantity\": 8, \"record_id\": \"b\", \"status\": \"accepted\"}]}}",
+          "facts": {
+            "acceptance_ledger": {
+              "records": [
+                {
+                  "record_id": "a",
+                  "po_line": "PO-R/1",
+                  "status": "accepted",
+                  "quantity": 8,
+                  "created_on": "2026-05-01"
+                },
+                {
+                  "record_id": "b",
+                  "po_line": "PO-R/1",
+                  "status": "accepted",
+                  "quantity": 8,
+                  "created_on": "2026-05-01"
+                }
+              ],
+              "events": [
+                {
+                  "event_id": "e1",
+                  "type": "supersede",
+                  "old_id": "a",
+                  "effective_on": "2026-06-01",
+                  "new_id": "b"
+                },
+                {
+                  "event_id": "e2",
+                  "type": "supersede",
+                  "old_id": "b",
+                  "effective_on": "2026-06-01",
+                  "new_id": "a"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F04-C09",
+      "family_id": "F04",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F04-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F04-C09-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"as_of\": \"2026-06-15\", \"invoice_quantity\": 8, \"po_line\": \"PO-R/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-R/1",
+              "invoice_quantity": 8,
+              "as_of": "2026-06-15"
+            }
+          }
+        },
+        {
+          "source_id": "F04-C09-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance_ledger\": {\"events\": [{\"effective_on\": \"2026-06-01\", \"event_id\": \"e1\", \"new_id\": \"b\", \"old_id\": \"a\", \"type\": \"supersede\"}, {\"effective_on\": \"2026-06-01\", \"event_id\": \"e2\", \"new_id\": \"c\", \"old_id\": \"a\", \"type\": \"supersede\"}], \"records\": [{\"created_on\": \"2026-05-01\", \"po_line\": \"PO-R/1\", \"quantity\": 8, \"record_id\": \"a\", \"status\": \"accepted\"}, {\"created_on\": \"2026-05-01\", \"po_line\": \"PO-R/1\", \"quantity\": 8, \"record_id\": \"b\", \"status\": \"accepted\"}, {\"created_on\": \"2026-05-01\", \"po_line\": \"PO-R/1\", \"quantity\": 8, \"record_id\": \"c\", \"status\": \"accepted\"}]}}",
+          "facts": {
+            "acceptance_ledger": {
+              "records": [
+                {
+                  "record_id": "a",
+                  "po_line": "PO-R/1",
+                  "status": "accepted",
+                  "quantity": 8,
+                  "created_on": "2026-05-01"
+                },
+                {
+                  "record_id": "b",
+                  "po_line": "PO-R/1",
+                  "status": "accepted",
+                  "quantity": 8,
+                  "created_on": "2026-05-01"
+                },
+                {
+                  "record_id": "c",
+                  "po_line": "PO-R/1",
+                  "status": "accepted",
+                  "quantity": 8,
+                  "created_on": "2026-05-01"
+                }
+              ],
+              "events": [
+                {
+                  "event_id": "e1",
+                  "type": "supersede",
+                  "old_id": "a",
+                  "effective_on": "2026-06-01",
+                  "new_id": "b"
+                },
+                {
+                  "event_id": "e2",
+                  "type": "supersede",
+                  "old_id": "a",
+                  "effective_on": "2026-06-01",
+                  "new_id": "c"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F04-C10",
+      "family_id": "F04",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F04-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F04-C10-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"as_of\": \"2026-06-15\", \"invoice_quantity\": 8, \"po_line\": \"PO-R/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-R/1",
+              "invoice_quantity": 8,
+              "as_of": "2026-06-15"
+            }
+          }
+        },
+        {
+          "source_id": "F04-C10-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance_ledger\": {\"events\": [{\"effective_on\": \"2026-06-16\", \"event_id\": \"e\", \"old_id\": \"a\", \"type\": \"revoke\"}], \"records\": [{\"created_on\": \"2026-05-01\", \"po_line\": \"PO-R/1\", \"quantity\": 8, \"record_id\": \"a\", \"status\": \"accepted\"}]}}",
+          "facts": {
+            "acceptance_ledger": {
+              "records": [
+                {
+                  "record_id": "a",
+                  "po_line": "PO-R/1",
+                  "status": "accepted",
+                  "quantity": 8,
+                  "created_on": "2026-05-01"
+                }
+              ],
+              "events": [
+                {
+                  "event_id": "e",
+                  "type": "revoke",
+                  "old_id": "a",
+                  "effective_on": "2026-06-16"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "family_id": "F03",
+  "split": "validation",
+  "synthetic": true,
+  "source_kind": "invented_policy",
+  "policy_paragraphs": [
+    {
+      "source_id": "F03-POL",
+      "locator": "p01",
+      "text": "This is an invented policy for positive-quantity goods in unit EA, a single invoice line, and its unique explicitly mapped purchase-order line. No service, return, credit, unit conversion, payment approval, or real transaction is covered. All named people, records, dates and organizational roles are synthetic. A closure recommendation never authorizes payment."
+    },
+    {
+      "source_id": "F03-POL",
+      "locator": "p02",
+      "text": "The request identifies invoice_quantity and po_line. All inspection entries have an authenticated authorized inspector and independent report_id. Entries map to a po_line, phase final or preliminary, status accepted/rejected/pending/unknown, and quantity. Only final entries for the target po_line are relevant; preliminary and other-line entries never affect a decision. The snapshot is the complete set of available reports, not proof that absent evidence exists."
+    },
+    {
+      "source_id": "F03-POL",
+      "locator": "p03",
+      "text": "Check 1: If relevant final entries include both accepted and rejected, return needs_review / contradictory_final_status even if the accepted quantity covers the invoice or its timestamp is later. There is no last-write-wins rule."
+    },
+    {
+      "source_id": "F03-POL",
+      "locator": "p04",
+      "text": "Check 2: If a relevant final rejection exists and no acceptance exists, return needs_review / final_rejection. An explicit rejection cannot be converted to missing evidence."
+    },
+    {
+      "source_id": "F03-POL",
+      "locator": "p05",
+      "text": "Check 3: If no relevant final acceptance exists, return needs_evidence / final_acceptance_missing. Check 4: Each report describes a cumulative whole-line measurement, not additive lots. Use the maximum accepted quantity among relevant final acceptances. If it is less than invoice_quantity return needs_evidence / quantity_shortfall; otherwise return close_eligible / criteria_met. Pending/unknown alongside acceptance do not contradict it."
+    },
+    {
+      "source_id": "F03-POL",
+      "locator": "p06",
+      "text": "Apply the numbered decision checks below in their stated order and return exactly one primary reason code for the first decisive check. If all checks pass return close_eligible / criteria_met. Missing information is not rejection. needs_review means an explicit contradiction, adverse finding or structural inconsistency requiring a person; needs_evidence means evidence is absent or insufficient. Only supplied paragraphs are sources; never invent missing facts or locators."
+    }
+  ],
+  "document_schema": {
+    "request": "{po_line,invoice_quantity}",
+    "inspection_register": "array {report_id,po_line,phase:final|preliminary,status:accepted|rejected|pending|unknown,quantity,recorded_on}; complete available snapshot"
+  },
+  "task": "Derive a source-grounded ontology and operational decision rules. Do not infer payment authorization. Do not read evaluator files."
+}

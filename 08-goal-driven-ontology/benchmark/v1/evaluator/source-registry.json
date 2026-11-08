@@ -1,0 +1,592 @@
+{
+  "sources": [
+    {
+      "source_id": "F01-C01-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F01-C02-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F01-C03-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F01-C04-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F01-C05-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F01-C06-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F01-C07-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F01-C08-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F01-C09-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F01-C10-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F01-POL",
+      "locators": [
+        "p01",
+        "p02",
+        "p03",
+        "p04",
+        "p05",
+        "p06"
+      ]
+    },
+    {
+      "source_id": "F02-C01-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03"
+      ]
+    },
+    {
+      "source_id": "F02-C02-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03"
+      ]
+    },
+    {
+      "source_id": "F02-C03-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03"
+      ]
+    },
+    {
+      "source_id": "F02-C04-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03"
+      ]
+    },
+    {
+      "source_id": "F02-C05-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03"
+      ]
+    },
+    {
+      "source_id": "F02-C06-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03"
+      ]
+    },
+    {
+      "source_id": "F02-C07-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03"
+      ]
+    },
+    {
+      "source_id": "F02-C08-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03"
+      ]
+    },
+    {
+      "source_id": "F02-C09-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03"
+      ]
+    },
+    {
+      "source_id": "F02-C10-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03"
+      ]
+    },
+    {
+      "source_id": "F02-POL",
+      "locators": [
+        "p01",
+        "p02",
+        "p03",
+        "p04",
+        "p05",
+        "p06"
+      ]
+    },
+    {
+      "source_id": "F03-C01-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F03-C02-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F03-C03-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F03-C04-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F03-C05-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F03-C06-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F03-C07-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F03-C08-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F03-C09-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F03-C10-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F03-POL",
+      "locators": [
+        "p01",
+        "p02",
+        "p03",
+        "p04",
+        "p05",
+        "p06"
+      ]
+    },
+    {
+      "source_id": "F04-C01-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F04-C02-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F04-C03-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F04-C04-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F04-C05-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F04-C06-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F04-C07-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F04-C08-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F04-C09-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F04-C10-DOC",
+      "locators": [
+        "p01",
+        "p02"
+      ]
+    },
+    {
+      "source_id": "F04-POL",
+      "locators": [
+        "p01",
+        "p02",
+        "p03",
+        "p04",
+        "p05",
+        "p06"
+      ]
+    },
+    {
+      "source_id": "F05-C01-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03",
+        "p04"
+      ]
+    },
+    {
+      "source_id": "F05-C02-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03",
+        "p04"
+      ]
+    },
+    {
+      "source_id": "F05-C03-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03",
+        "p04"
+      ]
+    },
+    {
+      "source_id": "F05-C04-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03",
+        "p04"
+      ]
+    },
+    {
+      "source_id": "F05-C05-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03",
+        "p04"
+      ]
+    },
+    {
+      "source_id": "F05-C06-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03",
+        "p04"
+      ]
+    },
+    {
+      "source_id": "F05-C07-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03",
+        "p04"
+      ]
+    },
+    {
+      "source_id": "F05-C08-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03",
+        "p04"
+      ]
+    },
+    {
+      "source_id": "F05-C09-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03",
+        "p04"
+      ]
+    },
+    {
+      "source_id": "F05-C10-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03",
+        "p04"
+      ]
+    },
+    {
+      "source_id": "F05-POL",
+      "locators": [
+        "p01",
+        "p02",
+        "p03",
+        "p04",
+        "p05",
+        "p06",
+        "p07"
+      ]
+    },
+    {
+      "source_id": "F06-C01-ATT",
+      "locators": [
+        "s01"
+      ]
+    },
+    {
+      "source_id": "F06-C01-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03"
+      ]
+    },
+    {
+      "source_id": "F06-C02-ATT",
+      "locators": [
+        "s01"
+      ]
+    },
+    {
+      "source_id": "F06-C02-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03"
+      ]
+    },
+    {
+      "source_id": "F06-C03-ATT",
+      "locators": [
+        "appendix.7"
+      ]
+    },
+    {
+      "source_id": "F06-C03-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03"
+      ]
+    },
+    {
+      "source_id": "F06-C04-ATT",
+      "locators": [
+        "s01"
+      ]
+    },
+    {
+      "source_id": "F06-C04-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03"
+      ]
+    },
+    {
+      "source_id": "F06-C05-ATT",
+      "locators": [
+        "s01"
+      ]
+    },
+    {
+      "source_id": "F06-C05-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03"
+      ]
+    },
+    {
+      "source_id": "F06-C06-ATT",
+      "locators": [
+        "s01"
+      ]
+    },
+    {
+      "source_id": "F06-C06-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03"
+      ]
+    },
+    {
+      "source_id": "F06-C07-ATT",
+      "locators": [
+        "s01"
+      ]
+    },
+    {
+      "source_id": "F06-C07-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03"
+      ]
+    },
+    {
+      "source_id": "F06-C08-ATT",
+      "locators": [
+        "s01"
+      ]
+    },
+    {
+      "source_id": "F06-C08-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03"
+      ]
+    },
+    {
+      "source_id": "F06-C09-ATT",
+      "locators": [
+        "s01"
+      ]
+    },
+    {
+      "source_id": "F06-C09-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03"
+      ]
+    },
+    {
+      "source_id": "F06-C10-ATT",
+      "locators": [
+        "s01"
+      ]
+    },
+    {
+      "source_id": "F06-C10-DOC",
+      "locators": [
+        "p01",
+        "p02",
+        "p03"
+      ]
+    },
+    {
+      "source_id": "F06-POL",
+      "locators": [
+        "p01",
+        "p02",
+        "p03",
+        "p04",
+        "p05",
+        "p06",
+        "p07"
+      ]
+    }
+  ]
+}

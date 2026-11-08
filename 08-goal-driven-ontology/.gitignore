@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+.DS_Store
+results/stage-02/model-inputs-only.zip

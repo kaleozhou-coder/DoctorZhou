@@ -1,0 +1,15 @@
+{
+  "authoring_exit_code": 0,
+  "stdout": "Authored 6 synthetic families / 60 cases. Structural checks passed; no models or decision evaluators run.\n",
+  "stderr": "",
+  "temporary_copy_freeze": {
+    "files_verified": 19,
+    "freeze_sha256": "99e026b7cc47a87da948b4eaa82af3808e46dcfaab9af67149f4f800de5767b3"
+  },
+  "original_freeze": {
+    "files_verified": 19,
+    "freeze_sha256": "99e026b7cc47a87da948b4eaa82af3808e46dcfaab9af67149f4f800de5767b3"
+  },
+  "byte_identical_manifest": true,
+  "note": "Rebuilt in an isolated temporary copy. Original prospective package was not overwritten. This checks deterministic authoring only, not label correctness."
+}

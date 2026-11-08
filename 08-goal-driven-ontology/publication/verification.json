@@ -1,0 +1,42 @@
+{
+  "verified_date_utc": "2026-11-07",
+  "scope": "Pre-publication integrity and engineering checks; not an LLM method evaluation or a human review.",
+  "python_tests": {
+    "passed": 43,
+    "failed": 0,
+    "command": "python -m unittest discover -s tests -v"
+  },
+  "frozen_benchmark": {
+    "files_verified": 19,
+    "freeze_sha256": "99e026b7cc47a87da948b4eaa82af3808e46dcfaab9af67149f4f800de5767b3"
+  },
+  "public_sample_files_sha256_verified": 7,
+  "evaluator_probes": {
+    "runs": 15,
+    "byte_identical_json_files": 31,
+    "stdout_results_identical_except_output_path": 15,
+    "model_runs": 0
+  },
+  "model_input_export": {
+    "sha256": "dd7e6a9b29fc8ac1bb76adfddea3f9419d680bed538d32622d4654614be24dc1",
+    "byte_identical_to_archived_export": true,
+    "excluded_from_git_as_reproducible_duplicate": true
+  },
+  "publication_changes_to_existing_research_files": [
+    "README.md",
+    ".gitignore"
+  ],
+  "publication_changes_note": "README adds archive/reproduction notes; .gitignore excludes the regenerable export. Frozen benchmark, source code, prior evidence and results were not edited.",
+  "excluded_from_publication": [
+    "__pycache__/",
+    "*.pyc",
+    "results/stage-02/model-inputs-only.zip"
+  ],
+  "content_review": "No credentials, private workspace paths or private document links detected in the included files. Names and contact/account examples in vendored XML are unchanged official public specification examples covered by the retained source notices.",
+  "original_working_files_unchanged": true,
+  "limitations": [
+    "No real LLM A/B runs",
+    "No human-review outcome data",
+    "Synthetic benchmark labels and cases are public; model-construction input restriction must be enforced separately"
+  ]
+}

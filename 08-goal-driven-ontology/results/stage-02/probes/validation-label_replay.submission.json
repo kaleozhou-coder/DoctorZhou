@@ -1,0 +1,183 @@
+{
+  "run": {
+    "run_id": "validation-label_replay",
+    "method": "label_replay",
+    "execution_kind": "engineering_probe",
+    "benchmark_freeze_sha256": "99e026b7cc47a87da948b4eaa82af3808e46dcfaab9af67149f4f800de5767b3",
+    "split": "validation",
+    "uses_labels": true,
+    "purpose": "Evaluator plumbing check; not a model output"
+  },
+  "predictions": [
+    {
+      "case_id": "F03-C01",
+      "decision": "close_eligible",
+      "payment_authorized": false,
+      "evidence_ids": [
+        "F03-POL#p01",
+        "F03-POL#p02",
+        "F03-POL#p03",
+        "F03-POL#p04",
+        "F03-POL#p05",
+        "F03-C01-DOC#p01",
+        "F03-C01-DOC#p02"
+      ],
+      "reason_codes": [
+        "criteria_met"
+      ]
+    },
+    {
+      "case_id": "F03-C02",
+      "decision": "close_eligible",
+      "payment_authorized": false,
+      "evidence_ids": [
+        "F03-POL#p01",
+        "F03-POL#p02",
+        "F03-POL#p03",
+        "F03-POL#p04",
+        "F03-POL#p05",
+        "F03-C02-DOC#p01",
+        "F03-C02-DOC#p02"
+      ],
+      "reason_codes": [
+        "criteria_met"
+      ]
+    },
+    {
+      "case_id": "F03-C03",
+      "decision": "close_eligible",
+      "payment_authorized": false,
+      "evidence_ids": [
+        "F03-POL#p01",
+        "F03-POL#p02",
+        "F03-POL#p03",
+        "F03-POL#p04",
+        "F03-POL#p05",
+        "F03-C03-DOC#p01",
+        "F03-C03-DOC#p02"
+      ],
+      "reason_codes": [
+        "criteria_met"
+      ]
+    },
+    {
+      "case_id": "F03-C04",
+      "decision": "needs_evidence",
+      "payment_authorized": false,
+      "evidence_ids": [
+        "F03-POL#p01",
+        "F03-POL#p02",
+        "F03-POL#p03",
+        "F03-POL#p04",
+        "F03-POL#p05",
+        "F03-C04-DOC#p01",
+        "F03-C04-DOC#p02"
+      ],
+      "reason_codes": [
+        "final_acceptance_missing"
+      ]
+    },
+    {
+      "case_id": "F03-C05",
+      "decision": "needs_evidence",
+      "payment_authorized": false,
+      "evidence_ids": [
+        "F03-POL#p01",
+        "F03-POL#p02",
+        "F03-POL#p03",
+        "F03-POL#p04",
+        "F03-POL#p05",
+        "F03-C05-DOC#p01",
+        "F03-C05-DOC#p02"
+      ],
+      "reason_codes": [
+        "final_acceptance_missing"
+      ]
+    },
+    {
+      "case_id": "F03-C06",
+      "decision": "needs_evidence",
+      "payment_authorized": false,
+      "evidence_ids": [
+        "F03-POL#p01",
+        "F03-POL#p02",
+        "F03-POL#p03",
+        "F03-POL#p04",
+        "F03-POL#p05",
+        "F03-C06-DOC#p01",
+        "F03-C06-DOC#p02"
+      ],
+      "reason_codes": [
+        "quantity_shortfall"
+      ]
+    },
+    {
+      "case_id": "F03-C07",
+      "decision": "needs_review",
+      "payment_authorized": false,
+      "evidence_ids": [
+        "F03-POL#p01",
+        "F03-POL#p02",
+        "F03-POL#p03",
+        "F03-POL#p04",
+        "F03-POL#p05",
+        "F03-C07-DOC#p01",
+        "F03-C07-DOC#p02"
+      ],
+      "reason_codes": [
+        "final_rejection"
+      ]
+    },
+    {
+      "case_id": "F03-C08",
+      "decision": "needs_review",
+      "payment_authorized": false,
+      "evidence_ids": [
+        "F03-POL#p01",
+        "F03-POL#p02",
+        "F03-POL#p03",
+        "F03-POL#p04",
+        "F03-POL#p05",
+        "F03-C08-DOC#p01",
+        "F03-C08-DOC#p02"
+      ],
+      "reason_codes": [
+        "contradictory_final_status"
+      ]
+    },
+    {
+      "case_id": "F03-C09",
+      "decision": "needs_evidence",
+      "payment_authorized": false,
+      "evidence_ids": [
+        "F03-POL#p01",
+        "F03-POL#p02",
+        "F03-POL#p03",
+        "F03-POL#p04",
+        "F03-POL#p05",
+        "F03-C09-DOC#p01",
+        "F03-C09-DOC#p02"
+      ],
+      "reason_codes": [
+        "final_acceptance_missing"
+      ]
+    },
+    {
+      "case_id": "F03-C10",
+      "decision": "close_eligible",
+      "payment_authorized": false,
+      "evidence_ids": [
+        "F03-POL#p01",
+        "F03-POL#p02",
+        "F03-POL#p03",
+        "F03-POL#p04",
+        "F03-POL#p05",
+        "F03-C10-DOC#p01",
+        "F03-C10-DOC#p02"
+      ],
+      "reason_codes": [
+        "criteria_met"
+      ]
+    }
+  ]
+}

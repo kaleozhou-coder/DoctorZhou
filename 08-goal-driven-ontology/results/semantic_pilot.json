@@ -1,0 +1,2504 @@
+{
+  "experiment_type": "deterministic_semantic_mutation_test",
+  "claims_not_supported": [
+    "LLM method superiority",
+    "human review savings",
+    "real-world accuracy",
+    "payment readiness"
+  ],
+  "data_type": "authored_synthetic_fixtures",
+  "python": "3.12.14",
+  "sha256": {
+    "ontology/reference_model.json": "b7f153939a0eb74c2763f259a0f4918679c06361ed904e12f60d6548b27223b9",
+    "data/synthetic/acceptance_cases.json": "8a41c7b1d6710502719c0dee31f5a3df042c1606034fd89643f7aa8dedf878ce",
+    "src/pilot.py": "b363ff9b467f2aaf1911f7c96ab60b07de8a1dcea2ed0816e2a128bf5af15435"
+  },
+  "variants": {
+    "reference": {
+      "n": 28,
+      "exact_decision_accuracy": 1.0,
+      "unsafe_close_count": 0,
+      "unsafe_close_rate_among_negative_cases": 0.0,
+      "negative_case_n": 22,
+      "predictions": [
+        {
+          "case_id": "C01",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C02",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C03",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C04",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C05",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C06",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unverified_acceptor",
+          "evidence": []
+        },
+        {
+          "case_id": "C07",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unverified_acceptor",
+          "evidence": []
+        },
+        {
+          "case_id": "C08",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "accepted_quantity_insufficient",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C09",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C10",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_or_duplicate_evidence_id",
+          "evidence": []
+        },
+        {
+          "case_id": "C11",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C12",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unresolved_unit_identity",
+          "evidence": []
+        },
+        {
+          "case_id": "C13",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unresolved_policy_version",
+          "evidence": []
+        },
+        {
+          "case_id": "C14",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_evidence_locator",
+          "evidence": []
+        },
+        {
+          "case_id": "C15",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_evidence_locator",
+          "evidence": []
+        },
+        {
+          "case_id": "C16",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C17",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C18",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C19",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "ambiguous_order_link",
+          "evidence": []
+        },
+        {
+          "case_id": "C20",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_acceptance_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C21",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_invoice_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C22",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C23",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "accepted_quantity_insufficient",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C24",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_or_duplicate_evidence_id",
+          "evidence": []
+        },
+        {
+          "case_id": "C25",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C26",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C27",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C28",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        }
+      ]
+    },
+    "without_order_line_identity": {
+      "n": 28,
+      "exact_decision_accuracy": 0.9285714285714286,
+      "unsafe_close_count": 1,
+      "unsafe_close_rate_among_negative_cases": 0.045454545454545456,
+      "negative_case_n": 22,
+      "predictions": [
+        {
+          "case_id": "C01",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C02",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C03",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C04",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C05",
+          "expected": "needs_evidence",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C06",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unverified_acceptor",
+          "evidence": []
+        },
+        {
+          "case_id": "C07",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unverified_acceptor",
+          "evidence": []
+        },
+        {
+          "case_id": "C08",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "accepted_quantity_insufficient",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C09",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C10",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_or_duplicate_evidence_id",
+          "evidence": []
+        },
+        {
+          "case_id": "C11",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C12",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unresolved_unit_identity",
+          "evidence": []
+        },
+        {
+          "case_id": "C13",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unresolved_policy_version",
+          "evidence": []
+        },
+        {
+          "case_id": "C14",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_evidence_locator",
+          "evidence": []
+        },
+        {
+          "case_id": "C15",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_evidence_locator",
+          "evidence": []
+        },
+        {
+          "case_id": "C16",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C17",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C18",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C19",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "ambiguous_order_link",
+          "evidence": []
+        },
+        {
+          "case_id": "C20",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_acceptance_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C21",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_invoice_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C22",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C23",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "accepted_quantity_insufficient",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C24",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_or_duplicate_evidence_id",
+          "evidence": []
+        },
+        {
+          "case_id": "C25",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C26",
+          "expected": "close_eligible",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C27",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C28",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        }
+      ]
+    },
+    "without_unique_evidence_id": {
+      "n": 28,
+      "exact_decision_accuracy": 0.9285714285714286,
+      "unsafe_close_count": 2,
+      "unsafe_close_rate_among_negative_cases": 0.09090909090909091,
+      "negative_case_n": 22,
+      "predictions": [
+        {
+          "case_id": "C01",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C02",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C03",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C04",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C05",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C06",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unverified_acceptor",
+          "evidence": []
+        },
+        {
+          "case_id": "C07",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unverified_acceptor",
+          "evidence": []
+        },
+        {
+          "case_id": "C08",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "accepted_quantity_insufficient",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C09",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C10",
+          "expected": "needs_review",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1",
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C11",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C12",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unresolved_unit_identity",
+          "evidence": []
+        },
+        {
+          "case_id": "C13",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unresolved_policy_version",
+          "evidence": []
+        },
+        {
+          "case_id": "C14",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_evidence_locator",
+          "evidence": []
+        },
+        {
+          "case_id": "C15",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_evidence_locator",
+          "evidence": []
+        },
+        {
+          "case_id": "C16",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C17",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C18",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C19",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "ambiguous_order_link",
+          "evidence": []
+        },
+        {
+          "case_id": "C20",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_acceptance_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C21",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_invoice_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C22",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C23",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "accepted_quantity_insufficient",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C24",
+          "expected": "needs_review",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            null
+          ]
+        },
+        {
+          "case_id": "C25",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C26",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C27",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C28",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        }
+      ]
+    },
+    "without_policy_version": {
+      "n": 28,
+      "exact_decision_accuracy": 0.9642857142857143,
+      "unsafe_close_count": 1,
+      "unsafe_close_rate_among_negative_cases": 0.045454545454545456,
+      "negative_case_n": 22,
+      "predictions": [
+        {
+          "case_id": "C01",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C02",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C03",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C04",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C05",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C06",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unverified_acceptor",
+          "evidence": []
+        },
+        {
+          "case_id": "C07",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unverified_acceptor",
+          "evidence": []
+        },
+        {
+          "case_id": "C08",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "accepted_quantity_insufficient",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C09",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C10",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_or_duplicate_evidence_id",
+          "evidence": []
+        },
+        {
+          "case_id": "C11",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C12",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unresolved_unit_identity",
+          "evidence": []
+        },
+        {
+          "case_id": "C13",
+          "expected": "needs_review",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C14",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_evidence_locator",
+          "evidence": []
+        },
+        {
+          "case_id": "C15",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_evidence_locator",
+          "evidence": []
+        },
+        {
+          "case_id": "C16",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C17",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C18",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C19",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "ambiguous_order_link",
+          "evidence": []
+        },
+        {
+          "case_id": "C20",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_acceptance_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C21",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_invoice_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C22",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C23",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "accepted_quantity_insufficient",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C24",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_or_duplicate_evidence_id",
+          "evidence": []
+        },
+        {
+          "case_id": "C25",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C26",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C27",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C28",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        }
+      ]
+    },
+    "without_revocation": {
+      "n": 28,
+      "exact_decision_accuracy": 0.9642857142857143,
+      "unsafe_close_count": 1,
+      "unsafe_close_rate_among_negative_cases": 0.045454545454545456,
+      "negative_case_n": 22,
+      "predictions": [
+        {
+          "case_id": "C01",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C02",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C03",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C04",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C05",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C06",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unverified_acceptor",
+          "evidence": []
+        },
+        {
+          "case_id": "C07",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unverified_acceptor",
+          "evidence": []
+        },
+        {
+          "case_id": "C08",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "accepted_quantity_insufficient",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C09",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C10",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_or_duplicate_evidence_id",
+          "evidence": []
+        },
+        {
+          "case_id": "C11",
+          "expected": "needs_evidence",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C12",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unresolved_unit_identity",
+          "evidence": []
+        },
+        {
+          "case_id": "C13",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unresolved_policy_version",
+          "evidence": []
+        },
+        {
+          "case_id": "C14",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_evidence_locator",
+          "evidence": []
+        },
+        {
+          "case_id": "C15",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_evidence_locator",
+          "evidence": []
+        },
+        {
+          "case_id": "C16",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C17",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C18",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C19",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "ambiguous_order_link",
+          "evidence": []
+        },
+        {
+          "case_id": "C20",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_acceptance_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C21",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_invoice_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C22",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C23",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "accepted_quantity_insufficient",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C24",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_or_duplicate_evidence_id",
+          "evidence": []
+        },
+        {
+          "case_id": "C25",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C26",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C27",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C28",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        }
+      ]
+    },
+    "without_authorization": {
+      "n": 28,
+      "exact_decision_accuracy": 0.9285714285714286,
+      "unsafe_close_count": 2,
+      "unsafe_close_rate_among_negative_cases": 0.09090909090909091,
+      "negative_case_n": 22,
+      "predictions": [
+        {
+          "case_id": "C01",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C02",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C03",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C04",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C05",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C06",
+          "expected": "needs_review",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C07",
+          "expected": "needs_review",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C08",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "accepted_quantity_insufficient",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C09",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C10",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_or_duplicate_evidence_id",
+          "evidence": []
+        },
+        {
+          "case_id": "C11",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C12",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unresolved_unit_identity",
+          "evidence": []
+        },
+        {
+          "case_id": "C13",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unresolved_policy_version",
+          "evidence": []
+        },
+        {
+          "case_id": "C14",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_evidence_locator",
+          "evidence": []
+        },
+        {
+          "case_id": "C15",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_evidence_locator",
+          "evidence": []
+        },
+        {
+          "case_id": "C16",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C17",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C18",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C19",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "ambiguous_order_link",
+          "evidence": []
+        },
+        {
+          "case_id": "C20",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_acceptance_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C21",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_invoice_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C22",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C23",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "accepted_quantity_insufficient",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C24",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_or_duplicate_evidence_id",
+          "evidence": []
+        },
+        {
+          "case_id": "C25",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C26",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C27",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C28",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        }
+      ]
+    },
+    "without_status": {
+      "n": 28,
+      "exact_decision_accuracy": 0.8571428571428571,
+      "unsafe_close_count": 4,
+      "unsafe_close_rate_among_negative_cases": 0.18181818181818182,
+      "negative_case_n": 22,
+      "predictions": [
+        {
+          "case_id": "C01",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C02",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C03",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C04",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C05",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C06",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unverified_acceptor",
+          "evidence": []
+        },
+        {
+          "case_id": "C07",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unverified_acceptor",
+          "evidence": []
+        },
+        {
+          "case_id": "C08",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "accepted_quantity_insufficient",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C09",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C10",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_or_duplicate_evidence_id",
+          "evidence": []
+        },
+        {
+          "case_id": "C11",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C12",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unresolved_unit_identity",
+          "evidence": []
+        },
+        {
+          "case_id": "C13",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unresolved_policy_version",
+          "evidence": []
+        },
+        {
+          "case_id": "C14",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_evidence_locator",
+          "evidence": []
+        },
+        {
+          "case_id": "C15",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_evidence_locator",
+          "evidence": []
+        },
+        {
+          "case_id": "C16",
+          "expected": "needs_review",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C17",
+          "expected": "needs_review",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C18",
+          "expected": "needs_evidence",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C19",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "ambiguous_order_link",
+          "evidence": []
+        },
+        {
+          "case_id": "C20",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_acceptance_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C21",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_invoice_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C22",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C23",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "accepted_quantity_insufficient",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C24",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_or_duplicate_evidence_id",
+          "evidence": []
+        },
+        {
+          "case_id": "C25",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C26",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C27",
+          "expected": "needs_review",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C28",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        }
+      ]
+    },
+    "without_unit_identity": {
+      "n": 28,
+      "exact_decision_accuracy": 0.9642857142857143,
+      "unsafe_close_count": 1,
+      "unsafe_close_rate_among_negative_cases": 0.045454545454545456,
+      "negative_case_n": 22,
+      "predictions": [
+        {
+          "case_id": "C01",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C02",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C03",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C04",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C05",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C06",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unverified_acceptor",
+          "evidence": []
+        },
+        {
+          "case_id": "C07",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unverified_acceptor",
+          "evidence": []
+        },
+        {
+          "case_id": "C08",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "accepted_quantity_insufficient",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C09",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C10",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_or_duplicate_evidence_id",
+          "evidence": []
+        },
+        {
+          "case_id": "C11",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C12",
+          "expected": "needs_review",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C13",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unresolved_policy_version",
+          "evidence": []
+        },
+        {
+          "case_id": "C14",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_evidence_locator",
+          "evidence": []
+        },
+        {
+          "case_id": "C15",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_evidence_locator",
+          "evidence": []
+        },
+        {
+          "case_id": "C16",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C17",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C18",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C19",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "ambiguous_order_link",
+          "evidence": []
+        },
+        {
+          "case_id": "C20",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_acceptance_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C21",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_invoice_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C22",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C23",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "accepted_quantity_insufficient",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C24",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_or_duplicate_evidence_id",
+          "evidence": []
+        },
+        {
+          "case_id": "C25",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C26",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C27",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C28",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        }
+      ]
+    },
+    "without_provenance": {
+      "n": 28,
+      "exact_decision_accuracy": 0.9285714285714286,
+      "unsafe_close_count": 2,
+      "unsafe_close_rate_among_negative_cases": 0.09090909090909091,
+      "negative_case_n": 22,
+      "predictions": [
+        {
+          "case_id": "C01",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C02",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C03",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C04",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C05",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C06",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unverified_acceptor",
+          "evidence": []
+        },
+        {
+          "case_id": "C07",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unverified_acceptor",
+          "evidence": []
+        },
+        {
+          "case_id": "C08",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "accepted_quantity_insufficient",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C09",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C10",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_or_duplicate_evidence_id",
+          "evidence": []
+        },
+        {
+          "case_id": "C11",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C12",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unresolved_unit_identity",
+          "evidence": []
+        },
+        {
+          "case_id": "C13",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unresolved_policy_version",
+          "evidence": []
+        },
+        {
+          "case_id": "C14",
+          "expected": "needs_review",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C15",
+          "expected": "needs_review",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C16",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C17",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C18",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C19",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "ambiguous_order_link",
+          "evidence": []
+        },
+        {
+          "case_id": "C20",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_acceptance_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C21",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_invoice_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C22",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C23",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "accepted_quantity_insufficient",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C24",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_or_duplicate_evidence_id",
+          "evidence": []
+        },
+        {
+          "case_id": "C25",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C26",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C27",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C28",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        }
+      ]
+    },
+    "without_quantity_coverage": {
+      "n": 28,
+      "exact_decision_accuracy": 0.9285714285714286,
+      "unsafe_close_count": 2,
+      "unsafe_close_rate_among_negative_cases": 0.09090909090909091,
+      "negative_case_n": 22,
+      "predictions": [
+        {
+          "case_id": "C01",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C02",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C03",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C04",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C05",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C06",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unverified_acceptor",
+          "evidence": []
+        },
+        {
+          "case_id": "C07",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unverified_acceptor",
+          "evidence": []
+        },
+        {
+          "case_id": "C08",
+          "expected": "needs_evidence",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C09",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C10",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_or_duplicate_evidence_id",
+          "evidence": []
+        },
+        {
+          "case_id": "C11",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C12",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unresolved_unit_identity",
+          "evidence": []
+        },
+        {
+          "case_id": "C13",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unresolved_policy_version",
+          "evidence": []
+        },
+        {
+          "case_id": "C14",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_evidence_locator",
+          "evidence": []
+        },
+        {
+          "case_id": "C15",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_evidence_locator",
+          "evidence": []
+        },
+        {
+          "case_id": "C16",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C17",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C18",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C19",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "ambiguous_order_link",
+          "evidence": []
+        },
+        {
+          "case_id": "C20",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_acceptance_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C21",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_invoice_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C22",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C23",
+          "expected": "needs_evidence",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C24",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_or_duplicate_evidence_id",
+          "evidence": []
+        },
+        {
+          "case_id": "C25",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C26",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C27",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C28",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        }
+      ]
+    },
+    "delivery_equals_acceptance": {
+      "n": 28,
+      "exact_decision_accuracy": 0.9285714285714286,
+      "unsafe_close_count": 1,
+      "unsafe_close_rate_among_negative_cases": 0.045454545454545456,
+      "negative_case_n": 22,
+      "predictions": [
+        {
+          "case_id": "C01",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C02",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C03",
+          "expected": "needs_evidence",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C04",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C05",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C06",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unverified_acceptor",
+          "evidence": []
+        },
+        {
+          "case_id": "C07",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unverified_acceptor",
+          "evidence": []
+        },
+        {
+          "case_id": "C08",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "accepted_quantity_insufficient",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C09",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C10",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_or_duplicate_evidence_id",
+          "evidence": []
+        },
+        {
+          "case_id": "C11",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C12",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unresolved_unit_identity",
+          "evidence": []
+        },
+        {
+          "case_id": "C13",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unresolved_policy_version",
+          "evidence": []
+        },
+        {
+          "case_id": "C14",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_evidence_locator",
+          "evidence": []
+        },
+        {
+          "case_id": "C15",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_evidence_locator",
+          "evidence": []
+        },
+        {
+          "case_id": "C16",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C17",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C18",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "no_usable_acceptance_record",
+          "evidence": []
+        },
+        {
+          "case_id": "C19",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "ambiguous_order_link",
+          "evidence": []
+        },
+        {
+          "case_id": "C20",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_acceptance_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C21",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "unsupported_invoice_quantity",
+          "evidence": []
+        },
+        {
+          "case_id": "C22",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C23",
+          "expected": "needs_evidence",
+          "decision": "needs_evidence",
+          "reason": "accepted_quantity_insufficient",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "case_id": "C24",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "missing_or_duplicate_evidence_id",
+          "evidence": []
+        },
+        {
+          "case_id": "C25",
+          "expected": "close_eligible",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C26",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        },
+        {
+          "case_id": "C27",
+          "expected": "needs_review",
+          "decision": "needs_review",
+          "reason": "adverse_or_conflicting_acceptance",
+          "evidence": []
+        },
+        {
+          "case_id": "C28",
+          "expected": "close_eligible",
+          "decision": "close_eligible",
+          "reason": "synthetic_policy_evidence_complete",
+          "evidence": [
+            "E1"
+          ]
+        }
+      ]
+    }
+  },
+  "mutation_detection": {
+    "mutants": 10,
+    "killed": 10
+  }
+}

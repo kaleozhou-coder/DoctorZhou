@@ -1,0 +1,549 @@
+{
+  "family_id": "F01",
+  "split": "development",
+  "cases": [
+    {
+      "case_id": "F01-C01",
+      "family_id": "F01",
+      "split": "development",
+      "synthetic": true,
+      "policy_source_id": "F01-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F01-C01-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_id\": \"INV-L\", \"invoice_quantity\": 4, \"po_line\": \"PO-L/1\", \"target_serials\": [\"s1\", \"s2\", \"s3\", \"s4\"]}}",
+          "facts": {
+            "request": {
+              "invoice_id": "INV-L",
+              "po_line": "PO-L/1",
+              "invoice_quantity": 4,
+              "target_serials": [
+                "s1",
+                "s2",
+                "s3",
+                "s4"
+              ]
+            }
+          }
+        },
+        {
+          "source_id": "F01-C01-DOC",
+          "locator": "p02",
+          "text": "{\"lots\": [{\"lot_id\": \"a\", \"po_line\": \"PO-L/1\", \"serials\": [\"s1\", \"s2\"], \"status\": \"accepted\"}, {\"lot_id\": \"b\", \"po_line\": \"PO-L/1\", \"serials\": [\"s3\", \"s4\"], \"status\": \"accepted\"}]}",
+          "facts": {
+            "lots": [
+              {
+                "lot_id": "a",
+                "po_line": "PO-L/1",
+                "status": "accepted",
+                "serials": [
+                  "s1",
+                  "s2"
+                ]
+              },
+              {
+                "lot_id": "b",
+                "po_line": "PO-L/1",
+                "status": "accepted",
+                "serials": [
+                  "s3",
+                  "s4"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F01-C02",
+      "family_id": "F01",
+      "split": "development",
+      "synthetic": true,
+      "policy_source_id": "F01-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F01-C02-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_id\": \"INV-L\", \"invoice_quantity\": 4, \"po_line\": \"PO-L/1\", \"target_serials\": [\"s1\", \"s2\", \"s3\", \"s4\"]}}",
+          "facts": {
+            "request": {
+              "invoice_id": "INV-L",
+              "po_line": "PO-L/1",
+              "invoice_quantity": 4,
+              "target_serials": [
+                "s1",
+                "s2",
+                "s3",
+                "s4"
+              ]
+            }
+          }
+        },
+        {
+          "source_id": "F01-C02-DOC",
+          "locator": "p02",
+          "text": "{\"lots\": [{\"lot_id\": \"a\", \"po_line\": \"PO-L/1\", \"serials\": [\"s1\", \"s2\", \"s3\", \"s4\", \"s5\"], \"status\": \"accepted\"}]}",
+          "facts": {
+            "lots": [
+              {
+                "lot_id": "a",
+                "po_line": "PO-L/1",
+                "status": "accepted",
+                "serials": [
+                  "s1",
+                  "s2",
+                  "s3",
+                  "s4",
+                  "s5"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F01-C03",
+      "family_id": "F01",
+      "split": "development",
+      "synthetic": true,
+      "policy_source_id": "F01-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F01-C03-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_id\": \"INV-L\", \"invoice_quantity\": 4, \"po_line\": \"PO-L/1\", \"target_serials\": [\"s1\", \"s2\", \"s3\", \"s4\"]}}",
+          "facts": {
+            "request": {
+              "invoice_id": "INV-L",
+              "po_line": "PO-L/1",
+              "invoice_quantity": 4,
+              "target_serials": [
+                "s1",
+                "s2",
+                "s3",
+                "s4"
+              ]
+            }
+          }
+        },
+        {
+          "source_id": "F01-C03-DOC",
+          "locator": "p02",
+          "text": "{\"lots\": [{\"lot_id\": \"a\", \"po_line\": \"PO-L/1\", \"serials\": [\"s1\", \"s2\"], \"status\": \"accepted\"}, {\"lot_id\": \"a\", \"po_line\": \"PO-L/1\", \"serials\": [\"s1\", \"s2\"], \"status\": \"accepted\"}, {\"lot_id\": \"b\", \"po_line\": \"PO-L/1\", \"serials\": [\"s3\", \"s4\"], \"status\": \"accepted\"}]}",
+          "facts": {
+            "lots": [
+              {
+                "lot_id": "a",
+                "po_line": "PO-L/1",
+                "status": "accepted",
+                "serials": [
+                  "s1",
+                  "s2"
+                ]
+              },
+              {
+                "lot_id": "a",
+                "po_line": "PO-L/1",
+                "status": "accepted",
+                "serials": [
+                  "s1",
+                  "s2"
+                ]
+              },
+              {
+                "lot_id": "b",
+                "po_line": "PO-L/1",
+                "status": "accepted",
+                "serials": [
+                  "s3",
+                  "s4"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F01-C04",
+      "family_id": "F01",
+      "split": "development",
+      "synthetic": true,
+      "policy_source_id": "F01-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F01-C04-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_id\": \"INV-L\", \"invoice_quantity\": 4, \"po_line\": \"PO-L/1\", \"target_serials\": [\"s1\", \"s2\", \"s3\", \"s4\"]}}",
+          "facts": {
+            "request": {
+              "invoice_id": "INV-L",
+              "po_line": "PO-L/1",
+              "invoice_quantity": 4,
+              "target_serials": [
+                "s1",
+                "s2",
+                "s3",
+                "s4"
+              ]
+            }
+          }
+        },
+        {
+          "source_id": "F01-C04-DOC",
+          "locator": "p02",
+          "text": "{\"lots\": [{\"lot_id\": \"a\", \"po_line\": \"PO-L/1\", \"serials\": [\"s1\", \"s2\", \"s3\"], \"status\": \"accepted\"}]}",
+          "facts": {
+            "lots": [
+              {
+                "lot_id": "a",
+                "po_line": "PO-L/1",
+                "status": "accepted",
+                "serials": [
+                  "s1",
+                  "s2",
+                  "s3"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F01-C05",
+      "family_id": "F01",
+      "split": "development",
+      "synthetic": true,
+      "policy_source_id": "F01-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F01-C05-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_id\": \"INV-L\", \"invoice_quantity\": 4, \"po_line\": \"PO-L/1\", \"target_serials\": [\"s1\", \"s2\", \"s3\", \"s4\"]}}",
+          "facts": {
+            "request": {
+              "invoice_id": "INV-L",
+              "po_line": "PO-L/1",
+              "invoice_quantity": 4,
+              "target_serials": [
+                "s1",
+                "s2",
+                "s3",
+                "s4"
+              ]
+            }
+          }
+        },
+        {
+          "source_id": "F01-C05-DOC",
+          "locator": "p02",
+          "text": "{\"lots\": [{\"lot_id\": \"a\", \"po_line\": \"PO-L/1\", \"serials\": [\"s1\", \"s2\"], \"status\": \"accepted\"}, {\"lot_id\": \"b\", \"po_line\": \"PO-L/2\", \"serials\": [\"s3\", \"s4\"], \"status\": \"accepted\"}]}",
+          "facts": {
+            "lots": [
+              {
+                "lot_id": "a",
+                "po_line": "PO-L/1",
+                "status": "accepted",
+                "serials": [
+                  "s1",
+                  "s2"
+                ]
+              },
+              {
+                "lot_id": "b",
+                "po_line": "PO-L/2",
+                "status": "accepted",
+                "serials": [
+                  "s3",
+                  "s4"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F01-C06",
+      "family_id": "F01",
+      "split": "development",
+      "synthetic": true,
+      "policy_source_id": "F01-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F01-C06-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_id\": \"INV-L\", \"invoice_quantity\": 4, \"po_line\": \"PO-L/1\", \"target_serials\": [\"s1\", \"s2\", \"s3\", \"s4\"]}}",
+          "facts": {
+            "request": {
+              "invoice_id": "INV-L",
+              "po_line": "PO-L/1",
+              "invoice_quantity": 4,
+              "target_serials": [
+                "s1",
+                "s2",
+                "s3",
+                "s4"
+              ]
+            }
+          }
+        },
+        {
+          "source_id": "F01-C06-DOC",
+          "locator": "p02",
+          "text": "{\"lots\": [{\"lot_id\": \"a\", \"po_line\": \"PO-L/1\", \"serials\": [\"s1\", \"s2\"], \"status\": \"accepted\"}, {\"lot_id\": \"b\", \"po_line\": \"PO-L/1\", \"serials\": [\"s3\", \"s4\"], \"status\": \"pending\"}]}",
+          "facts": {
+            "lots": [
+              {
+                "lot_id": "a",
+                "po_line": "PO-L/1",
+                "status": "accepted",
+                "serials": [
+                  "s1",
+                  "s2"
+                ]
+              },
+              {
+                "lot_id": "b",
+                "po_line": "PO-L/1",
+                "status": "pending",
+                "serials": [
+                  "s3",
+                  "s4"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F01-C07",
+      "family_id": "F01",
+      "split": "development",
+      "synthetic": true,
+      "policy_source_id": "F01-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F01-C07-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_id\": \"INV-L\", \"invoice_quantity\": 4, \"po_line\": \"PO-L/1\", \"target_serials\": [\"s1\", \"s2\", \"s3\", \"s4\"]}}",
+          "facts": {
+            "request": {
+              "invoice_id": "INV-L",
+              "po_line": "PO-L/1",
+              "invoice_quantity": 4,
+              "target_serials": [
+                "s1",
+                "s2",
+                "s3",
+                "s4"
+              ]
+            }
+          }
+        },
+        {
+          "source_id": "F01-C07-DOC",
+          "locator": "p02",
+          "text": "{\"lots\": [{\"lot_id\": \"a\", \"po_line\": \"PO-L/1\", \"serials\": [\"s1\", \"s2\", \"s3\"], \"status\": \"accepted\"}, {\"lot_id\": \"b\", \"po_line\": \"PO-L/1\", \"serials\": [\"s3\", \"s4\"], \"status\": \"accepted\"}]}",
+          "facts": {
+            "lots": [
+              {
+                "lot_id": "a",
+                "po_line": "PO-L/1",
+                "status": "accepted",
+                "serials": [
+                  "s1",
+                  "s2",
+                  "s3"
+                ]
+              },
+              {
+                "lot_id": "b",
+                "po_line": "PO-L/1",
+                "status": "accepted",
+                "serials": [
+                  "s3",
+                  "s4"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F01-C08",
+      "family_id": "F01",
+      "split": "development",
+      "synthetic": true,
+      "policy_source_id": "F01-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F01-C08-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_id\": \"INV-L\", \"invoice_quantity\": 5, \"po_line\": \"PO-L/1\", \"target_serials\": [\"s1\", \"s2\", \"s3\", \"s4\"]}}",
+          "facts": {
+            "request": {
+              "invoice_id": "INV-L",
+              "po_line": "PO-L/1",
+              "invoice_quantity": 5,
+              "target_serials": [
+                "s1",
+                "s2",
+                "s3",
+                "s4"
+              ]
+            }
+          }
+        },
+        {
+          "source_id": "F01-C08-DOC",
+          "locator": "p02",
+          "text": "{\"lots\": [{\"lot_id\": \"a\", \"po_line\": \"PO-L/1\", \"serials\": [\"s1\", \"s2\", \"s3\", \"s4\"], \"status\": \"accepted\"}]}",
+          "facts": {
+            "lots": [
+              {
+                "lot_id": "a",
+                "po_line": "PO-L/1",
+                "status": "accepted",
+                "serials": [
+                  "s1",
+                  "s2",
+                  "s3",
+                  "s4"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F01-C09",
+      "family_id": "F01",
+      "split": "development",
+      "synthetic": true,
+      "policy_source_id": "F01-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F01-C09-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_id\": \"INV-L\", \"invoice_quantity\": 4, \"po_line\": \"PO-L/1\", \"target_serials\": [\"s1\", \"s2\", \"s3\", \"s4\"]}}",
+          "facts": {
+            "request": {
+              "invoice_id": "INV-L",
+              "po_line": "PO-L/1",
+              "invoice_quantity": 4,
+              "target_serials": [
+                "s1",
+                "s2",
+                "s3",
+                "s4"
+              ]
+            }
+          }
+        },
+        {
+          "source_id": "F01-C09-DOC",
+          "locator": "p02",
+          "text": "{\"lots\": [{\"lot_id\": \"a\", \"po_line\": \"PO-L/1\", \"serials\": [\"s1\", \"s2\"], \"status\": \"accepted\"}, {\"lot_id\": \"a\", \"po_line\": \"PO-L/1\", \"serials\": [\"s1\", \"s2\", \"s3\", \"s4\"], \"status\": \"accepted\"}]}",
+          "facts": {
+            "lots": [
+              {
+                "lot_id": "a",
+                "po_line": "PO-L/1",
+                "status": "accepted",
+                "serials": [
+                  "s1",
+                  "s2"
+                ]
+              },
+              {
+                "lot_id": "a",
+                "po_line": "PO-L/1",
+                "status": "accepted",
+                "serials": [
+                  "s1",
+                  "s2",
+                  "s3",
+                  "s4"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F01-C10",
+      "family_id": "F01",
+      "split": "development",
+      "synthetic": true,
+      "policy_source_id": "F01-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F01-C10-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_id\": \"INV-L\", \"invoice_quantity\": 4, \"po_line\": \"PO-L/1\", \"target_serials\": [\"s1\", \"s2\", \"s3\", \"s4\"]}}",
+          "facts": {
+            "request": {
+              "invoice_id": "INV-L",
+              "po_line": "PO-L/1",
+              "invoice_quantity": 4,
+              "target_serials": [
+                "s1",
+                "s2",
+                "s3",
+                "s4"
+              ]
+            }
+          }
+        },
+        {
+          "source_id": "F01-C10-DOC",
+          "locator": "p02",
+          "text": "{\"lots\": [{\"lot_id\": \"a\", \"po_line\": \"PO-L/1\", \"serials\": [\"s1\", \"s2\", \"x\"], \"status\": \"accepted\"}, {\"lot_id\": \"b\", \"po_line\": \"PO-L/1\", \"serials\": [\"s3\", \"s4\", \"x\"], \"status\": \"accepted\"}]}",
+          "facts": {
+            "lots": [
+              {
+                "lot_id": "a",
+                "po_line": "PO-L/1",
+                "status": "accepted",
+                "serials": [
+                  "s1",
+                  "s2",
+                  "x"
+                ]
+              },
+              {
+                "lot_id": "b",
+                "po_line": "PO-L/1",
+                "status": "accepted",
+                "serials": [
+                  "s3",
+                  "s4",
+                  "x"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

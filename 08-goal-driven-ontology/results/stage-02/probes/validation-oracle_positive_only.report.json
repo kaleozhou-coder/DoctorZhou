@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "run_id": "validation-oracle_positive_only",
+    "method": "oracle_positive_only",
+    "execution_kind": "engineering_probe",
+    "benchmark_freeze_sha256": "99e026b7cc47a87da948b4eaa82af3808e46dcfaab9af67149f4f800de5767b3",
+    "split": "validation",
+    "uses_labels": true,
+    "purpose": "Evaluator plumbing check; not a model output"
+  },
+  "evaluation_type": "synthetic_prospective_benchmark",
+  "split": "validation",
+  "metrics": {
+    "case_n": 10,
+    "positive_n": 4,
+    "negative_n": 6,
+    "missing_n": 6,
+    "completion_rate": 0.4,
+    "exact_decision_correct_n": 4,
+    "exact_decision_accuracy": 0.4,
+    "false_close_n": 0,
+    "false_close_rate": 0.0,
+    "positive_close_recall": 1.0,
+    "conservative_false_close_rate_if_missing_negatives_close": 1.0,
+    "decision_counts": {
+      "close_eligible": 4,
+      "MISSING": 6
+    },
+    "false_close_case_ids": [],
+    "missing_case_ids": [
+      "F03-C04",
+      "F03-C05",
+      "F03-C06",
+      "F03-C07",
+      "F03-C08",
+      "F03-C09"
+    ]
+  },
+  "by_family": {
+    "F03": {
+      "case_n": 10,
+      "positive_n": 4,
+      "negative_n": 6,
+      "missing_n": 6,
+      "completion_rate": 0.4,
+      "exact_decision_correct_n": 4,
+      "exact_decision_accuracy": 0.4,
+      "false_close_n": 0,
+      "false_close_rate": 0.0,
+      "positive_close_recall": 1.0,
+      "conservative_false_close_rate_if_missing_negatives_close": 1.0,
+      "decision_counts": {
+        "close_eligible": 4,
+        "MISSING": 6
+      },
+      "false_close_case_ids": [],
+      "missing_case_ids": [
+        "F03-C04",
+        "F03-C05",
+        "F03-C06",
+        "F03-C07",
+        "F03-C08",
+        "F03-C09"
+      ]
+    }
+  },
+  "family_n": 1,
+  "source_locator_audit": {
+    "registry_supplied": true,
+    "checked_n": 0,
+    "existing_n": 0,
+    "existence_rate": null,
+    "semantic_support_rate": null,
+    "note": "A locator existing does not show that the cited text supports the claim."
+  },
+  "human_review_minutes": null,
+  "human_time_savings": null,
+  "intervals": null,
+  "interval_note": "No population confidence claim: few deliberately authored families, not an IID sample.",
+  "success_or_superiority_claim": null,
+  "notes": [
+    "Missing predictions remain in accuracy and positive-recall denominators.",
+    "Missing negatives are not silently considered safe; conservative risk is also reported.",
+    "Three states are not interchangeable; low false-close risk alone is not success.",
+    "Source support, ontology quality, human time, and real-world effectiveness require separate assessment."
+  ],
+  "predictions": [
+    {
+      "case_id": "F03-C01",
+      "family_id": "F03",
+      "expected_decision": "close_eligible",
+      "decision": "close_eligible",
+      "evidence_ids": [],
+      "reason_codes": []
+    },
+    {
+      "case_id": "F03-C02",
+      "family_id": "F03",
+      "expected_decision": "close_eligible",
+      "decision": "close_eligible",
+      "evidence_ids": [],
+      "reason_codes": []
+    },
+    {
+      "case_id": "F03-C03",
+      "family_id": "F03",
+      "expected_decision": "close_eligible",
+      "decision": "close_eligible",
+      "evidence_ids": [],
+      "reason_codes": []
+    },
+    {
+      "case_id": "F03-C04",
+      "family_id": "F03",
+      "expected_decision": "needs_evidence",
+      "decision": null,
+      "evidence_ids": [],
+      "reason_codes": []
+    },
+    {
+      "case_id": "F03-C05",
+      "family_id": "F03",
+      "expected_decision": "needs_evidence",
+      "decision": null,
+      "evidence_ids": [],
+      "reason_codes": []
+    },
+    {
+      "case_id": "F03-C06",
+      "family_id": "F03",
+      "expected_decision": "needs_evidence",
+      "decision": null,
+      "evidence_ids": [],
+      "reason_codes": []
+    },
+    {
+      "case_id": "F03-C07",
+      "family_id": "F03",
+      "expected_decision": "needs_review",
+      "decision": null,
+      "evidence_ids": [],
+      "reason_codes": []
+    },
+    {
+      "case_id": "F03-C08",
+      "family_id": "F03",
+      "expected_decision": "needs_review",
+      "decision": null,
+      "evidence_ids": [],
+      "reason_codes": []
+    },
+    {
+      "case_id": "F03-C09",
+      "family_id": "F03",
+      "expected_decision": "needs_evidence",
+      "decision": null,
+      "evidence_ids": [],
+      "reason_codes": []
+    },
+    {
+      "case_id": "F03-C10",
+      "family_id": "F03",
+      "expected_decision": "close_eligible",
+      "decision": "close_eligible",
+      "evidence_ids": [],
+      "reason_codes": []
+    }
+  ],
+  "input_sha256": {
+    "labels": "6a7eb05981d0e2bea24ff65aa083cd0ed88917334bd172ef3b2c5dfd5037a65b",
+    "submission": "089b192e369e218199bba0e6569d1bf3bcf7a576b4041a01903961748bfd3a68",
+    "scorer": "59f08846a8477937e621f172c29be12c4335df7c8d39a800a084b741edc99580"
+  }
+}

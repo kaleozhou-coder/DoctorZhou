@@ -1,0 +1,530 @@
+{
+  "family_id": "F02",
+  "split": "development",
+  "cases": [
+    {
+      "case_id": "F02-C01",
+      "family_id": "F02",
+      "split": "development",
+      "synthetic": true,
+      "policy_source_id": "F02-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F02-C01-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_quantity\": 6, \"po_line\": \"PO-A/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-A/1",
+              "invoice_quantity": 6
+            }
+          }
+        },
+        {
+          "source_id": "F02-C01-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance\": {\"accepted_quantity\": 6, \"po_line\": \"PO-A/1\", \"signed_on\": \"2026-06-15\", \"signer\": \"Mira\"}}",
+          "facts": {
+            "acceptance": {
+              "po_line": "PO-A/1",
+              "signer": "Mira",
+              "signed_on": "2026-06-15",
+              "accepted_quantity": 6
+            }
+          }
+        },
+        {
+          "source_id": "F02-C01-DOC",
+          "locator": "p03",
+          "text": "{\"delegation_registry\": [{\"max_quantity\": 10, \"po_line\": \"PO-A/1\", \"signer\": \"Mira\", \"type\": \"grant\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2026-12-31\"}]}",
+          "facts": {
+            "delegation_registry": [
+              {
+                "type": "grant",
+                "signer": "Mira",
+                "po_line": "PO-A/1",
+                "valid_from": "2026-01-01",
+                "valid_to": "2026-12-31",
+                "max_quantity": 10
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F02-C02",
+      "family_id": "F02",
+      "split": "development",
+      "synthetic": true,
+      "policy_source_id": "F02-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F02-C02-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_quantity\": 6, \"po_line\": \"PO-A/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-A/1",
+              "invoice_quantity": 6
+            }
+          }
+        },
+        {
+          "source_id": "F02-C02-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance\": {\"accepted_quantity\": 6, \"po_line\": \"PO-A/1\", \"signed_on\": \"2026-06-15\", \"signer\": \"Mira\"}}",
+          "facts": {
+            "acceptance": {
+              "po_line": "PO-A/1",
+              "signer": "Mira",
+              "signed_on": "2026-06-15",
+              "accepted_quantity": 6
+            }
+          }
+        },
+        {
+          "source_id": "F02-C02-DOC",
+          "locator": "p03",
+          "text": "{\"delegation_registry\": [{\"max_quantity\": 10, \"po_line\": \"PO-A/1\", \"signer\": \"Mira\", \"type\": \"grant\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2026-06-15\"}]}",
+          "facts": {
+            "delegation_registry": [
+              {
+                "type": "grant",
+                "signer": "Mira",
+                "po_line": "PO-A/1",
+                "valid_from": "2026-01-01",
+                "valid_to": "2026-06-15",
+                "max_quantity": 10
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F02-C03",
+      "family_id": "F02",
+      "split": "development",
+      "synthetic": true,
+      "policy_source_id": "F02-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F02-C03-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_quantity\": 6, \"po_line\": \"PO-A/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-A/1",
+              "invoice_quantity": 6
+            }
+          }
+        },
+        {
+          "source_id": "F02-C03-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance\": {\"accepted_quantity\": 6, \"po_line\": \"PO-A/1\", \"signed_on\": \"2026-06-15\", \"signer\": \"Mira\"}}",
+          "facts": {
+            "acceptance": {
+              "po_line": "PO-A/1",
+              "signer": "Mira",
+              "signed_on": "2026-06-15",
+              "accepted_quantity": 6
+            }
+          }
+        },
+        {
+          "source_id": "F02-C03-DOC",
+          "locator": "p03",
+          "text": "{\"delegation_registry\": [{\"max_quantity\": 4, \"po_line\": \"PO-A/1\", \"signer\": \"Mira\", \"type\": \"grant\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2026-12-31\"}, {\"max_quantity\": 6, \"po_line\": \"PO-A/1\", \"signer\": \"Mira\", \"type\": \"grant\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2026-12-31\"}]}",
+          "facts": {
+            "delegation_registry": [
+              {
+                "type": "grant",
+                "signer": "Mira",
+                "po_line": "PO-A/1",
+                "valid_from": "2026-01-01",
+                "valid_to": "2026-12-31",
+                "max_quantity": 4
+              },
+              {
+                "type": "grant",
+                "signer": "Mira",
+                "po_line": "PO-A/1",
+                "valid_from": "2026-01-01",
+                "valid_to": "2026-12-31",
+                "max_quantity": 6
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F02-C04",
+      "family_id": "F02",
+      "split": "development",
+      "synthetic": true,
+      "policy_source_id": "F02-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F02-C04-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_quantity\": 6, \"po_line\": \"PO-A/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-A/1",
+              "invoice_quantity": 6
+            }
+          }
+        },
+        {
+          "source_id": "F02-C04-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance\": {\"accepted_quantity\": 6, \"po_line\": \"PO-A/1\", \"signed_on\": \"2026-06-15\", \"signer\": \"Mira\"}}",
+          "facts": {
+            "acceptance": {
+              "po_line": "PO-A/1",
+              "signer": "Mira",
+              "signed_on": "2026-06-15",
+              "accepted_quantity": 6
+            }
+          }
+        },
+        {
+          "source_id": "F02-C04-DOC",
+          "locator": "p03",
+          "text": "{\"delegation_registry\": []}",
+          "facts": {
+            "delegation_registry": []
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F02-C05",
+      "family_id": "F02",
+      "split": "development",
+      "synthetic": true,
+      "policy_source_id": "F02-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F02-C05-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_quantity\": 6, \"po_line\": \"PO-A/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-A/1",
+              "invoice_quantity": 6
+            }
+          }
+        },
+        {
+          "source_id": "F02-C05-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance\": {\"accepted_quantity\": 6, \"po_line\": \"PO-A/1\", \"signed_on\": \"2026-06-15\", \"signer\": \"Mira\"}}",
+          "facts": {
+            "acceptance": {
+              "po_line": "PO-A/1",
+              "signer": "Mira",
+              "signed_on": "2026-06-15",
+              "accepted_quantity": 6
+            }
+          }
+        },
+        {
+          "source_id": "F02-C05-DOC",
+          "locator": "p03",
+          "text": "{\"delegation_registry\": [{\"max_quantity\": 10, \"po_line\": \"PO-A/2\", \"signer\": \"Mira\", \"type\": \"grant\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2026-12-31\"}]}",
+          "facts": {
+            "delegation_registry": [
+              {
+                "type": "grant",
+                "signer": "Mira",
+                "po_line": "PO-A/2",
+                "valid_from": "2026-01-01",
+                "valid_to": "2026-12-31",
+                "max_quantity": 10
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F02-C06",
+      "family_id": "F02",
+      "split": "development",
+      "synthetic": true,
+      "policy_source_id": "F02-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F02-C06-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_quantity\": 6, \"po_line\": \"PO-A/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-A/1",
+              "invoice_quantity": 6
+            }
+          }
+        },
+        {
+          "source_id": "F02-C06-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance\": {\"accepted_quantity\": 6, \"po_line\": \"PO-A/1\", \"signed_on\": \"2026-06-15\", \"signer\": \"Mira\"}}",
+          "facts": {
+            "acceptance": {
+              "po_line": "PO-A/1",
+              "signer": "Mira",
+              "signed_on": "2026-06-15",
+              "accepted_quantity": 6
+            }
+          }
+        },
+        {
+          "source_id": "F02-C06-DOC",
+          "locator": "p03",
+          "text": "{\"delegation_registry\": [{\"max_quantity\": 10, \"po_line\": \"PO-A/1\", \"signer\": \"Mira\", \"type\": \"grant\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2026-06-14\"}]}",
+          "facts": {
+            "delegation_registry": [
+              {
+                "type": "grant",
+                "signer": "Mira",
+                "po_line": "PO-A/1",
+                "valid_from": "2026-01-01",
+                "valid_to": "2026-06-14",
+                "max_quantity": 10
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F02-C07",
+      "family_id": "F02",
+      "split": "development",
+      "synthetic": true,
+      "policy_source_id": "F02-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F02-C07-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_quantity\": 6, \"po_line\": \"PO-A/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-A/1",
+              "invoice_quantity": 6
+            }
+          }
+        },
+        {
+          "source_id": "F02-C07-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance\": {\"accepted_quantity\": 6, \"po_line\": \"PO-A/1\", \"signed_on\": \"2026-06-15\", \"signer\": \"Mira\"}}",
+          "facts": {
+            "acceptance": {
+              "po_line": "PO-A/1",
+              "signer": "Mira",
+              "signed_on": "2026-06-15",
+              "accepted_quantity": 6
+            }
+          }
+        },
+        {
+          "source_id": "F02-C07-DOC",
+          "locator": "p03",
+          "text": "{\"delegation_registry\": [{\"max_quantity\": 10, \"po_line\": \"PO-A/1\", \"signer\": \"Mira\", \"type\": \"grant\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2026-12-31\"}, {\"po_line\": \"PO-A/1\", \"signer\": \"Mira\", \"type\": \"deny\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2026-12-31\"}]}",
+          "facts": {
+            "delegation_registry": [
+              {
+                "type": "grant",
+                "signer": "Mira",
+                "po_line": "PO-A/1",
+                "valid_from": "2026-01-01",
+                "valid_to": "2026-12-31",
+                "max_quantity": 10
+              },
+              {
+                "type": "deny",
+                "signer": "Mira",
+                "po_line": "PO-A/1",
+                "valid_from": "2026-01-01",
+                "valid_to": "2026-12-31"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F02-C08",
+      "family_id": "F02",
+      "split": "development",
+      "synthetic": true,
+      "policy_source_id": "F02-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F02-C08-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_quantity\": 6, \"po_line\": \"PO-A/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-A/1",
+              "invoice_quantity": 6
+            }
+          }
+        },
+        {
+          "source_id": "F02-C08-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance\": {\"accepted_quantity\": 6, \"po_line\": \"PO-A/1\", \"signed_on\": \"2026-06-15\", \"signer\": \"Mira\"}}",
+          "facts": {
+            "acceptance": {
+              "po_line": "PO-A/1",
+              "signer": "Mira",
+              "signed_on": "2026-06-15",
+              "accepted_quantity": 6
+            }
+          }
+        },
+        {
+          "source_id": "F02-C08-DOC",
+          "locator": "p03",
+          "text": "{\"delegation_registry\": [{\"max_quantity\": 4, \"po_line\": \"PO-A/1\", \"signer\": \"Mira\", \"type\": \"grant\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2026-12-31\"}, {\"max_quantity\": 4, \"po_line\": \"PO-A/1\", \"signer\": \"Mira\", \"type\": \"grant\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2026-12-31\"}]}",
+          "facts": {
+            "delegation_registry": [
+              {
+                "type": "grant",
+                "signer": "Mira",
+                "po_line": "PO-A/1",
+                "valid_from": "2026-01-01",
+                "valid_to": "2026-12-31",
+                "max_quantity": 4
+              },
+              {
+                "type": "grant",
+                "signer": "Mira",
+                "po_line": "PO-A/1",
+                "valid_from": "2026-01-01",
+                "valid_to": "2026-12-31",
+                "max_quantity": 4
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F02-C09",
+      "family_id": "F02",
+      "split": "development",
+      "synthetic": true,
+      "policy_source_id": "F02-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F02-C09-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_quantity\": 6, \"po_line\": \"PO-A/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-A/1",
+              "invoice_quantity": 6
+            }
+          }
+        },
+        {
+          "source_id": "F02-C09-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance\": {\"accepted_quantity\": 6, \"po_line\": \"PO-A/2\", \"signed_on\": \"2026-06-15\", \"signer\": \"Mira\"}}",
+          "facts": {
+            "acceptance": {
+              "po_line": "PO-A/2",
+              "signer": "Mira",
+              "signed_on": "2026-06-15",
+              "accepted_quantity": 6
+            }
+          }
+        },
+        {
+          "source_id": "F02-C09-DOC",
+          "locator": "p03",
+          "text": "{\"delegation_registry\": [{\"max_quantity\": 10, \"po_line\": \"PO-A/1\", \"signer\": \"Mira\", \"type\": \"grant\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2026-12-31\"}]}",
+          "facts": {
+            "delegation_registry": [
+              {
+                "type": "grant",
+                "signer": "Mira",
+                "po_line": "PO-A/1",
+                "valid_from": "2026-01-01",
+                "valid_to": "2026-12-31",
+                "max_quantity": 10
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F02-C10",
+      "family_id": "F02",
+      "split": "development",
+      "synthetic": true,
+      "policy_source_id": "F02-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F02-C10-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_quantity\": 6, \"po_line\": \"PO-A/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-A/1",
+              "invoice_quantity": 6
+            }
+          }
+        },
+        {
+          "source_id": "F02-C10-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance\": {\"accepted_quantity\": 5, \"po_line\": \"PO-A/1\", \"signed_on\": \"2026-06-15\", \"signer\": \"Mira\"}}",
+          "facts": {
+            "acceptance": {
+              "po_line": "PO-A/1",
+              "signer": "Mira",
+              "signed_on": "2026-06-15",
+              "accepted_quantity": 5
+            }
+          }
+        },
+        {
+          "source_id": "F02-C10-DOC",
+          "locator": "p03",
+          "text": "{\"delegation_registry\": [{\"max_quantity\": 10, \"po_line\": \"PO-A/1\", \"signer\": \"Mira\", \"type\": \"grant\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2026-12-31\"}]}",
+          "facts": {
+            "delegation_registry": [
+              {
+                "type": "grant",
+                "signer": "Mira",
+                "po_line": "PO-A/1",
+                "valid_from": "2026-01-01",
+                "valid_to": "2026-12-31",
+                "max_quantity": 10
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

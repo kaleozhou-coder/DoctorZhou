@@ -1,0 +1,44 @@
+{
+  "family_id": "F02",
+  "split": "development",
+  "synthetic": true,
+  "source_kind": "invented_policy",
+  "policy_paragraphs": [
+    {
+      "source_id": "F02-POL",
+      "locator": "p01",
+      "text": "This is an invented policy for positive-quantity goods in unit EA, a single invoice line, and its unique explicitly mapped purchase-order line. No service, return, credit, unit conversion, payment approval, or real transaction is covered. All named people, records, dates and organizational roles are synthetic. A closure recommendation never authorizes payment."
+    },
+    {
+      "source_id": "F02-POL",
+      "locator": "p02",
+      "text": "The request has po_line and invoice_quantity. Exactly one positive acceptance record is supplied, with signer, po_line and accepted_quantity. Its status and authenticity are uncontested. Authority is proven only by the independent delegation_registry snapshot. Each grant names signer, exact po_line, valid_from and valid_to ISO dates (both inclusive), and max_quantity for one record. A title, department or a grant for another line proves no authority. Assessment uses the acceptance signed_on date, not invoice or review date."
+    },
+    {
+      "source_id": "F02-POL",
+      "locator": "p03",
+      "text": "Check 1: An acceptance for another po_line returns needs_review / acceptance_line_mismatch. Check 2: An explicit deny entry for the same signer and exact po_line covering signed_on takes precedence over every grant and returns needs_review / explicit_authority_denial."
+    },
+    {
+      "source_id": "F02-POL",
+      "locator": "p04",
+      "text": "Check 3: If no grant matches signer and exact po_line and contains signed_on inclusively, return needs_evidence / authority_unproven. Check 4: Among matching grants use the largest max_quantity, do not sum limits; accepted_quantity above that maximum returns needs_review / authority_limit_exceeded."
+    },
+    {
+      "source_id": "F02-POL",
+      "locator": "p05",
+      "text": "Check 5: accepted_quantity below invoice_quantity returns needs_evidence / quantity_shortfall. Otherwise return close_eligible / criteria_met. Empty registry, expired grants and future grants are evidence gaps rather than explicit denials; an explicit deny matters only in its line and date scope."
+    },
+    {
+      "source_id": "F02-POL",
+      "locator": "p06",
+      "text": "Apply the numbered decision checks below in their stated order and return exactly one primary reason code for the first decisive check. If all checks pass return close_eligible / criteria_met. Missing information is not rejection. needs_review means an explicit contradiction, adverse finding or structural inconsistency requiring a person; needs_evidence means evidence is absent or insufficient. Only supplied paragraphs are sources; never invent missing facts or locators."
+    }
+  ],
+  "document_schema": {
+    "request": "{po_line,invoice_quantity}",
+    "acceptance": "{po_line,signer,signed_on,accepted_quantity}",
+    "delegation_registry": "complete snapshot array {type:grant|deny,signer,po_line,valid_from,valid_to,max_quantity for grant}"
+  },
+  "task": "Derive a source-grounded ontology and operational decision rules. Do not infer payment authorization. Do not read evaluator files."
+}

@@ -1,0 +1,7 @@
+1b7cc3ff1834c8963f2c93f30f171b58002cbf0b2c52dc8765e7e83aebb9f7c9  peppol-billing-2025-Q2/base-example.xml
+cdb84e4ce1a770f6e4a8949dcbe37493bc37aeded5232b592a1a48feb221a504  peppol-billing-2025-Q2/sales-order-example.xml
+08e0ad82e0dbe7e16d7533c01761843343a56954ea24881d0f7f1cce06f8879e  peppol-billing-2025-Q2/base-creditnote-correction.xml
+9424f8b54d5aff1dd294d39bde8574e9b6a55eee641acfbc514af8ee858213e7  oasis-ubl-2.1-release/UBL-Order-2.0-Example.xml
+a2d0fca38ad8fa2d199329fed67fe32570d645d2bc172a6bfaf9eb850a0716eb  oasis-ubl-2.1-release/UBL-Invoice-2.0-Example.xml
+bb9ff5abe7012b57c3d4ecbb2e7a5a6796578bff636830707c41eb958a5fbaa1  oasis-ubl-2.1-release/UBL-DespatchAdvice-2.0-Example.xml
+1e79a937942e869a27382c5bd11f6c6647a211910dca06e5d51ad2546163fcde  oasis-ubl-2.1-release/UBL-ReceiptAdvice-2.0-Example.xml

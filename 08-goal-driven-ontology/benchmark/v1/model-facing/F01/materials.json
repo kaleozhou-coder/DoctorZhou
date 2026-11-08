@@ -1,0 +1,48 @@
+{
+  "family_id": "F01",
+  "split": "development",
+  "synthetic": true,
+  "source_kind": "invented_policy",
+  "policy_paragraphs": [
+    {
+      "source_id": "F01-POL",
+      "locator": "p01",
+      "text": "This is an invented policy for positive-quantity goods in unit EA, a single invoice line, and its unique explicitly mapped purchase-order line. No service, return, credit, unit conversion, payment approval, or real transaction is covered. All named people, records, dates and organizational roles are synthetic. A closure recommendation never authorizes payment."
+    },
+    {
+      "source_id": "F01-POL",
+      "locator": "p02",
+      "text": "The request states invoice_id, po_line, invoice_quantity, and distinct target_serials. Each accepted lot record carries po_line, status, lot_id, and distinct serials. The supplied snapshot contains all lot records currently available for this case. Acceptance by the designated receiving service is already authenticated; no additional signer check is required. A serial denotes one EA. Only status accepted records mapped to the request po_line can cover target_serials; wrong-line or pending records are ignored."
+    },
+    {
+      "source_id": "F01-POL",
+      "locator": "p03",
+      "text": "Check 1: If invoice_quantity differs from the number of distinct target_serials, return needs_review / target_count_mismatch."
+    },
+    {
+      "source_id": "F01-POL",
+      "locator": "p04",
+      "text": "Check 2: Among accepted, same-line lot records intersecting target_serials, any shared serial (including a serial outside the target) across different lot_id values returns needs_review / overlapping_lots. Repeated identical occurrences of the same lot_id and same payload are one record. Different payloads for one lot_id return needs_review / lot_identity_conflict before checking overlap. Records not intersecting the target do not participate."
+    },
+    {
+      "source_id": "F01-POL",
+      "locator": "p05",
+      "text": "Check 3: Form the union of serials of the remaining participating records. If that union does not include every target serial, return needs_evidence / uncovered_serials. Quantities on different lots are not added blindly, and extra serials are allowed. Otherwise return close_eligible / criteria_met."
+    },
+    {
+      "source_id": "F01-POL",
+      "locator": "p06",
+      "text": "Apply the numbered decision checks below in their stated order and return exactly one primary reason code for the first decisive check. If all checks pass return close_eligible / criteria_met. Missing information is not rejection. needs_review means an explicit contradiction, adverse finding or structural inconsistency requiring a person; needs_evidence means evidence is absent or insufficient. Only supplied paragraphs are sources; never invent missing facts or locators."
+    }
+  ],
+  "document_schema": {
+    "request": {
+      "invoice_id": "string",
+      "po_line": "string",
+      "invoice_quantity": "positive integer",
+      "target_serials": "distinct string array"
+    },
+    "lots": "array of {lot_id,po_line,status:accepted|pending,serials}; complete current snapshot"
+  },
+  "task": "Derive a source-grounded ontology and operational decision rules. Do not infer payment authorization. Do not read evaluator files."
+}

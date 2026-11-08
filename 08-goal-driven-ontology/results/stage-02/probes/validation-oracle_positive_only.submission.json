@@ -1,0 +1,33 @@
+{
+  "run": {
+    "run_id": "validation-oracle_positive_only",
+    "method": "oracle_positive_only",
+    "execution_kind": "engineering_probe",
+    "benchmark_freeze_sha256": "99e026b7cc47a87da948b4eaa82af3808e46dcfaab9af67149f4f800de5767b3",
+    "split": "validation",
+    "uses_labels": true,
+    "purpose": "Evaluator plumbing check; not a model output"
+  },
+  "predictions": [
+    {
+      "case_id": "F03-C01",
+      "decision": "close_eligible",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F03-C02",
+      "decision": "close_eligible",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F03-C03",
+      "decision": "close_eligible",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F03-C10",
+      "decision": "close_eligible",
+      "payment_authorized": false
+    }
+  ]
+}

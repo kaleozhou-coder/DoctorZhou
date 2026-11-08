@@ -1,0 +1,21 @@
+{
+  "AUTHORING.md": "bf348b5b921d61dcfde6ea9387af6e5bca2dc518f672cbc111f9ee6ee221052c",
+  "SPLIT.json": "10250e696cdf8a0a4a53480d1166e0930fb0b64beb1f7ebe5b6e941f20b73555",
+  "author_benchmark.py": "508246c9cbf3ae31703db7665d5e35182de9d8e1c398fb822f59ba2a2189d9aa",
+  "evaluator/inputs/F01.json": "2b0bb6aa03bfa3ca56994414e8613c9f61144d351061b165705edea9a6c45420",
+  "evaluator/inputs/F02.json": "6f27d3b91259df6cde7fbcdabc59885b325dbbce0630ba8dbeb1cbc98e8ba257",
+  "evaluator/inputs/F03.json": "79b74713dbf44111b1d8a7148fbe3488c0c3b6e812b1e6dade9010a1abbcfc64",
+  "evaluator/inputs/F04.json": "25ed65cdb5b6809a67dda6822548986313bf2b60927746c1a8f708127c0d5346",
+  "evaluator/inputs/F05.json": "c940e76c78a7bc8d5d809eea5b4dd17ed0421191136ae77935f2a96138cdf79e",
+  "evaluator/inputs/F06.json": "b4d5119ad8dd77308f79acc7e11c2ab0757102054b437e0d606b126f371689cf",
+  "evaluator/labels.json": "6a7eb05981d0e2bea24ff65aa083cd0ed88917334bd172ef3b2c5dfd5037a65b",
+  "evaluator/prediction.schema.json": "eb5736df019d278a1bdd45a74799e6a4e894b8d2b21ce15c56b012fd80c0772f",
+  "evaluator/source-registry.json": "3d0d1c883f662023b6616859f7f969071d4ec619b9a24619bd92af29b11a0340",
+  "manifest.json": "43d59cfbcb2b0d5c14eb2a6b68071f7b203ae1aed51f859b22bd9cd9295cc641",
+  "model-facing/F01/materials.json": "db7219b05f7a059479b7d6e62ff2c96b8bc7b10f97f56aba997b5492c04730aa",
+  "model-facing/F02/materials.json": "72ede95ac83dafb32d7815b884f6985200723ae4552954b8b80dd3e0b479c50d",
+  "model-facing/F03/materials.json": "1af670a4f1f857edb409c1ceb129258b514342d401d9b3c0bf34ab127cc38264",
+  "model-facing/F04/materials.json": "aff3aed7c03615f49d43788b69b8351abffd8921908097780a5973ac51c2d610",
+  "model-facing/F05/materials.json": "cc43f2cfad138108f1a50d7ecee74557912c15a9d18a9a1ce7491940b15fc2c8",
+  "model-facing/F06/materials.json": "904dc817df2082a2538ffc9a16e2bc8f6ce1a37b5ef9756194ecd09cb8743cf5"
+}

@@ -1,0 +1,182 @@
+{
+  "project": "goal-driven-ontology",
+  "created_utc": "2026-11-06T17:59:05.186082+00:00",
+  "python": "3.12.14",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 41,
+      "sha256": "888622f96945e05a7fed2f53d4d5aae0e79665723ff192020a35bdd22f6b2129"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1978,
+      "sha256": "919eab6b33c9f3c8843be78af29c2bfd686de2f3b88e2f88cb343c8214bf4093"
+    },
+    {
+      "path": "data/public/LICENSE-SOURCES.md",
+      "bytes": 4061,
+      "sha256": "ab82750828b49a5badaa6890b1edfc87546a45e5c02c480b1e1262c8c3911750"
+    },
+    {
+      "path": "data/public/OASIS-NOTICES.txt",
+      "bytes": 4782,
+      "sha256": "7b75911fa1727a1cbbe4a669d304be2d0b21c8fab1c2275fd0130749b705f4d6"
+    },
+    {
+      "path": "data/public/SHA256SUMS",
+      "bytes": 814,
+      "sha256": "435f4d53cdafb25739e01913b0e31d71465ba01512602def9da24b39c8f73272"
+    },
+    {
+      "path": "data/public/fetch_verify.py",
+      "bytes": 1154,
+      "sha256": "a104d13c69fa1bae835a9c69919f19413f9d29340cb91b252f110bc897b21f3e"
+    },
+    {
+      "path": "data/public/manifest.json",
+      "bytes": 4370,
+      "sha256": "43c3331eb0dea6370554e087b2f6340732fc5aaee0ea539275ecaa2aedf09b0e"
+    },
+    {
+      "path": "data/public/oasis-ubl-2.1-release/UBL-DespatchAdvice-2.0-Example.xml",
+      "bytes": 6096,
+      "sha256": "bb9ff5abe7012b57c3d4ecbb2e7a5a6796578bff636830707c41eb958a5fbaa1"
+    },
+    {
+      "path": "data/public/oasis-ubl-2.1-release/UBL-Invoice-2.0-Example.xml",
+      "bytes": 9418,
+      "sha256": "a2d0fca38ad8fa2d199329fed67fe32570d645d2bc172a6bfaf9eb850a0716eb"
+    },
+    {
+      "path": "data/public/oasis-ubl-2.1-release/UBL-Order-2.0-Example.xml",
+      "bytes": 6996,
+      "sha256": "9424f8b54d5aff1dd294d39bde8574e9b6a55eee641acfbc514af8ee858213e7"
+    },
+    {
+      "path": "data/public/oasis-ubl-2.1-release/UBL-ReceiptAdvice-2.0-Example.xml",
+      "bytes": 5282,
+      "sha256": "1e79a937942e869a27382c5bd11f6c6647a211910dca06e5d51ad2546163fcde"
+    },
+    {
+      "path": "data/public/peppol-billing-2025-Q2/base-creditnote-correction.xml",
+      "bytes": 9462,
+      "sha256": "08e0ad82e0dbe7e16d7533c01761843343a56954ea24881d0f7f1cce06f8879e"
+    },
+    {
+      "path": "data/public/peppol-billing-2025-Q2/base-example.xml",
+      "bytes": 9228,
+      "sha256": "1b7cc3ff1834c8963f2c93f30f171b58002cbf0b2c52dc8765e7e83aebb9f7c9"
+    },
+    {
+      "path": "data/public/peppol-billing-2025-Q2/sales-order-example.xml",
+      "bytes": 9458,
+      "sha256": "cdb84e4ce1a770f6e4a8949dcbe37493bc37aeded5232b592a1a48feb221a504"
+    },
+    {
+      "path": "data/synthetic/acceptance_cases.json",
+      "bytes": 23192,
+      "sha256": "8a41c7b1d6710502719c0dee31f5a3df042c1606034fd89643f7aa8dedf878ce"
+    },
+    {
+      "path": "ontology/reference_model.json",
+      "bytes": 1746,
+      "sha256": "b7f153939a0eb74c2763f259a0f4918679c06361ed904e12f60d6548b27223b9"
+    },
+    {
+      "path": "prompts/all_materials.md",
+      "bytes": 854,
+      "sha256": "a7e9ba137748c682ecdb229d57688d96adce2bf55b31b926755314ee8eb22c27"
+    },
+    {
+      "path": "prompts/goal_incremental.md",
+      "bytes": 895,
+      "sha256": "d72d7a55f2d87d691d28c9808e482ae07e9525610a017a2835deb1e0e9371db9"
+    },
+    {
+      "path": "protocol/annotation-guide.zh.md",
+      "bytes": 1677,
+      "sha256": "3544a0bf5ddd823bcd512555565859fd9e85301111e0ed6105dd345c5d7eeed6"
+    },
+    {
+      "path": "protocol/candidate-schema.json",
+      "bytes": 1087,
+      "sha256": "e15062ebb4f0cf9820e48822c910e4476d3acfd0b388e80a8ba0228431674d9a"
+    },
+    {
+      "path": "protocol/research-design.zh.md",
+      "bytes": 11526,
+      "sha256": "319b80eb1683e1c4ca3263427a909b4c59d2de77982d039f308aa3d1dec1040f"
+    },
+    {
+      "path": "research/literature_review.md",
+      "bytes": 15345,
+      "sha256": "4647c0ccde2e40804da7addde8b389ff4bd3f4cc83cc4ef1688b5c9d2848bb8a"
+    },
+    {
+      "path": "research/public-materials.md",
+      "bytes": 4277,
+      "sha256": "28982247bfc3ff07db2ca2203c814340a1d7818416094b032b3fbf2c21642abb"
+    },
+    {
+      "path": "research/sources.json",
+      "bytes": 9735,
+      "sha256": "4277d2087f94874ee28eddccf3b5dc939411b5b5e0efb1e1b626220bc88b7987"
+    },
+    {
+      "path": "results/day-01.zh.md",
+      "bytes": 3446,
+      "sha256": "45ee7b41248d808c2b6f6683d50ece6e38a7cf62294a7107cbb610dae4d50ac3"
+    },
+    {
+      "path": "results/independent-review.md",
+      "bytes": 6573,
+      "sha256": "68e4c2121250b94a747bc80b3739b3338eb083bc291195ac1788e6e2518fc5ca"
+    },
+    {
+      "path": "results/pilot-run.txt",
+      "bytes": 1288,
+      "sha256": "691fcded2d42ec32c3c2e2639249f34126a11736de176c11995f9de1c29a0210"
+    },
+    {
+      "path": "results/public-audit-run.txt",
+      "bytes": 1445,
+      "sha256": "5af68d5fcb72d4198c040e98bcbac9149aafe2d86d8df36b979ead0512088e83"
+    },
+    {
+      "path": "results/public-xml-audit.json",
+      "bytes": 5417,
+      "sha256": "f44333e26776df1abaccf06272350122ef9e3a2a20dc02cb00d34e3ec33c5daa"
+    },
+    {
+      "path": "results/semantic_pilot.json",
+      "bytes": 70017,
+      "sha256": "b1617084eb13eca839a534df0cb9fd346e455c85956d576c4a3ed52756039253"
+    },
+    {
+      "path": "results/test-run.txt",
+      "bytes": 1213,
+      "sha256": "2c02912ac8b46fbda473ec5011a5ad46e71f0930ee343a932a55c279bc6d2e1a"
+    },
+    {
+      "path": "src/audit_public_xml.py",
+      "bytes": 2752,
+      "sha256": "508c0b3d8c3d60c70ca6b331d38c8d75c4c19078b3844679d5fccdb3950742f7"
+    },
+    {
+      "path": "src/build_fixtures.py",
+      "bytes": 4553,
+      "sha256": "5e17dde51c1410905ecb8b719781d88ca1419abf750c121a2f50fb087ea952cb"
+    },
+    {
+      "path": "src/pilot.py",
+      "bytes": 6677,
+      "sha256": "b363ff9b467f2aaf1911f7c96ab60b07de8a1dcea2ed0816e2a128bf5af15435"
+    },
+    {
+      "path": "tests/test_pilot.py",
+      "bytes": 3470,
+      "sha256": "347998cb190918e5f5a64fd06cb053b376a711a923480ce8ee048de644f06a6c"
+    }
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "family_id": "F03",
+  "split": "validation",
+  "cases": [
+    {
+      "case_id": "F03-C01",
+      "family_id": "F03",
+      "split": "validation",
+      "synthetic": true,
+      "policy_source_id": "F03-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F03-C01-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_quantity\": 5, \"po_line\": \"PO-S/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-S/1",
+              "invoice_quantity": 5
+            }
+          }
+        },
+        {
+          "source_id": "F03-C01-DOC",
+          "locator": "p02",
+          "text": "{\"inspection_register\": [{\"phase\": \"final\", \"po_line\": \"PO-S/1\", \"quantity\": 5, \"recorded_on\": \"2026-07-01\", \"report_id\": \"a\", \"status\": \"accepted\"}]}",
+          "facts": {
+            "inspection_register": [
+              {
+                "report_id": "a",
+                "po_line": "PO-S/1",
+                "phase": "final",
+                "status": "accepted",
+                "quantity": 5,
+                "recorded_on": "2026-07-01"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F03-C02",
+      "family_id": "F03",
+      "split": "validation",
+      "synthetic": true,
+      "policy_source_id": "F03-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F03-C02-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_quantity\": 5, \"po_line\": \"PO-S/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-S/1",
+              "invoice_quantity": 5
+            }
+          }
+        },
+        {
+          "source_id": "F03-C02-DOC",
+          "locator": "p02",
+          "text": "{\"inspection_register\": [{\"phase\": \"final\", \"po_line\": \"PO-S/1\", \"quantity\": 5, \"recorded_on\": \"2026-07-01\", \"report_id\": \"a\", \"status\": \"accepted\"}, {\"phase\": \"preliminary\", \"po_line\": \"PO-S/1\", \"quantity\": 5, \"recorded_on\": \"2026-07-01\", \"report_id\": \"b\", \"status\": \"rejected\"}]}",
+          "facts": {
+            "inspection_register": [
+              {
+                "report_id": "a",
+                "po_line": "PO-S/1",
+                "phase": "final",
+                "status": "accepted",
+                "quantity": 5,
+                "recorded_on": "2026-07-01"
+              },
+              {
+                "report_id": "b",
+                "po_line": "PO-S/1",
+                "phase": "preliminary",
+                "status": "rejected",
+                "quantity": 5,
+                "recorded_on": "2026-07-01"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F03-C03",
+      "family_id": "F03",
+      "split": "validation",
+      "synthetic": true,
+      "policy_source_id": "F03-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F03-C03-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_quantity\": 5, \"po_line\": \"PO-S/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-S/1",
+              "invoice_quantity": 5
+            }
+          }
+        },
+        {
+          "source_id": "F03-C03-DOC",
+          "locator": "p02",
+          "text": "{\"inspection_register\": [{\"phase\": \"final\", \"po_line\": \"PO-S/1\", \"quantity\": 5, \"recorded_on\": \"2026-07-01\", \"report_id\": \"a\", \"status\": \"accepted\"}, {\"phase\": \"final\", \"po_line\": \"PO-S/1\", \"quantity\": 5, \"recorded_on\": \"2026-07-01\", \"report_id\": \"b\", \"status\": \"unknown\"}]}",
+          "facts": {
+            "inspection_register": [
+              {
+                "report_id": "a",
+                "po_line": "PO-S/1",
+                "phase": "final",
+                "status": "accepted",
+                "quantity": 5,
+                "recorded_on": "2026-07-01"
+              },
+              {
+                "report_id": "b",
+                "po_line": "PO-S/1",
+                "phase": "final",
+                "status": "unknown",
+                "quantity": 5,
+                "recorded_on": "2026-07-01"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F03-C04",
+      "family_id": "F03",
+      "split": "validation",
+      "synthetic": true,
+      "policy_source_id": "F03-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F03-C04-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_quantity\": 5, \"po_line\": \"PO-S/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-S/1",
+              "invoice_quantity": 5
+            }
+          }
+        },
+        {
+          "source_id": "F03-C04-DOC",
+          "locator": "p02",
+          "text": "{\"inspection_register\": []}",
+          "facts": {
+            "inspection_register": []
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F03-C05",
+      "family_id": "F03",
+      "split": "validation",
+      "synthetic": true,
+      "policy_source_id": "F03-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F03-C05-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_quantity\": 5, \"po_line\": \"PO-S/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-S/1",
+              "invoice_quantity": 5
+            }
+          }
+        },
+        {
+          "source_id": "F03-C05-DOC",
+          "locator": "p02",
+          "text": "{\"inspection_register\": [{\"phase\": \"preliminary\", \"po_line\": \"PO-S/1\", \"quantity\": 5, \"recorded_on\": \"2026-07-01\", \"report_id\": \"a\", \"status\": \"accepted\"}]}",
+          "facts": {
+            "inspection_register": [
+              {
+                "report_id": "a",
+                "po_line": "PO-S/1",
+                "phase": "preliminary",
+                "status": "accepted",
+                "quantity": 5,
+                "recorded_on": "2026-07-01"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F03-C06",
+      "family_id": "F03",
+      "split": "validation",
+      "synthetic": true,
+      "policy_source_id": "F03-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F03-C06-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_quantity\": 5, \"po_line\": \"PO-S/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-S/1",
+              "invoice_quantity": 5
+            }
+          }
+        },
+        {
+          "source_id": "F03-C06-DOC",
+          "locator": "p02",
+          "text": "{\"inspection_register\": [{\"phase\": \"final\", \"po_line\": \"PO-S/1\", \"quantity\": 2, \"recorded_on\": \"2026-07-01\", \"report_id\": \"a\", \"status\": \"accepted\"}, {\"phase\": \"final\", \"po_line\": \"PO-S/1\", \"quantity\": 3, \"recorded_on\": \"2026-07-01\", \"report_id\": \"b\", \"status\": \"accepted\"}]}",
+          "facts": {
+            "inspection_register": [
+              {
+                "report_id": "a",
+                "po_line": "PO-S/1",
+                "phase": "final",
+                "status": "accepted",
+                "quantity": 2,
+                "recorded_on": "2026-07-01"
+              },
+              {
+                "report_id": "b",
+                "po_line": "PO-S/1",
+                "phase": "final",
+                "status": "accepted",
+                "quantity": 3,
+                "recorded_on": "2026-07-01"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F03-C07",
+      "family_id": "F03",
+      "split": "validation",
+      "synthetic": true,
+      "policy_source_id": "F03-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F03-C07-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_quantity\": 5, \"po_line\": \"PO-S/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-S/1",
+              "invoice_quantity": 5
+            }
+          }
+        },
+        {
+          "source_id": "F03-C07-DOC",
+          "locator": "p02",
+          "text": "{\"inspection_register\": [{\"phase\": \"final\", \"po_line\": \"PO-S/1\", \"quantity\": 5, \"recorded_on\": \"2026-07-01\", \"report_id\": \"a\", \"status\": \"rejected\"}]}",
+          "facts": {
+            "inspection_register": [
+              {
+                "report_id": "a",
+                "po_line": "PO-S/1",
+                "phase": "final",
+                "status": "rejected",
+                "quantity": 5,
+                "recorded_on": "2026-07-01"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F03-C08",
+      "family_id": "F03",
+      "split": "validation",
+      "synthetic": true,
+      "policy_source_id": "F03-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F03-C08-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_quantity\": 5, \"po_line\": \"PO-S/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-S/1",
+              "invoice_quantity": 5
+            }
+          }
+        },
+        {
+          "source_id": "F03-C08-DOC",
+          "locator": "p02",
+          "text": "{\"inspection_register\": [{\"phase\": \"final\", \"po_line\": \"PO-S/1\", \"quantity\": 5, \"recorded_on\": \"2026-07-01\", \"report_id\": \"a\", \"status\": \"rejected\"}, {\"phase\": \"final\", \"po_line\": \"PO-S/1\", \"quantity\": 5, \"recorded_on\": \"2026-07-02\", \"report_id\": \"b\", \"status\": \"accepted\"}]}",
+          "facts": {
+            "inspection_register": [
+              {
+                "report_id": "a",
+                "po_line": "PO-S/1",
+                "phase": "final",
+                "status": "rejected",
+                "quantity": 5,
+                "recorded_on": "2026-07-01"
+              },
+              {
+                "report_id": "b",
+                "po_line": "PO-S/1",
+                "phase": "final",
+                "status": "accepted",
+                "quantity": 5,
+                "recorded_on": "2026-07-02"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F03-C09",
+      "family_id": "F03",
+      "split": "validation",
+      "synthetic": true,
+      "policy_source_id": "F03-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F03-C09-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_quantity\": 5, \"po_line\": \"PO-S/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-S/1",
+              "invoice_quantity": 5
+            }
+          }
+        },
+        {
+          "source_id": "F03-C09-DOC",
+          "locator": "p02",
+          "text": "{\"inspection_register\": [{\"phase\": \"final\", \"po_line\": \"PO-S/1\", \"quantity\": 5, \"recorded_on\": \"2026-07-01\", \"report_id\": \"a\", \"status\": \"pending\"}, {\"phase\": \"final\", \"po_line\": \"PO-S/1\", \"quantity\": 5, \"recorded_on\": \"2026-07-01\", \"report_id\": \"b\", \"status\": \"unknown\"}]}",
+          "facts": {
+            "inspection_register": [
+              {
+                "report_id": "a",
+                "po_line": "PO-S/1",
+                "phase": "final",
+                "status": "pending",
+                "quantity": 5,
+                "recorded_on": "2026-07-01"
+              },
+              {
+                "report_id": "b",
+                "po_line": "PO-S/1",
+                "phase": "final",
+                "status": "unknown",
+                "quantity": 5,
+                "recorded_on": "2026-07-01"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F03-C10",
+      "family_id": "F03",
+      "split": "validation",
+      "synthetic": true,
+      "policy_source_id": "F03-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F03-C10-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_quantity\": 5, \"po_line\": \"PO-S/1\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-S/1",
+              "invoice_quantity": 5
+            }
+          }
+        },
+        {
+          "source_id": "F03-C10-DOC",
+          "locator": "p02",
+          "text": "{\"inspection_register\": [{\"phase\": \"final\", \"po_line\": \"PO-S/1\", \"quantity\": 5, \"recorded_on\": \"2026-07-01\", \"report_id\": \"a\", \"status\": \"accepted\"}, {\"phase\": \"final\", \"po_line\": \"PO-S/2\", \"quantity\": 5, \"recorded_on\": \"2026-07-01\", \"report_id\": \"b\", \"status\": \"rejected\"}]}",
+          "facts": {
+            "inspection_register": [
+              {
+                "report_id": "a",
+                "po_line": "PO-S/1",
+                "phase": "final",
+                "status": "accepted",
+                "quantity": 5,
+                "recorded_on": "2026-07-01"
+              },
+              {
+                "report_id": "b",
+                "po_line": "PO-S/2",
+                "phase": "final",
+                "status": "rejected",
+                "quantity": 5,
+                "recorded_on": "2026-07-01"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+test_all_explicit_expectations (test_pilot.SemanticPilotTests.test_all_explicit_expectations) ... ok
+test_case_ids_unique (test_pilot.SemanticPilotTests.test_case_ids_unique) ... ok
+test_each_mutant_is_detected (test_pilot.SemanticPilotTests.test_each_mutant_is_detected) ... ok
+test_input_not_mutated (test_pilot.SemanticPilotTests.test_input_not_mutated) ... ok
+test_no_payment_approved_state (test_pilot.SemanticPilotTests.test_no_payment_approved_state) ... ok
+test_nonfinite_aggregate_does_not_close (test_pilot.SemanticPilotTests.test_nonfinite_aggregate_does_not_close) ... ok
+test_nonfinite_or_nonnumeric_quantities_do_not_close (test_pilot.SemanticPilotTests.test_nonfinite_or_nonnumeric_quantities_do_not_close) ... ok
+test_revoked_old_policy_does_not_block_valid_evidence (test_pilot.SemanticPilotTests.test_revoked_old_policy_does_not_block_valid_evidence) ... ok
+test_single_record_cases_order_invariant (test_pilot.SemanticPilotTests.test_single_record_cases_order_invariant) ... ok
+test_unknown_revocation_does_not_close (test_pilot.SemanticPilotTests.test_unknown_revocation_does_not_close) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.002s
+
+OK

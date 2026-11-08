@@ -1,0 +1,42 @@
+{
+  "output": "results/stage-02/probes/test-close_all.report.json",
+  "metrics": {
+    "case_n": 30,
+    "positive_n": 10,
+    "negative_n": 20,
+    "missing_n": 0,
+    "completion_rate": 1.0,
+    "exact_decision_correct_n": 10,
+    "exact_decision_accuracy": 0.3333333333333333,
+    "false_close_n": 20,
+    "false_close_rate": 1.0,
+    "positive_close_recall": 1.0,
+    "conservative_false_close_rate_if_missing_negatives_close": 1.0,
+    "decision_counts": {
+      "close_eligible": 30
+    },
+    "false_close_case_ids": [
+      "F04-C04",
+      "F04-C05",
+      "F04-C06",
+      "F04-C07",
+      "F04-C08",
+      "F04-C09",
+      "F05-C04",
+      "F05-C05",
+      "F05-C06",
+      "F05-C07",
+      "F05-C08",
+      "F05-C09",
+      "F05-C10",
+      "F06-C04",
+      "F06-C05",
+      "F06-C06",
+      "F06-C07",
+      "F06-C08",
+      "F06-C09",
+      "F06-C10"
+    ],
+    "missing_case_ids": []
+  }
+}

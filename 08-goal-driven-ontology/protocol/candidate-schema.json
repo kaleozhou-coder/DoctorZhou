@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evidence-grounded ontology candidate",
+  "type": "object",
+  "required": ["id", "kind", "definition", "cq_ids", "sources", "assumptions", "status"],
+  "properties": {
+    "id": {"type": "string"},
+    "kind": {"enum": ["class", "relation", "constraint"]},
+    "definition": {"type": "string"},
+    "domain": {"type": ["string", "null"]},
+    "range": {"type": ["string", "null"]},
+    "cq_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "sources": {"type": "array", "items": {"type": "object", "required": ["source_id", "locator", "support"], "properties": {"source_id": {"type": "string"}, "locator": {"type": "string"}, "support": {"type": "string"}}, "additionalProperties": false}},
+    "assumptions": {"type": "array", "items": {"type": "string"}},
+    "policy_scope": {"type": ["string", "null"]},
+    "questions": {"type": "array", "items": {"type": "string"}},
+    "status": {"enum": ["proposed", "approved", "rejected", "needs_evidence"]}
+  },
+  "additionalProperties": false
+}

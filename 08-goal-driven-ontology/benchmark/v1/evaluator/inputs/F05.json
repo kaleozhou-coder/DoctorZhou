@@ -1,0 +1,562 @@
+{
+  "family_id": "F05",
+  "split": "test",
+  "cases": [
+    {
+      "case_id": "F05-C01",
+      "family_id": "F05",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F05-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F05-C01-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_on\": \"2026-07-05\", \"invoice_quantity\": 7, \"po_line\": \"PO-T/1\", \"receipt_on\": \"2026-06-30\", \"reviewed_on\": \"2026-08-01\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-T/1",
+              "invoice_quantity": 7,
+              "receipt_on": "2026-06-30",
+              "invoice_on": "2026-07-05",
+              "reviewed_on": "2026-08-01"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C01-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance\": {\"declared_regime\": \"OLD\", \"quantity\": 7, \"signed_on\": \"2026-07-02\", \"status\": \"accepted\"}}",
+          "facts": {
+            "acceptance": {
+              "signed_on": "2026-07-02",
+              "declared_regime": "OLD",
+              "quantity": 7,
+              "status": "accepted"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C01-DOC",
+          "locator": "p03",
+          "text": "{\"quality_release\": null}",
+          "facts": {
+            "quality_release": null
+          }
+        },
+        {
+          "source_id": "F05-C01-DOC",
+          "locator": "p04",
+          "text": "{\"transition_register\": null}",
+          "facts": {
+            "transition_register": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F05-C02",
+      "family_id": "F05",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F05-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F05-C02-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_on\": \"2026-07-05\", \"invoice_quantity\": 7, \"po_line\": \"PO-T/1\", \"receipt_on\": \"2026-07-01\", \"reviewed_on\": \"2026-08-01\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-T/1",
+              "invoice_quantity": 7,
+              "receipt_on": "2026-07-01",
+              "invoice_on": "2026-07-05",
+              "reviewed_on": "2026-08-01"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C02-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance\": {\"declared_regime\": \"NEW\", \"quantity\": 7, \"signed_on\": \"2026-07-02\", \"status\": \"accepted\"}}",
+          "facts": {
+            "acceptance": {
+              "signed_on": "2026-07-02",
+              "declared_regime": "NEW",
+              "quantity": 7,
+              "status": "accepted"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C02-DOC",
+          "locator": "p03",
+          "text": "{\"quality_release\": {\"released\": true, \"released_on\": \"2026-07-01\"}}",
+          "facts": {
+            "quality_release": {
+              "released": true,
+              "released_on": "2026-07-01"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C02-DOC",
+          "locator": "p04",
+          "text": "{\"transition_register\": null}",
+          "facts": {
+            "transition_register": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F05-C03",
+      "family_id": "F05",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F05-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F05-C03-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_on\": \"2026-07-05\", \"invoice_quantity\": 7, \"po_line\": \"PO-T/1\", \"receipt_on\": \"2026-07-01\", \"reviewed_on\": \"2026-08-01\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-T/1",
+              "invoice_quantity": 7,
+              "receipt_on": "2026-07-01",
+              "invoice_on": "2026-07-05",
+              "reviewed_on": "2026-08-01"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C03-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance\": {\"declared_regime\": \"OLD\", \"quantity\": 7, \"signed_on\": \"2026-07-02\", \"status\": \"accepted\"}}",
+          "facts": {
+            "acceptance": {
+              "signed_on": "2026-07-02",
+              "declared_regime": "OLD",
+              "quantity": 7,
+              "status": "accepted"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C03-DOC",
+          "locator": "p03",
+          "text": "{\"quality_release\": null}",
+          "facts": {
+            "quality_release": null
+          }
+        },
+        {
+          "source_id": "F05-C03-DOC",
+          "locator": "p04",
+          "text": "{\"transition_register\": {\"grandfather_until\": \"2026-07-01\", \"permitted\": true, \"po_line\": \"PO-T/1\"}}",
+          "facts": {
+            "transition_register": {
+              "po_line": "PO-T/1",
+              "permitted": true,
+              "grandfather_until": "2026-07-01"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F05-C04",
+      "family_id": "F05",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F05-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F05-C04-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_on\": \"2026-07-05\", \"invoice_quantity\": 7, \"po_line\": \"PO-T/1\", \"receipt_on\": null, \"reviewed_on\": \"2026-08-01\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-T/1",
+              "invoice_quantity": 7,
+              "receipt_on": null,
+              "invoice_on": "2026-07-05",
+              "reviewed_on": "2026-08-01"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C04-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance\": {\"declared_regime\": \"NEW\", \"quantity\": 7, \"signed_on\": \"2026-07-02\", \"status\": \"accepted\"}}",
+          "facts": {
+            "acceptance": {
+              "signed_on": "2026-07-02",
+              "declared_regime": "NEW",
+              "quantity": 7,
+              "status": "accepted"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C04-DOC",
+          "locator": "p03",
+          "text": "{\"quality_release\": {\"released\": true, \"released_on\": \"2026-07-01\"}}",
+          "facts": {
+            "quality_release": {
+              "released": true,
+              "released_on": "2026-07-01"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C04-DOC",
+          "locator": "p04",
+          "text": "{\"transition_register\": null}",
+          "facts": {
+            "transition_register": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F05-C05",
+      "family_id": "F05",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F05-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F05-C05-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_on\": \"2026-07-05\", \"invoice_quantity\": 7, \"po_line\": \"PO-T/1\", \"receipt_on\": \"2026-07-01\", \"reviewed_on\": \"2026-08-01\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-T/1",
+              "invoice_quantity": 7,
+              "receipt_on": "2026-07-01",
+              "invoice_on": "2026-07-05",
+              "reviewed_on": "2026-08-01"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C05-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance\": {\"declared_regime\": \"NEW\", \"quantity\": 7, \"signed_on\": \"2026-07-02\", \"status\": \"accepted\"}}",
+          "facts": {
+            "acceptance": {
+              "signed_on": "2026-07-02",
+              "declared_regime": "NEW",
+              "quantity": 7,
+              "status": "accepted"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C05-DOC",
+          "locator": "p03",
+          "text": "{\"quality_release\": null}",
+          "facts": {
+            "quality_release": null
+          }
+        },
+        {
+          "source_id": "F05-C05-DOC",
+          "locator": "p04",
+          "text": "{\"transition_register\": null}",
+          "facts": {
+            "transition_register": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F05-C06",
+      "family_id": "F05",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F05-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F05-C06-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_on\": \"2026-07-05\", \"invoice_quantity\": 7, \"po_line\": \"PO-T/1\", \"receipt_on\": \"2026-07-01\", \"reviewed_on\": \"2026-08-01\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-T/1",
+              "invoice_quantity": 7,
+              "receipt_on": "2026-07-01",
+              "invoice_on": "2026-07-05",
+              "reviewed_on": "2026-08-01"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C06-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance\": {\"declared_regime\": \"OLD\", \"quantity\": 7, \"signed_on\": \"2026-07-02\", \"status\": \"accepted\"}}",
+          "facts": {
+            "acceptance": {
+              "signed_on": "2026-07-02",
+              "declared_regime": "OLD",
+              "quantity": 7,
+              "status": "accepted"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C06-DOC",
+          "locator": "p03",
+          "text": "{\"quality_release\": null}",
+          "facts": {
+            "quality_release": null
+          }
+        },
+        {
+          "source_id": "F05-C06-DOC",
+          "locator": "p04",
+          "text": "{\"transition_register\": {\"grandfather_until\": \"2026-06-30\", \"permitted\": true, \"po_line\": \"PO-T/1\"}}",
+          "facts": {
+            "transition_register": {
+              "po_line": "PO-T/1",
+              "permitted": true,
+              "grandfather_until": "2026-06-30"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F05-C07",
+      "family_id": "F05",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F05-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F05-C07-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_on\": \"2026-07-05\", \"invoice_quantity\": 7, \"po_line\": \"PO-T/1\", \"receipt_on\": \"2026-07-01\", \"reviewed_on\": \"2026-08-01\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-T/1",
+              "invoice_quantity": 7,
+              "receipt_on": "2026-07-01",
+              "invoice_on": "2026-07-05",
+              "reviewed_on": "2026-08-01"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C07-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance\": {\"declared_regime\": \"NEW\", \"quantity\": 7, \"signed_on\": \"2026-06-30\", \"status\": \"accepted\"}}",
+          "facts": {
+            "acceptance": {
+              "signed_on": "2026-06-30",
+              "declared_regime": "NEW",
+              "quantity": 7,
+              "status": "accepted"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C07-DOC",
+          "locator": "p03",
+          "text": "{\"quality_release\": {\"released\": true, \"released_on\": \"2026-07-01\"}}",
+          "facts": {
+            "quality_release": {
+              "released": true,
+              "released_on": "2026-07-01"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C07-DOC",
+          "locator": "p04",
+          "text": "{\"transition_register\": null}",
+          "facts": {
+            "transition_register": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F05-C08",
+      "family_id": "F05",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F05-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F05-C08-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_on\": \"2026-07-05\", \"invoice_quantity\": 7, \"po_line\": \"PO-T/1\", \"receipt_on\": \"2026-06-30\", \"reviewed_on\": \"2026-08-01\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-T/1",
+              "invoice_quantity": 7,
+              "receipt_on": "2026-06-30",
+              "invoice_on": "2026-07-05",
+              "reviewed_on": "2026-08-01"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C08-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance\": {\"declared_regime\": \"NEW\", \"quantity\": 7, \"signed_on\": \"2026-07-02\", \"status\": \"accepted\"}}",
+          "facts": {
+            "acceptance": {
+              "signed_on": "2026-07-02",
+              "declared_regime": "NEW",
+              "quantity": 7,
+              "status": "accepted"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C08-DOC",
+          "locator": "p03",
+          "text": "{\"quality_release\": {\"released\": true, \"released_on\": \"2026-07-01\"}}",
+          "facts": {
+            "quality_release": {
+              "released": true,
+              "released_on": "2026-07-01"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C08-DOC",
+          "locator": "p04",
+          "text": "{\"transition_register\": null}",
+          "facts": {
+            "transition_register": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F05-C09",
+      "family_id": "F05",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F05-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F05-C09-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_on\": \"2026-07-05\", \"invoice_quantity\": 7, \"po_line\": \"PO-T/1\", \"receipt_on\": \"2026-07-01\", \"reviewed_on\": \"2026-08-01\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-T/1",
+              "invoice_quantity": 7,
+              "receipt_on": "2026-07-01",
+              "invoice_on": "2026-07-05",
+              "reviewed_on": "2026-08-01"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C09-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance\": {\"declared_regime\": \"NEW\", \"quantity\": 7, \"signed_on\": \"2026-07-02\", \"status\": \"rejected\"}}",
+          "facts": {
+            "acceptance": {
+              "signed_on": "2026-07-02",
+              "declared_regime": "NEW",
+              "quantity": 7,
+              "status": "rejected"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C09-DOC",
+          "locator": "p03",
+          "text": "{\"quality_release\": {\"released\": true, \"released_on\": \"2026-07-01\"}}",
+          "facts": {
+            "quality_release": {
+              "released": true,
+              "released_on": "2026-07-01"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C09-DOC",
+          "locator": "p04",
+          "text": "{\"transition_register\": null}",
+          "facts": {
+            "transition_register": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "F05-C10",
+      "family_id": "F05",
+      "split": "test",
+      "synthetic": true,
+      "policy_source_id": "F05-POL",
+      "question": "Is this acceptance-evidence exception eligible for a closure recommendation under this family policy?",
+      "sources": [
+        {
+          "source_id": "F05-C10-DOC",
+          "locator": "p01",
+          "text": "{\"request\": {\"invoice_on\": \"2026-07-05\", \"invoice_quantity\": 7, \"po_line\": \"PO-T/1\", \"receipt_on\": \"2026-07-01\", \"reviewed_on\": \"2026-08-01\"}}",
+          "facts": {
+            "request": {
+              "po_line": "PO-T/1",
+              "invoice_quantity": 7,
+              "receipt_on": "2026-07-01",
+              "invoice_on": "2026-07-05",
+              "reviewed_on": "2026-08-01"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C10-DOC",
+          "locator": "p02",
+          "text": "{\"acceptance\": {\"declared_regime\": \"NEW\", \"quantity\": 7, \"signed_on\": \"2026-07-02\", \"status\": \"accepted\"}}",
+          "facts": {
+            "acceptance": {
+              "signed_on": "2026-07-02",
+              "declared_regime": "NEW",
+              "quantity": 7,
+              "status": "accepted"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C10-DOC",
+          "locator": "p03",
+          "text": "{\"quality_release\": {\"released\": true, \"released_on\": \"2026-06-30\"}}",
+          "facts": {
+            "quality_release": {
+              "released": true,
+              "released_on": "2026-06-30"
+            }
+          }
+        },
+        {
+          "source_id": "F05-C10-DOC",
+          "locator": "p04",
+          "text": "{\"transition_register\": null}",
+          "facts": {
+            "transition_register": null
+          }
+        }
+      ]
+    }
+  ]
+}

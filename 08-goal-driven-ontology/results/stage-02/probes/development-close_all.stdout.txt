@@ -1,0 +1,36 @@
+{
+  "output": "results/stage-02/probes/development-close_all.report.json",
+  "metrics": {
+    "case_n": 20,
+    "positive_n": 6,
+    "negative_n": 14,
+    "missing_n": 0,
+    "completion_rate": 1.0,
+    "exact_decision_correct_n": 6,
+    "exact_decision_accuracy": 0.3,
+    "false_close_n": 14,
+    "false_close_rate": 1.0,
+    "positive_close_recall": 1.0,
+    "conservative_false_close_rate_if_missing_negatives_close": 1.0,
+    "decision_counts": {
+      "close_eligible": 20
+    },
+    "false_close_case_ids": [
+      "F01-C04",
+      "F01-C05",
+      "F01-C06",
+      "F01-C07",
+      "F01-C08",
+      "F01-C09",
+      "F01-C10",
+      "F02-C04",
+      "F02-C05",
+      "F02-C06",
+      "F02-C07",
+      "F02-C08",
+      "F02-C09",
+      "F02-C10"
+    ],
+    "missing_case_ids": []
+  }
+}

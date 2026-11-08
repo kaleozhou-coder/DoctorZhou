@@ -1,0 +1,23 @@
+{
+  "output": "results/stage-02/probes/test-label_replay.report.json",
+  "metrics": {
+    "case_n": 30,
+    "positive_n": 10,
+    "negative_n": 20,
+    "missing_n": 0,
+    "completion_rate": 1.0,
+    "exact_decision_correct_n": 30,
+    "exact_decision_accuracy": 1.0,
+    "false_close_n": 0,
+    "false_close_rate": 0.0,
+    "positive_close_recall": 1.0,
+    "conservative_false_close_rate_if_missing_negatives_close": 0.0,
+    "decision_counts": {
+      "close_eligible": 10,
+      "needs_evidence": 11,
+      "needs_review": 9
+    },
+    "false_close_case_ids": [],
+    "missing_case_ids": []
+  }
+}

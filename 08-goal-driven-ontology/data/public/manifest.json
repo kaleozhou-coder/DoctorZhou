@@ -1,0 +1,79 @@
+[
+  {
+    "path": "peppol-billing-2025-Q2/base-example.xml",
+    "sha256": "1b7cc3ff1834c8963f2c93f30f171b58002cbf0b2c52dc8765e7e83aebb9f7c9",
+    "bytes": 9228,
+    "source_url": "https://docs.peppol.eu/poacc/billing/3.0/2025-Q2/files/BIS-Billing3-Examples.zip",
+    "archive_member": "rules/examples/base-example.xml",
+    "version": "BIS Billing 3.0 May 2025 / 2025-Q2",
+    "license": "Official BIS Appendix E: freely use example files. See LICENSE-SOURCES.md.",
+    "kind": "official specification example; not real enterprise transaction",
+    "retrieved_utc": "2026-11-06T17:52:45.970946+00:00"
+  },
+  {
+    "path": "peppol-billing-2025-Q2/sales-order-example.xml",
+    "sha256": "cdb84e4ce1a770f6e4a8949dcbe37493bc37aeded5232b592a1a48feb221a504",
+    "bytes": 9458,
+    "source_url": "https://docs.peppol.eu/poacc/billing/3.0/2025-Q2/files/BIS-Billing3-Examples.zip",
+    "archive_member": "rules/examples/sales-order-example.xml",
+    "version": "BIS Billing 3.0 May 2025 / 2025-Q2",
+    "license": "Official BIS Appendix E: freely use example files. See LICENSE-SOURCES.md.",
+    "kind": "official specification example; not real enterprise transaction",
+    "retrieved_utc": "2026-11-06T17:52:45.971085+00:00"
+  },
+  {
+    "path": "peppol-billing-2025-Q2/base-creditnote-correction.xml",
+    "sha256": "08e0ad82e0dbe7e16d7533c01761843343a56954ea24881d0f7f1cce06f8879e",
+    "bytes": 9462,
+    "source_url": "https://docs.peppol.eu/poacc/billing/3.0/2025-Q2/files/BIS-Billing3-Examples.zip",
+    "archive_member": "rules/examples/base-creditnote-correction.xml",
+    "version": "BIS Billing 3.0 May 2025 / 2025-Q2",
+    "license": "Official BIS Appendix E: freely use example files. See LICENSE-SOURCES.md.",
+    "kind": "official specification example; not real enterprise transaction",
+    "retrieved_utc": "2026-11-06T17:52:45.971187+00:00"
+  },
+  {
+    "path": "oasis-ubl-2.1-release/UBL-Order-2.0-Example.xml",
+    "sha256": "9424f8b54d5aff1dd294d39bde8574e9b6a55eee641acfbc514af8ee858213e7",
+    "bytes": 6996,
+    "source_url": "https://docs.oasis-open.org/ubl/os-UBL-2.1/xml/UBL-Order-2.0-Example.xml",
+    "archive_member": null,
+    "version": "UBL 2.1 OASIS Standard 2013-11-04 distribution; example declares UBL 2.0",
+    "license": "OASIS specification notices retained in OASIS-NOTICES.txt; unmodified example.",
+    "kind": "official specification example; not real enterprise transaction",
+    "retrieved_utc": "2026-11-06T17:52:54.434045+00:00"
+  },
+  {
+    "path": "oasis-ubl-2.1-release/UBL-Invoice-2.0-Example.xml",
+    "sha256": "a2d0fca38ad8fa2d199329fed67fe32570d645d2bc172a6bfaf9eb850a0716eb",
+    "bytes": 9418,
+    "source_url": "https://docs.oasis-open.org/ubl/os-UBL-2.1/xml/UBL-Invoice-2.0-Example.xml",
+    "archive_member": null,
+    "version": "UBL 2.1 OASIS Standard 2013-11-04 distribution; example declares UBL 2.0",
+    "license": "OASIS specification notices retained in OASIS-NOTICES.txt; unmodified example.",
+    "kind": "official specification example; not real enterprise transaction",
+    "retrieved_utc": "2026-11-06T17:52:58.298275+00:00"
+  },
+  {
+    "path": "oasis-ubl-2.1-release/UBL-DespatchAdvice-2.0-Example.xml",
+    "sha256": "bb9ff5abe7012b57c3d4ecbb2e7a5a6796578bff636830707c41eb958a5fbaa1",
+    "bytes": 6096,
+    "source_url": "https://docs.oasis-open.org/ubl/os-UBL-2.1/xml/UBL-DespatchAdvice-2.0-Example.xml",
+    "archive_member": null,
+    "version": "UBL 2.1 OASIS Standard 2013-11-04 distribution; example declares UBL 2.0",
+    "license": "OASIS specification notices retained in OASIS-NOTICES.txt; unmodified example.",
+    "kind": "official specification example; not real enterprise transaction",
+    "retrieved_utc": "2026-11-06T17:53:01.699884+00:00"
+  },
+  {
+    "path": "oasis-ubl-2.1-release/UBL-ReceiptAdvice-2.0-Example.xml",
+    "sha256": "1e79a937942e869a27382c5bd11f6c6647a211910dca06e5d51ad2546163fcde",
+    "bytes": 5282,
+    "source_url": "https://docs.oasis-open.org/ubl/os-UBL-2.1/xml/UBL-ReceiptAdvice-2.0-Example.xml",
+    "archive_member": null,
+    "version": "UBL 2.1 OASIS Standard 2013-11-04 distribution; example declares UBL 2.0",
+    "license": "OASIS specification notices retained in OASIS-NOTICES.txt; unmodified example.",
+    "kind": "official specification example; not real enterprise transaction",
+    "retrieved_utc": "2026-11-06T17:53:05.075877+00:00"
+  }
+]

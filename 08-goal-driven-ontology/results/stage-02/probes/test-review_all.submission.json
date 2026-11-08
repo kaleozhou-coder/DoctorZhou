@@ -1,0 +1,163 @@
+{
+  "run": {
+    "run_id": "test-review_all",
+    "method": "review_all",
+    "execution_kind": "engineering_probe",
+    "benchmark_freeze_sha256": "99e026b7cc47a87da948b4eaa82af3808e46dcfaab9af67149f4f800de5767b3",
+    "split": "test",
+    "uses_labels": true,
+    "purpose": "Evaluator plumbing check; not a model output"
+  },
+  "predictions": [
+    {
+      "case_id": "F04-C01",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F04-C02",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F04-C03",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F04-C04",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F04-C05",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F04-C06",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F04-C07",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F04-C08",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F04-C09",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F04-C10",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F05-C01",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F05-C02",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F05-C03",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F05-C04",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F05-C05",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F05-C06",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F05-C07",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F05-C08",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F05-C09",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F05-C10",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F06-C01",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F06-C02",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F06-C03",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F06-C04",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F06-C05",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F06-C06",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F06-C07",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F06-C08",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F06-C09",
+      "decision": "needs_review",
+      "payment_authorized": false
+    },
+    {
+      "case_id": "F06-C10",
+      "decision": "needs_review",
+      "payment_authorized": false
+    }
+  ]
+}

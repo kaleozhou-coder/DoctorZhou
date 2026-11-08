@@ -1,0 +1,48 @@
+{
+  "contract_id": "ontology-model-construction-pilot-v1",
+  "status": "prepared_not_executed",
+  "claims_scope": "Exploratory construction of an unreviewed ontology or equivalent executable rule representation from explicitly synthetic policy materials; no real business or human-time conclusions.",
+  "task_unit": "one complete policy/document family",
+  "arms": {
+    "A_full_iterative": "Goal, all competency questions, all allowed family material from the first call, complete source index, same validator feedback and opportunities to revise.",
+    "B_goal_incremental": "Same goal, competency questions and source index. Select material batches based on current questions; all the same family material remains available. Source selection consumes calls/tokens when a model call is used. Same validator feedback and opportunities to revise."
+  },
+  "randomization": {
+    "seed": 20261107,
+    "repeats_per_arm_family": 3,
+    "paired_on": ["family_id", "replicate_id", "model_snapshot"],
+    "arm_order": "alternating from a seeded shuffle, recorded before model execution"
+  },
+  "resource_caps_per_arm_family_repeat": {
+    "model_calls": 4,
+    "total_input_tokens": 48000,
+    "total_output_tokens": 12000,
+    "human_review_minutes": 0,
+    "new_external_spending_allowed": 0,
+    "note": "These are ceilings, not equalized observed use. Do not invent token usage. Any backend without enforceable usage/cost limits is not ready under this contract."
+  },
+  "held_fixed": ["model snapshot", "sampling parameters", "source pool", "competency questions", "output contract", "validator", "call and token caps", "zero human review"],
+  "model_backend": null,
+  "model_snapshot": null,
+  "sampling_parameters": null,
+  "billing_verified": false,
+  "run_gate": [
+    "Choose an authorized no-new-cost execution backend and a recorded model identifier/snapshot; do not silently use a paid API.",
+    "Freeze model settings, actual usage capture and deterministic or disclosed stochastic replay rules before runs.",
+    "Resolve runnable output representation and interpreter before opening test predictions. Free-form prose cannot be evaluated by pretending to execute it.",
+    "Model construction workers receive only exported model-facing materials and permitted development examples. They must never receive evaluator labels, hidden case inputs, reference implementation, or other arms' outputs.",
+    "Freeze final ontology/rule artifact and raw model output before a separate evaluation process opens the target hidden cases.",
+    "Never tune/retry a frozen model on test-label feedback. Corrections require a new experimental version and fresh test families for confirmatory use."
+  ],
+  "feedback": "Schema/syntax and pre-authorized development checks only; no test labels or test-derived corrections; automated feedback is never described as human review.",
+  "temporal_fairness": "Both arms receive the same as-of evidence. Final future evidence is not supplied early to either arm. Policy-family material is static in this first construction pilot; transaction decision time is part of evaluator-only input.",
+  "reporting": [
+    "Report every allocated run, including missing outputs, budget exhaustion, parser failure and unexecuted tasks.",
+    "Primary diagnostic outcomes: unsafe close count/rate among negatives, close recall among positives, three-state correctness, completion, per-family results.",
+    "Separate literal source locator existence from semantic support verified by an independent reviewer.",
+    "Report actual calls, input/output tokens, wall time, raw output/artifact hashes, and automated validation attempts. Unknown measurements remain null.",
+    "Human review time and time savings are not estimable in this stage.",
+    "Do not treat 60 authored cases as 60 independent business samples. There are six deliberately authored families, with only three in test.",
+    "No superiority, safety, or population significance claim from engineering probes or this small synthetic pilot."
+  ]
+}
