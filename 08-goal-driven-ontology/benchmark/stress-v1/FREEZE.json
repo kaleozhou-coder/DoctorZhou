@@ -1,0 +1,13 @@
+{
+  "protocol": "Inputs, expectations, policy sources and baseline frozen before first stress execution. Author inspected baseline; not blind or independent evaluation.",
+  "files": {
+    "benchmark/stress-v1/probes.json": "43305f985b01fb0c8871b7fa710ef0e685e658ae4d9b4bed40977a6eecaaa832",
+    "src/policy_baseline.py": "ded2f89be60605313a0e87c99597856a80af7e8136b90dd6f065ca3f99feec4f",
+    "benchmark/v1/model-facing/F01/materials.json": "db7219b05f7a059479b7d6e62ff2c96b8bc7b10f97f56aba997b5492c04730aa",
+    "benchmark/v1/model-facing/F02/materials.json": "72ede95ac83dafb32d7815b884f6985200723ae4552954b8b80dd3e0b479c50d",
+    "benchmark/v1/model-facing/F03/materials.json": "1af670a4f1f857edb409c1ceb129258b514342d401d9b3c0bf34ab127cc38264",
+    "benchmark/v1/model-facing/F04/materials.json": "aff3aed7c03615f49d43788b69b8351abffd8921908097780a5973ac51c2d610",
+    "benchmark/v1/model-facing/F05/materials.json": "cc43f2cfad138108f1a50d7ecee74557912c15a9d18a9a1ce7491940b15fc2c8",
+    "benchmark/v1/model-facing/F06/materials.json": "904dc817df2082a2538ffc9a16e2bc8f6ce1a37b5ef9756194ecd09cb8743cf5"
+  }
+}

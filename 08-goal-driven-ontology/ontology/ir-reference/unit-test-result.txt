@@ -1,0 +1,44 @@
+test_adapter (test_rule_ir.RuleIRTests.test_adapter) ... ok
+test_bad_source_ref (test_rule_ir.RuleIRTests.test_bad_source_ref) ... ok
+test_bool_not_integer (test_rule_ir.RuleIRTests.test_bool_not_integer) ... ok
+test_boundary_release (test_rule_ir.RuleIRTests.test_boundary_release) ... ok
+test_cyclic_python_input (test_rule_ir.RuleIRTests.test_cyclic_python_input) ... ok
+test_deep_ast (test_rule_ir.RuleIRTests.test_deep_ast) ... ok
+test_deep_input (test_rule_ir.RuleIRTests.test_deep_input) ... ok
+test_determinism (test_rule_ir.RuleIRTests.test_determinism) ... ok
+test_duplicate_json (test_rule_ir.RuleIRTests.test_duplicate_json) ... ok
+test_duplicate_rule_id (test_rule_ir.RuleIRTests.test_duplicate_rule_id) ... ok
+test_false_release (test_rule_ir.RuleIRTests.test_false_release) ... ok
+test_grandfather (test_rule_ir.RuleIRTests.test_grandfather) ... ok
+test_huge_integer_program (test_rule_ir.RuleIRTests.test_huge_integer_program) ... ok
+test_incompatible_types (test_rule_ir.RuleIRTests.test_incompatible_types) ... ok
+test_invalid_date (test_rule_ir.RuleIRTests.test_invalid_date) ... ok
+test_invalid_enum (test_rule_ir.RuleIRTests.test_invalid_enum) ... ok
+test_kleene_truth_tables (test_rule_ir.RuleIRTests.test_kleene_truth_tables) ... ok
+test_large_input (test_rule_ir.RuleIRTests.test_large_input) ... ok
+test_locator_validation (test_rule_ir.RuleIRTests.test_locator_validation) ... ok
+test_mismatch (test_rule_ir.RuleIRTests.test_mismatch) ... ok
+test_missing_receipt (test_rule_ir.RuleIRTests.test_missing_receipt) ... ok
+test_no_arbitrary_operator (test_rule_ir.RuleIRTests.test_no_arbitrary_operator) ... ok
+test_no_default_close (test_rule_ir.RuleIRTests.test_no_default_close) ... ok
+test_no_extra_keys (test_rule_ir.RuleIRTests.test_no_extra_keys) ... ok
+test_nonfinite_json (test_rule_ir.RuleIRTests.test_nonfinite_json) ... ok
+test_null_receipt (test_rule_ir.RuleIRTests.test_null_receipt) ... ok
+test_old_closes (test_rule_ir.RuleIRTests.test_old_closes) ... ok
+test_order (test_rule_ir.RuleIRTests.test_order) ... ok
+test_reference_valid (test_rule_ir.RuleIRTests.test_reference_valid) ... ok
+test_rejection (test_rule_ir.RuleIRTests.test_rejection) ... ok
+test_shortfall (test_rule_ir.RuleIRTests.test_shortfall) ... ok
+test_surrogate_facts (test_rule_ir.RuleIRTests.test_surrogate_facts) ... ok
+test_surrogate_json (test_rule_ir.RuleIRTests.test_surrogate_json) ... ok
+test_surrogate_program (test_rule_ir.RuleIRTests.test_surrogate_program) ... ok
+test_transition_wrong_line (test_rule_ir.RuleIRTests.test_transition_wrong_line) ... ok
+test_truncated_json (test_rule_ir.RuleIRTests.test_truncated_json) ... ok
+test_unknown_first_blocks_later (test_rule_ir.RuleIRTests.test_unknown_first_blocks_later) ... ok
+test_unknown_quantity_never_closes (test_rule_ir.RuleIRTests.test_unknown_quantity_never_closes) ... ok
+test_wrong_parent (test_rule_ir.RuleIRTests.test_wrong_parent) ... ok
+
+----------------------------------------------------------------------
+Ran 39 tests in 0.025s
+
+OK

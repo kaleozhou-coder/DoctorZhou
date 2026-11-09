@@ -1,0 +1,19 @@
+{
+  "freeze_version": "stage04-rule-ir-v1",
+  "frozen_at_utc": "2026-11-09T01:32:08.576841+00:00",
+  "before_evaluator_cases_or_labels_opened_by_implementer": true,
+  "test_command": "PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests -p test_rule_ir.py -v",
+  "tests_run": 39,
+  "tests_passed": 39,
+  "evaluation_status": "not_run_by_implementer",
+  "sha256": {
+    "src/rule_ir.py": "9371781b57dcb2b14c83a482556d6042e8b94c1bf0ffd20bd4d84260a94a9a00",
+    "tests/test_rule_ir.py": "b00da3c3d384a76a5881f81c0bdf6d138ed24c01a93367f3bb76972731fb1b9b",
+    "protocol/rule-ir-v1.md": "28cddc9d95ab7a62ce282de26d146a9668656d8d061b3234403a8940937e4fde",
+    "protocol/rule-ir-v1.schema.json": "602c571f2df7fb48460bc410abc71575864b40f6a01dd4794971bef32add373c",
+    "ontology/ir-reference/F05.json": "5720108d0623be494885551d451dd9150a2f20b6cdf818f98d24daaa9592ebdd",
+    "ontology/ir-reference/scope-read-manifest.json": "75666d151d4a897e5d89d2cd8d64bfbef4de1a7d30904d063ce228fded9f3c1c",
+    "ontology/ir-reference/unit-test-result.txt": "fe413d68e377a68f3b171a29ed43c5f5ae95b292502c903d1e7b8b4060c92d69"
+  },
+  "pre_evaluation_revision": "Malformed serialization regression fixed after independent engineering review; initial unconsumed freeze superseded before evaluator input access."
+}

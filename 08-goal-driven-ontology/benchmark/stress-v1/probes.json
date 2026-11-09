@@ -1,0 +1,1774 @@
+{
+  "synthetic": true,
+  "not_expert_gold": true,
+  "baseline_read_before_authoring": true,
+  "evaluator_labels_read": false,
+  "probes": [
+    {
+      "probe_id": "S01",
+      "name": "Exact duplicate identity and permuted serials",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S01",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S01-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "invoice_id": "INV",
+                "target_serials": [
+                  "a",
+                  "b"
+                ]
+              },
+              "lots": [
+                {
+                  "lot_id": "L",
+                  "po_line": "LINE",
+                  "status": "accepted",
+                  "serials": [
+                    "a",
+                    "b"
+                  ]
+                },
+                {
+                  "lot_id": "L",
+                  "po_line": "LINE",
+                  "status": "accepted",
+                  "serials": [
+                    "b",
+                    "a"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason": "criteria_met"
+      },
+      "policy_refs": [
+        "F01-POL#p04"
+      ],
+      "oracle_rationale": "Serials denote a set; same identity and same semantic payload count once."
+    },
+    {
+      "probe_id": "S02",
+      "name": "Conflicting duplicate identity before overlap",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S02",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S02-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "invoice_id": "INV",
+                "target_serials": [
+                  "a",
+                  "b"
+                ]
+              },
+              "lots": [
+                {
+                  "lot_id": "L",
+                  "po_line": "LINE",
+                  "status": "accepted",
+                  "serials": [
+                    "a",
+                    "b"
+                  ]
+                },
+                {
+                  "lot_id": "OTHER",
+                  "po_line": "LINE",
+                  "status": "accepted",
+                  "serials": [
+                    "a",
+                    "b"
+                  ]
+                },
+                {
+                  "lot_id": "L",
+                  "po_line": "LINE",
+                  "status": "accepted",
+                  "serials": [
+                    "a"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason": "lot_identity_conflict"
+      },
+      "policy_refs": [
+        "F01-POL#p04"
+      ],
+      "oracle_rationale": "Conflicting identity wins even with a separately overlapping lot."
+    },
+    {
+      "probe_id": "S03",
+      "name": "Nonparticipating identity conflict",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S03",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S03-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "invoice_id": "INV",
+                "target_serials": [
+                  "a",
+                  "b"
+                ]
+              },
+              "lots": [
+                {
+                  "lot_id": "L",
+                  "po_line": "LINE",
+                  "status": "accepted",
+                  "serials": [
+                    "a",
+                    "b"
+                  ]
+                },
+                {
+                  "lot_id": "OUT",
+                  "po_line": "LINE",
+                  "status": "accepted",
+                  "serials": [
+                    "x"
+                  ]
+                },
+                {
+                  "lot_id": "OUT",
+                  "po_line": "LINE",
+                  "status": "accepted",
+                  "serials": [
+                    "y"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason": "criteria_met"
+      },
+      "policy_refs": [
+        "F01-POL#p04"
+      ],
+      "oracle_rationale": "Neither OUT record intersects targets, so neither participates."
+    },
+    {
+      "probe_id": "S04",
+      "name": "Coverage cannot borrow a pending lot",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S04",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S04-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "invoice_id": "INV",
+                "target_serials": [
+                  "a",
+                  "b"
+                ]
+              },
+              "lots": [
+                {
+                  "lot_id": "L",
+                  "po_line": "LINE",
+                  "status": "accepted",
+                  "serials": [
+                    "a"
+                  ]
+                },
+                {
+                  "lot_id": "P",
+                  "po_line": "LINE",
+                  "status": "pending",
+                  "serials": [
+                    "a",
+                    "b"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "needs_evidence",
+        "reason": "uncovered_serials"
+      },
+      "policy_refs": [
+        "F01-POL#p02",
+        "F01-POL#p05"
+      ],
+      "oracle_rationale": "Pending target b does not repair absent accepted coverage."
+    },
+    {
+      "probe_id": "S05",
+      "name": "Single-day inclusive grant",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S05",
+        "family_id": "F02",
+        "policy_source_id": "F02-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S05-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2
+              },
+              "acceptance": {
+                "po_line": "LINE",
+                "signer": "R",
+                "signed_on": "2026-07-01",
+                "accepted_quantity": 2
+              },
+              "delegation_registry": [
+                {
+                  "type": "grant",
+                  "signer": "R",
+                  "po_line": "LINE",
+                  "valid_from": "2026-07-01",
+                  "valid_to": "2026-07-01",
+                  "max_quantity": 2
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason": "criteria_met"
+      },
+      "policy_refs": [
+        "F02-POL#p02",
+        "F02-POL#p04"
+      ],
+      "oracle_rationale": "Both interval endpoints are inclusive."
+    },
+    {
+      "probe_id": "S06",
+      "name": "Future deny does not negate current grant",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S06",
+        "family_id": "F02",
+        "policy_source_id": "F02-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S06-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2
+              },
+              "acceptance": {
+                "po_line": "LINE",
+                "signer": "R",
+                "signed_on": "2026-07-01",
+                "accepted_quantity": 2
+              },
+              "delegation_registry": [
+                {
+                  "type": "grant",
+                  "signer": "R",
+                  "po_line": "LINE",
+                  "valid_from": "2026-07-01",
+                  "valid_to": "2026-07-01",
+                  "max_quantity": 2
+                },
+                {
+                  "type": "deny",
+                  "signer": "R",
+                  "po_line": "LINE",
+                  "valid_from": "2026-07-02",
+                  "valid_to": "2026-07-03",
+                  "max_quantity": 2
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason": "criteria_met"
+      },
+      "policy_refs": [
+        "F02-POL#p03",
+        "F02-POL#p05"
+      ],
+      "oracle_rationale": "Deny outside signature date scope has no effect."
+    },
+    {
+      "probe_id": "S07",
+      "name": "Same-day deny defeats grant",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S07",
+        "family_id": "F02",
+        "policy_source_id": "F02-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S07-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2
+              },
+              "acceptance": {
+                "po_line": "LINE",
+                "signer": "R",
+                "signed_on": "2026-07-01",
+                "accepted_quantity": 2
+              },
+              "delegation_registry": [
+                {
+                  "type": "grant",
+                  "signer": "R",
+                  "po_line": "LINE",
+                  "valid_from": "2026-07-01",
+                  "valid_to": "2026-07-01",
+                  "max_quantity": 2
+                },
+                {
+                  "type": "deny",
+                  "signer": "R",
+                  "po_line": "LINE",
+                  "valid_from": "2026-07-01",
+                  "valid_to": "2026-07-01",
+                  "max_quantity": 2
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason": "explicit_authority_denial"
+      },
+      "policy_refs": [
+        "F02-POL#p03"
+      ],
+      "oracle_rationale": "Explicit scoped deny takes precedence."
+    },
+    {
+      "probe_id": "S08",
+      "name": "Unknown final does not contradict acceptance",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S08",
+        "family_id": "F03",
+        "policy_source_id": "F03-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S08-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2
+              },
+              "inspection_register": [
+                {
+                  "report_id": "A",
+                  "po_line": "LINE",
+                  "phase": "final",
+                  "status": "accepted",
+                  "quantity": 2,
+                  "recorded_on": "2026-07-01"
+                },
+                {
+                  "report_id": "B",
+                  "po_line": "LINE",
+                  "phase": "final",
+                  "status": "unknown",
+                  "quantity": 2,
+                  "recorded_on": "2026-07-01"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason": "criteria_met"
+      },
+      "policy_refs": [
+        "F03-POL#p05"
+      ],
+      "oracle_rationale": "Unknown is not rejection."
+    },
+    {
+      "probe_id": "S09",
+      "name": "Replacing unknown by rejection changes result",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S09",
+        "family_id": "F03",
+        "policy_source_id": "F03-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S09-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2
+              },
+              "inspection_register": [
+                {
+                  "report_id": "A",
+                  "po_line": "LINE",
+                  "phase": "final",
+                  "status": "accepted",
+                  "quantity": 2,
+                  "recorded_on": "2026-07-01"
+                },
+                {
+                  "report_id": "B",
+                  "po_line": "LINE",
+                  "phase": "final",
+                  "status": "rejected",
+                  "quantity": 2,
+                  "recorded_on": "2026-06-01"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason": "contradictory_final_status"
+      },
+      "policy_refs": [
+        "F03-POL#p03"
+      ],
+      "oracle_rationale": "Older rejection still conflicts; no last-write-wins."
+    },
+    {
+      "probe_id": "S10",
+      "name": "Large preliminary report cannot cure shortfall",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S10",
+        "family_id": "F03",
+        "policy_source_id": "F03-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S10-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2
+              },
+              "inspection_register": [
+                {
+                  "report_id": "A",
+                  "po_line": "LINE",
+                  "phase": "final",
+                  "status": "accepted",
+                  "quantity": 1,
+                  "recorded_on": "2026-07-01"
+                },
+                {
+                  "report_id": "B",
+                  "po_line": "LINE",
+                  "phase": "preliminary",
+                  "status": "accepted",
+                  "quantity": 200,
+                  "recorded_on": "2026-07-01"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "needs_evidence",
+        "reason": "quantity_shortfall"
+      },
+      "policy_refs": [
+        "F03-POL#p02",
+        "F03-POL#p05"
+      ],
+      "oracle_rationale": "Preliminary records never affect decision."
+    },
+    {
+      "probe_id": "S11",
+      "name": "Future rejection ignored at cutoff",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S11",
+        "family_id": "F04",
+        "policy_source_id": "F04-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S11-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "as_of": "2026-07-01"
+              },
+              "acceptance_ledger": {
+                "records": [
+                  {
+                    "record_id": "A",
+                    "po_line": "LINE",
+                    "status": "accepted",
+                    "quantity": 2,
+                    "created_on": "2026-07-01"
+                  },
+                  {
+                    "record_id": "B",
+                    "po_line": "LINE",
+                    "status": "rejected",
+                    "quantity": 2,
+                    "created_on": "2026-07-02"
+                  }
+                ],
+                "events": []
+              }
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason": "criteria_met"
+      },
+      "policy_refs": [
+        "F04-POL#p02"
+      ],
+      "oracle_rationale": "Future record has no authority at cutoff."
+    },
+    {
+      "probe_id": "S12",
+      "name": "Same rejection active one day later",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S12",
+        "family_id": "F04",
+        "policy_source_id": "F04-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S12-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "as_of": "2026-07-02"
+              },
+              "acceptance_ledger": {
+                "records": [
+                  {
+                    "record_id": "A",
+                    "po_line": "LINE",
+                    "status": "accepted",
+                    "quantity": 2,
+                    "created_on": "2026-07-01"
+                  },
+                  {
+                    "record_id": "B",
+                    "po_line": "LINE",
+                    "status": "rejected",
+                    "quantity": 2,
+                    "created_on": "2026-07-02"
+                  }
+                ],
+                "events": []
+              }
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason": "active_rejection"
+      },
+      "policy_refs": [
+        "F04-POL#p02",
+        "F04-POL#p05"
+      ],
+      "oracle_rationale": "Changing cutoff includes adverse record."
+    },
+    {
+      "probe_id": "S13",
+      "name": "Revocation does not propagate to successor",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S13",
+        "family_id": "F04",
+        "policy_source_id": "F04-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S13-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "as_of": "2026-07-01"
+              },
+              "acceptance_ledger": {
+                "records": [
+                  {
+                    "record_id": "A",
+                    "po_line": "LINE",
+                    "status": "accepted",
+                    "quantity": 2,
+                    "created_on": "2026-07-01"
+                  },
+                  {
+                    "record_id": "B",
+                    "po_line": "LINE",
+                    "status": "accepted",
+                    "quantity": 2,
+                    "created_on": "2026-07-01"
+                  }
+                ],
+                "events": [
+                  {
+                    "event_id": "E",
+                    "type": "supersede",
+                    "old_id": "A",
+                    "new_id": "B",
+                    "effective_on": "2026-07-01"
+                  },
+                  {
+                    "event_id": "R",
+                    "type": "revoke",
+                    "old_id": "A",
+                    "new_id": "B",
+                    "effective_on": "2026-07-01"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason": "criteria_met"
+      },
+      "policy_refs": [
+        "F04-POL#p04"
+      ],
+      "oracle_rationale": "Revoking retired A leaves B live."
+    },
+    {
+      "probe_id": "S14",
+      "name": "Revoked successor never restores predecessor",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S14",
+        "family_id": "F04",
+        "policy_source_id": "F04-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S14-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "as_of": "2026-07-01"
+              },
+              "acceptance_ledger": {
+                "records": [
+                  {
+                    "record_id": "A",
+                    "po_line": "LINE",
+                    "status": "accepted",
+                    "quantity": 2,
+                    "created_on": "2026-07-01"
+                  },
+                  {
+                    "record_id": "B",
+                    "po_line": "LINE",
+                    "status": "accepted",
+                    "quantity": 2,
+                    "created_on": "2026-07-01"
+                  }
+                ],
+                "events": [
+                  {
+                    "event_id": "E",
+                    "type": "supersede",
+                    "old_id": "A",
+                    "new_id": "B",
+                    "effective_on": "2026-07-01"
+                  },
+                  {
+                    "event_id": "R",
+                    "type": "revoke",
+                    "old_id": "B",
+                    "new_id": "B",
+                    "effective_on": "2026-07-01"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "needs_evidence",
+        "reason": "live_acceptance_missing"
+      },
+      "policy_refs": [
+        "F04-POL#p04",
+        "F04-POL#p05"
+      ],
+      "oracle_rationale": "A remains retired and B is revoked."
+    },
+    {
+      "probe_id": "S15",
+      "name": "Self loop dominates live acceptance",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S15",
+        "family_id": "F04",
+        "policy_source_id": "F04-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S15-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "as_of": "2026-07-01"
+              },
+              "acceptance_ledger": {
+                "records": [
+                  {
+                    "record_id": "A",
+                    "po_line": "LINE",
+                    "status": "accepted",
+                    "quantity": 2,
+                    "created_on": "2026-07-01"
+                  }
+                ],
+                "events": [
+                  {
+                    "event_id": "E",
+                    "type": "supersede",
+                    "old_id": "A",
+                    "new_id": "A",
+                    "effective_on": "2026-07-01"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason": "supersession_cycle"
+      },
+      "policy_refs": [
+        "F04-POL#p03"
+      ],
+      "oracle_rationale": "A self-loop is a directed cycle."
+    },
+    {
+      "probe_id": "S16",
+      "name": "Missing endpoint precedes self loop",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S16",
+        "family_id": "F04",
+        "policy_source_id": "F04-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S16-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "as_of": "2026-07-01"
+              },
+              "acceptance_ledger": {
+                "records": [
+                  {
+                    "record_id": "A",
+                    "po_line": "LINE",
+                    "status": "accepted",
+                    "quantity": 2,
+                    "created_on": "2026-07-01"
+                  }
+                ],
+                "events": [
+                  {
+                    "event_id": "E",
+                    "type": "supersede",
+                    "old_id": "A",
+                    "new_id": "A",
+                    "effective_on": "2026-07-01"
+                  },
+                  {
+                    "event_id": "M",
+                    "type": "supersede",
+                    "old_id": "MISSING",
+                    "new_id": "B",
+                    "effective_on": "2026-07-01"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "needs_evidence",
+        "reason": "ledger_endpoint_missing"
+      },
+      "policy_refs": [
+        "F04-POL#p03"
+      ],
+      "oracle_rationale": "Endpoint check precedes cycle detection."
+    },
+    {
+      "probe_id": "S17",
+      "name": "Null release date is unknown",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S17",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S17-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "receipt_on": "2026-07-01",
+                "invoice_on": "2026-06-01",
+                "reviewed_on": "2026-08-01"
+              },
+              "acceptance": {
+                "signed_on": "2026-07-01",
+                "declared_regime": "NEW",
+                "quantity": 2,
+                "status": "accepted"
+              },
+              "quality_release": {
+                "released": true,
+                "released_on": null
+              },
+              "transition_register": null
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "needs_evidence",
+        "reason": "quality_release_missing"
+      },
+      "policy_refs": [
+        "F05-POL#p04"
+      ],
+      "oracle_rationale": "Null date is insufficient release evidence."
+    },
+    {
+      "probe_id": "S18",
+      "name": "False release is not rejection",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S18",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S18-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "receipt_on": "2026-07-01",
+                "invoice_on": "2026-06-01",
+                "reviewed_on": "2026-08-01"
+              },
+              "acceptance": {
+                "signed_on": "2026-07-01",
+                "declared_regime": "NEW",
+                "quantity": 2,
+                "status": "accepted"
+              },
+              "quality_release": {
+                "released": false,
+                "released_on": "2026-07-01"
+              },
+              "transition_register": null
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "needs_evidence",
+        "reason": "quality_release_missing"
+      },
+      "policy_refs": [
+        "F05-POL#p04"
+      ],
+      "oracle_rationale": "Policy explicitly distinguishes false release from rejection."
+    },
+    {
+      "probe_id": "S19",
+      "name": "Invoice and review dates do not select regime",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S19",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S19-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "receipt_on": "2026-07-01",
+                "invoice_on": "2026-09-01",
+                "reviewed_on": "2026-09-01"
+              },
+              "acceptance": {
+                "signed_on": "2026-07-01",
+                "declared_regime": "NEW",
+                "quantity": 2,
+                "status": "accepted"
+              },
+              "quality_release": {
+                "released": true,
+                "released_on": "2026-07-01"
+              },
+              "transition_register": null
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason": "criteria_met"
+      },
+      "policy_refs": [
+        "F05-POL#p02",
+        "F05-POL#p04"
+      ],
+      "oracle_rationale": "Receipt date remains unchanged and selects NEW."
+    },
+    {
+      "probe_id": "S20",
+      "name": "Header cannot fill missing paragraph linkage",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S20",
+        "family_id": "F06",
+        "policy_source_id": "F06-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S20-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "invoice_id": "INV"
+              },
+              "closure_claim": {
+                "source_id": "DOC",
+                "locator": "p1"
+              },
+              "source_catalog": [
+                {
+                  "source_id": "DOC",
+                  "kind": "ACCEPTANCE_RECORD",
+                  "paragraphs": [
+                    {
+                      "locator": "p1",
+                      "paragraph_mode": "asserted",
+                      "invoice_id": null,
+                      "po_line": "LINE",
+                      "status": "accepted",
+                      "accepted_quantity": 2,
+                      "unit": "EA",
+                      "signer_role": "RECEIVING_OFFICER",
+                      "text": "LINE: accepted 2 EA by RECEIVING_OFFICER; invoice unknown."
+                    }
+                  ],
+                  "invoice_id": "INV"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "needs_evidence",
+        "reason": "linkage_missing"
+      },
+      "policy_refs": [
+        "F06-POL#p02",
+        "F06-POL#p04"
+      ],
+      "oracle_rationale": "Explicit source header does not establish paragraph linkage."
+    },
+    {
+      "probe_id": "S21",
+      "name": "Correct adjacent paragraph cannot rescue cited example",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S21",
+        "family_id": "F06",
+        "policy_source_id": "F06-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S21-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "invoice_id": "INV"
+              },
+              "closure_claim": {
+                "source_id": "DOC",
+                "locator": "p1"
+              },
+              "source_catalog": [
+                {
+                  "source_id": "DOC",
+                  "kind": "ACCEPTANCE_RECORD",
+                  "paragraphs": [
+                    {
+                      "locator": "p1",
+                      "paragraph_mode": "example",
+                      "invoice_id": "INV",
+                      "po_line": "LINE",
+                      "status": "accepted",
+                      "accepted_quantity": 2,
+                      "unit": "EA",
+                      "signer_role": "RECEIVING_OFFICER",
+                      "text": "INV LINE: accepted 2 EA by RECEIVING_OFFICER."
+                    },
+                    {
+                      "locator": "p2",
+                      "paragraph_mode": "asserted",
+                      "invoice_id": "INV",
+                      "po_line": "LINE",
+                      "status": "accepted",
+                      "accepted_quantity": 2,
+                      "unit": "EA",
+                      "signer_role": "RECEIVING_OFFICER",
+                      "text": "INV LINE: accepted 2 EA by RECEIVING_OFFICER."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "needs_evidence",
+        "reason": "source_not_acceptance"
+      },
+      "policy_refs": [
+        "F06-POL#p02",
+        "F06-POL#p04"
+      ],
+      "oracle_rationale": "Only cited assertion matters, not nearby positive text."
+    },
+    {
+      "probe_id": "S22",
+      "name": "Near identifier cannot rescue missing locator",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "S22",
+        "family_id": "F06",
+        "policy_source_id": "F06-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S22-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "invoice_id": "INV"
+              },
+              "closure_claim": {
+                "source_id": "DOC",
+                "locator": "p01"
+              },
+              "source_catalog": [
+                {
+                  "source_id": "DOC",
+                  "kind": "ACCEPTANCE_RECORD",
+                  "paragraphs": [
+                    {
+                      "locator": "p1",
+                      "paragraph_mode": "asserted",
+                      "invoice_id": "INV",
+                      "po_line": "LINE",
+                      "status": "accepted",
+                      "accepted_quantity": 2,
+                      "unit": "EA",
+                      "signer_role": "RECEIVING_OFFICER",
+                      "text": "INV LINE: accepted 2 EA by RECEIVING_OFFICER."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "decision": "needs_evidence",
+        "reason": "cited_locator_missing"
+      },
+      "policy_refs": [
+        "F06-POL#p02",
+        "F06-POL#p03"
+      ],
+      "oracle_rationale": "Exact pair required, not similar-looking locator."
+    },
+    {
+      "probe_id": "S23",
+      "name": "Boolean invoice quantity",
+      "scope": "ood_safety",
+      "case": {
+        "case_id": "S23",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S23-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": true,
+                "invoice_id": "INV",
+                "target_serials": [
+                  "a",
+                  "b"
+                ]
+              },
+              "lots": [
+                {
+                  "lot_id": "L",
+                  "po_line": "LINE",
+                  "status": "accepted",
+                  "serials": [
+                    "a",
+                    "b"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "allowed_decisions": [
+          "needs_review",
+          "needs_evidence"
+        ],
+        "payment_authorized": false
+      },
+      "policy_refs": [
+        "F01-POL#p01",
+        "F01-POL#p02"
+      ],
+      "oracle_rationale": "Boolean is not positive integer input; desirable safety contract is nonclosure."
+    },
+    {
+      "probe_id": "S24",
+      "name": "Duplicate target serial identifiers",
+      "scope": "ood_safety",
+      "case": {
+        "case_id": "S24",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S24-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "invoice_id": "INV",
+                "target_serials": [
+                  "a",
+                  "a"
+                ]
+              },
+              "lots": [
+                {
+                  "lot_id": "L",
+                  "po_line": "LINE",
+                  "status": "accepted",
+                  "serials": [
+                    "a",
+                    "b"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "allowed_decisions": [
+          "needs_review",
+          "needs_evidence"
+        ],
+        "payment_authorized": false
+      },
+      "policy_refs": [
+        "F01-POL#p02"
+      ],
+      "oracle_rationale": "Distinct-target precondition violated; avoid certifying malformed identity mapping."
+    },
+    {
+      "probe_id": "S25",
+      "name": "Contested acceptance status injected",
+      "scope": "ood_safety",
+      "case": {
+        "case_id": "S25",
+        "family_id": "F02",
+        "policy_source_id": "F02-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S25-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2
+              },
+              "acceptance": {
+                "po_line": "LINE",
+                "signer": "R",
+                "signed_on": "2026-07-01",
+                "accepted_quantity": 2,
+                "status": "rejected"
+              },
+              "delegation_registry": [
+                {
+                  "type": "grant",
+                  "signer": "R",
+                  "po_line": "LINE",
+                  "valid_from": "2026-07-01",
+                  "valid_to": "2026-07-01",
+                  "max_quantity": 2
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "allowed_decisions": [
+          "needs_review",
+          "needs_evidence"
+        ],
+        "payment_authorized": false
+      },
+      "policy_refs": [
+        "F02-POL#p02"
+      ],
+      "oracle_rationale": "Positive uncontested acceptance assumption violated. Extra adverse field should trigger unsupported handling in a hardened boundary, not be counted as a policy defect."
+    },
+    {
+      "probe_id": "S26",
+      "name": "Conflicting payload for same event identity",
+      "scope": "ood_safety",
+      "case": {
+        "case_id": "S26",
+        "family_id": "F04",
+        "policy_source_id": "F04-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S26-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "as_of": "2026-07-01"
+              },
+              "acceptance_ledger": {
+                "records": [
+                  {
+                    "record_id": "A",
+                    "po_line": "LINE",
+                    "status": "accepted",
+                    "quantity": 2,
+                    "created_on": "2026-07-01"
+                  },
+                  {
+                    "record_id": "B",
+                    "po_line": "LINE",
+                    "status": "accepted",
+                    "quantity": 2,
+                    "created_on": "2026-07-01"
+                  },
+                  {
+                    "record_id": "C",
+                    "po_line": "LINE",
+                    "status": "accepted",
+                    "quantity": 2,
+                    "created_on": "2026-07-01"
+                  }
+                ],
+                "events": [
+                  {
+                    "event_id": "E",
+                    "type": "supersede",
+                    "old_id": "A",
+                    "new_id": "B",
+                    "effective_on": "2026-07-01"
+                  },
+                  {
+                    "event_id": "E",
+                    "type": "supersede",
+                    "old_id": "B",
+                    "new_id": "C",
+                    "effective_on": "2026-07-01"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "expected": {
+        "allowed_decisions": [
+          "needs_review",
+          "needs_evidence"
+        ],
+        "payment_authorized": false
+      },
+      "policy_refs": [
+        "F04-POL#p02",
+        "F04-POL#p06"
+      ],
+      "oracle_rationale": "Same event ID describes two different events. Event-identity resolution is unspecified; nonclosure is a proposed structural safety requirement."
+    },
+    {
+      "probe_id": "S27",
+      "name": "Explicit acceptance mapping contradicts target",
+      "scope": "ood_safety",
+      "case": {
+        "case_id": "S27",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S27-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "receipt_on": "2026-07-01",
+                "invoice_on": "2026-06-01",
+                "reviewed_on": "2026-08-01"
+              },
+              "acceptance": {
+                "signed_on": "2026-07-01",
+                "declared_regime": "NEW",
+                "quantity": 2,
+                "status": "accepted",
+                "po_line": "OTHER"
+              },
+              "quality_release": {
+                "released": true,
+                "released_on": "2026-07-01"
+              },
+              "transition_register": null
+            }
+          }
+        ]
+      },
+      "expected": {
+        "allowed_decisions": [
+          "needs_review",
+          "needs_evidence"
+        ],
+        "payment_authorized": false
+      },
+      "policy_refs": [
+        "F05-POL#p03"
+      ],
+      "oracle_rationale": "Policy assumes target-line mapping; injected contradiction is outside domain."
+    },
+    {
+      "probe_id": "S28",
+      "name": "Release marked true with integer one",
+      "scope": "ood_safety",
+      "case": {
+        "case_id": "S28",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S28-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "receipt_on": "2026-07-01",
+                "invoice_on": "2026-06-01",
+                "reviewed_on": "2026-08-01"
+              },
+              "acceptance": {
+                "signed_on": "2026-07-01",
+                "declared_regime": "NEW",
+                "quantity": 2,
+                "status": "accepted"
+              },
+              "quality_release": {
+                "released": 1,
+                "released_on": "2026-07-01"
+              },
+              "transition_register": null
+            }
+          }
+        ]
+      },
+      "expected": {
+        "allowed_decisions": [
+          "needs_review",
+          "needs_evidence"
+        ],
+        "payment_authorized": false
+      },
+      "policy_refs": [
+        "F05-POL#p04"
+      ],
+      "oracle_rationale": "Boolean schema excludes integer one. Nonclosure rather than truthiness coercion is desired."
+    },
+    {
+      "probe_id": "S29",
+      "name": "Structured accepted facts contradict prose",
+      "scope": "ood_safety",
+      "case": {
+        "case_id": "S29",
+        "family_id": "F06",
+        "policy_source_id": "F06-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S29-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "invoice_id": "INV"
+              },
+              "closure_claim": {
+                "source_id": "DOC",
+                "locator": "p1"
+              },
+              "source_catalog": [
+                {
+                  "source_id": "DOC",
+                  "kind": "ACCEPTANCE_RECORD",
+                  "paragraphs": [
+                    {
+                      "locator": "p1",
+                      "paragraph_mode": "asserted",
+                      "invoice_id": "INV",
+                      "po_line": "LINE",
+                      "status": "accepted",
+                      "accepted_quantity": 2,
+                      "unit": "EA",
+                      "signer_role": "RECEIVING_OFFICER",
+                      "text": "Invoice INV line LINE explicitly rejected, not accepted."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "allowed_decisions": [
+          "needs_review",
+          "needs_evidence"
+        ],
+        "payment_authorized": false
+      },
+      "policy_refs": [
+        "F06-POL#p02"
+      ],
+      "oracle_rationale": "Structured fields and prose are required to agree; no in-policy resolution rule exists. Test boundary detection, not natural-language policy accuracy."
+    },
+    {
+      "probe_id": "S30",
+      "name": "Conflicting repeated record identity",
+      "scope": "ood_safety",
+      "case": {
+        "case_id": "S30",
+        "family_id": "F04",
+        "policy_source_id": "F04-POL",
+        "split": "synthetic-stress",
+        "question": "Synthetic closure recommendation only.",
+        "sources": [
+          {
+            "source_id": "S30-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot.",
+            "facts": {
+              "request": {
+                "po_line": "LINE",
+                "invoice_quantity": 2,
+                "as_of": "2026-07-01"
+              },
+              "acceptance_ledger": {
+                "records": [
+                  {
+                    "record_id": "A",
+                    "po_line": "LINE",
+                    "status": "accepted",
+                    "quantity": 2,
+                    "created_on": "2026-07-01"
+                  },
+                  {
+                    "record_id": "A",
+                    "po_line": "LINE",
+                    "status": "accepted",
+                    "quantity": 3,
+                    "created_on": "2026-07-01"
+                  }
+                ],
+                "events": []
+              }
+            }
+          }
+        ]
+      },
+      "expected": {
+        "allowed_decisions": [
+          "needs_review",
+          "needs_evidence"
+        ],
+        "payment_authorized": false
+      },
+      "policy_refs": [
+        "F04-POL#p02",
+        "F04-POL#p06"
+      ],
+      "oracle_rationale": "Unique-record-ID assumption violated; nonclosure is conservative handling."
+    }
+  ],
+  "metamorphic_relations": [
+    {
+      "id": "M1",
+      "a": "S01",
+      "b": "S03",
+      "relation": "same_outcome",
+      "why": "Adding only nonparticipants preserves successful coverage."
+    },
+    {
+      "id": "M2",
+      "a": "S05",
+      "b": "S06",
+      "relation": "same_outcome",
+      "why": "Future deny has no authority."
+    },
+    {
+      "id": "M3",
+      "a": "S06",
+      "b": "S07",
+      "relation": "different_decision",
+      "why": "Moving denial into scope changes result."
+    },
+    {
+      "id": "M4",
+      "a": "S08",
+      "b": "S09",
+      "relation": "different_decision",
+      "why": "Unknown and rejection are not interchangeable."
+    },
+    {
+      "id": "M5",
+      "a": "S11",
+      "b": "S12",
+      "relation": "different_decision",
+      "why": "Cutoff determines authoritative record set."
+    },
+    {
+      "id": "M6",
+      "a": "S13",
+      "b": "S14",
+      "relation": "different_decision",
+      "why": "Revoking predecessor versus successor is asymmetric."
+    },
+    {
+      "id": "M7",
+      "a": "S15",
+      "b": "S16",
+      "relation": "different_decision",
+      "why": "Endpoint insufficiency precedes cycle review."
+    },
+    {
+      "id": "M8",
+      "a": "S17",
+      "b": "S18",
+      "relation": "same_outcome",
+      "why": "Unknown date and false release both mean insufficient release evidence."
+    }
+  ]
+}

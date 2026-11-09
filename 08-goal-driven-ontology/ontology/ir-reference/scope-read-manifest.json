@@ -1,0 +1,39 @@
+{
+  "stage": "04",
+  "scope": "Generic bounded scalar rule IR with one full F05 synthetic policy reference; not six-family support",
+  "supported_reference_families": [
+    "F05"
+  ],
+  "unsupported_reference_families": [
+    "F01",
+    "F02",
+    "F03",
+    "F04",
+    "F06"
+  ],
+  "read_files": [
+    "README.md",
+    "experiments/v1/run-contract.json",
+    "src/policy_baseline.py",
+    "benchmark/v1/model-facing/F05/materials.json"
+  ],
+  "directory_metadata_inspected": [
+    "repository AGENTS.md search (none found)",
+    "repository .agents skill locations (none found)",
+    "src/",
+    "tests/",
+    "benchmark/v1/ model-facing paths and evaluator/source-registry.json filename only",
+    "data/ ontology/ protocol/ experiments/v1 file names"
+  ],
+  "evaluator_case_or_label_contents_read": false,
+  "prior_baseline_implementation_read": true,
+  "prior_aggregate_results_seen_in_readme": true,
+  "model_calls": 0,
+  "reference_authoring": "Implementation-authored; not blinded independent model induction",
+  "test_source": "39 implementation-authored unit tests; no evaluator inputs/labels",
+  "original_files_modified": [],
+  "notes": [
+    "Model-facing F05 policy identifies itself as test split; policy access is allowed. No case inputs or labels opened.",
+    "Parent may run retrospective evaluation after freeze; not a claim of fresh holdout isolation."
+  ]
+}

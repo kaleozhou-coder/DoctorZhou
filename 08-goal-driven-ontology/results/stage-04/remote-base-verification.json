@@ -1,0 +1,10 @@
+{
+  "checked_date_utc": "2026-11-09",
+  "repository": "kaleozhou-coder/DoctorZhou",
+  "branch": "main",
+  "commit": "dab8829cf345a7b5a3e0260dd1bff5017dfe03a4",
+  "tree": "b3d85535bc6a7bf297b141d0adf6e8dca481187f",
+  "verified_original_file_count": 146,
+  "git_blob_mismatches": 0,
+  "method": "Read GitHub recursive tree through connector and compute git blob object SHA1 over local files. No original files altered."
+}

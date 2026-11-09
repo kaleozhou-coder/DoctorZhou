@@ -1,0 +1,28 @@
+{
+  "tests_passed": 122,
+  "python": "3.12.14",
+  "model_calls": 0,
+  "replayed_files": [
+    {
+      "file": "stress/always-close-control.json",
+      "byte_identical": true,
+      "sha256": "d67ba06f27155d3d17420d92c337c426516387a84eb5d3a3d283392cbc2b12e5"
+    },
+    {
+      "file": "stress/frozen-baseline.json",
+      "byte_identical": true,
+      "sha256": "0c4346e7c6daabe6976bf12bd83a3f35397e3d00d904b54171b23885937ae585"
+    },
+    {
+      "file": "ir-compatibility/predictions.json",
+      "byte_identical": true,
+      "sha256": "7502ea5fbd7543a3fca885640a9883291bd9504f226b0ff2adcd824b23a713ed"
+    },
+    {
+      "file": "ir-compatibility/summary.json",
+      "byte_identical": true,
+      "sha256": "f553ffaa336eade06bb4857caa36887ef26cf352987eb1e8768910f3d4e9c445"
+    }
+  ],
+  "scope": "Deterministic engineering execution, not language model replay."
+}
