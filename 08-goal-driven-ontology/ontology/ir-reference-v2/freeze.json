@@ -1,0 +1,26 @@
+{
+  "version": "rule-ir-v2",
+  "frozen_at_utc": "2026-11-10T01:44:19.470614+00:00",
+  "freeze_phase": "before independent retrospective evaluation",
+  "reference_families": [
+    "F01",
+    "F05"
+  ],
+  "unsupported_families": [
+    "F02",
+    "F03",
+    "F04",
+    "F06"
+  ],
+  "tests_command": "PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests -p test_rule_ir_v2.py -v",
+  "tests_passed": 80,
+  "sha256": {
+    "src/rule_ir_v2.py": "13dd1be4929653be4d74495a7d93140267c27b6929df8bfe27afd14efeeaf5ff",
+    "tests/test_rule_ir_v2.py": "3441eb4a4f2b2e8ebadc675d144336f2efa952144da5933acc79d0ea106ee5b1",
+    "tests/test_rule_ir.py": "b00da3c3d384a76a5881f81c0bdf6d138ed24c01a93367f3bb76972731fb1b9b",
+    "protocol/rule-ir-v2.md": "81bfa1f3459f594b63f67ad03ebb7be3bb69d99e27a3e6ad2c6198cd73476715",
+    "ontology/ir-reference-v2/F01.json": "c7ae9ae1217f3879df4bcefff796ee43eee45e9039b2e1f16d7ddd16474e9360",
+    "ontology/ir-reference-v2/F05.json": "1c2bd32cec5f49e5d6bc6d140198293941cdc098a0a4e0ddde6eb782553e94cc",
+    "ontology/ir-reference-v2/read-manifest.json": "c26288914b6a8908564c91b79ca5121a1dd80d534926b551748497f6a44c7539"
+  }
+}

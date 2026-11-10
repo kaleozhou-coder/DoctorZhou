@@ -1,0 +1,45 @@
+{
+  "authorship": "Manually authored deterministic engineering reference, not an LLM experimental arm",
+  "read_boundary": "Policies, baseline source and existing scalar unit tests only; no evaluator input/label files or stress probes opened",
+  "source_reads": [
+    {
+      "path": "README.md",
+      "sha256": "073ae0f82c0c999b3051ab231a4a26d8926b78c8d024fb9af794e1fdccb19868"
+    },
+    {
+      "path": "protocol/rule-ir-v1.md",
+      "sha256": "28cddc9d95ab7a62ce282de26d146a9668656d8d061b3234403a8940937e4fde"
+    },
+    {
+      "path": "src/rule_ir.py",
+      "sha256": "9371781b57dcb2b14c83a482556d6042e8b94c1bf0ffd20bd4d84260a94a9a00"
+    },
+    {
+      "path": "src/policy_baseline.py",
+      "sha256": "ded2f89be60605313a0e87c99597856a80af7e8136b90dd6f065ca3f99feec4f"
+    },
+    {
+      "path": "tests/test_rule_ir.py",
+      "sha256": "b00da3c3d384a76a5881f81c0bdf6d138ed24c01a93367f3bb76972731fb1b9b"
+    },
+    {
+      "path": "ontology/ir-reference/F05.json",
+      "sha256": "5720108d0623be494885551d451dd9150a2f20b6cdf818f98d24daaa9592ebdd"
+    },
+    {
+      "path": "benchmark/v1/model-facing/F01/materials.json",
+      "sha256": "db7219b05f7a059479b7d6e62ff2c96b8bc7b10f97f56aba997b5492c04730aa"
+    },
+    {
+      "path": "benchmark/v1/model-facing/F05/materials.json",
+      "sha256": "cc43f2cfad138108f1a50d7ecee74557912c15a9d18a9a1ce7491940b15fc2c8"
+    }
+  ],
+  "directory_listings": [
+    "topic root",
+    "benchmark/v1",
+    "benchmark/v1/model-facing"
+  ],
+  "new_outputs_read": "Own v2 implementation, reference artifacts and test execution output only",
+  "limitation": "Prior baseline source and README contain previous aggregate performance; not independent blind induction"
+}

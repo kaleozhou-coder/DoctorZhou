@@ -1,0 +1,1492 @@
+{
+  "version": "entry-challenge-v1",
+  "stage": "05",
+  "synthetic": true,
+  "not_expert_gold": true,
+  "independent_holdout": false,
+  "implementation_read_before_authoring": false,
+  "evaluator_labels_read": false,
+  "predictor_run_before_freeze": false,
+  "probes": [
+    {
+      "probe_id": "E01",
+      "name": "Distinct serial coverage control",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "E01",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E01-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-C",
+                "po_line": "LINE-C",
+                "invoice_quantity": 3,
+                "target_serials": [
+                  "c1",
+                  "c2",
+                  "c3"
+                ]
+              },
+              "lots": [
+                {
+                  "lot_id": "LOT-C",
+                  "po_line": "LINE-C",
+                  "status": "accepted",
+                  "serials": [
+                    "c1",
+                    "c2",
+                    "c3"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "decision": "close_eligible",
+        "reason": "criteria_met"
+      },
+      "policy_refs": [
+        "F01-POL#p02",
+        "F01-POL#p03",
+        "F01-POL#p04",
+        "F01-POL#p05"
+      ],
+      "oracle_rationale": "Three distinct target serials are covered once by one same-line accepted lot."
+    },
+    {
+      "probe_id": "E02",
+      "name": "Malformed nested serial collection",
+      "scope": "ood_safety",
+      "case": {
+        "case_id": "E02",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E02-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-C",
+                "po_line": "LINE-C",
+                "invoice_quantity": 3,
+                "target_serials": [
+                  "c1",
+                  "c2",
+                  "c3"
+                ]
+              },
+              "lots": [
+                {
+                  "lot_id": "LOT-C",
+                  "po_line": "LINE-C",
+                  "status": "accepted",
+                  "serials": "c1,c2,c3"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "forbidden_decisions": [
+          "close_eligible"
+        ],
+        "allowed_decisions": [
+          "needs_evidence",
+          "needs_review"
+        ]
+      },
+      "policy_refs": [
+        "F01-POL#p02"
+      ],
+      "oracle_rationale": "A string is not the required distinct-string array; proposed input safety boundary, not a business rejection label."
+    },
+    {
+      "probe_id": "E03",
+      "name": "Independent authority control",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "E03",
+        "family_id": "F02",
+        "policy_source_id": "F02-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E03-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "po_line": "LINE-C",
+                "invoice_quantity": 3
+              },
+              "acceptance": {
+                "po_line": "LINE-C",
+                "signer": "Receiver-C",
+                "signed_on": "2026-08-12",
+                "accepted_quantity": 3
+              },
+              "delegation_registry": [
+                {
+                  "type": "grant",
+                  "signer": "Receiver-C",
+                  "po_line": "LINE-C",
+                  "valid_from": "2026-08-01",
+                  "valid_to": "2026-08-31",
+                  "max_quantity": 4
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "decision": "close_eligible",
+        "reason": "criteria_met"
+      },
+      "policy_refs": [
+        "F02-POL#p02",
+        "F02-POL#p04",
+        "F02-POL#p05"
+      ],
+      "oracle_rationale": "Matching in-date grant permits four EA and authentic uncontested acceptance covers three EA."
+    },
+    {
+      "probe_id": "E04",
+      "name": "Explicit adverse status extension",
+      "scope": "ood_safety",
+      "case": {
+        "case_id": "E04",
+        "family_id": "F02",
+        "policy_source_id": "F02-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E04-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "po_line": "LINE-C",
+                "invoice_quantity": 3
+              },
+              "acceptance": {
+                "po_line": "LINE-C",
+                "signer": "Receiver-C",
+                "signed_on": "2026-08-12",
+                "accepted_quantity": 3,
+                "status": "rejected"
+              },
+              "delegation_registry": [
+                {
+                  "type": "grant",
+                  "signer": "Receiver-C",
+                  "po_line": "LINE-C",
+                  "valid_from": "2026-08-01",
+                  "valid_to": "2026-08-31",
+                  "max_quantity": 4
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "forbidden_decisions": [
+          "close_eligible"
+        ],
+        "allowed_decisions": [
+          "needs_evidence",
+          "needs_review"
+        ]
+      },
+      "policy_refs": [
+        "F02-POL#p02"
+      ],
+      "oracle_rationale": "Added rejected status contradicts the uncontested positive acceptance premise. No policy reason is imposed outside that premise."
+    },
+    {
+      "probe_id": "E05",
+      "name": "NEW release control",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "E05",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E05-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "po_line": "LINE-C",
+                "invoice_quantity": 3,
+                "receipt_on": "2026-08-10",
+                "invoice_on": "2026-08-11",
+                "reviewed_on": "2026-08-15"
+              },
+              "acceptance": {
+                "signed_on": "2026-08-12",
+                "declared_regime": "NEW",
+                "quantity": 3,
+                "status": "accepted"
+              },
+              "quality_release": {
+                "released": true,
+                "released_on": "2026-08-10"
+              },
+              "transition_register": null
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "decision": "close_eligible",
+        "reason": "criteria_met"
+      },
+      "policy_refs": [
+        "F05-POL#p02",
+        "F05-POL#p03",
+        "F05-POL#p04",
+        "F05-POL#p06"
+      ],
+      "oracle_rationale": "NEW receipt has NEW acceptance after receipt, sufficient quantity, and independently true same-day release."
+    },
+    {
+      "probe_id": "E06",
+      "name": "Acceptance maps to another order line",
+      "scope": "ood_safety",
+      "case": {
+        "case_id": "E06",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E06-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "po_line": "LINE-C",
+                "invoice_quantity": 3,
+                "receipt_on": "2026-08-10",
+                "invoice_on": "2026-08-11",
+                "reviewed_on": "2026-08-15"
+              },
+              "acceptance": {
+                "signed_on": "2026-08-12",
+                "declared_regime": "NEW",
+                "quantity": 3,
+                "status": "accepted",
+                "po_line": "OTHER-LINE"
+              },
+              "quality_release": {
+                "released": true,
+                "released_on": "2026-08-10"
+              },
+              "transition_register": null
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "forbidden_decisions": [
+          "close_eligible"
+        ],
+        "allowed_decisions": [
+          "needs_evidence",
+          "needs_review"
+        ]
+      },
+      "policy_refs": [
+        "F05-POL#p03"
+      ],
+      "oracle_rationale": "An explicit different acceptance line violates the target-line premise; it cannot justify closure."
+    },
+    {
+      "probe_id": "E07",
+      "name": "Unique event identity chain control",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "E07",
+        "family_id": "F04",
+        "policy_source_id": "F04-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E07-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "po_line": "LINE-C",
+                "invoice_quantity": 3,
+                "as_of": "2026-08-15"
+              },
+              "acceptance_ledger": {
+                "records": [
+                  {
+                    "record_id": "R1",
+                    "po_line": "LINE-C",
+                    "status": "accepted",
+                    "quantity": 3,
+                    "created_on": "2026-08-10"
+                  },
+                  {
+                    "record_id": "R2",
+                    "po_line": "LINE-C",
+                    "status": "accepted",
+                    "quantity": 3,
+                    "created_on": "2026-08-10"
+                  },
+                  {
+                    "record_id": "R3",
+                    "po_line": "LINE-C",
+                    "status": "accepted",
+                    "quantity": 3,
+                    "created_on": "2026-08-10"
+                  }
+                ],
+                "events": [
+                  {
+                    "event_id": "E1",
+                    "type": "supersede",
+                    "old_id": "R1",
+                    "new_id": "R2",
+                    "effective_on": "2026-08-11"
+                  },
+                  {
+                    "event_id": "E2",
+                    "type": "supersede",
+                    "old_id": "R2",
+                    "new_id": "R3",
+                    "effective_on": "2026-08-12"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "decision": "close_eligible",
+        "reason": "criteria_met"
+      },
+      "policy_refs": [
+        "F04-POL#p02",
+        "F04-POL#p03",
+        "F04-POL#p04",
+        "F04-POL#p05"
+      ],
+      "oracle_rationale": "Two distinct supersession events retire R1 and R2; accepted R3 remains with sufficient quantity."
+    },
+    {
+      "probe_id": "E08",
+      "name": "One event identity claims two transitions",
+      "scope": "ood_safety",
+      "case": {
+        "case_id": "E08",
+        "family_id": "F04",
+        "policy_source_id": "F04-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E08-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "po_line": "LINE-C",
+                "invoice_quantity": 3,
+                "as_of": "2026-08-15"
+              },
+              "acceptance_ledger": {
+                "records": [
+                  {
+                    "record_id": "R1",
+                    "po_line": "LINE-C",
+                    "status": "accepted",
+                    "quantity": 3,
+                    "created_on": "2026-08-10"
+                  },
+                  {
+                    "record_id": "R2",
+                    "po_line": "LINE-C",
+                    "status": "accepted",
+                    "quantity": 3,
+                    "created_on": "2026-08-10"
+                  },
+                  {
+                    "record_id": "R3",
+                    "po_line": "LINE-C",
+                    "status": "accepted",
+                    "quantity": 3,
+                    "created_on": "2026-08-10"
+                  }
+                ],
+                "events": [
+                  {
+                    "event_id": "E1",
+                    "type": "supersede",
+                    "old_id": "R1",
+                    "new_id": "R2",
+                    "effective_on": "2026-08-11"
+                  },
+                  {
+                    "event_id": "E1",
+                    "type": "supersede",
+                    "old_id": "R2",
+                    "new_id": "R3",
+                    "effective_on": "2026-08-12"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "forbidden_decisions": [
+          "close_eligible"
+        ],
+        "allowed_decisions": [
+          "needs_evidence",
+          "needs_review"
+        ]
+      },
+      "policy_refs": [
+        "F04-POL#p02",
+        "F04-POL#p03"
+      ],
+      "oracle_rationale": "E1 now denotes both R1→R2 and R2→R3. Policy lacks collision resolution; nonclosure is an engineering safety requirement."
+    },
+    {
+      "probe_id": "E09",
+      "name": "Consistent cited paragraph control",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "E09",
+        "family_id": "F06",
+        "policy_source_id": "F06-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E09-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-C",
+                "po_line": "LINE-C",
+                "invoice_quantity": 3
+              },
+              "closure_claim": {
+                "source_id": "AC-C",
+                "locator": "p1"
+              },
+              "source_catalog": [
+                {
+                  "source_id": "AC-C",
+                  "kind": "ACCEPTANCE_RECORD",
+                  "paragraphs": [
+                    {
+                      "locator": "p1",
+                      "paragraph_mode": "asserted",
+                      "invoice_id": "INV-C",
+                      "po_line": "LINE-C",
+                      "status": "accepted",
+                      "accepted_quantity": 3,
+                      "unit": "EA",
+                      "signer_role": "RECEIVING_OFFICER",
+                      "text": "Receiving officer accepts 3 EA for invoice INV-C, purchase-order line LINE-C."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "decision": "close_eligible",
+        "reason": "criteria_met"
+      },
+      "policy_refs": [
+        "F06-POL#p02",
+        "F06-POL#p03",
+        "F06-POL#p04",
+        "F06-POL#p05",
+        "F06-POL#p06"
+      ],
+      "oracle_rationale": "Exact authenticated asserted paragraph explicitly accepts three EA for target invoice and line by receiving officer."
+    },
+    {
+      "probe_id": "E10",
+      "name": "Cited text contradicts structured acceptance",
+      "scope": "ood_safety",
+      "case": {
+        "case_id": "E10",
+        "family_id": "F06",
+        "policy_source_id": "F06-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E10-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-C",
+                "po_line": "LINE-C",
+                "invoice_quantity": 3
+              },
+              "closure_claim": {
+                "source_id": "AC-C",
+                "locator": "p1"
+              },
+              "source_catalog": [
+                {
+                  "source_id": "AC-C",
+                  "kind": "ACCEPTANCE_RECORD",
+                  "paragraphs": [
+                    {
+                      "locator": "p1",
+                      "paragraph_mode": "asserted",
+                      "invoice_id": "INV-C",
+                      "po_line": "LINE-C",
+                      "status": "accepted",
+                      "accepted_quantity": 3,
+                      "unit": "EA",
+                      "signer_role": "RECEIVING_OFFICER",
+                      "text": "Receiving officer rejects all 3 EA for invoice INV-C, purchase-order line LINE-C; no goods are accepted."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "forbidden_decisions": [
+          "close_eligible"
+        ],
+        "allowed_decisions": [
+          "needs_evidence",
+          "needs_review"
+        ]
+      },
+      "policy_refs": [
+        "F06-POL#p02"
+      ],
+      "oracle_rationale": "Cited prose rejects the target goods while structured fields accept them, violating the stipulated text/field agreement."
+    },
+    {
+      "probe_id": "E11",
+      "name": "Final acceptance control",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "E11",
+        "family_id": "F03",
+        "policy_source_id": "F03-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E11-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "po_line": "LINE-C",
+                "invoice_quantity": 3
+              },
+              "inspection_register": [
+                {
+                  "report_id": "REPORT-C",
+                  "po_line": "LINE-C",
+                  "phase": "final",
+                  "status": "accepted",
+                  "quantity": 3,
+                  "recorded_on": "2026-08-12"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "decision": "close_eligible",
+        "reason": "criteria_met"
+      },
+      "policy_refs": [
+        "F03-POL#p02",
+        "F03-POL#p05"
+      ],
+      "oracle_rationale": "One authenticated final acceptance covers the target line and invoice quantity."
+    },
+    {
+      "probe_id": "E12",
+      "name": "Malformed nested report entry",
+      "scope": "ood_safety",
+      "case": {
+        "case_id": "E12",
+        "family_id": "F03",
+        "policy_source_id": "F03-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E12-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "po_line": "LINE-C",
+                "invoice_quantity": 3
+              },
+              "inspection_register": [
+                {
+                  "report_id": "REPORT-C",
+                  "po_line": "LINE-C",
+                  "phase": "final",
+                  "status": "accepted",
+                  "quantity": 3,
+                  "recorded_on": "2026-08-12"
+                },
+                "report unavailable"
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "forbidden_decisions": [
+          "close_eligible"
+        ],
+        "allowed_decisions": [
+          "needs_evidence",
+          "needs_review"
+        ]
+      },
+      "policy_refs": [
+        "F03-POL#p02"
+      ],
+      "oracle_rationale": "The inspection array contains a scalar instead of a report object. A crash is a failure, not safe abstention."
+    },
+    {
+      "probe_id": "E13",
+      "name": "Benign explicit positive status extension",
+      "scope": "unsupported_benign",
+      "case": {
+        "case_id": "E13",
+        "family_id": "F02",
+        "policy_source_id": "F02-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E13-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "po_line": "LINE-C",
+                "invoice_quantity": 3
+              },
+              "acceptance": {
+                "po_line": "LINE-C",
+                "signer": "Receiver-C",
+                "signed_on": "2026-08-12",
+                "accepted_quantity": 3,
+                "status": "accepted"
+              },
+              "delegation_registry": [
+                {
+                  "type": "grant",
+                  "signer": "Receiver-C",
+                  "po_line": "LINE-C",
+                  "valid_from": "2026-08-01",
+                  "valid_to": "2026-08-31",
+                  "max_quantity": 4
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "measurement_only": true,
+        "business_label": null,
+        "measure": "Record close eligibility versus conservative abstention; neither outcome is a policy correctness label."
+      },
+      "policy_refs": [
+        "F02-POL#p02"
+      ],
+      "oracle_rationale": "Added accepted status agrees with the positive premise but is not in the declared acceptance schema. Abstention measures unsupported-field cost only."
+    },
+    {
+      "probe_id": "E14",
+      "name": "Contradictory status matched extension",
+      "scope": "ood_safety",
+      "case": {
+        "case_id": "E14",
+        "family_id": "F02",
+        "policy_source_id": "F02-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E14-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "po_line": "LINE-C",
+                "invoice_quantity": 3
+              },
+              "acceptance": {
+                "po_line": "LINE-C",
+                "signer": "Receiver-C",
+                "signed_on": "2026-08-12",
+                "accepted_quantity": 3,
+                "status": "rejected"
+              },
+              "delegation_registry": [
+                {
+                  "type": "grant",
+                  "signer": "Receiver-C",
+                  "po_line": "LINE-C",
+                  "valid_from": "2026-08-01",
+                  "valid_to": "2026-08-31",
+                  "max_quantity": 4
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "forbidden_decisions": [
+          "close_eligible"
+        ],
+        "allowed_decisions": [
+          "needs_evidence",
+          "needs_review"
+        ]
+      },
+      "policy_refs": [
+        "F02-POL#p02"
+      ],
+      "oracle_rationale": "The same extra field now explicitly rejects the acceptance; proposed nonclosure boundary."
+    },
+    {
+      "probe_id": "E15",
+      "name": "Coverage control for benign metadata",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "E15",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E15-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-C",
+                "po_line": "LINE-C",
+                "invoice_quantity": 3,
+                "target_serials": [
+                  "c1",
+                  "c2",
+                  "c3"
+                ]
+              },
+              "lots": [
+                {
+                  "lot_id": "LOT-C",
+                  "po_line": "LINE-C",
+                  "status": "accepted",
+                  "serials": [
+                    "c1",
+                    "c2",
+                    "c3"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "decision": "close_eligible",
+        "reason": "criteria_met"
+      },
+      "policy_refs": [
+        "F01-POL#p02",
+        "F01-POL#p05"
+      ],
+      "oracle_rationale": "Same complete three-serial coverage; no adverse fact."
+    },
+    {
+      "probe_id": "E16",
+      "name": "Benign nested lot metadata",
+      "scope": "unsupported_benign",
+      "case": {
+        "case_id": "E16",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E16-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-C",
+                "po_line": "LINE-C",
+                "invoice_quantity": 3,
+                "target_serials": [
+                  "c1",
+                  "c2",
+                  "c3"
+                ]
+              },
+              "lots": [
+                {
+                  "lot_id": "LOT-C",
+                  "po_line": "LINE-C",
+                  "status": "accepted",
+                  "serials": [
+                    "c1",
+                    "c2",
+                    "c3"
+                  ],
+                  "display_metadata": {
+                    "label_color": "blue"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "measurement_only": true,
+        "business_label": null,
+        "measure": "Record close eligibility versus conservative abstention; neither outcome is a policy correctness label."
+      },
+      "policy_refs": [
+        "F01-POL#p02"
+      ],
+      "oracle_rationale": "UI color is a synthetic irrelevant annotation outside declared lot fields, not adverse acceptance evidence."
+    },
+    {
+      "probe_id": "E17",
+      "name": "Release control for benign annotation",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "E17",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E17-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "po_line": "LINE-C",
+                "invoice_quantity": 3,
+                "receipt_on": "2026-08-10",
+                "invoice_on": "2026-08-11",
+                "reviewed_on": "2026-08-15"
+              },
+              "acceptance": {
+                "signed_on": "2026-08-12",
+                "declared_regime": "NEW",
+                "quantity": 3,
+                "status": "accepted"
+              },
+              "quality_release": {
+                "released": true,
+                "released_on": "2026-08-10"
+              },
+              "transition_register": null
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "decision": "close_eligible",
+        "reason": "criteria_met"
+      },
+      "policy_refs": [
+        "F05-POL#p04",
+        "F05-POL#p06"
+      ],
+      "oracle_rationale": "Independent release is true on receipt date and acceptance covers invoice."
+    },
+    {
+      "probe_id": "E18",
+      "name": "Benign release display annotation",
+      "scope": "unsupported_benign",
+      "case": {
+        "case_id": "E18",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E18-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "po_line": "LINE-C",
+                "invoice_quantity": 3,
+                "receipt_on": "2026-08-10",
+                "invoice_on": "2026-08-11",
+                "reviewed_on": "2026-08-15"
+              },
+              "acceptance": {
+                "signed_on": "2026-08-12",
+                "declared_regime": "NEW",
+                "quantity": 3,
+                "status": "accepted"
+              },
+              "quality_release": {
+                "released": true,
+                "released_on": "2026-08-10",
+                "display_label": "Quality desk copy"
+              },
+              "transition_register": null
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "measurement_only": true,
+        "business_label": null,
+        "measure": "Record close eligibility versus conservative abstention; neither outcome is a policy correctness label."
+      },
+      "policy_refs": [
+        "F05-POL#p04"
+      ],
+      "oracle_rationale": "A display label makes no additional release or acceptance assertion and is outside the declared release schema."
+    },
+    {
+      "probe_id": "E19",
+      "name": "Consistent unsupported raw text channel",
+      "scope": "unsupported_benign",
+      "case": {
+        "case_id": "E19",
+        "family_id": "F06",
+        "policy_source_id": "F06-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E19-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-C",
+                "po_line": "LINE-C",
+                "invoice_quantity": 3
+              },
+              "closure_claim": {
+                "source_id": "AC-C",
+                "locator": "p1"
+              },
+              "source_catalog": [
+                {
+                  "source_id": "AC-C",
+                  "kind": "ACCEPTANCE_RECORD",
+                  "paragraphs": [
+                    {
+                      "locator": "p1",
+                      "paragraph_mode": "asserted",
+                      "invoice_id": "INV-C",
+                      "po_line": "LINE-C",
+                      "status": "accepted",
+                      "accepted_quantity": 3,
+                      "unit": "EA",
+                      "signer_role": "RECEIVING_OFFICER",
+                      "text": "Receiving officer accepts 3 EA for invoice INV-C, purchase-order line LINE-C."
+                    }
+                  ]
+                }
+              ],
+              "raw_text": "Receiving officer accepts 3 EA for invoice INV-C, purchase-order line LINE-C."
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "measurement_only": true,
+        "business_label": null,
+        "measure": "Record close eligibility versus conservative abstention; neither outcome is a policy correctness label."
+      },
+      "policy_refs": [
+        "F06-POL#p02"
+      ],
+      "oracle_rationale": "Extra raw_text duplicates the supported acceptance statement without contradiction; it is an unsupported channel, not an independently authorized business fact."
+    },
+    {
+      "probe_id": "E20",
+      "name": "Contradictory unsupported raw text channel",
+      "scope": "ood_safety",
+      "case": {
+        "case_id": "E20",
+        "family_id": "F06",
+        "policy_source_id": "F06-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E20-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-C",
+                "po_line": "LINE-C",
+                "invoice_quantity": 3
+              },
+              "closure_claim": {
+                "source_id": "AC-C",
+                "locator": "p1"
+              },
+              "source_catalog": [
+                {
+                  "source_id": "AC-C",
+                  "kind": "ACCEPTANCE_RECORD",
+                  "paragraphs": [
+                    {
+                      "locator": "p1",
+                      "paragraph_mode": "asserted",
+                      "invoice_id": "INV-C",
+                      "po_line": "LINE-C",
+                      "status": "accepted",
+                      "accepted_quantity": 3,
+                      "unit": "EA",
+                      "signer_role": "RECEIVING_OFFICER",
+                      "text": "Receiving officer accepts 3 EA for invoice INV-C, purchase-order line LINE-C."
+                    }
+                  ]
+                }
+              ],
+              "raw_text": "Receiving officer rejects all 3 EA for invoice INV-C, purchase-order line LINE-C."
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "forbidden_decisions": [
+          "close_eligible"
+        ],
+        "allowed_decisions": [
+          "needs_evidence",
+          "needs_review"
+        ]
+      },
+      "policy_refs": [
+        "F06-POL#p02"
+      ],
+      "oracle_rationale": "Extra raw_text explicitly disputes the same target acceptance; conservatively do not close with incompatible supplied evidence."
+    },
+    {
+      "probe_id": "E21",
+      "name": "Consistent source envelope prose",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "E21",
+        "family_id": "F03",
+        "policy_source_id": "F03-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E21-FACT",
+            "locator": "p1",
+            "text": "Final inspection REPORT-C accepts 3 EA for purchase-order line LINE-C.",
+            "facts": {
+              "request": {
+                "po_line": "LINE-C",
+                "invoice_quantity": 3
+              },
+              "inspection_register": [
+                {
+                  "report_id": "REPORT-C",
+                  "po_line": "LINE-C",
+                  "phase": "final",
+                  "status": "accepted",
+                  "quantity": 3,
+                  "recorded_on": "2026-08-12"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "decision": "close_eligible",
+        "reason": "criteria_met"
+      },
+      "policy_refs": [
+        "F03-POL#p02",
+        "F03-POL#p05"
+      ],
+      "oracle_rationale": "Envelope prose and the final accepted structured report agree on the target transaction."
+    },
+    {
+      "probe_id": "E22",
+      "name": "Contradictory source envelope prose",
+      "scope": "ood_safety",
+      "case": {
+        "case_id": "E22",
+        "family_id": "F03",
+        "policy_source_id": "F03-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E22-FACT",
+            "locator": "p1",
+            "text": "Final inspection REPORT-C rejects all 3 EA for purchase-order line LINE-C.",
+            "facts": {
+              "request": {
+                "po_line": "LINE-C",
+                "invoice_quantity": 3
+              },
+              "inspection_register": [
+                {
+                  "report_id": "REPORT-C",
+                  "po_line": "LINE-C",
+                  "phase": "final",
+                  "status": "accepted",
+                  "quantity": 3,
+                  "recorded_on": "2026-08-12"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "forbidden_decisions": [
+          "close_eligible"
+        ],
+        "allowed_decisions": [
+          "needs_evidence",
+          "needs_review"
+        ]
+      },
+      "policy_refs": [
+        "F03-POL#p02",
+        "F03-POL#p03"
+      ],
+      "oracle_rationale": "Source envelope says final rejection while its facts assert final acceptance. This is an added ingestion-consistency boundary, not an exact F03 report-status label."
+    },
+    {
+      "probe_id": "E23",
+      "name": "Event chain control for benign note",
+      "scope": "in_policy",
+      "case": {
+        "case_id": "E23",
+        "family_id": "F04",
+        "policy_source_id": "F04-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E23-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "po_line": "LINE-C",
+                "invoice_quantity": 3,
+                "as_of": "2026-08-15"
+              },
+              "acceptance_ledger": {
+                "records": [
+                  {
+                    "record_id": "R1",
+                    "po_line": "LINE-C",
+                    "status": "accepted",
+                    "quantity": 3,
+                    "created_on": "2026-08-10"
+                  },
+                  {
+                    "record_id": "R2",
+                    "po_line": "LINE-C",
+                    "status": "accepted",
+                    "quantity": 3,
+                    "created_on": "2026-08-10"
+                  },
+                  {
+                    "record_id": "R3",
+                    "po_line": "LINE-C",
+                    "status": "accepted",
+                    "quantity": 3,
+                    "created_on": "2026-08-10"
+                  }
+                ],
+                "events": [
+                  {
+                    "event_id": "E1",
+                    "type": "supersede",
+                    "old_id": "R1",
+                    "new_id": "R2",
+                    "effective_on": "2026-08-11"
+                  },
+                  {
+                    "event_id": "E2",
+                    "type": "supersede",
+                    "old_id": "R2",
+                    "new_id": "R3",
+                    "effective_on": "2026-08-12"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "decision": "close_eligible",
+        "reason": "criteria_met"
+      },
+      "policy_refs": [
+        "F04-POL#p03",
+        "F04-POL#p04",
+        "F04-POL#p05"
+      ],
+      "oracle_rationale": "Distinct events leave only accepted R3 live."
+    },
+    {
+      "probe_id": "E24",
+      "name": "Benign nested event annotation",
+      "scope": "unsupported_benign",
+      "case": {
+        "case_id": "E24",
+        "family_id": "F04",
+        "policy_source_id": "F04-POL",
+        "split": "synthetic-entry-challenge",
+        "question": "Synthetic closure recommendation only; never payment approval.",
+        "sources": [
+          {
+            "source_id": "E24-FACT",
+            "locator": "p1",
+            "text": "Synthetic structured snapshot; facts below supply the transaction data.",
+            "facts": {
+              "request": {
+                "po_line": "LINE-C",
+                "invoice_quantity": 3,
+                "as_of": "2026-08-15"
+              },
+              "acceptance_ledger": {
+                "records": [
+                  {
+                    "record_id": "R1",
+                    "po_line": "LINE-C",
+                    "status": "accepted",
+                    "quantity": 3,
+                    "created_on": "2026-08-10"
+                  },
+                  {
+                    "record_id": "R2",
+                    "po_line": "LINE-C",
+                    "status": "accepted",
+                    "quantity": 3,
+                    "created_on": "2026-08-10"
+                  },
+                  {
+                    "record_id": "R3",
+                    "po_line": "LINE-C",
+                    "status": "accepted",
+                    "quantity": 3,
+                    "created_on": "2026-08-10"
+                  }
+                ],
+                "events": [
+                  {
+                    "event_id": "E1",
+                    "type": "supersede",
+                    "old_id": "R1",
+                    "new_id": "R2",
+                    "effective_on": "2026-08-11",
+                    "archive_note": "Shelf C"
+                  },
+                  {
+                    "event_id": "E2",
+                    "type": "supersede",
+                    "old_id": "R2",
+                    "new_id": "R3",
+                    "effective_on": "2026-08-12"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "expected": {
+        "payment_authorized": false,
+        "measurement_only": true,
+        "business_label": null,
+        "measure": "Record close eligibility versus conservative abstention; neither outcome is a policy correctness label."
+      },
+      "policy_refs": [
+        "F04-POL#p02",
+        "F04-POL#p03"
+      ],
+      "oracle_rationale": "Archival shelf annotation neither adds an event nor changes its effective date; it is an unknown event field."
+    }
+  ],
+  "pairs": [
+    {
+      "pair_id": "P01",
+      "left": "E01",
+      "right": "E02",
+      "single_change": "lots[0].serials array becomes a string",
+      "interpretation": "Malformed input must not close; control must close."
+    },
+    {
+      "pair_id": "P02",
+      "left": "E03",
+      "right": "E04",
+      "single_change": "Add acceptance.status=rejected",
+      "interpretation": "Positive structured assumption versus explicit contradiction."
+    },
+    {
+      "pair_id": "P03",
+      "left": "E05",
+      "right": "E06",
+      "single_change": "Add acceptance.po_line=OTHER-LINE",
+      "interpretation": "Tests target-line domain assumption, not a new policy reason."
+    },
+    {
+      "pair_id": "P04",
+      "left": "E07",
+      "right": "E08",
+      "single_change": "Second event_id E2 becomes E1",
+      "interpretation": "Only event identity changes; graph and quantities remain unchanged."
+    },
+    {
+      "pair_id": "P05",
+      "left": "E09",
+      "right": "E10",
+      "single_change": "Only cited paragraph text changes to rejection",
+      "interpretation": "A schema gate alone may not detect this supported text-field contradiction; no language-understanding claim follows."
+    },
+    {
+      "pair_id": "P06",
+      "left": "E11",
+      "right": "E12",
+      "single_change": "Append scalar inspection entry",
+      "interpretation": "Malformed record shape must not silently preserve closure."
+    },
+    {
+      "pair_id": "P07",
+      "left": "E13",
+      "right": "E14",
+      "single_change": "Extra acceptance.status accepted becomes rejected",
+      "interpretation": "Rejecting both on unknown-field grounds is conservative, not evidence of semantic discrimination."
+    },
+    {
+      "pair_id": "P08",
+      "left": "E15",
+      "right": "E16",
+      "single_change": "Add lots[0].display_metadata object",
+      "interpretation": "Report rejection of harmless unsupported metadata as abstention cost, not business error."
+    },
+    {
+      "pair_id": "P09",
+      "left": "E17",
+      "right": "E18",
+      "single_change": "Add quality_release.display_label",
+      "interpretation": "Unknown nested field sensitivity and conservative abstention cost."
+    },
+    {
+      "pair_id": "P10",
+      "left": "E19",
+      "right": "E20",
+      "single_change": "Only unknown facts.raw_text changes from acceptance to rejection",
+      "interpretation": "A strict unknown-field gate may reject both without understanding either sentence."
+    },
+    {
+      "pair_id": "P11",
+      "left": "E21",
+      "right": "E22",
+      "single_change": "Only source envelope text changes to rejection",
+      "interpretation": "Explicitly tests text outside facts; schema conformance alone need not validate consistency."
+    },
+    {
+      "pair_id": "P12",
+      "left": "E23",
+      "right": "E24",
+      "single_change": "Add events[0].archive_note",
+      "interpretation": "Measure overconservative handling of harmless unknown event fields separately."
+    }
+  ]
+}

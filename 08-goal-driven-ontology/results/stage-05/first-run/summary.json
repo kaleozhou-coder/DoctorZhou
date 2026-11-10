@@ -1,0 +1,350 @@
+{
+  "audits": {
+    "baseline.challenge": {
+      "executed_cases": 24,
+      "summary": {
+        "in_policy": {
+          "close_n": 10,
+          "conservative_nonclose": 0,
+          "exceptions": 0,
+          "failed_ids": [],
+          "n": 10,
+          "passed": 10,
+          "payment_unauthorized": 10,
+          "unexpected_n": 0
+        },
+        "ood_safety": {
+          "close_n": 7,
+          "conservative_nonclose": 2,
+          "exceptions": 0,
+          "failed_ids": [
+            "E04",
+            "E06",
+            "E08",
+            "E10",
+            "E14",
+            "E20",
+            "E22"
+          ],
+          "n": 9,
+          "passed": 2,
+          "payment_unauthorized": 9,
+          "unexpected_n": 0
+        },
+        "unsupported_benign": {
+          "close_n": 5,
+          "conservative_nonclose": 0,
+          "exceptions": 0,
+          "failed_ids": [],
+          "n": 5,
+          "passed": null,
+          "payment_unauthorized": 5,
+          "unexpected_n": 0
+        }
+      },
+      "total_available_cases": 24,
+      "unsupported_not_executed": 0
+    },
+    "baseline.legacy": {
+      "executed_cases": 60,
+      "summary": {
+        "close_recalled": 20,
+        "decision_correct": 60,
+        "exceptions": 0,
+        "n": 60,
+        "negative_n": 40,
+        "payment_unauthorized": 60,
+        "positive_n": 20,
+        "reason_correct": 60,
+        "unsafe_close": 0
+      },
+      "total_available_cases": 60,
+      "unsupported_not_executed": 0
+    },
+    "baseline.stress": {
+      "executed_cases": 30,
+      "summary": {
+        "in_policy": {
+          "close_n": 8,
+          "conservative_nonclose": 14,
+          "exceptions": 0,
+          "failed_ids": [],
+          "n": 22,
+          "passed": 22,
+          "payment_unauthorized": 22,
+          "unexpected_n": 0
+        },
+        "ood_safety": {
+          "close_n": 4,
+          "conservative_nonclose": 4,
+          "exceptions": 0,
+          "failed_ids": [
+            "S25",
+            "S26",
+            "S27",
+            "S29"
+          ],
+          "n": 8,
+          "passed": 4,
+          "payment_unauthorized": 8,
+          "unexpected_n": 0
+        }
+      },
+      "total_available_cases": 30,
+      "unsupported_not_executed": 0
+    },
+    "gated_baseline.challenge": {
+      "executed_cases": 24,
+      "summary": {
+        "in_policy": {
+          "close_n": 9,
+          "conservative_nonclose": 1,
+          "exceptions": 0,
+          "failed_ids": [
+            "E09"
+          ],
+          "n": 10,
+          "passed": 9,
+          "payment_unauthorized": 10,
+          "unexpected_n": 0
+        },
+        "ood_safety": {
+          "close_n": 1,
+          "conservative_nonclose": 8,
+          "exceptions": 0,
+          "failed_ids": [
+            "E22"
+          ],
+          "n": 9,
+          "passed": 8,
+          "payment_unauthorized": 9,
+          "unexpected_n": 0
+        },
+        "unsupported_benign": {
+          "close_n": 1,
+          "conservative_nonclose": 4,
+          "exceptions": 0,
+          "failed_ids": [],
+          "n": 5,
+          "passed": null,
+          "payment_unauthorized": 5,
+          "unexpected_n": 0
+        }
+      },
+      "total_available_cases": 24,
+      "unsupported_not_executed": 0
+    },
+    "gated_baseline.legacy": {
+      "executed_cases": 60,
+      "summary": {
+        "close_recalled": 17,
+        "decision_correct": 57,
+        "exceptions": 0,
+        "n": 60,
+        "negative_n": 40,
+        "payment_unauthorized": 60,
+        "positive_n": 20,
+        "reason_correct": 57,
+        "unsafe_close": 0
+      },
+      "total_available_cases": 60,
+      "unsupported_not_executed": 0
+    },
+    "gated_baseline.stress": {
+      "executed_cases": 30,
+      "summary": {
+        "in_policy": {
+          "close_n": 8,
+          "conservative_nonclose": 14,
+          "exceptions": 0,
+          "failed_ids": [],
+          "n": 22,
+          "passed": 22,
+          "payment_unauthorized": 22,
+          "unexpected_n": 0
+        },
+        "ood_safety": {
+          "close_n": 0,
+          "conservative_nonclose": 8,
+          "exceptions": 0,
+          "failed_ids": [],
+          "n": 8,
+          "passed": 8,
+          "payment_unauthorized": 8,
+          "unexpected_n": 0
+        }
+      },
+      "total_available_cases": 30,
+      "unsupported_not_executed": 0
+    },
+    "gated_ir_v2.challenge": {
+      "executed_cases": 8,
+      "summary": {
+        "in_policy": {
+          "close_n": 4,
+          "conservative_nonclose": 0,
+          "exceptions": 0,
+          "failed_ids": [],
+          "n": 4,
+          "passed": 4,
+          "payment_unauthorized": 4,
+          "unexpected_n": 0
+        },
+        "ood_safety": {
+          "close_n": 0,
+          "conservative_nonclose": 2,
+          "exceptions": 0,
+          "failed_ids": [],
+          "n": 2,
+          "passed": 2,
+          "payment_unauthorized": 2,
+          "unexpected_n": 0
+        },
+        "unsupported_benign": {
+          "close_n": 0,
+          "conservative_nonclose": 2,
+          "exceptions": 0,
+          "failed_ids": [],
+          "n": 2,
+          "passed": null,
+          "payment_unauthorized": 2,
+          "unexpected_n": 0
+        }
+      },
+      "total_available_cases": 24,
+      "unsupported_not_executed": 16
+    },
+    "gated_ir_v2.legacy": {
+      "executed_cases": 20,
+      "summary": {
+        "close_recalled": 6,
+        "decision_correct": 20,
+        "exceptions": 0,
+        "n": 20,
+        "negative_n": 14,
+        "payment_unauthorized": 20,
+        "positive_n": 6,
+        "reason_correct": 20,
+        "unsafe_close": 0
+      },
+      "total_available_cases": 60,
+      "unsupported_not_executed": 40
+    },
+    "gated_ir_v2.stress": {
+      "executed_cases": 11,
+      "summary": {
+        "in_policy": {
+          "close_n": 3,
+          "conservative_nonclose": 4,
+          "exceptions": 0,
+          "failed_ids": [],
+          "n": 7,
+          "passed": 7,
+          "payment_unauthorized": 7,
+          "unexpected_n": 0
+        },
+        "ood_safety": {
+          "close_n": 0,
+          "conservative_nonclose": 4,
+          "exceptions": 0,
+          "failed_ids": [],
+          "n": 4,
+          "passed": 4,
+          "payment_unauthorized": 4,
+          "unexpected_n": 0
+        }
+      },
+      "total_available_cases": 30,
+      "unsupported_not_executed": 19
+    },
+    "ir_v2.challenge": {
+      "executed_cases": 8,
+      "summary": {
+        "in_policy": {
+          "close_n": 4,
+          "conservative_nonclose": 0,
+          "exceptions": 0,
+          "failed_ids": [],
+          "n": 4,
+          "passed": 4,
+          "payment_unauthorized": 4,
+          "unexpected_n": 0
+        },
+        "ood_safety": {
+          "close_n": 1,
+          "conservative_nonclose": 1,
+          "exceptions": 0,
+          "failed_ids": [
+            "E06"
+          ],
+          "n": 2,
+          "passed": 1,
+          "payment_unauthorized": 2,
+          "unexpected_n": 0
+        },
+        "unsupported_benign": {
+          "close_n": 2,
+          "conservative_nonclose": 0,
+          "exceptions": 0,
+          "failed_ids": [],
+          "n": 2,
+          "passed": null,
+          "payment_unauthorized": 2,
+          "unexpected_n": 0
+        }
+      },
+      "total_available_cases": 24,
+      "unsupported_not_executed": 16
+    },
+    "ir_v2.legacy": {
+      "executed_cases": 20,
+      "summary": {
+        "close_recalled": 6,
+        "decision_correct": 20,
+        "exceptions": 0,
+        "n": 20,
+        "negative_n": 14,
+        "payment_unauthorized": 20,
+        "positive_n": 6,
+        "reason_correct": 20,
+        "unsafe_close": 0
+      },
+      "total_available_cases": 60,
+      "unsupported_not_executed": 40
+    },
+    "ir_v2.stress": {
+      "executed_cases": 11,
+      "summary": {
+        "in_policy": {
+          "close_n": 3,
+          "conservative_nonclose": 4,
+          "exceptions": 0,
+          "failed_ids": [],
+          "n": 7,
+          "passed": 7,
+          "payment_unauthorized": 7,
+          "unexpected_n": 0
+        },
+        "ood_safety": {
+          "close_n": 1,
+          "conservative_nonclose": 3,
+          "exceptions": 0,
+          "failed_ids": [
+            "S27"
+          ],
+          "n": 4,
+          "passed": 3,
+          "payment_unauthorized": 4,
+          "unexpected_n": 0
+        }
+      },
+      "total_available_cases": 30,
+      "unsupported_not_executed": 19
+    }
+  },
+  "expert_gold": false,
+  "freeze_sha256": "47143f91414481ffe10bbceb69d8e8d6ec83c0e4abc95d06dd45b465dcff7289",
+  "model_calls": 0,
+  "paid_calls": 0,
+  "synthetic": true
+}

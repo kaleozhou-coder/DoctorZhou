@@ -1,0 +1,20 @@
+{
+  "base_commit": "a5ed6f5cf6d413646c146ecc47ecb0b6752e4440",
+  "stage": "05",
+  "verified_historical_file_count": 175,
+  "unchanged_historical_files": 174,
+  "only_existing_change": "08-goal-driven-ontology/README.md",
+  "new_research_files_before_publication_metadata": 52,
+  "tests_passed": 228,
+  "deterministic_result_json_files": 25,
+  "untrusted_artifact_execution_ready": false,
+  "known_blockers": [
+    "IR v2 enum null bypasses validation",
+    "E22 source-envelope prose contradiction still closes"
+  ],
+  "model_construction_runs": 0,
+  "paid_model_calls": 0,
+  "private_data_included": false,
+  "publication_scope": "Only topic 08 non-sensitive research code, synthetic inputs, public-source provenance and actual results. Root README preserved.",
+  "remote_commit_verification": "Performed after ref update; recorded outside this precommit snapshot."
+}

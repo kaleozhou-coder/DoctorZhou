@@ -1,0 +1,472 @@
+{
+  "version": "rule-ir-v2",
+  "fields": {
+    "invoice_id": {
+      "path": [
+        "request",
+        "invoice_id"
+      ],
+      "type": "string"
+    },
+    "line": {
+      "path": [
+        "request",
+        "po_line"
+      ],
+      "type": "string"
+    },
+    "quantity": {
+      "path": [
+        "request",
+        "invoice_quantity"
+      ],
+      "type": "integer",
+      "minimum": 1
+    },
+    "targets": {
+      "path": [
+        "request",
+        "target_serials"
+      ],
+      "type": {
+        "kind": "set",
+        "items": "string"
+      }
+    },
+    "lots": {
+      "path": [
+        "lots"
+      ],
+      "type": {
+        "kind": "array",
+        "items": {
+          "kind": "record",
+          "fields": {
+            "po_line": "string",
+            "status": "string",
+            "lot_id": "string",
+            "serials": {
+              "kind": "set",
+              "items": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rules": [
+    {
+      "id": "missing_request",
+      "when": {
+        "op": "any",
+        "args": [
+          {
+            "op": "is_unknown",
+            "arg": {
+              "op": "field",
+              "name": "invoice_id"
+            }
+          },
+          {
+            "op": "is_unknown",
+            "arg": {
+              "op": "field",
+              "name": "line"
+            }
+          },
+          {
+            "op": "is_unknown",
+            "arg": {
+              "op": "field",
+              "name": "quantity"
+            }
+          },
+          {
+            "op": "is_unknown",
+            "arg": {
+              "op": "field",
+              "name": "targets"
+            }
+          }
+        ]
+      },
+      "decision": "needs_evidence",
+      "reason": "input_missing",
+      "source_refs": [
+        {
+          "source_id": "F01-POL",
+          "locator": "p02"
+        }
+      ]
+    },
+    {
+      "id": "count",
+      "when": {
+        "op": "ne",
+        "left": {
+          "op": "field",
+          "name": "quantity"
+        },
+        "right": {
+          "op": "count",
+          "arg": {
+            "op": "field",
+            "name": "targets"
+          }
+        }
+      },
+      "decision": "needs_review",
+      "reason": "target_count_mismatch",
+      "source_refs": [
+        {
+          "source_id": "F01-POL",
+          "locator": "p03"
+        }
+      ]
+    },
+    {
+      "id": "status",
+      "when": {
+        "op": "gt",
+        "left": {
+          "op": "count",
+          "arg": {
+            "op": "filter",
+            "arg": {
+              "op": "field",
+              "name": "lots"
+            },
+            "where": {
+              "op": "not",
+              "arg": {
+                "op": "any",
+                "args": [
+                  {
+                    "op": "eq",
+                    "left": {
+                      "op": "item",
+                      "key": "status"
+                    },
+                    "right": {
+                      "op": "literal",
+                      "type": "string",
+                      "value": "accepted"
+                    }
+                  },
+                  {
+                    "op": "eq",
+                    "left": {
+                      "op": "item",
+                      "key": "status"
+                    },
+                    "right": {
+                      "op": "literal",
+                      "type": "string",
+                      "value": "pending"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "right": {
+          "op": "literal",
+          "type": "integer",
+          "value": 0
+        }
+      },
+      "decision": "needs_review",
+      "reason": "malformed_input",
+      "source_refs": [
+        {
+          "source_id": "F01-POL",
+          "locator": "p02"
+        }
+      ]
+    },
+    {
+      "id": "identity",
+      "when": {
+        "op": "identity_conflict",
+        "arg": {
+          "op": "filter",
+          "arg": {
+            "op": "field",
+            "name": "lots"
+          },
+          "where": {
+            "op": "all",
+            "args": [
+              {
+                "op": "eq",
+                "left": {
+                  "op": "item",
+                  "key": "po_line"
+                },
+                "right": {
+                  "op": "field",
+                  "name": "line"
+                }
+              },
+              {
+                "op": "eq",
+                "left": {
+                  "op": "item",
+                  "key": "status"
+                },
+                "right": {
+                  "op": "literal",
+                  "type": "string",
+                  "value": "accepted"
+                }
+              },
+              {
+                "op": "intersects",
+                "left": {
+                  "op": "item",
+                  "key": "serials"
+                },
+                "right": {
+                  "op": "field",
+                  "name": "targets"
+                }
+              }
+            ]
+          }
+        },
+        "key": "lot_id"
+      },
+      "decision": "needs_review",
+      "reason": "lot_identity_conflict",
+      "source_refs": [
+        {
+          "source_id": "F01-POL",
+          "locator": "p04"
+        }
+      ]
+    },
+    {
+      "id": "overlap",
+      "when": {
+        "op": "overlap",
+        "arg": {
+          "op": "distinct_by",
+          "arg": {
+            "op": "filter",
+            "arg": {
+              "op": "field",
+              "name": "lots"
+            },
+            "where": {
+              "op": "all",
+              "args": [
+                {
+                  "op": "eq",
+                  "left": {
+                    "op": "item",
+                    "key": "po_line"
+                  },
+                  "right": {
+                    "op": "field",
+                    "name": "line"
+                  }
+                },
+                {
+                  "op": "eq",
+                  "left": {
+                    "op": "item",
+                    "key": "status"
+                  },
+                  "right": {
+                    "op": "literal",
+                    "type": "string",
+                    "value": "accepted"
+                  }
+                },
+                {
+                  "op": "intersects",
+                  "left": {
+                    "op": "item",
+                    "key": "serials"
+                  },
+                  "right": {
+                    "op": "field",
+                    "name": "targets"
+                  }
+                }
+              ]
+            }
+          },
+          "key": "lot_id"
+        },
+        "key": "serials"
+      },
+      "decision": "needs_review",
+      "reason": "overlapping_lots",
+      "source_refs": [
+        {
+          "source_id": "F01-POL",
+          "locator": "p04"
+        }
+      ]
+    },
+    {
+      "id": "uncovered",
+      "when": {
+        "op": "not",
+        "arg": {
+          "op": "subset",
+          "left": {
+            "op": "field",
+            "name": "targets"
+          },
+          "right": {
+            "op": "union",
+            "arg": {
+              "op": "distinct_by",
+              "arg": {
+                "op": "filter",
+                "arg": {
+                  "op": "field",
+                  "name": "lots"
+                },
+                "where": {
+                  "op": "all",
+                  "args": [
+                    {
+                      "op": "eq",
+                      "left": {
+                        "op": "item",
+                        "key": "po_line"
+                      },
+                      "right": {
+                        "op": "field",
+                        "name": "line"
+                      }
+                    },
+                    {
+                      "op": "eq",
+                      "left": {
+                        "op": "item",
+                        "key": "status"
+                      },
+                      "right": {
+                        "op": "literal",
+                        "type": "string",
+                        "value": "accepted"
+                      }
+                    },
+                    {
+                      "op": "intersects",
+                      "left": {
+                        "op": "item",
+                        "key": "serials"
+                      },
+                      "right": {
+                        "op": "field",
+                        "name": "targets"
+                      }
+                    }
+                  ]
+                }
+              },
+              "key": "lot_id"
+            },
+            "key": "serials"
+          }
+        }
+      },
+      "decision": "needs_evidence",
+      "reason": "uncovered_serials",
+      "source_refs": [
+        {
+          "source_id": "F01-POL",
+          "locator": "p05"
+        }
+      ]
+    },
+    {
+      "id": "covered",
+      "when": {
+        "op": "subset",
+        "left": {
+          "op": "field",
+          "name": "targets"
+        },
+        "right": {
+          "op": "union",
+          "arg": {
+            "op": "distinct_by",
+            "arg": {
+              "op": "filter",
+              "arg": {
+                "op": "field",
+                "name": "lots"
+              },
+              "where": {
+                "op": "all",
+                "args": [
+                  {
+                    "op": "eq",
+                    "left": {
+                      "op": "item",
+                      "key": "po_line"
+                    },
+                    "right": {
+                      "op": "field",
+                      "name": "line"
+                    }
+                  },
+                  {
+                    "op": "eq",
+                    "left": {
+                      "op": "item",
+                      "key": "status"
+                    },
+                    "right": {
+                      "op": "literal",
+                      "type": "string",
+                      "value": "accepted"
+                    }
+                  },
+                  {
+                    "op": "intersects",
+                    "left": {
+                      "op": "item",
+                      "key": "serials"
+                    },
+                    "right": {
+                      "op": "field",
+                      "name": "targets"
+                    }
+                  }
+                ]
+              }
+            },
+            "key": "lot_id"
+          },
+          "key": "serials"
+        }
+      },
+      "decision": "close_eligible",
+      "reason": "criteria_met",
+      "source_refs": [
+        {
+          "source_id": "F01-POL",
+          "locator": "p05"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "decision": "needs_evidence",
+    "reason": "required_fact_missing",
+    "source_refs": [
+      {
+        "source_id": "F01-POL",
+        "locator": "p06"
+      }
+    ]
+  }
+}

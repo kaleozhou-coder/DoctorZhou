@@ -1,0 +1,26 @@
+{
+  "version": "entry-challenge-v1",
+  "frozen_at_utc": "2026-11-10T01:42:55.419980+00:00",
+  "predictor_run_before_freeze": false,
+  "author_implementation_read": false,
+  "evaluator_labels_read": false,
+  "counts": {
+    "total": 24,
+    "in_policy": 10,
+    "ood_safety": 9,
+    "unsupported_benign": 5,
+    "pairs": 12
+  },
+  "hash_algorithm": "sha256",
+  "hashes": {
+    "benchmark/entry-challenge-v1/probes.json": "7bb903e4848e3686683d2cab978f6f0e05031fd1b03b4bc9e31b84f582e773dd",
+    "benchmark/entry-challenge-v1/README.md": "fee7737e04bd351e37766db619d17617169f1a57809751e63b032ff85a22ee5a",
+    "benchmark/v1/model-facing/F01/materials.json": "db7219b05f7a059479b7d6e62ff2c96b8bc7b10f97f56aba997b5492c04730aa",
+    "benchmark/v1/model-facing/F02/materials.json": "72ede95ac83dafb32d7815b884f6985200723ae4552954b8b80dd3e0b479c50d",
+    "benchmark/v1/model-facing/F03/materials.json": "1af670a4f1f857edb409c1ceb129258b514342d401d9b3c0bf34ab127cc38264",
+    "benchmark/v1/model-facing/F04/materials.json": "aff3aed7c03615f49d43788b69b8351abffd8921908097780a5973ac51c2d610",
+    "benchmark/v1/model-facing/F05/materials.json": "cc43f2cfad138108f1a50d7ecee74557912c15a9d18a9a1ce7491940b15fc2c8",
+    "benchmark/v1/model-facing/F06/materials.json": "904dc817df2082a2538ffc9a16e2bc8f6ce1a37b5ef9756194ecd09cb8743cf5"
+  },
+  "note": "Prospective local content freeze, not independent notarization. Implementation hashes are runner responsibility. No predictions observed."
+}

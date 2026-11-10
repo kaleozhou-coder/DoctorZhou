@@ -1,0 +1,24 @@
+{
+  "checked_date_utc": "2026-11-10",
+  "scope": "Selected cloud executable/package presence and available tool metadata only. No credential values inspected; no inference call attempted.",
+  "local_inference_executables_found": {
+    "ollama": false,
+    "llama-cli": false,
+    "llama-server": false,
+    "vllm": false
+  },
+  "python_packages_found": {
+    "torch": false,
+    "transformers": false,
+    "vllm": false,
+    "llama_cpp": false,
+    "openai": false
+  },
+  "backend_ready": false,
+  "reason": "No authorized text inference backend with recorded snapshot, actual token accounting and verified zero-new-cost execution established.",
+  "model_api_calls_attempted": 0,
+  "paid_calls": 0,
+  "credential_values_read": 0,
+  "request_denied": false,
+  "limitations": "Package/executable absence is not proof that all model services are unavailable. Research assistance is not a controlled A/B construction run."
+}
