@@ -1,0 +1,7 @@
+{
+  "base_commit": "7fb46b7124d4aca1019150f01254c035909d3e45",
+  "verified_blobs": 229,
+  "mismatches": [],
+  "verification": "Git blob SHA1 against repository tree, before README navigation edit",
+  "root_README_blob": "1471d6f44c2f455d1a6926dff3a8f4cdf3cf0a5b"
+}

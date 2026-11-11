@@ -1,0 +1,185 @@
+{
+  "executed_cases": 8,
+  "execution_kind": "retrospective_manual_implementation_audit",
+  "model_calls": 0,
+  "predictions": [
+    {
+      "case_id": "E01",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "E01-FACT#p1",
+        "F01-POL#p05"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p1",
+          "source_id": "E01-FACT"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F01-POL"
+        }
+      ]
+    },
+    {
+      "case_id": "E02",
+      "decision": "needs_review",
+      "evidence_ids": [
+        "E02-FACT#p1",
+        "F01-POL#p02"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "malformed_input"
+      ],
+      "source_refs": [
+        {
+          "locator": "p1",
+          "source_id": "E02-FACT"
+        },
+        {
+          "locator": "p02",
+          "source_id": "F01-POL"
+        }
+      ]
+    },
+    {
+      "case_id": "E05",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "E05-FACT#p1",
+        "F05-POL#p06"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p1",
+          "source_id": "E05-FACT"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F05-POL"
+        }
+      ]
+    },
+    {
+      "case_id": "E06",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "E06-FACT#p1",
+        "F05-POL#p06"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p1",
+          "source_id": "E06-FACT"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F05-POL"
+        }
+      ]
+    },
+    {
+      "case_id": "E15",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "E15-FACT#p1",
+        "F01-POL#p05"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p1",
+          "source_id": "E15-FACT"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F01-POL"
+        }
+      ]
+    },
+    {
+      "case_id": "E16",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "E16-FACT#p1",
+        "F01-POL#p05"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p1",
+          "source_id": "E16-FACT"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F01-POL"
+        }
+      ]
+    },
+    {
+      "case_id": "E17",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "E17-FACT#p1",
+        "F05-POL#p06"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p1",
+          "source_id": "E17-FACT"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F05-POL"
+        }
+      ]
+    },
+    {
+      "case_id": "E18",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "E18-FACT#p1",
+        "F05-POL#p06"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p1",
+          "source_id": "E18-FACT"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F05-POL"
+        }
+      ]
+    }
+  ],
+  "total_available_cases": 24,
+  "unsupported_not_executed": 16
+}

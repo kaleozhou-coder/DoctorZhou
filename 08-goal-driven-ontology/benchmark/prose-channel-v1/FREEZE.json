@@ -1,0 +1,14 @@
+{
+  "pack_id": "prose-channel-v1",
+  "frozen_at_utc": "2026-11-11T01:59:22.362409+00:00",
+  "candidate_evaluated_before_freeze": false,
+  "author_knew_bug_category_and_schema": true,
+  "sha256": {
+    "benchmark/prose-channel-v1/probes.json": "514fbf3d920ba448bf6864d520af2a8bc47d60865b5e56761a68273c948c7d86",
+    "benchmark/prose-channel-v1/README.md": "27e62b0a64aebb695b0e75a7a56b722df35d01f7e18b6a60c4a4287d5946b681",
+    "protocol/input-contract-v1.md": "d517af77e8839bef2f624866b697f443c1ed1626215f7d93d8cc6bb78a8c3073",
+    "benchmark/v1/model-facing/F02/materials.json": "72ede95ac83dafb32d7815b884f6985200723ae4552954b8b80dd3e0b479c50d",
+    "benchmark/v1/model-facing/F03/materials.json": "1af670a4f1f857edb409c1ceb129258b514342d401d9b3c0bf34ab127cc38264",
+    "benchmark/v1/model-facing/F06/materials.json": "904dc817df2082a2538ffc9a16e2bc8f6ce1a37b5ef9756194ecd09cb8743cf5"
+  }
+}

@@ -1,0 +1,596 @@
+{
+  "base_commit": "7fb46b7124d4aca1019150f01254c035909d3e45",
+  "prepublication_checks": {
+    "engineering_tests_passed": 338,
+    "stage06_result_json_identical_on_repeat": 49,
+    "stage05_historical_json_identical_on_repeat": 25,
+    "all_228_non_navigation_historical_blobs_unchanged": true,
+    "root_README_unchanged": true,
+    "secrets_pattern_scan_of_changed_files": "no findings; heuristics only, manual provenance also reviewed",
+    "only_synthetic_research_and_code": true,
+    "real_model_calls": 0,
+    "paid_model_calls": 0
+  },
+  "remote_branch_observed": {
+    "main_sha": "7fb46b7124d4aca1019150f01254c035909d3e45",
+    "protected": false,
+    "rulesets": [],
+    "publication_method": "single fast-forward commit with expected_sha; no force, no deletion"
+  },
+  "files_excluding_this_verification_and_hash_manifest": [
+    {
+      "path": "08-goal-driven-ontology/README.md",
+      "sha256": "47d0d3aaf533495e65a5a6c88b1f71adb91d4066179fb301f32767927f59ea6a",
+      "git_blob_sha": "d45ec9df8509582464783b6d58471add44e1b1c9",
+      "size": 8919,
+      "new": false
+    },
+    {
+      "path": "08-goal-driven-ontology/benchmark/prose-channel-v1/FREEZE.json",
+      "sha256": "ad6123bb4b2fa8eab0869482a0419722b605ac0204e33dbd20979cf9b7fabc85",
+      "git_blob_sha": "90961a109b7d5c6e016b87d35aa1d50daa8442de",
+      "size": 893,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/benchmark/prose-channel-v1/README.md",
+      "sha256": "27e62b0a64aebb695b0e75a7a56b722df35d01f7e18b6a60c4a4287d5946b681",
+      "git_blob_sha": "d833ecc111e5119d682eeaefa07175d282b43dfa",
+      "size": 4150,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/benchmark/prose-channel-v1/probes.json",
+      "sha256": "514fbf3d920ba448bf6864d520af2a8bc47d60865b5e56761a68273c948c7d86",
+      "git_blob_sha": "ccacea847adc66f5f4d55b1141bd32e879948136",
+      "size": 44067,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/experiments/stage-06/fair-comparison.zh.md",
+      "sha256": "7db5fc1699b33391ffdbc6179e44bb5023058ed7eceac7c605bf0eef65e008ca",
+      "git_blob_sha": "58dbeb8fc0d8e7296f4716439ee2cee88f4f9f80",
+      "size": 4163,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/experiments/stage-06/implementation-freeze.json",
+      "sha256": "7b43a19d4748f4b6fc139c6a6bff3d7d35a9d0ff604ffbb17dc1b27b9dfcb30c",
+      "git_blob_sha": "9b54d53bc4b7c387519bb7c3db29e5984c8eeaed",
+      "size": 5979,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/ontology/ir-reference-v3/F01.json",
+      "sha256": "f6743d263de055969be6f2e4b47f190530f4e0d2f817c8101f251425f93e96b1",
+      "git_blob_sha": "624c1d035e1c05aab6eab1071746e26fba5934d9",
+      "size": 10994,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/ontology/ir-reference-v3/F05.json",
+      "sha256": "de702b5739973ae27252a6298880075cba2c8e10d94b760632623087555c3708",
+      "git_blob_sha": "444e5827497ac23773c8cc6abc593787883b1937",
+      "size": 9934,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/protocol/input-contract-v2.md",
+      "sha256": "cc16046584d7b9eb0079c75cdcdba60038896be4b8debc6388fdf326a3018934",
+      "git_blob_sha": "f5cec1cc22f704d48fffccf56a625b042ed35c8f",
+      "size": 6385,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/protocol/rule-ir-v3.md",
+      "sha256": "b9b67d6bbbb25f9494fe9403634da5ae87f1a6dff9c4d7db2fd05c0012705a58",
+      "git_blob_sha": "00407472348dccc0003e39ebb31d9ff85caae751",
+      "size": 2745,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/before-adversarial-artifact.json",
+      "sha256": "d671d22714417cd126cc87051b55068bb67ee3bf02cbb2408830010f429c2113",
+      "git_blob_sha": "349782c5fab0392c1f5fe7286c75ba7ebd79d846",
+      "size": 756,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/before-tests.txt",
+      "sha256": "923080c65ae414a97137071aa69405b8ded93565373a222a883897624478fd6d",
+      "git_blob_sha": "03121d33eed5ffb23f563c29af92cf4f9d1d29a1",
+      "size": 22985,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/code-review.md",
+      "sha256": "73924d7832fef5cbc7333a758712d18abf3d51d928c37cd367eed82be526b2ff",
+      "git_blob_sha": "2bdec10ccb6f0fb3789e27efb4e6124aaddb4627",
+      "size": 5974,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/baseline.challenge.predictions.json",
+      "sha256": "053eb60a2e63f12bf043594a529bcf358f43bf477294f7316ee4ae9322099562",
+      "git_blob_sha": "638069c0eadbd20781169bd3e378e0441dfcf575",
+      "size": 24105,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/baseline.challenge.report.json",
+      "sha256": "8ae6cdce03ffc20ae522d3ba1397af70600f85aee3f19c1eabb182a2825f8a53",
+      "git_blob_sha": "d5a45d4bcb2f5b0582cedb8f82c9005a1c1c77fb",
+      "size": 7754,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/baseline.legacy.predictions.json",
+      "sha256": "a8c6582f96d2a1ec83a8f27be19143fe9e785e2065c1130bc313fe2206dbf759",
+      "git_blob_sha": "556b0b4461f9944eaa6d73d89d9c8fc5d856837f",
+      "size": 73403,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/baseline.legacy.report.json",
+      "sha256": "eaa560b54832e2829497b52e7ea25fb04b2f1f2165ec7f19b5c4fbdc8b7ba500",
+      "git_blob_sha": "041f80f6a5fceee785a34aed635a84e9aac8533f",
+      "size": 22702,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/baseline.prose.predictions.json",
+      "sha256": "ef726fe3fd1435b0c4bbfaabf43a64567c0d9e2fbbe9e68cdc656547b4bb393c",
+      "git_blob_sha": "6f810f5197e4d6473d11a03d5ac415f024c812af",
+      "size": 21270,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/baseline.prose.report.json",
+      "sha256": "56300654a7f7dd9a64420a27dced3b5571568fbd1d235ee94a2bd21b5d7d4af1",
+      "git_blob_sha": "610b59f14f000862e85ddf8cf5e231c3bc27461e",
+      "size": 8124,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/baseline.stress.predictions.json",
+      "sha256": "fee840fa8ea11f361b76d541aec93a673de7743139df51ca460babb06626e193",
+      "git_blob_sha": "ac105be4c38f73b0b5fd9df9a3f87c4da252f63c",
+      "size": 30102,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/baseline.stress.report.json",
+      "sha256": "5eacda73a0bfe3f07b21bb0b6b8aa614cd7d4432619347f47b0638da8fdce47f",
+      "git_blob_sha": "c6957d4c1af8a97f5ac280dc9d5a283b0bd21709",
+      "size": 9215,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gate_v1.challenge.predictions.json",
+      "sha256": "68a20e990481651afcf981245f8023687abe39ae2b088682f09cd987651da31d",
+      "git_blob_sha": "8c71615ba2d47fb3a8ddf0a36d40b0aa90272464",
+      "size": 19776,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gate_v1.challenge.report.json",
+      "sha256": "60ca8316ec07391daeb9e38633d3d640dacdaf46b2e21c1fc8094bdedc505791",
+      "git_blob_sha": "a2cb7010a5135cf9f65e1615d4e01bf8bd0d6cdc",
+      "size": 7796,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gate_v1.legacy.predictions.json",
+      "sha256": "be7c385e3eca24fdc1b5832951b9e6a97deb84836a346def13308194c4906ff1",
+      "git_blob_sha": "953909578c1c161ab9ff157b3629c3e42785a812",
+      "size": 83263,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gate_v1.legacy.report.json",
+      "sha256": "bb0a9b5684f016f2fcfcf096c7dab16a69f46f5408a5146108329c09122b8399",
+      "git_blob_sha": "45e8c3edb0d6eb9d88362862529754ecb2ab6668",
+      "size": 22703,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gate_v1.prose.predictions.json",
+      "sha256": "232352933118101971a81e615c470ffcc4d3468ff6537f73a867b38fcc3647fa",
+      "git_blob_sha": "d623838193ec989ef2237f559d561152fb95d1a3",
+      "size": 24622,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gate_v1.prose.report.json",
+      "sha256": "540cdc5f7199263eea8b65fe1f0bc6e2b1d8fa49b450011c745d2feadb8677b1",
+      "git_blob_sha": "d7edd5026284f3f68153b51ccf4ca5c2001dbcd0",
+      "size": 7936,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gate_v1.stress.predictions.json",
+      "sha256": "1aa4a04d005c4b4fc8639954e5fa3a7c7a70581e0e52a757087a4a786961311c",
+      "git_blob_sha": "49adb16b14108223a40da273d97ca002d5d94005",
+      "size": 30504,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gate_v1.stress.report.json",
+      "sha256": "c52cf477f0113c548f6b171d0b1a648841662e9b3b11f4ae98247d96f3735f84",
+      "git_blob_sha": "a159deee8b54d75536d7560363a34c9da1a724b0",
+      "size": 9202,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gate_v2.challenge.predictions.json",
+      "sha256": "d9b25afa6720f30ce8c5b885bdef642dbf37501371289ee7390d5c5e4d5606b9",
+      "git_blob_sha": "c8565092f2676efc7c1ea1ff332befaf7046880c",
+      "size": 21313,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gate_v2.challenge.report.json",
+      "sha256": "a90813a85b1e833c017f301126f5f18a68e9f6a650f47531e340063010e95936",
+      "git_blob_sha": "7247846b9d118d2211d58658bd119b783aea8c6d",
+      "size": 8018,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gate_v2.legacy.predictions.json",
+      "sha256": "40b4fa35dd7241fe042d1750d4749b89af8ad4072548fc7173bdf3fca13a32ce",
+      "git_blob_sha": "d497ce58853c03d2b81a2eb250002d6d2f89d204",
+      "size": 93483,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gate_v2.legacy.report.json",
+      "sha256": "cf1a792b63ad23bba524a268068f3ded871120958a6c729484051bb4e1f46f66",
+      "git_blob_sha": "5f1ae127bd665e20f337463e8a4115157f2a9c3a",
+      "size": 22709,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gate_v2.prose.predictions.json",
+      "sha256": "90e48c953343af86fc47cb569f8cc928c7ae382cc8d9555b1e1a64d0468354ff",
+      "git_blob_sha": "1c1a3c624510b4db14b506818399b3a593205190",
+      "size": 26230,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gate_v2.prose.report.json",
+      "sha256": "4a2198d5f9e9595f1db588b5698b66fd6369cb210c8545a867f17e1cf6c2fd0e",
+      "git_blob_sha": "8a650eff6517bda6244ac2928dcc87ff9c342bb2",
+      "size": 7895,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gate_v2.stress.predictions.json",
+      "sha256": "c9d58c4f0688f0e9153a9260da3a550f0a926590cfb4bc87307115d9828cf7eb",
+      "git_blob_sha": "7aff7a378df82c5e2902502ec092713c61c7db1d",
+      "size": 33309,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gate_v2.stress.report.json",
+      "sha256": "506d5df66e0654a0b9909d5c9577e4b8bc8f5012f099ffeffacc59f24efc7933",
+      "git_blob_sha": "3bab869476b0b02f36dbbe1f45f3e19374bc57e6",
+      "size": 9408,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gated_ir_v3.challenge.predictions.json",
+      "sha256": "46f0518f18de3596b7ef26b1d14cfecfb14beea9066618549c3ac285a24d6775",
+      "git_blob_sha": "e19a72fa571129e188c6ab8156c4b571161a3ed2",
+      "size": 4674,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gated_ir_v3.challenge.report.json",
+      "sha256": "6169d9f2584e22eaf371f3f0500da5d2aad5ea4e12b679aeb37731a22915be74",
+      "git_blob_sha": "a7e6ee1c23f879f2ce83f63e765ef97d692ffe12",
+      "size": 3270,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gated_ir_v3.legacy.predictions.json",
+      "sha256": "7c131419ac58e115c5a241b909664f6728160c866bbc2c8e5cc60d3e0037748d",
+      "git_blob_sha": "a9ded1c02ffe0d5a85898b312c5232339f378d6d",
+      "size": 20330,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gated_ir_v3.legacy.report.json",
+      "sha256": "e286dbc5924afcee57ecbd839c8d3dd5695d9f6ad2bdb6911c38bc7f9327fe51",
+      "git_blob_sha": "5f6a97aeac70dd925d93ab013565e3b196bce28a",
+      "size": 7867,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gated_ir_v3.prose.predictions.json",
+      "sha256": "469474e54dcd5dffd1f9a8e78328eb981369433df75aa1a89957e47b506971af",
+      "git_blob_sha": "0a83cc4b6ef6b242958d81e7fa07e2c4c8195832",
+      "size": 197,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gated_ir_v3.prose.report.json",
+      "sha256": "eeaa120125be428698d02d70a212e2765ede46c39c7078807d245b432e67969a",
+      "git_blob_sha": "eb8ba31e08c8699a579fe5c0cefcbf263d39f5d0",
+      "size": 234,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gated_ir_v3.stress.predictions.json",
+      "sha256": "64804fede29f544ac4d27a2c71ffcb78ef44fa0da45cdd6f55c2212d19c8b604",
+      "git_blob_sha": "0d34340732a003f73dc9896c9a070bbe7720c7e7",
+      "size": 6767,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/gated_ir_v3.stress.report.json",
+      "sha256": "00c441f2751a14c993c9a2b10d96ea5e721926c6008292df09db80f76f16eb44",
+      "git_blob_sha": "426dc6994ce0b8ef2cc8febb32640399acf077f0",
+      "size": 3862,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/ir_v2.challenge.predictions.json",
+      "sha256": "214136d0717f45119f40953e9f70621d6622c222823925da16b38e9faa088387",
+      "git_blob_sha": "8cbea0596091067c8210910f9ecfb40cb494f80e",
+      "size": 3688,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/ir_v2.challenge.report.json",
+      "sha256": "b911d27c9f12d0bffb95a8e31490e8866f14793402ddde6c39d8282838c7fd6c",
+      "git_blob_sha": "c89245d46776d3d78514ca13e6ca290633d5689c",
+      "size": 3156,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/ir_v2.legacy.predictions.json",
+      "sha256": "d7e53c1918b35eb40aac3b8baf48fbe35e2c49ff0c885e7734183b8277a40444",
+      "git_blob_sha": "27d0f917ccee4292f073562e0796924be8f6586c",
+      "size": 13770,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/ir_v2.legacy.report.json",
+      "sha256": "61cf0c77173d4a44257d54c5b8a29383e23afa54726b579cddc6147b326c433a",
+      "git_blob_sha": "4ba63f8bbd04064f6d5cae5b97538e7d0a62e1b6",
+      "size": 7865,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/ir_v2.prose.predictions.json",
+      "sha256": "469474e54dcd5dffd1f9a8e78328eb981369433df75aa1a89957e47b506971af",
+      "git_blob_sha": "0a83cc4b6ef6b242958d81e7fa07e2c4c8195832",
+      "size": 197,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/ir_v2.prose.report.json",
+      "sha256": "eeaa120125be428698d02d70a212e2765ede46c39c7078807d245b432e67969a",
+      "git_blob_sha": "eb8ba31e08c8699a579fe5c0cefcbf263d39f5d0",
+      "size": 234,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/ir_v2.stress.predictions.json",
+      "sha256": "3123a6dbd1ac3f3641ca834e9f12b562aabdc83f45ed054fa22e4af13e3111e1",
+      "git_blob_sha": "f4e20575a0d9ddde1f0c07dc285352a4ebdc707c",
+      "size": 5033,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/ir_v2.stress.report.json",
+      "sha256": "3390d44b29e40d0e924b7300ed02ddf2f5ef8aa51e532c8ad5943eb2ffc279b0",
+      "git_blob_sha": "e5d2cd742f749e65599aa60a3089eb12ab4b66c3",
+      "size": 3779,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/ir_v3.challenge.predictions.json",
+      "sha256": "214136d0717f45119f40953e9f70621d6622c222823925da16b38e9faa088387",
+      "git_blob_sha": "8cbea0596091067c8210910f9ecfb40cb494f80e",
+      "size": 3688,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/ir_v3.challenge.report.json",
+      "sha256": "b911d27c9f12d0bffb95a8e31490e8866f14793402ddde6c39d8282838c7fd6c",
+      "git_blob_sha": "c89245d46776d3d78514ca13e6ca290633d5689c",
+      "size": 3156,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/ir_v3.legacy.predictions.json",
+      "sha256": "d7e53c1918b35eb40aac3b8baf48fbe35e2c49ff0c885e7734183b8277a40444",
+      "git_blob_sha": "27d0f917ccee4292f073562e0796924be8f6586c",
+      "size": 13770,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/ir_v3.legacy.report.json",
+      "sha256": "61cf0c77173d4a44257d54c5b8a29383e23afa54726b579cddc6147b326c433a",
+      "git_blob_sha": "4ba63f8bbd04064f6d5cae5b97538e7d0a62e1b6",
+      "size": 7865,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/ir_v3.prose.predictions.json",
+      "sha256": "469474e54dcd5dffd1f9a8e78328eb981369433df75aa1a89957e47b506971af",
+      "git_blob_sha": "0a83cc4b6ef6b242958d81e7fa07e2c4c8195832",
+      "size": 197,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/ir_v3.prose.report.json",
+      "sha256": "eeaa120125be428698d02d70a212e2765ede46c39c7078807d245b432e67969a",
+      "git_blob_sha": "eb8ba31e08c8699a579fe5c0cefcbf263d39f5d0",
+      "size": 234,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/ir_v3.stress.predictions.json",
+      "sha256": "3123a6dbd1ac3f3641ca834e9f12b562aabdc83f45ed054fa22e4af13e3111e1",
+      "git_blob_sha": "f4e20575a0d9ddde1f0c07dc285352a4ebdc707c",
+      "size": 5033,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/ir_v3.stress.report.json",
+      "sha256": "3390d44b29e40d0e924b7300ed02ddf2f5ef8aa51e532c8ad5943eb2ffc279b0",
+      "git_blob_sha": "e5d2cd742f749e65599aa60a3089eb12ab4b66c3",
+      "size": 3779,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/first-run/summary.json",
+      "sha256": "561ff6d545ae67ddc4b8018b2dfa58b2a49f1b7b2ddbf90d256144f554fc2f9d",
+      "git_blob_sha": "8e2604dc4d976ae812c4391c60c4b20f48e1b4f4",
+      "size": 20407,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/ir-v3-tests.txt",
+      "sha256": "ea4cf52d33a502cc017079a4234a1dca3fb7fabe90f1b5f45d6a9d2057826bf3",
+      "git_blob_sha": "17fc9bca73f81369b04922ccf68a1e4fea4824c2",
+      "size": 9292,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/pre-review-rule_ir_v3.py",
+      "sha256": "a9afa89125f0ff5c5c018f459300a48401b218e4509b256f3220e52d946314f7",
+      "git_blob_sha": "f5f81589d060638fcac5741e5862581f8763e0c0",
+      "size": 20218,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/remote-base-verification.json",
+      "sha256": "a0cbbd05b53d932ce2cb1f91f500a9e760aee5f2883e50ad2e884c81ecf0bac4",
+      "git_blob_sha": "12df1434991850d366d5b7d40ad703c63e3ea314",
+      "size": 265,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/report-review.md",
+      "sha256": "60c2758036b6975fae58b3d31d25b2688ec50816f19613bc0fb313b127ea9a87",
+      "git_blob_sha": "7b19925cf10a8627858b1b86111c349377240539",
+      "size": 4171,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/report.zh.md",
+      "sha256": "4c3c444d10f109f9f5ef79ef99fd751b9964031e6625289cc6a5bdf733945d49",
+      "git_blob_sha": "222aa6bcb60780ab46e78576e8f918a4b63a3325",
+      "size": 9770,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/reproduction-check.json",
+      "sha256": "76ebd76e6cc4cd7a79120e0e03fb9542076ef524adc5d13bd9e11c798c17c383",
+      "git_blob_sha": "2b7781a4343c9c88519b72a915ff716c6fbdedad",
+      "size": 19769,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/reviewer-probe-after-test.log",
+      "sha256": "3726d51ef766021c927ee9eeaa056e2dc6b7b00cde587d4b02943a68aa34d358",
+      "git_blob_sha": "fd843c3e84173816e398043771f4be85ee0eedcb",
+      "size": 411,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/reviewer-probe-after.json",
+      "sha256": "9eb45ff817aafcf93e7e8aa13fb54a6877f59c63133bcebb5f60012850635a67",
+      "git_blob_sha": "a6c11966a9ae974fdd9071a8f0912ef00b7d34bb",
+      "size": 29042,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/reviewer-probe-after.py",
+      "sha256": "6fbf52394cc49ce96070fffdd7f3a397af98c7678fe73bb64dbd0c59ed0cd64d",
+      "git_blob_sha": "6029a22af281992434e33d3e6abe6815542b618b",
+      "size": 6382,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/reviewer-probe.json",
+      "sha256": "b6fe5dce563df745346c376d0c15e6285d02078c190fcec66366f863fcb05af3",
+      "git_blob_sha": "b9e26d3559ab7aa58127ada15d7a8e03478d1ddc",
+      "size": 29153,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/reviewer-probe.py",
+      "sha256": "29c4a208d3b57fce696416e77e162efae73744182b1f5705c22777328e9e8b42",
+      "git_blob_sha": "7ce1239d87f3e318e60dde0691f2db50f0b7ec93",
+      "size": 6073,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/run.stdout.json",
+      "sha256": "7da3af308f8f4bbdb9d9150a39b56f405907ab4bb0cbf8317ab30d9360aaf7ad",
+      "git_blob_sha": "d2b8690f74cdea5f608cde5caa37435ee139b0ce",
+      "size": 20407,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/test-run-final.txt",
+      "sha256": "050abd62d3428bc45d69511207529ec1a1758ae47848dfbcc31d1fcf1d38eac6",
+      "git_blob_sha": "e2931ac72c583b8c08df72927b221efea05f8a92",
+      "size": 34584,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/results/stage-06/test-run.txt",
+      "sha256": "0fa0d35beb6d77e4e97363f772964a3d680441f3efcdfe4ad2376ddad0ed348b",
+      "git_blob_sha": "1ced33b9fc8289c0117bd7c43f825e7ed7506c48",
+      "size": 34584,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/src/input_contract_v2.py",
+      "sha256": "5eeb51571b670880644ae31ed748539d04fc775c525c70e2f6f7604c1f1a93f8",
+      "git_blob_sha": "c725c2b1fb3d63c5cb6766406e1db0f3925443f9",
+      "size": 3059,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/src/rule_ir_v3.py",
+      "sha256": "f73b417c46478b284e816eec5eee519dd024700c29064ffb18d991733cf9f495",
+      "git_blob_sha": "186f32e3c98fa4342723da67640c301583ef2ee8",
+      "size": 20439,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/src/run_stage06.py",
+      "sha256": "fa1a157998ac48f3aadb3345ad1fb0e859bb10ed5e010e2ecd2fc3ed378d2130",
+      "git_blob_sha": "012c017af8ee1d6c8b5a1d1a0eaeb4449f74b7d8",
+      "size": 6788,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/tests/test_input_contract_v2.py",
+      "sha256": "a1b3d3305dc4b130471f5013d77a6d43af48c64571fbd486c44cd7b0dfa1c2e1",
+      "git_blob_sha": "9ea14a7cb189dfae6098974887104d32b113a9ae",
+      "size": 9341,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/tests/test_rule_ir_v3.py",
+      "sha256": "5c4d41eb63e7fb0a333c85dc3ec160b489014042ecd6554c7230f17d406fdd5d",
+      "git_blob_sha": "27bb1f0029b99f2c19072e21f5e1bf8c37a2a32e",
+      "size": 7039,
+      "new": true
+    },
+    {
+      "path": "08-goal-driven-ontology/tests/test_stage06_runner.py",
+      "sha256": "e2e3f1083093e8d21cb29f2c39819cbd364ab5586ea3525cbb3409a718d4f8eb",
+      "git_blob_sha": "938ed27c151aa81188fd9bc82077c93aac53e5c6",
+      "size": 1980,
+      "new": true
+    }
+  ]
+}

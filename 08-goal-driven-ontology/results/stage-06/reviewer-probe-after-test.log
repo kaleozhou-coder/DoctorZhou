@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/workspace/shared/doctorzhou-research-20261111/08-goal-driven-ontology/results/stage-06/reviewer-probe.py", line 17, in <module>
+    assert all(results['runtime'][i]['result']['decision']=='close_eligible' for i in (1,2,3))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Exact pre-fix probe exit code: 1

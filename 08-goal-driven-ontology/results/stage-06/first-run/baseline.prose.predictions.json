@@ -1,0 +1,994 @@
+{
+  "executed_cases": 20,
+  "execution_kind": "retrospective_manual_implementation_audit",
+  "model_calls": 0,
+  "predictions": [
+    {
+      "case_id": "PC-T01-STRUCTURED_ONLY",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F02-POL#p01",
+        "F02-POL#p02",
+        "F02-POL#p03",
+        "F02-POL#p04",
+        "F02-POL#p05",
+        "F02-POL#p06",
+        "PACK-Quartz-T01#block-4"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p01",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p02",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p03",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p04",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "block-4",
+          "source_id": "PACK-Quartz-T01"
+        }
+      ]
+    },
+    {
+      "case_id": "PC-T01-SUPPORTIVE",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F02-POL#p01",
+        "F02-POL#p02",
+        "F02-POL#p03",
+        "F02-POL#p04",
+        "F02-POL#p05",
+        "F02-POL#p06",
+        "PACK-Quartz-T01#block-4"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p01",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p02",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p03",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p04",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "block-4",
+          "source_id": "PACK-Quartz-T01"
+        }
+      ]
+    },
+    {
+      "case_id": "PC-T01-CONTRADICTORY",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F02-POL#p01",
+        "F02-POL#p02",
+        "F02-POL#p03",
+        "F02-POL#p04",
+        "F02-POL#p05",
+        "F02-POL#p06",
+        "PACK-Quartz-T01#block-4"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p01",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p02",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p03",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p04",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "block-4",
+          "source_id": "PACK-Quartz-T01"
+        }
+      ]
+    },
+    {
+      "case_id": "PC-T02-STRUCTURED_ONLY",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F03-POL#p01",
+        "F03-POL#p02",
+        "F03-POL#p03",
+        "F03-POL#p04",
+        "F03-POL#p05",
+        "F03-POL#p06",
+        "PACK-Quartz-T02#block-4"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p01",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p02",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p03",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p04",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "block-4",
+          "source_id": "PACK-Quartz-T02"
+        }
+      ]
+    },
+    {
+      "case_id": "PC-T02-SUPPORTIVE",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F03-POL#p01",
+        "F03-POL#p02",
+        "F03-POL#p03",
+        "F03-POL#p04",
+        "F03-POL#p05",
+        "F03-POL#p06",
+        "PACK-Quartz-T02#block-4"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p01",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p02",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p03",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p04",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "block-4",
+          "source_id": "PACK-Quartz-T02"
+        }
+      ]
+    },
+    {
+      "case_id": "PC-T02-CONTRADICTORY",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F03-POL#p01",
+        "F03-POL#p02",
+        "F03-POL#p03",
+        "F03-POL#p04",
+        "F03-POL#p05",
+        "F03-POL#p06",
+        "PACK-Quartz-T02#block-4"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p01",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p02",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p03",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p04",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "block-4",
+          "source_id": "PACK-Quartz-T02"
+        }
+      ]
+    },
+    {
+      "case_id": "PC-T03-STRUCTURED_ONLY",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F02-POL#p01",
+        "F02-POL#p02",
+        "F02-POL#p03",
+        "F02-POL#p04",
+        "F02-POL#p05",
+        "F02-POL#p06",
+        "PACK-Quartz-T03#block-4"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p01",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p02",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p03",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p04",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "block-4",
+          "source_id": "PACK-Quartz-T03"
+        }
+      ]
+    },
+    {
+      "case_id": "PC-T03-SUPPORTIVE",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F02-POL#p01",
+        "F02-POL#p02",
+        "F02-POL#p03",
+        "F02-POL#p04",
+        "F02-POL#p05",
+        "F02-POL#p06",
+        "PACK-Quartz-T03#block-4"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p01",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p02",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p03",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p04",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "block-4",
+          "source_id": "PACK-Quartz-T03"
+        }
+      ]
+    },
+    {
+      "case_id": "PC-T03-CONTRADICTORY",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F02-POL#p01",
+        "F02-POL#p02",
+        "F02-POL#p03",
+        "F02-POL#p04",
+        "F02-POL#p05",
+        "F02-POL#p06",
+        "PACK-Quartz-T03#block-4"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p01",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p02",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p03",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p04",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F02-POL"
+        },
+        {
+          "locator": "block-4",
+          "source_id": "PACK-Quartz-T03"
+        }
+      ]
+    },
+    {
+      "case_id": "PC-T04-STRUCTURED_ONLY",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F06-POL#p01",
+        "F06-POL#p02",
+        "F06-POL#p03",
+        "F06-POL#p04",
+        "F06-POL#p05",
+        "F06-POL#p06",
+        "F06-POL#p07",
+        "PACK-Quartz-T04#block-4"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p01",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p02",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p03",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p04",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p07",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "block-4",
+          "source_id": "PACK-Quartz-T04"
+        }
+      ]
+    },
+    {
+      "case_id": "PC-T04-SUPPORTIVE",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F06-POL#p01",
+        "F06-POL#p02",
+        "F06-POL#p03",
+        "F06-POL#p04",
+        "F06-POL#p05",
+        "F06-POL#p06",
+        "F06-POL#p07",
+        "PACK-Quartz-T04#block-4"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p01",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p02",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p03",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p04",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p07",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "block-4",
+          "source_id": "PACK-Quartz-T04"
+        }
+      ]
+    },
+    {
+      "case_id": "PC-T04-CONTRADICTORY",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F06-POL#p01",
+        "F06-POL#p02",
+        "F06-POL#p03",
+        "F06-POL#p04",
+        "F06-POL#p05",
+        "F06-POL#p06",
+        "F06-POL#p07",
+        "PACK-Quartz-T04#block-4"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p01",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p02",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p03",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p04",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p07",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "block-4",
+          "source_id": "PACK-Quartz-T04"
+        }
+      ]
+    },
+    {
+      "case_id": "PC-T05-STRUCTURED_ONLY",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "ARCHIVE-UNRELATED-T05#memo-91",
+        "F03-POL#p01",
+        "F03-POL#p02",
+        "F03-POL#p03",
+        "F03-POL#p04",
+        "F03-POL#p05",
+        "F03-POL#p06",
+        "PACK-Quartz-T05#block-4"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "memo-91",
+          "source_id": "ARCHIVE-UNRELATED-T05"
+        },
+        {
+          "locator": "p01",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p02",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p03",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p04",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "block-4",
+          "source_id": "PACK-Quartz-T05"
+        }
+      ]
+    },
+    {
+      "case_id": "PC-T05-SUPPORTIVE",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "ARCHIVE-UNRELATED-T05#memo-91",
+        "F03-POL#p01",
+        "F03-POL#p02",
+        "F03-POL#p03",
+        "F03-POL#p04",
+        "F03-POL#p05",
+        "F03-POL#p06",
+        "PACK-Quartz-T05#block-4"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "memo-91",
+          "source_id": "ARCHIVE-UNRELATED-T05"
+        },
+        {
+          "locator": "p01",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p02",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p03",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p04",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "block-4",
+          "source_id": "PACK-Quartz-T05"
+        }
+      ]
+    },
+    {
+      "case_id": "PC-T05-CONTRADICTORY",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "ARCHIVE-UNRELATED-T05#memo-91",
+        "F03-POL#p01",
+        "F03-POL#p02",
+        "F03-POL#p03",
+        "F03-POL#p04",
+        "F03-POL#p05",
+        "F03-POL#p06",
+        "PACK-Quartz-T05#block-4"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "memo-91",
+          "source_id": "ARCHIVE-UNRELATED-T05"
+        },
+        {
+          "locator": "p01",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p02",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p03",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p04",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "block-4",
+          "source_id": "PACK-Quartz-T05"
+        }
+      ]
+    },
+    {
+      "case_id": "PC-T06-STRUCTURED_ONLY",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F06-POL#p01",
+        "F06-POL#p02",
+        "F06-POL#p03",
+        "F06-POL#p04",
+        "F06-POL#p05",
+        "F06-POL#p06",
+        "F06-POL#p07",
+        "PACK-Quartz-T06#block-4"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p01",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p02",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p03",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p04",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p07",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "block-4",
+          "source_id": "PACK-Quartz-T06"
+        }
+      ]
+    },
+    {
+      "case_id": "PC-T06-SUPPORTIVE",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F06-POL#p01",
+        "F06-POL#p02",
+        "F06-POL#p03",
+        "F06-POL#p04",
+        "F06-POL#p05",
+        "F06-POL#p06",
+        "F06-POL#p07",
+        "PACK-Quartz-T06#block-4"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p01",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p02",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p03",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p04",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p07",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "block-4",
+          "source_id": "PACK-Quartz-T06"
+        }
+      ]
+    },
+    {
+      "case_id": "PC-T06-CONTRADICTORY",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F06-POL#p01",
+        "F06-POL#p02",
+        "F06-POL#p03",
+        "F06-POL#p04",
+        "F06-POL#p05",
+        "F06-POL#p06",
+        "F06-POL#p07",
+        "PACK-Quartz-T06#block-4"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p01",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p02",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p03",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p04",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "p07",
+          "source_id": "F06-POL"
+        },
+        {
+          "locator": "block-4",
+          "source_id": "PACK-Quartz-T06"
+        }
+      ]
+    },
+    {
+      "case_id": "PC-N01",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F03-POL#p01",
+        "F03-POL#p02",
+        "F03-POL#p03",
+        "F03-POL#p04",
+        "F03-POL#p05",
+        "F03-POL#p06",
+        "PACK-Quartz-N01#block-4"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "quantity_shortfall"
+      ],
+      "source_refs": [
+        {
+          "locator": "p01",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p02",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p03",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p04",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "block-4",
+          "source_id": "PACK-Quartz-N01"
+        }
+      ]
+    },
+    {
+      "case_id": "PC-N02",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F03-POL#p01",
+        "F03-POL#p02",
+        "F03-POL#p03",
+        "F03-POL#p04",
+        "F03-POL#p05",
+        "F03-POL#p06",
+        "PACK-Quartz-N02#block-4"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "quantity_shortfall"
+      ],
+      "source_refs": [
+        {
+          "locator": "p01",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p02",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p03",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p04",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p05",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "p06",
+          "source_id": "F03-POL"
+        },
+        {
+          "locator": "block-4",
+          "source_id": "PACK-Quartz-N02"
+        }
+      ]
+    }
+  ],
+  "total_available_cases": 20,
+  "unsupported_not_executed": 0
+}

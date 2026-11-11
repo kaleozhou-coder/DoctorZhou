@@ -1,0 +1,473 @@
+{
+  "version": "rule-ir-v3",
+  "fields": {
+    "line": {
+      "path": [
+        "request",
+        "po_line"
+      ],
+      "type": "string"
+    },
+    "invoice_quantity": {
+      "path": [
+        "request",
+        "invoice_quantity"
+      ],
+      "type": "integer",
+      "minimum": 1
+    },
+    "receipt": {
+      "path": [
+        "request",
+        "receipt_on"
+      ],
+      "type": "date"
+    },
+    "signed": {
+      "path": [
+        "acceptance",
+        "signed_on"
+      ],
+      "type": "date"
+    },
+    "status": {
+      "path": [
+        "acceptance",
+        "status"
+      ],
+      "type": "string",
+      "enum": [
+        "accepted",
+        "rejected"
+      ]
+    },
+    "regime": {
+      "path": [
+        "acceptance",
+        "declared_regime"
+      ],
+      "type": "string",
+      "enum": [
+        "OLD",
+        "NEW"
+      ]
+    },
+    "quantity": {
+      "path": [
+        "acceptance",
+        "quantity"
+      ],
+      "type": "integer",
+      "minimum": 0
+    },
+    "released": {
+      "path": [
+        "quality_release",
+        "released"
+      ],
+      "type": "boolean"
+    },
+    "release_date": {
+      "path": [
+        "quality_release",
+        "released_on"
+      ],
+      "type": "date"
+    },
+    "transition_line": {
+      "path": [
+        "transition_register",
+        "po_line"
+      ],
+      "type": "string"
+    },
+    "permitted": {
+      "path": [
+        "transition_register",
+        "permitted"
+      ],
+      "type": "boolean"
+    },
+    "until": {
+      "path": [
+        "transition_register",
+        "grandfather_until"
+      ],
+      "type": "date"
+    }
+  },
+  "rules": [
+    {
+      "id": "receipt_missing",
+      "when": {
+        "op": "is_unknown",
+        "arg": {
+          "op": "field",
+          "name": "receipt"
+        }
+      },
+      "decision": "needs_evidence",
+      "reason": "receipt_date_missing",
+      "source_refs": [
+        {
+          "source_id": "F05-POL",
+          "locator": "p02"
+        }
+      ]
+    },
+    {
+      "id": "chronology",
+      "when": {
+        "op": "lt",
+        "left": {
+          "op": "field",
+          "name": "signed"
+        },
+        "right": {
+          "op": "field",
+          "name": "receipt"
+        }
+      },
+      "decision": "needs_review",
+      "reason": "acceptance_before_receipt",
+      "source_refs": [
+        {
+          "source_id": "F05-POL",
+          "locator": "p03"
+        }
+      ]
+    },
+    {
+      "id": "rejection",
+      "when": {
+        "op": "eq",
+        "left": {
+          "op": "field",
+          "name": "status"
+        },
+        "right": {
+          "op": "literal",
+          "type": "string",
+          "value": "rejected"
+        }
+      },
+      "decision": "needs_review",
+      "reason": "explicit_rejection",
+      "source_refs": [
+        {
+          "source_id": "F05-POL",
+          "locator": "p03"
+        }
+      ]
+    },
+    {
+      "id": "old_mismatch",
+      "when": {
+        "op": "all",
+        "args": [
+          {
+            "op": "lt",
+            "left": {
+              "op": "field",
+              "name": "receipt"
+            },
+            "right": {
+              "op": "literal",
+              "type": "date",
+              "value": "2026-07-01"
+            }
+          },
+          {
+            "op": "ne",
+            "left": {
+              "op": "field",
+              "name": "regime"
+            },
+            "right": {
+              "op": "literal",
+              "type": "string",
+              "value": "OLD"
+            }
+          }
+        ]
+      },
+      "decision": "needs_review",
+      "reason": "regime_mismatch",
+      "source_refs": [
+        {
+          "source_id": "F05-POL",
+          "locator": "p04"
+        }
+      ]
+    },
+    {
+      "id": "release",
+      "when": {
+        "op": "all",
+        "args": [
+          {
+            "op": "not",
+            "arg": {
+              "op": "lt",
+              "left": {
+                "op": "field",
+                "name": "receipt"
+              },
+              "right": {
+                "op": "literal",
+                "type": "date",
+                "value": "2026-07-01"
+              }
+            }
+          },
+          {
+            "op": "eq",
+            "left": {
+              "op": "field",
+              "name": "regime"
+            },
+            "right": {
+              "op": "literal",
+              "type": "string",
+              "value": "NEW"
+            }
+          },
+          {
+            "op": "any",
+            "args": [
+              {
+                "op": "is_unknown",
+                "arg": {
+                  "op": "field",
+                  "name": "released"
+                }
+              },
+              {
+                "op": "eq",
+                "left": {
+                  "op": "field",
+                  "name": "released"
+                },
+                "right": {
+                  "op": "literal",
+                  "type": "boolean",
+                  "value": false
+                }
+              },
+              {
+                "op": "is_unknown",
+                "arg": {
+                  "op": "field",
+                  "name": "release_date"
+                }
+              },
+              {
+                "op": "lt",
+                "left": {
+                  "op": "field",
+                  "name": "release_date"
+                },
+                "right": {
+                  "op": "field",
+                  "name": "receipt"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "decision": "needs_evidence",
+      "reason": "quality_release_missing",
+      "source_refs": [
+        {
+          "source_id": "F05-POL",
+          "locator": "p04"
+        }
+      ]
+    },
+    {
+      "id": "grandfather",
+      "when": {
+        "op": "all",
+        "args": [
+          {
+            "op": "not",
+            "arg": {
+              "op": "lt",
+              "left": {
+                "op": "field",
+                "name": "receipt"
+              },
+              "right": {
+                "op": "literal",
+                "type": "date",
+                "value": "2026-07-01"
+              }
+            }
+          },
+          {
+            "op": "eq",
+            "left": {
+              "op": "field",
+              "name": "regime"
+            },
+            "right": {
+              "op": "literal",
+              "type": "string",
+              "value": "OLD"
+            }
+          },
+          {
+            "op": "any",
+            "args": [
+              {
+                "op": "is_unknown",
+                "arg": {
+                  "op": "field",
+                  "name": "transition_line"
+                }
+              },
+              {
+                "op": "ne",
+                "left": {
+                  "op": "field",
+                  "name": "transition_line"
+                },
+                "right": {
+                  "op": "field",
+                  "name": "line"
+                }
+              },
+              {
+                "op": "is_unknown",
+                "arg": {
+                  "op": "field",
+                  "name": "permitted"
+                }
+              },
+              {
+                "op": "eq",
+                "left": {
+                  "op": "field",
+                  "name": "permitted"
+                },
+                "right": {
+                  "op": "literal",
+                  "type": "boolean",
+                  "value": false
+                }
+              },
+              {
+                "op": "is_unknown",
+                "arg": {
+                  "op": "field",
+                  "name": "until"
+                }
+              },
+              {
+                "op": "lt",
+                "left": {
+                  "op": "field",
+                  "name": "until"
+                },
+                "right": {
+                  "op": "field",
+                  "name": "receipt"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "decision": "needs_evidence",
+      "reason": "grandfathering_unproven",
+      "source_refs": [
+        {
+          "source_id": "F05-POL",
+          "locator": "p05"
+        }
+      ]
+    },
+    {
+      "id": "quantity",
+      "when": {
+        "op": "lt",
+        "left": {
+          "op": "field",
+          "name": "quantity"
+        },
+        "right": {
+          "op": "field",
+          "name": "invoice_quantity"
+        }
+      },
+      "decision": "needs_evidence",
+      "reason": "quantity_shortfall",
+      "source_refs": [
+        {
+          "source_id": "F05-POL",
+          "locator": "p06"
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "when": {
+        "op": "all",
+        "args": [
+          {
+            "op": "not",
+            "arg": {
+              "op": "is_unknown",
+              "arg": {
+                "op": "field",
+                "name": "line"
+              }
+            }
+          },
+          {
+            "op": "ge",
+            "left": {
+              "op": "field",
+              "name": "quantity"
+            },
+            "right": {
+              "op": "field",
+              "name": "invoice_quantity"
+            }
+          },
+          {
+            "op": "eq",
+            "left": {
+              "op": "field",
+              "name": "status"
+            },
+            "right": {
+              "op": "literal",
+              "type": "string",
+              "value": "accepted"
+            }
+          }
+        ]
+      },
+      "decision": "close_eligible",
+      "reason": "criteria_met",
+      "source_refs": [
+        {
+          "source_id": "F05-POL",
+          "locator": "p06"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "decision": "needs_evidence",
+    "reason": "required_fact_missing",
+    "source_refs": [
+      {
+        "source_id": "F05-POL",
+        "locator": "p07"
+      }
+    ]
+  }
+}

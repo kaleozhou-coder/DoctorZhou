@@ -1,0 +1,36 @@
+{
+  "artifact": {
+    "version": "rule-ir-v2",
+    "fields": {
+      "x": {
+        "path": [
+          "x"
+        ],
+        "type": "integer",
+        "enum": [
+          null
+        ]
+      }
+    },
+    "rules": [],
+    "default": {
+      "decision": "close_eligible",
+      "reason": "bypass",
+      "source_refs": []
+    }
+  },
+  "facts": {},
+  "validate_returns_UNKNOWN": true,
+  "evaluate": {
+    "decision": "close_eligible",
+    "reason_codes": [
+      "bypass"
+    ],
+    "rule_id": null,
+    "source_refs": [],
+    "trace": [],
+    "payment_authorized": false
+  },
+  "implementation_sha256": "13dd1be4929653be4d74495a7d93140267c27b6929df8bfe27afd14efeeaf5ff",
+  "probe_kind": "post-freeze adversarial review, excluded from first-run scores"
+}

@@ -1,0 +1,781 @@
+{
+  "scope": "Independent synthetic engineering probes only",
+  "sha256": {
+    "src/rule_ir_v3.py": "a9afa89125f0ff5c5c018f459300a48401b218e4509b256f3220e52d946314f7",
+    "src/input_contract_v2.py": "5eeb51571b670880644ae31ed748539d04fc775c525c70e2f6f7604c1f1a93f8"
+  },
+  "runtime": [
+    {
+      "facts": {
+        "s": [
+          1,
+          1
+        ]
+      },
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "malformed_input"
+        ],
+        "rule_id": null,
+        "source_refs": [
+          {
+            "source_id": "p",
+            "locator": "1"
+          }
+        ],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "facts": {
+        "s": [
+          null,
+          1,
+          1
+        ]
+      },
+      "result": {
+        "decision": "close_eligible",
+        "reason_codes": [
+          "probe"
+        ],
+        "rule_id": "r",
+        "source_refs": [
+          {
+            "source_id": "p",
+            "locator": "1"
+          }
+        ],
+        "trace": [
+          {
+            "rule_id": "r",
+            "value": true
+          }
+        ],
+        "payment_authorized": false
+      }
+    },
+    {
+      "facts": {
+        "s": [
+          1,
+          null,
+          1
+        ]
+      },
+      "result": {
+        "decision": "close_eligible",
+        "reason_codes": [
+          "probe"
+        ],
+        "rule_id": "r",
+        "source_refs": [
+          {
+            "source_id": "p",
+            "locator": "1"
+          }
+        ],
+        "trace": [
+          {
+            "rule_id": "r",
+            "value": true
+          }
+        ],
+        "payment_authorized": false
+      }
+    },
+    {
+      "facts": {
+        "s": [
+          1,
+          1,
+          null
+        ]
+      },
+      "result": {
+        "decision": "close_eligible",
+        "reason_codes": [
+          "probe"
+        ],
+        "rule_id": "r",
+        "source_refs": [
+          {
+            "source_id": "p",
+            "locator": "1"
+          }
+        ],
+        "trace": [
+          {
+            "rule_id": "r",
+            "value": true
+          }
+        ],
+        "payment_authorized": false
+      }
+    },
+    {
+      "facts": {
+        "s": [
+          null,
+          1,
+          "bad"
+        ]
+      },
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "malformed_input"
+        ],
+        "rule_id": null,
+        "source_refs": [
+          {
+            "source_id": "p",
+            "locator": "1"
+          }
+        ],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "facts": {
+        "s": [
+          null
+        ]
+      },
+      "result": {
+        "decision": "close_eligible",
+        "reason_codes": [
+          "probe"
+        ],
+        "rule_id": "r",
+        "source_refs": [
+          {
+            "source_id": "p",
+            "locator": "1"
+          }
+        ],
+        "trace": [
+          {
+            "rule_id": "r",
+            "value": true
+          }
+        ],
+        "payment_authorized": false
+      }
+    },
+    {
+      "facts": {
+        "s": []
+      },
+      "result": {
+        "decision": "close_eligible",
+        "reason_codes": [
+          "probe"
+        ],
+        "rule_id": "r",
+        "source_refs": [
+          {
+            "source_id": "p",
+            "locator": "1"
+          }
+        ],
+        "trace": [
+          {
+            "rule_id": "r",
+            "value": true
+          }
+        ],
+        "payment_authorized": false
+      }
+    }
+  ],
+  "mutations": [
+    {
+      "name": "fields:None",
+      "rejected": true,
+      "validation": "invalid version/fields",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "rules:None",
+      "rejected": true,
+      "validation": "invalid rules",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "default:None",
+      "rejected": true,
+      "validation": "invalid object keys",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "fields:[]",
+      "rejected": true,
+      "validation": "invalid version/fields",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "rules:[]",
+      "rejected": true,
+      "validation": "invalid rules",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "default:[]",
+      "rejected": true,
+      "validation": "invalid object keys",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "fields:{}",
+      "rejected": true,
+      "validation": "invalid version/fields",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "rules:{}",
+      "rejected": true,
+      "validation": "invalid rules",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "default:{}",
+      "rejected": true,
+      "validation": "invalid object keys",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "fields:0",
+      "rejected": true,
+      "validation": "invalid version/fields",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "rules:0",
+      "rejected": true,
+      "validation": "invalid rules",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "default:0",
+      "rejected": true,
+      "validation": "invalid object keys",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "fields:True",
+      "rejected": true,
+      "validation": "invalid version/fields",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "rules:True",
+      "rejected": true,
+      "validation": "invalid rules",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "default:True",
+      "rejected": true,
+      "validation": "invalid object keys",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "fields:'bad'",
+      "rejected": true,
+      "validation": "invalid version/fields",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "rules:'bad'",
+      "rejected": true,
+      "validation": "invalid rules",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "default:'bad'",
+      "rejected": true,
+      "validation": "invalid object keys",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "incomplete_enum:None",
+      "rejected": true,
+      "validation": "enum must contain complete typed values",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "incomplete_enum:[None, 1, 1]",
+      "rejected": true,
+      "validation": "enum must contain complete typed values",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "incomplete_enum:{}",
+      "rejected": true,
+      "validation": "enum must contain complete typed values",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "incomplete_enum:[None]",
+      "rejected": true,
+      "validation": "enum must contain complete typed values",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "bad_enum:[[1, 2], [2, 1]]",
+      "rejected": true,
+      "validation": "duplicate enum member",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "bad_enum:[[1, 1]]",
+      "rejected": true,
+      "validation": "duplicate set member",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "bad_enum:[[True]]",
+      "rejected": true,
+      "validation": "invalid typed value",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "default_close",
+      "rejected": true,
+      "validation": "default may not close",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    },
+    {
+      "name": "bool_int_literal",
+      "rejected": true,
+      "validation": "invalid typed value",
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "invalid_artifact"
+        ],
+        "rule_id": null,
+        "source_refs": [],
+        "trace": [],
+        "payment_authorized": false
+      }
+    }
+  ],
+  "contract": [
+    {
+      "name": "multichannel",
+      "predictor_called": true,
+      "result": {
+        "decision": "needs_review",
+        "reason_codes": [
+          "contract_text_unverified"
+        ],
+        "payment_authorized": false,
+        "input_contract": {
+          "version": "2",
+          "status": "abstained",
+          "prose_verified": false,
+          "unverified_text_present": true,
+          "unverified_text_paths": [
+            "$.question",
+            "$.raw_text",
+            "$.sources[0].text",
+            "$.sources[0].raw_text",
+            "$.sources[2].facts.source_catalog[1].paragraphs[0].text"
+          ]
+        }
+      }
+    },
+    {
+      "name": "null_question",
+      "predictor_called": false,
+      "result": {
+        "case_id": "self-authored",
+        "decision": "needs_review",
+        "evidence_ids": [],
+        "reason_codes": [
+          "contract_type"
+        ],
+        "source_refs": [],
+        "payment_authorized": false,
+        "input_contract": {
+          "version": "2",
+          "status": "blocked",
+          "code": "contract_type",
+          "path": "$.question"
+        }
+      }
+    },
+    {
+      "name": "null_source_text",
+      "predictor_called": false,
+      "result": {
+        "case_id": "self-authored",
+        "decision": "needs_review",
+        "evidence_ids": [],
+        "reason_codes": [
+          "contract_type"
+        ],
+        "source_refs": [],
+        "payment_authorized": false,
+        "input_contract": {
+          "version": "2",
+          "status": "blocked",
+          "code": "contract_type",
+          "path": "$.sources[0].text"
+        }
+      }
+    },
+    {
+      "name": "duplicate_json_key",
+      "predictor_called": false,
+      "result": {
+        "case_id": null,
+        "decision": "needs_review",
+        "evidence_ids": [],
+        "reason_codes": [
+          "contract_duplicate_key"
+        ],
+        "source_refs": [],
+        "payment_authorized": false,
+        "input_contract": {
+          "version": "2",
+          "status": "blocked",
+          "code": "contract_duplicate_key",
+          "path": "$"
+        }
+      }
+    },
+    {
+      "name": "duplicate_source_changed_text",
+      "predictor_called": false,
+      "result": {
+        "case_id": "self-authored",
+        "decision": "needs_review",
+        "evidence_ids": [],
+        "reason_codes": [
+          "contract_source_identity_conflict"
+        ],
+        "source_refs": [],
+        "payment_authorized": false,
+        "input_contract": {
+          "version": "2",
+          "status": "blocked",
+          "code": "contract_source_identity_conflict",
+          "path": "$.sources[3]"
+        }
+      }
+    },
+    {
+      "name": "empty_all",
+      "predictor_called": true,
+      "result": {
+        "decision": "close_eligible",
+        "reason_codes": [
+          "probe"
+        ],
+        "payment_authorized": false,
+        "input_contract": {
+          "version": "2",
+          "status": "validated",
+          "prose_verified": false,
+          "unverified_text_present": false,
+          "unverified_text_paths": []
+        }
+      }
+    },
+    {
+      "name": "null_paragraph",
+      "predictor_called": false,
+      "result": {
+        "case_id": "self-authored",
+        "decision": "needs_review",
+        "evidence_ids": [],
+        "reason_codes": [
+          "contract_type"
+        ],
+        "source_refs": [],
+        "payment_authorized": false,
+        "input_contract": {
+          "version": "2",
+          "status": "blocked",
+          "code": "contract_type",
+          "path": "$.sources[2].facts.source_catalog[0].paragraphs[0].text"
+        }
+      }
+    }
+  ],
+  "legacy_exploit": {
+    "decision": "close_eligible",
+    "reason_codes": [
+      "fallback"
+    ],
+    "rule_id": null,
+    "source_refs": [
+      {
+        "source_id": "p",
+        "locator": "1"
+      }
+    ],
+    "trace": [],
+    "payment_authorized": false
+  },
+  "fixed_exploit": {
+    "decision": "needs_review",
+    "reason_codes": [
+      "invalid_artifact"
+    ],
+    "rule_id": null,
+    "source_refs": [],
+    "trace": [],
+    "payment_authorized": false
+  },
+  "test_suite": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -m unittest discover -s tests -p test_rule_ir_v3.py -v",
+    "returncode": 0,
+    "output": "test_complete_collection_enum_valid_and_order_insensitive (test_rule_ir_v3.ArtifactBoundaryTests.test_complete_collection_enum_valid_and_order_insensitive) ... ok\ntest_duplicate_enum_normalized (test_rule_ir_v3.ArtifactBoundaryTests.test_duplicate_enum_normalized) ... ok\ntest_later_invalid_fields_not_hidden (test_rule_ir_v3.ArtifactBoundaryTests.test_later_invalid_fields_not_hidden) ... ok\ntest_nested_null_and_missing_enum_members (test_rule_ir_v3.ArtifactBoundaryTests.test_nested_null_and_missing_enum_members) ... ok\ntest_null_every_scalar_kind (test_rule_ir_v3.ArtifactBoundaryTests.test_null_every_scalar_kind) ... ok\ntest_null_unused_field_cannot_hide_invalid_rules (test_rule_ir_v3.ArtifactBoundaryTests.test_null_unused_field_cannot_hide_invalid_rules) ... ok\ntest_original_exploit_retained_and_closed_in_v3 (test_rule_ir_v3.ArtifactBoundaryTests.test_original_exploit_retained_and_closed_in_v3) ... ok\ntest_runtime_null_still_unknown (test_rule_ir_v3.ArtifactBoundaryTests.test_runtime_null_still_unknown) ... ok\ntest_structural_validity_not_semantic_correctness (test_rule_ir_v3.ArtifactBoundaryTests.test_structural_validity_not_semantic_correctness) ... ok\ntest_v2_tag_rejected_by_v3 (test_rule_ir_v3.ArtifactBoundaryTests.test_v2_tag_rejected_by_v3) ... ok\ntest_valid_enum_does_not_skip_default_validation (test_rule_ir_v3.ArtifactBoundaryTests.test_valid_enum_does_not_skip_default_validation) ... ok\ntest_valid_enum_does_not_skip_refs (test_rule_ir_v3.ArtifactBoundaryTests.test_valid_enum_does_not_skip_refs) ... ok\ntest_validation_requires_explicit_true (test_rule_ir_v3.ArtifactBoundaryTests.test_validation_requires_explicit_true) ... ok\ntest_bad_record (test_rule_ir_v3.CollectionCompatibilityTests.test_bad_record) ... ok\ntest_bad_schema (test_rule_ir_v3.CollectionCompatibilityTests.test_bad_schema) ... ok\ntest_bad_status (test_rule_ir_v3.CollectionCompatibilityTests.test_bad_status) ... ok\ntest_conflict (test_rule_ir_v3.CollectionCompatibilityTests.test_conflict) ... ok\ntest_count (test_rule_ir_v3.CollectionCompatibilityTests.test_count) ... ok\ntest_cyclic_program (test_rule_ir_v3.CollectionCompatibilityTests.test_cyclic_program) ... ok\ntest_derived_set_budget (test_rule_ir_v3.CollectionCompatibilityTests.test_derived_set_budget) ... ok\ntest_duplicate_member (test_rule_ir_v3.CollectionCompatibilityTests.test_duplicate_member) ... ok\ntest_duplicate_target (test_rule_ir_v3.CollectionCompatibilityTests.test_duplicate_target) ... ok\ntest_eager_irrelevant_record_validation (test_rule_ir_v3.CollectionCompatibilityTests.test_eager_irrelevant_record_validation) ... ok\ntest_empty_lots (test_rule_ir_v3.CollectionCompatibilityTests.test_empty_lots) ... ok\ntest_execution_budget (test_rule_ir_v3.CollectionCompatibilityTests.test_execution_budget) ... ok\ntest_extra_payload_conflict (test_rule_ir_v3.CollectionCompatibilityTests.test_extra_payload_conflict) ... ok\ntest_filter_unknown_not_silently_removed (test_rule_ir_v3.CollectionCompatibilityTests.test_filter_unknown_not_silently_removed) ... ok\ntest_generic_integer_sets (test_rule_ir_v3.CollectionCompatibilityTests.test_generic_integer_sets) ... ok\ntest_huge_integer (test_rule_ir_v3.CollectionCompatibilityTests.test_huge_integer) ... ok\ntest_identical_duplicate_order (test_rule_ir_v3.CollectionCompatibilityTests.test_identical_duplicate_order) ... ok\ntest_ignore_disjoint (test_rule_ir_v3.CollectionCompatibilityTests.test_ignore_disjoint) ... ok\ntest_ignore_pending (test_rule_ir_v3.CollectionCompatibilityTests.test_ignore_pending) ... ok\ntest_ignore_wrong_line (test_rule_ir_v3.CollectionCompatibilityTests.test_ignore_wrong_line) ... ok\ntest_incompatible_set_types (test_rule_ir_v3.CollectionCompatibilityTests.test_incompatible_set_types) ... ok\ntest_item_outside_filter (test_rule_ir_v3.CollectionCompatibilityTests.test_item_outside_filter) ... ok\ntest_malformed_not_hidden_by_unknown (test_rule_ir_v3.CollectionCompatibilityTests.test_malformed_not_hidden_by_unknown) ... ok\ntest_missing_array (test_rule_ir_v3.CollectionCompatibilityTests.test_missing_array) ... ok\ntest_missing_record_field (test_rule_ir_v3.CollectionCompatibilityTests.test_missing_record_field) ... ok\ntest_missing_request_id (test_rule_ir_v3.CollectionCompatibilityTests.test_missing_request_id) ... ok\ntest_no_code (test_rule_ir_v3.CollectionCompatibilityTests.test_no_code) ... ok\ntest_no_dedup_conflicts (test_rule_ir_v3.CollectionCompatibilityTests.test_no_dedup_conflicts) ... ok\ntest_nonoverlap_union (test_rule_ir_v3.CollectionCompatibilityTests.test_nonoverlap_union) ... ok\ntest_nonstring_key (test_rule_ir_v3.CollectionCompatibilityTests.test_nonstring_key) ... ok\ntest_null_member (test_rule_ir_v3.CollectionCompatibilityTests.test_null_member) ... ok\ntest_outside_target_overlap (test_rule_ir_v3.CollectionCompatibilityTests.test_outside_target_overlap) ... ok\ntest_overlap (test_rule_ir_v3.CollectionCompatibilityTests.test_overlap) ... ok\ntest_size_budget (test_rule_ir_v3.CollectionCompatibilityTests.test_size_budget) ... ok\ntest_surrogate_artifact (test_rule_ir_v3.CollectionCompatibilityTests.test_surrogate_artifact) ... ok\ntest_surrogate_facts (test_rule_ir_v3.CollectionCompatibilityTests.test_surrogate_facts) ... ok\ntest_transport (test_rule_ir_v3.CollectionCompatibilityTests.test_transport) ... ok\ntest_uncovered (test_rule_ir_v3.CollectionCompatibilityTests.test_uncovered) ... ok\ntest_unhashable_tag (test_rule_ir_v3.CollectionCompatibilityTests.test_unhashable_tag) ... ok\ntest_unknown_record_key (test_rule_ir_v3.CollectionCompatibilityTests.test_unknown_record_key) ... ok\ntest_valid (test_rule_ir_v3.CollectionCompatibilityTests.test_valid) ... ok\ntest_adapter (test_rule_ir_v3.ScalarCompatibilityTests.test_adapter) ... ok\ntest_bad_source_ref (test_rule_ir_v3.ScalarCompatibilityTests.test_bad_source_ref) ... ok\ntest_bool_not_integer (test_rule_ir_v3.ScalarCompatibilityTests.test_bool_not_integer) ... ok\ntest_boundary_release (test_rule_ir_v3.ScalarCompatibilityTests.test_boundary_release) ... ok\ntest_cyclic_python_input (test_rule_ir_v3.ScalarCompatibilityTests.test_cyclic_python_input) ... ok\ntest_deep_ast (test_rule_ir_v3.ScalarCompatibilityTests.test_deep_ast) ... ok\ntest_deep_input (test_rule_ir_v3.ScalarCompatibilityTests.test_deep_input) ... ok\ntest_determinism (test_rule_ir_v3.ScalarCompatibilityTests.test_determinism) ... ok\ntest_duplicate_json (test_rule_ir_v3.ScalarCompatibilityTests.test_duplicate_json) ... ok\ntest_duplicate_rule_id (test_rule_ir_v3.ScalarCompatibilityTests.test_duplicate_rule_id) ... ok\ntest_false_release (test_rule_ir_v3.ScalarCompatibilityTests.test_false_release) ... ok\ntest_grandfather (test_rule_ir_v3.ScalarCompatibilityTests.test_grandfather) ... ok\ntest_huge_integer_program (test_rule_ir_v3.ScalarCompatibilityTests.test_huge_integer_program) ... ok\ntest_incompatible_types (test_rule_ir_v3.ScalarCompatibilityTests.test_incompatible_types) ... ok\ntest_invalid_date (test_rule_ir_v3.ScalarCompatibilityTests.test_invalid_date) ... ok\ntest_invalid_enum (test_rule_ir_v3.ScalarCompatibilityTests.test_invalid_enum) ... ok\ntest_kleene_truth_tables (test_rule_ir_v3.ScalarCompatibilityTests.test_kleene_truth_tables) ... ok\ntest_large_input (test_rule_ir_v3.ScalarCompatibilityTests.test_large_input) ... ok\ntest_locator_validation (test_rule_ir_v3.ScalarCompatibilityTests.test_locator_validation) ... ok\ntest_mismatch (test_rule_ir_v3.ScalarCompatibilityTests.test_mismatch) ... ok\ntest_missing_receipt (test_rule_ir_v3.ScalarCompatibilityTests.test_missing_receipt) ... ok\ntest_no_arbitrary_operator (test_rule_ir_v3.ScalarCompatibilityTests.test_no_arbitrary_operator) ... ok\ntest_no_default_close (test_rule_ir_v3.ScalarCompatibilityTests.test_no_default_close) ... ok\ntest_no_extra_keys (test_rule_ir_v3.ScalarCompatibilityTests.test_no_extra_keys) ... ok\ntest_nonfinite_json (test_rule_ir_v3.ScalarCompatibilityTests.test_nonfinite_json) ... ok\ntest_null_receipt (test_rule_ir_v3.ScalarCompatibilityTests.test_null_receipt) ... ok\ntest_old_closes (test_rule_ir_v3.ScalarCompatibilityTests.test_old_closes) ... ok\ntest_order (test_rule_ir_v3.ScalarCompatibilityTests.test_order) ... ok\ntest_reference_valid (test_rule_ir_v3.ScalarCompatibilityTests.test_reference_valid) ... ok\ntest_rejection (test_rule_ir_v3.ScalarCompatibilityTests.test_rejection) ... ok\ntest_shortfall (test_rule_ir_v3.ScalarCompatibilityTests.test_shortfall) ... ok\ntest_surrogate_facts (test_rule_ir_v3.ScalarCompatibilityTests.test_surrogate_facts) ... ok\ntest_surrogate_json (test_rule_ir_v3.ScalarCompatibilityTests.test_surrogate_json) ... ok\ntest_surrogate_program (test_rule_ir_v3.ScalarCompatibilityTests.test_surrogate_program) ... ok\ntest_transition_wrong_line (test_rule_ir_v3.ScalarCompatibilityTests.test_transition_wrong_line) ... ok\ntest_truncated_json (test_rule_ir_v3.ScalarCompatibilityTests.test_truncated_json) ... ok\ntest_unknown_first_blocks_later (test_rule_ir_v3.ScalarCompatibilityTests.test_unknown_first_blocks_later) ... ok\ntest_unknown_quantity_never_closes (test_rule_ir_v3.ScalarCompatibilityTests.test_unknown_quantity_never_closes) ... ok\ntest_wrong_parent (test_rule_ir_v3.ScalarCompatibilityTests.test_wrong_parent) ... ok\n\n----------------------------------------------------------------------\nRan 93 tests in 0.065s\n\nOK\n"
+  },
+  "contract_suite": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -m unittest discover -s tests -p test_input_contract_v2.py -v",
+    "returncode": 0,
+    "output": "test_all_paths_and_uncited_paragraph_included (test_input_contract_v2.InputContractV2Tests.test_all_paths_and_uncited_paragraph_included) ... ok\ntest_each_channel_matching_contradictory_neutral_and_whitespace (test_input_contract_v2.InputContractV2Tests.test_each_channel_matching_contradictory_neutral_and_whitespace) ... ok\ntest_empty_strings_do_not_abstain (test_input_contract_v2.InputContractV2Tests.test_empty_strings_do_not_abstain) ... ok\ntest_invalid_type_every_prose_channel (test_input_contract_v2.InputContractV2Tests.test_invalid_type_every_prose_channel) ... ok\ntest_nonclosing_policy_results_and_fields_preserved (test_input_contract_v2.InputContractV2Tests.test_nonclosing_policy_results_and_fields_preserved) ... ok\ntest_predictor_exceptions_propagate (test_input_contract_v2.InputContractV2Tests.test_predictor_exceptions_propagate) ... ok\ntest_raw_json_dict_parity (test_input_contract_v2.InputContractV2Tests.test_raw_json_dict_parity) ... ok\ntest_shared_strict_decoder_and_validator (test_input_contract_v2.InputContractV2Tests.test_shared_strict_decoder_and_validator) ... ok\ntest_structured_only_all_families_and_no_mutation (test_input_contract_v2.InputContractV2Tests.test_structured_only_all_families_and_no_mutation) ... ok\ntest_unknown_text_fields_and_verified_flags_cannot_bypass (test_input_contract_v2.InputContractV2Tests.test_unknown_text_fields_and_verified_flags_cannot_bypass) ... ok\ntest_unknown_text_on_other_structured_records_rejected (test_input_contract_v2.InputContractV2Tests.test_unknown_text_on_other_structured_records_rejected) ... ok\ntest_v1_source_text_failure_remains_reproducible (test_input_contract_v2.InputContractV2Tests.test_v1_source_text_failure_remains_reproducible) ... ok\ntest_validation_precedes_predictor_and_prose_boundary (test_input_contract_v2.InputContractV2Tests.test_validation_precedes_predictor_and_prose_boundary) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.064s\n\nOK\n"
+  }
+}

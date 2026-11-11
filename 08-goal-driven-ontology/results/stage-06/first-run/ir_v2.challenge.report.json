@@ -1,0 +1,138 @@
+{
+  "executed_cases": 8,
+  "predictions_sha256": "214136d0717f45119f40953e9f70621d6622c222823925da16b38e9faa088387",
+  "rows": [
+    {
+      "conservative_nonclose": false,
+      "decision": "close_eligible",
+      "exception": false,
+      "passed": true,
+      "payment_unauthorized": true,
+      "probe_id": "E01",
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "scope": "in_policy"
+    },
+    {
+      "conservative_nonclose": true,
+      "decision": "needs_review",
+      "exception": false,
+      "passed": true,
+      "payment_unauthorized": true,
+      "probe_id": "E02",
+      "reason_codes": [
+        "malformed_input"
+      ],
+      "scope": "ood_safety"
+    },
+    {
+      "conservative_nonclose": false,
+      "decision": "close_eligible",
+      "exception": false,
+      "passed": true,
+      "payment_unauthorized": true,
+      "probe_id": "E05",
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "scope": "in_policy"
+    },
+    {
+      "conservative_nonclose": false,
+      "decision": "close_eligible",
+      "exception": false,
+      "passed": false,
+      "payment_unauthorized": true,
+      "probe_id": "E06",
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "scope": "ood_safety"
+    },
+    {
+      "conservative_nonclose": false,
+      "decision": "close_eligible",
+      "exception": false,
+      "passed": true,
+      "payment_unauthorized": true,
+      "probe_id": "E15",
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "scope": "in_policy"
+    },
+    {
+      "conservative_nonclose": false,
+      "decision": "close_eligible",
+      "exception": false,
+      "passed": null,
+      "payment_unauthorized": true,
+      "probe_id": "E16",
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "scope": "unsupported_benign"
+    },
+    {
+      "conservative_nonclose": false,
+      "decision": "close_eligible",
+      "exception": false,
+      "passed": true,
+      "payment_unauthorized": true,
+      "probe_id": "E17",
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "scope": "in_policy"
+    },
+    {
+      "conservative_nonclose": false,
+      "decision": "close_eligible",
+      "exception": false,
+      "passed": null,
+      "payment_unauthorized": true,
+      "probe_id": "E18",
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "scope": "unsupported_benign"
+    }
+  ],
+  "summary": {
+    "in_policy": {
+      "close_n": 4,
+      "conservative_nonclose": 0,
+      "exceptions": 0,
+      "failed_ids": [],
+      "n": 4,
+      "passed": 4,
+      "payment_unauthorized": 4,
+      "unexpected_n": 0
+    },
+    "ood_safety": {
+      "close_n": 1,
+      "conservative_nonclose": 1,
+      "exceptions": 0,
+      "failed_ids": [
+        "E06"
+      ],
+      "n": 2,
+      "passed": 1,
+      "payment_unauthorized": 2,
+      "unexpected_n": 0
+    },
+    "unsupported_benign": {
+      "close_n": 2,
+      "conservative_nonclose": 0,
+      "exceptions": 0,
+      "failed_ids": [],
+      "n": 2,
+      "passed": null,
+      "payment_unauthorized": 2,
+      "unexpected_n": 0
+    }
+  },
+  "total_available_cases": 24,
+  "unsupported_not_executed": 16
+}

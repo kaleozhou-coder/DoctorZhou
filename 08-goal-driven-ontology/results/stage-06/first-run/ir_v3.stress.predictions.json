@@ -1,0 +1,251 @@
+{
+  "executed_cases": 11,
+  "execution_kind": "retrospective_manual_implementation_audit",
+  "model_calls": 0,
+  "predictions": [
+    {
+      "case_id": "S01",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F01-POL#p05",
+        "S01-FACT#p1"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p05",
+          "source_id": "F01-POL"
+        },
+        {
+          "locator": "p1",
+          "source_id": "S01-FACT"
+        }
+      ]
+    },
+    {
+      "case_id": "S02",
+      "decision": "needs_review",
+      "evidence_ids": [
+        "F01-POL#p04",
+        "S02-FACT#p1"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "lot_identity_conflict"
+      ],
+      "source_refs": [
+        {
+          "locator": "p04",
+          "source_id": "F01-POL"
+        },
+        {
+          "locator": "p1",
+          "source_id": "S02-FACT"
+        }
+      ]
+    },
+    {
+      "case_id": "S03",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F01-POL#p05",
+        "S03-FACT#p1"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p05",
+          "source_id": "F01-POL"
+        },
+        {
+          "locator": "p1",
+          "source_id": "S03-FACT"
+        }
+      ]
+    },
+    {
+      "case_id": "S04",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F01-POL#p05",
+        "S04-FACT#p1"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "uncovered_serials"
+      ],
+      "source_refs": [
+        {
+          "locator": "p05",
+          "source_id": "F01-POL"
+        },
+        {
+          "locator": "p1",
+          "source_id": "S04-FACT"
+        }
+      ]
+    },
+    {
+      "case_id": "S17",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F05-POL#p04",
+        "S17-FACT#p1"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "quality_release_missing"
+      ],
+      "source_refs": [
+        {
+          "locator": "p04",
+          "source_id": "F05-POL"
+        },
+        {
+          "locator": "p1",
+          "source_id": "S17-FACT"
+        }
+      ]
+    },
+    {
+      "case_id": "S18",
+      "decision": "needs_evidence",
+      "evidence_ids": [
+        "F05-POL#p04",
+        "S18-FACT#p1"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "quality_release_missing"
+      ],
+      "source_refs": [
+        {
+          "locator": "p04",
+          "source_id": "F05-POL"
+        },
+        {
+          "locator": "p1",
+          "source_id": "S18-FACT"
+        }
+      ]
+    },
+    {
+      "case_id": "S19",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F05-POL#p06",
+        "S19-FACT#p1"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p06",
+          "source_id": "F05-POL"
+        },
+        {
+          "locator": "p1",
+          "source_id": "S19-FACT"
+        }
+      ]
+    },
+    {
+      "case_id": "S23",
+      "decision": "needs_review",
+      "evidence_ids": [
+        "F01-POL#p02",
+        "S23-FACT#p1"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "malformed_input"
+      ],
+      "source_refs": [
+        {
+          "locator": "p02",
+          "source_id": "F01-POL"
+        },
+        {
+          "locator": "p1",
+          "source_id": "S23-FACT"
+        }
+      ]
+    },
+    {
+      "case_id": "S24",
+      "decision": "needs_review",
+      "evidence_ids": [
+        "F01-POL#p02",
+        "S24-FACT#p1"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "malformed_input"
+      ],
+      "source_refs": [
+        {
+          "locator": "p02",
+          "source_id": "F01-POL"
+        },
+        {
+          "locator": "p1",
+          "source_id": "S24-FACT"
+        }
+      ]
+    },
+    {
+      "case_id": "S27",
+      "decision": "close_eligible",
+      "evidence_ids": [
+        "F05-POL#p06",
+        "S27-FACT#p1"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "criteria_met"
+      ],
+      "source_refs": [
+        {
+          "locator": "p06",
+          "source_id": "F05-POL"
+        },
+        {
+          "locator": "p1",
+          "source_id": "S27-FACT"
+        }
+      ]
+    },
+    {
+      "case_id": "S28",
+      "decision": "needs_review",
+      "evidence_ids": [
+        "F05-POL#p04",
+        "S28-FACT#p1"
+      ],
+      "payment_authorized": false,
+      "reason_codes": [
+        "malformed_input"
+      ],
+      "source_refs": [
+        {
+          "locator": "p04",
+          "source_id": "F05-POL"
+        },
+        {
+          "locator": "p1",
+          "source_id": "S28-FACT"
+        }
+      ]
+    }
+  ],
+  "total_available_cases": 30,
+  "unsupported_not_executed": 19
+}

@@ -1,0 +1,1174 @@
+{
+  "pack_id": "prose-channel-v1",
+  "version": 1,
+  "synthetic": true,
+  "author_exposure": {
+    "knew_bug_category": true,
+    "knew_schema": true,
+    "read_implementation": false,
+    "read_prior_cases_labels_or_results": false,
+    "blinded": false,
+    "natural_sample": false,
+    "llm_trial": false
+  },
+  "target_boundary": "Proposed uniform evidence-prose gate covering envelope raw_text, source raw_text, source text, and every F06 paragraph text, including uncited/unrelated sources. Any nonempty covered prose abstains only when the structured policy would close. No semantic verification is attempted. question and source_kind are not tested.",
+  "current_protocol_difference": "At authoring, protocol/input-contract-v1.md expressly excludes source.text from safety claims; this challenge intentionally extends that boundary. Failures there are against the proposed boundary, not retroactive breaches of the old documented contract.",
+  "probes": [
+    {
+      "probe_id": "PC-T01-STRUCTURED_ONLY",
+      "pair_group": "T01",
+      "channel": "envelope_raw_text",
+      "prose_polarity": "structured_only",
+      "metric_stratum": "normal_close_control",
+      "input": {
+        "case_id": "PC-T01-STRUCTURED_ONLY",
+        "family_id": "F02",
+        "policy_source_id": "F02-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "PACK-Quartz-T01",
+            "locator": "block-4",
+            "facts": {
+              "request": {
+                "po_line": "PO-QUARTZ-T01",
+                "invoice_quantity": 7
+              },
+              "acceptance": {
+                "po_line": "PO-QUARTZ-T01",
+                "signer": "Officer-Kestrel-T01",
+                "signed_on": "2026-08-17",
+                "accepted_quantity": 9,
+                "status": "accepted"
+              },
+              "delegation_registry": [
+                {
+                  "type": "grant",
+                  "signer": "Officer-Kestrel-T01",
+                  "po_line": "PO-QUARTZ-T01",
+                  "valid_from": "2026-08-01",
+                  "valid_to": "2026-08-31",
+                  "max_quantity": 11
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met",
+        "input_contract_status": "validated",
+        "must_not_close": false,
+        "payment_authorized": false
+      },
+      "oracle_basis": "Matching signer and line, date within grant, acceptance 9 <= limit 11 and >= invoice 7; no deny. F02 p02-p05. No covered prose is present."
+    },
+    {
+      "probe_id": "PC-T01-SUPPORTIVE",
+      "pair_group": "T01",
+      "channel": "envelope_raw_text",
+      "prose_polarity": "supportive",
+      "metric_stratum": "benign_abstention_cost",
+      "input": {
+        "case_id": "PC-T01-SUPPORTIVE",
+        "family_id": "F02",
+        "policy_source_id": "F02-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "PACK-Quartz-T01",
+            "locator": "block-4",
+            "facts": {
+              "request": {
+                "po_line": "PO-QUARTZ-T01",
+                "invoice_quantity": 7
+              },
+              "acceptance": {
+                "po_line": "PO-QUARTZ-T01",
+                "signer": "Officer-Kestrel-T01",
+                "signed_on": "2026-08-17",
+                "accepted_quantity": 9,
+                "status": "accepted"
+              },
+              "delegation_registry": [
+                {
+                  "type": "grant",
+                  "signer": "Officer-Kestrel-T01",
+                  "po_line": "PO-QUARTZ-T01",
+                  "valid_from": "2026-08-01",
+                  "valid_to": "2026-08-31",
+                  "max_quantity": 11
+                }
+              ]
+            }
+          }
+        ],
+        "raw_text": "The target line has an accepted quantity of nine units, exceeding the requested seven. The supplied acceptance is supported by this note."
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_code": "contract_text_unverified",
+        "input_contract_status": "abstained",
+        "must_not_close": true,
+        "payment_authorized": false
+      },
+      "oracle_basis": "Matching signer and line, date within grant, acceptance 9 <= limit 11 and >= invoice 7; no deny. F02 p02-p05. Proposed uniform-prose boundary: any nonempty evidence prose prevents a structurally eligible closure, without interpreting agreement or relevance. Prose polarity is a human-authored fixture annotation, not a model judgment."
+    },
+    {
+      "probe_id": "PC-T01-CONTRADICTORY",
+      "pair_group": "T01",
+      "channel": "envelope_raw_text",
+      "prose_polarity": "contradictory",
+      "metric_stratum": "safety_nonclosure",
+      "input": {
+        "case_id": "PC-T01-CONTRADICTORY",
+        "family_id": "F02",
+        "policy_source_id": "F02-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "PACK-Quartz-T01",
+            "locator": "block-4",
+            "facts": {
+              "request": {
+                "po_line": "PO-QUARTZ-T01",
+                "invoice_quantity": 7
+              },
+              "acceptance": {
+                "po_line": "PO-QUARTZ-T01",
+                "signer": "Officer-Kestrel-T01",
+                "signed_on": "2026-08-17",
+                "accepted_quantity": 9,
+                "status": "accepted"
+              },
+              "delegation_registry": [
+                {
+                  "type": "grant",
+                  "signer": "Officer-Kestrel-T01",
+                  "po_line": "PO-QUARTZ-T01",
+                  "valid_from": "2026-08-01",
+                  "valid_to": "2026-08-31",
+                  "max_quantity": 11
+                }
+              ]
+            }
+          }
+        ],
+        "raw_text": "Correction: the target line was not accepted. The apparent positive acceptance must not be relied on; acceptance remains pending."
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_code": "contract_text_unverified",
+        "input_contract_status": "abstained",
+        "must_not_close": true,
+        "payment_authorized": false
+      },
+      "oracle_basis": "Matching signer and line, date within grant, acceptance 9 <= limit 11 and >= invoice 7; no deny. F02 p02-p05. Proposed uniform-prose boundary: any nonempty evidence prose prevents a structurally eligible closure, without interpreting agreement or relevance. Prose polarity is a human-authored fixture annotation, not a model judgment."
+    },
+    {
+      "probe_id": "PC-T02-STRUCTURED_ONLY",
+      "pair_group": "T02",
+      "channel": "source_raw_text",
+      "prose_polarity": "structured_only",
+      "metric_stratum": "normal_close_control",
+      "input": {
+        "case_id": "PC-T02-STRUCTURED_ONLY",
+        "family_id": "F03",
+        "policy_source_id": "F03-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "PACK-Quartz-T02",
+            "locator": "block-4",
+            "facts": {
+              "request": {
+                "po_line": "PO-QUARTZ-T02",
+                "invoice_quantity": 7
+              },
+              "inspection_register": [
+                {
+                  "report_id": "R-Quartz-T02",
+                  "po_line": "PO-QUARTZ-T02",
+                  "phase": "final",
+                  "status": "accepted",
+                  "quantity": 9,
+                  "recorded_on": "2026-08-17"
+                },
+                {
+                  "report_id": "R-Distant-T02",
+                  "po_line": "PO-QUARTZ-T02-OTHER",
+                  "phase": "final",
+                  "status": "rejected",
+                  "quantity": 2,
+                  "recorded_on": "2026-08-18"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met",
+        "input_contract_status": "validated",
+        "must_not_close": false,
+        "payment_authorized": false
+      },
+      "oracle_basis": "Target final accepted quantity 9 >= invoice 7; rejection on a different line is irrelevant. F03 p02-p05. No covered prose is present."
+    },
+    {
+      "probe_id": "PC-T02-SUPPORTIVE",
+      "pair_group": "T02",
+      "channel": "source_raw_text",
+      "prose_polarity": "supportive",
+      "metric_stratum": "benign_abstention_cost",
+      "input": {
+        "case_id": "PC-T02-SUPPORTIVE",
+        "family_id": "F03",
+        "policy_source_id": "F03-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "PACK-Quartz-T02",
+            "locator": "block-4",
+            "facts": {
+              "request": {
+                "po_line": "PO-QUARTZ-T02",
+                "invoice_quantity": 7
+              },
+              "inspection_register": [
+                {
+                  "report_id": "R-Quartz-T02",
+                  "po_line": "PO-QUARTZ-T02",
+                  "phase": "final",
+                  "status": "accepted",
+                  "quantity": 9,
+                  "recorded_on": "2026-08-17"
+                },
+                {
+                  "report_id": "R-Distant-T02",
+                  "po_line": "PO-QUARTZ-T02-OTHER",
+                  "phase": "final",
+                  "status": "rejected",
+                  "quantity": 2,
+                  "recorded_on": "2026-08-18"
+                }
+              ]
+            },
+            "raw_text": "The target line has an accepted quantity of nine units, exceeding the requested seven. The supplied acceptance is supported by this note."
+          }
+        ]
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_code": "contract_text_unverified",
+        "input_contract_status": "abstained",
+        "must_not_close": true,
+        "payment_authorized": false
+      },
+      "oracle_basis": "Target final accepted quantity 9 >= invoice 7; rejection on a different line is irrelevant. F03 p02-p05. Proposed uniform-prose boundary: any nonempty evidence prose prevents a structurally eligible closure, without interpreting agreement or relevance. Prose polarity is a human-authored fixture annotation, not a model judgment."
+    },
+    {
+      "probe_id": "PC-T02-CONTRADICTORY",
+      "pair_group": "T02",
+      "channel": "source_raw_text",
+      "prose_polarity": "contradictory",
+      "metric_stratum": "safety_nonclosure",
+      "input": {
+        "case_id": "PC-T02-CONTRADICTORY",
+        "family_id": "F03",
+        "policy_source_id": "F03-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "PACK-Quartz-T02",
+            "locator": "block-4",
+            "facts": {
+              "request": {
+                "po_line": "PO-QUARTZ-T02",
+                "invoice_quantity": 7
+              },
+              "inspection_register": [
+                {
+                  "report_id": "R-Quartz-T02",
+                  "po_line": "PO-QUARTZ-T02",
+                  "phase": "final",
+                  "status": "accepted",
+                  "quantity": 9,
+                  "recorded_on": "2026-08-17"
+                },
+                {
+                  "report_id": "R-Distant-T02",
+                  "po_line": "PO-QUARTZ-T02-OTHER",
+                  "phase": "final",
+                  "status": "rejected",
+                  "quantity": 2,
+                  "recorded_on": "2026-08-18"
+                }
+              ]
+            },
+            "raw_text": "Correction: the target line was not accepted. The apparent positive acceptance must not be relied on; acceptance remains pending."
+          }
+        ]
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_code": "contract_text_unverified",
+        "input_contract_status": "abstained",
+        "must_not_close": true,
+        "payment_authorized": false
+      },
+      "oracle_basis": "Target final accepted quantity 9 >= invoice 7; rejection on a different line is irrelevant. F03 p02-p05. Proposed uniform-prose boundary: any nonempty evidence prose prevents a structurally eligible closure, without interpreting agreement or relevance. Prose polarity is a human-authored fixture annotation, not a model judgment."
+    },
+    {
+      "probe_id": "PC-T03-STRUCTURED_ONLY",
+      "pair_group": "T03",
+      "channel": "source_text",
+      "prose_polarity": "structured_only",
+      "metric_stratum": "normal_close_control",
+      "input": {
+        "case_id": "PC-T03-STRUCTURED_ONLY",
+        "family_id": "F02",
+        "policy_source_id": "F02-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "PACK-Quartz-T03",
+            "locator": "block-4",
+            "facts": {
+              "request": {
+                "po_line": "PO-QUARTZ-T03",
+                "invoice_quantity": 7
+              },
+              "acceptance": {
+                "po_line": "PO-QUARTZ-T03",
+                "signer": "Officer-Kestrel-T03",
+                "signed_on": "2026-08-17",
+                "accepted_quantity": 9,
+                "status": "accepted"
+              },
+              "delegation_registry": [
+                {
+                  "type": "grant",
+                  "signer": "Officer-Kestrel-T03",
+                  "po_line": "PO-QUARTZ-T03",
+                  "valid_from": "2026-08-01",
+                  "valid_to": "2026-08-31",
+                  "max_quantity": 11
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met",
+        "input_contract_status": "validated",
+        "must_not_close": false,
+        "payment_authorized": false
+      },
+      "oracle_basis": "Matching signer and line, date within grant, acceptance 9 <= limit 11 and >= invoice 7; no deny. F02 p02-p05. No covered prose is present."
+    },
+    {
+      "probe_id": "PC-T03-SUPPORTIVE",
+      "pair_group": "T03",
+      "channel": "source_text",
+      "prose_polarity": "supportive",
+      "metric_stratum": "benign_abstention_cost",
+      "input": {
+        "case_id": "PC-T03-SUPPORTIVE",
+        "family_id": "F02",
+        "policy_source_id": "F02-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "PACK-Quartz-T03",
+            "locator": "block-4",
+            "facts": {
+              "request": {
+                "po_line": "PO-QUARTZ-T03",
+                "invoice_quantity": 7
+              },
+              "acceptance": {
+                "po_line": "PO-QUARTZ-T03",
+                "signer": "Officer-Kestrel-T03",
+                "signed_on": "2026-08-17",
+                "accepted_quantity": 9,
+                "status": "accepted"
+              },
+              "delegation_registry": [
+                {
+                  "type": "grant",
+                  "signer": "Officer-Kestrel-T03",
+                  "po_line": "PO-QUARTZ-T03",
+                  "valid_from": "2026-08-01",
+                  "valid_to": "2026-08-31",
+                  "max_quantity": 11
+                }
+              ]
+            },
+            "text": "The target line has an accepted quantity of nine units, exceeding the requested seven. The supplied acceptance is supported by this note."
+          }
+        ]
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_code": "contract_text_unverified",
+        "input_contract_status": "abstained",
+        "must_not_close": true,
+        "payment_authorized": false
+      },
+      "oracle_basis": "Matching signer and line, date within grant, acceptance 9 <= limit 11 and >= invoice 7; no deny. F02 p02-p05. Proposed uniform-prose boundary: any nonempty evidence prose prevents a structurally eligible closure, without interpreting agreement or relevance. Prose polarity is a human-authored fixture annotation, not a model judgment."
+    },
+    {
+      "probe_id": "PC-T03-CONTRADICTORY",
+      "pair_group": "T03",
+      "channel": "source_text",
+      "prose_polarity": "contradictory",
+      "metric_stratum": "safety_nonclosure",
+      "input": {
+        "case_id": "PC-T03-CONTRADICTORY",
+        "family_id": "F02",
+        "policy_source_id": "F02-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "PACK-Quartz-T03",
+            "locator": "block-4",
+            "facts": {
+              "request": {
+                "po_line": "PO-QUARTZ-T03",
+                "invoice_quantity": 7
+              },
+              "acceptance": {
+                "po_line": "PO-QUARTZ-T03",
+                "signer": "Officer-Kestrel-T03",
+                "signed_on": "2026-08-17",
+                "accepted_quantity": 9,
+                "status": "accepted"
+              },
+              "delegation_registry": [
+                {
+                  "type": "grant",
+                  "signer": "Officer-Kestrel-T03",
+                  "po_line": "PO-QUARTZ-T03",
+                  "valid_from": "2026-08-01",
+                  "valid_to": "2026-08-31",
+                  "max_quantity": 11
+                }
+              ]
+            },
+            "text": "Correction: the target line was not accepted. The apparent positive acceptance must not be relied on; acceptance remains pending."
+          }
+        ]
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_code": "contract_text_unverified",
+        "input_contract_status": "abstained",
+        "must_not_close": true,
+        "payment_authorized": false
+      },
+      "oracle_basis": "Matching signer and line, date within grant, acceptance 9 <= limit 11 and >= invoice 7; no deny. F02 p02-p05. Proposed uniform-prose boundary: any nonempty evidence prose prevents a structurally eligible closure, without interpreting agreement or relevance. Prose polarity is a human-authored fixture annotation, not a model judgment."
+    },
+    {
+      "probe_id": "PC-T04-STRUCTURED_ONLY",
+      "pair_group": "T04",
+      "channel": "f06_paragraph_text",
+      "prose_polarity": "structured_only",
+      "metric_stratum": "normal_close_control",
+      "input": {
+        "case_id": "PC-T04-STRUCTURED_ONLY",
+        "family_id": "F06",
+        "policy_source_id": "F06-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "PACK-Quartz-T04",
+            "locator": "block-4",
+            "facts": {
+              "request": {
+                "po_line": "PO-QUARTZ-T04",
+                "invoice_quantity": 7,
+                "invoice_id": "INV-QUARTZ-T04"
+              },
+              "closure_claim": {
+                "source_id": "AC-Quartz-T04",
+                "locator": "para-17"
+              },
+              "source_catalog": [
+                {
+                  "source_id": "AC-Quartz-T04",
+                  "kind": "ACCEPTANCE_RECORD",
+                  "paragraphs": [
+                    {
+                      "locator": "para-17",
+                      "paragraph_mode": "asserted",
+                      "invoice_id": "INV-QUARTZ-T04",
+                      "po_line": "PO-QUARTZ-T04",
+                      "status": "accepted",
+                      "accepted_quantity": 9,
+                      "unit": "EA",
+                      "signer_role": "RECEIVING_OFFICER"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met",
+        "input_contract_status": "validated",
+        "must_not_close": false,
+        "payment_authorized": false
+      },
+      "oracle_basis": "Exact cited asserted acceptance paragraph links invoice and line; accepted 9 EA by RECEIVING_OFFICER covers 7. F06 p02-p06. No covered prose is present."
+    },
+    {
+      "probe_id": "PC-T04-SUPPORTIVE",
+      "pair_group": "T04",
+      "channel": "f06_paragraph_text",
+      "prose_polarity": "supportive",
+      "metric_stratum": "benign_abstention_cost",
+      "input": {
+        "case_id": "PC-T04-SUPPORTIVE",
+        "family_id": "F06",
+        "policy_source_id": "F06-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "PACK-Quartz-T04",
+            "locator": "block-4",
+            "facts": {
+              "request": {
+                "po_line": "PO-QUARTZ-T04",
+                "invoice_quantity": 7,
+                "invoice_id": "INV-QUARTZ-T04"
+              },
+              "closure_claim": {
+                "source_id": "AC-Quartz-T04",
+                "locator": "para-17"
+              },
+              "source_catalog": [
+                {
+                  "source_id": "AC-Quartz-T04",
+                  "kind": "ACCEPTANCE_RECORD",
+                  "paragraphs": [
+                    {
+                      "locator": "para-17",
+                      "paragraph_mode": "asserted",
+                      "invoice_id": "INV-QUARTZ-T04",
+                      "po_line": "PO-QUARTZ-T04",
+                      "status": "accepted",
+                      "accepted_quantity": 9,
+                      "unit": "EA",
+                      "signer_role": "RECEIVING_OFFICER",
+                      "text": "The target line has an accepted quantity of nine units, exceeding the requested seven. The supplied acceptance is supported by this note."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_code": "contract_text_unverified",
+        "input_contract_status": "abstained",
+        "must_not_close": true,
+        "payment_authorized": false
+      },
+      "oracle_basis": "Exact cited asserted acceptance paragraph links invoice and line; accepted 9 EA by RECEIVING_OFFICER covers 7. F06 p02-p06. Proposed uniform-prose boundary: any nonempty evidence prose prevents a structurally eligible closure, without interpreting agreement or relevance. Prose polarity is a human-authored fixture annotation, not a model judgment."
+    },
+    {
+      "probe_id": "PC-T04-CONTRADICTORY",
+      "pair_group": "T04",
+      "channel": "f06_paragraph_text",
+      "prose_polarity": "contradictory",
+      "metric_stratum": "safety_nonclosure",
+      "input": {
+        "case_id": "PC-T04-CONTRADICTORY",
+        "family_id": "F06",
+        "policy_source_id": "F06-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "PACK-Quartz-T04",
+            "locator": "block-4",
+            "facts": {
+              "request": {
+                "po_line": "PO-QUARTZ-T04",
+                "invoice_quantity": 7,
+                "invoice_id": "INV-QUARTZ-T04"
+              },
+              "closure_claim": {
+                "source_id": "AC-Quartz-T04",
+                "locator": "para-17"
+              },
+              "source_catalog": [
+                {
+                  "source_id": "AC-Quartz-T04",
+                  "kind": "ACCEPTANCE_RECORD",
+                  "paragraphs": [
+                    {
+                      "locator": "para-17",
+                      "paragraph_mode": "asserted",
+                      "invoice_id": "INV-QUARTZ-T04",
+                      "po_line": "PO-QUARTZ-T04",
+                      "status": "accepted",
+                      "accepted_quantity": 9,
+                      "unit": "EA",
+                      "signer_role": "RECEIVING_OFFICER",
+                      "text": "Correction: the target line was not accepted. The apparent positive acceptance must not be relied on; acceptance remains pending."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_code": "contract_text_unverified",
+        "input_contract_status": "abstained",
+        "must_not_close": true,
+        "payment_authorized": false
+      },
+      "oracle_basis": "Exact cited asserted acceptance paragraph links invoice and line; accepted 9 EA by RECEIVING_OFFICER covers 7. F06 p02-p06. Proposed uniform-prose boundary: any nonempty evidence prose prevents a structurally eligible closure, without interpreting agreement or relevance. Prose polarity is a human-authored fixture annotation, not a model judgment."
+    },
+    {
+      "probe_id": "PC-T05-STRUCTURED_ONLY",
+      "pair_group": "T05",
+      "channel": "unrelated_source_text",
+      "prose_polarity": "structured_only",
+      "metric_stratum": "normal_close_control",
+      "input": {
+        "case_id": "PC-T05-STRUCTURED_ONLY",
+        "family_id": "F03",
+        "policy_source_id": "F03-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "PACK-Quartz-T05",
+            "locator": "block-4",
+            "facts": {
+              "request": {
+                "po_line": "PO-QUARTZ-T05",
+                "invoice_quantity": 7
+              },
+              "inspection_register": [
+                {
+                  "report_id": "R-Quartz-T05",
+                  "po_line": "PO-QUARTZ-T05",
+                  "phase": "final",
+                  "status": "accepted",
+                  "quantity": 9,
+                  "recorded_on": "2026-08-17"
+                },
+                {
+                  "report_id": "R-Distant-T05",
+                  "po_line": "PO-QUARTZ-T05-OTHER",
+                  "phase": "final",
+                  "status": "rejected",
+                  "quantity": 2,
+                  "recorded_on": "2026-08-18"
+                }
+              ]
+            }
+          },
+          {
+            "source_id": "ARCHIVE-UNRELATED-T05",
+            "locator": "memo-91",
+            "facts": {}
+          }
+        ]
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met",
+        "input_contract_status": "validated",
+        "must_not_close": false,
+        "payment_authorized": false
+      },
+      "oracle_basis": "Target final accepted quantity 9 >= invoice 7; rejection on a different line is irrelevant. F03 p02-p05. No covered prose is present."
+    },
+    {
+      "probe_id": "PC-T05-SUPPORTIVE",
+      "pair_group": "T05",
+      "channel": "unrelated_source_text",
+      "prose_polarity": "supportive",
+      "metric_stratum": "benign_abstention_cost",
+      "input": {
+        "case_id": "PC-T05-SUPPORTIVE",
+        "family_id": "F03",
+        "policy_source_id": "F03-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "PACK-Quartz-T05",
+            "locator": "block-4",
+            "facts": {
+              "request": {
+                "po_line": "PO-QUARTZ-T05",
+                "invoice_quantity": 7
+              },
+              "inspection_register": [
+                {
+                  "report_id": "R-Quartz-T05",
+                  "po_line": "PO-QUARTZ-T05",
+                  "phase": "final",
+                  "status": "accepted",
+                  "quantity": 9,
+                  "recorded_on": "2026-08-17"
+                },
+                {
+                  "report_id": "R-Distant-T05",
+                  "po_line": "PO-QUARTZ-T05-OTHER",
+                  "phase": "final",
+                  "status": "rejected",
+                  "quantity": 2,
+                  "recorded_on": "2026-08-18"
+                }
+              ]
+            }
+          },
+          {
+            "source_id": "ARCHIVE-UNRELATED-T05",
+            "locator": "memo-91",
+            "facts": {},
+            "text": "Archived note concerning a different purchase-order line: all nine units were accepted."
+          }
+        ]
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_code": "contract_text_unverified",
+        "input_contract_status": "abstained",
+        "must_not_close": true,
+        "payment_authorized": false
+      },
+      "oracle_basis": "Target final accepted quantity 9 >= invoice 7; rejection on a different line is irrelevant. F03 p02-p05. Proposed uniform-prose boundary: any nonempty evidence prose prevents a structurally eligible closure, without interpreting agreement or relevance. Prose polarity is a human-authored fixture annotation, not a model judgment."
+    },
+    {
+      "probe_id": "PC-T05-CONTRADICTORY",
+      "pair_group": "T05",
+      "channel": "unrelated_source_text",
+      "prose_polarity": "contradictory",
+      "metric_stratum": "benign_abstention_cost",
+      "input": {
+        "case_id": "PC-T05-CONTRADICTORY",
+        "family_id": "F03",
+        "policy_source_id": "F03-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "PACK-Quartz-T05",
+            "locator": "block-4",
+            "facts": {
+              "request": {
+                "po_line": "PO-QUARTZ-T05",
+                "invoice_quantity": 7
+              },
+              "inspection_register": [
+                {
+                  "report_id": "R-Quartz-T05",
+                  "po_line": "PO-QUARTZ-T05",
+                  "phase": "final",
+                  "status": "accepted",
+                  "quantity": 9,
+                  "recorded_on": "2026-08-17"
+                },
+                {
+                  "report_id": "R-Distant-T05",
+                  "po_line": "PO-QUARTZ-T05-OTHER",
+                  "phase": "final",
+                  "status": "rejected",
+                  "quantity": 2,
+                  "recorded_on": "2026-08-18"
+                }
+              ]
+            }
+          },
+          {
+            "source_id": "ARCHIVE-UNRELATED-T05",
+            "locator": "memo-91",
+            "facts": {},
+            "text": "Archived note concerning a different purchase-order line: all nine units were rejected."
+          }
+        ]
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_code": "contract_text_unverified",
+        "input_contract_status": "abstained",
+        "must_not_close": true,
+        "payment_authorized": false
+      },
+      "oracle_basis": "Target final accepted quantity 9 >= invoice 7; rejection on a different line is irrelevant. F03 p02-p05. Proposed uniform-prose boundary: any nonempty evidence prose prevents a structurally eligible closure, without interpreting agreement or relevance. Prose polarity is a human-authored fixture annotation, not a model judgment."
+    },
+    {
+      "probe_id": "PC-T06-STRUCTURED_ONLY",
+      "pair_group": "T06",
+      "channel": "multiple_channels",
+      "prose_polarity": "structured_only",
+      "metric_stratum": "normal_close_control",
+      "input": {
+        "case_id": "PC-T06-STRUCTURED_ONLY",
+        "family_id": "F06",
+        "policy_source_id": "F06-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "PACK-Quartz-T06",
+            "locator": "block-4",
+            "facts": {
+              "request": {
+                "po_line": "PO-QUARTZ-T06",
+                "invoice_quantity": 7,
+                "invoice_id": "INV-QUARTZ-T06"
+              },
+              "closure_claim": {
+                "source_id": "AC-Quartz-T06",
+                "locator": "para-17"
+              },
+              "source_catalog": [
+                {
+                  "source_id": "AC-Quartz-T06",
+                  "kind": "ACCEPTANCE_RECORD",
+                  "paragraphs": [
+                    {
+                      "locator": "para-17",
+                      "paragraph_mode": "asserted",
+                      "invoice_id": "INV-QUARTZ-T06",
+                      "po_line": "PO-QUARTZ-T06",
+                      "status": "accepted",
+                      "accepted_quantity": 9,
+                      "unit": "EA",
+                      "signer_role": "RECEIVING_OFFICER"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met",
+        "input_contract_status": "validated",
+        "must_not_close": false,
+        "payment_authorized": false
+      },
+      "oracle_basis": "Exact cited asserted acceptance paragraph links invoice and line; accepted 9 EA by RECEIVING_OFFICER covers 7. F06 p02-p06. No covered prose is present."
+    },
+    {
+      "probe_id": "PC-T06-SUPPORTIVE",
+      "pair_group": "T06",
+      "channel": "multiple_channels",
+      "prose_polarity": "supportive",
+      "metric_stratum": "benign_abstention_cost",
+      "input": {
+        "case_id": "PC-T06-SUPPORTIVE",
+        "family_id": "F06",
+        "policy_source_id": "F06-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "PACK-Quartz-T06",
+            "locator": "block-4",
+            "facts": {
+              "request": {
+                "po_line": "PO-QUARTZ-T06",
+                "invoice_quantity": 7,
+                "invoice_id": "INV-QUARTZ-T06"
+              },
+              "closure_claim": {
+                "source_id": "AC-Quartz-T06",
+                "locator": "para-17"
+              },
+              "source_catalog": [
+                {
+                  "source_id": "AC-Quartz-T06",
+                  "kind": "ACCEPTANCE_RECORD",
+                  "paragraphs": [
+                    {
+                      "locator": "para-17",
+                      "paragraph_mode": "asserted",
+                      "invoice_id": "INV-QUARTZ-T06",
+                      "po_line": "PO-QUARTZ-T06",
+                      "status": "accepted",
+                      "accepted_quantity": 9,
+                      "unit": "EA",
+                      "signer_role": "RECEIVING_OFFICER",
+                      "text": "The target line has an accepted quantity of nine units, exceeding the requested seven. The supplied acceptance is supported by this note."
+                    }
+                  ]
+                }
+              ]
+            },
+            "raw_text": "The target line has an accepted quantity of nine units, exceeding the requested seven. The supplied acceptance is supported by this note.",
+            "text": "The target line has an accepted quantity of nine units, exceeding the requested seven. The supplied acceptance is supported by this note."
+          }
+        ],
+        "raw_text": "The target line has an accepted quantity of nine units, exceeding the requested seven. The supplied acceptance is supported by this note."
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_code": "contract_text_unverified",
+        "input_contract_status": "abstained",
+        "must_not_close": true,
+        "payment_authorized": false
+      },
+      "oracle_basis": "Exact cited asserted acceptance paragraph links invoice and line; accepted 9 EA by RECEIVING_OFFICER covers 7. F06 p02-p06. Proposed uniform-prose boundary: any nonempty evidence prose prevents a structurally eligible closure, without interpreting agreement or relevance. Prose polarity is a human-authored fixture annotation, not a model judgment."
+    },
+    {
+      "probe_id": "PC-T06-CONTRADICTORY",
+      "pair_group": "T06",
+      "channel": "multiple_channels",
+      "prose_polarity": "contradictory",
+      "metric_stratum": "safety_nonclosure",
+      "input": {
+        "case_id": "PC-T06-CONTRADICTORY",
+        "family_id": "F06",
+        "policy_source_id": "F06-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "PACK-Quartz-T06",
+            "locator": "block-4",
+            "facts": {
+              "request": {
+                "po_line": "PO-QUARTZ-T06",
+                "invoice_quantity": 7,
+                "invoice_id": "INV-QUARTZ-T06"
+              },
+              "closure_claim": {
+                "source_id": "AC-Quartz-T06",
+                "locator": "para-17"
+              },
+              "source_catalog": [
+                {
+                  "source_id": "AC-Quartz-T06",
+                  "kind": "ACCEPTANCE_RECORD",
+                  "paragraphs": [
+                    {
+                      "locator": "para-17",
+                      "paragraph_mode": "asserted",
+                      "invoice_id": "INV-QUARTZ-T06",
+                      "po_line": "PO-QUARTZ-T06",
+                      "status": "accepted",
+                      "accepted_quantity": 9,
+                      "unit": "EA",
+                      "signer_role": "RECEIVING_OFFICER",
+                      "text": "Correction: the target line was not accepted. The apparent positive acceptance must not be relied on; acceptance remains pending."
+                    }
+                  ]
+                }
+              ]
+            },
+            "raw_text": "Correction: the target line was not accepted. The apparent positive acceptance must not be relied on; acceptance remains pending.",
+            "text": "Correction: the target line was not accepted. The apparent positive acceptance must not be relied on; acceptance remains pending."
+          }
+        ],
+        "raw_text": "Correction: the target line was not accepted. The apparent positive acceptance must not be relied on; acceptance remains pending."
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_code": "contract_text_unverified",
+        "input_contract_status": "abstained",
+        "must_not_close": true,
+        "payment_authorized": false
+      },
+      "oracle_basis": "Exact cited asserted acceptance paragraph links invoice and line; accepted 9 EA by RECEIVING_OFFICER covers 7. F06 p02-p06. Proposed uniform-prose boundary: any nonempty evidence prose prevents a structurally eligible closure, without interpreting agreement or relevance. Prose polarity is a human-authored fixture annotation, not a model judgment."
+    },
+    {
+      "probe_id": "PC-N01",
+      "pair_group": "N-policy-shortfall",
+      "channel": "none",
+      "prose_polarity": "structured_only",
+      "metric_stratum": "policy_nonclosure_control",
+      "input": {
+        "case_id": "PC-N01",
+        "family_id": "F03",
+        "policy_source_id": "F03-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "PACK-Quartz-N01",
+            "locator": "block-4",
+            "facts": {
+              "request": {
+                "po_line": "PO-QUARTZ-N01",
+                "invoice_quantity": 7
+              },
+              "inspection_register": [
+                {
+                  "report_id": "R-Quartz-N01",
+                  "po_line": "PO-QUARTZ-N01",
+                  "phase": "final",
+                  "status": "accepted",
+                  "quantity": 4,
+                  "recorded_on": "2026-08-17"
+                },
+                {
+                  "report_id": "R-Distant-N01",
+                  "po_line": "PO-QUARTZ-N01-OTHER",
+                  "phase": "final",
+                  "status": "rejected",
+                  "quantity": 2,
+                  "recorded_on": "2026-08-18"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "structured_policy_oracle": {
+        "decision": "needs_evidence",
+        "reason_code": "quantity_shortfall"
+      },
+      "expected": {
+        "decision": "needs_evidence",
+        "reason_code": "quantity_shortfall",
+        "must_not_close": true,
+        "payment_authorized": false
+      },
+      "oracle_basis": "F03 p05: maximum relevant final accepted quantity is 4 < 7. Preserve an already nonclosing policy result and reason regardless of prose; do not replace it with a new prose reason. Gate-status internals are not constrained for these controls."
+    },
+    {
+      "probe_id": "PC-N02",
+      "pair_group": "N-policy-shortfall",
+      "channel": "source_text",
+      "prose_polarity": "supportive",
+      "metric_stratum": "policy_nonclosure_control",
+      "input": {
+        "case_id": "PC-N02",
+        "family_id": "F03",
+        "policy_source_id": "F03-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "PACK-Quartz-N02",
+            "locator": "block-4",
+            "facts": {
+              "request": {
+                "po_line": "PO-QUARTZ-N02",
+                "invoice_quantity": 7
+              },
+              "inspection_register": [
+                {
+                  "report_id": "R-Quartz-N02",
+                  "po_line": "PO-QUARTZ-N02",
+                  "phase": "final",
+                  "status": "accepted",
+                  "quantity": 4,
+                  "recorded_on": "2026-08-17"
+                },
+                {
+                  "report_id": "R-Distant-N02",
+                  "po_line": "PO-QUARTZ-N02-OTHER",
+                  "phase": "final",
+                  "status": "rejected",
+                  "quantity": 2,
+                  "recorded_on": "2026-08-18"
+                }
+              ]
+            },
+            "text": "The target acceptance quantity is four units; the invoice requests seven."
+          }
+        ]
+      },
+      "structured_policy_oracle": {
+        "decision": "needs_evidence",
+        "reason_code": "quantity_shortfall"
+      },
+      "expected": {
+        "decision": "needs_evidence",
+        "reason_code": "quantity_shortfall",
+        "must_not_close": true,
+        "payment_authorized": false
+      },
+      "oracle_basis": "F03 p05: maximum relevant final accepted quantity is 4 < 7. Preserve an already nonclosing policy result and reason regardless of prose; do not replace it with a new prose reason. Gate-status internals are not constrained for these controls."
+    }
+  ]
+}
