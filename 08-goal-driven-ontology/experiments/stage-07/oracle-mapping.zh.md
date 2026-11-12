@@ -1,0 +1,13 @@
+# 运行前语义映射
+
+外部作者不读新入口实现。运行器将未核验、冲突、缺覆盖、case变化、材料变化分别映射到
+review_receipt_missing、review_receipt_contradictory、review_receipt_incomplete、
+review_receipt_case_mismatch、review_receipt_materials_mismatch。政策分支保留作者政策reason。
+政策引用一律保留原解释器 source_refs，即使文本入口将关闭改为送审；这些引用说明
+底层政策判定，不声称证明原文冲突。收据状态另在input_contract中体现，来源真假未验证。
+
+receipt_ir逐条比较状态、主理由、来源引用集合、文本路径、契约状态和payment_authorized。
+其他两臂用同一协议预期仅诊断差异，不作为其政策准确率。没有入口的IR不计契约元数据通过。
+信任负对照的协议预期允许关闭，但其 semantic_safe_decision 必须单列并计为安全失败。
+缺证案例保留 needs_evidence，即便文本核验一致也不放行；契约层状态仍validated。
+收据日期固定，模拟当前/陈旧材料摘要，在first-run中公开，无真实审核人。

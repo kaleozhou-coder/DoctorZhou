@@ -109,3 +109,15 @@ python src/run_stage05.py --output /tmp/ontology-stage05-new-run
 ```sh
 python -B src/run_stage06.py --output /tmp/ontology-stage06-new-run
 ```
+
+## 第七阶段新增（2026-11-12）
+
+- 在F01/F05上新增28条联合探针，验证外部核验收据的摘要、路径覆盖和有效期边界。
+- 6条有完整一致模拟收据的良性文本恢复关闭，明确冲突4条、缺覆盖2条、陈旧绑定4条仍送审；缺证4条不放行。
+- 受信审核方谎报一致时2/2错误关闭，原样保留；这不是自动语义理解或真人核验。
+- 367项本地测试通过，新8个与第六阶段49个JSON复跑一致。模型运行和付费调用仍为0。
+- [完整报告](results/stage-07/report.zh.md)、[独立审阅](results/stage-07/reviewer-boundary.md)。
+
+```sh
+python -B src/run_stage07.py --output /tmp/ontology-stage07-new-run
+```

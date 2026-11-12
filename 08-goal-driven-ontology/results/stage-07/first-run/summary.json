@@ -1,0 +1,185 @@
+{
+  "actual_human_reviews": 0,
+  "actual_model_runs": 0,
+  "arms": {
+    "gate_v2_ir": {
+      "incomplete_receipt": {
+        "all_expected_fields_match": 0,
+        "closed": 0,
+        "n": 2,
+        "needs_evidence": 0,
+        "needs_review": 2
+      },
+      "normal_control": {
+        "all_expected_fields_match": 2,
+        "closed": 2,
+        "n": 2,
+        "needs_evidence": 0,
+        "needs_review": 0
+      },
+      "policy_nonclosure": {
+        "all_expected_fields_match": 4,
+        "closed": 0,
+        "n": 4,
+        "needs_evidence": 4,
+        "needs_review": 0
+      },
+      "reviewed_benign": {
+        "all_expected_fields_match": 0,
+        "closed": 0,
+        "n": 6,
+        "needs_evidence": 0,
+        "needs_review": 6
+      },
+      "reviewed_conflict": {
+        "all_expected_fields_match": 0,
+        "closed": 0,
+        "n": 4,
+        "needs_evidence": 0,
+        "needs_review": 4
+      },
+      "stale_receipt": {
+        "all_expected_fields_match": 0,
+        "closed": 0,
+        "n": 4,
+        "needs_evidence": 0,
+        "needs_review": 4
+      },
+      "trusted_reviewer_failure": {
+        "all_expected_fields_match": 0,
+        "closed": 0,
+        "n": 2,
+        "needs_evidence": 0,
+        "needs_review": 2
+      },
+      "unreviewed_benign": {
+        "all_expected_fields_match": 0,
+        "closed": 0,
+        "n": 4,
+        "needs_evidence": 0,
+        "needs_review": 4
+      }
+    },
+    "ir_only": {
+      "incomplete_receipt": {
+        "all_expected_fields_match": 0,
+        "closed": 2,
+        "n": 2,
+        "needs_evidence": 0,
+        "needs_review": 0
+      },
+      "normal_control": {
+        "all_expected_fields_match": 0,
+        "closed": 2,
+        "n": 2,
+        "needs_evidence": 0,
+        "needs_review": 0
+      },
+      "policy_nonclosure": {
+        "all_expected_fields_match": 0,
+        "closed": 0,
+        "n": 4,
+        "needs_evidence": 4,
+        "needs_review": 0
+      },
+      "reviewed_benign": {
+        "all_expected_fields_match": 0,
+        "closed": 6,
+        "n": 6,
+        "needs_evidence": 0,
+        "needs_review": 0
+      },
+      "reviewed_conflict": {
+        "all_expected_fields_match": 0,
+        "closed": 4,
+        "n": 4,
+        "needs_evidence": 0,
+        "needs_review": 0
+      },
+      "stale_receipt": {
+        "all_expected_fields_match": 0,
+        "closed": 4,
+        "n": 4,
+        "needs_evidence": 0,
+        "needs_review": 0
+      },
+      "trusted_reviewer_failure": {
+        "all_expected_fields_match": 0,
+        "closed": 2,
+        "n": 2,
+        "needs_evidence": 0,
+        "needs_review": 0
+      },
+      "unreviewed_benign": {
+        "all_expected_fields_match": 0,
+        "closed": 4,
+        "n": 4,
+        "needs_evidence": 0,
+        "needs_review": 0
+      }
+    },
+    "receipt_ir": {
+      "incomplete_receipt": {
+        "all_expected_fields_match": 2,
+        "closed": 0,
+        "n": 2,
+        "needs_evidence": 0,
+        "needs_review": 2
+      },
+      "normal_control": {
+        "all_expected_fields_match": 2,
+        "closed": 2,
+        "n": 2,
+        "needs_evidence": 0,
+        "needs_review": 0
+      },
+      "policy_nonclosure": {
+        "all_expected_fields_match": 4,
+        "closed": 0,
+        "n": 4,
+        "needs_evidence": 4,
+        "needs_review": 0
+      },
+      "reviewed_benign": {
+        "all_expected_fields_match": 6,
+        "closed": 6,
+        "n": 6,
+        "needs_evidence": 0,
+        "needs_review": 0
+      },
+      "reviewed_conflict": {
+        "all_expected_fields_match": 4,
+        "closed": 0,
+        "n": 4,
+        "needs_evidence": 0,
+        "needs_review": 4
+      },
+      "stale_receipt": {
+        "all_expected_fields_match": 4,
+        "closed": 0,
+        "n": 4,
+        "needs_evidence": 0,
+        "needs_review": 4
+      },
+      "trusted_reviewer_failure": {
+        "all_expected_fields_match": 2,
+        "closed": 2,
+        "n": 2,
+        "needs_evidence": 0,
+        "needs_review": 0
+      },
+      "unreviewed_benign": {
+        "all_expected_fields_match": 4,
+        "closed": 0,
+        "n": 4,
+        "needs_evidence": 0,
+        "needs_review": 4
+      }
+    }
+  },
+  "as_of": "2026-11-12T12:00:00Z",
+  "paid_calls": 0,
+  "simulated_receipt_count": 20,
+  "simulated_reviewed_paths": 22,
+  "timing": "No human minutes measured; path count is workload proxy only"
+}

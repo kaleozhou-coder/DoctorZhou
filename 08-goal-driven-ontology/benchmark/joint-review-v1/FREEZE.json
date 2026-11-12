@@ -1,0 +1,9 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "DESIGN.zh.md": "161c4cb60d404b359c415316eff08c8a0544e1c68938b54c547713daadfe79a8",
+    "author_probes.py": "18b5404b8f6395849019a2ce077d8d497e09a995af1bbae5d019b38f97d53b4f",
+    "probes.json": "50ce718ffff6a4ea22aa09233835203ec5795bc1d33e9875fc468920a5ce1880"
+  },
+  "scope": "local integrity freeze, not external preregistration"
+}

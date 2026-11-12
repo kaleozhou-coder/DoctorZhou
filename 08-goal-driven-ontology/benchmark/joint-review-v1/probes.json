@@ -1,0 +1,2829 @@
+{
+  "pack_id": "joint-review-v1",
+  "version": 1,
+  "synthetic": true,
+  "author_exposure": {
+    "read_policy_materials": true,
+    "read_old_input_structures": true,
+    "read_reference_artifact_structure": true,
+    "read_new_gate_implementation": false,
+    "read_new_results": false,
+    "human_expert_gold": false,
+    "external_preregistration": false
+  },
+  "scope": [
+    "F01",
+    "F05"
+  ],
+  "reason_mapping_policy": "reason_semantic expresses independently authored scenario semantics. The runner must document mapping to implementation reason codes before first execution. Never change expected values to fit outputs.",
+  "probes": [
+    {
+      "probe_id": "JR-F01-01",
+      "pair_group": "F01-same-positive-facts",
+      "name": "bare_positive",
+      "metric_stratum": "normal_control",
+      "input": {
+        "case_id": "JR-F01-01",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-CEDAR-71",
+                "po_line": "PO-CEDAR/7",
+                "invoice_quantity": 3,
+                "target_serials": [
+                  "cedar-a",
+                  "cedar-b",
+                  "cedar-c"
+                ]
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2",
+            "facts": {
+              "lots": [
+                {
+                  "lot_id": "L-CEDAR-A",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-a"
+                  ]
+                },
+                {
+                  "lot_id": "L-CEDAR-B",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-b",
+                    "cedar-c"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "external_review_scenario": {
+        "kind": "none",
+        "covered_paths": [],
+        "review_outcomes": {},
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason_semantic": "policy",
+        "policy_reason_code": "criteria_met",
+        "text_paths": [],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F01-POL",
+            "locator": "p05"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F01 policy p03-p05: distinct three targets; two accepted disjoint lots cover all targets except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F01-02",
+      "pair_group": "F01-same-positive-facts",
+      "name": "question_benign_unreviewed",
+      "metric_stratum": "unreviewed_benign",
+      "input": {
+        "case_id": "JR-F01-02",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-CEDAR-71",
+                "po_line": "PO-CEDAR/7",
+                "invoice_quantity": 3,
+                "target_serials": [
+                  "cedar-a",
+                  "cedar-b",
+                  "cedar-c"
+                ]
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2",
+            "facts": {
+              "lots": [
+                {
+                  "lot_id": "L-CEDAR-A",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-a"
+                  ]
+                },
+                {
+                  "lot_id": "L-CEDAR-B",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-b",
+                    "cedar-c"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "question": "该订单行的 cedar-a、cedar-b、cedar-c 三件货物均已验收，两个批次互不重复。"
+      },
+      "external_review_scenario": {
+        "kind": "none",
+        "covered_paths": [],
+        "review_outcomes": {},
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_semantic": "unverified_text",
+        "policy_reason_code": null,
+        "text_paths": [
+          "$.question"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F01-POL",
+            "locator": "p05"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F01 policy p03-p05: distinct three targets; two accepted disjoint lots cover all targets except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F01-03",
+      "pair_group": "F01-same-positive-facts",
+      "name": "question_benign_reviewed",
+      "metric_stratum": "reviewed_benign",
+      "input": {
+        "case_id": "JR-F01-03",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-CEDAR-71",
+                "po_line": "PO-CEDAR/7",
+                "invoice_quantity": 3,
+                "target_serials": [
+                  "cedar-a",
+                  "cedar-b",
+                  "cedar-c"
+                ]
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2",
+            "facts": {
+              "lots": [
+                {
+                  "lot_id": "L-CEDAR-A",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-a"
+                  ]
+                },
+                {
+                  "lot_id": "L-CEDAR-B",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-b",
+                    "cedar-c"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "question": "该订单行的 cedar-a、cedar-b、cedar-c 三件货物均已验收，两个批次互不重复。"
+      },
+      "external_review_scenario": {
+        "kind": "consistent",
+        "covered_paths": [
+          "$.question"
+        ],
+        "review_outcomes": {
+          "$.question": "consistent"
+        },
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason_semantic": "policy",
+        "policy_reason_code": "criteria_met",
+        "text_paths": [
+          "$.question"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F01-POL",
+            "locator": "p05"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F01 policy p03-p05: distinct three targets; two accepted disjoint lots cover all targets except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F01-04",
+      "pair_group": "F01-same-positive-facts",
+      "name": "source_benign_unreviewed",
+      "metric_stratum": "unreviewed_benign",
+      "input": {
+        "case_id": "JR-F01-04",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-CEDAR-71",
+                "po_line": "PO-CEDAR/7",
+                "invoice_quantity": 3,
+                "target_serials": [
+                  "cedar-a",
+                  "cedar-b",
+                  "cedar-c"
+                ]
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2",
+            "facts": {
+              "lots": [
+                {
+                  "lot_id": "L-CEDAR-A",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-a"
+                  ]
+                },
+                {
+                  "lot_id": "L-CEDAR-B",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-b",
+                    "cedar-c"
+                  ]
+                }
+              ]
+            },
+            "text": "该订单行的 cedar-a、cedar-b、cedar-c 三件货物均已验收，两个批次互不重复。"
+          }
+        ]
+      },
+      "external_review_scenario": {
+        "kind": "none",
+        "covered_paths": [],
+        "review_outcomes": {},
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_semantic": "unverified_text",
+        "policy_reason_code": null,
+        "text_paths": [
+          "$.sources[1].text"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F01-POL",
+            "locator": "p05"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F01 policy p03-p05: distinct three targets; two accepted disjoint lots cover all targets except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F01-05",
+      "pair_group": "F01-same-positive-facts",
+      "name": "source_benign_reviewed",
+      "metric_stratum": "reviewed_benign",
+      "input": {
+        "case_id": "JR-F01-05",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-CEDAR-71",
+                "po_line": "PO-CEDAR/7",
+                "invoice_quantity": 3,
+                "target_serials": [
+                  "cedar-a",
+                  "cedar-b",
+                  "cedar-c"
+                ]
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2",
+            "facts": {
+              "lots": [
+                {
+                  "lot_id": "L-CEDAR-A",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-a"
+                  ]
+                },
+                {
+                  "lot_id": "L-CEDAR-B",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-b",
+                    "cedar-c"
+                  ]
+                }
+              ]
+            },
+            "text": "该订单行的 cedar-a、cedar-b、cedar-c 三件货物均已验收，两个批次互不重复。"
+          }
+        ]
+      },
+      "external_review_scenario": {
+        "kind": "consistent",
+        "covered_paths": [
+          "$.sources[1].text"
+        ],
+        "review_outcomes": {
+          "$.sources[1].text": "consistent"
+        },
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason_semantic": "policy",
+        "policy_reason_code": "criteria_met",
+        "text_paths": [
+          "$.sources[1].text"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F01-POL",
+            "locator": "p05"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F01 policy p03-p05: distinct three targets; two accepted disjoint lots cover all targets except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F01-06",
+      "pair_group": "F01-same-positive-facts",
+      "name": "question_conflict",
+      "metric_stratum": "reviewed_conflict",
+      "input": {
+        "case_id": "JR-F01-06",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-CEDAR-71",
+                "po_line": "PO-CEDAR/7",
+                "invoice_quantity": 3,
+                "target_serials": [
+                  "cedar-a",
+                  "cedar-b",
+                  "cedar-c"
+                ]
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2",
+            "facts": {
+              "lots": [
+                {
+                  "lot_id": "L-CEDAR-A",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-a"
+                  ]
+                },
+                {
+                  "lot_id": "L-CEDAR-B",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-b",
+                    "cedar-c"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "question": "补充原始记录：cedar-c 仍待验收，不能将三件货物全部标为已验收。"
+      },
+      "external_review_scenario": {
+        "kind": "conflict",
+        "covered_paths": [
+          "$.question"
+        ],
+        "review_outcomes": {
+          "$.question": "conflict"
+        },
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_semantic": "review_conflict",
+        "policy_reason_code": null,
+        "text_paths": [
+          "$.question"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F01-POL",
+            "locator": "p05"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F01 policy p03-p05: distinct three targets; two accepted disjoint lots cover all targets except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F01-07",
+      "pair_group": "F01-same-positive-facts",
+      "name": "source_conflict",
+      "metric_stratum": "reviewed_conflict",
+      "input": {
+        "case_id": "JR-F01-07",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-CEDAR-71",
+                "po_line": "PO-CEDAR/7",
+                "invoice_quantity": 3,
+                "target_serials": [
+                  "cedar-a",
+                  "cedar-b",
+                  "cedar-c"
+                ]
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2",
+            "facts": {
+              "lots": [
+                {
+                  "lot_id": "L-CEDAR-A",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-a"
+                  ]
+                },
+                {
+                  "lot_id": "L-CEDAR-B",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-b",
+                    "cedar-c"
+                  ]
+                }
+              ]
+            },
+            "text": "补充原始记录：cedar-c 仍待验收，不能将三件货物全部标为已验收。"
+          }
+        ]
+      },
+      "external_review_scenario": {
+        "kind": "conflict",
+        "covered_paths": [
+          "$.sources[1].text"
+        ],
+        "review_outcomes": {
+          "$.sources[1].text": "conflict"
+        },
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_semantic": "review_conflict",
+        "policy_reason_code": null,
+        "text_paths": [
+          "$.sources[1].text"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F01-POL",
+            "locator": "p05"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F01 policy p03-p05: distinct three targets; two accepted disjoint lots cover all targets except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F01-08",
+      "pair_group": "F01-same-positive-facts",
+      "name": "partial_coverage",
+      "metric_stratum": "incomplete_receipt",
+      "input": {
+        "case_id": "JR-F01-08",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-CEDAR-71",
+                "po_line": "PO-CEDAR/7",
+                "invoice_quantity": 3,
+                "target_serials": [
+                  "cedar-a",
+                  "cedar-b",
+                  "cedar-c"
+                ]
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2",
+            "facts": {
+              "lots": [
+                {
+                  "lot_id": "L-CEDAR-A",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-a"
+                  ]
+                },
+                {
+                  "lot_id": "L-CEDAR-B",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-b",
+                    "cedar-c"
+                  ]
+                }
+              ]
+            },
+            "text": "该订单行的 cedar-a、cedar-b、cedar-c 三件货物均已验收，两个批次互不重复。"
+          }
+        ],
+        "question": "该订单行的 cedar-a、cedar-b、cedar-c 三件货物均已验收，两个批次互不重复。"
+      },
+      "external_review_scenario": {
+        "kind": "partial",
+        "covered_paths": [
+          "$.question"
+        ],
+        "review_outcomes": {
+          "$.question": "consistent"
+        },
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_semantic": "review_coverage_missing",
+        "policy_reason_code": null,
+        "text_paths": [
+          "$.question",
+          "$.sources[1].text"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F01-POL",
+            "locator": "p05"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F01 policy p03-p05: distinct three targets; two accepted disjoint lots cover all targets except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F01-09",
+      "pair_group": "F01-same-positive-facts",
+      "name": "complete_coverage",
+      "metric_stratum": "reviewed_benign",
+      "input": {
+        "case_id": "JR-F01-09",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-CEDAR-71",
+                "po_line": "PO-CEDAR/7",
+                "invoice_quantity": 3,
+                "target_serials": [
+                  "cedar-a",
+                  "cedar-b",
+                  "cedar-c"
+                ]
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2",
+            "facts": {
+              "lots": [
+                {
+                  "lot_id": "L-CEDAR-A",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-a"
+                  ]
+                },
+                {
+                  "lot_id": "L-CEDAR-B",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-b",
+                    "cedar-c"
+                  ]
+                }
+              ]
+            },
+            "text": "该订单行的 cedar-a、cedar-b、cedar-c 三件货物均已验收，两个批次互不重复。"
+          }
+        ],
+        "question": "该订单行的 cedar-a、cedar-b、cedar-c 三件货物均已验收，两个批次互不重复。"
+      },
+      "external_review_scenario": {
+        "kind": "consistent",
+        "covered_paths": [
+          "$.question",
+          "$.sources[1].text"
+        ],
+        "review_outcomes": {
+          "$.question": "consistent",
+          "$.sources[1].text": "consistent"
+        },
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason_semantic": "policy",
+        "policy_reason_code": "criteria_met",
+        "text_paths": [
+          "$.question",
+          "$.sources[1].text"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F01-POL",
+            "locator": "p05"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F01 policy p03-p05: distinct three targets; two accepted disjoint lots cover all targets except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F01-10",
+      "pair_group": "F01-same-positive-facts",
+      "name": "stale_case",
+      "metric_stratum": "stale_receipt",
+      "input": {
+        "case_id": "JR-F01-10",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-CEDAR-71",
+                "po_line": "PO-CEDAR/7",
+                "invoice_quantity": 3,
+                "target_serials": [
+                  "cedar-a",
+                  "cedar-b",
+                  "cedar-c"
+                ]
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2",
+            "facts": {
+              "lots": [
+                {
+                  "lot_id": "L-CEDAR-A",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-a"
+                  ]
+                },
+                {
+                  "lot_id": "L-CEDAR-B",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-b",
+                    "cedar-c"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "question": "该订单行的 cedar-a、cedar-b、cedar-c 三件货物均已验收，两个批次互不重复。"
+      },
+      "external_review_scenario": {
+        "kind": "stale_case",
+        "covered_paths": [
+          "$.question"
+        ],
+        "review_outcomes": {
+          "$.question": "consistent"
+        },
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "different_case_digest"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_semantic": "review_case_mismatch",
+        "policy_reason_code": null,
+        "text_paths": [
+          "$.question"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F01-POL",
+            "locator": "p05"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F01 policy p03-p05: distinct three targets; two accepted disjoint lots cover all targets except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F01-11",
+      "pair_group": "F01-same-positive-facts",
+      "name": "stale_materials",
+      "metric_stratum": "stale_receipt",
+      "input": {
+        "case_id": "JR-F01-11",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-CEDAR-71",
+                "po_line": "PO-CEDAR/7",
+                "invoice_quantity": 3,
+                "target_serials": [
+                  "cedar-a",
+                  "cedar-b",
+                  "cedar-c"
+                ]
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2",
+            "facts": {
+              "lots": [
+                {
+                  "lot_id": "L-CEDAR-A",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-a"
+                  ]
+                },
+                {
+                  "lot_id": "L-CEDAR-B",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-b",
+                    "cedar-c"
+                  ]
+                }
+              ]
+            },
+            "text": "该订单行的 cedar-a、cedar-b、cedar-c 三件货物均已验收，两个批次互不重复。"
+          }
+        ]
+      },
+      "external_review_scenario": {
+        "kind": "stale_materials",
+        "covered_paths": [
+          "$.sources[1].text"
+        ],
+        "review_outcomes": {
+          "$.sources[1].text": "consistent"
+        },
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "different_materials_digest"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_semantic": "review_materials_mismatch",
+        "policy_reason_code": null,
+        "text_paths": [
+          "$.sources[1].text"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F01-POL",
+            "locator": "p05"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F01 policy p03-p05: distinct three targets; two accepted disjoint lots cover all targets except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F01-12",
+      "pair_group": "F01-missing-facts",
+      "name": "missing_evidence_bare",
+      "metric_stratum": "policy_nonclosure",
+      "input": {
+        "case_id": "JR-F01-12",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-CEDAR-71",
+                "po_line": "PO-CEDAR/7",
+                "invoice_quantity": 3,
+                "target_serials": [
+                  "cedar-a",
+                  "cedar-b",
+                  "cedar-c"
+                ]
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2",
+            "facts": {
+              "lots": [
+                {
+                  "lot_id": "L-CEDAR-A",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-a"
+                  ]
+                },
+                {
+                  "lot_id": "L-CEDAR-B",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-b"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "external_review_scenario": {
+        "kind": "none",
+        "covered_paths": [],
+        "review_outcomes": {},
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "needs_evidence",
+        "reason_code": "uncovered_serials"
+      },
+      "expected": {
+        "decision": "needs_evidence",
+        "reason_semantic": "policy",
+        "policy_reason_code": "uncovered_serials",
+        "text_paths": [],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F01-POL",
+            "locator": "p05"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F01 policy p03-p05: distinct three targets; two accepted disjoint lots cover all targets except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F01-13",
+      "pair_group": "F01-missing-facts",
+      "name": "missing_evidence_reviewed",
+      "metric_stratum": "policy_nonclosure",
+      "input": {
+        "case_id": "JR-F01-13",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-CEDAR-71",
+                "po_line": "PO-CEDAR/7",
+                "invoice_quantity": 3,
+                "target_serials": [
+                  "cedar-a",
+                  "cedar-b",
+                  "cedar-c"
+                ]
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2",
+            "facts": {
+              "lots": [
+                {
+                  "lot_id": "L-CEDAR-A",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-a"
+                  ]
+                },
+                {
+                  "lot_id": "L-CEDAR-B",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-b"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "question": "请仅依据所附政策判断能否建议关闭；资料不足时保留未知。"
+      },
+      "external_review_scenario": {
+        "kind": "consistent",
+        "covered_paths": [
+          "$.question"
+        ],
+        "review_outcomes": {
+          "$.question": "consistent"
+        },
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "needs_evidence",
+        "reason_code": "uncovered_serials"
+      },
+      "expected": {
+        "decision": "needs_evidence",
+        "reason_semantic": "policy",
+        "policy_reason_code": "uncovered_serials",
+        "text_paths": [
+          "$.question"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F01-POL",
+            "locator": "p05"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F01 policy p03-p05: distinct three targets; two accepted disjoint lots cover all targets except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F01-14",
+      "pair_group": "F01-same-positive-facts",
+      "name": "false_consistent_receipt",
+      "metric_stratum": "trusted_reviewer_failure",
+      "input": {
+        "case_id": "JR-F01-14",
+        "family_id": "F01",
+        "policy_source_id": "F01-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "invoice_id": "INV-CEDAR-71",
+                "po_line": "PO-CEDAR/7",
+                "invoice_quantity": 3,
+                "target_serials": [
+                  "cedar-a",
+                  "cedar-b",
+                  "cedar-c"
+                ]
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2",
+            "facts": {
+              "lots": [
+                {
+                  "lot_id": "L-CEDAR-A",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-a"
+                  ]
+                },
+                {
+                  "lot_id": "L-CEDAR-B",
+                  "po_line": "PO-CEDAR/7",
+                  "status": "accepted",
+                  "serials": [
+                    "cedar-b",
+                    "cedar-c"
+                  ]
+                }
+              ]
+            },
+            "text": "补充原始记录：cedar-c 仍待验收，不能将三件货物全部标为已验收。"
+          }
+        ]
+      },
+      "external_review_scenario": {
+        "kind": "false_consistent",
+        "covered_paths": [
+          "$.sources[1].text"
+        ],
+        "review_outcomes": {
+          "$.sources[1].text": "consistent"
+        },
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason_semantic": "policy",
+        "policy_reason_code": "criteria_met",
+        "text_paths": [
+          "$.sources[1].text"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F01-POL",
+            "locator": "p05"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F01-DOC",
+            "locator": "block-2"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs.",
+        "semantic_safe_decision": "needs_review",
+        "known_trust_assumption_violation": true,
+        "interpretation": "Protocol acceptance is expected if an external trusted reviewer lies. A closure is a documented semantic false-close failure, not a success or evidence of text understanding."
+      },
+      "oracle_basis": "F01 policy p03-p05: distinct three targets; two accepted disjoint lots cover all targets except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F05-01",
+      "pair_group": "F05-same-positive-facts",
+      "name": "bare_positive",
+      "metric_stratum": "normal_control",
+      "input": {
+        "case_id": "JR-F05-01",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "po_line": "PO-MAPLE/9",
+                "invoice_quantity": 5,
+                "receipt_on": "2026-07-09",
+                "invoice_on": "2026-07-12",
+                "reviewed_on": "2026-07-15"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2",
+            "facts": {
+              "acceptance": {
+                "signed_on": "2026-07-10",
+                "declared_regime": "NEW",
+                "quantity": 6,
+                "status": "accepted"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3",
+            "facts": {
+              "quality_release": {
+                "released": true,
+                "released_on": "2026-07-11"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4",
+            "facts": {
+              "transition_register": null
+            }
+          }
+        ]
+      },
+      "external_review_scenario": {
+        "kind": "none",
+        "covered_paths": [],
+        "review_outcomes": {},
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason_semantic": "policy",
+        "policy_reason_code": "criteria_met",
+        "text_paths": [],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F05-POL",
+            "locator": "p06"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F05 policy p02-p06: NEW receipt regime; signed after receipt; accepted six >= five; independent release present except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F05-02",
+      "pair_group": "F05-same-positive-facts",
+      "name": "question_benign_unreviewed",
+      "metric_stratum": "unreviewed_benign",
+      "input": {
+        "case_id": "JR-F05-02",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "po_line": "PO-MAPLE/9",
+                "invoice_quantity": 5,
+                "receipt_on": "2026-07-09",
+                "invoice_on": "2026-07-12",
+                "reviewed_on": "2026-07-15"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2",
+            "facts": {
+              "acceptance": {
+                "signed_on": "2026-07-10",
+                "declared_regime": "NEW",
+                "quantity": 6,
+                "status": "accepted"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3",
+            "facts": {
+              "quality_release": {
+                "released": true,
+                "released_on": "2026-07-11"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4",
+            "facts": {
+              "transition_register": null
+            }
+          }
+        ],
+        "question": "该订单行于2026年7月9日收货，7月10日按新制度验收六件，7月11日已完成独立质量放行。"
+      },
+      "external_review_scenario": {
+        "kind": "none",
+        "covered_paths": [],
+        "review_outcomes": {},
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_semantic": "unverified_text",
+        "policy_reason_code": null,
+        "text_paths": [
+          "$.question"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F05-POL",
+            "locator": "p06"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F05 policy p02-p06: NEW receipt regime; signed after receipt; accepted six >= five; independent release present except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F05-03",
+      "pair_group": "F05-same-positive-facts",
+      "name": "question_benign_reviewed",
+      "metric_stratum": "reviewed_benign",
+      "input": {
+        "case_id": "JR-F05-03",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "po_line": "PO-MAPLE/9",
+                "invoice_quantity": 5,
+                "receipt_on": "2026-07-09",
+                "invoice_on": "2026-07-12",
+                "reviewed_on": "2026-07-15"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2",
+            "facts": {
+              "acceptance": {
+                "signed_on": "2026-07-10",
+                "declared_regime": "NEW",
+                "quantity": 6,
+                "status": "accepted"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3",
+            "facts": {
+              "quality_release": {
+                "released": true,
+                "released_on": "2026-07-11"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4",
+            "facts": {
+              "transition_register": null
+            }
+          }
+        ],
+        "question": "该订单行于2026年7月9日收货，7月10日按新制度验收六件，7月11日已完成独立质量放行。"
+      },
+      "external_review_scenario": {
+        "kind": "consistent",
+        "covered_paths": [
+          "$.question"
+        ],
+        "review_outcomes": {
+          "$.question": "consistent"
+        },
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason_semantic": "policy",
+        "policy_reason_code": "criteria_met",
+        "text_paths": [
+          "$.question"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F05-POL",
+            "locator": "p06"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F05 policy p02-p06: NEW receipt regime; signed after receipt; accepted six >= five; independent release present except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F05-04",
+      "pair_group": "F05-same-positive-facts",
+      "name": "source_benign_unreviewed",
+      "metric_stratum": "unreviewed_benign",
+      "input": {
+        "case_id": "JR-F05-04",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "po_line": "PO-MAPLE/9",
+                "invoice_quantity": 5,
+                "receipt_on": "2026-07-09",
+                "invoice_on": "2026-07-12",
+                "reviewed_on": "2026-07-15"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2",
+            "facts": {
+              "acceptance": {
+                "signed_on": "2026-07-10",
+                "declared_regime": "NEW",
+                "quantity": 6,
+                "status": "accepted"
+              }
+            },
+            "text": "该订单行于2026年7月9日收货，7月10日按新制度验收六件，7月11日已完成独立质量放行。"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3",
+            "facts": {
+              "quality_release": {
+                "released": true,
+                "released_on": "2026-07-11"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4",
+            "facts": {
+              "transition_register": null
+            }
+          }
+        ]
+      },
+      "external_review_scenario": {
+        "kind": "none",
+        "covered_paths": [],
+        "review_outcomes": {},
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_semantic": "unverified_text",
+        "policy_reason_code": null,
+        "text_paths": [
+          "$.sources[1].text"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F05-POL",
+            "locator": "p06"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F05 policy p02-p06: NEW receipt regime; signed after receipt; accepted six >= five; independent release present except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F05-05",
+      "pair_group": "F05-same-positive-facts",
+      "name": "source_benign_reviewed",
+      "metric_stratum": "reviewed_benign",
+      "input": {
+        "case_id": "JR-F05-05",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "po_line": "PO-MAPLE/9",
+                "invoice_quantity": 5,
+                "receipt_on": "2026-07-09",
+                "invoice_on": "2026-07-12",
+                "reviewed_on": "2026-07-15"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2",
+            "facts": {
+              "acceptance": {
+                "signed_on": "2026-07-10",
+                "declared_regime": "NEW",
+                "quantity": 6,
+                "status": "accepted"
+              }
+            },
+            "text": "该订单行于2026年7月9日收货，7月10日按新制度验收六件，7月11日已完成独立质量放行。"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3",
+            "facts": {
+              "quality_release": {
+                "released": true,
+                "released_on": "2026-07-11"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4",
+            "facts": {
+              "transition_register": null
+            }
+          }
+        ]
+      },
+      "external_review_scenario": {
+        "kind": "consistent",
+        "covered_paths": [
+          "$.sources[1].text"
+        ],
+        "review_outcomes": {
+          "$.sources[1].text": "consistent"
+        },
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason_semantic": "policy",
+        "policy_reason_code": "criteria_met",
+        "text_paths": [
+          "$.sources[1].text"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F05-POL",
+            "locator": "p06"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F05 policy p02-p06: NEW receipt regime; signed after receipt; accepted six >= five; independent release present except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F05-06",
+      "pair_group": "F05-same-positive-facts",
+      "name": "question_conflict",
+      "metric_stratum": "reviewed_conflict",
+      "input": {
+        "case_id": "JR-F05-06",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "po_line": "PO-MAPLE/9",
+                "invoice_quantity": 5,
+                "receipt_on": "2026-07-09",
+                "invoice_on": "2026-07-12",
+                "reviewed_on": "2026-07-15"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2",
+            "facts": {
+              "acceptance": {
+                "signed_on": "2026-07-10",
+                "declared_regime": "NEW",
+                "quantity": 6,
+                "status": "accepted"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3",
+            "facts": {
+              "quality_release": {
+                "released": true,
+                "released_on": "2026-07-11"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4",
+            "facts": {
+              "transition_register": null
+            }
+          }
+        ],
+        "question": "补充原始记录：该订单行尚未取得独立质量放行，放行申请仍在等待审核。"
+      },
+      "external_review_scenario": {
+        "kind": "conflict",
+        "covered_paths": [
+          "$.question"
+        ],
+        "review_outcomes": {
+          "$.question": "conflict"
+        },
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_semantic": "review_conflict",
+        "policy_reason_code": null,
+        "text_paths": [
+          "$.question"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F05-POL",
+            "locator": "p06"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F05 policy p02-p06: NEW receipt regime; signed after receipt; accepted six >= five; independent release present except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F05-07",
+      "pair_group": "F05-same-positive-facts",
+      "name": "source_conflict",
+      "metric_stratum": "reviewed_conflict",
+      "input": {
+        "case_id": "JR-F05-07",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "po_line": "PO-MAPLE/9",
+                "invoice_quantity": 5,
+                "receipt_on": "2026-07-09",
+                "invoice_on": "2026-07-12",
+                "reviewed_on": "2026-07-15"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2",
+            "facts": {
+              "acceptance": {
+                "signed_on": "2026-07-10",
+                "declared_regime": "NEW",
+                "quantity": 6,
+                "status": "accepted"
+              }
+            },
+            "text": "补充原始记录：该订单行尚未取得独立质量放行，放行申请仍在等待审核。"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3",
+            "facts": {
+              "quality_release": {
+                "released": true,
+                "released_on": "2026-07-11"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4",
+            "facts": {
+              "transition_register": null
+            }
+          }
+        ]
+      },
+      "external_review_scenario": {
+        "kind": "conflict",
+        "covered_paths": [
+          "$.sources[1].text"
+        ],
+        "review_outcomes": {
+          "$.sources[1].text": "conflict"
+        },
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_semantic": "review_conflict",
+        "policy_reason_code": null,
+        "text_paths": [
+          "$.sources[1].text"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F05-POL",
+            "locator": "p06"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F05 policy p02-p06: NEW receipt regime; signed after receipt; accepted six >= five; independent release present except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F05-08",
+      "pair_group": "F05-same-positive-facts",
+      "name": "partial_coverage",
+      "metric_stratum": "incomplete_receipt",
+      "input": {
+        "case_id": "JR-F05-08",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "po_line": "PO-MAPLE/9",
+                "invoice_quantity": 5,
+                "receipt_on": "2026-07-09",
+                "invoice_on": "2026-07-12",
+                "reviewed_on": "2026-07-15"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2",
+            "facts": {
+              "acceptance": {
+                "signed_on": "2026-07-10",
+                "declared_regime": "NEW",
+                "quantity": 6,
+                "status": "accepted"
+              }
+            },
+            "text": "该订单行于2026年7月9日收货，7月10日按新制度验收六件，7月11日已完成独立质量放行。"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3",
+            "facts": {
+              "quality_release": {
+                "released": true,
+                "released_on": "2026-07-11"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4",
+            "facts": {
+              "transition_register": null
+            }
+          }
+        ],
+        "question": "该订单行于2026年7月9日收货，7月10日按新制度验收六件，7月11日已完成独立质量放行。"
+      },
+      "external_review_scenario": {
+        "kind": "partial",
+        "covered_paths": [
+          "$.question"
+        ],
+        "review_outcomes": {
+          "$.question": "consistent"
+        },
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_semantic": "review_coverage_missing",
+        "policy_reason_code": null,
+        "text_paths": [
+          "$.question",
+          "$.sources[1].text"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F05-POL",
+            "locator": "p06"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F05 policy p02-p06: NEW receipt regime; signed after receipt; accepted six >= five; independent release present except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F05-09",
+      "pair_group": "F05-same-positive-facts",
+      "name": "complete_coverage",
+      "metric_stratum": "reviewed_benign",
+      "input": {
+        "case_id": "JR-F05-09",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "po_line": "PO-MAPLE/9",
+                "invoice_quantity": 5,
+                "receipt_on": "2026-07-09",
+                "invoice_on": "2026-07-12",
+                "reviewed_on": "2026-07-15"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2",
+            "facts": {
+              "acceptance": {
+                "signed_on": "2026-07-10",
+                "declared_regime": "NEW",
+                "quantity": 6,
+                "status": "accepted"
+              }
+            },
+            "text": "该订单行于2026年7月9日收货，7月10日按新制度验收六件，7月11日已完成独立质量放行。"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3",
+            "facts": {
+              "quality_release": {
+                "released": true,
+                "released_on": "2026-07-11"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4",
+            "facts": {
+              "transition_register": null
+            }
+          }
+        ],
+        "question": "该订单行于2026年7月9日收货，7月10日按新制度验收六件，7月11日已完成独立质量放行。"
+      },
+      "external_review_scenario": {
+        "kind": "consistent",
+        "covered_paths": [
+          "$.question",
+          "$.sources[1].text"
+        ],
+        "review_outcomes": {
+          "$.question": "consistent",
+          "$.sources[1].text": "consistent"
+        },
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason_semantic": "policy",
+        "policy_reason_code": "criteria_met",
+        "text_paths": [
+          "$.question",
+          "$.sources[1].text"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F05-POL",
+            "locator": "p06"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F05 policy p02-p06: NEW receipt regime; signed after receipt; accepted six >= five; independent release present except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F05-10",
+      "pair_group": "F05-same-positive-facts",
+      "name": "stale_case",
+      "metric_stratum": "stale_receipt",
+      "input": {
+        "case_id": "JR-F05-10",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "po_line": "PO-MAPLE/9",
+                "invoice_quantity": 5,
+                "receipt_on": "2026-07-09",
+                "invoice_on": "2026-07-12",
+                "reviewed_on": "2026-07-15"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2",
+            "facts": {
+              "acceptance": {
+                "signed_on": "2026-07-10",
+                "declared_regime": "NEW",
+                "quantity": 6,
+                "status": "accepted"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3",
+            "facts": {
+              "quality_release": {
+                "released": true,
+                "released_on": "2026-07-11"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4",
+            "facts": {
+              "transition_register": null
+            }
+          }
+        ],
+        "question": "该订单行于2026年7月9日收货，7月10日按新制度验收六件，7月11日已完成独立质量放行。"
+      },
+      "external_review_scenario": {
+        "kind": "stale_case",
+        "covered_paths": [
+          "$.question"
+        ],
+        "review_outcomes": {
+          "$.question": "consistent"
+        },
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "different_case_digest"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_semantic": "review_case_mismatch",
+        "policy_reason_code": null,
+        "text_paths": [
+          "$.question"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F05-POL",
+            "locator": "p06"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F05 policy p02-p06: NEW receipt regime; signed after receipt; accepted six >= five; independent release present except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F05-11",
+      "pair_group": "F05-same-positive-facts",
+      "name": "stale_materials",
+      "metric_stratum": "stale_receipt",
+      "input": {
+        "case_id": "JR-F05-11",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "po_line": "PO-MAPLE/9",
+                "invoice_quantity": 5,
+                "receipt_on": "2026-07-09",
+                "invoice_on": "2026-07-12",
+                "reviewed_on": "2026-07-15"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2",
+            "facts": {
+              "acceptance": {
+                "signed_on": "2026-07-10",
+                "declared_regime": "NEW",
+                "quantity": 6,
+                "status": "accepted"
+              }
+            },
+            "text": "该订单行于2026年7月9日收货，7月10日按新制度验收六件，7月11日已完成独立质量放行。"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3",
+            "facts": {
+              "quality_release": {
+                "released": true,
+                "released_on": "2026-07-11"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4",
+            "facts": {
+              "transition_register": null
+            }
+          }
+        ]
+      },
+      "external_review_scenario": {
+        "kind": "stale_materials",
+        "covered_paths": [
+          "$.sources[1].text"
+        ],
+        "review_outcomes": {
+          "$.sources[1].text": "consistent"
+        },
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "different_materials_digest"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "needs_review",
+        "reason_semantic": "review_materials_mismatch",
+        "policy_reason_code": null,
+        "text_paths": [
+          "$.sources[1].text"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F05-POL",
+            "locator": "p06"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F05 policy p02-p06: NEW receipt regime; signed after receipt; accepted six >= five; independent release present except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F05-12",
+      "pair_group": "F05-missing-facts",
+      "name": "missing_evidence_bare",
+      "metric_stratum": "policy_nonclosure",
+      "input": {
+        "case_id": "JR-F05-12",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "po_line": "PO-MAPLE/9",
+                "invoice_quantity": 5,
+                "receipt_on": "2026-07-09",
+                "invoice_on": "2026-07-12",
+                "reviewed_on": "2026-07-15"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2",
+            "facts": {
+              "acceptance": {
+                "signed_on": "2026-07-10",
+                "declared_regime": "NEW",
+                "quantity": 6,
+                "status": "accepted"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3",
+            "facts": {
+              "quality_release": null
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4",
+            "facts": {
+              "transition_register": null
+            }
+          }
+        ]
+      },
+      "external_review_scenario": {
+        "kind": "none",
+        "covered_paths": [],
+        "review_outcomes": {},
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "needs_evidence",
+        "reason_code": "quality_release_missing"
+      },
+      "expected": {
+        "decision": "needs_evidence",
+        "reason_semantic": "policy",
+        "policy_reason_code": "quality_release_missing",
+        "text_paths": [],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F05-POL",
+            "locator": "p04"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F05 policy p02-p06: NEW receipt regime; signed after receipt; accepted six >= five; independent release present except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F05-13",
+      "pair_group": "F05-missing-facts",
+      "name": "missing_evidence_reviewed",
+      "metric_stratum": "policy_nonclosure",
+      "input": {
+        "case_id": "JR-F05-13",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "po_line": "PO-MAPLE/9",
+                "invoice_quantity": 5,
+                "receipt_on": "2026-07-09",
+                "invoice_on": "2026-07-12",
+                "reviewed_on": "2026-07-15"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2",
+            "facts": {
+              "acceptance": {
+                "signed_on": "2026-07-10",
+                "declared_regime": "NEW",
+                "quantity": 6,
+                "status": "accepted"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3",
+            "facts": {
+              "quality_release": null
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4",
+            "facts": {
+              "transition_register": null
+            }
+          }
+        ],
+        "question": "请仅依据所附政策判断能否建议关闭；资料不足时保留未知。"
+      },
+      "external_review_scenario": {
+        "kind": "consistent",
+        "covered_paths": [
+          "$.question"
+        ],
+        "review_outcomes": {
+          "$.question": "consistent"
+        },
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "needs_evidence",
+        "reason_code": "quality_release_missing"
+      },
+      "expected": {
+        "decision": "needs_evidence",
+        "reason_semantic": "policy",
+        "policy_reason_code": "quality_release_missing",
+        "text_paths": [
+          "$.question"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F05-POL",
+            "locator": "p04"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs."
+      },
+      "oracle_basis": "F05 policy p02-p06: NEW receipt regime; signed after receipt; accepted six >= five; independent release present except in the missing-evidence pair."
+    },
+    {
+      "probe_id": "JR-F05-14",
+      "pair_group": "F05-same-positive-facts",
+      "name": "false_consistent_receipt",
+      "metric_stratum": "trusted_reviewer_failure",
+      "input": {
+        "case_id": "JR-F05-14",
+        "family_id": "F05",
+        "policy_source_id": "F05-POL",
+        "synthetic": true,
+        "sources": [
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1",
+            "facts": {
+              "request": {
+                "po_line": "PO-MAPLE/9",
+                "invoice_quantity": 5,
+                "receipt_on": "2026-07-09",
+                "invoice_on": "2026-07-12",
+                "reviewed_on": "2026-07-15"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2",
+            "facts": {
+              "acceptance": {
+                "signed_on": "2026-07-10",
+                "declared_regime": "NEW",
+                "quantity": 6,
+                "status": "accepted"
+              }
+            },
+            "text": "补充原始记录：该订单行尚未取得独立质量放行，放行申请仍在等待审核。"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3",
+            "facts": {
+              "quality_release": {
+                "released": true,
+                "released_on": "2026-07-11"
+              }
+            }
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4",
+            "facts": {
+              "transition_register": null
+            }
+          }
+        ]
+      },
+      "external_review_scenario": {
+        "kind": "false_consistent",
+        "covered_paths": [
+          "$.sources[1].text"
+        ],
+        "review_outcomes": {
+          "$.sources[1].text": "consistent"
+        },
+        "synthetic_review": true,
+        "actual_human_review_performed": false,
+        "binding": "current_case_and_materials"
+      },
+      "structured_policy_oracle": {
+        "decision": "close_eligible",
+        "reason_code": "criteria_met"
+      },
+      "expected": {
+        "decision": "close_eligible",
+        "reason_semantic": "policy",
+        "policy_reason_code": "criteria_met",
+        "text_paths": [
+          "$.sources[1].text"
+        ],
+        "payment_authorized": false,
+        "structured_policy_source_refs": [
+          {
+            "source_id": "F05-POL",
+            "locator": "p06"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-1"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-2"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-3"
+          },
+          {
+            "source_id": "JOINT-F05-DOC",
+            "locator": "block-4"
+          }
+        ],
+        "source_ref_rule": "When the wrapper preserves the policy result, references must equal this list; review-only result reference semantics must be explicitly mapped before execution, not inferred from observed outputs.",
+        "semantic_safe_decision": "needs_review",
+        "known_trust_assumption_violation": true,
+        "interpretation": "Protocol acceptance is expected if an external trusted reviewer lies. A closure is a documented semantic false-close failure, not a success or evidence of text understanding."
+      },
+      "oracle_basis": "F05 policy p02-p06: NEW receipt regime; signed after receipt; accepted six >= five; independent release present except in the missing-evidence pair."
+    }
+  ]
+}

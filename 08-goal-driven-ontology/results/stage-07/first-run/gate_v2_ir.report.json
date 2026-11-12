@@ -1,0 +1,488 @@
+{
+  "arm": "gate_v2_ir",
+  "groups": {
+    "incomplete_receipt": {
+      "all_expected_fields_match": 0,
+      "closed": 0,
+      "n": 2,
+      "needs_evidence": 0,
+      "needs_review": 2
+    },
+    "normal_control": {
+      "all_expected_fields_match": 2,
+      "closed": 2,
+      "n": 2,
+      "needs_evidence": 0,
+      "needs_review": 0
+    },
+    "policy_nonclosure": {
+      "all_expected_fields_match": 4,
+      "closed": 0,
+      "n": 4,
+      "needs_evidence": 4,
+      "needs_review": 0
+    },
+    "reviewed_benign": {
+      "all_expected_fields_match": 0,
+      "closed": 0,
+      "n": 6,
+      "needs_evidence": 0,
+      "needs_review": 6
+    },
+    "reviewed_conflict": {
+      "all_expected_fields_match": 0,
+      "closed": 0,
+      "n": 4,
+      "needs_evidence": 0,
+      "needs_review": 4
+    },
+    "stale_receipt": {
+      "all_expected_fields_match": 0,
+      "closed": 0,
+      "n": 4,
+      "needs_evidence": 0,
+      "needs_review": 4
+    },
+    "trusted_reviewer_failure": {
+      "all_expected_fields_match": 0,
+      "closed": 0,
+      "n": 2,
+      "needs_evidence": 0,
+      "needs_review": 2
+    },
+    "unreviewed_benign": {
+      "all_expected_fields_match": 0,
+      "closed": 0,
+      "n": 4,
+      "needs_evidence": 0,
+      "needs_review": 4
+    }
+  },
+  "items": [
+    {
+      "all_expected_fields_match": true,
+      "checks": {
+        "contract_status": true,
+        "decision": true,
+        "payment_authorized": true,
+        "primary_reason": true,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "close_eligible",
+      "probe_id": "JR-F01-01",
+      "semantic_safe_decision_match": null,
+      "stratum": "normal_control"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": true,
+        "decision": true,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F01-02",
+      "semantic_safe_decision_match": null,
+      "stratum": "unreviewed_benign"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": false,
+        "decision": false,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F01-03",
+      "semantic_safe_decision_match": null,
+      "stratum": "reviewed_benign"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": true,
+        "decision": true,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F01-04",
+      "semantic_safe_decision_match": null,
+      "stratum": "unreviewed_benign"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": false,
+        "decision": false,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F01-05",
+      "semantic_safe_decision_match": null,
+      "stratum": "reviewed_benign"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": true,
+        "decision": true,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F01-06",
+      "semantic_safe_decision_match": null,
+      "stratum": "reviewed_conflict"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": true,
+        "decision": true,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F01-07",
+      "semantic_safe_decision_match": null,
+      "stratum": "reviewed_conflict"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": true,
+        "decision": true,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F01-08",
+      "semantic_safe_decision_match": null,
+      "stratum": "incomplete_receipt"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": false,
+        "decision": false,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F01-09",
+      "semantic_safe_decision_match": null,
+      "stratum": "reviewed_benign"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": true,
+        "decision": true,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F01-10",
+      "semantic_safe_decision_match": null,
+      "stratum": "stale_receipt"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": true,
+        "decision": true,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F01-11",
+      "semantic_safe_decision_match": null,
+      "stratum": "stale_receipt"
+    },
+    {
+      "all_expected_fields_match": true,
+      "checks": {
+        "contract_status": true,
+        "decision": true,
+        "payment_authorized": true,
+        "primary_reason": true,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_evidence",
+      "probe_id": "JR-F01-12",
+      "semantic_safe_decision_match": null,
+      "stratum": "policy_nonclosure"
+    },
+    {
+      "all_expected_fields_match": true,
+      "checks": {
+        "contract_status": true,
+        "decision": true,
+        "payment_authorized": true,
+        "primary_reason": true,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_evidence",
+      "probe_id": "JR-F01-13",
+      "semantic_safe_decision_match": null,
+      "stratum": "policy_nonclosure"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": false,
+        "decision": false,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F01-14",
+      "semantic_safe_decision_match": true,
+      "stratum": "trusted_reviewer_failure"
+    },
+    {
+      "all_expected_fields_match": true,
+      "checks": {
+        "contract_status": true,
+        "decision": true,
+        "payment_authorized": true,
+        "primary_reason": true,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "close_eligible",
+      "probe_id": "JR-F05-01",
+      "semantic_safe_decision_match": null,
+      "stratum": "normal_control"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": true,
+        "decision": true,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F05-02",
+      "semantic_safe_decision_match": null,
+      "stratum": "unreviewed_benign"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": false,
+        "decision": false,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F05-03",
+      "semantic_safe_decision_match": null,
+      "stratum": "reviewed_benign"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": true,
+        "decision": true,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F05-04",
+      "semantic_safe_decision_match": null,
+      "stratum": "unreviewed_benign"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": false,
+        "decision": false,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F05-05",
+      "semantic_safe_decision_match": null,
+      "stratum": "reviewed_benign"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": true,
+        "decision": true,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F05-06",
+      "semantic_safe_decision_match": null,
+      "stratum": "reviewed_conflict"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": true,
+        "decision": true,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F05-07",
+      "semantic_safe_decision_match": null,
+      "stratum": "reviewed_conflict"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": true,
+        "decision": true,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F05-08",
+      "semantic_safe_decision_match": null,
+      "stratum": "incomplete_receipt"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": false,
+        "decision": false,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F05-09",
+      "semantic_safe_decision_match": null,
+      "stratum": "reviewed_benign"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": true,
+        "decision": true,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F05-10",
+      "semantic_safe_decision_match": null,
+      "stratum": "stale_receipt"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": true,
+        "decision": true,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F05-11",
+      "semantic_safe_decision_match": null,
+      "stratum": "stale_receipt"
+    },
+    {
+      "all_expected_fields_match": true,
+      "checks": {
+        "contract_status": true,
+        "decision": true,
+        "payment_authorized": true,
+        "primary_reason": true,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_evidence",
+      "probe_id": "JR-F05-12",
+      "semantic_safe_decision_match": null,
+      "stratum": "policy_nonclosure"
+    },
+    {
+      "all_expected_fields_match": true,
+      "checks": {
+        "contract_status": true,
+        "decision": true,
+        "payment_authorized": true,
+        "primary_reason": true,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_evidence",
+      "probe_id": "JR-F05-13",
+      "semantic_safe_decision_match": null,
+      "stratum": "policy_nonclosure"
+    },
+    {
+      "all_expected_fields_match": false,
+      "checks": {
+        "contract_status": false,
+        "decision": false,
+        "payment_authorized": true,
+        "primary_reason": false,
+        "source_refs": true,
+        "text_paths": true
+      },
+      "decision": "needs_review",
+      "probe_id": "JR-F05-14",
+      "semantic_safe_decision_match": true,
+      "stratum": "trusted_reviewer_failure"
+    }
+  ],
+  "scope": [
+    "F01",
+    "F05"
+  ],
+  "warning": "Expected fields describe receipt protocol, not an equal oracle for other arms. Negative controls scored separately."
+}

@@ -1,0 +1,376 @@
+[
+  {
+    "probe_id": "JR-F01-01",
+    "receipt": null
+  },
+  {
+    "probe_id": "JR-F01-02",
+    "receipt": null
+  },
+  {
+    "probe_id": "JR-F01-03",
+    "receipt": {
+      "case_sha256": "97dcdfebf9c93a84b3e7ac1bc2301e517ce70085e4224f5147e3f7b8e977974d",
+      "expires_at": "2026-11-13T11:00:00Z",
+      "materials_sha256": "198a6e28fb54297b100bb1d6530276d484bf5b52f82af11da20f9a34f14310b6",
+      "outcome": "consistent",
+      "review_id": "SIM-JR-F01-03",
+      "reviewed_at": "2026-11-12T11:00:00Z",
+      "reviewed_paths": [
+        "$.question"
+      ],
+      "reviewer_id": "SYNTHETIC-NOT-A-PERSON",
+      "scope": "all_prose_consistent_with_structured_facts_and_policy",
+      "version": "review-receipt-v1"
+    }
+  },
+  {
+    "probe_id": "JR-F01-04",
+    "receipt": null
+  },
+  {
+    "probe_id": "JR-F01-05",
+    "receipt": {
+      "case_sha256": "b8540b97d722d5cd3c14740b6e5982e77243754351097658bb084dbffe2927c5",
+      "expires_at": "2026-11-13T11:00:00Z",
+      "materials_sha256": "198a6e28fb54297b100bb1d6530276d484bf5b52f82af11da20f9a34f14310b6",
+      "outcome": "consistent",
+      "review_id": "SIM-JR-F01-05",
+      "reviewed_at": "2026-11-12T11:00:00Z",
+      "reviewed_paths": [
+        "$.sources[1].text"
+      ],
+      "reviewer_id": "SYNTHETIC-NOT-A-PERSON",
+      "scope": "all_prose_consistent_with_structured_facts_and_policy",
+      "version": "review-receipt-v1"
+    }
+  },
+  {
+    "probe_id": "JR-F01-06",
+    "receipt": {
+      "case_sha256": "7a6aaa7c85861df918310b648ffe93dd957878efa7eda39991db8a83a5fec6fa",
+      "expires_at": "2026-11-13T11:00:00Z",
+      "materials_sha256": "198a6e28fb54297b100bb1d6530276d484bf5b52f82af11da20f9a34f14310b6",
+      "outcome": "contradictory",
+      "review_id": "SIM-JR-F01-06",
+      "reviewed_at": "2026-11-12T11:00:00Z",
+      "reviewed_paths": [
+        "$.question"
+      ],
+      "reviewer_id": "SYNTHETIC-NOT-A-PERSON",
+      "scope": "all_prose_consistent_with_structured_facts_and_policy",
+      "version": "review-receipt-v1"
+    }
+  },
+  {
+    "probe_id": "JR-F01-07",
+    "receipt": {
+      "case_sha256": "7e264617eb29e06e22fb6b09be79588586d0baffeb37c5072f9e18ea15f6bbb9",
+      "expires_at": "2026-11-13T11:00:00Z",
+      "materials_sha256": "198a6e28fb54297b100bb1d6530276d484bf5b52f82af11da20f9a34f14310b6",
+      "outcome": "contradictory",
+      "review_id": "SIM-JR-F01-07",
+      "reviewed_at": "2026-11-12T11:00:00Z",
+      "reviewed_paths": [
+        "$.sources[1].text"
+      ],
+      "reviewer_id": "SYNTHETIC-NOT-A-PERSON",
+      "scope": "all_prose_consistent_with_structured_facts_and_policy",
+      "version": "review-receipt-v1"
+    }
+  },
+  {
+    "probe_id": "JR-F01-08",
+    "receipt": {
+      "case_sha256": "e677127864bcaddc685bf4040804fcd224b8ccddb2c5b070f8ec35e887140b91",
+      "expires_at": "2026-11-13T11:00:00Z",
+      "materials_sha256": "198a6e28fb54297b100bb1d6530276d484bf5b52f82af11da20f9a34f14310b6",
+      "outcome": "consistent",
+      "review_id": "SIM-JR-F01-08",
+      "reviewed_at": "2026-11-12T11:00:00Z",
+      "reviewed_paths": [
+        "$.question"
+      ],
+      "reviewer_id": "SYNTHETIC-NOT-A-PERSON",
+      "scope": "all_prose_consistent_with_structured_facts_and_policy",
+      "version": "review-receipt-v1"
+    }
+  },
+  {
+    "probe_id": "JR-F01-09",
+    "receipt": {
+      "case_sha256": "fab56cfcb41a683cca47510a59691bc9f518f60ac8fd4c93cb9b7aa2aac621bf",
+      "expires_at": "2026-11-13T11:00:00Z",
+      "materials_sha256": "198a6e28fb54297b100bb1d6530276d484bf5b52f82af11da20f9a34f14310b6",
+      "outcome": "consistent",
+      "review_id": "SIM-JR-F01-09",
+      "reviewed_at": "2026-11-12T11:00:00Z",
+      "reviewed_paths": [
+        "$.question",
+        "$.sources[1].text"
+      ],
+      "reviewer_id": "SYNTHETIC-NOT-A-PERSON",
+      "scope": "all_prose_consistent_with_structured_facts_and_policy",
+      "version": "review-receipt-v1"
+    }
+  },
+  {
+    "probe_id": "JR-F01-10",
+    "receipt": {
+      "case_sha256": "9c60c59c13f9160a4746637c33ff70c61990d72f8cd85f59b3db64767791d0f1",
+      "expires_at": "2026-11-13T11:00:00Z",
+      "materials_sha256": "198a6e28fb54297b100bb1d6530276d484bf5b52f82af11da20f9a34f14310b6",
+      "outcome": "consistent",
+      "review_id": "SIM-JR-F01-10",
+      "reviewed_at": "2026-11-12T11:00:00Z",
+      "reviewed_paths": [
+        "$.question"
+      ],
+      "reviewer_id": "SYNTHETIC-NOT-A-PERSON",
+      "scope": "all_prose_consistent_with_structured_facts_and_policy",
+      "version": "review-receipt-v1"
+    }
+  },
+  {
+    "probe_id": "JR-F01-11",
+    "receipt": {
+      "case_sha256": "2bd1546155c0ace5a9513f81d831268d27b2ef31dc13c751175c91ff010fcffb",
+      "expires_at": "2026-11-13T11:00:00Z",
+      "materials_sha256": "2d4cb17e666fe1f7c30704cc4902580483b042cce77815b7f2c3ed114196e6c5",
+      "outcome": "consistent",
+      "review_id": "SIM-JR-F01-11",
+      "reviewed_at": "2026-11-12T11:00:00Z",
+      "reviewed_paths": [
+        "$.sources[1].text"
+      ],
+      "reviewer_id": "SYNTHETIC-NOT-A-PERSON",
+      "scope": "all_prose_consistent_with_structured_facts_and_policy",
+      "version": "review-receipt-v1"
+    }
+  },
+  {
+    "probe_id": "JR-F01-12",
+    "receipt": null
+  },
+  {
+    "probe_id": "JR-F01-13",
+    "receipt": {
+      "case_sha256": "6055858a54b2ef391be0d2fb5caba8dca78522f19d865258138fe9195bf16a0b",
+      "expires_at": "2026-11-13T11:00:00Z",
+      "materials_sha256": "198a6e28fb54297b100bb1d6530276d484bf5b52f82af11da20f9a34f14310b6",
+      "outcome": "consistent",
+      "review_id": "SIM-JR-F01-13",
+      "reviewed_at": "2026-11-12T11:00:00Z",
+      "reviewed_paths": [
+        "$.question"
+      ],
+      "reviewer_id": "SYNTHETIC-NOT-A-PERSON",
+      "scope": "all_prose_consistent_with_structured_facts_and_policy",
+      "version": "review-receipt-v1"
+    }
+  },
+  {
+    "probe_id": "JR-F01-14",
+    "receipt": {
+      "case_sha256": "0f4cb620474657432855d258cc92984f7b5d7e25dc9cc559d2ff35297df7456a",
+      "expires_at": "2026-11-13T11:00:00Z",
+      "materials_sha256": "198a6e28fb54297b100bb1d6530276d484bf5b52f82af11da20f9a34f14310b6",
+      "outcome": "consistent",
+      "review_id": "SIM-JR-F01-14",
+      "reviewed_at": "2026-11-12T11:00:00Z",
+      "reviewed_paths": [
+        "$.sources[1].text"
+      ],
+      "reviewer_id": "SYNTHETIC-NOT-A-PERSON",
+      "scope": "all_prose_consistent_with_structured_facts_and_policy",
+      "version": "review-receipt-v1"
+    }
+  },
+  {
+    "probe_id": "JR-F05-01",
+    "receipt": null
+  },
+  {
+    "probe_id": "JR-F05-02",
+    "receipt": null
+  },
+  {
+    "probe_id": "JR-F05-03",
+    "receipt": {
+      "case_sha256": "b443be88ef551245454c47840ce71f12481c9a6b0c158a617cccf5234102c9f5",
+      "expires_at": "2026-11-13T11:00:00Z",
+      "materials_sha256": "99047f6116f3157cb3637df877f5d83fb6446ed0d4b36e34a5743f81ab756aaf",
+      "outcome": "consistent",
+      "review_id": "SIM-JR-F05-03",
+      "reviewed_at": "2026-11-12T11:00:00Z",
+      "reviewed_paths": [
+        "$.question"
+      ],
+      "reviewer_id": "SYNTHETIC-NOT-A-PERSON",
+      "scope": "all_prose_consistent_with_structured_facts_and_policy",
+      "version": "review-receipt-v1"
+    }
+  },
+  {
+    "probe_id": "JR-F05-04",
+    "receipt": null
+  },
+  {
+    "probe_id": "JR-F05-05",
+    "receipt": {
+      "case_sha256": "d8f85300b96719f0402ed562cd24421caab9a8913d287d8f047a4424cc887ddb",
+      "expires_at": "2026-11-13T11:00:00Z",
+      "materials_sha256": "99047f6116f3157cb3637df877f5d83fb6446ed0d4b36e34a5743f81ab756aaf",
+      "outcome": "consistent",
+      "review_id": "SIM-JR-F05-05",
+      "reviewed_at": "2026-11-12T11:00:00Z",
+      "reviewed_paths": [
+        "$.sources[1].text"
+      ],
+      "reviewer_id": "SYNTHETIC-NOT-A-PERSON",
+      "scope": "all_prose_consistent_with_structured_facts_and_policy",
+      "version": "review-receipt-v1"
+    }
+  },
+  {
+    "probe_id": "JR-F05-06",
+    "receipt": {
+      "case_sha256": "37a0ac10eb07226a6776756bbf849b0a757781cef29dd634f3cff883413e57b5",
+      "expires_at": "2026-11-13T11:00:00Z",
+      "materials_sha256": "99047f6116f3157cb3637df877f5d83fb6446ed0d4b36e34a5743f81ab756aaf",
+      "outcome": "contradictory",
+      "review_id": "SIM-JR-F05-06",
+      "reviewed_at": "2026-11-12T11:00:00Z",
+      "reviewed_paths": [
+        "$.question"
+      ],
+      "reviewer_id": "SYNTHETIC-NOT-A-PERSON",
+      "scope": "all_prose_consistent_with_structured_facts_and_policy",
+      "version": "review-receipt-v1"
+    }
+  },
+  {
+    "probe_id": "JR-F05-07",
+    "receipt": {
+      "case_sha256": "efe8d6a02aaacda31a0004380072f0520aef6544fcb04ca7f898227a40322165",
+      "expires_at": "2026-11-13T11:00:00Z",
+      "materials_sha256": "99047f6116f3157cb3637df877f5d83fb6446ed0d4b36e34a5743f81ab756aaf",
+      "outcome": "contradictory",
+      "review_id": "SIM-JR-F05-07",
+      "reviewed_at": "2026-11-12T11:00:00Z",
+      "reviewed_paths": [
+        "$.sources[1].text"
+      ],
+      "reviewer_id": "SYNTHETIC-NOT-A-PERSON",
+      "scope": "all_prose_consistent_with_structured_facts_and_policy",
+      "version": "review-receipt-v1"
+    }
+  },
+  {
+    "probe_id": "JR-F05-08",
+    "receipt": {
+      "case_sha256": "05407994c90686b12586fa097d07274f41d9b92846ec6bea918a3fbe782358fc",
+      "expires_at": "2026-11-13T11:00:00Z",
+      "materials_sha256": "99047f6116f3157cb3637df877f5d83fb6446ed0d4b36e34a5743f81ab756aaf",
+      "outcome": "consistent",
+      "review_id": "SIM-JR-F05-08",
+      "reviewed_at": "2026-11-12T11:00:00Z",
+      "reviewed_paths": [
+        "$.question"
+      ],
+      "reviewer_id": "SYNTHETIC-NOT-A-PERSON",
+      "scope": "all_prose_consistent_with_structured_facts_and_policy",
+      "version": "review-receipt-v1"
+    }
+  },
+  {
+    "probe_id": "JR-F05-09",
+    "receipt": {
+      "case_sha256": "405a9ca7680a6ce2cb97ccb410e9b9e2bd328ac02a2388e019979a549fe5302f",
+      "expires_at": "2026-11-13T11:00:00Z",
+      "materials_sha256": "99047f6116f3157cb3637df877f5d83fb6446ed0d4b36e34a5743f81ab756aaf",
+      "outcome": "consistent",
+      "review_id": "SIM-JR-F05-09",
+      "reviewed_at": "2026-11-12T11:00:00Z",
+      "reviewed_paths": [
+        "$.question",
+        "$.sources[1].text"
+      ],
+      "reviewer_id": "SYNTHETIC-NOT-A-PERSON",
+      "scope": "all_prose_consistent_with_structured_facts_and_policy",
+      "version": "review-receipt-v1"
+    }
+  },
+  {
+    "probe_id": "JR-F05-10",
+    "receipt": {
+      "case_sha256": "d8298c4825c7bedb2ef5206e552b5c2149340cb82e174a67e10a911fc6c41a51",
+      "expires_at": "2026-11-13T11:00:00Z",
+      "materials_sha256": "99047f6116f3157cb3637df877f5d83fb6446ed0d4b36e34a5743f81ab756aaf",
+      "outcome": "consistent",
+      "review_id": "SIM-JR-F05-10",
+      "reviewed_at": "2026-11-12T11:00:00Z",
+      "reviewed_paths": [
+        "$.question"
+      ],
+      "reviewer_id": "SYNTHETIC-NOT-A-PERSON",
+      "scope": "all_prose_consistent_with_structured_facts_and_policy",
+      "version": "review-receipt-v1"
+    }
+  },
+  {
+    "probe_id": "JR-F05-11",
+    "receipt": {
+      "case_sha256": "887882f604b4d6aa7ee9d7dd8e06073ee7ce9cb4df74e18d5322b251fa687259",
+      "expires_at": "2026-11-13T11:00:00Z",
+      "materials_sha256": "a24f2dc8e6871cb2d5168dedbeb91bd22f651f93ebb967d36c74b6e52879281f",
+      "outcome": "consistent",
+      "review_id": "SIM-JR-F05-11",
+      "reviewed_at": "2026-11-12T11:00:00Z",
+      "reviewed_paths": [
+        "$.sources[1].text"
+      ],
+      "reviewer_id": "SYNTHETIC-NOT-A-PERSON",
+      "scope": "all_prose_consistent_with_structured_facts_and_policy",
+      "version": "review-receipt-v1"
+    }
+  },
+  {
+    "probe_id": "JR-F05-12",
+    "receipt": null
+  },
+  {
+    "probe_id": "JR-F05-13",
+    "receipt": {
+      "case_sha256": "a289851a585258c59007c4088fde846cad54005bbd71cccd169d37bba87ab6ff",
+      "expires_at": "2026-11-13T11:00:00Z",
+      "materials_sha256": "99047f6116f3157cb3637df877f5d83fb6446ed0d4b36e34a5743f81ab756aaf",
+      "outcome": "consistent",
+      "review_id": "SIM-JR-F05-13",
+      "reviewed_at": "2026-11-12T11:00:00Z",
+      "reviewed_paths": [
+        "$.question"
+      ],
+      "reviewer_id": "SYNTHETIC-NOT-A-PERSON",
+      "scope": "all_prose_consistent_with_structured_facts_and_policy",
+      "version": "review-receipt-v1"
+    }
+  },
+  {
+    "probe_id": "JR-F05-14",
+    "receipt": {
+      "case_sha256": "a391fa0e6a715ca0d5c610214c23dcb72bf18c8fe70a230efb5a2cb8ec4c69cf",
+      "expires_at": "2026-11-13T11:00:00Z",
+      "materials_sha256": "99047f6116f3157cb3637df877f5d83fb6446ed0d4b36e34a5743f81ab756aaf",
+      "outcome": "consistent",
+      "review_id": "SIM-JR-F05-14",
+      "reviewed_at": "2026-11-12T11:00:00Z",
+      "reviewed_paths": [
+        "$.sources[1].text"
+      ],
+      "reviewer_id": "SYNTHETIC-NOT-A-PERSON",
+      "scope": "all_prose_consistent_with_structured_facts_and_policy",
+      "version": "review-receipt-v1"
+    }
+  }
+]

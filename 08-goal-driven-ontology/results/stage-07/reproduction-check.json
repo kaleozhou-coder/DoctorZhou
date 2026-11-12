@@ -1,0 +1,45 @@
+{
+  "files": [
+    {
+      "file": "gate_v2_ir.predictions.json",
+      "sha256": "f5e9bec008087bad6aa7a80d175eac1e4b6f6d48559eba907f5dcf2ea7b10751",
+      "same_bytes": true
+    },
+    {
+      "file": "gate_v2_ir.report.json",
+      "sha256": "6f42b483c05b1797c94bb74a8bc4ea9d3d8168cd1cdb7eb3a54c4a842ed64386",
+      "same_bytes": true
+    },
+    {
+      "file": "ir_only.predictions.json",
+      "sha256": "1062a66259d46d6c41596ba2f37cc7a8b2d2039e84d1ce4ff700189249683ded",
+      "same_bytes": true
+    },
+    {
+      "file": "ir_only.report.json",
+      "sha256": "a02c20866817f7e9ede69526879db8a72d3ae5060e7e7cd945fb5163f9b41ce1",
+      "same_bytes": true
+    },
+    {
+      "file": "receipt_ir.predictions.json",
+      "sha256": "062af2e02480cb88a1bb33fe369d9fb23fcb295e7adb630b2a9d7691ba87ca27",
+      "same_bytes": true
+    },
+    {
+      "file": "receipt_ir.report.json",
+      "sha256": "e5f807b1e10cda2ef8f345221f68f77a2f2b8a1725b69505e0210096c7426fa4",
+      "same_bytes": true
+    },
+    {
+      "file": "simulated-receipts.json",
+      "sha256": "67a32dd30594341d9fa3e74748b50a46a920c2ed666767aa1a0270c23a8827f4",
+      "same_bytes": true
+    },
+    {
+      "file": "summary.json",
+      "sha256": "11ab6140ad86d583c60b635f16781ca18785831c8aad4a76f6aa05f3d72aa98b",
+      "same_bytes": true
+    }
+  ],
+  "count": 8
+}

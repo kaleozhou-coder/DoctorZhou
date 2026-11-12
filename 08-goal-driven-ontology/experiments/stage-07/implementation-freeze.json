@@ -1,0 +1,21 @@
+{
+  "stage": 7,
+  "external_preregistration": false,
+  "sha256": {
+    "src/run_stage07.py": "cef820dd5fd3eeb0d18b31371a24083bb7a584dd483ab8861075efb0f1c9a812",
+    "src/review_receipt_gate.py": "7d44320394aebae9c8849e18574beaea6c546cd37e7eedb98a9fe061fcd688aa",
+    "src/input_contract.py": "0b124a623855dee04db19d299e1cad769e13c4f58a5a3cf61baf5c46c964e60a",
+    "src/input_contract_v2.py": "5eeb51571b670880644ae31ed748539d04fc775c525c70e2f6f7604c1f1a93f8",
+    "src/rule_ir_v3.py": "f73b417c46478b284e816eec5eee519dd024700c29064ffb18d991733cf9f495",
+    "src/policy_baseline.py": "ded2f89be60605313a0e87c99597856a80af7e8136b90dd6f065ca3f99feec4f",
+    "src/run_stage05.py": "f69903f46266b788848e83161494ca1416cc91c1af742f7e0c037d6b199c9710",
+    "benchmark/joint-review-v1/probes.json": "50ce718ffff6a4ea22aa09233835203ec5795bc1d33e9875fc468920a5ce1880",
+    "benchmark/joint-review-v1/DESIGN.zh.md": "161c4cb60d404b359c415316eff08c8a0544e1c68938b54c547713daadfe79a8",
+    "experiments/stage-07/protocol.zh.md": "abe50727ab41e85ff2013b19ee536157b7dcfc2f017fad1c895ad5692f6d4bd7",
+    "experiments/stage-07/oracle-mapping.zh.md": "77ad04fa72dd5fc2d5cac660cddc8231334126b97566643b04d8e5898c80d63f",
+    "ontology/ir-reference-v3/F01.json": "f6743d263de055969be6f2e4b47f190530f4e0d2f817c8101f251425f93e96b1",
+    "ontology/ir-reference-v3/F05.json": "de702b5739973ae27252a6298880075cba2c8e10d94b760632623087555c3708",
+    "benchmark/v1/model-facing/F01/materials.json": "db7219b05f7a059479b7d6e62ff2c96b8bc7b10f97f56aba997b5492c04730aa",
+    "benchmark/v1/model-facing/F05/materials.json": "cc43f2cfad138108f1a50d7ecee74557912c15a9d18a9a1ce7491940b15fc2c8"
+  }
+}

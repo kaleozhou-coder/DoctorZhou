@@ -1,0 +1,1075 @@
+{
+  "implementation_sha256": "7d44320394aebae9c8849e18574beaea6c546cd37e7eedb98a9fe061fcd688aa",
+  "checks": [
+    {
+      "name": "F01/valid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F01/unchanged_refs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F01/invalid/version/NoneType/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/version/bool/False",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/version/int/0",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/version/list/[]",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/version/dict/{}",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/version/str/''",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/scope/NoneType/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/scope/bool/False",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/scope/int/0",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/scope/list/[]",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/scope/dict/{}",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/scope/str/''",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/review_id/NoneType/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/review_id/bool/False",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/review_id/int/0",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/review_id/list/[]",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/review_id/dict/{}",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/review_id/str/''",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/reviewer_id/NoneType/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/reviewer_id/bool/False",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/reviewer_id/int/0",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/reviewer_id/list/[]",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/reviewer_id/dict/{}",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/reviewer_id/str/''",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/case_sha256/NoneType/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/case_sha256/bool/False",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/case_sha256/int/0",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/case_sha256/list/[]",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/case_sha256/dict/{}",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/case_sha256/str/''",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/materials_sha256/NoneType/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/materials_sha256/bool/False",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/materials_sha256/int/0",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/materials_sha256/list/[]",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/materials_sha256/dict/{}",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/materials_sha256/str/''",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/reviewed_paths/NoneType/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/reviewed_paths/bool/False",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/reviewed_paths/int/0",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/reviewed_paths/list/[]",
+      "passed": true,
+      "detail": [
+        "review_receipt_incomplete"
+      ]
+    },
+    {
+      "name": "F01/invalid/reviewed_paths/dict/{}",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/reviewed_paths/str/''",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/outcome/NoneType/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/outcome/bool/False",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/outcome/int/0",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/outcome/list/[]",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/outcome/dict/{}",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/outcome/str/''",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/reviewed_at/NoneType/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/reviewed_at/bool/False",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/reviewed_at/int/0",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/reviewed_at/list/[]",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/reviewed_at/dict/{}",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/reviewed_at/str/''",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/expires_at/NoneType/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/expires_at/bool/False",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/expires_at/int/0",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/expires_at/list/[]",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/expires_at/dict/{}",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/invalid/expires_at/str/''",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/case_forgery/trusted_receipt",
+      "passed": true,
+      "detail": [
+        "contract_unknown_field"
+      ]
+    },
+    {
+      "name": "F01/case_forgery/prose_verified",
+      "passed": true,
+      "detail": [
+        "contract_unknown_field"
+      ]
+    },
+    {
+      "name": "F01/case_forgery/review_assertion_accepted",
+      "passed": true,
+      "detail": [
+        "contract_unknown_field"
+      ]
+    },
+    {
+      "name": "F01/case_forgery/review_status",
+      "passed": true,
+      "detail": [
+        "contract_unknown_field"
+      ]
+    },
+    {
+      "name": "F01/case_forgery/input_contract",
+      "passed": true,
+      "detail": [
+        "contract_unknown_field"
+      ]
+    },
+    {
+      "name": "F01/clock/2026-11-12T07:59:59Z",
+      "passed": true,
+      "detail": [
+        "review_receipt_future"
+      ]
+    },
+    {
+      "name": "F01/clock/2026-11-12T10:00:00Z",
+      "passed": true,
+      "detail": [
+        "review_receipt_expired"
+      ]
+    },
+    {
+      "name": "F01/clock/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F01/stale_case",
+      "passed": true,
+      "detail": [
+        "review_receipt_case_mismatch"
+      ]
+    },
+    {
+      "name": "F01/stale_policy",
+      "passed": true,
+      "detail": [
+        "review_receipt_materials_mismatch"
+      ]
+    },
+    {
+      "name": "F01/review/contradictory",
+      "passed": true,
+      "detail": [
+        "review_receipt_contradictory"
+      ]
+    },
+    {
+      "name": "F01/review/unresolved",
+      "passed": true,
+      "detail": [
+        "review_receipt_unresolved"
+      ]
+    },
+    {
+      "name": "F01/never_upgrade/needs_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F01/never_upgrade/needs_review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F01/documented_trusted_lie",
+      "passed": true,
+      "detail": {
+        "actual": "close_eligible",
+        "semantic_safety": false,
+        "note": "Expected trust-boundary limitation; NOT a successful safety case"
+      }
+    },
+    {
+      "name": "F05/valid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F05/unchanged_refs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F05/invalid/version/NoneType/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/version/bool/False",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/version/int/0",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/version/list/[]",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/version/dict/{}",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/version/str/''",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/scope/NoneType/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/scope/bool/False",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/scope/int/0",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/scope/list/[]",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/scope/dict/{}",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/scope/str/''",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/review_id/NoneType/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/review_id/bool/False",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/review_id/int/0",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/review_id/list/[]",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/review_id/dict/{}",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/review_id/str/''",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/reviewer_id/NoneType/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/reviewer_id/bool/False",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/reviewer_id/int/0",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/reviewer_id/list/[]",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/reviewer_id/dict/{}",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/reviewer_id/str/''",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/case_sha256/NoneType/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/case_sha256/bool/False",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/case_sha256/int/0",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/case_sha256/list/[]",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/case_sha256/dict/{}",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/case_sha256/str/''",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/materials_sha256/NoneType/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/materials_sha256/bool/False",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/materials_sha256/int/0",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/materials_sha256/list/[]",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/materials_sha256/dict/{}",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/materials_sha256/str/''",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/reviewed_paths/NoneType/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/reviewed_paths/bool/False",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/reviewed_paths/int/0",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/reviewed_paths/list/[]",
+      "passed": true,
+      "detail": [
+        "review_receipt_incomplete"
+      ]
+    },
+    {
+      "name": "F05/invalid/reviewed_paths/dict/{}",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/reviewed_paths/str/''",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/outcome/NoneType/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/outcome/bool/False",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/outcome/int/0",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/outcome/list/[]",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/outcome/dict/{}",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/outcome/str/''",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/reviewed_at/NoneType/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/reviewed_at/bool/False",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/reviewed_at/int/0",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/reviewed_at/list/[]",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/reviewed_at/dict/{}",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/reviewed_at/str/''",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/expires_at/NoneType/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/expires_at/bool/False",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/expires_at/int/0",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/expires_at/list/[]",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/expires_at/dict/{}",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/invalid/expires_at/str/''",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/case_forgery/trusted_receipt",
+      "passed": true,
+      "detail": [
+        "contract_unknown_field"
+      ]
+    },
+    {
+      "name": "F05/case_forgery/prose_verified",
+      "passed": true,
+      "detail": [
+        "contract_unknown_field"
+      ]
+    },
+    {
+      "name": "F05/case_forgery/review_assertion_accepted",
+      "passed": true,
+      "detail": [
+        "contract_unknown_field"
+      ]
+    },
+    {
+      "name": "F05/case_forgery/review_status",
+      "passed": true,
+      "detail": [
+        "contract_unknown_field"
+      ]
+    },
+    {
+      "name": "F05/case_forgery/input_contract",
+      "passed": true,
+      "detail": [
+        "contract_unknown_field"
+      ]
+    },
+    {
+      "name": "F05/clock/2026-11-12T07:59:59Z",
+      "passed": true,
+      "detail": [
+        "review_receipt_future"
+      ]
+    },
+    {
+      "name": "F05/clock/2026-11-12T10:00:00Z",
+      "passed": true,
+      "detail": [
+        "review_receipt_expired"
+      ]
+    },
+    {
+      "name": "F05/clock/None",
+      "passed": true,
+      "detail": [
+        "review_receipt_invalid"
+      ]
+    },
+    {
+      "name": "F05/stale_case",
+      "passed": true,
+      "detail": [
+        "review_receipt_case_mismatch"
+      ]
+    },
+    {
+      "name": "F05/stale_policy",
+      "passed": true,
+      "detail": [
+        "review_receipt_materials_mismatch"
+      ]
+    },
+    {
+      "name": "F05/review/contradictory",
+      "passed": true,
+      "detail": [
+        "review_receipt_contradictory"
+      ]
+    },
+    {
+      "name": "F05/review/unresolved",
+      "passed": true,
+      "detail": [
+        "review_receipt_unresolved"
+      ]
+    },
+    {
+      "name": "F05/never_upgrade/needs_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F05/never_upgrade/needs_review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "F05/documented_trusted_lie",
+      "passed": true,
+      "detail": {
+        "actual": "close_eligible",
+        "semantic_safety": false,
+        "note": "Expected trust-boundary limitation; NOT a successful safety case"
+      }
+    }
+  ],
+  "count": 154,
+  "passed": 154,
+  "not_expert_gold": true,
+  "model_calls": 0
+}
