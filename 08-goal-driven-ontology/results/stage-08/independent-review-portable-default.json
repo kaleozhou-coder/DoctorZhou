@@ -1,0 +1,66 @@
+{
+  "comparison_mode": "same_repository_frozen_history",
+  "passed_checks": 1024,
+  "counts": {
+    "all_28_including_failure_controls": {
+      "ir_only": {
+        "n": 28,
+        "receipt_units": 0,
+        "declared_path_units": 0,
+        "downstream_review_units": 0,
+        "evidence_request_units": 4,
+        "closed": 24,
+        "known_trust_control_false_close": 2
+      },
+      "gate_v2_ir": {
+        "n": 28,
+        "receipt_units": 0,
+        "declared_path_units": 0,
+        "downstream_review_units": 22,
+        "evidence_request_units": 4,
+        "closed": 2,
+        "known_trust_control_false_close": 0
+      },
+      "receipt_ir": {
+        "n": 28,
+        "receipt_units": 20,
+        "declared_path_units": 22,
+        "downstream_review_units": 14,
+        "evidence_request_units": 4,
+        "closed": 10,
+        "known_trust_control_false_close": 2
+      }
+    },
+    "26_excluding_trusted_failure_controls": {
+      "ir_only": {
+        "n": 26,
+        "receipt_units": 0,
+        "declared_path_units": 0,
+        "downstream_review_units": 0,
+        "evidence_request_units": 4,
+        "closed": 22,
+        "known_trust_control_false_close": 0
+      },
+      "gate_v2_ir": {
+        "n": 26,
+        "receipt_units": 0,
+        "declared_path_units": 0,
+        "downstream_review_units": 20,
+        "evidence_request_units": 4,
+        "closed": 2,
+        "known_trust_control_false_close": 0
+      },
+      "receipt_ir": {
+        "n": 26,
+        "receipt_units": 18,
+        "declared_path_units": 20,
+        "downstream_review_units": 14,
+        "evidence_request_units": 4,
+        "closed": 8,
+        "known_trust_control_false_close": 0
+      }
+    }
+  },
+  "nonblocking_hardening": [],
+  "actual_model_calls": 0
+}

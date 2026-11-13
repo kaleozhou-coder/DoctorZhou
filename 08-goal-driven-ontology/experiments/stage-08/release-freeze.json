@@ -1,0 +1,20 @@
+{
+  "src/run_stage08.py": "3a020639b2458c8306dffed27474acceaf8c467babc486594270c9a8588d75b9",
+  "tests/test_stage08.py": "44ba9d8dff2c5a5b0844f4cb6a49cbb4bc0d81df41674f3c137f3b699bb60a78",
+  "experiments/stage-08/protocol.zh.md": "471d2770d9adfc7920252f85659a54f5ee5bc9be35bdc6c73ccd3059806822db",
+  "experiments/stage-08/input-freeze.json": "e1c829f6feb4a9d2b88ac2f1a6fa4f9d788831dcca07f55f62196caf26442b61",
+  "results/stage-08/final-run/ledger.json": "9c350a270302919325117a21c0367dd75cad2628f0b21ec9dd29c97ecce61ae6",
+  "results/stage-08/final-run/summary.json": "cf7322420542ffa9e4bf1bde686cc08345980d4790894409e3a8b34a6138053b",
+  "results/stage-08/first-run/ledger.json": "4b3a8f3dc15c2c673c6685aef6f56dccf73bc6234e0492bd7a0a896eb61190bc",
+  "results/stage-08/first-run/summary.json": "cf7322420542ffa9e4bf1bde686cc08345980d4790894409e3a8b34a6138053b",
+  "results/stage-08/independent-review-followup.json": "57eb30263c688a4d042987e8010689853ecc930458b7ce097344eb49f4476be9",
+  "results/stage-08/independent-review-followup.zh.md": "f2d228970df535934346ac1aeb9f6d6be83225a032114399612149994a6c3f78",
+  "results/stage-08/independent-review-portability.zh.md": "f3e89a33118ce31cb388b2b8401d52d8350a6711c77be04e2454159cdb81f452",
+  "results/stage-08/independent-review-portable-baseline.json": "dfce6724808814383837adcb4fb730fcd5a416205ceb1068e90ad1fb0e65d523",
+  "results/stage-08/independent-review-portable-default.json": "b92a930554b4569621a62e89738105a29d9ce415b5056c9444ca1253d7f88dcb",
+  "results/stage-08/independent-review.json": "d58566b1ac5af99aabb06d0782c019a9c98dc7ef25bf728947a862cb6ece7836",
+  "results/stage-08/independent-review.py": "e3b19e8f97760c31e0cee23542b2baa945a8f152fe297722038ed5a3c3ea265a",
+  "results/stage-08/independent-review.zh.md": "df8c3b926f0fac22508114843372577db5404fdf5ccaa0d9b0cc3c5c099d2e8a",
+  "results/stage-08/report.zh.md": "36afa2247f8b643a31091be1f6ed20717cf741992a1d120c7aaeb4644117e404",
+  "results/stage-08/test-log.txt": "2139fb329036fb8b89ddc44d4df92487ec0f3dcc92b32c69f650334bbc37553e"
+}

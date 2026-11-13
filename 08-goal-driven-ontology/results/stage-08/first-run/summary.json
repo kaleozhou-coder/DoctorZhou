@@ -1,0 +1,282 @@
+{
+  "actual_human_reviews": 0,
+  "actual_human_seconds": null,
+  "actual_model_runs": 0,
+  "measured_cost_currency": null,
+  "scopes": {
+    "26_excluding_trusted_failure_controls": {
+      "arms": {
+        "gate_v2_ir": {
+          "closed": 2,
+          "declared_path_units": 0,
+          "downstream_review_units": 20,
+          "evidence_request_units": 4,
+          "known_trust_control_false_close": 0,
+          "n": 26,
+          "receipt_units": 0
+        },
+        "ir_only": {
+          "closed": 22,
+          "declared_path_units": 0,
+          "downstream_review_units": 0,
+          "evidence_request_units": 4,
+          "known_trust_control_false_close": 0,
+          "n": 26,
+          "receipt_units": 0
+        },
+        "receipt_ir": {
+          "closed": 8,
+          "declared_path_units": 20,
+          "downstream_review_units": 14,
+          "evidence_request_units": 4,
+          "known_trust_control_false_close": 0,
+          "n": 26,
+          "receipt_units": 18
+        }
+      },
+      "downstream_review_units_saved": 6,
+      "path_break_even_ratio": "3/10",
+      "receipt_break_even_ratio": "1/3",
+      "sensitivity": [
+        {
+          "normalized_cost": {
+            "gate_v2_ir": "24",
+            "ir_only": "4",
+            "receipt_ir": "18"
+          },
+          "receipt_minus_gate": "-6",
+          "upstream_cost_ratio": "0",
+          "upstream_mode": "receipt_units"
+        },
+        {
+          "normalized_cost": {
+            "gate_v2_ir": "24",
+            "ir_only": "4",
+            "receipt_ir": "45/2"
+          },
+          "receipt_minus_gate": "-3/2",
+          "upstream_cost_ratio": "1/4",
+          "upstream_mode": "receipt_units"
+        },
+        {
+          "normalized_cost": {
+            "gate_v2_ir": "24",
+            "ir_only": "4",
+            "receipt_ir": "24"
+          },
+          "receipt_minus_gate": "0",
+          "upstream_cost_ratio": "1/3",
+          "upstream_mode": "receipt_units"
+        },
+        {
+          "normalized_cost": {
+            "gate_v2_ir": "24",
+            "ir_only": "4",
+            "receipt_ir": "27"
+          },
+          "receipt_minus_gate": "3",
+          "upstream_cost_ratio": "1/2",
+          "upstream_mode": "receipt_units"
+        },
+        {
+          "normalized_cost": {
+            "gate_v2_ir": "24",
+            "ir_only": "4",
+            "receipt_ir": "36"
+          },
+          "receipt_minus_gate": "12",
+          "upstream_cost_ratio": "1",
+          "upstream_mode": "receipt_units"
+        },
+        {
+          "normalized_cost": {
+            "gate_v2_ir": "24",
+            "ir_only": "4",
+            "receipt_ir": "18"
+          },
+          "receipt_minus_gate": "-6",
+          "upstream_cost_ratio": "0",
+          "upstream_mode": "declared_path_units"
+        },
+        {
+          "normalized_cost": {
+            "gate_v2_ir": "24",
+            "ir_only": "4",
+            "receipt_ir": "23"
+          },
+          "receipt_minus_gate": "-1",
+          "upstream_cost_ratio": "1/4",
+          "upstream_mode": "declared_path_units"
+        },
+        {
+          "normalized_cost": {
+            "gate_v2_ir": "24",
+            "ir_only": "4",
+            "receipt_ir": "74/3"
+          },
+          "receipt_minus_gate": "2/3",
+          "upstream_cost_ratio": "1/3",
+          "upstream_mode": "declared_path_units"
+        },
+        {
+          "normalized_cost": {
+            "gate_v2_ir": "24",
+            "ir_only": "4",
+            "receipt_ir": "28"
+          },
+          "receipt_minus_gate": "4",
+          "upstream_cost_ratio": "1/2",
+          "upstream_mode": "declared_path_units"
+        },
+        {
+          "normalized_cost": {
+            "gate_v2_ir": "24",
+            "ir_only": "4",
+            "receipt_ir": "38"
+          },
+          "receipt_minus_gate": "14",
+          "upstream_cost_ratio": "1",
+          "upstream_mode": "declared_path_units"
+        }
+      ]
+    },
+    "all_28_including_failure_controls": {
+      "arms": {
+        "gate_v2_ir": {
+          "closed": 2,
+          "declared_path_units": 0,
+          "downstream_review_units": 22,
+          "evidence_request_units": 4,
+          "known_trust_control_false_close": 0,
+          "n": 28,
+          "receipt_units": 0
+        },
+        "ir_only": {
+          "closed": 24,
+          "declared_path_units": 0,
+          "downstream_review_units": 0,
+          "evidence_request_units": 4,
+          "known_trust_control_false_close": 2,
+          "n": 28,
+          "receipt_units": 0
+        },
+        "receipt_ir": {
+          "closed": 10,
+          "declared_path_units": 22,
+          "downstream_review_units": 14,
+          "evidence_request_units": 4,
+          "known_trust_control_false_close": 2,
+          "n": 28,
+          "receipt_units": 20
+        }
+      },
+      "downstream_review_units_saved": 8,
+      "path_break_even_ratio": "4/11",
+      "receipt_break_even_ratio": "2/5",
+      "sensitivity": [
+        {
+          "normalized_cost": {
+            "gate_v2_ir": "26",
+            "ir_only": "4",
+            "receipt_ir": "18"
+          },
+          "receipt_minus_gate": "-8",
+          "upstream_cost_ratio": "0",
+          "upstream_mode": "receipt_units"
+        },
+        {
+          "normalized_cost": {
+            "gate_v2_ir": "26",
+            "ir_only": "4",
+            "receipt_ir": "23"
+          },
+          "receipt_minus_gate": "-3",
+          "upstream_cost_ratio": "1/4",
+          "upstream_mode": "receipt_units"
+        },
+        {
+          "normalized_cost": {
+            "gate_v2_ir": "26",
+            "ir_only": "4",
+            "receipt_ir": "74/3"
+          },
+          "receipt_minus_gate": "-4/3",
+          "upstream_cost_ratio": "1/3",
+          "upstream_mode": "receipt_units"
+        },
+        {
+          "normalized_cost": {
+            "gate_v2_ir": "26",
+            "ir_only": "4",
+            "receipt_ir": "28"
+          },
+          "receipt_minus_gate": "2",
+          "upstream_cost_ratio": "1/2",
+          "upstream_mode": "receipt_units"
+        },
+        {
+          "normalized_cost": {
+            "gate_v2_ir": "26",
+            "ir_only": "4",
+            "receipt_ir": "38"
+          },
+          "receipt_minus_gate": "12",
+          "upstream_cost_ratio": "1",
+          "upstream_mode": "receipt_units"
+        },
+        {
+          "normalized_cost": {
+            "gate_v2_ir": "26",
+            "ir_only": "4",
+            "receipt_ir": "18"
+          },
+          "receipt_minus_gate": "-8",
+          "upstream_cost_ratio": "0",
+          "upstream_mode": "declared_path_units"
+        },
+        {
+          "normalized_cost": {
+            "gate_v2_ir": "26",
+            "ir_only": "4",
+            "receipt_ir": "47/2"
+          },
+          "receipt_minus_gate": "-5/2",
+          "upstream_cost_ratio": "1/4",
+          "upstream_mode": "declared_path_units"
+        },
+        {
+          "normalized_cost": {
+            "gate_v2_ir": "26",
+            "ir_only": "4",
+            "receipt_ir": "76/3"
+          },
+          "receipt_minus_gate": "-2/3",
+          "upstream_cost_ratio": "1/3",
+          "upstream_mode": "declared_path_units"
+        },
+        {
+          "normalized_cost": {
+            "gate_v2_ir": "26",
+            "ir_only": "4",
+            "receipt_ir": "29"
+          },
+          "receipt_minus_gate": "3",
+          "upstream_cost_ratio": "1/2",
+          "upstream_mode": "declared_path_units"
+        },
+        {
+          "normalized_cost": {
+            "gate_v2_ir": "26",
+            "ir_only": "4",
+            "receipt_ir": "40"
+          },
+          "receipt_minus_gate": "14",
+          "upstream_cost_ratio": "1",
+          "upstream_mode": "declared_path_units"
+        }
+      ]
+    }
+  },
+  "study": "stage08-retrospective-workload-audit-v1",
+  "warning": "Counts are synthetic workload requirements, not observed human labor. Costs are assumptions. Known trust failures remain visible."
+}
