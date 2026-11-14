@@ -1,0 +1,373 @@
+{
+  "kind": "synthetic temporal mechanism fixtures; not independent gold labels",
+  "policy": "Link must be unique; acceptance must be accepted; accepted quantity covers invoice; authority required only when require_authority is true. Explicit adverse/conflict facts -> review; otherwise unknown or short quantity -> needs_evidence; otherwise close. New facts supersede old values; each event must be decided before later evidence is visible.",
+  "trajectories": [
+    {
+      "id": "T01-revocation",
+      "initial_state": {
+        "linked": true,
+        "invoice_qty": 10,
+        "accepted_qty": 10,
+        "acceptance": "accepted",
+        "authorized": true,
+        "require_authority": true,
+        "memo": "initial"
+      },
+      "events": [
+        {
+          "id": "T01-revocation-E01",
+          "description": "initial",
+          "patch": {},
+          "expected": "close"
+        },
+        {
+          "id": "T01-revocation-E02",
+          "description": "receipt revoked",
+          "patch": {
+            "acceptance": "revoked"
+          },
+          "expected": "review"
+        },
+        {
+          "id": "T01-revocation-E03",
+          "description": "new accepted receipt",
+          "patch": {
+            "acceptance": "accepted"
+          },
+          "expected": "close"
+        },
+        {
+          "id": "T01-revocation-E04",
+          "description": "memo only",
+          "patch": {
+            "memo": "copy"
+          },
+          "expected": "close"
+        },
+        {
+          "id": "T01-revocation-E05",
+          "description": "revocation repeats",
+          "patch": {
+            "acceptance": "revoked"
+          },
+          "expected": "review"
+        },
+        {
+          "id": "T01-revocation-E06",
+          "description": "duplicate delivery",
+          "patch": {
+            "acceptance": "revoked"
+          },
+          "expected": "review"
+        }
+      ]
+    },
+    {
+      "id": "T02-quantity",
+      "initial_state": {
+        "linked": true,
+        "invoice_qty": 10,
+        "accepted_qty": 10,
+        "acceptance": "accepted",
+        "authorized": true,
+        "require_authority": true,
+        "memo": "initial"
+      },
+      "events": [
+        {
+          "id": "T02-quantity-E01",
+          "description": "initial",
+          "patch": {},
+          "expected": "close"
+        },
+        {
+          "id": "T02-quantity-E02",
+          "description": "invoice correction",
+          "patch": {
+            "invoice_qty": 12
+          },
+          "expected": "needs_evidence"
+        },
+        {
+          "id": "T02-quantity-E03",
+          "description": "partial acceptance",
+          "patch": {
+            "accepted_qty": 11
+          },
+          "expected": "needs_evidence"
+        },
+        {
+          "id": "T02-quantity-E04",
+          "description": "full acceptance",
+          "patch": {
+            "accepted_qty": 12
+          },
+          "expected": "close"
+        },
+        {
+          "id": "T02-quantity-E05",
+          "description": "acceptance correction",
+          "patch": {
+            "accepted_qty": 9
+          },
+          "expected": "needs_evidence"
+        },
+        {
+          "id": "T02-quantity-E06",
+          "description": "duplicate correction",
+          "patch": {
+            "accepted_qty": 9
+          },
+          "expected": "needs_evidence"
+        }
+      ]
+    },
+    {
+      "id": "T03-authority",
+      "initial_state": {
+        "linked": true,
+        "invoice_qty": 10,
+        "accepted_qty": 10,
+        "acceptance": "accepted",
+        "authorized": true,
+        "require_authority": true,
+        "memo": "initial"
+      },
+      "events": [
+        {
+          "id": "T03-authority-E01",
+          "description": "initial",
+          "patch": {},
+          "expected": "close"
+        },
+        {
+          "id": "T03-authority-E02",
+          "description": "authority revoked",
+          "patch": {
+            "authorized": false
+          },
+          "expected": "review"
+        },
+        {
+          "id": "T03-authority-E03",
+          "description": "authority restored",
+          "patch": {
+            "authorized": true
+          },
+          "expected": "close"
+        },
+        {
+          "id": "T03-authority-E04",
+          "description": "authority unknown",
+          "patch": {
+            "authorized": null
+          },
+          "expected": "needs_evidence"
+        },
+        {
+          "id": "T03-authority-E05",
+          "description": "memo only",
+          "patch": {
+            "memo": "authority request sent"
+          },
+          "expected": "needs_evidence"
+        },
+        {
+          "id": "T03-authority-E06",
+          "description": "authority verified",
+          "patch": {
+            "authorized": true
+          },
+          "expected": "close"
+        }
+      ]
+    },
+    {
+      "id": "T04-policy",
+      "initial_state": {
+        "linked": true,
+        "invoice_qty": 10,
+        "accepted_qty": 10,
+        "acceptance": "accepted",
+        "authorized": true,
+        "require_authority": true,
+        "memo": "initial"
+      },
+      "events": [
+        {
+          "id": "T04-policy-E01",
+          "description": "policy permits unverified signer",
+          "patch": {
+            "require_authority": false,
+            "authorized": false
+          },
+          "expected": "close"
+        },
+        {
+          "id": "T04-policy-E02",
+          "description": "new policy requires authority",
+          "patch": {
+            "require_authority": true
+          },
+          "expected": "review"
+        },
+        {
+          "id": "T04-policy-E03",
+          "description": "signer authorized",
+          "patch": {
+            "authorized": true
+          },
+          "expected": "close"
+        },
+        {
+          "id": "T04-policy-E04",
+          "description": "policy relaxed",
+          "patch": {
+            "require_authority": false
+          },
+          "expected": "close"
+        },
+        {
+          "id": "T04-policy-E05",
+          "description": "signer revoked under relaxed policy",
+          "patch": {
+            "authorized": false
+          },
+          "expected": "close"
+        },
+        {
+          "id": "T04-policy-E06",
+          "description": "policy tightens again",
+          "patch": {
+            "require_authority": true
+          },
+          "expected": "review"
+        }
+      ]
+    },
+    {
+      "id": "T05-link-conflict",
+      "initial_state": {
+        "linked": true,
+        "invoice_qty": 10,
+        "accepted_qty": 10,
+        "acceptance": "accepted",
+        "authorized": true,
+        "require_authority": true,
+        "memo": "initial"
+      },
+      "events": [
+        {
+          "id": "T05-link-conflict-E01",
+          "description": "initial",
+          "patch": {},
+          "expected": "close"
+        },
+        {
+          "id": "T05-link-conflict-E02",
+          "description": "ambiguous line link",
+          "patch": {
+            "linked": false
+          },
+          "expected": "review"
+        },
+        {
+          "id": "T05-link-conflict-E03",
+          "description": "link repaired",
+          "patch": {
+            "linked": true
+          },
+          "expected": "close"
+        },
+        {
+          "id": "T05-link-conflict-E04",
+          "description": "contradictory receipt",
+          "patch": {
+            "acceptance": "conflict"
+          },
+          "expected": "review"
+        },
+        {
+          "id": "T05-link-conflict-E05",
+          "description": "receipt unresolved",
+          "patch": {
+            "acceptance": null
+          },
+          "expected": "needs_evidence"
+        },
+        {
+          "id": "T05-link-conflict-E06",
+          "description": "receipt clarified",
+          "patch": {
+            "acceptance": "accepted"
+          },
+          "expected": "close"
+        }
+      ]
+    },
+    {
+      "id": "T06-information-arrival",
+      "initial_state": {
+        "linked": true,
+        "invoice_qty": 10,
+        "accepted_qty": 10,
+        "acceptance": "accepted",
+        "authorized": true,
+        "require_authority": true,
+        "memo": "initial"
+      },
+      "events": [
+        {
+          "id": "T06-information-arrival-E01",
+          "description": "missing receipt",
+          "patch": {
+            "accepted_qty": null,
+            "acceptance": null
+          },
+          "expected": "needs_evidence"
+        },
+        {
+          "id": "T06-information-arrival-E02",
+          "description": "status arrives",
+          "patch": {
+            "acceptance": "accepted"
+          },
+          "expected": "needs_evidence"
+        },
+        {
+          "id": "T06-information-arrival-E03",
+          "description": "quantity arrives",
+          "patch": {
+            "accepted_qty": 10
+          },
+          "expected": "close"
+        },
+        {
+          "id": "T06-information-arrival-E04",
+          "description": "non-decision metadata",
+          "patch": {
+            "memo": "archived"
+          },
+          "expected": "close"
+        },
+        {
+          "id": "T06-information-arrival-E05",
+          "description": "duplicate same values",
+          "patch": {
+            "accepted_qty": 10,
+            "acceptance": "accepted"
+          },
+          "expected": "close"
+        },
+        {
+          "id": "T06-information-arrival-E06",
+          "description": "late adverse evidence",
+          "patch": {
+            "acceptance": "rejected"
+          },
+          "expected": "review"
+        }
+      ]
+    }
+  ]
+}

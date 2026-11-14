@@ -1,0 +1,51 @@
+{
+  "human_minutes": null,
+  "kind": "synthetic mechanism experiment; not AI A/B",
+  "methods": {
+    "full": {
+      "aggregation_calls": 36,
+      "cache_writes": 144,
+      "correct": 36,
+      "dependency_group_checks": 0,
+      "false_close": 0,
+      "input_field_assignments": 35,
+      "n": 36,
+      "nonclose_at_withdrawal_event": 11,
+      "nonclose_denominator": 18,
+      "predicate_evaluations": 144,
+      "same_event_withdrawals": 11,
+      "withdrawal_denominator": 11
+    },
+    "incremental": {
+      "aggregation_calls": 36,
+      "cache_writes": 48,
+      "correct": 36,
+      "dependency_group_checks": 120,
+      "false_close": 0,
+      "input_field_assignments": 35,
+      "n": 36,
+      "nonclose_at_withdrawal_event": 11,
+      "nonclose_denominator": 18,
+      "predicate_evaluations": 48,
+      "same_event_withdrawals": 11,
+      "withdrawal_denominator": 11
+    },
+    "stale_negative_control": {
+      "aggregation_calls": 36,
+      "cache_writes": 24,
+      "correct": 17,
+      "dependency_group_checks": 0,
+      "false_close": 15,
+      "input_field_assignments": 35,
+      "n": 36,
+      "nonclose_at_withdrawal_event": 1,
+      "nonclose_denominator": 18,
+      "predicate_evaluations": 24,
+      "same_event_withdrawals": 0,
+      "withdrawal_denominator": 11
+    }
+  },
+  "model_api_calls": 0,
+  "monetary_cost": null,
+  "trajectories": 6
+}

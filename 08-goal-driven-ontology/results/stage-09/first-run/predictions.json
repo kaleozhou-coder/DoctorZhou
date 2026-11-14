@@ -1,0 +1,2348 @@
+{
+  "full": [
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T01-revocation-E01",
+      "input_field_assignments": 0,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "review",
+      "dependency_group_checks": 0,
+      "id": "T01-revocation-E02",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "revoked",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T01-revocation-E03",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T01-revocation-E04",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "copy",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "review",
+      "dependency_group_checks": 0,
+      "id": "T01-revocation-E05",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "revoked",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "copy",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "review",
+      "dependency_group_checks": 0,
+      "id": "T01-revocation-E06",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "revoked",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "copy",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T02-quantity-E01",
+      "input_field_assignments": 0,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 0,
+      "id": "T02-quantity-E02",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 12,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 0,
+      "id": "T02-quantity-E03",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 11,
+        "authorized": true,
+        "invoice_qty": 12,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T02-quantity-E04",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 12,
+        "authorized": true,
+        "invoice_qty": 12,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 0,
+      "id": "T02-quantity-E05",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 9,
+        "authorized": true,
+        "invoice_qty": 12,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 0,
+      "id": "T02-quantity-E06",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 9,
+        "authorized": true,
+        "invoice_qty": 12,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T03-authority-E01",
+      "input_field_assignments": 0,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "review",
+      "dependency_group_checks": 0,
+      "id": "T03-authority-E02",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": false,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T03-authority-E03",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 0,
+      "id": "T03-authority-E04",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": null,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 0,
+      "id": "T03-authority-E05",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": null,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "authority request sent",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T03-authority-E06",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "authority request sent",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T04-policy-E01",
+      "input_field_assignments": 2,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": false,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": false
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "review",
+      "dependency_group_checks": 0,
+      "id": "T04-policy-E02",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": false,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T04-policy-E03",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T04-policy-E04",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": false
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T04-policy-E05",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": false,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": false
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "review",
+      "dependency_group_checks": 0,
+      "id": "T04-policy-E06",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": false,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T05-link-conflict-E01",
+      "input_field_assignments": 0,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "review",
+      "dependency_group_checks": 0,
+      "id": "T05-link-conflict-E02",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": false,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T05-link-conflict-E03",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "review",
+      "dependency_group_checks": 0,
+      "id": "T05-link-conflict-E04",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "conflict",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 0,
+      "id": "T05-link-conflict-E05",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": null,
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T05-link-conflict-E06",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 0,
+      "id": "T06-information-arrival-E01",
+      "input_field_assignments": 2,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": null,
+        "accepted_qty": null,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 0,
+      "id": "T06-information-arrival-E02",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": null,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T06-information-arrival-E03",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T06-information-arrival-E04",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "archived",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T06-information-arrival-E05",
+      "input_field_assignments": 2,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "archived",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "review",
+      "dependency_group_checks": 0,
+      "id": "T06-information-arrival-E06",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "rejected",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "archived",
+        "require_authority": true
+      }
+    }
+  ],
+  "incremental": [
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T01-revocation-E01",
+      "input_field_assignments": 0,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "review",
+      "dependency_group_checks": 4,
+      "id": "T01-revocation-E02",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "acceptance"
+      ],
+      "visible_state": {
+        "acceptance": "revoked",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "close",
+      "dependency_group_checks": 4,
+      "id": "T01-revocation-E03",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "acceptance"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 4,
+      "id": "T01-revocation-E04",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "copy",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "review",
+      "dependency_group_checks": 4,
+      "id": "T01-revocation-E05",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "acceptance"
+      ],
+      "visible_state": {
+        "acceptance": "revoked",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "copy",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "review",
+      "dependency_group_checks": 4,
+      "id": "T01-revocation-E06",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "revoked",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "copy",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T02-quantity-E01",
+      "input_field_assignments": 0,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 4,
+      "id": "T02-quantity-E02",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "quantity"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 12,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 4,
+      "id": "T02-quantity-E03",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "quantity"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 11,
+        "authorized": true,
+        "invoice_qty": 12,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "close",
+      "dependency_group_checks": 4,
+      "id": "T02-quantity-E04",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "quantity"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 12,
+        "authorized": true,
+        "invoice_qty": 12,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 4,
+      "id": "T02-quantity-E05",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "quantity"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 9,
+        "authorized": true,
+        "invoice_qty": 12,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 4,
+      "id": "T02-quantity-E06",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 9,
+        "authorized": true,
+        "invoice_qty": 12,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T03-authority-E01",
+      "input_field_assignments": 0,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "review",
+      "dependency_group_checks": 4,
+      "id": "T03-authority-E02",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": false,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "close",
+      "dependency_group_checks": 4,
+      "id": "T03-authority-E03",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 4,
+      "id": "T03-authority-E04",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": null,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 4,
+      "id": "T03-authority-E05",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": null,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "authority request sent",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "close",
+      "dependency_group_checks": 4,
+      "id": "T03-authority-E06",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "authority request sent",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T04-policy-E01",
+      "input_field_assignments": 2,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": false,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": false
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "review",
+      "dependency_group_checks": 4,
+      "id": "T04-policy-E02",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": false,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "close",
+      "dependency_group_checks": 4,
+      "id": "T04-policy-E03",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "close",
+      "dependency_group_checks": 4,
+      "id": "T04-policy-E04",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": false
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "close",
+      "dependency_group_checks": 4,
+      "id": "T04-policy-E05",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": false,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": false
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "review",
+      "dependency_group_checks": 4,
+      "id": "T04-policy-E06",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": false,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T05-link-conflict-E01",
+      "input_field_assignments": 0,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "review",
+      "dependency_group_checks": 4,
+      "id": "T05-link-conflict-E02",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "link"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": false,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "close",
+      "dependency_group_checks": 4,
+      "id": "T05-link-conflict-E03",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "link"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "review",
+      "dependency_group_checks": 4,
+      "id": "T05-link-conflict-E04",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "acceptance"
+      ],
+      "visible_state": {
+        "acceptance": "conflict",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 4,
+      "id": "T05-link-conflict-E05",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "acceptance"
+      ],
+      "visible_state": {
+        "acceptance": null,
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "close",
+      "dependency_group_checks": 4,
+      "id": "T05-link-conflict-E06",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "acceptance"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 0,
+      "id": "T06-information-arrival-E01",
+      "input_field_assignments": 2,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": null,
+        "accepted_qty": null,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 4,
+      "id": "T06-information-arrival-E02",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "acceptance"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": null,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "close",
+      "dependency_group_checks": 4,
+      "id": "T06-information-arrival-E03",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "quantity"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 4,
+      "id": "T06-information-arrival-E04",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "archived",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 4,
+      "id": "T06-information-arrival-E05",
+      "input_field_assignments": 2,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "archived",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 1,
+      "decision": "review",
+      "dependency_group_checks": 4,
+      "id": "T06-information-arrival-E06",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 1,
+      "recomputed": [
+        "acceptance"
+      ],
+      "visible_state": {
+        "acceptance": "rejected",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "archived",
+        "require_authority": true
+      }
+    }
+  ],
+  "stale_negative_control": [
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T01-revocation-E01",
+      "input_field_assignments": 0,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T01-revocation-E02",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "revoked",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T01-revocation-E03",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T01-revocation-E04",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "copy",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T01-revocation-E05",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "revoked",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "copy",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T01-revocation-E06",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "revoked",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "copy",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T02-quantity-E01",
+      "input_field_assignments": 0,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T02-quantity-E02",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 12,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T02-quantity-E03",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 11,
+        "authorized": true,
+        "invoice_qty": 12,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T02-quantity-E04",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 12,
+        "authorized": true,
+        "invoice_qty": 12,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T02-quantity-E05",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 9,
+        "authorized": true,
+        "invoice_qty": 12,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T02-quantity-E06",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 9,
+        "authorized": true,
+        "invoice_qty": 12,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T03-authority-E01",
+      "input_field_assignments": 0,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T03-authority-E02",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": false,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T03-authority-E03",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T03-authority-E04",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": null,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T03-authority-E05",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": null,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "authority request sent",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T03-authority-E06",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "authority request sent",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T04-policy-E01",
+      "input_field_assignments": 2,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": false,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": false
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T04-policy-E02",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": false,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T04-policy-E03",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T04-policy-E04",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": false
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T04-policy-E05",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": false,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": false
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T04-policy-E06",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": false,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T05-link-conflict-E01",
+      "input_field_assignments": 0,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T05-link-conflict-E02",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": false,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T05-link-conflict-E03",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T05-link-conflict-E04",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "conflict",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T05-link-conflict-E05",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": null,
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "close",
+      "dependency_group_checks": 0,
+      "id": "T05-link-conflict-E06",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 4,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 0,
+      "id": "T06-information-arrival-E01",
+      "input_field_assignments": 2,
+      "predicate_evaluations": 4,
+      "recomputed": [
+        "link",
+        "quantity",
+        "acceptance",
+        "authority"
+      ],
+      "visible_state": {
+        "acceptance": null,
+        "accepted_qty": null,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 0,
+      "id": "T06-information-arrival-E02",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": null,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 0,
+      "id": "T06-information-arrival-E03",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "initial",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 0,
+      "id": "T06-information-arrival-E04",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "archived",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 0,
+      "id": "T06-information-arrival-E05",
+      "input_field_assignments": 2,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "accepted",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "archived",
+        "require_authority": true
+      }
+    },
+    {
+      "aggregation_calls": 1,
+      "cache_writes": 0,
+      "decision": "needs_evidence",
+      "dependency_group_checks": 0,
+      "id": "T06-information-arrival-E06",
+      "input_field_assignments": 1,
+      "predicate_evaluations": 0,
+      "recomputed": [],
+      "visible_state": {
+        "acceptance": "rejected",
+        "accepted_qty": 10,
+        "authorized": true,
+        "invoice_qty": 10,
+        "linked": true,
+        "memo": "archived",
+        "require_authority": true
+      }
+    }
+  ]
+}

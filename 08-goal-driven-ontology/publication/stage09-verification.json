@@ -1,0 +1,12 @@
+{
+  "base_commit": "dc4b6bd9",
+  "local_tests": 400,
+  "local_tests_passed": true,
+  "repeat_json_files": 3,
+  "repeat_byte_equal": true,
+  "remote_ci": "not_claimed",
+  "model_api_calls": 0,
+  "paid_api_calls": 0,
+  "human_time_measured": false,
+  "independent_ai_review": "results/stage-09/independent-review.zh.md"
+}
