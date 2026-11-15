@@ -1,0 +1,36 @@
+[
+  {"case_id":"S01","facts":[
+    {"subject":"receiving_discrepancy_closure","relation":"requires","value":"quantity reconciliation and signed acceptance; these are necessary prerequisites, not an explicit guarantee of closure","sources":["D1"],"status":"proposed"},
+    {"subject":"signed_acceptance","relation":"means","value":"receiving lead has signed the acceptance record","sources":["D2"],"status":"proposed"},
+    {"subject":"warehouse_arrival_alone","relation":"is_insufficient_for","value":"receiving discrepancy closure","sources":["D1"],"status":"proposed"},
+    {"subject":"receiving_discrepancy_closure","relation":"does_not_authorize","value":"payment","sources":["D2"],"status":"proposed"}
+  ]},
+  {"case_id":"S02","facts":[
+    {"subject":"damage_claim_closure","relation":"requires_evidence","value":"photographs and carrier acknowledgment; policy 3 leaves policy 2 evidence requirements unchanged","sources":["D1","D2"],"status":"proposed"},
+    {"subject":"damage_claim_closure","relation":"current_approver","value":"claims lead; policy 3 replaces policy 2 logistics lead only on approver","sources":["D1","D2"],"status":"proposed"},
+    {"subject":"invoices_instead_of_photographs","relation":"has_policy_status","value":"archived draft suggestion that never took effect","sources":["D2"],"status":"proposed"}
+  ]},
+  {"case_id":"S03","facts":[
+    {"subject":"exception_closure","relation":"requires","value":"acceptance signed by the owner","sources":["D1"],"status":"proposed"},
+    {"subject":"acceptance_owner","relation":"is_undetermined","value":"owner is undefined; neither the listed purchase owner nor receiving owner is designated for acceptance","sources":["D1","D2"],"status":"proposed"},
+    {"subject":"receipt_notices","relation":"are_not","value":"acceptance","sources":["D1"],"status":"proposed"},
+    {"subject":"shipping_dashboard_green","relation":"means","value":"shipment dispatched, not accepted","sources":["D2"],"status":"proposed"}
+  ]},
+  {"case_id":"S04","facts":[
+    {"subject":"active_rule_a","relation":"authorizes_quantity_exception_closure_when","value":"reconciled quantities match and receipt is signed; no finance approval required","sources":["D1"],"status":"proposed"},
+    {"subject":"active_rule_b","relation":"requires_for_same_quantity_exception_closure","value":"matching reconciled quantities, signed receipt, and finance approval","sources":["D1","D2"],"status":"proposed"},
+    {"subject":"finance_approval_requirement","relation":"has_unresolved_active_conflict","value":"rules A and B have equal authority and overlapping scope, with no precedence identified; finance roster does not resolve the conflict","sources":["D1","D2"],"status":"proposed"}
+  ]},
+  {"case_id":"S05","facts":[
+    {"subject":"service_delivery_exception_closure","relation":"requires_evidence","value":"service completion certificate signed by customer delegate","sources":["D1","D2"],"status":"proposed"},
+    {"subject":"warehouse_receipt_additional_requirement","relation":"applies_only_to","value":"physical goods, not service-delivery exceptions","sources":["D1"],"status":"proposed"},
+    {"subject":"purchase_order","relation":"cannot_substitute_for","value":"service completion certificate","sources":["D2"],"status":"proposed"}
+  ]},
+  {"case_id":"S06","facts":[
+    {"subject":"expedited_closure_route","relation":"requires","value":"discrepancy amount at most 50 credits and supervisor approval","sources":["D1"],"status":"proposed"},
+    {"subject":"discrepancy_amount","relation":"means","value":"absolute difference between ordered and received value, not total order value","sources":["D2"],"status":"proposed"},
+    {"subject":"expedited_closure_route_at_exactly_50_credits","relation":"is_available_when","value":"supervisor has approved","sources":["D1","D2"],"status":"proposed"},
+    {"subject":"approval_to_close","relation":"is_not","value":"approval to pay","sources":["D1"],"status":"proposed"},
+    {"subject":"claims_in_another_currency","relation":"have_unspecified_policy_scope","value":"policy says nothing about them; eligibility cannot be inferred","sources":["D2"],"status":"proposed"}
+  ]}
+]

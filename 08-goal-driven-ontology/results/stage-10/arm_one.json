@@ -1,0 +1,56 @@
+[
+  {
+    "case_id": "S01",
+    "facts": [
+      {"subject":"receiving_discrepancy_closure","relation":"requires_all","value":["quantity_reconciliation","signed_acceptance"],"sources":["D1"],"status":"proposed"},
+      {"subject":"signed_acceptance","relation":"means","value":"receiving_lead_has_signed_acceptance_record","sources":["D2"],"status":"proposed"},
+      {"subject":"warehouse_arrival_alone","relation":"is_insufficient_for","value":"receiving_discrepancy_closure","sources":["D1"],"status":"proposed"},
+      {"subject":"receiving_discrepancy_closure","relation":"does_not_authorize","value":"payment","sources":["D2"],"status":"proposed"}
+    ]
+  },
+  {
+    "case_id": "S02",
+    "facts": [
+      {"subject":"damage_claim_closure","relation":"requires_all_evidence","value":["photographs","carrier_acknowledgment"],"sources":["D1","D2"],"status":"proposed"},
+      {"subject":"damage_claim_closure","relation":"current_approver","value":"claims_lead","sources":["D2"],"status":"proposed"},
+      {"subject":"policy_3","relation":"supersedes_policy_2_only_on","value":"approver_changes_from_logistics_lead_to_claims_lead_evidence_requirements_unchanged","sources":["D1","D2"],"status":"proposed"},
+      {"subject":"invoices_instead_of_photographs","relation":"policy_effect","value":"archived_draft_proposal_never_took_effect","sources":["D2"],"status":"proposed"}
+    ]
+  },
+  {
+    "case_id": "S03",
+    "facts": [
+      {"subject":"exception_closure","relation":"requires","value":"acceptance_signed_by_owner","sources":["D1"],"status":"proposed"},
+      {"subject":"acceptance_owner","relation":"authority_is_unresolved","value":"owner_is_undefined_neither_purchase_owner_nor_receiving_owner_is_designated_for_acceptance","sources":["D1","D2"],"status":"proposed"},
+      {"subject":"receipt_notices","relation":"are_not","value":"acceptance","sources":["D1"],"status":"proposed"},
+      {"subject":"shipping_dashboard_green","relation":"means","value":"shipment_dispatched_not_accepted","sources":["D2"],"status":"proposed"}
+    ]
+  },
+  {
+    "case_id": "S04",
+    "facts": [
+      {"subject":"active_rule_a","relation":"authorizes_quantity_exception_closure_if","value":"reconciled_quantities_match_and_receipt_is_signed","sources":["D1"],"status":"proposed"},
+      {"subject":"active_rule_a","relation":"does_not_require_for_quantity_exception_closure","value":"finance_approval","sources":["D1"],"status":"proposed"},
+      {"subject":"active_rule_b","relation":"requires_for_same_quantity_exception_closure","value":"finance_approval_in_addition_to_matching_reconciled_quantities_and_signed_receipt","sources":["D1","D2"],"status":"proposed"},
+      {"subject":"rule_a_and_rule_b","relation":"have_unresolved_active_conflict","value":"finance_approval_requirement_conflicts_with_equal_authority_overlapping_scope_and_no_identified_precedence_finance_roster_does_not_resolve_conflict","sources":["D1","D2"],"status":"proposed"}
+    ]
+  },
+  {
+    "case_id": "S05",
+    "facts": [
+      {"subject":"service_delivery_exception_closure","relation":"requires_evidence","value":"service_completion_certificate_signed_by_customer_delegate","sources":["D1","D2"],"status":"proposed"},
+      {"subject":"additional_warehouse_receipt_requirement","relation":"applies_only_to","value":"physical_goods_not_service_delivery_exceptions","sources":["D1"],"status":"proposed"},
+      {"subject":"purchase_order","relation":"cannot_substitute_for","value":"service_completion_certificate","sources":["D2"],"status":"proposed"}
+    ]
+  },
+  {
+    "case_id": "S06",
+    "facts": [
+      {"subject":"expedited_closure_route","relation":"requires_all","value":["discrepancy_amount_at_most_50_credits","supervisor_approval"],"sources":["D1"],"status":"proposed"},
+      {"subject":"discrepancy_amount","relation":"means","value":"absolute_difference_between_ordered_and_received_value_not_total_order_value","sources":["D2"],"status":"proposed"},
+      {"subject":"expedited_closure_route_at_exactly_50_credits","relation":"is_available_if","value":"supervisor_has_approved","sources":["D1","D2"],"status":"proposed"},
+      {"subject":"approval_to_close","relation":"is_not","value":"approval_to_pay","sources":["D1"],"status":"proposed"},
+      {"subject":"claims_in_another_currency","relation":"expedited_closure_policy_coverage","value":"unspecified","sources":["D2"],"status":"proposed"}
+    ]
+  }
+]

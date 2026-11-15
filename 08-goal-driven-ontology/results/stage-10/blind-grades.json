@@ -1,0 +1,672 @@
+{
+  "candidates": {
+    "Candidate-1": {
+      "targets": [
+        {
+          "case_id": "S01",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Explicit closure requirement includes quantity reconciliation; matching fact cites D1."
+        },
+        {
+          "case_id": "S01",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Explicit closure requirement includes signed acceptance; matching fact cites D1."
+        },
+        {
+          "case_id": "S01",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Acceptance is explicitly signed by the receiving lead; matching fact cites D2."
+        },
+        {
+          "case_id": "S01",
+          "gold_index": 3,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Closure explicitly does not authorize payment; matching fact cites D2."
+        },
+        {
+          "case_id": "S02",
+          "gold_index": 0,
+          "covered": false,
+          "source_complete": false,
+          "reason": "Photographs appear only in an ineffective archived-draft comparison. No output fact explicitly asserts the current photograph requirement; unchanged unspecified requirements do not supply it."
+        },
+        {
+          "case_id": "S02",
+          "gold_index": 1,
+          "covered": false,
+          "source_complete": false,
+          "reason": "Carrier acknowledgment is absent from the output; saying evidence requirements are unchanged does not state this requirement."
+        },
+        {
+          "case_id": "S02",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Policy 3 explicitly makes the claims lead the current approver; matching fact cites D2."
+        },
+        {
+          "case_id": "S03",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Closure explicitly requires acceptance signed by the owner; matching fact cites D1."
+        },
+        {
+          "case_id": "S03",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "The explicit statements that owner is undefined and neither directory candidate is designated jointly express unknown acceptance authority; they cite D1 and D2. The dangling neither is a presentation weakness, not an assigned owner."
+        },
+        {
+          "case_id": "S03",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Receipt notices are explicitly not acceptance; matching fact cites D1."
+        },
+        {
+          "case_id": "S03",
+          "gold_index": 3,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Dashboard green explicitly means dispatched, not accepted; matching fact cites D2."
+        },
+        {
+          "case_id": "S04",
+          "gold_index": 0,
+          "covered": false,
+          "source_complete": false,
+          "reason": "Output omits the matching-quantities closure condition."
+        },
+        {
+          "case_id": "S04",
+          "gold_index": 1,
+          "covered": false,
+          "source_complete": false,
+          "reason": "Output omits the signed-receipt closure condition."
+        },
+        {
+          "case_id": "S04",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Beyond quoting opposing rules, output explicitly says neither rule identifies precedence and the roster is not a resolution of this policy conflict. Thus unresolved conflict is explicit; supporting rule and nonresolution facts together cite D1 and D2."
+        },
+        {
+          "case_id": "S05",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Service-delivery closure explicitly requires a service completion certificate; matching fact cites D1."
+        },
+        {
+          "case_id": "S05",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Certificate explicitly requires the customer delegate signature; matching fact cites D2."
+        },
+        {
+          "case_id": "S05",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Warehouse receipt requirement explicitly applies only to physical goods, excluding the service-delivery case; matching fact cites D1."
+        },
+        {
+          "case_id": "S05",
+          "gold_index": 3,
+          "covered": false,
+          "source_complete": false,
+          "reason": "Output omits the purchase-order non-substitution rule."
+        },
+        {
+          "case_id": "S06",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "At-most-50 condition and explicit exactly-50 eligibility together state an inclusive 50-credit maximum; supporting facts together cite D1 and D2."
+        },
+        {
+          "case_id": "S06",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Supervisor approval is explicitly required; matching fact cites D1."
+        },
+        {
+          "case_id": "S06",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Discrepancy amount explicitly means absolute difference between ordered and received value; matching fact cites D2."
+        },
+        {
+          "case_id": "S06",
+          "gold_index": 3,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Approval to close explicitly is not approval to pay; matching fact cites D1."
+        },
+        {
+          "case_id": "S06",
+          "gold_index": 4,
+          "covered": false,
+          "source_complete": false,
+          "reason": "Output omits the other-currency scope statement; omission is not explicit unknown eligibility."
+        }
+      ],
+      "unsupported": [],
+      "dangerous_overclaims": []
+    },
+    "Candidate-2": {
+      "targets": [
+        {
+          "case_id": "S01",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Explicit closure requirement includes quantity reconciliation; matching fact cites D1."
+        },
+        {
+          "case_id": "S01",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Explicit closure requirement includes signed acceptance; matching fact cites D1."
+        },
+        {
+          "case_id": "S01",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Acceptance is explicitly signed by the receiving lead; matching fact cites D2."
+        },
+        {
+          "case_id": "S01",
+          "gold_index": 3,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Closure explicitly does not authorize payment; matching fact cites D2."
+        },
+        {
+          "case_id": "S02",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Current closure evidence explicitly includes photographs; matching evidence fact cites D1 and D2."
+        },
+        {
+          "case_id": "S02",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Current closure evidence explicitly includes carrier acknowledgment; matching evidence fact cites D1 and D2."
+        },
+        {
+          "case_id": "S02",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Policy 3 explicitly makes the claims lead the current approver; matching fact cites D2."
+        },
+        {
+          "case_id": "S03",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Closure explicitly requires acceptance signed by the owner; matching fact cites D1."
+        },
+        {
+          "case_id": "S03",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Acceptance authority is explicitly unresolved or undetermined, not merely omitted; supporting facts cite D1 and D2."
+        },
+        {
+          "case_id": "S03",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Receipt notices are explicitly not acceptance; matching fact cites D1."
+        },
+        {
+          "case_id": "S03",
+          "gold_index": 3,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Dashboard green explicitly means dispatched, not accepted; matching fact cites D2."
+        },
+        {
+          "case_id": "S04",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Matching reconciled quantities is explicitly a closure condition under rule A; matching fact cites D1."
+        },
+        {
+          "case_id": "S04",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "A signed receipt is explicitly a closure condition under rule A; matching fact cites D1."
+        },
+        {
+          "case_id": "S04",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Finance approval requirement is explicitly an unresolved equal-authority conflict with no precedence; matching fact cites D1 and D2."
+        },
+        {
+          "case_id": "S05",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Service-delivery closure explicitly requires a service completion certificate; matching fact cites D1."
+        },
+        {
+          "case_id": "S05",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Certificate explicitly requires the customer delegate signature; matching fact cites D2."
+        },
+        {
+          "case_id": "S05",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Warehouse receipt requirement explicitly applies only to physical goods, excluding the service-delivery case; matching fact cites D1."
+        },
+        {
+          "case_id": "S05",
+          "gold_index": 3,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Purchase order explicitly cannot substitute for the certificate; matching fact cites D2."
+        },
+        {
+          "case_id": "S06",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "At-most-50 condition and explicit exactly-50 eligibility together state an inclusive 50-credit maximum; supporting facts together cite D1 and D2."
+        },
+        {
+          "case_id": "S06",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Supervisor approval is explicitly required; matching fact cites D1."
+        },
+        {
+          "case_id": "S06",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Discrepancy amount explicitly means absolute difference between ordered and received value; matching fact cites D2."
+        },
+        {
+          "case_id": "S06",
+          "gold_index": 3,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Approval to close explicitly is not approval to pay; matching fact cites D1."
+        },
+        {
+          "case_id": "S06",
+          "gold_index": 4,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Other-currency coverage is explicitly unspecified, rather than merely omitted; matching fact cites D2."
+        }
+      ],
+      "unsupported": [],
+      "dangerous_overclaims": []
+    },
+    "Candidate-3": {
+      "targets": [
+        {
+          "case_id": "S01",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Explicit closure requirement includes quantity reconciliation; matching fact cites D1."
+        },
+        {
+          "case_id": "S01",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Explicit closure requirement includes signed acceptance; matching fact cites D1."
+        },
+        {
+          "case_id": "S01",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Acceptance is explicitly signed by the receiving lead; matching fact cites D2."
+        },
+        {
+          "case_id": "S01",
+          "gold_index": 3,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Closure explicitly does not authorize payment; matching fact cites D2."
+        },
+        {
+          "case_id": "S02",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Current closure evidence explicitly includes photographs; matching evidence fact cites D1 and D2."
+        },
+        {
+          "case_id": "S02",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Current closure evidence explicitly includes carrier acknowledgment; matching evidence fact cites D1 and D2."
+        },
+        {
+          "case_id": "S02",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Policy 3 explicitly makes the claims lead the current approver; matching fact cites D2."
+        },
+        {
+          "case_id": "S03",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Closure explicitly requires acceptance signed by the owner; matching fact cites D1."
+        },
+        {
+          "case_id": "S03",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Acceptance authority is explicitly unresolved or undetermined, not merely omitted; supporting facts cite D1 and D2."
+        },
+        {
+          "case_id": "S03",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Receipt notices are explicitly not acceptance; matching fact cites D1."
+        },
+        {
+          "case_id": "S03",
+          "gold_index": 3,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Dashboard green explicitly means dispatched, not accepted; matching fact cites D2."
+        },
+        {
+          "case_id": "S04",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Matching reconciled quantities is explicitly a closure condition under rule A; matching fact cites D1."
+        },
+        {
+          "case_id": "S04",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "A signed receipt is explicitly a closure condition under rule A; matching fact cites D1."
+        },
+        {
+          "case_id": "S04",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Finance approval requirement is explicitly an unresolved equal-authority conflict with no precedence; matching fact cites D1 and D2."
+        },
+        {
+          "case_id": "S05",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Service-delivery closure explicitly requires a service completion certificate; matching fact cites D1."
+        },
+        {
+          "case_id": "S05",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Certificate explicitly requires the customer delegate signature; matching fact cites D2."
+        },
+        {
+          "case_id": "S05",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Warehouse receipt requirement explicitly applies only to physical goods, excluding the service-delivery case; matching fact cites D1."
+        },
+        {
+          "case_id": "S05",
+          "gold_index": 3,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Purchase order explicitly cannot substitute for the certificate; matching fact cites D2."
+        },
+        {
+          "case_id": "S06",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "At-most-50 condition and explicit exactly-50 eligibility together state an inclusive 50-credit maximum; supporting facts together cite D1 and D2."
+        },
+        {
+          "case_id": "S06",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Supervisor approval is explicitly required; matching fact cites D1."
+        },
+        {
+          "case_id": "S06",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Discrepancy amount explicitly means absolute difference between ordered and received value; matching fact cites D2."
+        },
+        {
+          "case_id": "S06",
+          "gold_index": 3,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Approval to close explicitly is not approval to pay; matching fact cites D1."
+        },
+        {
+          "case_id": "S06",
+          "gold_index": 4,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Other-currency coverage is explicitly unspecified, rather than merely omitted; matching fact cites D2."
+        }
+      ],
+      "unsupported": [],
+      "dangerous_overclaims": []
+    },
+    "Candidate-4": {
+      "targets": [
+        {
+          "case_id": "S01",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Explicit closure requirement includes quantity reconciliation; matching fact cites D1."
+        },
+        {
+          "case_id": "S01",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Explicit closure requirement includes signed acceptance; matching fact cites D1."
+        },
+        {
+          "case_id": "S01",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Acceptance is explicitly signed by the receiving lead; matching fact cites D2."
+        },
+        {
+          "case_id": "S01",
+          "gold_index": 3,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Closure explicitly does not authorize payment; matching fact cites D2."
+        },
+        {
+          "case_id": "S02",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Current closure evidence explicitly includes photographs; matching evidence fact cites D1 and D2."
+        },
+        {
+          "case_id": "S02",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Current closure evidence explicitly includes carrier acknowledgment; matching evidence fact cites D1 and D2."
+        },
+        {
+          "case_id": "S02",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Policy 3 explicitly makes the claims lead the current approver; matching fact cites D2."
+        },
+        {
+          "case_id": "S03",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Closure explicitly requires acceptance signed by the owner; matching fact cites D1."
+        },
+        {
+          "case_id": "S03",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Acceptance authority is explicitly unresolved or undetermined, not merely omitted; supporting facts cite D1 and D2."
+        },
+        {
+          "case_id": "S03",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Receipt notices are explicitly not acceptance; matching fact cites D1."
+        },
+        {
+          "case_id": "S03",
+          "gold_index": 3,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Dashboard green explicitly means dispatched, not accepted; matching fact cites D2."
+        },
+        {
+          "case_id": "S04",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Matching reconciled quantities is explicitly a closure condition under rule A; matching fact cites D1."
+        },
+        {
+          "case_id": "S04",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "A signed receipt is explicitly a closure condition under rule A; matching fact cites D1."
+        },
+        {
+          "case_id": "S04",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Finance approval requirement is explicitly an unresolved equal-authority conflict with no precedence; matching fact cites D1 and D2."
+        },
+        {
+          "case_id": "S05",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Service-delivery closure explicitly requires a service completion certificate; matching fact cites D1."
+        },
+        {
+          "case_id": "S05",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Certificate explicitly requires the customer delegate signature; matching fact cites D2."
+        },
+        {
+          "case_id": "S05",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Warehouse receipt requirement explicitly applies only to physical goods, excluding the service-delivery case; matching fact cites D1."
+        },
+        {
+          "case_id": "S05",
+          "gold_index": 3,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Purchase order explicitly cannot substitute for the certificate; matching fact cites D2."
+        },
+        {
+          "case_id": "S06",
+          "gold_index": 0,
+          "covered": true,
+          "source_complete": true,
+          "reason": "At-most-50 condition and explicit exactly-50 eligibility together state an inclusive 50-credit maximum; supporting facts together cite D1 and D2."
+        },
+        {
+          "case_id": "S06",
+          "gold_index": 1,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Supervisor approval is explicitly required; matching fact cites D1."
+        },
+        {
+          "case_id": "S06",
+          "gold_index": 2,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Discrepancy amount explicitly means absolute difference between ordered and received value; matching fact cites D2."
+        },
+        {
+          "case_id": "S06",
+          "gold_index": 3,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Approval to close explicitly is not approval to pay; matching fact cites D1."
+        },
+        {
+          "case_id": "S06",
+          "gold_index": 4,
+          "covered": true,
+          "source_complete": true,
+          "reason": "Other-currency coverage is explicitly unspecified, rather than merely omitted; matching fact cites D2."
+        }
+      ],
+      "unsupported": [],
+      "dangerous_overclaims": []
+    }
+  }
+}

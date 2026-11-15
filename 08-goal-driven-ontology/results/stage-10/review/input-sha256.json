@@ -1,0 +1,12 @@
+{
+  "data/stage-10/batch1.json": "c5d319abee9f7aaada6e06f5dfbec4eefb919eae244a3c561bd23e044631e18e",
+  "data/stage-10/batch2.json": "cae3bac42bf985e2f16f4481b1e74a439a294e345843d91b0f93597e013210b0",
+  "data/stage-10/gold.json": "99954ae3e7aa4dd2b62ee2a55edfa1b168f6008f5f239f9466a2afc03758de8a",
+  "data/stage-10/materials.json": "2aadd2b82a6e26e3fa38300290234ed6e7e497381a8b73bf58fa5eca4a283f78",
+  "results/stage-10/arm_batch.json": "817e63bf0363cfc98fd16bb4ac8727b955b5497a2d14ea8ac98faba1b28b6547",
+  "results/stage-10/arm_batch_pass1.json": "4a52b04ec8f3da6d7808c6a459505b829377e7877b221f42b92c58c058b0c762",
+  "results/stage-10/arm_one.json": "eb0b15de92b2a273eac1f27d27c42f6e9af6bebd36cf57b52402956944a220c7",
+  "results/stage-10/arm_rule.json": "846e8acae1d7b6926209a1a913c257bb6d667568c08f6cc8ad6d5f0de59071ff",
+  "results/stage-10/arm_strong.json": "6a9fd67f61684197a1e6cbea0a360229ad19f7e53939e4b6ea1ea821412982df",
+  "results/stage-10/arm_strong_pass1.json": "5edef5d84d1c3bab8e6280abfcf268d1fe52900134be5f26026cfe6a054eeb3e"
+}

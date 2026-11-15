@@ -1,0 +1,86 @@
+[
+  {
+    "case_id": "S01",
+    "question": "Which prerequisites allow closing a receiving discrepancy?",
+    "documents": [
+      {
+        "id": "D1",
+        "text": "A receiving discrepancy can close only after quantity reconciliation and a signed acceptance. Warehouse arrival alone is insufficient."
+      },
+      {
+        "id": "D2",
+        "text": "A signed acceptance means the receiving lead has signed the acceptance record. Closing a discrepancy does not authorize payment."
+      }
+    ]
+  },
+  {
+    "case_id": "S02",
+    "question": "Which evidence and approver are required to close a damaged-shipment claim?",
+    "documents": [
+      {
+        "id": "D1",
+        "text": "Current policy 2: A damage claim needs photographs and carrier acknowledgment before closure. The approver is the logistics lead."
+      },
+      {
+        "id": "D2",
+        "text": "Current policy 3 replaces policy 2 only on the approver: the approver is the claims lead. The evidence requirements remain unchanged. An archived draft suggested invoices instead of photographs; the draft never took effect."
+      }
+    ]
+  },
+  {
+    "case_id": "S03",
+    "question": "When can an exception close, and can acceptance authority be determined?",
+    "documents": [
+      {
+        "id": "D1",
+        "text": "Closure requires an acceptance signed by the owner. This document does not define owner. Receipt notices are not acceptance."
+      },
+      {
+        "id": "D2",
+        "text": "The team directory lists both a purchase owner and a receiving owner. Neither is designated as the owner for acceptance. The shipping dashboard uses green for shipment dispatched, not accepted."
+      }
+    ]
+  },
+  {
+    "case_id": "S04",
+    "question": "What authorizes a quantity-exception closure?",
+    "documents": [
+      {
+        "id": "D1",
+        "text": "Rule A, active: a quantity exception closes if reconciled quantities match and the receipt is signed. No finance approval is required."
+      },
+      {
+        "id": "D2",
+        "text": "Rule B, active with equal authority and overlapping scope: the same closure also requires finance approval. Neither rule identifies precedence. The finance roster contains names, not a resolution of this policy conflict."
+      }
+    ]
+  },
+  {
+    "case_id": "S05",
+    "question": "What is the minimum evidence to close a service-delivery exception?",
+    "documents": [
+      {
+        "id": "D1",
+        "text": "For service-delivery exceptions, closure requires a service completion certificate. For physical goods only, closure additionally requires a warehouse receipt."
+      },
+      {
+        "id": "D2",
+        "text": "For service-delivery exceptions, the certificate must be signed by the customer delegate. A purchase order cannot substitute for that certificate. Office decorations need annual inventory, a separate process."
+      }
+    ]
+  },
+  {
+    "case_id": "S06",
+    "question": "Which conditions govern expedited closure and its scope?",
+    "documents": [
+      {
+        "id": "D1",
+        "text": "The expedited route is available only when the discrepancy amount is at most 50 credits and a supervisor has approved. Approval to close is not approval to pay."
+      },
+      {
+        "id": "D2",
+        "text": "The amount is the absolute difference between ordered and received value, not the total order value. At exactly 50 credits the route is available if approved. The policy says nothing about claims in another currency."
+      }
+    ]
+  }
+]

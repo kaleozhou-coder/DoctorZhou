@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-15",
+  "execution": "internal isolated AI subagents, no-history fork",
+  "synthetic_only": true,
+  "cases": 6,
+  "gold_propositions": 23,
+  "arms": {
+    "one": {"turns": 1, "materials": ["D1", "D2"]},
+    "batch": {"turns": 2, "first_materials": ["D1"], "second_materials": ["D2"], "batch_selection": "fixed by coordinator, not adaptive"},
+    "strong": {"turns": 2, "materials_each_turn": ["D1", "D2"], "second_turn": "self-review without gold feedback"},
+    "rule": {"implementation": "deterministic generic lexical sentence selector", "model_calls": 0}
+  },
+  "external_model_api_calls": 0,
+  "credentials_used": false,
+  "local_model_available": false,
+  "stable_model_version": null,
+  "model_sampling_seed": null,
+  "token_usage": null,
+  "compute_cost": null,
+  "money_cost": null,
+  "human_reviewed": 0,
+  "human_minutes": null,
+  "review": "one independent AI scorer with arm identities masked; output style may reveal method",
+  "reproducibility": "deterministic baseline, masking and artifact verification reproducible; AI extraction and AI scoring are frozen observations, not bitwise regenerable"
+}

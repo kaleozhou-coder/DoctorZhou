@@ -1,0 +1,46 @@
+{
+  "mechanical_validation": {
+    "cases": 6,
+    "target_propositions": 23,
+    "candidate_objects": {
+      "one": 24,
+      "batch": 30,
+      "strong": 22,
+      "rule": 23
+    },
+    "human_reviewed": 0,
+    "human_minutes": null,
+    "money_cost": null
+  },
+  "ai_judged_results": {
+    "rule": {
+      "covered": 17,
+      "source_complete": 17,
+      "denominator": 23,
+      "unsupported_reported": 0,
+      "dangerous_overclaims_reported": 0
+    },
+    "one": {
+      "covered": 23,
+      "source_complete": 23,
+      "denominator": 23,
+      "unsupported_reported": 0,
+      "dangerous_overclaims_reported": 0
+    },
+    "batch": {
+      "covered": 23,
+      "source_complete": 23,
+      "denominator": 23,
+      "unsupported_reported": 0,
+      "dangerous_overclaims_reported": 0
+    },
+    "strong": {
+      "covered": 23,
+      "source_complete": 23,
+      "denominator": 23,
+      "unsupported_reported": 0,
+      "dangerous_overclaims_reported": 0
+    }
+  },
+  "inference": "No observed batch advantage; synthetic ceiling, single run, AI-authored gold and AI grading."
+}

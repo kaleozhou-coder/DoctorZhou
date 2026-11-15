@@ -1,0 +1,239 @@
+[
+  {
+    "case_id": "S01",
+    "facts": [
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "A receiving discrepancy can close only after quantity reconciliation and a signed acceptance.",
+        "sources": [
+          "D1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "A signed acceptance means the receiving lead has signed the acceptance record.",
+        "sources": [
+          "D2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "Closing a discrepancy does not authorize payment.",
+        "sources": [
+          "D2"
+        ],
+        "status": "proposed"
+      }
+    ]
+  },
+  {
+    "case_id": "S02",
+    "facts": [
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "The approver is the logistics lead.",
+        "sources": [
+          "D1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "Current policy 3 replaces policy 2 only on the approver: the approver is the claims lead.",
+        "sources": [
+          "D2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "The evidence requirements remain unchanged.",
+        "sources": [
+          "D2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "An archived draft suggested invoices instead of photographs; the draft never took effect.",
+        "sources": [
+          "D2"
+        ],
+        "status": "proposed"
+      }
+    ]
+  },
+  {
+    "case_id": "S03",
+    "facts": [
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "Closure requires an acceptance signed by the owner.",
+        "sources": [
+          "D1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "This document does not define owner.",
+        "sources": [
+          "D1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "Receipt notices are not acceptance.",
+        "sources": [
+          "D1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "Neither is designated as the owner for acceptance.",
+        "sources": [
+          "D2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "The shipping dashboard uses green for shipment dispatched, not accepted.",
+        "sources": [
+          "D2"
+        ],
+        "status": "proposed"
+      }
+    ]
+  },
+  {
+    "case_id": "S04",
+    "facts": [
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "No finance approval is required.",
+        "sources": [
+          "D1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "Rule B, active with equal authority and overlapping scope: the same closure also requires finance approval.",
+        "sources": [
+          "D2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "Neither rule identifies precedence.",
+        "sources": [
+          "D2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "The finance roster contains names, not a resolution of this policy conflict.",
+        "sources": [
+          "D2"
+        ],
+        "status": "proposed"
+      }
+    ]
+  },
+  {
+    "case_id": "S05",
+    "facts": [
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "For service-delivery exceptions, closure requires a service completion certificate.",
+        "sources": [
+          "D1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "For physical goods only, closure additionally requires a warehouse receipt.",
+        "sources": [
+          "D1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "For service-delivery exceptions, the certificate must be signed by the customer delegate.",
+        "sources": [
+          "D2"
+        ],
+        "status": "proposed"
+      }
+    ]
+  },
+  {
+    "case_id": "S06",
+    "facts": [
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "The expedited route is available only when the discrepancy amount is at most 50 credits and a supervisor has approved.",
+        "sources": [
+          "D1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "Approval to close is not approval to pay.",
+        "sources": [
+          "D1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "The amount is the absolute difference between ordered and received value, not the total order value.",
+        "sources": [
+          "D2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "subject": "policy",
+        "relation": "states",
+        "value": "At exactly 50 credits the route is available if approved.",
+        "sources": [
+          "D2"
+        ],
+        "status": "proposed"
+      }
+    ]
+  }
+]

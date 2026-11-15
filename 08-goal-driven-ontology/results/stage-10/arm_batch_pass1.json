@@ -1,0 +1,51 @@
+[
+  {
+    "case_id": "S01",
+    "facts": [
+      {"subject":"receiving_discrepancy_closure","relation":"requires_all","value":["quantity_reconciliation","signed_acceptance"],"sources":["D1"],"status":"proposed"},
+      {"subject":"warehouse_arrival_alone","relation":"is_sufficient_for_receiving_discrepancy_closure","value":false,"sources":["D1"],"status":"proposed"}
+    ],
+    "next_question":"Are quantity reconciliation and signed acceptance jointly sufficient, or are further prerequisites required? D1 establishes necessary conditions only, leaving sufficient authorization unresolved."
+  },
+  {
+    "case_id": "S02",
+    "facts": [
+      {"subject":"damage_claim_closure_under_current_policy_2","relation":"requires_all_evidence","value":["photographs","carrier_acknowledgment"],"sources":["D1"],"status":"proposed"},
+      {"subject":"damage_claim_closure_under_current_policy_2","relation":"approver","value":"logistics_lead","sources":["D1"],"status":"proposed"}
+    ],
+    "next_question":"No missing evidence blocks identifying the required evidence and approver in the supplied current policy."
+  },
+  {
+    "case_id": "S03",
+    "facts": [
+      {"subject":"exception_closure","relation":"requires","value":"acceptance_signed_by_owner","sources":["D1"],"status":"proposed"},
+      {"subject":"owner","relation":"defined_in_d1","value":false,"sources":["D1"],"status":"proposed"},
+      {"subject":"receipt_notice","relation":"is_acceptance","value":false,"sources":["D1"],"status":"proposed"}
+    ],
+    "next_question":"Who is the owner authorized to sign acceptance, and is owner-signed acceptance sufficient for closure? The missing owner definition blocks determining acceptance authority; D1 gives a necessary condition but not complete sufficient closure conditions."
+  },
+  {
+    "case_id": "S04",
+    "facts": [
+      {"subject":"quantity_exception_closure_under_active_rule_a","relation":"authorized_if_all","value":["reconciled_quantities_match","receipt_is_signed"],"sources":["D1"],"status":"proposed"},
+      {"subject":"quantity_exception_closure_under_active_rule_a","relation":"requires_finance_approval","value":false,"sources":["D1"],"status":"proposed"}
+    ],
+    "next_question":"No missing evidence blocks identifying the closure authorization supplied by active Rule A."
+  },
+  {
+    "case_id": "S05",
+    "facts": [
+      {"subject":"service_delivery_exception_closure","relation":"requires","value":"service_completion_certificate","sources":["D1"],"status":"proposed"},
+      {"subject":"additional_warehouse_receipt_requirement_for_closure","relation":"applies_only_to","value":"physical_goods","sources":["D1"],"status":"proposed"}
+    ],
+    "next_question":"Is the service completion certificate alone sufficient for service-delivery exception closure? D1 identifies required evidence and limits the additional warehouse receipt requirement to physical goods, but does not explicitly establish a complete sufficient evidence set."
+  },
+  {
+    "case_id": "S06",
+    "facts": [
+      {"subject":"expedited_closure_route_availability","relation":"requires_all","value":["discrepancy_amount_at_most_50_credits","supervisor_has_approved"],"sources":["D1"],"status":"proposed"},
+      {"subject":"approval_to_close","relation":"constitutes_approval_to_pay","value":false,"sources":["D1"],"status":"proposed"}
+    ],
+    "next_question":"Are the amount threshold and supervisor approval jointly sufficient for expedited-route availability? D1 establishes necessary eligibility conditions and excludes payment authorization, but does not assert sufficiency."
+  }
+]

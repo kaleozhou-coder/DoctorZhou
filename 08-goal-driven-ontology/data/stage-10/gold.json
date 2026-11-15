@@ -1,0 +1,221 @@
+[
+  {
+    "case_id": "S01",
+    "facts": [
+      {
+        "subject": "closure",
+        "relation": "requires",
+        "value": "quantity_reconciliation",
+        "sources": [
+          "D1"
+        ]
+      },
+      {
+        "subject": "closure",
+        "relation": "requires",
+        "value": "signed_acceptance",
+        "sources": [
+          "D1"
+        ]
+      },
+      {
+        "subject": "signed_acceptance",
+        "relation": "signer",
+        "value": "receiving_lead",
+        "sources": [
+          "D2"
+        ]
+      },
+      {
+        "subject": "closure",
+        "relation": "authorizes_payment",
+        "value": "false",
+        "sources": [
+          "D2"
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "S02",
+    "facts": [
+      {
+        "subject": "closure",
+        "relation": "requires",
+        "value": "photographs",
+        "sources": [
+          "D1",
+          "D2"
+        ]
+      },
+      {
+        "subject": "closure",
+        "relation": "requires",
+        "value": "carrier_acknowledgment",
+        "sources": [
+          "D1",
+          "D2"
+        ]
+      },
+      {
+        "subject": "closure",
+        "relation": "approver",
+        "value": "claims_lead",
+        "sources": [
+          "D2"
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "S03",
+    "facts": [
+      {
+        "subject": "closure",
+        "relation": "requires",
+        "value": "signed_acceptance",
+        "sources": [
+          "D1"
+        ]
+      },
+      {
+        "subject": "signed_acceptance",
+        "relation": "signer",
+        "value": "unknown",
+        "sources": [
+          "D1",
+          "D2"
+        ]
+      },
+      {
+        "subject": "receipt_notice",
+        "relation": "is_acceptance",
+        "value": "false",
+        "sources": [
+          "D1"
+        ]
+      },
+      {
+        "subject": "dispatch",
+        "relation": "is_acceptance",
+        "value": "false",
+        "sources": [
+          "D2"
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "S04",
+    "facts": [
+      {
+        "subject": "closure",
+        "relation": "requires",
+        "value": "quantity_match",
+        "sources": [
+          "D1"
+        ]
+      },
+      {
+        "subject": "closure",
+        "relation": "requires",
+        "value": "signed_receipt",
+        "sources": [
+          "D1"
+        ]
+      },
+      {
+        "subject": "closure",
+        "relation": "requires_finance_approval",
+        "value": "conflict",
+        "sources": [
+          "D1",
+          "D2"
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "S05",
+    "facts": [
+      {
+        "subject": "closure",
+        "relation": "requires",
+        "value": "completion_certificate",
+        "sources": [
+          "D1"
+        ]
+      },
+      {
+        "subject": "completion_certificate",
+        "relation": "signer",
+        "value": "customer_delegate",
+        "sources": [
+          "D2"
+        ]
+      },
+      {
+        "subject": "closure",
+        "relation": "requires_warehouse_receipt",
+        "value": "false",
+        "sources": [
+          "D1"
+        ]
+      },
+      {
+        "subject": "purchase_order",
+        "relation": "substitutes_certificate",
+        "value": "false",
+        "sources": [
+          "D2"
+        ]
+      }
+    ]
+  },
+  {
+    "case_id": "S06",
+    "facts": [
+      {
+        "subject": "expedited_closure",
+        "relation": "maximum_amount",
+        "value": "50_credits_inclusive",
+        "sources": [
+          "D1",
+          "D2"
+        ]
+      },
+      {
+        "subject": "expedited_closure",
+        "relation": "requires",
+        "value": "supervisor_approval",
+        "sources": [
+          "D1"
+        ]
+      },
+      {
+        "subject": "discrepancy_amount",
+        "relation": "definition",
+        "value": "absolute_value_difference",
+        "sources": [
+          "D2"
+        ]
+      },
+      {
+        "subject": "closure",
+        "relation": "authorizes_payment",
+        "value": "false",
+        "sources": [
+          "D1"
+        ]
+      },
+      {
+        "subject": "other_currency",
+        "relation": "eligibility",
+        "value": "unknown",
+        "sources": [
+          "D2"
+        ]
+      }
+    ]
+  }
+]
