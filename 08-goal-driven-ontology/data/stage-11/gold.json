@@ -1,0 +1,160 @@
+{
+  "label_origin": "Coordinator AI; independently reviewed by isolated AI before extraction. Not expert/human gold.",
+  "facts": [
+    {
+      "id": "Q01",
+      "answer": "NECESSARY_ONLY",
+      "sources": [
+        "D1.2",
+        "D1.3"
+      ]
+    },
+    {
+      "id": "Q02",
+      "answer": "NOT_SUFFICIENT",
+      "sources": [
+        "D1.2",
+        "D1.3"
+      ]
+    },
+    {
+      "id": "Q03",
+      "answer": "ROUTINE_ONLY",
+      "sources": [
+        "D1.3",
+        "D1.5"
+      ]
+    },
+    {
+      "id": "Q04",
+      "answer": "WAIVER_AND_EITHER_AUDIT_OR_INSPECTION",
+      "sources": [
+        "D1.3",
+        "D3.1"
+      ]
+    },
+    {
+      "id": "Q05",
+      "answer": "NO",
+      "sources": [
+        "D2.1",
+        "D2.4"
+      ]
+    },
+    {
+      "id": "Q06",
+      "answer": "UNKNOWN",
+      "sources": [
+        "D2.2"
+      ]
+    },
+    {
+      "id": "Q07",
+      "answer": "UNKNOWN",
+      "sources": [
+        "D2.3"
+      ]
+    },
+    {
+      "id": "Q08",
+      "answer": "NO",
+      "sources": [
+        "D4.1"
+      ]
+    },
+    {
+      "id": "Q09",
+      "answer": "NO",
+      "sources": [
+        "D1.5"
+      ]
+    },
+    {
+      "id": "Q10",
+      "answer": "NO",
+      "sources": [
+        "D3.1"
+      ]
+    },
+    {
+      "id": "Q11",
+      "answer": "NO",
+      "sources": [
+        "D2.2"
+      ]
+    },
+    {
+      "id": "Q12",
+      "answer": "NO",
+      "sources": [
+        "D1.4"
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "id": "C01",
+      "answer": "ALLOW"
+    },
+    {
+      "id": "C02",
+      "answer": "UNKNOWN"
+    },
+    {
+      "id": "C03",
+      "answer": "ALLOW"
+    },
+    {
+      "id": "C04",
+      "answer": "ALLOW"
+    },
+    {
+      "id": "C05",
+      "answer": "BLOCKED"
+    },
+    {
+      "id": "C06",
+      "answer": "BLOCKED"
+    },
+    {
+      "id": "C07",
+      "answer": "UNKNOWN"
+    },
+    {
+      "id": "C08",
+      "answer": "UNKNOWN"
+    },
+    {
+      "id": "C09",
+      "answer": "BLOCKED"
+    },
+    {
+      "id": "C10",
+      "answer": "BLOCKED"
+    },
+    {
+      "id": "C11",
+      "answer": "UNKNOWN"
+    },
+    {
+      "id": "C12",
+      "answer": "BLOCKED"
+    },
+    {
+      "id": "C13",
+      "answer": "ALLOW"
+    },
+    {
+      "id": "C14",
+      "answer": "ALLOW"
+    },
+    {
+      "id": "C15",
+      "answer": "BLOCKED"
+    },
+    {
+      "id": "C16",
+      "answer": "UNKNOWN"
+    }
+  ]
+}

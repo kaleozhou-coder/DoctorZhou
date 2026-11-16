@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-16",
+  "runtime": "internal collaboration AI agents",
+  "external_paid_api_calls": 0,
+  "model_service_started": false,
+  "credential_access": false,
+  "fork_turns": "none",
+  "model_version": null,
+  "seed": null,
+  "token_usage": null,
+  "monetary_cost": null,
+  "human_minutes": null,
+  "human_approvals": 0,
+  "isolation": "instruction-scoped read access, shared filesystem; not OS sandbox",
+  "arms": {
+    "one": {
+      "rounds": 1,
+      "final_materials": "D1 D2 D3 D4"
+    },
+    "batch": {
+      "rounds": 2,
+      "first_materials": "D1 D2",
+      "second_new_materials": "D3 D4",
+      "final_materials": "D1 D2 D3 D4"
+    },
+    "strong": {
+      "rounds": 2,
+      "each_round_materials": "D1 D2 D3 D4"
+    }
+  },
+  "pre_review": "isolated AI review and hashes recorded before arms spawned",
+  "notes": [
+    "One draw per arm; no stable API sampling control.",
+    "Same final materials and contract, not equal token/compute budgets.",
+    "Parent publication is separate; no public push from experiment worker."
+  ]
+}

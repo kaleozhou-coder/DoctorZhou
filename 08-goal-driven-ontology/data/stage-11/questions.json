@@ -1,0 +1,282 @@
+{
+  "questions": [
+    {
+      "id": "Q01",
+      "question": "Is reconciled quantity necessary, sufficient alone, both, or neither for closure?"
+    },
+    {
+      "id": "Q02",
+      "question": "Are reconciled quantity and valid handover together sufficient for closure?"
+    },
+    {
+      "id": "Q03",
+      "question": "Is cleared settlement necessary for all closure, routine closure only, or no closure?"
+    },
+    {
+      "id": "Q04",
+      "question": "What are the current sufficient exception-route alternatives, excluding common prerequisites?"
+    },
+    {
+      "id": "Q05",
+      "question": "Can the legacy driver-signature card establish valid handover for these snapshots?"
+    },
+    {
+      "id": "Q06",
+      "question": "Is an authoritative mapping from settlement_flag Y to cleared settlement defined in the supplied packet?"
+    },
+    {
+      "id": "Q07",
+      "question": "Is an authoritative mapping from paid_at to receipt_date or posting_date defined in the supplied packet?"
+    },
+    {
+      "id": "Q08",
+      "question": "Does the largest measured contribution establish a causal reason?"
+    },
+    {
+      "id": "Q09",
+      "question": "Does closure authorize payment?"
+    },
+    {
+      "id": "Q10",
+      "question": "Does CR-17 remove the waiver requirement?"
+    },
+    {
+      "id": "Q11",
+      "question": "Are receipt_date and posting_date synonyms?"
+    },
+    {
+      "id": "Q12",
+      "question": "Can an active hold be overridden by a complete route?"
+    }
+  ],
+  "snapshots": [
+    {
+      "id": "C01",
+      "case_class": "routine",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": true,
+        "handover_valid": true,
+        "cleared_settlement": true,
+        "waiver": true,
+        "audit": true,
+        "independent_inspection": false,
+        "hold": false
+      }
+    },
+    {
+      "id": "C02",
+      "case_class": "routine",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": true,
+        "handover_valid": true,
+        "cleared_settlement": null,
+        "waiver": true,
+        "audit": true,
+        "independent_inspection": false,
+        "hold": false,
+        "settlement_flag": "Y"
+      }
+    },
+    {
+      "id": "C03",
+      "case_class": "exception",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": true,
+        "handover_valid": true,
+        "cleared_settlement": false,
+        "waiver": true,
+        "audit": false,
+        "independent_inspection": true,
+        "hold": false
+      }
+    },
+    {
+      "id": "C04",
+      "case_class": "exception",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": true,
+        "handover_valid": true,
+        "cleared_settlement": true,
+        "waiver": true,
+        "audit": true,
+        "independent_inspection": false,
+        "hold": false
+      }
+    },
+    {
+      "id": "C05",
+      "case_class": "exception",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": true,
+        "handover_valid": true,
+        "cleared_settlement": true,
+        "waiver": false,
+        "audit": true,
+        "independent_inspection": true,
+        "hold": false
+      }
+    },
+    {
+      "id": "C06",
+      "case_class": "routine",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": true,
+        "handover_valid": true,
+        "cleared_settlement": true,
+        "waiver": true,
+        "audit": true,
+        "independent_inspection": false,
+        "hold": true
+      }
+    },
+    {
+      "id": "C07",
+      "case_class": "routine",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": true,
+        "handover_valid": true,
+        "cleared_settlement": true,
+        "waiver": true,
+        "audit": true,
+        "independent_inspection": false,
+        "hold": null
+      }
+    },
+    {
+      "id": "C08",
+      "case_class": "exception",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": true,
+        "handover_valid": true,
+        "cleared_settlement": true,
+        "waiver": true,
+        "audit": false,
+        "independent_inspection": null,
+        "hold": false
+      }
+    },
+    {
+      "id": "C09",
+      "case_class": "exception",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": true,
+        "handover_valid": true,
+        "cleared_settlement": true,
+        "waiver": true,
+        "audit": false,
+        "independent_inspection": false,
+        "hold": false
+      }
+    },
+    {
+      "id": "C10",
+      "case_class": "routine",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": true,
+        "handover_valid": false,
+        "cleared_settlement": true,
+        "waiver": true,
+        "audit": true,
+        "independent_inspection": false,
+        "hold": false,
+        "driver_signature": true
+      }
+    },
+    {
+      "id": "C11",
+      "case_class": "routine",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": true,
+        "handover_valid": true,
+        "cleared_settlement": null,
+        "waiver": true,
+        "audit": true,
+        "independent_inspection": false,
+        "hold": false,
+        "receipt_date": "2032-05-01",
+        "posting_date": "2032-05-02"
+      }
+    },
+    {
+      "id": "C12",
+      "case_class": "exception",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": false,
+        "handover_valid": true,
+        "cleared_settlement": true,
+        "waiver": true,
+        "audit": true,
+        "independent_inspection": false,
+        "hold": false
+      }
+    },
+    {
+      "id": "C13",
+      "case_class": "exception",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": true,
+        "handover_valid": true,
+        "cleared_settlement": true,
+        "waiver": true,
+        "audit": null,
+        "independent_inspection": true,
+        "hold": false
+      }
+    },
+    {
+      "id": "C14",
+      "case_class": "exception",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": true,
+        "handover_valid": true,
+        "cleared_settlement": true,
+        "waiver": true,
+        "audit": true,
+        "independent_inspection": null,
+        "hold": false
+      }
+    },
+    {
+      "id": "C15",
+      "case_class": "routine",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": true,
+        "handover_valid": true,
+        "cleared_settlement": false,
+        "waiver": true,
+        "audit": true,
+        "independent_inspection": false,
+        "hold": false
+      }
+    },
+    {
+      "id": "C16",
+      "case_class": "routine",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": true,
+        "handover_valid": null,
+        "cleared_settlement": true,
+        "waiver": true,
+        "audit": true,
+        "independent_inspection": false,
+        "hold": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "facts": [
+    {
+      "id": "Q01",
+      "answer": "NECESSARY_ONLY",
+      "sources": [
+        "D1.2",
+        "D1.3"
+      ],
+      "reason": "Reconciliation is required for every closure but alone cannot establish a route.",
+      "status": "proposed"
+    },
+    {
+      "id": "Q02",
+      "answer": "NOT_SUFFICIENT",
+      "sources": [
+        "D1.2",
+        "D1.3",
+        "D1.4",
+        "D3.1"
+      ],
+      "reason": "Reconciliation and handover are common necessities; class-specific route conditions and an inactive hold are also required.",
+      "status": "proposed"
+    },
+    {
+      "id": "Q03",
+      "answer": "ROUTINE_ONLY",
+      "sources": [
+        "D1.3",
+        "D1.5",
+        "D3.1"
+      ],
+      "reason": "Settlement is necessary for routine closure, not for the exception route retained by CR-17.",
+      "status": "proposed"
+    },
+    {
+      "id": "Q04",
+      "answer": "WAIVER_AND_EITHER_AUDIT_OR_INSPECTION",
+      "sources": [
+        "D1.3",
+        "D3.1",
+        "D3.3"
+      ],
+      "reason": "Current exception routes retain the waiver and permit either completed audit or independent second inspection.",
+      "status": "proposed"
+    },
+    {
+      "id": "Q05",
+      "answer": "NO",
+      "sources": [
+        "D2.1",
+        "D2.4",
+        "D3.3"
+      ],
+      "reason": "These new May 2 cases use the current receiving-lead definition, not the archived driver-signature card.",
+      "status": "proposed"
+    },
+    {
+      "id": "Q06",
+      "answer": "UNKNOWN",
+      "sources": [
+        "D2.2",
+        "D3.2",
+        "D4.3"
+      ],
+      "reason": "The field points to absent SI-9; no supplied authoritative definition maps Y to cleared settlement.",
+      "status": "proposed"
+    },
+    {
+      "id": "Q07",
+      "answer": "UNKNOWN",
+      "sources": [
+        "D2.3",
+        "D3.2"
+      ],
+      "reason": "Neither a signed paid_at definition nor the migration mapping is supplied.",
+      "status": "proposed"
+    },
+    {
+      "id": "Q08",
+      "answer": "NO",
+      "sources": [
+        "D4.1"
+      ],
+      "reason": "Arithmetic contribution alone is not evidence of a causal mechanism.",
+      "status": "proposed"
+    },
+    {
+      "id": "Q09",
+      "answer": "NO",
+      "sources": [
+        "D1.1",
+        "D1.5"
+      ],
+      "reason": "Closure does not establish payment authorization; payment is governed separately.",
+      "status": "proposed"
+    },
+    {
+      "id": "Q10",
+      "answer": "NO",
+      "sources": [
+        "D1.3",
+        "D3.1"
+      ],
+      "reason": "CR-17 changes only the audit alternative and expressly retains the waiver.",
+      "status": "proposed"
+    },
+    {
+      "id": "Q11",
+      "answer": "NO",
+      "sources": [
+        "D2.2"
+      ],
+      "reason": "Receipt and posting describe distinct bank and ledger events, which can occur on different dates.",
+      "status": "proposed"
+    },
+    {
+      "id": "Q12",
+      "answer": "NO",
+      "sources": [
+        "D1.4",
+        "D3.2"
+      ],
+      "reason": "An active hold forbids closure even with a complete positive route.",
+      "status": "proposed"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "C01",
+      "answer": "ALLOW",
+      "sources": [
+        "D1.2",
+        "D1.3",
+        "D1.4",
+        "D4.2",
+        "D4.3"
+      ],
+      "reason": "Routine reconciliation, handover and settlement are true and hold is false.",
+      "status": "proposed"
+    },
+    {
+      "id": "C02",
+      "answer": "UNKNOWN",
+      "sources": [
+        "D1.3",
+        "D1.5",
+        "D2.2",
+        "D3.2",
+        "D4.2",
+        "D4.3"
+      ],
+      "reason": "Routine settlement is unavailable; unmapped Y cannot establish it, and the exception route cannot substitute.",
+      "status": "proposed"
+    },
+    {
+      "id": "C03",
+      "answer": "ALLOW",
+      "sources": [
+        "D1.2",
+        "D1.3",
+        "D1.4",
+        "D3.1",
+        "D3.3",
+        "D4.2",
+        "D4.3"
+      ],
+      "reason": "Exception common prerequisites and waiver are true; independent inspection supplies the current alternative, with no hold. Settlement is not required.",
+      "status": "proposed"
+    },
+    {
+      "id": "C04",
+      "answer": "ALLOW",
+      "sources": [
+        "D1.2",
+        "D1.3",
+        "D1.4",
+        "D3.1",
+        "D3.3",
+        "D4.2",
+        "D4.3"
+      ],
+      "reason": "Exception waiver and audit establish the route with common prerequisites and inactive hold; inspection is not also required.",
+      "status": "proposed"
+    },
+    {
+      "id": "C05",
+      "answer": "BLOCKED",
+      "sources": [
+        "D1.3",
+        "D3.1",
+        "D4.2",
+        "D4.3"
+      ],
+      "reason": "Explicitly false waiver defeats both current exception alternatives, regardless of audit, inspection or settlement.",
+      "status": "proposed"
+    },
+    {
+      "id": "C06",
+      "answer": "BLOCKED",
+      "sources": [
+        "D1.4",
+        "D3.2",
+        "D4.2",
+        "D4.3"
+      ],
+      "reason": "True active hold prohibits closure despite complete routine positive conditions.",
+      "status": "proposed"
+    },
+    {
+      "id": "C07",
+      "answer": "UNKNOWN",
+      "sources": [
+        "D1.3",
+        "D1.4",
+        "D4.2",
+        "D4.3"
+      ],
+      "reason": "Routine positive conditions are established, but unavailable hold status prevents allowance without establishing prohibition.",
+      "status": "proposed"
+    },
+    {
+      "id": "C08",
+      "answer": "UNKNOWN",
+      "sources": [
+        "D1.3",
+        "D3.1",
+        "D3.3",
+        "D4.2",
+        "D4.3"
+      ],
+      "reason": "Audit is false while independent inspection is unavailable; the inspection alternative remains unresolved, not defeated.",
+      "status": "proposed"
+    },
+    {
+      "id": "C09",
+      "answer": "BLOCKED",
+      "sources": [
+        "D1.3",
+        "D3.1",
+        "D4.2",
+        "D4.3"
+      ],
+      "reason": "Both audit and independent inspection are explicitly false, defeating all exception routes.",
+      "status": "proposed"
+    },
+    {
+      "id": "C10",
+      "answer": "BLOCKED",
+      "sources": [
+        "D1.2",
+        "D2.1",
+        "D2.4",
+        "D3.3",
+        "D4.2",
+        "D4.3"
+      ],
+      "reason": "Authoritative handover validity is false; a driver signature and archived card cannot satisfy the current requirement.",
+      "status": "proposed"
+    },
+    {
+      "id": "C11",
+      "answer": "UNKNOWN",
+      "sources": [
+        "D1.3",
+        "D1.5",
+        "D2.2",
+        "D4.2",
+        "D4.3"
+      ],
+      "reason": "Routine cleared settlement is unavailable; receipt and posting dates identify events but do not attest cleared settlement.",
+      "status": "proposed"
+    },
+    {
+      "id": "C12",
+      "answer": "BLOCKED",
+      "sources": [
+        "D1.2",
+        "D3.2",
+        "D4.2",
+        "D4.3"
+      ],
+      "reason": "Reconciliation is explicitly false and is necessary for every closure.",
+      "status": "proposed"
+    },
+    {
+      "id": "C13",
+      "answer": "ALLOW",
+      "sources": [
+        "D1.2",
+        "D1.3",
+        "D1.4",
+        "D3.1",
+        "D3.3",
+        "D4.2",
+        "D4.3"
+      ],
+      "reason": "Independent inspection establishes one exception alternative with waiver and common prerequisites; unknown audit is immaterial and hold is false.",
+      "status": "proposed"
+    },
+    {
+      "id": "C14",
+      "answer": "ALLOW",
+      "sources": [
+        "D1.2",
+        "D1.3",
+        "D1.4",
+        "D3.1",
+        "D3.3",
+        "D4.2",
+        "D4.3"
+      ],
+      "reason": "Completed audit establishes one exception alternative with waiver and common prerequisites; unknown inspection is immaterial and hold is false.",
+      "status": "proposed"
+    },
+    {
+      "id": "C15",
+      "answer": "BLOCKED",
+      "sources": [
+        "D1.3",
+        "D1.5",
+        "D4.2",
+        "D4.3"
+      ],
+      "reason": "Routine settlement is explicitly false; exception waiver and audit do not authorize a routine route.",
+      "status": "proposed"
+    },
+    {
+      "id": "C16",
+      "answer": "UNKNOWN",
+      "sources": [
+        "D1.2",
+        "D1.3",
+        "D4.2",
+        "D4.3"
+      ],
+      "reason": "Necessary handover validity is unavailable, not false; remaining routine conditions do not resolve it.",
+      "status": "proposed"
+    }
+  ]
+}

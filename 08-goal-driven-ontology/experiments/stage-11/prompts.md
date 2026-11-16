@@ -1,0 +1,18 @@
+# Extraction prompt record
+
+All workers were launched with no inherited conversation (`fork_turns: none`), default inherited model settings, and the same workspace root. Their instructions limited reads to listed inputs; this was not enforced by an OS sandbox. No external API or local model service was used. These are the task texts, with the common local root replaced by `<ROOT>` for readability.
+
+## One pass
+Run one-pass internal AI extraction for a synthetic policy experiment. Root directory `<ROOT>`. Read ONLY data/stage-11/materials.json, questions.json, contract.md. Follow the contract to produce all facts and decisions with evidence paragraph citations. Write results/stage-11/arm_one.json directly, preserve your first completed output without post-submission edits. You may reason normally before writing. Do not read gold, reviews, other arms, scoring, report, or history; no external services, credential access, user messaging or pushes. This is one full-material pass, no subsequent revision round. Report completion and any limitation. Shared workspace shell tools are available.
+
+## Fixed batch, first pass
+Run first round of a question-guided fixed-batch internal AI extraction experiment. Root `<ROOT>`. Read ONLY data/stage-11/batch1.json, questions.json, contract.md. Extract provisional facts and decisions based on currently supplied documents, following contract where feasible. Write results/stage-11/arm_batch_pass1.json and a short gap-question list results/stage-11/arm_batch_gaps.md. Do NOT read materials.json or batch2.json yet. Do NOT read gold, reviews, other arms, scoring, report or history. A second round will provide remaining documents; stop after preserving first output and questions. No external services, credential access, user messaging or pushes. Shared workspace shell tools available.
+
+## Strong full-material, first pass
+Run first full-material round of strong two-pass internal AI extraction experiment. Root `<ROOT>`. Read ONLY data/stage-11/materials.json, questions.json, contract.md. Follow contract to extract all facts and decisions with paragraph citations. Write results/stage-11/arm_strong_pass1.json. Preserve it unchanged. Do NOT read gold, reviews, other arms, scoring, report or history. Stop after first output; a later round will ask you to audit and refine using the same full materials. No external services, credential access, user messaging or pushes. Shared workspace shell tools available.
+
+## Fixed batch, second and final round
+Second and final round. Read data/stage-11/batch2.json, and re-read your permitted batch1.json, questions.json, contract.md plus your own first output and gaps as useful. Together these are the same four documents as the full-material arms. Resolve or retain gaps against the evidence and revise to the final common contract. Write results/stage-11/arm_batch.json and results/stage-11/arm_batch_revision.md describing changes and unresolved gaps. Preserve all first-round files unchanged. Do not read gold, reviews, other arms, scoring, or report. No additional revision after submission.
+
+## Strong full-material, second and final round
+Second and final full-material round. Re-read data/stage-11/materials.json, questions.json, contract.md and your own arm_strong_pass1.json. Critically audit every answer and citation, logical orientation, policy versions, alternative routes and unavailable field definitions against the full materials; revise where warranted. Write results/stage-11/arm_strong.json and results/stage-11/arm_strong_revision.md describing changes or why unchanged. Preserve first output unchanged. Do not read gold, reviews, other arms, scoring, or report. No additional revision after submission.

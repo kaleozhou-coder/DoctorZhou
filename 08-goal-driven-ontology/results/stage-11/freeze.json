@@ -1,0 +1,15 @@
+{
+  "frozen_at_utc": "2026-11-16T01:21:12.763857+00:00",
+  "before_extraction": true,
+  "review": "isolated AI; not human",
+  "sha256": {
+    "data/stage-11/materials.json": "89ac898f96c3ae9eb672016e3567596f92bb9a105bd7190497987992d4f808d0",
+    "data/stage-11/batch2.json": "b4e64712a7d427b3b57c9f1ba3602047816f1497e5a398f7ab909acb2a88cc88",
+    "data/stage-11/contract.md": "66b52e020057cf6b7fae5aeca3791f190034e12a0fecf250a05e2ccd3161ae4f",
+    "data/stage-11/questions.json": "6edbc65a78c1d9f7c33cff9a0ab9ed55a8d208a703f96e6726896aeca60e605a",
+    "data/stage-11/gold.json": "eaafc0c807313c27b183e786fc99b80e9cb8f729fe4bd797b20ac8c62329d106",
+    "data/stage-11/batch1.json": "935723607d82f6c78185715772b44624143915662918405ecb9ac0d18d530646",
+    "experiments/stage-11/protocol.md": "f1e9a5d6c7ae06d3508ace89a686cbe629bb526011995d04a0554c8f0532ec65",
+    "results/stage-11/freeze-review.md": "36c3723a224ec94952fbb8a3d4197e1a3ceede5b1ba86351f6d61cf248a878df"
+  }
+}

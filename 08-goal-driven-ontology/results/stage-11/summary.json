@@ -1,0 +1,831 @@
+{
+  "kind": "frozen internal AI observation, not fresh inference",
+  "scores": {
+    "one": {
+      "facts": [
+        {
+          "id": "Q01",
+          "expected": "NECESSARY_ONLY",
+          "observed": "NECESSARY_ONLY",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q02",
+          "expected": "NOT_SUFFICIENT",
+          "observed": "NOT_SUFFICIENT",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q03",
+          "expected": "ROUTINE_ONLY",
+          "observed": "ROUTINE_ONLY",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q04",
+          "expected": "WAIVER_AND_EITHER_AUDIT_OR_INSPECTION",
+          "observed": "WAIVER_AND_EITHER_AUDIT_OR_INSPECTION",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q05",
+          "expected": "NO",
+          "observed": "NO",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q06",
+          "expected": "UNKNOWN",
+          "observed": "UNKNOWN",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q07",
+          "expected": "UNKNOWN",
+          "observed": "UNKNOWN",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q08",
+          "expected": "NO",
+          "observed": "NO",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q09",
+          "expected": "NO",
+          "observed": "NO",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q10",
+          "expected": "NO",
+          "observed": "NO",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q11",
+          "expected": "NO",
+          "observed": "NO",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q12",
+          "expected": "NO",
+          "observed": "NO",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        }
+      ],
+      "decisions": [
+        {
+          "id": "C01",
+          "expected": "ALLOW",
+          "observed": "ALLOW",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C02",
+          "expected": "UNKNOWN",
+          "observed": "UNKNOWN",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C03",
+          "expected": "ALLOW",
+          "observed": "ALLOW",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C04",
+          "expected": "ALLOW",
+          "observed": "ALLOW",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C05",
+          "expected": "BLOCKED",
+          "observed": "BLOCKED",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C06",
+          "expected": "BLOCKED",
+          "observed": "BLOCKED",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C07",
+          "expected": "UNKNOWN",
+          "observed": "UNKNOWN",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C08",
+          "expected": "UNKNOWN",
+          "observed": "UNKNOWN",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C09",
+          "expected": "BLOCKED",
+          "observed": "BLOCKED",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C10",
+          "expected": "BLOCKED",
+          "observed": "BLOCKED",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C11",
+          "expected": "UNKNOWN",
+          "observed": "UNKNOWN",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C12",
+          "expected": "BLOCKED",
+          "observed": "BLOCKED",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C13",
+          "expected": "ALLOW",
+          "observed": "ALLOW",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C14",
+          "expected": "ALLOW",
+          "observed": "ALLOW",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C15",
+          "expected": "BLOCKED",
+          "observed": "BLOCKED",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C16",
+          "expected": "UNKNOWN",
+          "observed": "UNKNOWN",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        }
+      ],
+      "schema_errors": [],
+      "summary": {
+        "facts": {
+          "correct": 12,
+          "total": 12
+        },
+        "decisions": {
+          "correct": 16,
+          "total": 16
+        },
+        "contract_valid": true,
+        "false_closes": 0,
+        "nonallow_gold_count": 11,
+        "false_blocks": 0,
+        "unknown_when_allowed": 0
+      }
+    },
+    "batch": {
+      "facts": [
+        {
+          "id": "Q01",
+          "expected": "NECESSARY_ONLY",
+          "observed": "NECESSARY_ONLY",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q02",
+          "expected": "NOT_SUFFICIENT",
+          "observed": "NOT_SUFFICIENT",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q03",
+          "expected": "ROUTINE_ONLY",
+          "observed": "ROUTINE_ONLY",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q04",
+          "expected": "WAIVER_AND_EITHER_AUDIT_OR_INSPECTION",
+          "observed": "WAIVER_AND_EITHER_AUDIT_OR_INSPECTION",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q05",
+          "expected": "NO",
+          "observed": "NO",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q06",
+          "expected": "UNKNOWN",
+          "observed": "UNKNOWN",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q07",
+          "expected": "UNKNOWN",
+          "observed": "UNKNOWN",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q08",
+          "expected": "NO",
+          "observed": "NO",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q09",
+          "expected": "NO",
+          "observed": "NO",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q10",
+          "expected": "NO",
+          "observed": "NO",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q11",
+          "expected": "NO",
+          "observed": "NO",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q12",
+          "expected": "NO",
+          "observed": "NO",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        }
+      ],
+      "decisions": [
+        {
+          "id": "C01",
+          "expected": "ALLOW",
+          "observed": "ALLOW",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C02",
+          "expected": "UNKNOWN",
+          "observed": "UNKNOWN",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C03",
+          "expected": "ALLOW",
+          "observed": "ALLOW",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C04",
+          "expected": "ALLOW",
+          "observed": "ALLOW",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C05",
+          "expected": "BLOCKED",
+          "observed": "BLOCKED",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C06",
+          "expected": "BLOCKED",
+          "observed": "BLOCKED",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C07",
+          "expected": "UNKNOWN",
+          "observed": "UNKNOWN",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C08",
+          "expected": "UNKNOWN",
+          "observed": "UNKNOWN",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C09",
+          "expected": "BLOCKED",
+          "observed": "BLOCKED",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C10",
+          "expected": "BLOCKED",
+          "observed": "BLOCKED",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C11",
+          "expected": "UNKNOWN",
+          "observed": "UNKNOWN",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C12",
+          "expected": "BLOCKED",
+          "observed": "BLOCKED",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C13",
+          "expected": "ALLOW",
+          "observed": "ALLOW",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C14",
+          "expected": "ALLOW",
+          "observed": "ALLOW",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C15",
+          "expected": "BLOCKED",
+          "observed": "BLOCKED",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C16",
+          "expected": "UNKNOWN",
+          "observed": "UNKNOWN",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        }
+      ],
+      "schema_errors": [],
+      "summary": {
+        "facts": {
+          "correct": 12,
+          "total": 12
+        },
+        "decisions": {
+          "correct": 16,
+          "total": 16
+        },
+        "contract_valid": true,
+        "false_closes": 0,
+        "nonallow_gold_count": 11,
+        "false_blocks": 0,
+        "unknown_when_allowed": 0
+      }
+    },
+    "strong": {
+      "facts": [
+        {
+          "id": "Q01",
+          "expected": "NECESSARY_ONLY",
+          "observed": "NECESSARY_ONLY",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q02",
+          "expected": "NOT_SUFFICIENT",
+          "observed": "NOT_SUFFICIENT",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q03",
+          "expected": "ROUTINE_ONLY",
+          "observed": "ROUTINE_ONLY",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q04",
+          "expected": "WAIVER_AND_EITHER_AUDIT_OR_INSPECTION",
+          "observed": "WAIVER_AND_EITHER_AUDIT_OR_INSPECTION",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q05",
+          "expected": "NO",
+          "observed": "NO",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q06",
+          "expected": "UNKNOWN",
+          "observed": "UNKNOWN",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q07",
+          "expected": "UNKNOWN",
+          "observed": "UNKNOWN",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q08",
+          "expected": "NO",
+          "observed": "NO",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q09",
+          "expected": "NO",
+          "observed": "NO",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q10",
+          "expected": "NO",
+          "observed": "NO",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q11",
+          "expected": "NO",
+          "observed": "NO",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "Q12",
+          "expected": "NO",
+          "observed": "NO",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        }
+      ],
+      "decisions": [
+        {
+          "id": "C01",
+          "expected": "ALLOW",
+          "observed": "ALLOW",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C02",
+          "expected": "UNKNOWN",
+          "observed": "UNKNOWN",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C03",
+          "expected": "ALLOW",
+          "observed": "ALLOW",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C04",
+          "expected": "ALLOW",
+          "observed": "ALLOW",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C05",
+          "expected": "BLOCKED",
+          "observed": "BLOCKED",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C06",
+          "expected": "BLOCKED",
+          "observed": "BLOCKED",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C07",
+          "expected": "UNKNOWN",
+          "observed": "UNKNOWN",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C08",
+          "expected": "UNKNOWN",
+          "observed": "UNKNOWN",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C09",
+          "expected": "BLOCKED",
+          "observed": "BLOCKED",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C10",
+          "expected": "BLOCKED",
+          "observed": "BLOCKED",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C11",
+          "expected": "UNKNOWN",
+          "observed": "UNKNOWN",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C12",
+          "expected": "BLOCKED",
+          "observed": "BLOCKED",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C13",
+          "expected": "ALLOW",
+          "observed": "ALLOW",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C14",
+          "expected": "ALLOW",
+          "observed": "ALLOW",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C15",
+          "expected": "BLOCKED",
+          "observed": "BLOCKED",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        },
+        {
+          "id": "C16",
+          "expected": "UNKNOWN",
+          "observed": "UNKNOWN",
+          "answer_exact": true,
+          "schema_valid": true,
+          "pass": true,
+          "false_close": false
+        }
+      ],
+      "schema_errors": [],
+      "summary": {
+        "facts": {
+          "correct": 12,
+          "total": 12
+        },
+        "decisions": {
+          "correct": 16,
+          "total": 16
+        },
+        "contract_valid": true,
+        "false_closes": 0,
+        "nonallow_gold_count": 11,
+        "false_blocks": 0,
+        "unknown_when_allowed": 0
+      }
+    }
+  },
+  "human_approvals": 0,
+  "human_minutes": null,
+  "token_usage": null,
+  "monetary_cost": null
+}

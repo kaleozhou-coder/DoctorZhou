@@ -1,0 +1,506 @@
+[
+  {
+    "reviewer_id": "R17",
+    "row_id": "Q01",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "Q02",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "Q03",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "Q04",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "Q05",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "Q06",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "Q07",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "Q08",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "Q09",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "Q10",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "Q11",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "Q12",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "C01",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "C02",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "C03",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "C04",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "C05",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "C06",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "C07",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "C08",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "C09",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "C10",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "C11",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "C12",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "C13",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "C14",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "C15",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R17",
+    "row_id": "C16",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "Q01",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "Q02",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "Q03",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "Q04",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "Q05",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "Q06",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "Q07",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "Q08",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "Q09",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "Q10",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "Q11",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "Q12",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "C01",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "C02",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "C03",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "C04",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "C05",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "C06",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "C07",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "C08",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "C09",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "C10",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "C11",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "C12",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "C13",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "C14",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "C15",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R42",
+    "row_id": "C16",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "Q01",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "Q02",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "Q03",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "Q04",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "Q05",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "Q06",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "Q07",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "Q08",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "Q09",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "Q10",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "Q11",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "Q12",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "C01",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "C02",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "C03",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "C04",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "C05",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "C06",
+    "supported": false,
+    "issue": "The BLOCKED answer is supported by D1.4 and the true hold in C06. However, the reason additionally calls the routine route otherwise complete. None of the cited paragraphs defines the positive routine-route conditions: D3.2 only states that the routine route is unchanged. Cite D1.3 to support that additional claim, or remove it. This is a reason-level citation gap, not a false-close or incorrect decision."
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "C07",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "C08",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "C09",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "C10",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "C11",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "C12",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "C13",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "C14",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "C15",
+    "supported": true,
+    "issue": ""
+  },
+  {
+    "reviewer_id": "R63",
+    "row_id": "C16",
+    "supported": true,
+    "issue": ""
+  }
+]
