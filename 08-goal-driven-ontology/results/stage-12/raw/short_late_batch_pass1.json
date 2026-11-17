@@ -1,0 +1,125 @@
+{
+  "questions": [
+    {
+      "id": "Q1",
+      "answer": "Within this packet’s domestic administrative-closure scope, exception closure requires reconciled quantity and valid handover, together with an exception waiver and completed audit, and no active hold. Cleared settlement is not required for this class. The routine alternative instead requires reconciliation, valid handover, cleared settlement and no active hold, and applies only to routine cases. No further route is authorized here. Missing information is not false information, and an unknown authoritative hold cannot be settled by a ready label or absence of a local note. Foreign transfers, employee matters and purchasing approvals are outside scope.",
+      "sources": [
+        "D1.1",
+        "D1.2",
+        "D1.3",
+        "D1.4",
+        "D1.5"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Q2",
+      "answer": "Reconciliation and valid handover are necessary shared conditions, not jointly sufficient conditions. Reconciliation is equality between signed depot count and dispatched count for the same case identifier. Handover validity follows the linked receiving-lead signature, not a filename or progress indicator. Each case must also satisfy its class-specific route and the no-active-hold restriction.",
+      "sources": [
+        "D1.2",
+        "D1.3",
+        "D1.4",
+        "D2.1"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Q3",
+      "answer": "settlement_flag cannot be reliably mapped from Y, N or blank to cleared settlement because its referenced SI-9 definition is absent. An independent attestation explicitly establishing cleared settlement can supply that fact. paid_at has no supplied semantic definition, timezone or migration mapping, so its business event cannot be identified as receipt or posting merely from coincident dates.",
+      "sources": [
+        "D2.2",
+        "D2.3"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Q4",
+      "answer": "For new records from 2032-04-01 onward, revision 4 and registry edition 2 require a linked receiving-lead signature; a driver signature is insufficient. Thus this is the current standard applicable to current records at the supplied 2032-05-02 snapshots. If a snapshot represents an older historical record, its governing version would need confirmation: the old driver-signature rule is retained only for historical interpretation, not revived by attaching its card.",
+      "sources": [
+        "D2.1",
+        "D2.4"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Q5",
+      "answer": "Administrative closure is neither necessary nor sufficient for payment authorization, which follows a separate policy absent here. Closure also does not establish supplier responsibility or the cause of a service-level change. No numerical-contribution definition or evidence is supplied in these documents, so a numerical contribution cannot be reconstructed or treated as a supported causal explanation from this packet.",
+      "sources": [
+        "D1.1",
+        "D1.5"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Q6",
+      "answer": "receipt_date dates funds reaching the collection bank; posting_date dates the ledger entry’s posting. These are distinct event streams that can fall on different days or in different months. Posting corrections retain their original receipt reference for later reconciliation.",
+      "sources": [
+        "D2.2"
+      ],
+      "status": "proposed"
+    }
+  ],
+  "cases": [
+    {
+      "id": "C02",
+      "answer": "Closure cannot yet be justified.",
+      "rationale": "The supplied routine snapshot satisfies reconciliation, handover and inactive hold, but cleared settlement is unknown. Waiver and audit do not replace routine settlement, and settlement_flag Y cannot establish it without the missing SI-9 mapping.",
+      "sources": [
+        "D1.3",
+        "D1.5",
+        "D2.2"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "C03",
+      "answer": "Closure is not justified under the supplied rule.",
+      "rationale": "The exception snapshot lacks a completed audit. Independent inspection is not an authorized substitute in the supplied manual. Its waiver, reconciliation, valid handover and inactive hold do not overcome the missing audit; lack of settlement is not itself a barrier for an exception.",
+      "sources": [
+        "D1.2",
+        "D1.3",
+        "D1.5"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "C05",
+      "answer": "Closure is not justified under the supplied rule.",
+      "rationale": "The exception snapshot has no waiver. Audit, independent inspection and cleared settlement do not replace that required exception-route condition; the settlement-based route is restricted to routine cases.",
+      "sources": [
+        "D1.3"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "C07",
+      "answer": "Closure cannot yet be justified.",
+      "rationale": "The routine positive conditions are present, but hold status is unknown. An active hold forbids closure and absence of an authoritative hold determination cannot be treated as inactive.",
+      "sources": [
+        "D1.3",
+        "D1.4"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "C08",
+      "answer": "Closure is not justified under the supplied rule.",
+      "rationale": "The exception snapshot lacks completed audit. Unknown independent inspection is not a known negative, but neither a positive inspection nor cleared settlement is an authorized audit substitute in the supplied manual.",
+      "sources": [
+        "D1.3",
+        "D1.5"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "C09",
+      "answer": "Closure is not justified under the supplied rule.",
+      "rationale": "The exception snapshot lacks completed audit. Waiver, reconciled quantity, valid handover, cleared settlement and inactive hold do not satisfy the exception route without audit.",
+      "sources": [
+        "D1.3",
+        "D1.5"
+      ],
+      "status": "proposed"
+    }
+  ]
+}

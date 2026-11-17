@@ -1,0 +1,24 @@
+{
+  "fictional": true,
+  "documents": [
+    {
+      "id": "D4",
+      "title": "Fictional analytical guide and evidence interpretation",
+      "paragraphs": {
+        "1": "A contribution calculation partitions an aggregate numerical change among depots. A contribution is an arithmetic attribution, not by itself evidence of a causal mechanism. A depot can contribute most of the measured decline while the underlying cause remains unknown. The guide supplies no intervention, randomized assignment, counterfactual analysis, or causal certificate. A closure review must not fill an unknown cause with the largest contribution label merely to complete a dashboard.",
+        "2": "Use the evidence snapshots as the supplied authoritative attestations, not complete knowledge of the world. True and false are explicit evidence; null means unavailable. Do not invent unavailable facts. Evaluate whether the policy establishes permission, establishes prohibition or defeat of every applicable route, or leaves the conclusion undecided. Administrative decisions in this fictional exercise do not authorize actions in a real system.",
+        "3": "For clarity in this packet, direct fields reconciled, handover_valid, cleared_settlement, waiver, audit, independent_inspection and hold are already authoritative attestations; do not require extra raw signatures when handover_valid is directly supplied. The raw export field settlement_flag is not such an attestation. Unknown meanings must not be treated as false values. When a case includes only a driver signature without a receiving-lead signature, the evidence explicitly establishes an invalid handover for the current revision. When it includes an authoritative cleared_settlement value, that value takes precedence over a dashboard guess, not over a competing authoritative fact.",
+        "4": "Every extracted object remains proposed. The packet documents no human approval. A source reference must identify a document and paragraph supporting the actual statement. A cited title alone is not enough. Preserve missing definitions and distinguish sufficient from necessary conditions."
+      }
+    },
+    {
+      "id": "D3",
+      "title": "Fictional controlled change register CR-17",
+      "paragraphs": {
+        "1": "Effective 2032-05-01, for exception cases the completed audit in manual revision 4 paragraph 3 may be replaced by an independent second inspection. All other conditions of that route remain unchanged. This is an alternative, not an additional mandatory inspection. A case with the completed audit needs no second inspection; a case with the independent second inspection needs no completed audit. The register changes only this condition and does not make the exception waiver optional.",
+        "2": "The register does not amend the routine route, reconciliation, receiving-lead signature, or active-hold rule. It does not define settlement_flag or paid_at. Independence of a second inspection is established only by the independent_inspection attestation in the supplied evidence; two file attachments are not automatically two independent inspections. A supplier self-check has a different name and is not interchangeable with this attestation.",
+        "3": "All evaluation snapshots in the attached sample packet are on 2032-05-02, and all cases were created on that date under the current policy. An operator training note dated 2032-04-10 still says audit mandatory for every exception. The note is a training summary with no delegated policy-making authority. Its author used that phrase while discussing the older route. A completed audit has an audit identifier and reviewer role; the operations team keeps both in the audit register. The controlled register has no later entry after CR-17 in this packet."
+      }
+    }
+  ]
+}

@@ -1,0 +1,1849 @@
+{
+  "R01": {
+    "questions": [
+      {
+        "id": "Q1",
+        "answer": "Current exception closure is justified by reconciliation, valid handover, exception waiver, and either completed audit or independent second inspection, jointly with no active hold. These are the only authorized exception alternatives; both audit and inspection may be present, but neither alone is mandatory when the other is present. The inspection alternative took effect 2032-05-01 and does not remove the waiver or add an inspection requirement when an audit is complete. Cleared settlement is not required for exceptions. Reconciliation and handover are shared necessary conditions for both classes; the routine route instead requires cleared settlement and no active hold. No other route is authorized, and an active hold overrides all positive conditions. Scope is administrative closure of domestic depot transfers, excluding foreign transfers, employee matters and purchasing approvals; dashboard readiness is not permission. Unavailable conditions are not false facts and may leave permission unresolved. Independence must come from the independent_inspection attestation, not merely two attachments or a supplier self-check. The older audit-mandatory training summary has no policy-making authority and does not override CR-17.",
+        "sources": [
+          "D1.1",
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D1.5",
+          "D3.1",
+          "D3.2",
+          "D3.3",
+          "D4.2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q2",
+        "answer": "Reconciliation and valid handover are individually necessary for every domestic closure, but their conjunction is not sufficient: the applicable class-specific route and hold condition must also be satisfied. Reconciliation means the signed depot count equals dispatched count for the same case identifier. Current handover validity requires the receiving lead's signature on the linked handover, which is sufficient for validity but not closure; a driver signature alone is invalid. Direct reconciled and handover_valid attestations are authoritative and need no additional raw proof.",
+        "sources": [
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D2.1",
+          "D3.1",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q3",
+        "answer": "The packet does not establish a mapping from settlement_flag values Y, N or blank to cleared settlement: its referenced specification SI-9 is absent, so Y cannot establish clearance, N cannot establish its negation, and blank is not a negative fact. Independent clearance attestation can establish settlement, and a supplied authoritative cleared_settlement value supersedes a dashboard guess. paid_at has no supplied semantic definition, timezone or migration mapping, so it cannot reliably be equated to bank receipt, ledger posting or payment authorization even where displayed dates coincide. CR-17 defines neither field.",
+        "sources": [
+          "D2.2",
+          "D2.3",
+          "D4.3",
+          "D1.3",
+          "D1.5",
+          "D3.2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q4",
+        "answer": "The receiving-lead signature standard applies, with signature and role linked to the same handover event; driver signature alone does not qualify. Revision 4 and registry edition 2 govern new records from 2032-04-01, and every supplied case was created 2032-05-02 under current policy. The revision-3 driver-signature card is historical and has no current authority, even as an attachment. CR-17 leaves the signature standard unchanged. Supplied handover_valid attestations can be used directly without requesting raw signatures.",
+        "sources": [
+          "D2.1",
+          "D2.4",
+          "D3.2",
+          "D3.3",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q5",
+        "answer": "Administrative closure is neither necessary nor sufficient for payment authorization; a separate payment policy is absent, and payment_status is merely a routing table, not that policy. Closure likewise establishes no cause of a service-level change. Numerical contribution partitions aggregate change arithmetically rather than establishing a causal mechanism; even the largest contributor cannot be called the cause on this evidence, which supplies no intervention, randomization, counterfactual analysis or causal certificate.",
+        "sources": [
+          "D1.1",
+          "D1.5",
+          "D4.1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q6",
+        "answer": "receipt_date dates funds reaching the collection bank, while posting_date dates the ledger entry's posting. These are distinct events and may occur on different days or in different months. Corrections to postings retain their original receipt reference for later reconciliation. Neither date can be equated with the undefined paid_at solely from coincident values.",
+        "sources": [
+          "D2.2",
+          "D2.3"
+        ],
+        "status": "proposed"
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "answer": "Closure is not yet justified; the decision remains undecided.",
+        "rationale": "The routine snapshot supplies reconciliation, valid handover and an inactive hold, but cleared settlement is unavailable. Routine closure requires clearance, and settlement_flag Y has no supplied semantic mapping, so it cannot fill that gap. Waiver and audit do not make the exception route available to a routine case. There is no explicit negative clearance fact establishing defeat, only missing evidence.",
+        "sources": [
+          "D1.3",
+          "D1.5",
+          "D2.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C03",
+        "answer": "Closure is justified at the snapshot.",
+        "rationale": "The exception snapshot supplies reconciliation, valid handover, waiver, independent inspection and an inactive hold. The current inspection alternative satisfies the review condition despite the explicitly false audit attestation. Explicitly uncleared settlement does not block exception closure because settlement is not required for that class.",
+        "sources": [
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D1.5",
+          "D3.1",
+          "D3.3",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C05",
+        "answer": "Closure is not permitted; every applicable exception route is defeated.",
+        "rationale": "The snapshot explicitly lacks a waiver. Although both audit and independent inspection are complete and reconciliation, handover and inactive hold are supplied, the waiver remains mandatory under either exception alternative. Cleared settlement does not authorize use of the routine route for an exception case.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D3.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C07",
+        "answer": "Closure is not yet justified; the decision remains undecided.",
+        "rationale": "All positive routine conditions are supplied, but hold status is unavailable. An active hold would prohibit closure, so its absence cannot be presumed. Null is unavailable rather than an inactive or active hold; therefore neither permission nor prohibition is established.",
+        "sources": [
+          "D1.3",
+          "D1.4",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C08",
+        "answer": "Closure is not yet justified; the decision remains undecided.",
+        "rationale": "The exception snapshot supplies reconciliation, valid handover, waiver and inactive hold, but explicitly lacks an audit and leaves independent inspection unavailable. The audit alternative is defeated, while the inspection alternative is unresolved rather than false. Cleared settlement does not substitute for either review alternative or enable the routine route.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D3.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C09",
+        "answer": "Closure is not permitted; every applicable exception route is defeated.",
+        "rationale": "Both completed audit and independent inspection are explicitly false, defeating both authorized exception alternatives despite reconciliation, valid handover, waiver and inactive hold. Cleared settlement cannot replace the review condition, and the routine route is restricted to routine cases.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D3.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      }
+    ]
+  },
+  "R02": {
+    "questions": [
+      {
+        "id": "Q1",
+        "answer": "For current domestic exception cases, administrative closure is justified by reconciled quantity AND valid handover AND exception waiver AND (completed audit OR independent second inspection), provided no active hold exists. Reconciliation and valid handover are shared necessary conditions for all domestic cases. The inspection alternative took effect on 2032-05-01 and does not remove the waiver or add an inspection requirement when an audit exists. Cleared settlement is not required for exception closure. An active hold forbids closure despite all positive evidence; an unavailable condition is not automatically false. The routine route instead requires reconciliation, valid handover and cleared settlement with no active hold, and cannot substitute for an exception route. No additional routes are authorized. Foreign transfers, employee matters and purchasing approvals fall outside the manual's scope.",
+        "sources": [
+          "D1.1",
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D1.5",
+          "D3.1",
+          "D3.2",
+          "D4.2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q2",
+        "answer": "Reconciliation and valid handover are each necessary for closure, but their conjunction is not sufficient. They are shared prerequisites of the class-specific routes, which additionally require settlement for routine cases or waiver and either audit or independent inspection for current exceptions, always subject to the hold exclusion. Reconciliation means the signed depot count equals the dispatched count for the same case identifier; handover validity is governed by the linked receiving-lead signature, not filenames or progress indicators. Direct reconciled and handover_valid attestations are accepted without demanding extra raw evidence.",
+        "sources": [
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D2.1",
+          "D3.1",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q3",
+        "answer": "Neither settlement_flag nor paid_at has a supported business-semantic mapping in this packet. The meaning of settlement_flag values Y, N and blank is delegated to missing SI-9, so Y cannot establish cleared settlement, nor can an unknown meaning be converted to false. An explicit cleared-settlement attestation can establish that fact. paid_at lacks both a semantic definition and a timezone, and the migration mapping and signed definition are absent. Occasional agreement with receipt_date or posting_date does not establish equivalence to either event. CR-17 supplies no missing field definitions.",
+        "sources": [
+          "D2.2",
+          "D2.3",
+          "D3.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q4",
+        "answer": "The current receiving-lead signature standard applies: the receiving lead's signature on the linked handover suffices, whereas a driver signature alone is invalid. Revision 4 and the current registry govern new records from 2032-04-01, and every supplied case was created on 2032-05-02. The revision-3 quick-reference card is historical and does not regain authority by attachment. CR-17 leaves the signature standard unchanged. Where handover_valid is directly attested, no extra raw signature needs to be obtained.",
+        "sources": [
+          "D2.1",
+          "D2.4",
+          "D3.2",
+          "D3.3",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q5",
+        "answer": "Closure marks administrative completeness, not payment permission. It is neither necessary nor sufficient for payment authorization, whose separate policy is missing; the payment_status table is not a substitute. Closure also does not establish responsibility for a service-level change. Numerical contribution partitions an aggregate change arithmetically and does not by itself establish a causal mechanism: the depot with the largest contribution need not be the demonstrated cause. No intervention, randomized assignment, counterfactual analysis or causal certificate is supplied.",
+        "sources": [
+          "D1.1",
+          "D1.5",
+          "D4.1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q6",
+        "answer": "receipt_date dates the arrival of funds at the collection bank; posting_date dates posting of the ledger entry. They describe distinct events that may occur on different days or in different months. Corrections to posting entries retain the original receipt reference to support subsequent reconciliation of the two event streams. Neither defined event supplies a definition for paid_at.",
+        "sources": [
+          "D2.2",
+          "D2.3"
+        ],
+        "status": "proposed"
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "answer": "Closure cannot yet be justified; the supplied evidence leaves the conclusion undecided.",
+        "rationale": "The routine snapshot establishes reconciliation, valid handover and no hold, but cleared settlement is unavailable. Cleared settlement is necessary for routine closure. settlement_flag Y has no supplied semantic mapping and cannot fill that gap. Waiver and audit do not enable the exception route for a routine case. No explicit false prerequisite defeats the routine route, so this is unresolved rather than an established prohibition.",
+        "sources": [
+          "D1.3",
+          "D1.5",
+          "D2.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C03",
+        "answer": "Administrative closure is justified at the snapshot.",
+        "rationale": "This current exception case has reconciliation, valid handover, waiver, independent inspection and an explicitly inactive hold. CR-17 permits independent inspection instead of audit, so audit false does not defeat this route. Cleared settlement false is irrelevant to this exception route, which does not require settlement.",
+        "sources": [
+          "D1.3",
+          "D1.4",
+          "D1.5",
+          "D3.1",
+          "D3.3",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C05",
+        "answer": "Closure is not permitted by the current policy: every applicable route is defeated.",
+        "rationale": "The exception waiver is explicitly false. It remains required whether review is satisfied by audit or independent inspection. Reconciliation, valid handover, both review attestations, cleared settlement and no hold do not replace that missing waiver. The settlement-based routine route is unavailable to this exception case.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D3.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C07",
+        "answer": "Closure cannot yet be justified; hold uncertainty leaves the conclusion undecided.",
+        "rationale": "The routine positive conditions of reconciliation, valid handover and cleared settlement are all true, but hold status is unavailable. The route suffices only with no active hold, and an active hold would forbid closure. Null establishes neither an active nor inactive hold. Waiver and audit do not resolve this common exclusion.",
+        "sources": [
+          "D1.3",
+          "D1.4",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C08",
+        "answer": "Closure cannot yet be justified; the inspection alternative remains unresolved.",
+        "rationale": "This exception case satisfies reconciliation, handover and waiver with no hold. Audit is explicitly false, but independent inspection is unavailable rather than false, so the audit-or-inspection condition is neither established nor conclusively defeated. Cleared settlement does not substitute for the exception review requirement.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C09",
+        "answer": "Closure is not permitted by the current policy: every applicable route is defeated.",
+        "rationale": "Both audit and independent inspection are explicitly false, defeating the required review alternative for an exception case. Reconciliation, valid handover, waiver and no hold are insufficient without one of those review conditions. Cleared settlement cannot invoke the routine route for an exception case.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      }
+    ]
+  },
+  "R03": {
+    "questions": [
+      {
+        "id": "Q1",
+        "answer": "For the current exception cases, closure is justified by reconciled quantity AND valid handover AND exception waiver AND (completed audit OR independent second inspection), provided no active hold exists. Reconciliation, handover and waiver are shared conditions; audit and independent inspection are alternatives, not jointly mandatory. CR-17 effective 2032-05-01 replaces only the audit condition with this alternative and is applicable to all cases created and evaluated on 2032-05-02. Cleared settlement is not required for exceptions; the routine settlement route remains class-specific and unchanged. An active hold overrides every positive route; unavailable facts are not negative facts. No additional closure route is authorized. The scope is domestic depot administrative closure, excluding foreign transfers, employee matters and purchasing approvals.",
+        "sources": [
+          "D1.1",
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D1.5",
+          "D3.1",
+          "D3.2",
+          "D3.3",
+          "D4.2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q2",
+        "answer": "Reconciliation and valid handover are shared necessary conditions, not by themselves sufficient. Reconciliation means signed depot count equals dispatched count for the same case identifier. A receiving-lead signature on the linked handover suffices for validity. Closure also requires the applicable class-specific route: settlement for routine cases, or waiver and either audit or independent second inspection for current exceptions, always with no active hold. CR-17 does not relax reconciliation or handover.",
+        "sources": [
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D2.1",
+          "D3.1",
+          "D3.2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q3",
+        "answer": "No supported mapping from settlement_flag Y, N or blank to cleared settlement is available: its definition points to absent SI-9, and the raw flag is not an authoritative attestation. An independent explicit attestation can establish cleared settlement. paid_at has no supplied semantic definition, timezone or migration mapping, so it cannot be identified with bank receipt, ledger posting or payment merely from coinciding dates.",
+        "sources": [
+          "D2.2",
+          "D2.3",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q4",
+        "answer": "The receiving-lead signature standard governs all supplied cases, which were created and evaluated on 2032-05-02 under current policy. Revision 4 and the registry govern new records from 2032-04-01 onward; the revision-3 driver-signature card is historical, and CR-17 does not alter the receiving-lead requirement. A driver-only signature is invalid. Direct handover_valid attestations in these snapshots need no further raw-signature evidence.",
+        "sources": [
+          "D2.1",
+          "D2.4",
+          "D3.2",
+          "D3.3",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q5",
+        "answer": "Administrative closure is neither sufficient nor necessary for payment authorization; a separate payment policy is absent and payment_status is not that policy. Numerical contribution partitions an aggregate change arithmetically, but does not establish causal mechanism. Neither closure nor the largest contribution establishes responsibility for a service-level change.",
+        "sources": [
+          "D1.1",
+          "D1.5",
+          "D4.1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q6",
+        "answer": "receipt_date dates funds reaching the collection bank; posting_date dates ledger posting. These distinct events may fall on different days or across a month boundary. Corrected postings retain their original receipt reference for later reconciliation.",
+        "sources": [
+          "D2.2"
+        ],
+        "status": "proposed"
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "answer": "Closure remains undecided at this snapshot.",
+        "sources": [
+          "D1.3",
+          "D1.5",
+          "D2.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed",
+        "rationale": "The routine route has reconciliation, valid handover and inactive hold, but cleared settlement is unavailable. settlement_flag Y cannot supply the missing fact without its definition. Waiver and audit do not authorize an exception route for a routine case."
+      },
+      {
+        "id": "C03",
+        "answer": "Administrative closure is justified at this snapshot.",
+        "sources": [
+          "D1.3",
+          "D1.5",
+          "D3.1",
+          "D3.2",
+          "D3.3",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed",
+        "rationale": "Reconciliation, valid handover, waiver and independent inspection are true, and hold is explicitly inactive. CR-17 applies to this current case and permits independent inspection instead of audit, so audit=false does not defeat closure. Cleared settlement=false is immaterial to the exception route."
+      },
+      {
+        "id": "C05",
+        "answer": "Closure cannot be justified; the applicable exception route is defeated.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D3.2",
+          "D3.3",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed",
+        "rationale": "The exception waiver is explicitly false, defeating both the audit and independent-inspection alternatives despite both review attestations being true. CR-17 leaves the waiver mandatory. Cleared settlement does not make the routine route applicable to an exception case."
+      },
+      {
+        "id": "C07",
+        "answer": "Closure remains undecided at this snapshot.",
+        "sources": [
+          "D1.3",
+          "D1.4",
+          "D4.2"
+        ],
+        "status": "proposed",
+        "rationale": "The routine positive conditions are present, but hold status is unavailable. An active hold would forbid closure, and absence of a hold cannot be invented."
+      },
+      {
+        "id": "C08",
+        "answer": "Closure remains undecided at this snapshot.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D3.2",
+          "D3.3",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed",
+        "rationale": "Reconciliation, valid handover, waiver and inactive hold are established. Audit is explicitly false, but independent inspection is unavailable rather than false. Under CR-17 the inspection alternative could establish closure, so not every applicable route is defeated, but none is established. Cleared settlement cannot replace the missing review evidence."
+      },
+      {
+        "id": "C09",
+        "answer": "Closure cannot be justified; the applicable exception route is defeated.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D3.2",
+          "D3.3",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed",
+        "rationale": "Both completed audit and independent inspection are explicitly false, defeating both current exception alternatives despite reconciliation, valid handover, waiver and inactive hold. Cleared settlement does not substitute for either alternative."
+      }
+    ]
+  },
+  "R04": {
+    "questions": [
+      {
+        "id": "Q1",
+        "answer": "For domestic exception cases under the current policy, closure requires reconciled quantity and valid handover, an exception waiver, and either a completed audit or an attested independent second inspection, with no active hold. These conditions jointly suffice; audit and inspection are alternatives, not cumulative requirements. The waiver remains required, and cleared settlement is not required for this class. An active hold overrides all positive conditions. Only the route for the stated class applies and no other route is authorized. CR-17 applies from 2032-05-01; the older audit-mandatory training summary has no policy-making authority. Foreign transfers, employee matters and purchasing approvals are outside this administrative-closure scope. Independence must be established by independent_inspection, not merely two attachments or a supplier self-check.",
+        "sources": [
+          "D1.1",
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D1.5",
+          "D3.1",
+          "D3.2",
+          "D3.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q2",
+        "answer": "Reconciliation and valid handover are each necessary shared closure conditions, but together are not sufficient. Reconciliation is equality of the signed depot count and dispatched count for the same case identifier. A linked receiving-lead signature establishes handover validity; a driver signature does not. Routine closure additionally needs cleared settlement and no active hold; exception closure needs a waiver and either audit or independent inspection, with no active hold. Direct reconciled and handover_valid attestations are authoritative, so supplied handover_valid does not require additional raw signatures.",
+        "sources": [
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D2.1",
+          "D3.1",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q3",
+        "answer": "Neither settlement_flag nor paid_at can be mapped definitively to a business fact from this packet. settlement_flag has Y, N and blank values, but its definition refers to unavailable SI-9; Y therefore cannot establish cleared settlement, and unknown meaning is not false. An explicit cleared_settlement attestation can establish settlement and takes precedence over a dashboard guess, but not over a competing authoritative fact. paid_at lacks a semantic definition, timezone and migration mapping, so it cannot be equated to receipt, posting, payment authorization or another financial event merely from its name or coincident dates.",
+        "sources": [
+          "D2.2",
+          "D2.3",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q4",
+        "answer": "The receiving-lead signature standard in registry edition 2 applies: signature and role must belong to the linked handover event, and a receiving-lead signature is sufficient; a driver-only signature is invalid. Revision 4 and this registry govern records created from 2032-04-01, and all supplied cases were created 2032-05-02. The revision-3 card allowing a driver-signed local_handover is historical, not current authority. CR-17 does not amend the signature standard. Direct handover_valid evidence is already authoritative.",
+        "sources": [
+          "D2.1",
+          "D2.4",
+          "D3.2",
+          "D3.3",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q5",
+        "answer": "Closure means administrative file completeness and is neither sufficient nor necessary for payment authorization; the separate payment policy is absent, and payment_status is not a substitute. Closure also establishes no cause of a service-level change. Numerical contribution partitions aggregate change arithmetically, not causally: the largest contributing depot need not be established as the cause. The guide supplies no intervention, randomization, counterfactual analysis or causal certificate.",
+        "sources": [
+          "D1.1",
+          "D1.5",
+          "D4.1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q6",
+        "answer": "receipt_date is the date funds reached the collection bank; posting_date is the date the ledger entry was posted. They represent distinct events that may occur on different days and across a month boundary. Posting corrections retain the original receipt reference for later reconciliation. Neither these event definitions nor matching dates supply the missing semantics of settlement_flag or paid_at.",
+        "sources": [
+          "D2.2",
+          "D2.3"
+        ],
+        "status": "proposed"
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "answer": "Closure is not established; the result remains undecided at the snapshot.",
+        "rationale": "This routine case has reconciliation, valid handover and explicitly no hold, but cleared settlement is unavailable. Routine closure requires cleared settlement, and settlement_flag Y has no supplied semantic mapping. Waiver and audit cannot substitute through an exception route for a routine case. The unknown settlement is not an explicit negative.",
+        "sources": [
+          "D1.3",
+          "D1.5",
+          "D2.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C03",
+        "answer": "Administrative closure is justified at the snapshot.",
+        "rationale": "The exception case has reconciliation, valid handover, waiver, an independent inspection and no hold. CR-17 permits independent inspection instead of audit at this date. Explicitly false audit does not defeat that alternative, and explicitly false cleared settlement does not matter to the exception route.",
+        "sources": [
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D1.5",
+          "D3.1",
+          "D3.3",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C05",
+        "answer": "Administrative closure is not permitted: the applicable route is defeated.",
+        "rationale": "The exception waiver is explicitly false and remains mandatory even after CR-17. Reconciliation, valid handover, both review alternatives and no hold cannot cure that missing required waiver. Cleared settlement cannot grant this exception case the routine route.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C07",
+        "answer": "Closure is not established; the result remains undecided at the snapshot.",
+        "rationale": "The routine positive conditions are satisfied, but hold status is unavailable. The route requires no active hold, and an active hold would forbid closure. Unknown hold status cannot be assumed inactive or active; exception-related evidence does not resolve it.",
+        "sources": [
+          "D1.3",
+          "D1.4",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C08",
+        "answer": "Closure is not established; the result remains undecided at the snapshot.",
+        "rationale": "The exception case has reconciliation, valid handover, waiver and no hold, but audit is explicitly false and independent inspection is unavailable. The remaining alternative is unknown rather than defeated or satisfied. Cleared settlement cannot replace that requirement or move this case to the routine route.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C09",
+        "answer": "Administrative closure is not permitted: every applicable route is defeated.",
+        "rationale": "This exception case has neither completed audit nor independent inspection, both explicitly false. Thus the required alternative is defeated despite reconciliation, valid handover, waiver and no hold. Cleared settlement cannot substitute, and the routine route applies only to routine cases.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      }
+    ]
+  },
+  "R05": {
+    "questions": [
+      {
+        "id": "Q1",
+        "answer": "For current domestic exception cases, administrative closure requires reconciled quantity, valid handover, an exception waiver, and either a completed audit or an independent second inspection, with no active hold. Either review alternative suffices together with the shared conditions; both are not required. CR-17 applies from 2032-05-01 and leaves the waiver and other conditions mandatory. Cleared settlement is not required for exceptions. An active hold overrides all positive conditions. No other closure route is authorized; the routine route cannot be substituted for an exception route. Unavailable conditions remain unknown, not false. Foreign transfers, employee matters and purchasing approvals are outside scope. The older training claim that every exception requires audit has no policy-making authority and does not override CR-17. Independent inspection is established by the independent_inspection attestation, not merely by two attachments or a supplier self-check.",
+        "sources": [
+          "D1.1",
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D1.5",
+          "D3.1",
+          "D3.2",
+          "D3.3",
+          "D4.2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q2",
+        "answer": "Reconciliation and valid handover are each necessary for every domestic closure, but together are not sufficient. Reconciliation is equality of the signed depot count and dispatched count for the same case identifier. The remaining class-specific requirements and absence of an active hold must also be established. For exceptions those remaining requirements are waiver together with either audit or independent inspection; for routine cases they include cleared settlement. Direct reconciled and handover_valid fields are authoritative attestations.",
+        "sources": [
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D3.1",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q3",
+        "answer": "The packet does not support mapping settlement_flag values Y, N or blank to cleared settlement: its referenced definition SI-9 is absent. This raw export field is not an authoritative attestation, so Y does not establish clearance and an unknown meaning is not a false business fact. An independent explicit cleared-settlement attestation can establish clearance; the direct cleared_settlement field is authoritative. paid_at has neither a semantic definition nor timezone, and its migration mapping and signed definition are absent. It cannot reliably be identified with receipt_date, posting_date or a payment/clearance event merely from its name or coincident dates.",
+        "sources": [
+          "D2.2",
+          "D2.3",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q4",
+        "answer": "The current receiving-lead signature standard applies: a signature by the receiving lead on the linked handover is sufficient, whereas a driver signature alone is invalid. All supplied cases were created on 2032-05-02, after the revision-4/edition-2 effective date of 2032-04-01. The archived revision-3 driver-signed local_handover rule is historical, not current authority; CR-17 does not change the receiving-lead standard. Where handover_valid is directly supplied it is an authoritative attestation and no extra raw signature is required.",
+        "sources": [
+          "D2.1",
+          "D2.4",
+          "D3.2",
+          "D3.3",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q5",
+        "answer": "Administrative closure marks a transfer file complete; it is neither sufficient nor necessary for payment authorization. Payment depends on a separate policy absent from the packet, and payment_status does not supply it. Closure also establishes no cause of a service-level change. A numerical contribution partitions aggregate change arithmetically and is not itself evidence of a causal mechanism; even the largest depot contribution does not identify the cause. No intervention, randomization, counterfactual analysis or causal certificate is supplied.",
+        "sources": [
+          "D1.1",
+          "D1.5",
+          "D4.1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q6",
+        "answer": "receipt_date is the date funds reached the collection bank; posting_date is the date the ledger entry was posted. They describe distinct events and may differ, even across a month boundary. Posting corrections retain the original receipt reference for later reconciliation. Neither event definition establishes an interpretation of the undefined paid_at field or settlement_flag.",
+        "sources": [
+          "D2.2",
+          "D2.3"
+        ],
+        "status": "proposed"
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "answer": "Closure is not established; the snapshot leaves it undecided.",
+        "rationale": "The routine case has reconciliation, valid handover and an explicitly inactive hold, but cleared_settlement is unavailable. The routine route requires clearance. settlement_flag Y has no supplied business mapping and cannot fill that gap. Waiver and audit cannot authorize the exception route for a routine case. Missing clearance is not explicit nonclearance.",
+        "sources": [
+          "D1.3",
+          "D1.5",
+          "D2.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C03",
+        "answer": "Administrative closure is justified at this snapshot.",
+        "rationale": "The exception case has reconciliation, valid handover, waiver, independent_inspection true and hold false. CR-17 permits the independent second inspection instead of audit, so audit false does not defeat this route. Cleared_settlement false is irrelevant to exception eligibility because clearance is not required.",
+        "sources": [
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D1.5",
+          "D3.1",
+          "D3.2",
+          "D3.3",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C05",
+        "answer": "Closure is not justified; every applicable exception route is defeated.",
+        "rationale": "Despite reconciliation, valid handover, both review alternatives and an inactive hold, waiver is explicitly false. CR-17 preserves waiver as a shared mandatory condition. Cleared settlement cannot substitute for waiver and the routine route does not apply to this exception case.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D3.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C07",
+        "answer": "Closure is not established; the snapshot leaves it undecided.",
+        "rationale": "The positive routine-route conditions are established, but hold is unavailable. An active hold would forbid closure and its absence cannot be assumed. Waiver and audit do not resolve the hold status; no explicit active hold is established either.",
+        "sources": [
+          "D1.3",
+          "D1.4",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C08",
+        "answer": "Closure is not established; the snapshot leaves it undecided.",
+        "rationale": "Reconciliation, valid handover, waiver and inactive hold are established. Audit is explicitly false, but the alternative independent inspection is unavailable rather than false. Thus neither a successful review alternative nor defeat of both alternatives is established. Cleared settlement does not replace exception review requirements.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D3.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C09",
+        "answer": "Closure is not justified; every applicable exception route is defeated.",
+        "rationale": "Although reconciliation, valid handover, waiver and inactive hold are established, both audit and independent_inspection are explicitly false. Neither authorized review alternative is satisfied. Cleared settlement cannot replace either, and the routine route is not available for this exception case.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D3.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      }
+    ]
+  },
+  "R06": {
+    "questions": [
+      {
+        "id": "Q1",
+        "answer": "Within administrative closure of domestic depot transfers, the current exception route requires reconciled quantity, valid handover, an exception waiver, and either a completed audit or an attested independent second inspection, with no active hold. Those exception conditions jointly suffice for closure. Audit and independent inspection are alternatives, not cumulative requirements; neither substitutes for the waiver. Reconciliation and valid handover are shared necessary conditions for all cases. The routine route instead requires reconciled quantity, valid handover and cleared settlement, with no active hold; each route applies only to its stated class and no other route is authorized. Cleared settlement is not required for the exception route. An active hold forbids closure regardless of positive conditions. Foreign transfers, employee matters and purchasing approvals are outside scope. The inspection alternative took effect on 2032-05-01 and applies to these current cases; the older training note does not override it. Missing evidence is unavailable, not false. Independence is established only by the supplied independent_inspection attestation, not merely two attachments or a supplier self-check. The historical revision-3 claim that waiver could replace audit does not govern these new cases.",
+        "sources": [
+          "D1.1",
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D1.5",
+          "D3.1",
+          "D3.2",
+          "D3.3",
+          "D4.2",
+          "D2.4"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q2",
+        "answer": "Reconciliation and valid handover are each necessary for closure in both classes, but together are not sufficient. Reconciliation means that the signed depot count equals the dispatched count for the same case identifier. Handover requires the receiving lead's signature on the linked handover; file titles or a green progress bar do not establish it. Additional class-specific route conditions and absence of an active hold are needed. Direct reconciled and handover_valid values in the snapshots are authoritative attestations, so a supplied valid handover does not require additional raw signatures.",
+        "sources": [
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D2.1",
+          "D3.1",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q3",
+        "answer": "The packet does not establish a business-semantic mapping for settlement_flag or paid_at. settlement_flag has values Y, N and blank, but its definition refers to absent specification SI-9; Y cannot be inferred to mean cleared settlement, nor can unknown meanings be treated as false. Explicit cleared_settlement attestations can establish the settlement fact and take precedence over dashboard guesses. paid_at has neither a supplied semantic definition nor timezone or migration mapping, so it cannot be identified with receipt_date, posting_date, or a payment-authorization fact. Occasional matching dates do not supply the missing definition.",
+        "sources": [
+          "D2.2",
+          "D2.3",
+          "D4.3",
+          "D1.5"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q4",
+        "answer": "The receiving-lead signature standard applies: on the linked handover that signature is sufficient, while a driver signature alone is invalid. Revision 4 and registry edition 2 govern new records from 2032-04-01; all supplied cases were created on 2032-05-02 under current policy, and CR-17 does not amend the signature standard. The revision-3 card allowing a driver-signed local_handover is historical, not current authority even when attached to a new record. Direct handover_valid attestations in these snapshots already establish handover validity without additional signature records.",
+        "sources": [
+          "D2.1",
+          "D2.4",
+          "D3.2",
+          "D3.3",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q5",
+        "answer": "Administrative closure marks the transfer file complete; it neither orders payment nor establishes supplier causation. Closure is neither sufficient nor necessary for payment authorization, whose separate governing policy is absent; the payment_status table cannot substitute for that policy. Numerical contribution partitions aggregate change arithmetically, not causally. The largest contributor to a decline need not be its cause, and the packet provides no intervention, randomized assignment, counterfactual analysis or causal certificate to establish a mechanism.",
+        "sources": [
+          "D1.1",
+          "D1.5",
+          "D4.1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q6",
+        "answer": "receipt_date dates funds reaching the collection bank; posting_date dates the ledger entry being posted. They refer to different events and may differ even across a month boundary. Posting corrections retain the original receipt reference for later reconciliation of the event streams. Neither the undefined paid_at column nor coincident dates make these events interchangeable.",
+        "sources": [
+          "D2.2",
+          "D2.3"
+        ],
+        "status": "proposed"
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "answer": "Administrative closure is not established at this snapshot; the conclusion remains undecided.",
+        "rationale": "The supplied routine snapshot attests reconciliation, valid handover and an inactive hold, but cleared_settlement is unavailable. Routine closure requires cleared settlement. settlement_flag Y has no supplied semantic mapping and cannot fill the gap. The waiver and audit cannot invoke an exception route for a routine case. The missing settlement evidence is not evidence that settlement is false.",
+        "sources": [
+          "D1.3",
+          "D1.5",
+          "D2.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C03",
+        "answer": "Administrative closure is justified at this snapshot.",
+        "rationale": "The supplied exception snapshot attests reconciliation, valid handover, waiver, independent inspection and an inactive hold. Under the effective change, independent inspection substitutes for the absent audit. Cleared settlement being false does not defeat the exception route, which does not require it.",
+        "sources": [
+          "D1.3",
+          "D1.4",
+          "D1.5",
+          "D3.1",
+          "D3.3",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C05",
+        "answer": "Administrative closure is not justified: every applicable route is defeated by the explicitly absent waiver.",
+        "rationale": "The supplied exception snapshot has a false waiver even though reconciliation, handover, settlement, audit and independent inspection are true and the hold is inactive. CR-17 leaves the waiver mandatory. Audit and inspection do not replace the waiver, and cleared settlement does not allow an exception case to use the routine route. No other route is authorized.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C07",
+        "answer": "Administrative closure is not established at this snapshot; the conclusion remains undecided because hold status is unavailable.",
+        "rationale": "The supplied routine snapshot establishes reconciliation, valid handover and cleared settlement, but hold is null. The routine route suffices only if no active hold exists, and an active hold would forbid closure. Unavailable hold status cannot be treated as inactive or active; the extra waiver and audit do not resolve it.",
+        "sources": [
+          "D1.3",
+          "D1.4",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C08",
+        "answer": "Administrative closure is not established at this snapshot; the conclusion remains undecided.",
+        "rationale": "The supplied exception snapshot establishes reconciliation, valid handover, waiver and an inactive hold. Audit is explicitly false, while independent inspection is unavailable. The updated audit-or-independent-inspection condition is therefore unresolved, not definitively false. Cleared settlement cannot replace that condition or make the routine route applicable.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D3.3",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C09",
+        "answer": "Administrative closure is not justified: every applicable route is defeated by the absence of both review alternatives.",
+        "rationale": "The supplied exception snapshot explicitly has neither completed audit nor independent inspection. Although reconciliation, valid handover, waiver and cleared settlement are true and the hold is inactive, the required audit-or-inspection condition is false. Cleared settlement does not substitute for exception review or authorize the class-specific routine route; no other route exists in the manual.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      }
+    ]
+  },
+  "R07": {
+    "questions": [
+      {
+        "id": "Q1",
+        "answer": "For current domestic exception cases, closure requires reconciled quantity, valid handover, an exception waiver, either a completed audit or an independent second inspection, and no active hold. CR-17 makes inspection an alternative to audit effective 2032-05-01, not an additional requirement, and leaves the waiver mandatory. Cleared settlement is not required for exception closure. The separate routine route requires reconciliation, valid handover, cleared settlement and no active hold; its conditions are unchanged. Active holds prohibit closure, unknown conditions are not false, and no other route is authorized. Foreign transfers, employee matters and purchasing approvals remain outside scope.",
+        "sources": [
+          "D1.1",
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D1.5",
+          "D3.1",
+          "D3.2",
+          "D4.2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q2",
+        "answer": "Reconciliation and valid handover are necessary shared conditions, not jointly sufficient conditions. Reconciliation is equality between signed depot count and dispatched count for the same case identifier. Handover validity follows the linked receiving-lead signature, not a filename or progress indicator; a directly supplied handover_valid value is already an authoritative attestation and needs no additional raw signature. Closure also requires the applicable class-specific conditions and no active hold; for current exceptions these include a waiver and either audit or independent inspection.",
+        "sources": [
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D2.1",
+          "D3.1",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q3",
+        "answer": "settlement_flag cannot be reliably mapped from Y, N or blank to cleared settlement because its referenced SI-9 definition is absent. An explicit independent cleared-settlement attestation can establish that fact; the direct cleared_settlement field is authoritative, whereas settlement_flag is not, and unknown semantics are not false values. paid_at has no supplied semantic definition, timezone or migration mapping, so its business event cannot be identified as receipt or posting merely from coincident dates. CR-17 defines neither field.",
+        "sources": [
+          "D2.2",
+          "D2.3",
+          "D3.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q4",
+        "answer": "The linked receiving-lead signature standard applies to every supplied case: all were created on 2032-05-02 under current policy, after the 2032-04-01 effective date of revision 4 and registry edition 2. A driver signature does not suffice; the revision-3 card has only historical authority. CR-17 does not change the signature standard. Direct handover_valid attestations in these snapshots are sufficient evidence without demanding additional raw signatures.",
+        "sources": [
+          "D2.1",
+          "D2.4",
+          "D3.2",
+          "D3.3",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q5",
+        "answer": "Administrative closure is neither necessary nor sufficient for payment authorization, which follows a separate policy absent here. Closure does not establish supplier responsibility or the cause of a service-level change. Numerical contribution partitions an aggregate change among depots and is arithmetic attribution, not itself causal evidence. The largest contribution can coexist with an unknown underlying cause; no intervention, random assignment, counterfactual analysis or causal certificate is supplied.",
+        "sources": [
+          "D1.1",
+          "D1.5",
+          "D4.1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q6",
+        "answer": "receipt_date dates funds reaching the collection bank; posting_date dates the ledger entry’s posting. These are distinct event streams that can fall on different days or in different months. Posting corrections retain their original receipt reference for later reconciliation.",
+        "sources": [
+          "D2.2"
+        ],
+        "status": "proposed"
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "answer": "Closure remains undecided on the supplied evidence.",
+        "rationale": "The routine snapshot establishes reconciliation, valid handover and inactive hold, but cleared settlement is unavailable. The routine route is unchanged; waiver and audit cannot substitute for settlement, and settlement_flag Y has no supplied mapping that would establish it. Unknown settlement does not establish either permission or failure of the route.",
+        "sources": [
+          "D1.3",
+          "D1.5",
+          "D2.2",
+          "D3.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C03",
+        "answer": "Administrative closure is justified.",
+        "rationale": "Reconciliation, valid handover, waiver, independent inspection and inactive hold are all authoritatively established. Under CR-17, effective before this current case was created, independent inspection replaces audit. False cleared settlement does not defeat the exception route.",
+        "sources": [
+          "D1.3",
+          "D1.5",
+          "D3.1",
+          "D3.3",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C05",
+        "answer": "Administrative closure is prohibited by failure of the applicable route.",
+        "rationale": "The waiver is explicitly false and remains mandatory in both audit and inspection alternatives. Having both audit and inspection cannot replace it; cleared settlement does not make the routine route available to an exception case.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D3.2",
+          "D4.2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C07",
+        "answer": "Closure remains undecided on the supplied evidence.",
+        "rationale": "All routine positive conditions are established, but hold status is unavailable. An active hold would prohibit closure and inactive status would permit it; neither may be inferred from null.",
+        "sources": [
+          "D1.3",
+          "D1.4",
+          "D3.2",
+          "D4.2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C08",
+        "answer": "Closure remains undecided on the supplied evidence.",
+        "rationale": "Reconciliation, valid handover, waiver and inactive hold are established. Audit is explicitly false, defeating that alternative, but independent inspection is unavailable rather than false. The current inspection alternative could therefore establish closure if confirmed; neither permission nor defeat of every alternative is established now.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D3.3",
+          "D4.2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C09",
+        "answer": "Administrative closure is prohibited by failure of both applicable alternatives.",
+        "rationale": "Audit and independent inspection are both explicitly false. Although reconciliation, valid handover, waiver and inactive hold hold, neither current exception alternative is satisfied. Cleared settlement cannot replace audit or inspection or enable the class-restricted routine route.",
+        "sources": [
+          "D1.3",
+          "D1.5",
+          "D3.1",
+          "D4.2"
+        ],
+        "status": "proposed"
+      }
+    ]
+  },
+  "R08": {
+    "questions": [
+      {
+        "id": "Q1",
+        "answer": "For current domestic exception cases, administrative closure requires reconciled quantity, valid handover, an exception waiver, either a completed audit or an attested independent second inspection, and no active hold. Audit and independent inspection are alternatives, not cumulative requirements; the waiver remains required. Cleared settlement is not required for exception closure. Routes are class-specific and no other route is authorized. An active hold forbids closure. The manual excludes foreign transfers, employee matters and purchasing approvals from its scope.",
+        "sources": [
+          "D1.1",
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D1.5",
+          "D3.1",
+          "D3.2",
+          "D3.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q2",
+        "answer": "Reconciliation and valid handover are necessary for every covered closure but are not jointly sufficient. Reconciliation means signed depot count equals dispatched count for the same case identifier. A receiving-lead signature on the linked handover is sufficient for handover validity; a driver signature is not. Direct handover_valid and reconciled fields are authoritative attestations, so supplied handover_valid does not require extra raw signatures. Other class-specific route conditions and absence of active hold must also be established.",
+        "sources": [
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D2.1",
+          "D3.1",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q3",
+        "answer": "settlement_flag has Y, N and blank values, but its definition is delegated to missing specification SI-9; no mapping from those values to cleared settlement is supported. An independent explicit cleared-settlement attestation establishes that fact, and a supplied authoritative cleared_settlement field takes precedence over a dashboard guess. paid_at has neither a semantic definition nor a timezone definition, and its migration mapping and signed definition are absent. Coincident dates do not establish that it means bank receipt or ledger posting. These unknown meanings must not be treated as false values.",
+        "sources": [
+          "D2.2",
+          "D2.3",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q4",
+        "answer": "The receiving-lead signature on the linked handover is required and sufficient for current handover validity; a driver signature alone is invalid. Revision 4 and registry edition 2 govern new records from 2032-04-01, and all supplied cases were created on 2032-05-02 under current policy. The revision-3 driver-signed local_handover card is historical, even if attached to a new record. CR-17 does not change the receiving-lead signature rule. The supplied direct handover_valid attestations can be used without demanding raw signatures.",
+        "sources": [
+          "D2.1",
+          "D2.4",
+          "D3.2",
+          "D3.3",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q5",
+        "answer": "Closure is neither necessary nor sufficient for payment authorization. Payment follows a separate policy not supplied here; payment_status is not a substitute. Administrative closure does not establish that a supplier caused delay or explain a service-level change. Numerical contribution partitions aggregate change arithmetically, not causally: the depot contributing most to measured decline need not be its demonstrated cause. The packet supplies no intervention, randomized assignment, counterfactual analysis or causal certificate, so an unknown cause must remain unknown.",
+        "sources": [
+          "D1.1",
+          "D1.5",
+          "D4.1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q6",
+        "answer": "receipt_date records when funds reached the collection bank; posting_date records when the ledger entry was posted. These are distinct events and can fall on different days or across a month boundary. Corrections to posting entries retain the original receipt reference to permit reconciliation. Neither event supplies the missing meaning of paid_at or settlement_flag.",
+        "sources": [
+          "D2.2",
+          "D2.3"
+        ],
+        "status": "proposed"
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "answer": "Closure remains undecided at the snapshot; permission is not established, but prohibition is not established either.",
+        "rationale": "The snapshot establishes reconciliation, valid handover and an inactive hold, but cleared settlement is unknown. Routine closure requires cleared settlement; waiver and audit do not authorize the exception route for a routine case. settlement_flag Y cannot fill this gap without a supplied mapping.",
+        "sources": [
+          "D1.2",
+          "D1.3",
+          "D1.5",
+          "D3.2",
+          "D4.2",
+          "D4.3",
+          "D2.2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C03",
+        "answer": "Administrative closure is justified at the snapshot.",
+        "rationale": "The exception snapshot establishes reconciliation, valid handover, waiver, independent inspection and no active hold. Since the current change makes independent inspection an alternative to audit, audit false does not block closure. Cleared settlement false also does not block the exception route.",
+        "sources": [
+          "D1.3",
+          "D1.4",
+          "D1.5",
+          "D3.1",
+          "D3.2",
+          "D3.3",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C05",
+        "answer": "Closure is disallowed at the snapshot because the only applicable route is defeated by the explicitly absent waiver.",
+        "rationale": "The exception waiver is explicitly false. Audit and inspection do not replace that requirement, and cleared settlement does not make the routine route available to an exception case.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C07",
+        "answer": "Closure remains undecided at the snapshot; permission is not established, but an active-hold prohibition is not established either.",
+        "rationale": "The routine positive conditions are present, but hold status is unknown. Absence of an active hold must be established; missing hold information must not be converted into an inactive hold.",
+        "sources": [
+          "D1.3",
+          "D1.4",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C08",
+        "answer": "Closure remains undecided at the snapshot; permission is not established, but the inspection alternative has not been defeated.",
+        "rationale": "Although reconciliation, handover, waiver and inactive hold are established, audit is false and independent inspection is unknown. The required audit-or-independent-inspection alternative is therefore unestablished. Cleared settlement does not replace it, and unknown inspection is not a negative fact.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D3.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C09",
+        "answer": "Closure is disallowed at the snapshot because the only applicable route is defeated by both review alternatives being explicitly absent.",
+        "rationale": "Both audit and independent inspection are explicitly false, so neither permitted review alternative is satisfied for this exception case. Cleared settlement cannot substitute for that requirement or authorize the routine route for an exception case.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      }
+    ]
+  },
+  "R09": {
+    "questions": [
+      {
+        "id": "Q1",
+        "answer": "For current domestic exception cases, closure requires reconciled quantity, valid handover, an exception waiver, and either a completed audit or an independent second inspection, with no active hold. Audit and independent inspection are alternatives, not cumulative requirements; neither dispenses with the waiver. Cleared settlement is not required for exceptions, and the routine settlement route cannot be borrowed by an exception. No other route is authorized. CR-17 took effect on 2032-05-01 and applies to all supplied cases created on 2032-05-02. An active hold defeats any positive route; unavailable evidence is not false. The policy concerns administrative domestic depot closure only, not foreign transfers, employee matters, purchasing approvals, or payment authorization.",
+        "sources": [
+          "D1.1",
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D1.5",
+          "D3.1",
+          "D3.2",
+          "D3.3",
+          "D4.2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q2",
+        "answer": "Reconciliation and valid handover are separate necessary conditions shared by every domestic closure route; together they are not sufficient. Reconciliation means the signed depot count equals the dispatched count for the same case identifier. Routine closure also needs cleared settlement and no active hold; exception closure also needs a waiver, audit or independent inspection, and no active hold. Direct reconciled and handover_valid fields are authoritative attestations, so no extra raw signature is required when handover_valid is supplied.",
+        "sources": [
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D3.1",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q3",
+        "answer": "The packet does not establish a mapping from settlement_flag values Y, N, or blank to cleared settlement: its definition points to missing SI-9, and the raw flag is not an authoritative attestation. Independent explicit cleared-settlement evidence can establish that fact; direct cleared_settlement values take precedence over dashboard guesses. paid_at has no supplied semantic definition, timezone, or migration mapping, so it cannot be identified with bank receipt, ledger posting, or cleared settlement. Occasional equality of displayed dates does not establish a definition. Unknown meanings must not be treated as false.",
+        "sources": [
+          "D2.2",
+          "D2.3",
+          "D3.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q4",
+        "answer": "The receiving lead must sign the linked handover; that signature is sufficient for validity in this packet, whereas a driver-only signature explicitly fails the current standard. The revision-3 driver-signed local_handover card is historical, not controlling: revision 4 and the registry govern new records from 2032-04-01, and all supplied cases were created 2032-05-02. CR-17 does not change the signature requirement. Direct handover_valid attestations already establish validity without demanding additional signatures.",
+        "sources": [
+          "D2.1",
+          "D2.4",
+          "D3.2",
+          "D3.3",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q5",
+        "answer": "Closure is neither necessary nor sufficient for payment authorization; the separate payment policy is absent and the payment_status routing table cannot replace it. Administrative closure alone establishes no cause of a service-level change. A numerical contribution partitions aggregate change arithmetically, but does not itself demonstrate a causal mechanism; the largest measured contribution can coexist with an unknown cause, and no causal analysis or certificate is supplied.",
+        "sources": [
+          "D1.1",
+          "D1.5",
+          "D4.1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q6",
+        "answer": "receipt_date dates the arrival of funds at the collection bank, while posting_date dates posting of the ledger entry. These are distinct event streams and may occur on different days or across a month boundary. Posting corrections retain the original receipt reference for later reconciliation. Neither the undefined paid_at field nor the undefined settlement_flag can collapse these dates into a single established business fact.",
+        "sources": [
+          "D2.2",
+          "D2.3"
+        ],
+        "status": "proposed"
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "answer": "Closure is not yet justified; the conclusion remains undecided.",
+        "rationale": "The routine snapshot attests reconciliation, valid handover and no hold, but cleared settlement is unavailable. Y cannot fill that gap because settlement_flag has no supplied business mapping. Waiver and audit do not authorize a routine case through the exception route. There is no explicit negative defeating the routine route, only missing settlement evidence.",
+        "sources": [
+          "D1.3",
+          "D1.5",
+          "D2.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C03",
+        "answer": "Closure is justified at the snapshot.",
+        "rationale": "Reconciliation, valid handover, waiver, independent inspection, and explicitly inactive hold satisfy the amended exception route. The audit is false, but independent inspection replaces it under CR-17. Explicitly false cleared settlement does not block exception closure.",
+        "sources": [
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D1.5",
+          "D3.1",
+          "D3.3",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C05",
+        "answer": "Closure is not permitted: the exception route is defeated.",
+        "rationale": "The waiver is explicitly false and remains required even with both audit and independent inspection true. Reconciliation, handover, cleared settlement and no hold cannot compensate: the settlement route applies only to routine cases, and no other route is authorized.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D3.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C07",
+        "answer": "Closure is not yet justified; hold status leaves the conclusion undecided.",
+        "rationale": "All positive routine conditions are true, including cleared settlement, but the authoritative hold status is unavailable. An active hold would prohibit closure and absence of one has not been established. Waiver and audit do not resolve hold uncertainty.",
+        "sources": [
+          "D1.3",
+          "D1.4",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C08",
+        "answer": "Closure is not yet justified; the conclusion remains undecided.",
+        "rationale": "Reconciliation, handover and waiver are true and hold is false. Audit is explicitly false, but independent inspection is unavailable, not false. Thus the alternative inspection route is unresolved, not defeated, while cleared settlement cannot replace the exception review condition.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D3.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C09",
+        "answer": "Closure is not permitted: every applicable exception route is defeated.",
+        "rationale": "Both audit and independent inspection are explicitly false, so neither review alternative is satisfied. True reconciliation, handover, waiver and cleared settlement with no hold cannot replace the missing review; the routine settlement route does not apply to this exception.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D3.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      }
+    ]
+  },
+  "R10": {
+    "questions": [
+      {
+        "id": "Q1",
+        "answer": "For domestic exception cases, closure is authorized exactly when reconciled quantity and valid handover and exception waiver and (completed audit or independent second inspection) hold, with an explicitly inactive hold. Reconciliation and handover are shared necessary conditions; the waiver remains required. Audit and independent inspection are alternatives, not cumulative requirements; independence requires the supplied independent_inspection attestation, not attachments or supplier self-checks. Cleared settlement is not required for exceptions. An active hold forbids closure regardless of positive conditions. The routine alternative is restricted to routine cases and requires reconciliation, valid handover and cleared settlement with no active hold; no other route is authorized. Missing evidence is unknown, not false. CR-17 effective 2032-05-01 applies to these 2032-05-02 cases; the older audit-mandatory training summary has no policy authority. The manual excludes foreign transfers, employee matters and purchasing approvals.",
+        "sources": [
+          "D1.1",
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D1.5",
+          "D3.1",
+          "D3.2",
+          "D3.3",
+          "D4.2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q2",
+        "answer": "Reconciliation and valid handover are each necessary for every domestic closure, but their conjunction alone is not sufficient. Reconciliation means the signed depot count equals the dispatched count for the same case identifier. With them, a routine case also needs cleared settlement and no active hold; an exception case needs waiver, either audit or independent inspection, and no active hold. A valid linked handover has the receiving-lead signature; the directly supplied handover_valid attestation requires no additional raw signature evidence.",
+        "sources": [
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D2.1",
+          "D3.1",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q3",
+        "answer": "settlement_flag cannot be mapped to cleared settlement from Y, N or blank: its definition refers to missing SI-9, and it is not an authoritative attestation. Explicit cleared_settlement evidence can establish that business fact. paid_at cannot be identified with bank receipt, ledger posting or another business event: its semantic definition and timezone are blank and its migration mapping and signed definition are absent. Coincident displayed dates do not supply that missing mapping. These missing meanings are not false facts.",
+        "sources": [
+          "D2.2",
+          "D2.3",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q4",
+        "answer": "The revision-4 receiving-lead signature standard applies: a receiving-lead signature on the linked handover is sufficient for validity; driver signature alone is invalid. Revision 4 and registry edition 2 govern new records from 2032-04-01; every supplied case was created 2032-05-02. CR-17 does not change this standard. The revision-3 driver-signed local_handover card is historical only, even if attached to a new record. Direct handover_valid attestations are authoritative, without requiring fresh raw signatures.",
+        "sources": [
+          "D2.1",
+          "D2.4",
+          "D3.2",
+          "D3.3",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q5",
+        "answer": "Administrative closure marks the transfer file complete; it is neither necessary nor sufficient for payment authorization, which follows a separate policy absent from the packet. payment_status is not that policy. Neither closure nor a numerical contribution establishes a cause. Contribution partitions an aggregate numerical change arithmetically among depots; even the largest contribution does not demonstrate a causal mechanism, and this packet supplies no causal identification evidence.",
+        "sources": [
+          "D1.1",
+          "D1.5",
+          "D4.1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q6",
+        "answer": "receipt_date is the date funds reached the collection bank; posting_date is the date the ledger entry was posted. They describe distinct events that may occur on different dates, including across a month boundary. Corrected postings retain their original receipt reference for later reconciliation. Neither definition resolves the undefined paid_at mapping.",
+        "sources": [
+          "D2.2",
+          "D2.3"
+        ],
+        "status": "proposed"
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "answer": "Closure is undecided at this snapshot; permission is not established.",
+        "rationale": "The routine case has reconciliation, valid handover and inactive hold but cleared settlement is unavailable. That fact is necessary for the routine route. settlement_flag Y has no supplied semantic mapping and cannot fill the gap. Waiver and audit do not allow a routine case to use the exception route.",
+        "sources": [
+          "D1.3",
+          "D1.5",
+          "D2.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C03",
+        "answer": "Administrative closure is justified at this snapshot.",
+        "rationale": "Reconciliation, valid handover, waiver, independent inspection and inactive hold are attested. CR-17 makes independent inspection sufficient in place of audit for these current exception cases. Cleared settlement false does not defeat this route because exceptions do not require it.",
+        "sources": [
+          "D1.3",
+          "D1.5",
+          "D3.1",
+          "D3.3",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C05",
+        "answer": "Closure is not permitted at this snapshot; every applicable route is defeated.",
+        "rationale": "The case is exception and waiver is explicitly false. CR-17 preserves the waiver requirement even with audit and independent inspection both true. Cleared settlement cannot make the routine route applicable to an exception case, and no other route is authorized.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C07",
+        "answer": "Closure is undecided at this snapshot; permission is not established.",
+        "rationale": "The routine positive conditions are present, but hold is unavailable. An active hold would forbid closure; its absence cannot be inferred from other positive facts. The missing hold attestation is not false, so neither permission nor prohibition is established.",
+        "sources": [
+          "D1.3",
+          "D1.4",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C08",
+        "answer": "Closure is undecided at this snapshot; permission is not established.",
+        "rationale": "The exception case meets reconciliation, handover, waiver and no-hold requirements, but audit is false and independent inspection unavailable. The alternative could still be satisfied, so the route is neither established nor definitively defeated. Cleared settlement does not substitute for that alternative or permit using the routine route.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C09",
+        "answer": "Closure is not permitted at this snapshot; every applicable route is defeated.",
+        "rationale": "The exception case has neither audit nor independent inspection, both explicitly false. The required alternative therefore fails despite waiver and other favorable evidence. Cleared settlement cannot substitute or make the class-restricted routine route available.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      }
+    ]
+  },
+  "R11": {
+    "questions": [
+      {
+        "id": "Q1",
+        "answer": "For domestic exception cases, current closure requires reconciled quantity AND valid handover AND an exception waiver AND (completed audit OR independent second inspection), with no active hold. Audit and independent inspection are alternatives, not cumulative requirements; the waiver remains mandatory. This is revision 4 as amended by CR-17 effective 2032-05-01, applicable to the supplied new 2032-05-02 cases. Cleared settlement is not required for exceptions and cannot substitute for a waiver or review. Routine cases instead require reconciliation, valid handover and cleared settlement, with no active hold; neither class may borrow the other class’s route, and no other route is authorized. Active hold overrides all positive conditions. Independence requires the supplied attestation, not two attachments or a supplier self-check. Scope excludes foreign transfers, employee matters and purchasing approvals. Unknown evidence is unavailable, not false.",
+        "sources": [
+          "D1.1",
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D1.5",
+          "D3.1",
+          "D3.2",
+          "D3.3",
+          "D4.2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q2",
+        "answer": "Reconciliation and valid handover are shared necessary conditions for every domestic closure, not jointly sufficient conditions. Reconciliation means that the signed depot count equals the dispatched count linked by the same case identifier. Handover requires the linked receiving-lead signature. Additional class-specific conditions and absence of active hold are needed to establish a sufficient route; directly supplied reconciled and handover_valid fields are authoritative and need no extra raw signature proof.",
+        "sources": [
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D2.1",
+          "D3.1",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q3",
+        "answer": "Neither field has a supported business-fact mapping here. settlement_flag has Y, N and blank values but its definition points to absent SI-9; Y cannot establish cleared settlement, nor can N or blank be assumed to negate it. An authoritative cleared_settlement attestation can establish the fact independently and takes precedence over dashboard guesses. paid_at lacks a semantic definition, timezone and migration mapping; it cannot be equated with receipt, posting, payment authorization or another payment event merely from its name or coincident dates. Preserve these semantic gaps rather than treating unknown meanings as false.",
+        "sources": [
+          "D2.2",
+          "D2.3",
+          "D4.3",
+          "D4.4"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q4",
+        "answer": "The current receiving-lead signature standard applies. A signature from the receiving lead on the linked handover is sufficient for handover validity; driver-only evidence is explicitly invalid under the current revision. Revision 4 and registry edition 2 govern new records from 2032-04-01, and all supplied cases were created 2032-05-02. The revision-3 driver-signed local_handover card is historical, not current authority, even if attached to a new case. CR-17 does not change the signature rule. Direct handover_valid attestations in these cases are already authoritative.",
+        "sources": [
+          "D2.1",
+          "D2.4",
+          "D3.2",
+          "D3.3",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q5",
+        "answer": "Administrative closure marks the case file complete and is neither necessary nor sufficient for payment authorization. Payment is governed by a separate policy absent here; the payment_status routing table does not supply it. Closure also establishes no cause of a service-level change or supplier responsibility. Numerical contribution partitions an aggregate change arithmetically, but is not causal evidence: even the largest contributor can have an unknown underlying cause. No intervention, randomization, counterfactual analysis or causal certificate is supplied.",
+        "sources": [
+          "D1.1",
+          "D1.5",
+          "D4.1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q6",
+        "answer": "receipt_date is the date funds reached the collection bank; posting_date is the date the ledger entry was posted. These are different events and may fall on different days or across a month boundary. Posting corrections retain the original receipt reference to permit later reconciliation of the streams. Neither event supplies the missing settlement_flag definition, and paid_at cannot be identified with either event from observed date coincidences.",
+        "sources": [
+          "D2.2",
+          "D2.3"
+        ],
+        "status": "proposed"
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "answer": "Closure is not yet justified; the conclusion is undecided.",
+        "rationale": "The routine snapshot establishes reconciliation, valid handover and inactive hold, but cleared settlement is unavailable. settlement_flag Y has no supplied semantic mapping and cannot fill that gap. Waiver and audit do not enable a routine case to use the exception route. No explicit negative defeats the routine route, so this is uncertainty rather than established prohibition.",
+        "sources": [
+          "D1.3",
+          "D1.5",
+          "D2.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C03",
+        "answer": "Administrative closure is justified at the snapshot.",
+        "rationale": "The exception case has reconciliation, valid handover, waiver, independent inspection and explicitly inactive hold. CR-17 makes independent inspection a substitute for completed audit, so audit false does not defeat this route. Cleared settlement false is irrelevant to the exception requirement.",
+        "sources": [
+          "D1.3",
+          "D1.4",
+          "D1.5",
+          "D3.1",
+          "D3.3",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C05",
+        "answer": "Closure is not permitted: every applicable exception route is defeated.",
+        "rationale": "Waiver is explicitly false. Although reconciliation, valid handover, audit, independent inspection and inactive hold are established, both exception alternatives retain the mandatory waiver. Cleared settlement true cannot substitute for waiver or allow an exception to use the routine route.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C07",
+        "answer": "Closure is not yet justified; the conclusion is undecided.",
+        "rationale": "All positive routine conditions are established, but hold status is unavailable. The route requires no active hold, and an active hold would override the positives. A null hold is not an inactive hold or an explicit prohibition; waiver and audit cannot resolve it.",
+        "sources": [
+          "D1.3",
+          "D1.4",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C08",
+        "answer": "Closure is not yet justified; the conclusion is undecided.",
+        "rationale": "The shared exception conditions, waiver and inactive hold are established. Audit is explicitly false, while independent inspection is unavailable, leaving the alternative review condition unresolved rather than disproved. Cleared settlement does not replace the required review or create a routine route for an exception.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C09",
+        "answer": "Closure is not permitted: every applicable exception route is defeated.",
+        "rationale": "Both audit and independent inspection are explicitly false, so neither review alternative is satisfied despite reconciliation, valid handover, waiver and inactive hold. Cleared settlement cannot replace that requirement or authorize the routine route for this exception.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      }
+    ]
+  },
+  "R12": {
+    "questions": [
+      {
+        "id": "Q1",
+        "answer": "For domestic depot transfer exception cases under the current policy, closure is justified exactly when reconciled quantity, valid handover, an exception waiver, and either a completed audit or an attested independent second inspection are present, with no active hold. Reconciliation and handover are shared necessary conditions for all domestic cases. The inspection substitutes only for the audit, not for the waiver; both audit and inspection are not required. Cleared settlement is not required for exceptions. Routine cases instead require reconciliation, handover and cleared settlement, with no active hold; their route cannot be borrowed by an exception. No other route is authorized. Active hold overrides positive evidence, and unavailable facts remain unknown. Scope excludes foreign transfers, employee matters and purchasing approvals.",
+        "sources": [
+          "D1.1",
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D1.5",
+          "D3.1",
+          "D3.2",
+          "D4.2"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q2",
+        "answer": "Reconciliation and valid handover are each necessary across both classes but are not jointly sufficient. Reconciliation is equality of the signed depot count and dispatched count for the same case. Valid handover requires the receiving lead's signature on the linked handover; a driver signature is insufficient. The class-specific remaining conditions and absence of active hold must also be established. Direct reconciled and handover_valid fields are authoritative, so a supplied true handover_valid does not require additional raw signatures.",
+        "sources": [
+          "D1.2",
+          "D1.3",
+          "D1.4",
+          "D2.1",
+          "D3.1",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q3",
+        "answer": "Neither field can be given a supported business-fact mapping here. settlement_flag has Y, N and blank values but its definition is delegated to absent SI-9, so Y cannot establish cleared settlement and an unknown meaning cannot be treated as false. A direct authoritative cleared_settlement attestation can establish the fact. paid_at has no supplied semantic definition, timezone or migration mapping, so it cannot reliably be equated with bank receipt, ledger posting or payment authorization merely because dates sometimes match. Payment authorization is governed by an absent separate policy.",
+        "sources": [
+          "D2.2",
+          "D2.3",
+          "D4.3",
+          "D1.5"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q4",
+        "answer": "The current receiving-lead signature standard applies: its signature on the linked handover is sufficient, while a driver signature is not. The revision-4 manual and edition-2 registry govern new records from 2032-04-01; all supplied cases were created on 2032-05-02. The archived revision-3 driver-signed local_handover rule is historical, not current authority. CR-17 does not amend handover. Direct handover_valid attestations can be used without demanding raw signature evidence.",
+        "sources": [
+          "D2.1",
+          "D2.4",
+          "D3.2",
+          "D3.3",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q5",
+        "answer": "Administrative closure is neither sufficient nor necessary for payment authorization, which is controlled by a separate policy absent from the packet. Closing a file neither orders payment nor establishes a supplier's responsibility for delay. Numerical contribution partitions aggregate change arithmetically, but does not itself establish a causal mechanism: even the largest contributor may have an unknown underlying cause. No supplied intervention, randomization or counterfactual evidence licenses a causal inference.",
+        "sources": [
+          "D1.1",
+          "D1.5",
+          "D4.1"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "Q6",
+        "answer": "receipt_date is when funds reached the collection bank; posting_date is when the ledger entry was posted. They describe distinct events that may occur on different days or in different months. Posting corrections retain the original receipt reference for later reconciliation. Neither event's date should be conflated with the undefined paid_at field or substituted for an explicit cleared-settlement attestation.",
+        "sources": [
+          "D2.2",
+          "D2.3",
+          "D4.3"
+        ],
+        "status": "proposed"
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "answer": "Closure is undecided at this snapshot; permission is not established.",
+        "rationale": "For this routine case, reconciliation, valid handover and inactive hold are attested, but cleared settlement is unavailable. settlement_flag Y cannot fill that gap because its definition is missing. Waiver and audit do not create an exception route for a routine case. The unknown necessary condition is not an explicit false fact, so prohibition is not established either.",
+        "sources": [
+          "D1.3",
+          "D1.5",
+          "D2.2",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C03",
+        "answer": "Administrative closure is justified at this snapshot.",
+        "rationale": "The exception case has reconciliation, valid handover, waiver, attested independent inspection and an explicitly inactive hold. Under effective CR-17 the independent inspection replaces the absent audit. Explicitly false cleared settlement does not defeat an exception route because settlement is not required for that class.",
+        "sources": [
+          "D1.3",
+          "D1.5",
+          "D3.1",
+          "D3.3",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C05",
+        "answer": "Closure is not permitted; the applicable exception route is defeated.",
+        "rationale": "The waiver is explicitly false. Audit and independent inspection are alternatives for one review condition, not substitutes for the mandatory exception waiver. Reconciliation, handover, settlement and inactive hold cannot rescue the case through the routine route because that route is only for routine cases and no other route is authorized.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C07",
+        "answer": "Closure is undecided at this snapshot; permission is not established.",
+        "rationale": "The routine positive conditions of reconciliation, valid handover and cleared settlement are present, but hold status is unavailable. An active hold would prohibit closure, and its absence cannot be inferred from null. Waiver and audit do not resolve the hold uncertainty.",
+        "sources": [
+          "D1.3",
+          "D1.4",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C08",
+        "answer": "Closure is undecided at this snapshot; permission is not established.",
+        "rationale": "Reconciliation, valid handover, waiver and inactive hold are established for this exception. Audit is explicitly false but the alternative independent inspection is unavailable rather than false. That leaves the review condition unresolved, not conclusively defeated. Cleared settlement cannot replace the missing review evidence or authorize use of the routine route.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      },
+      {
+        "id": "C09",
+        "answer": "Closure is not permitted; every applicable review alternative is defeated.",
+        "rationale": "Both audit and independent inspection are explicitly false, so the exception route lacks its required review alternative despite reconciliation, handover, waiver and inactive hold. Cleared settlement cannot replace audit or inspection and cannot make the routine route applicable to this exception case.",
+        "sources": [
+          "D1.3",
+          "D3.1",
+          "D4.2",
+          "D4.3"
+        ],
+        "status": "proposed"
+      }
+    ]
+  }
+}

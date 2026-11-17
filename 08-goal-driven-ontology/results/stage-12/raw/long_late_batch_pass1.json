@@ -1,0 +1,136 @@
+{
+  "questions": [
+    {
+      "id": "Q1",
+      "answer": "Under the currently supplied revision-4 manual, the exception route requires reconciled quantity, valid handover, an exception waiver and completed audit, with no active hold. These jointly suffice, and no other exception route is authorized in this material. Cleared settlement is not required for exceptions; the routine settlement route is class-specific. An active hold overrides positive conditions; unavailable facts cannot be assumed negative. The policy concerns domestic depot administrative closure, not foreign transfers, employee matters or purchasing approvals.",
+      "sources": [
+        "D1.1",
+        "D1.2",
+        "D1.3",
+        "D1.4",
+        "D1.5"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Q2",
+      "answer": "Reconciliation and valid handover are shared necessary conditions, not by themselves sufficient. Reconciliation means signed depot count equals dispatched count for the same case identifier. A receiving-lead signature on the linked handover suffices for validity. Class-specific additional conditions and absence of an active hold remain required.",
+      "sources": [
+        "D1.2",
+        "D1.3",
+        "D1.4",
+        "D2.1"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Q3",
+      "answer": "No supported mapping from settlement_flag Y, N or blank to cleared settlement is available: its definition points to absent SI-9, and the raw flag is not an authoritative attestation. An independent explicit attestation can establish cleared settlement. paid_at has no supplied semantic definition, timezone or migration mapping, so it cannot be identified with bank receipt, ledger posting or payment merely from coinciding dates.",
+      "sources": [
+        "D2.2",
+        "D2.3",
+        "D4.3"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Q4",
+      "answer": "The receiving-lead signature standard governs the supplied current cases: revision 4 and the registry govern new records from 2032-04-01 onward, whereas the driver-signature card is historical revision 3. A driver-only signature is invalid under the current standard. Direct handover_valid attestations in these snapshots need no further raw-signature evidence.",
+      "sources": [
+        "D2.1",
+        "D2.4",
+        "D4.3"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Q5",
+      "answer": "Administrative closure is neither sufficient nor necessary for payment authorization; a separate payment policy is absent and payment_status is not that policy. Numerical contribution partitions an aggregate change arithmetically, but does not establish causal mechanism. Neither closure nor the largest contribution establishes responsibility for a service-level change.",
+      "sources": [
+        "D1.1",
+        "D1.5",
+        "D4.1"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Q6",
+      "answer": "receipt_date dates funds reaching the collection bank; posting_date dates ledger posting. These distinct events may fall on different days or across a month boundary. Corrected postings retain their original receipt reference for later reconciliation.",
+      "sources": [
+        "D2.2"
+      ],
+      "status": "proposed"
+    }
+  ],
+  "cases": [
+    {
+      "id": "C02",
+      "answer": "Closure remains undecided at this snapshot.",
+      "sources": [
+        "D1.3",
+        "D1.5",
+        "D2.2",
+        "D4.2",
+        "D4.3"
+      ],
+      "status": "proposed",
+      "rationale": "The routine route has reconciliation, valid handover and inactive hold, but cleared settlement is unavailable. settlement_flag Y cannot supply the missing fact without its definition. Waiver and audit do not authorize an exception route for a routine case."
+    },
+    {
+      "id": "C03",
+      "answer": "Closure cannot be justified; the applicable exception route is defeated.",
+      "sources": [
+        "D1.3",
+        "D1.5",
+        "D4.2",
+        "D4.3"
+      ],
+      "status": "proposed",
+      "rationale": "The snapshot explicitly has no completed audit. Independent inspection is an attested fact but the currently supplied manual gives it no substitute role. Cleared settlement being false is not the obstacle for exceptions."
+    },
+    {
+      "id": "C05",
+      "answer": "Closure cannot be justified; the applicable exception route is defeated.",
+      "sources": [
+        "D1.3",
+        "D4.2",
+        "D4.3"
+      ],
+      "status": "proposed",
+      "rationale": "The exception waiver is explicitly false. Reconciliation, valid handover, completed audit and inactive hold cannot replace it, and cleared settlement does not make a routine route applicable to an exception case."
+    },
+    {
+      "id": "C07",
+      "answer": "Closure remains undecided at this snapshot.",
+      "sources": [
+        "D1.3",
+        "D1.4",
+        "D4.2"
+      ],
+      "status": "proposed",
+      "rationale": "The routine positive conditions are present, but hold status is unavailable. An active hold would forbid closure, and absence of a hold cannot be invented."
+    },
+    {
+      "id": "C08",
+      "answer": "Closure cannot be justified; the applicable exception route is defeated under the supplied manual.",
+      "sources": [
+        "D1.3",
+        "D4.2",
+        "D4.3"
+      ],
+      "status": "proposed",
+      "rationale": "Audit is explicitly false. Unknown independent inspection is not a negative fact, but no inspection alternative is authorized in the currently supplied material. Cleared settlement does not replace the exception audit."
+    },
+    {
+      "id": "C09",
+      "answer": "Closure cannot be justified; the applicable exception route is defeated.",
+      "sources": [
+        "D1.3",
+        "D4.2",
+        "D4.3"
+      ],
+      "status": "proposed",
+      "rationale": "Audit is explicitly false despite reconciliation, valid handover, waiver and inactive hold. The supplied manual authorizes no independent-inspection alternative, and settlement cannot substitute for exception audit."
+    }
+  ]
+}

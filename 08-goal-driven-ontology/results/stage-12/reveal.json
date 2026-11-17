@@ -1,0 +1,14 @@
+{
+  "R01": "short_late_strong",
+  "R02": "short_late_one",
+  "R03": "long_late_batch",
+  "R04": "long_early_strong",
+  "R05": "long_late_strong",
+  "R06": "short_early_strong",
+  "R07": "short_late_batch",
+  "R08": "short_early_batch",
+  "R09": "long_late_one",
+  "R10": "long_early_batch",
+  "R11": "long_early_one",
+  "R12": "short_early_one"
+}

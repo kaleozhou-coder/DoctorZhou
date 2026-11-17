@@ -1,0 +1,115 @@
+{
+  "questions": [
+    {
+      "id": "Q1",
+      "question": "Reconstruct the current exception closure rule, including its shared conditions, alternatives and exclusions."
+    },
+    {
+      "id": "Q2",
+      "question": "Explain the logical role of reconciliation and handover in deciding closure."
+    },
+    {
+      "id": "Q3",
+      "question": "Explain how settlement_flag and paid_at can be mapped to business facts with this packet."
+    },
+    {
+      "id": "Q4",
+      "question": "Which handover signature standard applies to the supplied current cases, and why?"
+    },
+    {
+      "id": "Q5",
+      "question": "Explain the relationship of closure to payment permission, and numerical contribution to causal explanation."
+    },
+    {
+      "id": "Q6",
+      "question": "Explain the two dated financial events receipt_date and posting_date."
+    }
+  ],
+  "snapshots": [
+    {
+      "id": "C02",
+      "case_class": "routine",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": true,
+        "handover_valid": true,
+        "cleared_settlement": null,
+        "waiver": true,
+        "audit": true,
+        "independent_inspection": false,
+        "hold": false,
+        "settlement_flag": "Y"
+      }
+    },
+    {
+      "id": "C03",
+      "case_class": "exception",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": true,
+        "handover_valid": true,
+        "cleared_settlement": false,
+        "waiver": true,
+        "audit": false,
+        "independent_inspection": true,
+        "hold": false
+      }
+    },
+    {
+      "id": "C05",
+      "case_class": "exception",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": true,
+        "handover_valid": true,
+        "cleared_settlement": true,
+        "waiver": false,
+        "audit": true,
+        "independent_inspection": true,
+        "hold": false
+      }
+    },
+    {
+      "id": "C07",
+      "case_class": "routine",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": true,
+        "handover_valid": true,
+        "cleared_settlement": true,
+        "waiver": true,
+        "audit": true,
+        "independent_inspection": false,
+        "hold": null
+      }
+    },
+    {
+      "id": "C08",
+      "case_class": "exception",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": true,
+        "handover_valid": true,
+        "cleared_settlement": true,
+        "waiver": true,
+        "audit": false,
+        "independent_inspection": null,
+        "hold": false
+      }
+    },
+    {
+      "id": "C09",
+      "case_class": "exception",
+      "snapshot_date": "2032-05-02",
+      "evidence": {
+        "reconciled": true,
+        "handover_valid": true,
+        "cleared_settlement": true,
+        "waiver": true,
+        "audit": false,
+        "independent_inspection": false,
+        "hold": false
+      }
+    }
+  ]
+}

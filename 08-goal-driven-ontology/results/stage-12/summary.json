@@ -1,0 +1,189 @@
+{
+  "kind": "frozen observations and AI-reviewed semantics; not fresh model inference",
+  "cells": {
+    "short_late_strong": {
+      "questions": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "cases": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "false_permissions": 0,
+      "not_permitted_gold": 5,
+      "schema_errors": []
+    },
+    "short_late_one": {
+      "questions": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "cases": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "false_permissions": 0,
+      "not_permitted_gold": 5,
+      "schema_errors": []
+    },
+    "long_late_batch": {
+      "questions": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "cases": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "false_permissions": 0,
+      "not_permitted_gold": 5,
+      "schema_errors": []
+    },
+    "long_early_strong": {
+      "questions": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "cases": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "false_permissions": 0,
+      "not_permitted_gold": 5,
+      "schema_errors": []
+    },
+    "long_late_strong": {
+      "questions": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "cases": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "false_permissions": 0,
+      "not_permitted_gold": 5,
+      "schema_errors": []
+    },
+    "short_early_strong": {
+      "questions": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "cases": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "false_permissions": 0,
+      "not_permitted_gold": 5,
+      "schema_errors": []
+    },
+    "short_late_batch": {
+      "questions": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "cases": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "false_permissions": 0,
+      "not_permitted_gold": 5,
+      "schema_errors": []
+    },
+    "short_early_batch": {
+      "questions": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "cases": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "false_permissions": 0,
+      "not_permitted_gold": 5,
+      "schema_errors": []
+    },
+    "long_late_one": {
+      "questions": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "cases": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "false_permissions": 0,
+      "not_permitted_gold": 5,
+      "schema_errors": []
+    },
+    "long_early_batch": {
+      "questions": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "cases": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "false_permissions": 0,
+      "not_permitted_gold": 5,
+      "schema_errors": []
+    },
+    "long_early_one": {
+      "questions": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "cases": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "false_permissions": 0,
+      "not_permitted_gold": 5,
+      "schema_errors": []
+    },
+    "short_early_one": {
+      "questions": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "cases": {
+        "semantic_correct": 6,
+        "citation_supported": 6,
+        "total": 6
+      },
+      "false_permissions": 0,
+      "not_permitted_gold": 5,
+      "schema_errors": []
+    }
+  },
+  "human_approvals": 0,
+  "human_minutes": null,
+  "token_usage": null,
+  "monetary_cost": null
+}

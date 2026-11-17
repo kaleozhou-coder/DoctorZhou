@@ -1,0 +1,33 @@
+{
+  "variants": [
+    {
+      "id": "short_early",
+      "words": 1239,
+      "documents": 4,
+      "first_batch_documents": 2
+    },
+    {
+      "id": "short_late",
+      "words": 1239,
+      "documents": 4,
+      "first_batch_documents": 2
+    },
+    {
+      "id": "long_early",
+      "words": 5847,
+      "documents": 36,
+      "first_batch_documents": 18
+    },
+    {
+      "id": "long_late",
+      "words": 5847,
+      "documents": 36,
+      "first_batch_documents": 18
+    }
+  ],
+  "cells": 12,
+  "repeats": 1,
+  "fresh_worker_per_cell": true,
+  "stage": "12",
+  "paid_external_api": false
+}

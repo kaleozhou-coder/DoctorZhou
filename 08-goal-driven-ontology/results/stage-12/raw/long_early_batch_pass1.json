@@ -1,0 +1,113 @@
+{
+  "questions": [
+    {
+      "id": "Q1",
+      "answer": "Only a partial rule is recoverable. From 2032-05-01 the exception route requires its waiver and either completed audit or independently attested second inspection, not both. All other route conditions remain unchanged but are not reproduced. Reconciliation, receiving-lead signature, routine route and active-hold rule are unchanged. Thus the complete shared conditions and exclusions cannot yet be reconstructed.",
+      "sources": [
+        "D3.1",
+        "D3.2"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Q2",
+      "answer": "Reconciliation and receiving-lead signature are referenced as unchanged policy components, but this batch does not supply their underlying logical relationship or establish whether they are individually necessary, jointly sufficient, or required in each route.",
+      "sources": [
+        "D3.2"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Q3",
+      "answer": "No mapping can be established: the register expressly does not define settlement_flag or paid_at. In particular it supplies no basis to interpret Y as cleared settlement or to assign a business event to paid_at.",
+      "sources": [
+        "D3.2"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Q4",
+      "answer": "A receiving-lead signature standard remains unamended. All supplied cases were created on 2032-05-02 under current policy, so current policy applies; the actual signature validity requirements and any historical alternatives are absent. The older training note has no delegated policy authority.",
+      "sources": [
+        "D3.2",
+        "D3.3"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Q5",
+      "answer": "This batch supplies no rule linking administrative closure with permission to pay and no account of numerical contribution versus causal explanation; neither relationship can be reconstructed from the supplied register.",
+      "sources": [
+        "D3.1",
+        "D3.2",
+        "D3.3"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Q6",
+      "answer": "Neither receipt_date nor posting_date is defined in this batch; their respective financial events and relationship remain unresolved.",
+      "sources": [],
+      "status": "proposed"
+    }
+  ],
+  "cases": [
+    {
+      "id": "C02",
+      "answer": "Closure cannot yet be justified from this batch.",
+      "rationale": "The snapshot is routine, and the register leaves that route unchanged without reproducing it. Cleared settlement is unknown, and settlement_flag Y cannot resolve it because that field is undefined here.",
+      "sources": [
+        "D3.2"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "C03",
+      "answer": "The amended audit-or-inspection condition is satisfied, but overall closure cannot yet be justified.",
+      "rationale": "The snapshot has waiver and independently attested inspection despite no audit. CR-17 permits this substitution on the snapshot date. The other exception-route conditions are not reproduced, so the effect of cleared_settlement false cannot be determined from this batch.",
+      "sources": [
+        "D3.1",
+        "D3.2",
+        "D3.3"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "C05",
+      "answer": "Closure through the described exception route is not justified.",
+      "rationale": "The snapshot lacks the waiver. CR-17 explicitly keeps that waiver mandatory, even when audit and inspection are both present. No other applicable route for this exception case is established in this batch.",
+      "sources": [
+        "D3.1"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "C07",
+      "answer": "Closure cannot yet be justified from this batch.",
+      "rationale": "The routine route and active-hold rule are unchanged but not reproduced. The snapshot leaves hold unknown, and the batch does not establish how to adjudicate this uncertainty.",
+      "sources": [
+        "D3.2"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "C08",
+      "answer": "Closure through the described exception route is not established.",
+      "rationale": "Audit is absent and independent inspection is unknown, so the required audit-or-inspection alternative is not established. Only the independent_inspection attestation establishes independence; the missing route conditions also prevent a complete assessment.",
+      "sources": [
+        "D3.1",
+        "D3.2"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "C09",
+      "answer": "Closure through the described exception route is not justified.",
+      "rationale": "Both audit and independent inspection are false, so neither permitted alternative meets the exception route requirement. Other favorable snapshot facts do not satisfy that missing requirement.",
+      "sources": [
+        "D3.1"
+      ],
+      "status": "proposed"
+    }
+  ]
+}

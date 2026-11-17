@@ -1,0 +1,19 @@
+{
+  "data/stage-12/short_late_second.json": "f1eec161856f682d6c5ffc5f94b463ffebe49beb66430d33b9d6fb1181669189",
+  "data/stage-12/long_late.json": "6edbf88fd723d800ae817a726f04efd69a0bae6ce9842562eae6373f9cdd05b9",
+  "data/stage-12/long_early_second.json": "ce1f37c2452e277c03f5301e975aec11d4ddf3aed3b190ac065b63afb0715fe5",
+  "data/stage-12/long_late_second.json": "b0e8e19333c9df4beca4316dbdbea324e188713a6fbdf784c0e318a098c2cd96",
+  "data/stage-12/long_early.json": "5bcff65b7f82feba447dcefc0b2900a66e0d3d5a294f33e9f7e95aceb687ac22",
+  "data/stage-12/short_late_first.json": "935723607d82f6c78185715772b44624143915662918405ecb9ac0d18d530646",
+  "data/stage-12/questions.json": "5e7052a39645ae4d1b3dff545c8ba63bf1d95a3005222413722ae69a6676fe6c",
+  "data/stage-12/short_early_first.json": "4de0642a980a49dc043d656db7ef0f91dad2023bda9ec0fc5101e378fcf86f4e",
+  "data/stage-12/gold.json": "5001f986cc70d30f48e618eec55f91f18301cf4d2be770f6564fa8fa9f5f893a",
+  "data/stage-12/contract.md": "cfeac4207bcf6b0a85d749236de23eacec6e8cad1c0b2370bf09c155dfbf8739",
+  "data/stage-12/short_early.json": "4dcbb1a4c794ee1df2a9b4f1c2e31b4aad7580add8ccfe359653cf9ecbf6c159",
+  "data/stage-12/long_early_first.json": "fa5977bb2f3a3b1bf12b3431f449c256346a1a93cb65f0ea5df81458e27387e6",
+  "data/stage-12/short_early_second.json": "e2a70d6ed66515cad448525291e16e400b4ddf243e675bbf63fe7042f8f85e5c",
+  "data/stage-12/short_late.json": "4df89dd50bca1ec520f6d3bde15c1daa9f75b03e976c2911508a22d89d96778b",
+  "data/stage-12/long_late_first.json": "e179bdd3f6b304a6be7b337fc1ae6ef5edddd5a1689f04027e9f58a3d0232c8b",
+  "experiments/stage-12/protocol.md": "bb41cdf06b5d8eccf4090dbe0204eb90f196911ebdf8bb43953b101381c9bd6d",
+  "experiments/stage-12/design.json": "00df0dc7ce1758d7d81edd0c3a82518ed4bbfea569eb71cc805674cf3b8b831d"
+}

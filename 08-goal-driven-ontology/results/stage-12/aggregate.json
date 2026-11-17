@@ -1,0 +1,44 @@
+{
+  "one": {
+    "false_permissions": 0,
+    "not_permitted_gold": 20,
+    "questions": {
+      "semantic_correct": 24,
+      "citation_supported": 24,
+      "total": 24
+    },
+    "cases": {
+      "semantic_correct": 24,
+      "citation_supported": 24,
+      "total": 24
+    }
+  },
+  "batch": {
+    "false_permissions": 0,
+    "not_permitted_gold": 20,
+    "questions": {
+      "semantic_correct": 24,
+      "citation_supported": 24,
+      "total": 24
+    },
+    "cases": {
+      "semantic_correct": 24,
+      "citation_supported": 24,
+      "total": 24
+    }
+  },
+  "strong": {
+    "false_permissions": 0,
+    "not_permitted_gold": 20,
+    "questions": {
+      "semantic_correct": 24,
+      "citation_supported": 24,
+      "total": 24
+    },
+    "cases": {
+      "semantic_correct": 24,
+      "citation_supported": 24,
+      "total": 24
+    }
+  }
+}

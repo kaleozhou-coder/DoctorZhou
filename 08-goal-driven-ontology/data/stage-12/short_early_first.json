@@ -1,0 +1,25 @@
+{
+  "fictional": true,
+  "documents": [
+    {
+      "id": "D3",
+      "title": "Fictional controlled change register CR-17",
+      "paragraphs": {
+        "1": "Effective 2032-05-01, for exception cases the completed audit in manual revision 4 paragraph 3 may be replaced by an independent second inspection. All other conditions of that route remain unchanged. This is an alternative, not an additional mandatory inspection. A case with the completed audit needs no second inspection; a case with the independent second inspection needs no completed audit. The register changes only this condition and does not make the exception waiver optional.",
+        "2": "The register does not amend the routine route, reconciliation, receiving-lead signature, or active-hold rule. It does not define settlement_flag or paid_at. Independence of a second inspection is established only by the independent_inspection attestation in the supplied evidence; two file attachments are not automatically two independent inspections. A supplier self-check has a different name and is not interchangeable with this attestation.",
+        "3": "All evaluation snapshots in the attached sample packet are on 2032-05-02, and all cases were created on that date under the current policy. An operator training note dated 2032-04-10 still says audit mandatory for every exception. The note is a training summary with no delegated policy-making authority. Its author used that phrase while discussing the older route. A completed audit has an audit identifier and reviewer role; the operations team keeps both in the audit register. The controlled register has no later entry after CR-17 in this packet."
+      }
+    },
+    {
+      "id": "D1",
+      "title": "Fictional Lumen depot closure manual, revision 4",
+      "paragraphs": {
+        "1": "This fictional manual governs only administrative closure of domestic depot transfer cases. It neither orders payment nor establishes that a supplier caused a delay. A transfer case is a file collecting a handover, ledger evidence, and review records. Closure marks that file administratively complete. All examples and organizations in this packet are invented. Foreign transfers, employee matters, and purchasing approvals are outside scope. Review staff may use a dashboard as an index, but a dashboard badge is not itself a governing policy.",
+        "2": "For every domestic case, closure requires a reconciled quantity and a valid handover. These two requirements are necessary; this paragraph does not say that together they are sufficient. Reconciliation means the signed depot count equals the dispatched count for the same case identifier. Handover validity is specified in the registry annex, not by the title of an uploaded file. The old practice of treating a green progress bar as a signed handover is not incorporated here.",
+        "3": "For routine cases, reconciled quantity, valid handover, and a cleared settlement jointly suffice for closure, provided no active hold exists. For exception cases, reconciled quantity, valid handover, an exception waiver, and a completed audit jointly suffice for closure, provided no active hold exists. Either route is a sufficient route only for its stated class. The exception route does not require cleared settlement. No other closure route is authorized by this manual. A missing condition should not be converted into a negative fact merely because a user interface leaves a cell empty.",
+        "4": "An active hold forbids closure even when every positive condition of a route is present. An explicitly inactive hold does not contribute any affirmative evidence about settlement or handover. The hold list is maintained outside the dashboard. Staff sometimes annotate a file as ready before a hold is removed; ready is a scheduling label, not permission to close. If the authoritative hold status is unavailable, neither the ready label nor absence of a local note settles it.",
+        "5": "For routine cases only, cleared settlement is necessary for closure. Cleared settlement is not a universal requirement for exception cases. Closure is neither sufficient nor necessary for payment authorization: payment is governed by a separate policy not supplied in this packet. The table headed payment_status is included for routing queries and must not be treated as that missing policy. Closing a file alone also says nothing about the cause of a service-level change."
+      }
+    }
+  ]
+}

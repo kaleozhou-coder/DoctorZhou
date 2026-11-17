@@ -1,0 +1,1010 @@
+{
+  "R06": {
+    "questions": [
+      {
+        "id": "Q1",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Scope, shared prerequisites, mandatory waiver, alternative review, hold and settlement exemption supported."
+      },
+      {
+        "id": "Q2",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Shared necessities correctly separated from jointly sufficient conditions; policy anchors support distinction."
+      },
+      {
+        "id": "Q3",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both mappings unestablished; missing SI-9 and missing paid_at semantics grounded."
+      },
+      {
+        "id": "Q4",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Linked receiving-lead signature and historical driver rule correctly distinguished and supported."
+      },
+      {
+        "id": "Q5",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Payment and causation separately distinguished, with independent supporting policy and analytical references."
+      },
+      {
+        "id": "Q6",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Bank receipt and ledger posting correctly distinguished with dictionary support."
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Routine settlement unknown; raw Y and exception waiver cannot establish the missing fact; policy and dictionary cited.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C03",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Current change permits inspection in lieu of audit; class-specific exception conditions and hold supported.",
+        "normalized_meaning": "permitted"
+      },
+      {
+        "id": "C05",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit false waiver defeats the exception route; cited current change does not replace waiver.",
+        "normalized_meaning": "blocked"
+      },
+      {
+        "id": "C07",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Unknown hold not inferred inactive; cited hold and route clauses support the undecided outcome.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C08",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit audit false plus unavailable inspection leaves disjunction undecided; citations support rule and unknown semantics.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C09",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both review alternatives explicitly false, defeating the exception route; policy and CR-17 cited.",
+        "normalized_meaning": "blocked"
+      }
+    ]
+  },
+  "R08": {
+    "questions": [
+      {
+        "id": "Q1",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Scope, shared prerequisites, mandatory waiver, alternative review, hold and settlement exemption supported."
+      },
+      {
+        "id": "Q2",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Shared necessities correctly separated from jointly sufficient conditions; policy anchors support distinction."
+      },
+      {
+        "id": "Q3",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both mappings unestablished; missing SI-9 and missing paid_at semantics grounded."
+      },
+      {
+        "id": "Q4",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Linked receiving-lead signature and historical driver rule correctly distinguished and supported."
+      },
+      {
+        "id": "Q5",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Payment and causation separately distinguished, with independent supporting policy and analytical references."
+      },
+      {
+        "id": "Q6",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Bank receipt and ledger posting correctly distinguished with dictionary support."
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Routine settlement unknown; raw Y and exception waiver cannot establish the missing fact; policy and dictionary cited.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C03",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Current change permits inspection in lieu of audit; class-specific exception conditions and hold supported.",
+        "normalized_meaning": "permitted"
+      },
+      {
+        "id": "C05",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit false waiver defeats the exception route; cited current change does not replace waiver.",
+        "normalized_meaning": "blocked"
+      },
+      {
+        "id": "C07",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Unknown hold not inferred inactive; cited hold and route clauses support the undecided outcome.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C08",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit audit false plus unavailable inspection leaves disjunction undecided; citations support rule and unknown semantics.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C09",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both review alternatives explicitly false, defeating the exception route; policy and CR-17 cited.",
+        "normalized_meaning": "blocked"
+      }
+    ]
+  },
+  "R12": {
+    "questions": [
+      {
+        "id": "Q1",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Scope, shared prerequisites, mandatory waiver, alternative review, hold and settlement exemption supported."
+      },
+      {
+        "id": "Q2",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Shared necessities correctly separated from jointly sufficient conditions; policy anchors support distinction."
+      },
+      {
+        "id": "Q3",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both mappings unestablished; missing SI-9 and missing paid_at semantics grounded."
+      },
+      {
+        "id": "Q4",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Linked receiving-lead signature and historical driver rule correctly distinguished and supported."
+      },
+      {
+        "id": "Q5",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Payment and causation separately distinguished, with independent supporting policy and analytical references."
+      },
+      {
+        "id": "Q6",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Bank receipt and ledger posting correctly distinguished with dictionary support."
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Routine settlement unknown; raw Y and exception waiver cannot establish the missing fact; policy and dictionary cited.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C03",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Current change permits inspection in lieu of audit; class-specific exception conditions and hold supported.",
+        "normalized_meaning": "permitted"
+      },
+      {
+        "id": "C05",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit false waiver defeats the exception route; cited current change does not replace waiver.",
+        "normalized_meaning": "blocked"
+      },
+      {
+        "id": "C07",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Unknown hold not inferred inactive; cited hold and route clauses support the undecided outcome.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C08",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit audit false plus unavailable inspection leaves disjunction undecided; citations support rule and unknown semantics.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C09",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both review alternatives explicitly false, defeating the exception route; policy and CR-17 cited.",
+        "normalized_meaning": "blocked"
+      }
+    ]
+  },
+  "R01": {
+    "questions": [
+      {
+        "id": "Q1",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Scope, shared prerequisites, mandatory waiver, alternative review, hold and settlement exemption supported."
+      },
+      {
+        "id": "Q2",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Shared necessities correctly separated from jointly sufficient conditions; policy anchors support distinction."
+      },
+      {
+        "id": "Q3",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both mappings unestablished; missing SI-9 and missing paid_at semantics grounded."
+      },
+      {
+        "id": "Q4",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Linked receiving-lead signature and historical driver rule correctly distinguished and supported."
+      },
+      {
+        "id": "Q5",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Payment and causation separately distinguished, with independent supporting policy and analytical references."
+      },
+      {
+        "id": "Q6",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Bank receipt and ledger posting correctly distinguished with dictionary support."
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Routine settlement unknown; raw Y and exception waiver cannot establish the missing fact; policy and dictionary cited.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C03",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Current change permits inspection in lieu of audit; class-specific exception conditions and hold supported.",
+        "normalized_meaning": "permitted"
+      },
+      {
+        "id": "C05",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit false waiver defeats the exception route; cited current change does not replace waiver.",
+        "normalized_meaning": "blocked"
+      },
+      {
+        "id": "C07",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Unknown hold not inferred inactive; cited hold and route clauses support the undecided outcome.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C08",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit audit false plus unavailable inspection leaves disjunction undecided; citations support rule and unknown semantics.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C09",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both review alternatives explicitly false, defeating the exception route; policy and CR-17 cited.",
+        "normalized_meaning": "blocked"
+      }
+    ]
+  },
+  "R02": {
+    "questions": [
+      {
+        "id": "Q1",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Scope, shared prerequisites, mandatory waiver, alternative review, hold and settlement exemption supported."
+      },
+      {
+        "id": "Q2",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Shared necessities correctly separated from jointly sufficient conditions; policy anchors support distinction."
+      },
+      {
+        "id": "Q3",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both mappings unestablished; missing SI-9 and missing paid_at semantics grounded."
+      },
+      {
+        "id": "Q4",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Linked receiving-lead signature and historical driver rule correctly distinguished and supported."
+      },
+      {
+        "id": "Q5",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Payment and causation separately distinguished, with independent supporting policy and analytical references."
+      },
+      {
+        "id": "Q6",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Bank receipt and ledger posting correctly distinguished with dictionary support."
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Routine settlement unknown; raw Y and exception waiver cannot establish the missing fact; policy and dictionary cited.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C03",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Current change permits inspection in lieu of audit; class-specific exception conditions and hold supported.",
+        "normalized_meaning": "permitted"
+      },
+      {
+        "id": "C05",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit false waiver defeats the exception route; cited current change does not replace waiver.",
+        "normalized_meaning": "blocked"
+      },
+      {
+        "id": "C07",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Unknown hold not inferred inactive; cited hold and route clauses support the undecided outcome.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C08",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit audit false plus unavailable inspection leaves disjunction undecided; citations support rule and unknown semantics.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C09",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both review alternatives explicitly false, defeating the exception route; policy and CR-17 cited.",
+        "normalized_meaning": "blocked"
+      }
+    ]
+  },
+  "R07": {
+    "questions": [
+      {
+        "id": "Q1",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Scope, shared prerequisites, mandatory waiver, alternative review, hold and settlement exemption supported."
+      },
+      {
+        "id": "Q2",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Shared necessities correctly separated from jointly sufficient conditions; policy anchors support distinction."
+      },
+      {
+        "id": "Q3",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both mappings unestablished; missing SI-9 and missing paid_at semantics grounded."
+      },
+      {
+        "id": "Q4",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Linked receiving-lead signature and historical driver rule correctly distinguished and supported."
+      },
+      {
+        "id": "Q5",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Payment and causation separately distinguished, with independent supporting policy and analytical references."
+      },
+      {
+        "id": "Q6",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Bank receipt and ledger posting correctly distinguished with dictionary support."
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Routine settlement unknown; raw Y and exception waiver cannot establish the missing fact; policy and dictionary cited.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C03",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Current change permits inspection in lieu of audit; class-specific exception conditions and hold supported.",
+        "normalized_meaning": "permitted"
+      },
+      {
+        "id": "C05",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit false waiver defeats the exception route; cited current change does not replace waiver.",
+        "normalized_meaning": "blocked"
+      },
+      {
+        "id": "C07",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Unknown hold not inferred inactive; cited hold and route clauses support the undecided outcome.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C08",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit audit false plus unavailable inspection leaves disjunction undecided; citations support rule and unknown semantics.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C09",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both review alternatives explicitly false, defeating the exception route; policy and CR-17 cited.",
+        "normalized_meaning": "blocked"
+      }
+    ]
+  },
+  "R11": {
+    "questions": [
+      {
+        "id": "Q1",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Scope, shared prerequisites, mandatory waiver, alternative review, hold and settlement exemption supported."
+      },
+      {
+        "id": "Q2",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Shared necessities correctly separated from jointly sufficient conditions; policy anchors support distinction."
+      },
+      {
+        "id": "Q3",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both mappings unestablished; missing SI-9 and missing paid_at semantics grounded."
+      },
+      {
+        "id": "Q4",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Linked receiving-lead signature and historical driver rule correctly distinguished and supported."
+      },
+      {
+        "id": "Q5",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Payment and causation separately distinguished, with independent supporting policy and analytical references."
+      },
+      {
+        "id": "Q6",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Bank receipt and ledger posting correctly distinguished with dictionary support."
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Routine settlement unknown; raw Y and exception waiver cannot establish the missing fact; policy and dictionary cited.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C03",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Current change permits inspection in lieu of audit; class-specific exception conditions and hold supported.",
+        "normalized_meaning": "permitted"
+      },
+      {
+        "id": "C05",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit false waiver defeats the exception route; cited current change does not replace waiver.",
+        "normalized_meaning": "blocked"
+      },
+      {
+        "id": "C07",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Unknown hold not inferred inactive; cited hold and route clauses support the undecided outcome.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C08",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit audit false plus unavailable inspection leaves disjunction undecided; citations support rule and unknown semantics.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C09",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both review alternatives explicitly false, defeating the exception route; policy and CR-17 cited.",
+        "normalized_meaning": "blocked"
+      }
+    ]
+  },
+  "R04": {
+    "questions": [
+      {
+        "id": "Q1",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Scope, shared prerequisites, mandatory waiver, alternative review, hold and settlement exemption supported."
+      },
+      {
+        "id": "Q2",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Shared necessities correctly separated from jointly sufficient conditions; policy anchors support distinction."
+      },
+      {
+        "id": "Q3",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both mappings unestablished; missing SI-9 and missing paid_at semantics grounded."
+      },
+      {
+        "id": "Q4",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Linked receiving-lead signature and historical driver rule correctly distinguished and supported."
+      },
+      {
+        "id": "Q5",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Payment and causation separately distinguished, with independent supporting policy and analytical references."
+      },
+      {
+        "id": "Q6",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Bank receipt and ledger posting correctly distinguished with dictionary support."
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Routine settlement unknown; raw Y and exception waiver cannot establish the missing fact; policy and dictionary cited.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C03",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Current change permits inspection in lieu of audit; class-specific exception conditions and hold supported.",
+        "normalized_meaning": "permitted"
+      },
+      {
+        "id": "C05",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit false waiver defeats the exception route; cited current change does not replace waiver.",
+        "normalized_meaning": "blocked"
+      },
+      {
+        "id": "C07",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Unknown hold not inferred inactive; cited hold and route clauses support the undecided outcome.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C08",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit audit false plus unavailable inspection leaves disjunction undecided; citations support rule and unknown semantics.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C09",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both review alternatives explicitly false, defeating the exception route; policy and CR-17 cited.",
+        "normalized_meaning": "blocked"
+      }
+    ]
+  },
+  "R09": {
+    "questions": [
+      {
+        "id": "Q1",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Scope, shared prerequisites, mandatory waiver, alternative review, hold and settlement exemption supported."
+      },
+      {
+        "id": "Q2",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Shared necessities correctly separated from jointly sufficient conditions; policy anchors support distinction."
+      },
+      {
+        "id": "Q3",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both mappings unestablished; missing SI-9 and missing paid_at semantics grounded."
+      },
+      {
+        "id": "Q4",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Linked receiving-lead signature and historical driver rule correctly distinguished and supported."
+      },
+      {
+        "id": "Q5",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Payment and causation separately distinguished, with independent supporting policy and analytical references."
+      },
+      {
+        "id": "Q6",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Bank receipt and ledger posting correctly distinguished with dictionary support."
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Routine settlement unknown; raw Y and exception waiver cannot establish the missing fact; policy and dictionary cited.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C03",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Current change permits inspection in lieu of audit; class-specific exception conditions and hold supported.",
+        "normalized_meaning": "permitted"
+      },
+      {
+        "id": "C05",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit false waiver defeats the exception route; cited current change does not replace waiver.",
+        "normalized_meaning": "blocked"
+      },
+      {
+        "id": "C07",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Unknown hold not inferred inactive; cited hold and route clauses support the undecided outcome.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C08",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit audit false plus unavailable inspection leaves disjunction undecided; citations support rule and unknown semantics.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C09",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both review alternatives explicitly false, defeating the exception route; policy and CR-17 cited.",
+        "normalized_meaning": "blocked"
+      }
+    ]
+  },
+  "R10": {
+    "questions": [
+      {
+        "id": "Q1",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Scope, shared prerequisites, mandatory waiver, alternative review, hold and settlement exemption supported."
+      },
+      {
+        "id": "Q2",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Shared necessities correctly separated from jointly sufficient conditions; policy anchors support distinction."
+      },
+      {
+        "id": "Q3",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both mappings unestablished; missing SI-9 and missing paid_at semantics grounded."
+      },
+      {
+        "id": "Q4",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Linked receiving-lead signature and historical driver rule correctly distinguished and supported."
+      },
+      {
+        "id": "Q5",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Payment and causation separately distinguished, with independent supporting policy and analytical references."
+      },
+      {
+        "id": "Q6",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Bank receipt and ledger posting correctly distinguished with dictionary support."
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Routine settlement unknown; raw Y and exception waiver cannot establish the missing fact; policy and dictionary cited.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C03",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Current change permits inspection in lieu of audit; class-specific exception conditions and hold supported.",
+        "normalized_meaning": "permitted"
+      },
+      {
+        "id": "C05",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit false waiver defeats the exception route; cited current change does not replace waiver.",
+        "normalized_meaning": "blocked"
+      },
+      {
+        "id": "C07",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Unknown hold not inferred inactive; cited hold and route clauses support the undecided outcome.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C08",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit audit false plus unavailable inspection leaves disjunction undecided; citations support rule and unknown semantics.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C09",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both review alternatives explicitly false, defeating the exception route; policy and CR-17 cited.",
+        "normalized_meaning": "blocked"
+      }
+    ]
+  },
+  "R03": {
+    "questions": [
+      {
+        "id": "Q1",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Scope, shared prerequisites, mandatory waiver, alternative review, hold and settlement exemption supported."
+      },
+      {
+        "id": "Q2",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Shared necessities correctly separated from jointly sufficient conditions; policy anchors support distinction."
+      },
+      {
+        "id": "Q3",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both mappings unestablished; missing SI-9 and missing paid_at semantics grounded."
+      },
+      {
+        "id": "Q4",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Linked receiving-lead signature and historical driver rule correctly distinguished and supported."
+      },
+      {
+        "id": "Q5",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Payment and causation separately distinguished, with independent supporting policy and analytical references."
+      },
+      {
+        "id": "Q6",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Bank receipt and ledger posting correctly distinguished with dictionary support."
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Routine settlement unknown; raw Y and exception waiver cannot establish the missing fact; policy and dictionary cited.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C03",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Current change permits inspection in lieu of audit; class-specific exception conditions and hold supported.",
+        "normalized_meaning": "permitted"
+      },
+      {
+        "id": "C05",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit false waiver defeats the exception route; cited current change does not replace waiver.",
+        "normalized_meaning": "blocked"
+      },
+      {
+        "id": "C07",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Unknown hold not inferred inactive; cited hold and route clauses support the undecided outcome.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C08",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit audit false plus unavailable inspection leaves disjunction undecided; citations support rule and unknown semantics.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C09",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both review alternatives explicitly false, defeating the exception route; policy and CR-17 cited.",
+        "normalized_meaning": "blocked"
+      }
+    ]
+  },
+  "R05": {
+    "questions": [
+      {
+        "id": "Q1",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Scope, shared prerequisites, mandatory waiver, alternative review, hold and settlement exemption supported."
+      },
+      {
+        "id": "Q2",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Shared necessities correctly separated from jointly sufficient conditions; policy anchors support distinction."
+      },
+      {
+        "id": "Q3",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both mappings unestablished; missing SI-9 and missing paid_at semantics grounded."
+      },
+      {
+        "id": "Q4",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Linked receiving-lead signature and historical driver rule correctly distinguished and supported."
+      },
+      {
+        "id": "Q5",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Payment and causation separately distinguished, with independent supporting policy and analytical references."
+      },
+      {
+        "id": "Q6",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Bank receipt and ledger posting correctly distinguished with dictionary support."
+      }
+    ],
+    "cases": [
+      {
+        "id": "C02",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Routine settlement unknown; raw Y and exception waiver cannot establish the missing fact; policy and dictionary cited.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C03",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Current change permits inspection in lieu of audit; class-specific exception conditions and hold supported.",
+        "normalized_meaning": "permitted"
+      },
+      {
+        "id": "C05",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit false waiver defeats the exception route; cited current change does not replace waiver.",
+        "normalized_meaning": "blocked"
+      },
+      {
+        "id": "C07",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Unknown hold not inferred inactive; cited hold and route clauses support the undecided outcome.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C08",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Explicit audit false plus unavailable inspection leaves disjunction undecided; citations support rule and unknown semantics.",
+        "normalized_meaning": "undecided"
+      },
+      {
+        "id": "C09",
+        "semantic_ok": true,
+        "citation_ok": true,
+        "note": "Both review alternatives explicitly false, defeating the exception route; policy and CR-17 cited.",
+        "normalized_meaning": "blocked"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-17",
+  "input_origin": "synthetic policy and snapshots adapted from stage 11; no client data",
+  "model_runs": "internal AI workers with no conversation history, not external paid APIs",
+  "configuration": "inherited runtime model; exact version and seed not pinned",
+  "workers": 12,
+  "experimental_cells": 12,
+  "replicates_per_cell": 1,
+  "controls": [
+    "same core policy",
+    "same questions and output contract",
+    "same final ordered material within variant",
+    "no cross-variant worker reuse"
+  ],
+  "not_controlled": [
+    "token budget",
+    "compute",
+    "latency",
+    "cache",
+    "exact model version",
+    "sampling seed"
+  ],
+  "isolation": "instruction-only input file restriction; shared filesystem",
+  "human_gold": false,
+  "reviewer": "parent AI, anonymous cell IDs; single reviewer",
+  "review_limitations": [
+    "not human expert validation",
+    "wording may reveal method",
+    "single semantic review judgment"
+  ],
+  "human_approvals": 0,
+  "human_minutes": null,
+  "token_usage": null,
+  "monetary_cost": null,
+  "paid_external_api_calls": 0,
+  "business_actions_executed": false,
+  "limitations": [
+    "fixed batching confounds arrival timing with CR-17 position",
+    "no middle evidence condition",
+    "formulaic synthetic distractors",
+    "directed questions and prose state framing retained"
+  ],
+  "completed_inference_turns": 20
+}

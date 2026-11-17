@@ -1,0 +1,156 @@
+{
+  "questions": [
+    {
+      "id": "Q1",
+      "answer": "For current domestic exception cases, administrative closure requires reconciled quantity, valid handover, an exception waiver, and either a completed audit or an independent second inspection, with no active hold. Either review alternative suffices together with the shared conditions; both are not required. CR-17 applies from 2032-05-01 and leaves the waiver and other conditions mandatory. Cleared settlement is not required for exceptions. An active hold overrides all positive conditions. No other closure route is authorized; the routine route cannot be substituted for an exception route. Unavailable conditions remain unknown, not false. Foreign transfers, employee matters and purchasing approvals are outside scope.",
+      "sources": [
+        "D1.1",
+        "D1.2",
+        "D1.3",
+        "D1.4",
+        "D1.5",
+        "D3.1",
+        "D3.2",
+        "D3.3",
+        "D4.2"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Q2",
+      "answer": "Reconciliation and valid handover are each necessary for every domestic closure, but together are not sufficient. Reconciliation is equality of the signed depot count and dispatched count for the same case identifier. The remaining class-specific requirements and absence of an active hold must also be established. For exceptions those remaining requirements are waiver plus audit or independent inspection; for routine cases they include cleared settlement. Direct reconciled and handover_valid fields are authoritative attestations.",
+      "sources": [
+        "D1.2",
+        "D1.3",
+        "D1.4",
+        "D3.1",
+        "D4.3"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Q3",
+      "answer": "The packet does not support mapping settlement_flag values Y, N or blank to cleared settlement: its referenced definition SI-9 is absent. This raw export field is not an authoritative attestation, so Y does not establish clearance and an unknown meaning is not a false business fact. An independent explicit cleared-settlement attestation can establish clearance; the direct cleared_settlement field is authoritative. paid_at has neither a semantic definition nor timezone, and its migration mapping and signed definition are absent. It cannot reliably be identified with receipt_date, posting_date or a payment/clearance event merely from its name or coincident dates.",
+      "sources": [
+        "D2.2",
+        "D2.3",
+        "D4.3"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Q4",
+      "answer": "The current receiving-lead signature standard applies: a signature by the receiving lead on the linked handover is sufficient, whereas a driver signature alone is invalid. All supplied cases were created on 2032-05-02, after the revision-4/edition-2 effective date of 2032-04-01. The archived revision-3 driver-signed local_handover rule is historical, not current authority; CR-17 does not change the receiving-lead standard. Where handover_valid is directly supplied it is an authoritative attestation and no extra raw signature is required.",
+      "sources": [
+        "D2.1",
+        "D2.4",
+        "D3.2",
+        "D3.3",
+        "D4.3"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Q5",
+      "answer": "Administrative closure marks a transfer file complete; it is neither sufficient nor necessary for payment authorization. Payment depends on a separate policy absent from the packet, and payment_status does not supply it. Closure also establishes no cause of a service-level change. A numerical contribution partitions aggregate change arithmetically and is not itself evidence of a causal mechanism; even the largest depot contribution does not identify the cause. No intervention, randomization, counterfactual analysis or causal certificate is supplied.",
+      "sources": [
+        "D1.1",
+        "D1.5",
+        "D4.1"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Q6",
+      "answer": "receipt_date is the date funds reached the collection bank; posting_date is the date the ledger entry was posted. They describe distinct events and may differ, even across a month boundary. Posting corrections retain the original receipt reference for later reconciliation. Neither event definition establishes an interpretation of the undefined paid_at field or settlement_flag.",
+      "sources": [
+        "D2.2",
+        "D2.3"
+      ],
+      "status": "proposed"
+    }
+  ],
+  "cases": [
+    {
+      "id": "C02",
+      "answer": "Closure is not established; the snapshot leaves it undecided.",
+      "rationale": "The routine case has reconciliation, valid handover and an explicitly inactive hold, but cleared_settlement is unavailable. The routine route requires clearance. settlement_flag Y has no supplied business mapping and cannot fill that gap. Waiver and audit cannot authorize the exception route for a routine case. Missing clearance is not explicit nonclearance.",
+      "sources": [
+        "D1.3",
+        "D1.5",
+        "D2.2",
+        "D4.2",
+        "D4.3"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "C03",
+      "answer": "Administrative closure is justified at this snapshot.",
+      "rationale": "The exception case has reconciliation, valid handover, waiver, independent_inspection true and hold false. CR-17 permits the independent second inspection instead of audit, so audit false does not defeat this route. Cleared_settlement false is irrelevant to exception eligibility because clearance is not required.",
+      "sources": [
+        "D1.2",
+        "D1.3",
+        "D1.4",
+        "D1.5",
+        "D3.1",
+        "D3.2",
+        "D3.3",
+        "D4.2",
+        "D4.3"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "C05",
+      "answer": "Closure is not justified; every applicable exception route is defeated.",
+      "rationale": "Despite reconciliation, valid handover, both review alternatives and an inactive hold, waiver is explicitly false. CR-17 preserves waiver as a shared mandatory condition. Cleared settlement cannot substitute for waiver and the routine route does not apply to this exception case.",
+      "sources": [
+        "D1.3",
+        "D3.1",
+        "D3.2",
+        "D4.2",
+        "D4.3"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "C07",
+      "answer": "Closure is not established; the snapshot leaves it undecided.",
+      "rationale": "The positive routine-route conditions are established, but hold is unavailable. An active hold would forbid closure and its absence cannot be assumed. Waiver and audit do not resolve the hold status; no explicit active hold is established either.",
+      "sources": [
+        "D1.3",
+        "D1.4",
+        "D4.2",
+        "D4.3"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "C08",
+      "answer": "Closure is not established; the snapshot leaves it undecided.",
+      "rationale": "Reconciliation, valid handover, waiver and inactive hold are established. Audit is explicitly false, but the alternative independent inspection is unavailable rather than false. Thus neither a successful review alternative nor defeat of both alternatives is established. Cleared settlement does not replace exception review requirements.",
+      "sources": [
+        "D1.3",
+        "D3.1",
+        "D3.2",
+        "D4.2",
+        "D4.3"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "C09",
+      "answer": "Closure is not justified; every applicable exception route is defeated.",
+      "rationale": "Although reconciliation, valid handover, waiver and inactive hold are established, both audit and independent_inspection are explicitly false. Neither authorized review alternative is satisfied. Cleared settlement cannot replace either, and the routine route is not available for this exception case.",
+      "sources": [
+        "D1.3",
+        "D3.1",
+        "D3.2",
+        "D4.2",
+        "D4.3"
+      ],
+      "status": "proposed"
+    }
+  ]
+}

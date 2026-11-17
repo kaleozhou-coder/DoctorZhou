@@ -1,0 +1,133 @@
+{
+  "fictional": true,
+  "documents": [
+    {
+      "id": "D3",
+      "title": "Fictional controlled change register CR-17",
+      "paragraphs": {
+        "1": "Effective 2032-05-01, for exception cases the completed audit in manual revision 4 paragraph 3 may be replaced by an independent second inspection. All other conditions of that route remain unchanged. This is an alternative, not an additional mandatory inspection. A case with the completed audit needs no second inspection; a case with the independent second inspection needs no completed audit. The register changes only this condition and does not make the exception waiver optional.",
+        "2": "The register does not amend the routine route, reconciliation, receiving-lead signature, or active-hold rule. It does not define settlement_flag or paid_at. Independence of a second inspection is established only by the independent_inspection attestation in the supplied evidence; two file attachments are not automatically two independent inspections. A supplier self-check has a different name and is not interchangeable with this attestation.",
+        "3": "All evaluation snapshots in the attached sample packet are on 2032-05-02, and all cases were created on that date under the current policy. An operator training note dated 2032-04-10 still says audit mandatory for every exception. The note is a training summary with no delegated policy-making authority. Its author used that phrase while discussing the older route. A completed audit has an audit identifier and reviewer role; the operations team keeps both in the audit register. The controlled register has no later entry after CR-17 in this packet."
+      }
+    },
+    {
+      "id": "F01",
+      "title": "Fictional unrelated archive operations note 1",
+      "paragraphs": {
+        "1": "Archive shelf 1 stores demonstration documents for training. Its index uses a local colour and a rack number; neither field is a business approval. The sample contents concern printer supplies and office-layout histories, not depot transfer cases. A librarian can revise a shelf description without revising any underlying policy. This note supplies no new definition of handover, settlement or payment. No case identifier appears here. The printer-support team records maintenance by week and reviews page-count statistics; the counts measure paper usage rather than dispatched or received quantities. When a maintenance ticket closes, only the printer-support ticket closes. Its status must not be joined to a depot case by an accidental matching row number. The library keeps archived versions for comparison and does not replace controlled registers. This note is fictional, its dates are not case-policy dates, and its inventory totals are not financial values."
+      }
+    },
+    {
+      "id": "F02",
+      "title": "Fictional unrelated archive operations note 2",
+      "paragraphs": {
+        "1": "Archive shelf 2 stores demonstration documents for training. Its index uses a local colour and a rack number; neither field is a business approval. The sample contents concern printer supplies and office-layout histories, not depot transfer cases. A librarian can revise a shelf description without revising any underlying policy. This note supplies no new definition of handover, settlement or payment. No case identifier appears here. The printer-support team records maintenance by week and reviews page-count statistics; the counts measure paper usage rather than dispatched or received quantities. When a maintenance ticket closes, only the printer-support ticket closes. Its status must not be joined to a depot case by an accidental matching row number. The library keeps archived versions for comparison and does not replace controlled registers. This note is fictional, its dates are not case-policy dates, and its inventory totals are not financial values."
+      }
+    },
+    {
+      "id": "F03",
+      "title": "Fictional unrelated archive operations note 3",
+      "paragraphs": {
+        "1": "Archive shelf 3 stores demonstration documents for training. Its index uses a local colour and a rack number; neither field is a business approval. The sample contents concern printer supplies and office-layout histories, not depot transfer cases. A librarian can revise a shelf description without revising any underlying policy. This note supplies no new definition of handover, settlement or payment. No case identifier appears here. The printer-support team records maintenance by week and reviews page-count statistics; the counts measure paper usage rather than dispatched or received quantities. When a maintenance ticket closes, only the printer-support ticket closes. Its status must not be joined to a depot case by an accidental matching row number. The library keeps archived versions for comparison and does not replace controlled registers. This note is fictional, its dates are not case-policy dates, and its inventory totals are not financial values."
+      }
+    },
+    {
+      "id": "F04",
+      "title": "Fictional unrelated archive operations note 4",
+      "paragraphs": {
+        "1": "Archive shelf 4 stores demonstration documents for training. Its index uses a local colour and a rack number; neither field is a business approval. The sample contents concern printer supplies and office-layout histories, not depot transfer cases. A librarian can revise a shelf description without revising any underlying policy. This note supplies no new definition of handover, settlement or payment. No case identifier appears here. The printer-support team records maintenance by week and reviews page-count statistics; the counts measure paper usage rather than dispatched or received quantities. When a maintenance ticket closes, only the printer-support ticket closes. Its status must not be joined to a depot case by an accidental matching row number. The library keeps archived versions for comparison and does not replace controlled registers. This note is fictional, its dates are not case-policy dates, and its inventory totals are not financial values."
+      }
+    },
+    {
+      "id": "F05",
+      "title": "Fictional unrelated archive operations note 5",
+      "paragraphs": {
+        "1": "Archive shelf 5 stores demonstration documents for training. Its index uses a local colour and a rack number; neither field is a business approval. The sample contents concern printer supplies and office-layout histories, not depot transfer cases. A librarian can revise a shelf description without revising any underlying policy. This note supplies no new definition of handover, settlement or payment. No case identifier appears here. The printer-support team records maintenance by week and reviews page-count statistics; the counts measure paper usage rather than dispatched or received quantities. When a maintenance ticket closes, only the printer-support ticket closes. Its status must not be joined to a depot case by an accidental matching row number. The library keeps archived versions for comparison and does not replace controlled registers. This note is fictional, its dates are not case-policy dates, and its inventory totals are not financial values."
+      }
+    },
+    {
+      "id": "F06",
+      "title": "Fictional unrelated archive operations note 6",
+      "paragraphs": {
+        "1": "Archive shelf 6 stores demonstration documents for training. Its index uses a local colour and a rack number; neither field is a business approval. The sample contents concern printer supplies and office-layout histories, not depot transfer cases. A librarian can revise a shelf description without revising any underlying policy. This note supplies no new definition of handover, settlement or payment. No case identifier appears here. The printer-support team records maintenance by week and reviews page-count statistics; the counts measure paper usage rather than dispatched or received quantities. When a maintenance ticket closes, only the printer-support ticket closes. Its status must not be joined to a depot case by an accidental matching row number. The library keeps archived versions for comparison and does not replace controlled registers. This note is fictional, its dates are not case-policy dates, and its inventory totals are not financial values."
+      }
+    },
+    {
+      "id": "F07",
+      "title": "Fictional unrelated archive operations note 7",
+      "paragraphs": {
+        "1": "Archive shelf 7 stores demonstration documents for training. Its index uses a local colour and a rack number; neither field is a business approval. The sample contents concern printer supplies and office-layout histories, not depot transfer cases. A librarian can revise a shelf description without revising any underlying policy. This note supplies no new definition of handover, settlement or payment. No case identifier appears here. The printer-support team records maintenance by week and reviews page-count statistics; the counts measure paper usage rather than dispatched or received quantities. When a maintenance ticket closes, only the printer-support ticket closes. Its status must not be joined to a depot case by an accidental matching row number. The library keeps archived versions for comparison and does not replace controlled registers. This note is fictional, its dates are not case-policy dates, and its inventory totals are not financial values."
+      }
+    },
+    {
+      "id": "F08",
+      "title": "Fictional unrelated archive operations note 8",
+      "paragraphs": {
+        "1": "Archive shelf 8 stores demonstration documents for training. Its index uses a local colour and a rack number; neither field is a business approval. The sample contents concern printer supplies and office-layout histories, not depot transfer cases. A librarian can revise a shelf description without revising any underlying policy. This note supplies no new definition of handover, settlement or payment. No case identifier appears here. The printer-support team records maintenance by week and reviews page-count statistics; the counts measure paper usage rather than dispatched or received quantities. When a maintenance ticket closes, only the printer-support ticket closes. Its status must not be joined to a depot case by an accidental matching row number. The library keeps archived versions for comparison and does not replace controlled registers. This note is fictional, its dates are not case-policy dates, and its inventory totals are not financial values."
+      }
+    },
+    {
+      "id": "F09",
+      "title": "Fictional unrelated archive operations note 9",
+      "paragraphs": {
+        "1": "Archive shelf 9 stores demonstration documents for training. Its index uses a local colour and a rack number; neither field is a business approval. The sample contents concern printer supplies and office-layout histories, not depot transfer cases. A librarian can revise a shelf description without revising any underlying policy. This note supplies no new definition of handover, settlement or payment. No case identifier appears here. The printer-support team records maintenance by week and reviews page-count statistics; the counts measure paper usage rather than dispatched or received quantities. When a maintenance ticket closes, only the printer-support ticket closes. Its status must not be joined to a depot case by an accidental matching row number. The library keeps archived versions for comparison and does not replace controlled registers. This note is fictional, its dates are not case-policy dates, and its inventory totals are not financial values."
+      }
+    },
+    {
+      "id": "F10",
+      "title": "Fictional unrelated archive operations note 10",
+      "paragraphs": {
+        "1": "Archive shelf 10 stores demonstration documents for training. Its index uses a local colour and a rack number; neither field is a business approval. The sample contents concern printer supplies and office-layout histories, not depot transfer cases. A librarian can revise a shelf description without revising any underlying policy. This note supplies no new definition of handover, settlement or payment. No case identifier appears here. The printer-support team records maintenance by week and reviews page-count statistics; the counts measure paper usage rather than dispatched or received quantities. When a maintenance ticket closes, only the printer-support ticket closes. Its status must not be joined to a depot case by an accidental matching row number. The library keeps archived versions for comparison and does not replace controlled registers. This note is fictional, its dates are not case-policy dates, and its inventory totals are not financial values."
+      }
+    },
+    {
+      "id": "F11",
+      "title": "Fictional unrelated archive operations note 11",
+      "paragraphs": {
+        "1": "Archive shelf 11 stores demonstration documents for training. Its index uses a local colour and a rack number; neither field is a business approval. The sample contents concern printer supplies and office-layout histories, not depot transfer cases. A librarian can revise a shelf description without revising any underlying policy. This note supplies no new definition of handover, settlement or payment. No case identifier appears here. The printer-support team records maintenance by week and reviews page-count statistics; the counts measure paper usage rather than dispatched or received quantities. When a maintenance ticket closes, only the printer-support ticket closes. Its status must not be joined to a depot case by an accidental matching row number. The library keeps archived versions for comparison and does not replace controlled registers. This note is fictional, its dates are not case-policy dates, and its inventory totals are not financial values."
+      }
+    },
+    {
+      "id": "F12",
+      "title": "Fictional unrelated archive operations note 12",
+      "paragraphs": {
+        "1": "Archive shelf 12 stores demonstration documents for training. Its index uses a local colour and a rack number; neither field is a business approval. The sample contents concern printer supplies and office-layout histories, not depot transfer cases. A librarian can revise a shelf description without revising any underlying policy. This note supplies no new definition of handover, settlement or payment. No case identifier appears here. The printer-support team records maintenance by week and reviews page-count statistics; the counts measure paper usage rather than dispatched or received quantities. When a maintenance ticket closes, only the printer-support ticket closes. Its status must not be joined to a depot case by an accidental matching row number. The library keeps archived versions for comparison and does not replace controlled registers. This note is fictional, its dates are not case-policy dates, and its inventory totals are not financial values."
+      }
+    },
+    {
+      "id": "F13",
+      "title": "Fictional unrelated archive operations note 13",
+      "paragraphs": {
+        "1": "Archive shelf 13 stores demonstration documents for training. Its index uses a local colour and a rack number; neither field is a business approval. The sample contents concern printer supplies and office-layout histories, not depot transfer cases. A librarian can revise a shelf description without revising any underlying policy. This note supplies no new definition of handover, settlement or payment. No case identifier appears here. The printer-support team records maintenance by week and reviews page-count statistics; the counts measure paper usage rather than dispatched or received quantities. When a maintenance ticket closes, only the printer-support ticket closes. Its status must not be joined to a depot case by an accidental matching row number. The library keeps archived versions for comparison and does not replace controlled registers. This note is fictional, its dates are not case-policy dates, and its inventory totals are not financial values."
+      }
+    },
+    {
+      "id": "F14",
+      "title": "Fictional unrelated archive operations note 14",
+      "paragraphs": {
+        "1": "Archive shelf 14 stores demonstration documents for training. Its index uses a local colour and a rack number; neither field is a business approval. The sample contents concern printer supplies and office-layout histories, not depot transfer cases. A librarian can revise a shelf description without revising any underlying policy. This note supplies no new definition of handover, settlement or payment. No case identifier appears here. The printer-support team records maintenance by week and reviews page-count statistics; the counts measure paper usage rather than dispatched or received quantities. When a maintenance ticket closes, only the printer-support ticket closes. Its status must not be joined to a depot case by an accidental matching row number. The library keeps archived versions for comparison and does not replace controlled registers. This note is fictional, its dates are not case-policy dates, and its inventory totals are not financial values."
+      }
+    },
+    {
+      "id": "F15",
+      "title": "Fictional unrelated archive operations note 15",
+      "paragraphs": {
+        "1": "Archive shelf 15 stores demonstration documents for training. Its index uses a local colour and a rack number; neither field is a business approval. The sample contents concern printer supplies and office-layout histories, not depot transfer cases. A librarian can revise a shelf description without revising any underlying policy. This note supplies no new definition of handover, settlement or payment. No case identifier appears here. The printer-support team records maintenance by week and reviews page-count statistics; the counts measure paper usage rather than dispatched or received quantities. When a maintenance ticket closes, only the printer-support ticket closes. Its status must not be joined to a depot case by an accidental matching row number. The library keeps archived versions for comparison and does not replace controlled registers. This note is fictional, its dates are not case-policy dates, and its inventory totals are not financial values."
+      }
+    },
+    {
+      "id": "F16",
+      "title": "Fictional unrelated archive operations note 16",
+      "paragraphs": {
+        "1": "Archive shelf 16 stores demonstration documents for training. Its index uses a local colour and a rack number; neither field is a business approval. The sample contents concern printer supplies and office-layout histories, not depot transfer cases. A librarian can revise a shelf description without revising any underlying policy. This note supplies no new definition of handover, settlement or payment. No case identifier appears here. The printer-support team records maintenance by week and reviews page-count statistics; the counts measure paper usage rather than dispatched or received quantities. When a maintenance ticket closes, only the printer-support ticket closes. Its status must not be joined to a depot case by an accidental matching row number. The library keeps archived versions for comparison and does not replace controlled registers. This note is fictional, its dates are not case-policy dates, and its inventory totals are not financial values."
+      }
+    },
+    {
+      "id": "F17",
+      "title": "Fictional unrelated archive operations note 17",
+      "paragraphs": {
+        "1": "Archive shelf 17 stores demonstration documents for training. Its index uses a local colour and a rack number; neither field is a business approval. The sample contents concern printer supplies and office-layout histories, not depot transfer cases. A librarian can revise a shelf description without revising any underlying policy. This note supplies no new definition of handover, settlement or payment. No case identifier appears here. The printer-support team records maintenance by week and reviews page-count statistics; the counts measure paper usage rather than dispatched or received quantities. When a maintenance ticket closes, only the printer-support ticket closes. Its status must not be joined to a depot case by an accidental matching row number. The library keeps archived versions for comparison and does not replace controlled registers. This note is fictional, its dates are not case-policy dates, and its inventory totals are not financial values."
+      }
+    }
+  ]
+}
