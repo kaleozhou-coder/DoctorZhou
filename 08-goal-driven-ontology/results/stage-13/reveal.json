@@ -1,0 +1,182 @@
+{
+  "A01": {
+    "cell": "middle_strong",
+    "question": "Q4"
+  },
+  "A02": {
+    "cell": "head_one",
+    "question": "Q5"
+  },
+  "A03": {
+    "cell": "head_one",
+    "question": "Q4"
+  },
+  "A04": {
+    "cell": "head_strong",
+    "question": "Q5"
+  },
+  "A05": {
+    "cell": "middle_strong",
+    "question": "Q3"
+  },
+  "A06": {
+    "cell": "middle_one",
+    "question": "Q4"
+  },
+  "A07": {
+    "cell": "head_strong",
+    "question": "Q2"
+  },
+  "A08": {
+    "cell": "head_strong",
+    "question": "Q3"
+  },
+  "A09": {
+    "cell": "tail_one",
+    "question": "Q2"
+  },
+  "A10": {
+    "cell": "middle_batch",
+    "question": "Q4"
+  },
+  "A11": {
+    "cell": "middle_one",
+    "question": "Q5"
+  },
+  "A12": {
+    "cell": "tail_one",
+    "question": "Q3"
+  },
+  "A13": {
+    "cell": "head_strong",
+    "question": "Q4"
+  },
+  "A14": {
+    "cell": "tail_strong",
+    "question": "Q2"
+  },
+  "A15": {
+    "cell": "head_batch",
+    "question": "Q2"
+  },
+  "A16": {
+    "cell": "tail_batch",
+    "question": "Q5"
+  },
+  "A17": {
+    "cell": "head_one",
+    "question": "Q1"
+  },
+  "A18": {
+    "cell": "head_batch",
+    "question": "Q1"
+  },
+  "A19": {
+    "cell": "middle_one",
+    "question": "Q3"
+  },
+  "A20": {
+    "cell": "middle_strong",
+    "question": "Q5"
+  },
+  "A21": {
+    "cell": "tail_batch",
+    "question": "Q1"
+  },
+  "A22": {
+    "cell": "middle_batch",
+    "question": "Q1"
+  },
+  "A23": {
+    "cell": "head_batch",
+    "question": "Q3"
+  },
+  "A24": {
+    "cell": "tail_one",
+    "question": "Q4"
+  },
+  "A25": {
+    "cell": "tail_strong",
+    "question": "Q5"
+  },
+  "A26": {
+    "cell": "tail_batch",
+    "question": "Q3"
+  },
+  "A27": {
+    "cell": "head_one",
+    "question": "Q3"
+  },
+  "A28": {
+    "cell": "middle_strong",
+    "question": "Q2"
+  },
+  "A29": {
+    "cell": "head_batch",
+    "question": "Q5"
+  },
+  "A30": {
+    "cell": "middle_batch",
+    "question": "Q3"
+  },
+  "A31": {
+    "cell": "tail_one",
+    "question": "Q1"
+  },
+  "A32": {
+    "cell": "middle_one",
+    "question": "Q1"
+  },
+  "A33": {
+    "cell": "middle_strong",
+    "question": "Q1"
+  },
+  "A34": {
+    "cell": "tail_batch",
+    "question": "Q2"
+  },
+  "A35": {
+    "cell": "middle_batch",
+    "question": "Q2"
+  },
+  "A36": {
+    "cell": "tail_one",
+    "question": "Q5"
+  },
+  "A37": {
+    "cell": "tail_strong",
+    "question": "Q4"
+  },
+  "A38": {
+    "cell": "head_strong",
+    "question": "Q1"
+  },
+  "A39": {
+    "cell": "middle_one",
+    "question": "Q2"
+  },
+  "A40": {
+    "cell": "tail_strong",
+    "question": "Q1"
+  },
+  "A41": {
+    "cell": "middle_batch",
+    "question": "Q5"
+  },
+  "A42": {
+    "cell": "tail_strong",
+    "question": "Q3"
+  },
+  "A43": {
+    "cell": "tail_batch",
+    "question": "Q4"
+  },
+  "A44": {
+    "cell": "head_one",
+    "question": "Q2"
+  },
+  "A45": {
+    "cell": "head_batch",
+    "question": "Q4"
+  }
+}

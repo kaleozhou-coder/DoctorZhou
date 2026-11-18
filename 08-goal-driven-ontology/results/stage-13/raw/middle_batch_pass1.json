@@ -1,0 +1,35 @@
+{
+  "questions": [
+    {
+      "id": "Q1",
+      "answer": "Unknown. These sources do not supply the current complete necessary and sufficient closure condition for Northbay repair cases as of 2026-07-01. The unsigned June proposal does not replace existing signed decisions, the October decision is not yet effective, the vendor cannot amend board rules, and the refund policy is outside repair-case scope.",
+      "sources": ["N52", "N94", "N35", "N79"],
+      "status": "proposed"
+    },
+    {
+      "id": "Q2",
+      "answer": "The complete current exception requirements and exact governing conditions are unknown from the supplied material. N52 describes removal of reconciliation from the minor-repair exception and post-closure hold review only as unapproved proposals; it does not enact either change. N94 says identity and hold conditions remain unchanged and states reconciliation and positive approval-register requirements for the future expansion, but does not provide a complete current rule.",
+      "sources": ["N52", "N94"],
+      "status": "proposed"
+    },
+    {
+      "id": "Q3",
+      "answer": "Unknown for the current exception: these sources do not define its authoritative authorization evidence or the treatment of rejected versus missing register evidence. N94 requires a positive approval register for the future expansion. N35 explicitly excludes technician acceptance of a parts shipment as exception authorization in a customer-case register, and N79 excludes refund financial approval as repair duty-supervisor approval. Under the supplied fact convention, unavailable evidence is null rather than false; a specific rejection-evidence mapping is not established by these blocks.",
+      "sources": ["N94", "N35", "N79"],
+      "status": "proposed"
+    },
+    {
+      "id": "Q4",
+      "answer": "The supplied October expansion cannot authorize a major-repair exception on 2026-07-01, even with supervisor approval. N94 takes effect on 2026-10-01 and expressly does not expand existing exception scope before then. The June draft describes a minor-repair exception, not a currently enacted major-repair route. The complete current policy is unavailable, so no independent existing major-repair entitlement can be established from these sources.",
+      "sources": ["N94", "N52"],
+      "status": "proposed"
+    },
+    {
+      "id": "Q5",
+      "answer": "No. N52 is unsigned and unapproved, has no effective date, and expressly leaves existing signed decisions in force. Its proposed reconciliation removal and post-closure hold review have no amending effect. N35 is only a vendor workflow recommendation; the vendor lacks authority to amend board closure rules. Neither source can remove a governing reconciliation or hold condition.",
+      "sources": ["N52", "N35"],
+      "status": "proposed"
+    }
+  ],
+  "model": null
+}

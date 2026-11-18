@@ -1,0 +1,56 @@
+{
+  "questions": [
+    {
+      "id": "Q1",
+      "answer": "For Northbay repair cases evaluated on 2026-07-01, closure is permitted if and only if identity verification is complete, no active hold exists, and either the routine documentary packet is complete or all three exception conditions hold: minor-repair scope, complete exception reconciliation, and register-defined authorization. These are the only routes. The routine route requires no exception approval. Unavailable facts remain unknown under the prescribed three-valued logic rather than being treated as false.",
+      "sources": ["N41", "N08", "N26"],
+      "status": "proposed"
+    },
+    {
+      "id": "Q2",
+      "answer": "The exception route requires minor-repair scope, completed exception reconciliation, and authorization under the approval-register definition. These three conditions are jointly necessary and sufficient for the exception route itself. It does not waive identity verification or the requirement that no active hold exist.",
+      "sources": ["N08", "N41", "N26"],
+      "status": "proposed"
+    },
+    {
+      "id": "Q3",
+      "answer": "Authorization is true exactly when the register records an unrevoked approval by a duty supervisor with a matching case identifier. Explicit register rejection or revocation makes authorization false; unavailable required register evidence makes it unknown (null), not false. Requester email, vendor signature, or an inferred job title does not establish register authorization. False authorization defeats the exception route, whereas missing authorization can leave that route unknown unless another exception condition is false. Neither alone determines overall closure because the routine route is independent of exception approval.",
+      "sources": ["N26", "N08", "N41"],
+      "status": "proposed"
+    },
+    {
+      "id": "Q4",
+      "answer": "No. On 2026-07-01 the governing April decision and its annex limit the exception to minor repairs, so even valid supervisor approval cannot make a major repair eligible. A major repair may still qualify through the routine route if the governing conditions hold. The 2025 provision allowing manager email approval for major repairs applied only during 2025 and was replaced for these cases. The supplied annex applies to Northbay repair cases, not Southbay cases, refunds, or equipment disposal.",
+      "sources": ["N41", "N08", "N17"],
+      "status": "proposed"
+    },
+    {
+      "id": "Q5",
+      "answer": "No. The governing decision expressly states that separate vendor guidance and the draft memo do not modify it. Therefore neither can remove the no-active-hold condition or the exception reconciliation requirement. Payment alone is insufficient, and the historical 2025 treatment of payment as reconciliation does not continue under the replacement policy. The June draft's precise wording, date, and status beyond the governing decision's description, and the vendor recommendation's precise contents, are unknown because those documents were not supplied in this batch.",
+      "sources": ["N41", "N08", "N17"],
+      "status": "proposed"
+    }
+  ],
+  "model": {
+    "status": "proposed",
+    "permit": {
+      "and": [
+        {"field": "identity_verified"},
+        {"not": {"field": "active_hold"}},
+        {
+          "or": [
+            {"field": "routine_packet_complete"},
+            {
+              "and": [
+                {"field": "minor_repair_scope"},
+                {"field": "exception_reconciled"},
+                {"field": "exception_authorized"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "sources": ["N41", "N08", "N26"]
+  }
+}

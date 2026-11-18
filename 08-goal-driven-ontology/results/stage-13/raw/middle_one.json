@@ -1,0 +1,52 @@
+{
+  "questions": [
+    {
+      "id": "Q1",
+      "answer": "As of 2026-07-01, a Northbay repair case may close if and only if identity is verified, there is no active hold, and either the routine packet is complete or all three exception conditions hold: minor repair scope, completed exception reconciliation, and exception authorization. The routine route needs no exception authorization. There are no other routes. Unavailable facts remain unknown under three-valued logic rather than being treated as false.",
+      "sources": ["N41", "N08", "N26"],
+      "status": "proposed"
+    },
+    {
+      "id": "Q2",
+      "answer": "The exception route requires minor repair scope, complete exception reconciliation, and authorization as defined by the approval register. All three are necessary and together sufficient for that route, but the governing requirements of verified identity and no active hold still apply.",
+      "sources": ["N08", "N26", "N41"],
+      "status": "proposed"
+    },
+    {
+      "id": "Q3",
+      "answer": "Authorization is true exactly when the register records an unrevoked duty-supervisor approval matching the case identifier. Explicit register rejection or revocation makes authorization false. Unavailable required register evidence makes it null, meaning unknown, not rejection. Requester emails, vendor signatures, or inferred job titles cannot substitute for register evidence.",
+      "sources": ["N26", "N08"],
+      "status": "proposed"
+    },
+    {
+      "id": "Q4",
+      "answer": "No. On 2026-07-01 the exception is restricted to minor repairs, even if a manager or supervisor approves a major repair. The signed June decision expands scope to major repairs only from 2026-10-01; publication does not activate that expansion early. The 2025 permission is historical and replaced. A major repair could instead meet the routine route with identity verified and no active hold.",
+      "sources": ["N08", "N94", "N17", "N41"],
+      "status": "proposed"
+    },
+    {
+      "id": "Q5",
+      "answer": "Neither source can remove either condition. The June working-group memo is an unsigned, unapproved draft with no effective date; its proposals to remove exception reconciliation and defer hold review are not enacted. The vendor payment recommendation is a supplier preference with no authority to amend Northbay Board closure rules. The current signed policy and annex retain reconciliation for the exception route and no active hold for every closure route. Payment alone is not sufficient.",
+      "sources": ["N52", "N35", "N41", "N08"],
+      "status": "proposed"
+    }
+  ],
+  "model": {
+    "status": "proposed",
+    "permit": {
+      "and": [
+        {"field": "identity_verified"},
+        {"not": {"field": "active_hold"}},
+        {"or": [
+          {"field": "routine_packet_complete"},
+          {"and": [
+            {"field": "minor_repair_scope"},
+            {"field": "exception_reconciled"},
+            {"field": "exception_authorized"}
+          ]}
+        ]}
+      ]
+    },
+    "sources": ["N41", "N08", "N26"]
+  }
+}

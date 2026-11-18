@@ -1,0 +1,40 @@
+{
+  "Q1": {
+    "meaning": "identity AND NOT hold AND (routine OR (minor AND reconciliation AND authorized))",
+    "required": [
+      "N41",
+      "N08",
+      "N26"
+    ]
+  },
+  "Q2": {
+    "meaning": "minor AND reconciliation AND authorization, no identity/hold waiver",
+    "required": [
+      "N08",
+      "N41"
+    ]
+  },
+  "Q3": {
+    "meaning": "matching unrevoked duty-supervisor register approval; rejection false, absent unknown",
+    "required": [
+      "N26"
+    ]
+  },
+  "Q4": {
+    "meaning": "No; April minor-only scope applies; October expansion not yet effective",
+    "required": [
+      "N41",
+      "N08",
+      "N94"
+    ]
+  },
+  "Q5": {
+    "meaning": "No; unsigned draft and vendor guidance do not amend signed board conditions",
+    "required": [
+      "N41",
+      "N08",
+      "N52",
+      "N35"
+    ]
+  }
+}

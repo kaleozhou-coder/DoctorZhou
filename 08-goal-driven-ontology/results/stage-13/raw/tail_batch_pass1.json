@@ -1,0 +1,35 @@
+{
+  "questions": [
+    {
+      "id": "Q1",
+      "answer": "Unknown: the supplied sources do not include the current governing closure policy, so the complete necessary and sufficient closure condition cannot be established. N08 establishes the exception route itself exactly when minor repair scope, complete exception reconciliation, and register authorization all hold, and says it does not waive governing identity verification or active holds. N26 defines evidence but explicitly does not confer closure permission. The current role of a routine packet and the exhaustive closure rule are not established here.",
+      "sources": ["N08", "N26"],
+      "status": "proposed"
+    },
+    {
+      "id": "Q2",
+      "answer": "The exception route requires minor repair scope, completed exception reconciliation, and authorization under the approval-register definition. These three conditions are necessary and together sufficient for the route itself. It does not waive identity verification or active holds imposed by the governing closure policy.",
+      "sources": ["N08", "N26"],
+      "status": "proposed"
+    },
+    {
+      "id": "Q3",
+      "answer": "Authorization is true exactly when the register records an unrevoked duty-supervisor approval with a matching case identifier. Explicit rejection or revocation makes authorization false. Unavailable required register evidence makes it null, meaning unknown rather than false. Requester email, vendor signature, and inferred job title do not establish register authorization. Missing reconciliation evidence is also unknown.",
+      "sources": ["N08", "N26"],
+      "status": "proposed"
+    },
+    {
+      "id": "Q4",
+      "answer": "No. The applicable Northbay annex limits this exception to minor repairs; approval cannot overcome a major repair's failure of that scope requirement. The 2025 Northbay permission for manager-email exceptions including major repairs applied only during 2025 and grants no continuing permission on 2026-07-01. Southbay's broader 2026 exception cannot amend Northbay rules.",
+      "sources": ["N08", "N17", "N63"],
+      "status": "proposed"
+    },
+    {
+      "id": "Q5",
+      "answer": "Unknown as to the specific June draft and vendor payment recommendation: neither is supplied, so their authority and content cannot be evaluated. The supplied signed Northbay annex requires exception reconciliation and expressly does not waive governing active holds. The register dictionary does not treat a vendor signature as authorization. Historical 2025 payment treatment grants no continuing permission, and Southbay policy cannot amend Northbay decisions. Nothing in the supplied sources establishes removal of either condition.",
+      "sources": ["N08", "N26", "N17", "N63"],
+      "status": "proposed"
+    }
+  ],
+  "model": null
+}

@@ -1,0 +1,209 @@
+{
+  "head": {
+    "source_words": 883,
+    "source_characters": 6111,
+    "blocks": [
+      {
+        "id": "N41",
+        "block_position_one_based": 1,
+        "word_start_zero_based": 0,
+        "words": 144,
+        "batch": 1
+      },
+      {
+        "id": "N08",
+        "block_position_one_based": 2,
+        "word_start_zero_based": 144,
+        "words": 112,
+        "batch": 1
+      },
+      {
+        "id": "N26",
+        "block_position_one_based": 3,
+        "word_start_zero_based": 256,
+        "words": 113,
+        "batch": 1
+      },
+      {
+        "id": "N17",
+        "block_position_one_based": 4,
+        "word_start_zero_based": 369,
+        "words": 90,
+        "batch": 1
+      },
+      {
+        "id": "N63",
+        "block_position_one_based": 5,
+        "word_start_zero_based": 459,
+        "words": 85,
+        "batch": 2
+      },
+      {
+        "id": "N52",
+        "block_position_one_based": 6,
+        "word_start_zero_based": 544,
+        "words": 83,
+        "batch": 2
+      },
+      {
+        "id": "N94",
+        "block_position_one_based": 7,
+        "word_start_zero_based": 627,
+        "words": 78,
+        "batch": 2
+      },
+      {
+        "id": "N35",
+        "block_position_one_based": 8,
+        "word_start_zero_based": 705,
+        "words": 85,
+        "batch": 2
+      },
+      {
+        "id": "N79",
+        "block_position_one_based": 9,
+        "word_start_zero_based": 790,
+        "words": 93,
+        "batch": 2
+      }
+    ]
+  },
+  "middle": {
+    "source_words": 883,
+    "source_characters": 6111,
+    "blocks": [
+      {
+        "id": "N52",
+        "block_position_one_based": 1,
+        "word_start_zero_based": 0,
+        "words": 83,
+        "batch": 1
+      },
+      {
+        "id": "N94",
+        "block_position_one_based": 2,
+        "word_start_zero_based": 83,
+        "words": 78,
+        "batch": 1
+      },
+      {
+        "id": "N35",
+        "block_position_one_based": 3,
+        "word_start_zero_based": 161,
+        "words": 85,
+        "batch": 1
+      },
+      {
+        "id": "N79",
+        "block_position_one_based": 4,
+        "word_start_zero_based": 246,
+        "words": 93,
+        "batch": 1
+      },
+      {
+        "id": "N41",
+        "block_position_one_based": 5,
+        "word_start_zero_based": 339,
+        "words": 144,
+        "batch": 2
+      },
+      {
+        "id": "N08",
+        "block_position_one_based": 6,
+        "word_start_zero_based": 483,
+        "words": 112,
+        "batch": 2
+      },
+      {
+        "id": "N26",
+        "block_position_one_based": 7,
+        "word_start_zero_based": 595,
+        "words": 113,
+        "batch": 2
+      },
+      {
+        "id": "N17",
+        "block_position_one_based": 8,
+        "word_start_zero_based": 708,
+        "words": 90,
+        "batch": 2
+      },
+      {
+        "id": "N63",
+        "block_position_one_based": 9,
+        "word_start_zero_based": 798,
+        "words": 85,
+        "batch": 2
+      }
+    ]
+  },
+  "tail": {
+    "source_words": 883,
+    "source_characters": 6111,
+    "blocks": [
+      {
+        "id": "N08",
+        "block_position_one_based": 1,
+        "word_start_zero_based": 0,
+        "words": 112,
+        "batch": 1
+      },
+      {
+        "id": "N26",
+        "block_position_one_based": 2,
+        "word_start_zero_based": 112,
+        "words": 113,
+        "batch": 1
+      },
+      {
+        "id": "N17",
+        "block_position_one_based": 3,
+        "word_start_zero_based": 225,
+        "words": 90,
+        "batch": 1
+      },
+      {
+        "id": "N63",
+        "block_position_one_based": 4,
+        "word_start_zero_based": 315,
+        "words": 85,
+        "batch": 1
+      },
+      {
+        "id": "N52",
+        "block_position_one_based": 5,
+        "word_start_zero_based": 400,
+        "words": 83,
+        "batch": 2
+      },
+      {
+        "id": "N94",
+        "block_position_one_based": 6,
+        "word_start_zero_based": 483,
+        "words": 78,
+        "batch": 2
+      },
+      {
+        "id": "N35",
+        "block_position_one_based": 7,
+        "word_start_zero_based": 561,
+        "words": 85,
+        "batch": 2
+      },
+      {
+        "id": "N79",
+        "block_position_one_based": 8,
+        "word_start_zero_based": 646,
+        "words": 93,
+        "batch": 2
+      },
+      {
+        "id": "N41",
+        "block_position_one_based": 9,
+        "word_start_zero_based": 739,
+        "words": 144,
+        "batch": 2
+      }
+    ]
+  }
+}

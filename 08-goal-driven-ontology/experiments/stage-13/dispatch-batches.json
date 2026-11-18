@@ -1,0 +1,107 @@
+{
+  "head": {
+    "position_of_N41": 1,
+    "full_order": [
+      "N41",
+      "N08",
+      "N26",
+      "N17",
+      "N63",
+      "N52",
+      "N94",
+      "N35",
+      "N79"
+    ],
+    "batches": {
+      "head-1.json": {
+        "sha256": "2cf4df46ffbd8bb87ed1584443d2fbb50c29644532790765595096957ffe1b14",
+        "visible_clause_ids": [
+          "N41",
+          "N08",
+          "N26",
+          "N17"
+        ]
+      },
+      "head-2.json": {
+        "sha256": "6c573465d22dc38b6aa3035e8ef680ce719eb96d435cfb1ade54c1edec68ec4d",
+        "visible_clause_ids": [
+          "N63",
+          "N52",
+          "N94",
+          "N35",
+          "N79"
+        ]
+      }
+    }
+  },
+  "middle": {
+    "position_of_N41": 5,
+    "full_order": [
+      "N52",
+      "N94",
+      "N35",
+      "N79",
+      "N41",
+      "N08",
+      "N26",
+      "N17",
+      "N63"
+    ],
+    "batches": {
+      "middle-1.json": {
+        "sha256": "af92b844e3ea4424c995aeafc0c154546708202fd5262015f47b4065ef98a241",
+        "visible_clause_ids": [
+          "N52",
+          "N94",
+          "N35",
+          "N79"
+        ]
+      },
+      "middle-2.json": {
+        "sha256": "43fb8e91c05bbc9884d24c2c1c11f12708fb97f614e3be9fcbbddd54cee466f4",
+        "visible_clause_ids": [
+          "N41",
+          "N08",
+          "N26",
+          "N17",
+          "N63"
+        ]
+      }
+    }
+  },
+  "tail": {
+    "position_of_N41": 9,
+    "full_order": [
+      "N08",
+      "N26",
+      "N17",
+      "N63",
+      "N52",
+      "N94",
+      "N35",
+      "N79",
+      "N41"
+    ],
+    "batches": {
+      "tail-1.json": {
+        "sha256": "46a64dafec39b914033d2b3b8cc76a3c2cd6ed5e1a9787f57ae881770ba1bd9b",
+        "visible_clause_ids": [
+          "N08",
+          "N26",
+          "N17",
+          "N63"
+        ]
+      },
+      "tail-2.json": {
+        "sha256": "87b12c8a6520bcfa17cec3dac451e682b75b75f02467664dbc9875af7c04837b",
+        "visible_clause_ids": [
+          "N52",
+          "N94",
+          "N35",
+          "N79",
+          "N41"
+        ]
+      }
+    }
+  }
+}

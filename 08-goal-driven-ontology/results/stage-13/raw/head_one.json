@@ -1,0 +1,56 @@
+{
+  "questions": [
+    {
+      "id": "Q1",
+      "answer": "As of 2026-07-01, a Northbay repair case may close if and only if identity verification is complete, no active hold exists, and either the routine documentary packet is complete or all three exception conditions hold: minor-repair scope, completed exception reconciliation, and register-defined exception authorization. The routine route needs no exception approval, and there are no other routes. Unavailable evidence remains unknown rather than false under the specified three-valued logic.",
+      "sources": ["N41", "N08", "N26"],
+      "status": "proposed"
+    },
+    {
+      "id": "Q2",
+      "answer": "The exception route requires minor-repair scope, completed exception reconciliation, and authorization as defined by the approval register. All three are necessary and jointly sufficient for that route, but the route does not waive identity verification or the prohibition on closure with an active hold.",
+      "sources": ["N08", "N26", "N41"],
+      "status": "proposed"
+    },
+    {
+      "id": "Q3",
+      "answer": "Exception authorization is true exactly when the register records an unrevoked approval by a duty supervisor with a matching case identifier. Explicit register rejection or revocation makes authorization false; unavailable required register evidence makes it null, meaning unknown, not rejected. Requester email, vendor signature, inferred job title, or an approval email alone does not establish the required authorization. Missing reconciliation evidence is likewise unknown.",
+      "sources": ["N26", "N08", "N41"],
+      "status": "proposed"
+    },
+    {
+      "id": "Q4",
+      "answer": "No. On 2026-07-01 the Northbay exception is restricted to minor repairs, so supervisor approval cannot make a major repair eligible for that route. The signed June decision expands scope only from 2026-10-01, not its publication date. The superseded 2025 manager-email policy and Southbay's broader exception do not apply. A major repair can still close through a completed routine packet if identity verification is complete and no active hold exists.",
+      "sources": ["N41", "N08", "N94", "N17", "N63"],
+      "status": "proposed"
+    },
+    {
+      "id": "Q5",
+      "answer": "No. The June 25 memorandum is an unsigned, unapproved draft with no effective date; circulation does not enact its proposed removal of reconciliation or deferral of hold review. Vendor payment guidance is a supplier preference without authority to amend board rules. The current signed decision expressly excludes modification by either document, and payment alone is insufficient. Reconciliation remains required for the exception route, while absence of an active hold remains required for every closure route.",
+      "sources": ["N52", "N35", "N41", "N08"],
+      "status": "proposed"
+    }
+  ],
+  "model": {
+    "status": "proposed",
+    "permit": {
+      "and": [
+        {"field": "identity_verified"},
+        {"not": {"field": "active_hold"}},
+        {
+          "or": [
+            {"field": "routine_packet_complete"},
+            {
+              "and": [
+                {"field": "minor_repair_scope"},
+                {"field": "exception_reconciled"},
+                {"field": "exception_authorized"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "sources": ["N41", "N08", "N26"]
+  }
+}

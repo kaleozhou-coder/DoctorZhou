@@ -1,0 +1,42 @@
+{
+  "evaluation_date": "2026-07-01",
+  "scope": "Northbay repair cases",
+  "blocks": [
+    {
+      "id": "N41",
+      "text": "Record of Northbay Service Review Board, signed 2026-04-01, effective 2026-04-01 through 2026-12-31. This decision replaces the 2025 closure policy for Northbay repair cases only. A Northbay repair case may be closed if and only if identity verification is complete, there is no active hold, and at least one of the following two routes is satisfied: (a) the routine documentary packet is complete; (b) the exception route described in the annex signed 2026-03-29 is satisfied. Neither an approval email alone nor payment alone suffices. The ordinary route does not require exception approval. Unavailable facts remain unknown, not false. A recorded false condition is distinct from an unavailable record. The rule is exhaustive for the specified cases; there are no other closure routes. This policy is the authority for the evaluation date 2026-07-01. The separate vendor guidance and the draft memo do not modify this decision."
+    },
+    {
+      "id": "N08",
+      "text": "Northbay Service Review Board annex, signed 2026-03-29, effective with the April decision. The exception route is available only for minor repair cases whose exception reconciliation is complete. In addition, authorization under the approval-register definition is required. All three conditions are necessary and together sufficient for the exception route itself. That route does not waive identity verification or active holds imposed by the governing closure policy. A case outside the minor-repair scope cannot use this exception even if a manager has approved it. Missing evidence of reconciliation or authorization is unknown. An explicit rejection in the approval register is false authorization. This annex does not govern Southbay cases, refund cases, or equipment disposal."
+    },
+    {
+      "id": "N26",
+      "text": "Approval-register data dictionary, issued 2026-04-01 by the Northbay Service Review Board. The field exception_authorized is true exactly when the register records an unrevoked approval by a duty supervisor with a matching case identifier. It is false when the register explicitly records rejection or revocation; it is null when the required register evidence is unavailable. A requester email, vendor signature or inferred job title is not register authorization. The other approved Boolean fields are identity_verified, active_hold, routine_packet_complete, minor_repair_scope and exception_reconciled. Their null values mean unavailable evidence. Do not reconstruct or guess these fields from amounts, textual enthusiasm or neighboring cases. This dictionary defines fields; it does not itself confer permission to close a case."
+    },
+    {
+      "id": "N17",
+      "text": "Northbay Service Review Board, signed 2025-01-03, effective during 2025 only. Under this historical operating policy, an approval email from any manager could replace a missing routine packet, including major repairs. Payments recorded before month end were considered adequate reconciliation. Staff preparing historical reports must preserve this wording and its date rather than rewriting old records. This document describes its own 2025 policy period and does not grant retroactive or continuing permission for cases evaluated under a later replacement policy. The current archive contains this record so earlier decisions remain traceable."
+    },
+    {
+      "id": "N63",
+      "text": "Southbay Service Review Board, signed 2026-04-01, effective through December 2026. Southbay repair cases may use an exception for both minor and major repairs when a project owner approves and the outstanding invoice balance is zero. A completed ordinary packet is an alternative route. Southbay's regional authority is limited to Southbay and this regional document does not amend any Northbay board decision. The use of a shared service desk does not change a case's governing region. A project owner is not automatically a Northbay duty supervisor."
+    },
+    {
+      "id": "N52",
+      "text": "Northbay operations working group memorandum, draft version 3, circulated 2026-06-25 for comments; not signed or approved. Proposed revision: remove reconciliation from the minor-repair exception and allow team leads to authorize closure; active holds would be reviewed after closure. These proposals would simplify workflows but remain discussion items. The circulation list and successful transmission of this draft are not enactment evidence. Reviewers should identify implementation dependencies before a future vote. No approval or effective date is recorded here. Existing signed decisions remain in force."
+    },
+    {
+      "id": "N94",
+      "text": "Northbay Service Review Board, signed 2026-06-20, effective 2026-10-01. From that future date, exception scope will include major repairs, provided the approval register is positive and reconciliation is complete. A new retrospective review procedure will be introduced separately. Before the effective date, the scope of an existing exception is not expanded by the publication of this future decision. Implementation staff may prepare forms but must not use publication date as effective date. Identity and hold conditions will remain unchanged."
+    },
+    {
+      "id": "N35",
+      "text": "Vendor workshop guidance, issued 2026-05-15. To reduce parts inventory backlog, the vendor recommends allowing closure once payment is received and the repair technician signs the service note. The vendor can certify its own workshop activities but has no authority to amend either regional service review board's closure rules. This recommendation is a supplier workflow preference, not a replacement board decision. The guidance contains the word approval to describe technician acceptance of a parts shipment; that acceptance is not an exception authorization in a customer-case register."
+    },
+    {
+      "id": "N79",
+      "text": "Northbay Service Review Board refund-case policy, signed 2026-04-01. Refund cases are eligible for settlement after a financial approver confirms the refund schedule, even when a physical repair packet does not exist. The policy concerns refund processing only and does not apply to repair-case closure. Sharing a customer, invoice or case-management interface does not merge these two scopes. The financial approver must not be interpreted as a duty supervisor merely because both records have an approved status. All example refund records in this manual are illustrative and should not be imported as repair evidence."
+    }
+  ]
+}

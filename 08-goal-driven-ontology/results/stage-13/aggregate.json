@@ -1,0 +1,1233 @@
+{
+  "totals": {
+    "one": {
+      "total": 15,
+      "meaning": 15,
+      "full_support": 15,
+      "strict_required_ids": 15,
+      "wrong_citation": 0,
+      "unknown_candidate": 0,
+      "false_permissions": 0,
+      "nonpermitted_gold": 24,
+      "heldout_correct": 30,
+      "heldout_total": 30,
+      "heldout_unknown": 9,
+      "schema_invalid": 0,
+      "model_required_ids_complete": 3
+    },
+    "batch": {
+      "total": 15,
+      "meaning": 15,
+      "full_support": 15,
+      "strict_required_ids": 15,
+      "wrong_citation": 0,
+      "unknown_candidate": 0,
+      "false_permissions": 0,
+      "nonpermitted_gold": 24,
+      "heldout_correct": 30,
+      "heldout_total": 30,
+      "heldout_unknown": 9,
+      "schema_invalid": 0,
+      "model_required_ids_complete": 3
+    },
+    "strong": {
+      "total": 15,
+      "meaning": 15,
+      "full_support": 15,
+      "strict_required_ids": 15,
+      "wrong_citation": 0,
+      "unknown_candidate": 0,
+      "false_permissions": 0,
+      "nonpermitted_gold": 24,
+      "heldout_correct": 30,
+      "heldout_total": 30,
+      "heldout_unknown": 9,
+      "schema_invalid": 0,
+      "model_required_ids_complete": 3
+    }
+  },
+  "by_cell_open": {
+    "head_one": {
+      "total": 5,
+      "meaning": 5,
+      "full_support": 5,
+      "strict_required_ids": 5,
+      "wrong_citation": 0,
+      "unknown_candidate": 0
+    },
+    "head_batch": {
+      "total": 5,
+      "meaning": 5,
+      "full_support": 5,
+      "strict_required_ids": 5,
+      "wrong_citation": 0,
+      "unknown_candidate": 0
+    },
+    "head_strong": {
+      "total": 5,
+      "meaning": 5,
+      "full_support": 5,
+      "strict_required_ids": 5,
+      "wrong_citation": 0,
+      "unknown_candidate": 0
+    },
+    "middle_one": {
+      "total": 5,
+      "meaning": 5,
+      "full_support": 5,
+      "strict_required_ids": 5,
+      "wrong_citation": 0,
+      "unknown_candidate": 0
+    },
+    "middle_batch": {
+      "total": 5,
+      "meaning": 5,
+      "full_support": 5,
+      "strict_required_ids": 5,
+      "wrong_citation": 0,
+      "unknown_candidate": 0
+    },
+    "middle_strong": {
+      "total": 5,
+      "meaning": 5,
+      "full_support": 5,
+      "strict_required_ids": 5,
+      "wrong_citation": 0,
+      "unknown_candidate": 0
+    },
+    "tail_one": {
+      "total": 5,
+      "meaning": 5,
+      "full_support": 5,
+      "strict_required_ids": 5,
+      "wrong_citation": 0,
+      "unknown_candidate": 0
+    },
+    "tail_batch": {
+      "total": 5,
+      "meaning": 5,
+      "full_support": 5,
+      "strict_required_ids": 5,
+      "wrong_citation": 0,
+      "unknown_candidate": 0
+    },
+    "tail_strong": {
+      "total": 5,
+      "meaning": 5,
+      "full_support": 5,
+      "strict_required_ids": 5,
+      "wrong_citation": 0,
+      "unknown_candidate": 0
+    }
+  },
+  "paired_open": {
+    "middle_strong": {
+      "Q4": {
+        "blind_id": "A01",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct July minor-only scope, future effective date, rejected historical/regional distractors, and routine alternative."
+      },
+      "Q3": {
+        "blind_id": "A05",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct matching unrevoked register approval and false/unknown distinction; route consequences follow governing logic."
+      },
+      "Q5": {
+        "blind_id": "A20",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct rejection of draft/vendor amendments, exception-only reconciliation, and universal hold gate."
+      },
+      "Q2": {
+        "blind_id": "A28",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct exception conjunction, common gates, and inability of approval to cure scope failure."
+      },
+      "Q1": {
+        "blind_id": "A33",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Complete closure formula, routine independence, and unknown semantics; only satisfied conditions permit closure."
+      }
+    },
+    "head_one": {
+      "Q5": {
+        "blind_id": "A02",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct draft/vendor nonauthority; distinguishes exception reconciliation from universal hold condition."
+      },
+      "Q4": {
+        "blind_id": "A03",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct current scope and October effective date; cited historical and regional rules are rejected appropriately."
+      },
+      "Q1": {
+        "blind_id": "A17",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Complete exhaustive closure formula with correct scope/date and unknown distinction."
+      },
+      "Q3": {
+        "blind_id": "A27",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct register test and false/unknown distinction; missing reconciliation also unknown."
+      },
+      "Q2": {
+        "blind_id": "A44",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct necessary/sufficient exception conjunction without identity or active-hold waiver."
+      }
+    },
+    "head_strong": {
+      "Q5": {
+        "blind_id": "A04",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct nonamendment and route-specific reconciliation; routine route is not burdened with exception conditions."
+      },
+      "Q2": {
+        "blind_id": "A07",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct three-part exception conjunction and retained identity/hold gates."
+      },
+      "Q3": {
+        "blind_id": "A08",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct register evidence and false/null distinction; vendor acceptance is appropriately rejected."
+      },
+      "Q4": {
+        "blind_id": "A13",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct July minor-only exception and October expansion; routine route and distractor rejections supported."
+      },
+      "Q1": {
+        "blind_id": "A38",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Complete exhaustive closure condition; payment/email insufficiency and unknown evidence supported."
+      }
+    },
+    "middle_one": {
+      "Q4": {
+        "blind_id": "A06",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct July exclusion of major repairs despite approval and future October expansion; routine alternative supported."
+      },
+      "Q5": {
+        "blind_id": "A11",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct draft/vendor nonauthority and retained reconciliation/hold requirements."
+      },
+      "Q3": {
+        "blind_id": "A19",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct exact approval-register test and false versus unavailable distinction."
+      },
+      "Q1": {
+        "blind_id": "A32",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Complete closure formula and routine independence; preserves unavailable facts as unknown."
+      },
+      "Q2": {
+        "blind_id": "A39",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct three necessary and sufficient exception conditions with retained identity and hold gates."
+      }
+    },
+    "tail_one": {
+      "Q2": {
+        "blind_id": "A09",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct exception conditions and retained common closure gates."
+      },
+      "Q3": {
+        "blind_id": "A12",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct register evidence, rejection/revocation false, missing unknown; technician acceptance appropriately excluded."
+      },
+      "Q4": {
+        "blind_id": "A24",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct current minor scope, future effective date, and routine alternative; distractors appropriately rejected."
+      },
+      "Q1": {
+        "blind_id": "A31",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Complete exhaustive closure formula; unknown evidence is not collapsed to false."
+      },
+      "Q5": {
+        "blind_id": "A36",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct draft/vendor nonauthority; properly limits reconciliation requirement to exception route."
+      }
+    },
+    "middle_batch": {
+      "Q4": {
+        "blind_id": "A10",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct scope/date analysis; historical and Southbay sources are cited only to reject applicability."
+      },
+      "Q1": {
+        "blind_id": "A22",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Complete closure formula and register definition; routine independence and unknown facts preserved."
+      },
+      "Q3": {
+        "blind_id": "A30",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct register authorization and rejection/null distinction; payment/email cannot substitute and routine route remains independent."
+      },
+      "Q2": {
+        "blind_id": "A35",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct exception conjunction, retained common gates, and unavailable evidence distinction."
+      },
+      "Q5": {
+        "blind_id": "A41",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct draft/vendor nonauthority and exception-specific reconciliation versus common hold condition."
+      }
+    },
+    "tail_strong": {
+      "Q2": {
+        "blind_id": "A14",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct exception conjunction and exact register authorization definition; common gates retained."
+      },
+      "Q5": {
+        "blind_id": "A25",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct draft/vendor authority analysis and surviving exception reconciliation/common hold gate."
+      },
+      "Q4": {
+        "blind_id": "A37",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct July scope and October effective date; historical/regional exclusions and routine alternative supported."
+      },
+      "Q1": {
+        "blind_id": "A40",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Complete closure condition; logical effects of false common condition and true alternative are supported."
+      },
+      "Q3": {
+        "blind_id": "A42",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct register test and false/null distinction; payment/email insufficiency and routine independence supported."
+      }
+    },
+    "head_batch": {
+      "Q2": {
+        "blind_id": "A15",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct jointly necessary and sufficient exception conditions without waiving identity or holds."
+      },
+      "Q1": {
+        "blind_id": "A18",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Complete closure formula; three-valued propagation is a reasonable logical elaboration of unknown evidence and alternative routes."
+      },
+      "Q3": {
+        "blind_id": "A23",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct evidence definition and false/unknown route consequences; routine independence supported."
+      },
+      "Q5": {
+        "blind_id": "A29",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct current authority analysis; historical payment rule rejected and future reconciliation/hold provisions accurately described."
+      },
+      "Q4": {
+        "blind_id": "A45",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct current scope, future effective date, and routine alternative; historical/regional/refund exclusions supported."
+      }
+    },
+    "tail_batch": {
+      "Q5": {
+        "blind_id": "A16",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct unsigned draft and vendor nonauthority; shipment acceptance exclusion and retained gates supported."
+      },
+      "Q1": {
+        "blind_id": "A21",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Complete exhaustive closure formula; false conjunct and satisfied alternative consequences are consistent with unknown semantics."
+      },
+      "Q3": {
+        "blind_id": "A26",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct matching unrevoked register approval, false/null distinction, and independent routine route."
+      },
+      "Q2": {
+        "blind_id": "A34",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct necessary/sufficient exception conjunction and identity/hold conditions for both routes."
+      },
+      "Q4": {
+        "blind_id": "A43",
+        "meaning": true,
+        "full_support": true,
+        "strict_required_ids": true,
+        "wrong_citation": false,
+        "unknown_candidate": false,
+        "missing_required_ids": [],
+        "note": "Correct minor-only July exception, October expansion, and routine alternative; historical/regional/refund sources appropriately rejected."
+      }
+    }
+  },
+  "heldout": {
+    "kind": "frozen expression replay, not fresh inference or semantic proof",
+    "cells": {
+      "head_one": {
+        "schema_errors": [],
+        "cases": [
+          {
+            "id": "H01",
+            "expected": "permitted",
+            "actual": "permitted",
+            "correct": true
+          },
+          {
+            "id": "H02",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H03",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          },
+          {
+            "id": "H04",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H05",
+            "expected": "permitted",
+            "actual": "permitted",
+            "correct": true
+          },
+          {
+            "id": "H06",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H07",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          },
+          {
+            "id": "H08",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H09",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H10",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          }
+        ],
+        "correct": 10,
+        "total": 10,
+        "unknown": 3,
+        "false_permissions": 0,
+        "nonpermitted_gold": 8
+      },
+      "head_batch": {
+        "schema_errors": [],
+        "cases": [
+          {
+            "id": "H01",
+            "expected": "permitted",
+            "actual": "permitted",
+            "correct": true
+          },
+          {
+            "id": "H02",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H03",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          },
+          {
+            "id": "H04",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H05",
+            "expected": "permitted",
+            "actual": "permitted",
+            "correct": true
+          },
+          {
+            "id": "H06",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H07",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          },
+          {
+            "id": "H08",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H09",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H10",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          }
+        ],
+        "correct": 10,
+        "total": 10,
+        "unknown": 3,
+        "false_permissions": 0,
+        "nonpermitted_gold": 8
+      },
+      "head_strong": {
+        "schema_errors": [],
+        "cases": [
+          {
+            "id": "H01",
+            "expected": "permitted",
+            "actual": "permitted",
+            "correct": true
+          },
+          {
+            "id": "H02",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H03",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          },
+          {
+            "id": "H04",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H05",
+            "expected": "permitted",
+            "actual": "permitted",
+            "correct": true
+          },
+          {
+            "id": "H06",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H07",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          },
+          {
+            "id": "H08",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H09",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H10",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          }
+        ],
+        "correct": 10,
+        "total": 10,
+        "unknown": 3,
+        "false_permissions": 0,
+        "nonpermitted_gold": 8
+      },
+      "middle_one": {
+        "schema_errors": [],
+        "cases": [
+          {
+            "id": "H01",
+            "expected": "permitted",
+            "actual": "permitted",
+            "correct": true
+          },
+          {
+            "id": "H02",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H03",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          },
+          {
+            "id": "H04",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H05",
+            "expected": "permitted",
+            "actual": "permitted",
+            "correct": true
+          },
+          {
+            "id": "H06",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H07",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          },
+          {
+            "id": "H08",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H09",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H10",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          }
+        ],
+        "correct": 10,
+        "total": 10,
+        "unknown": 3,
+        "false_permissions": 0,
+        "nonpermitted_gold": 8
+      },
+      "middle_batch": {
+        "schema_errors": [],
+        "cases": [
+          {
+            "id": "H01",
+            "expected": "permitted",
+            "actual": "permitted",
+            "correct": true
+          },
+          {
+            "id": "H02",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H03",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          },
+          {
+            "id": "H04",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H05",
+            "expected": "permitted",
+            "actual": "permitted",
+            "correct": true
+          },
+          {
+            "id": "H06",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H07",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          },
+          {
+            "id": "H08",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H09",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H10",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          }
+        ],
+        "correct": 10,
+        "total": 10,
+        "unknown": 3,
+        "false_permissions": 0,
+        "nonpermitted_gold": 8
+      },
+      "middle_strong": {
+        "schema_errors": [],
+        "cases": [
+          {
+            "id": "H01",
+            "expected": "permitted",
+            "actual": "permitted",
+            "correct": true
+          },
+          {
+            "id": "H02",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H03",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          },
+          {
+            "id": "H04",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H05",
+            "expected": "permitted",
+            "actual": "permitted",
+            "correct": true
+          },
+          {
+            "id": "H06",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H07",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          },
+          {
+            "id": "H08",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H09",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H10",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          }
+        ],
+        "correct": 10,
+        "total": 10,
+        "unknown": 3,
+        "false_permissions": 0,
+        "nonpermitted_gold": 8
+      },
+      "tail_one": {
+        "schema_errors": [],
+        "cases": [
+          {
+            "id": "H01",
+            "expected": "permitted",
+            "actual": "permitted",
+            "correct": true
+          },
+          {
+            "id": "H02",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H03",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          },
+          {
+            "id": "H04",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H05",
+            "expected": "permitted",
+            "actual": "permitted",
+            "correct": true
+          },
+          {
+            "id": "H06",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H07",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          },
+          {
+            "id": "H08",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H09",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H10",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          }
+        ],
+        "correct": 10,
+        "total": 10,
+        "unknown": 3,
+        "false_permissions": 0,
+        "nonpermitted_gold": 8
+      },
+      "tail_batch": {
+        "schema_errors": [],
+        "cases": [
+          {
+            "id": "H01",
+            "expected": "permitted",
+            "actual": "permitted",
+            "correct": true
+          },
+          {
+            "id": "H02",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H03",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          },
+          {
+            "id": "H04",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H05",
+            "expected": "permitted",
+            "actual": "permitted",
+            "correct": true
+          },
+          {
+            "id": "H06",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H07",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          },
+          {
+            "id": "H08",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H09",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H10",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          }
+        ],
+        "correct": 10,
+        "total": 10,
+        "unknown": 3,
+        "false_permissions": 0,
+        "nonpermitted_gold": 8
+      },
+      "tail_strong": {
+        "schema_errors": [],
+        "cases": [
+          {
+            "id": "H01",
+            "expected": "permitted",
+            "actual": "permitted",
+            "correct": true
+          },
+          {
+            "id": "H02",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H03",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          },
+          {
+            "id": "H04",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H05",
+            "expected": "permitted",
+            "actual": "permitted",
+            "correct": true
+          },
+          {
+            "id": "H06",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H07",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          },
+          {
+            "id": "H08",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H09",
+            "expected": "blocked",
+            "actual": "blocked",
+            "correct": true
+          },
+          {
+            "id": "H10",
+            "expected": "unknown",
+            "actual": "unknown",
+            "correct": true
+          }
+        ],
+        "correct": 10,
+        "total": 10,
+        "unknown": 3,
+        "false_permissions": 0,
+        "nonpermitted_gold": 8
+      }
+    },
+    "human_approvals": 0,
+    "human_minutes": null,
+    "token_usage": null,
+    "provider_model_version": null,
+    "monetary_cost": null
+  }
+}

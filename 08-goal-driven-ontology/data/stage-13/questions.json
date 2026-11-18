@@ -1,0 +1,32 @@
+{
+  "questions": [
+    {
+      "id": "Q1",
+      "question": "State the complete necessary and sufficient closure condition for the specified cases."
+    },
+    {
+      "id": "Q2",
+      "question": "What does the exception route require and which governing conditions does it not waive?"
+    },
+    {
+      "id": "Q3",
+      "question": "Which evidence establishes exception authorization, and how are rejection and missing evidence different?"
+    },
+    {
+      "id": "Q4",
+      "question": "Can a major repair with supervisor approval use the exception on the evaluation date? Explain applicability."
+    },
+    {
+      "id": "Q5",
+      "question": "Can the June draft or vendor payment recommendation remove the reconciliation or hold condition? Explain authority."
+    }
+  ],
+  "allowed_model_fields": [
+    "identity_verified",
+    "active_hold",
+    "routine_packet_complete",
+    "minor_repair_scope",
+    "exception_reconciled",
+    "exception_authorized"
+  ]
+}

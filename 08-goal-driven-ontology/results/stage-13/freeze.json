@@ -1,0 +1,10 @@
+{
+  "data/stage-13/gold.json": "cebca2733585344da9ba519df356cf9182fea55a38e7aff5eb352496c5fba771",
+  "data/stage-13/head.json": "bae9b913261140f4738ee3083c4013b0b35e5c5d2e9865d6fadc7303d151d05b",
+  "data/stage-13/hidden_cases.json": "b03dc45517d230ebc8f4cfb8e4c7d50130e60ac355bbf92d82980498e06b8aa9",
+  "data/stage-13/middle.json": "9e98a4baba50740227ce78ef70bda5a3143768bb448131e6ba287dea57c1c6da",
+  "data/stage-13/questions.json": "e4b6075ffc179bdf6521b1aac8df08511a3620e61c5ba0946b9eb677f1a0f4e2",
+  "data/stage-13/tail.json": "37ca1a45e0a99629af83cde1edda55a7388812a396e6197b3ab65cf715fa4ebe",
+  "prompts/stage-13/contract.txt": "149d21b276a160a96a4acda58ef574919127f80a6d0504f33b6cae3f70702da8",
+  "protocol/stage-13.md": "4c3b4bc3caf8728ae444ab2762fb5124924b471337c910d1b0a7b2b75f257dfb"
+}

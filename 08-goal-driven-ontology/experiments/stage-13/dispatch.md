@@ -1,0 +1,10 @@
+# Stage 13 actual dispatch
+
+2026-11-18. Nine fresh model workers were isolated by rotation/arm, with no conversation history inherited or explicit model override. Workers were asked to read only the assigned contract, shared questions, evidence, and in second passes their own draft. Unobserved provider model version, randomness, human time and token usage are not estimated. No external or paid API was called. The workers were instructed not to see gold, held-out facts, other candidates, or Internet sources. This is instruction-based isolation, not a separate filesystem security boundary.
+
+- One-shot: each worker read its full ordered packet once and authored a proposed expression and five open-language answers without a revision.
+- Fixed batches: first permitted only its first-four block file. Missing evidence could lead to a null draft model and explicit unknown answers. The same worker was then shown the remaining-five file and revised. Final output used the strict full contract. Both drafts and final outputs preserved.
+- Two full passes: the same case-specific worker read the complete packet for a draft, and checked the same full packet for the second pass. Both outputs preserved.
+- Both revision prompts asked workers to recheck authority, effective period, scope, unknown evidence, and citation support. Differences in cumulative evidence exposure and review cycles are inherent comparisons, not token or cost matched.
+- A separate worker scored shuffled answers without ids revealing methods or layout. Semantic accuracy and source support were graded independently. Strict required citations were also checked mechanically. A distractor explicitly rejected for a correct reason does not count as a wrong-authority citation.
+- The ten held-out facts and expected decisions were frozen before extraction. Only the final extracted Boolean expression was used for each replay; no documents or LLM at decision time. The fields already exist and are mapped by the fixture, so this tests portable rule composition, not autonomous ontology induction.

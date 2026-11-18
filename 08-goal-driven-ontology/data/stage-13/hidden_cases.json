@@ -1,0 +1,122 @@
+[
+  {
+    "id": "H01",
+    "facts": {
+      "identity_verified": true,
+      "active_hold": false,
+      "routine_packet_complete": false,
+      "minor_repair_scope": true,
+      "exception_reconciled": true,
+      "exception_authorized": true
+    },
+    "expected": "permitted"
+  },
+  {
+    "id": "H02",
+    "facts": {
+      "identity_verified": true,
+      "active_hold": false,
+      "routine_packet_complete": false,
+      "minor_repair_scope": false,
+      "exception_reconciled": true,
+      "exception_authorized": true
+    },
+    "expected": "blocked"
+  },
+  {
+    "id": "H03",
+    "facts": {
+      "identity_verified": true,
+      "active_hold": false,
+      "routine_packet_complete": false,
+      "minor_repair_scope": true,
+      "exception_reconciled": true,
+      "exception_authorized": null
+    },
+    "expected": "unknown"
+  },
+  {
+    "id": "H04",
+    "facts": {
+      "identity_verified": true,
+      "active_hold": false,
+      "routine_packet_complete": false,
+      "minor_repair_scope": true,
+      "exception_reconciled": true,
+      "exception_authorized": false
+    },
+    "expected": "blocked"
+  },
+  {
+    "id": "H05",
+    "facts": {
+      "identity_verified": true,
+      "active_hold": false,
+      "routine_packet_complete": true,
+      "minor_repair_scope": false,
+      "exception_reconciled": null,
+      "exception_authorized": null
+    },
+    "expected": "permitted"
+  },
+  {
+    "id": "H06",
+    "facts": {
+      "identity_verified": true,
+      "active_hold": true,
+      "routine_packet_complete": false,
+      "minor_repair_scope": true,
+      "exception_reconciled": true,
+      "exception_authorized": true
+    },
+    "expected": "blocked"
+  },
+  {
+    "id": "H07",
+    "facts": {
+      "identity_verified": null,
+      "active_hold": false,
+      "routine_packet_complete": false,
+      "minor_repair_scope": true,
+      "exception_reconciled": true,
+      "exception_authorized": true
+    },
+    "expected": "unknown"
+  },
+  {
+    "id": "H08",
+    "facts": {
+      "identity_verified": true,
+      "active_hold": false,
+      "routine_packet_complete": false,
+      "minor_repair_scope": true,
+      "exception_reconciled": false,
+      "exception_authorized": true
+    },
+    "expected": "blocked"
+  },
+  {
+    "id": "H09",
+    "facts": {
+      "identity_verified": true,
+      "active_hold": true,
+      "routine_packet_complete": false,
+      "minor_repair_scope": true,
+      "exception_reconciled": true,
+      "exception_authorized": null
+    },
+    "expected": "blocked"
+  },
+  {
+    "id": "H10",
+    "facts": {
+      "identity_verified": true,
+      "active_hold": null,
+      "routine_packet_complete": true,
+      "minor_repair_scope": true,
+      "exception_reconciled": true,
+      "exception_authorized": true
+    },
+    "expected": "unknown"
+  }
+]

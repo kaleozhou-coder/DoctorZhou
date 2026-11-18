@@ -1,0 +1,272 @@
+{
+  "A01": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct July minor-only scope, future effective date, rejected historical/regional distractors, and routine alternative."
+  },
+  "A02": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct draft/vendor nonauthority; distinguishes exception reconciliation from universal hold condition."
+  },
+  "A03": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct current scope and October effective date; cited historical and regional rules are rejected appropriately."
+  },
+  "A04": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct nonamendment and route-specific reconciliation; routine route is not burdened with exception conditions."
+  },
+  "A05": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct matching unrevoked register approval and false/unknown distinction; route consequences follow governing logic."
+  },
+  "A06": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct July exclusion of major repairs despite approval and future October expansion; routine alternative supported."
+  },
+  "A07": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct three-part exception conjunction and retained identity/hold gates."
+  },
+  "A08": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct register evidence and false/null distinction; vendor acceptance is appropriately rejected."
+  },
+  "A09": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct exception conditions and retained common closure gates."
+  },
+  "A10": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct scope/date analysis; historical and Southbay sources are cited only to reject applicability."
+  },
+  "A11": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct draft/vendor nonauthority and retained reconciliation/hold requirements."
+  },
+  "A12": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct register evidence, rejection/revocation false, missing unknown; technician acceptance appropriately excluded."
+  },
+  "A13": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct July minor-only exception and October expansion; routine route and distractor rejections supported."
+  },
+  "A14": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct exception conjunction and exact register authorization definition; common gates retained."
+  },
+  "A15": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct jointly necessary and sufficient exception conditions without waiving identity or holds."
+  },
+  "A16": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct unsigned draft and vendor nonauthority; shipment acceptance exclusion and retained gates supported."
+  },
+  "A17": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Complete exhaustive closure formula with correct scope/date and unknown distinction."
+  },
+  "A18": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Complete closure formula; three-valued propagation is a reasonable logical elaboration of unknown evidence and alternative routes."
+  },
+  "A19": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct exact approval-register test and false versus unavailable distinction."
+  },
+  "A20": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct rejection of draft/vendor amendments, exception-only reconciliation, and universal hold gate."
+  },
+  "A21": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Complete exhaustive closure formula; false conjunct and satisfied alternative consequences are consistent with unknown semantics."
+  },
+  "A22": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Complete closure formula and register definition; routine independence and unknown facts preserved."
+  },
+  "A23": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct evidence definition and false/unknown route consequences; routine independence supported."
+  },
+  "A24": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct current minor scope, future effective date, and routine alternative; distractors appropriately rejected."
+  },
+  "A25": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct draft/vendor authority analysis and surviving exception reconciliation/common hold gate."
+  },
+  "A26": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct matching unrevoked register approval, false/null distinction, and independent routine route."
+  },
+  "A27": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct register test and false/unknown distinction; missing reconciliation also unknown."
+  },
+  "A28": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct exception conjunction, common gates, and inability of approval to cure scope failure."
+  },
+  "A29": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct current authority analysis; historical payment rule rejected and future reconciliation/hold provisions accurately described."
+  },
+  "A30": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct register authorization and rejection/null distinction; payment/email cannot substitute and routine route remains independent."
+  },
+  "A31": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Complete exhaustive closure formula; unknown evidence is not collapsed to false."
+  },
+  "A32": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Complete closure formula and routine independence; preserves unavailable facts as unknown."
+  },
+  "A33": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Complete closure formula, routine independence, and unknown semantics; only satisfied conditions permit closure."
+  },
+  "A34": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct necessary/sufficient exception conjunction and identity/hold conditions for both routes."
+  },
+  "A35": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct exception conjunction, retained common gates, and unavailable evidence distinction."
+  },
+  "A36": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct draft/vendor nonauthority; properly limits reconciliation requirement to exception route."
+  },
+  "A37": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct July scope and October effective date; historical/regional exclusions and routine alternative supported."
+  },
+  "A38": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Complete exhaustive closure condition; payment/email insufficiency and unknown evidence supported."
+  },
+  "A39": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct three necessary and sufficient exception conditions with retained identity and hold gates."
+  },
+  "A40": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Complete closure condition; logical effects of false common condition and true alternative are supported."
+  },
+  "A41": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct draft/vendor nonauthority and exception-specific reconciliation versus common hold condition."
+  },
+  "A42": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct register test and false/null distinction; payment/email insufficiency and routine independence supported."
+  },
+  "A43": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct minor-only July exception, October expansion, and routine alternative; historical/regional/refund sources appropriately rejected."
+  },
+  "A44": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct necessary/sufficient exception conjunction without identity or active-hold waiver."
+  },
+  "A45": {
+    "meaning": true,
+    "support": true,
+    "wrong_citation": false,
+    "note": "Correct current scope, future effective date, and routine alternative; historical/regional/refund exclusions supported."
+  }
+}
