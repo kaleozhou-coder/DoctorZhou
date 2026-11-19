@@ -1,0 +1,19 @@
+{
+  "public_inputs/family_a/M12.txt": "c7ad1c58e14eea8c4bff2fcdbd56ac9953ec13d4772a2bda7947c1e62791e57c",
+  "public_inputs/family_a/M29.txt": "e5dce735a3af0a791c9260e5d7f5084e2b7fdc66567702c4dfb899a4a35186ea",
+  "public_inputs/family_a/M37.txt": "a5ca4f18a3a729a7e7d090ef2a44a8312ba909ffc0105db428e6f791f7aad730",
+  "public_inputs/family_a/M64.txt": "7bd8a6bf1274bcbc852d408338bbb8bd592e863cfeda943edf96859beb0ec900",
+  "public_inputs/family_a/M83.txt": "1cea09d58f53262407b8bd735d1142b1be49c2ff34e370bf37f80cd56ab11a51",
+  "public_inputs/family_a/dictionary.json": "76beca7a0332cda7a9a88ce6e14ad4e7a6cb22cd5b8bf2a43cf0ebd4288b1eb7",
+  "public_inputs/family_a/task.json": "3f6e5da653542a6fd2d56dbd5e75b1e55bec839634c6c6a886059d4068c2d176",
+  "public_inputs/family_b/R06.txt": "d96423e9198b504628393ca797ee7c28ce045537cd2ffab80c2131a55ca29442",
+  "public_inputs/family_b/R32.txt": "72bed5d8a9183bb2e720891e6672d5788838ea2b7f1eaf3125edfa159dacfaba",
+  "public_inputs/family_b/R58.txt": "b95e7216f529b3be0465bb097ba7abd7f9939f6ce99fe551a5175df5026b5e34",
+  "public_inputs/family_b/R74.txt": "0f1568955ce8f8a4922ae44782b13d1a20e2911a24fe98ed5008b19dc649f889",
+  "public_inputs/family_b/R91.txt": "e95d953f2275321479fe4f71c10d012c69879aa726f48c1861d3ab5131985b53",
+  "public_inputs/family_b/dictionary.json": "abadd92e576c5b664fdaeaab2e23421d45aa9103419e5d64f68bbdd61616564b",
+  "public_inputs/family_b/task.json": "7029ddd2cd4bdc2f2931ad6f8dadfdbda093c944418a99ef34835ba48f7dabe6",
+  "public_inputs/manifest.json": "2a2bb0cd6f61c1e133dad03700b1fb6e35c624af40852571ff2eabed33550c54",
+  "holdout/family_a-gold.json": "7017a202ea1f1de0021196c000b3a7505b81d8a803d37749e9e841989ce055cd",
+  "holdout/family_b-gold.json": "ab31282cab23f91b3b71944f43e826fa890880e488d64ff298e6d34d7c8f075b"
+}

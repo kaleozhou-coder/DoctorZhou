@@ -1,0 +1,33 @@
+{
+  "synthetic": true,
+  "scope": "澄川公司差旅借款资料进入归档复核队列",
+  "field_type": "boolean_or_null",
+  "null_means": "证据不可得或尚未确认；不得推断为false。",
+  "fields": [
+    {
+      "name": "person_verified",
+      "observable": "人员核验记录是否明确显示完成。"
+    },
+    {
+      "name": "active_pause",
+      "observable": "资料是否存在有效暂停标记。"
+    },
+    {
+      "name": "receipt_packet_complete",
+      "observable": "正常票据包是否齐全。"
+    },
+    {
+      "name": "receipt_loss_recorded",
+      "observable": "是否有记录明确确认属于票据遗失情形。"
+    },
+    {
+      "name": "witness_record_complete",
+      "observable": "见证记录是否完整。"
+    },
+    {
+      "name": "review_registered",
+      "observable": "台账是否存在匹配资料编号且未撤回的资料复核员确认；明确拒绝或撤回记false。"
+    }
+  ],
+  "exclusions": "不得从金额、语气、相邻记录、字段名称或其他业务操作推断字段值。预声明字段仅约束候选表达式词表，不给出组合逻辑。"
+}

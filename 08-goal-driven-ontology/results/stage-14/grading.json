@@ -1,0 +1,653 @@
+{
+  "a": {
+    "one": {
+      "citation_required_covered": 3,
+      "citation_required_total": 3,
+      "citation_extra": [
+        "M37.txt",
+        "M64.txt"
+      ],
+      "citation_missing": [],
+      "citation_invalid": [],
+      "heldout_correct": 8,
+      "heldout_total": 8,
+      "heldout_false_allow": 0,
+      "cases": [
+        {
+          "id": "family_a-01",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        },
+        {
+          "id": "family_a-02",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        },
+        {
+          "id": "family_a-03",
+          "gold": "DENY",
+          "predicted": "DENY"
+        },
+        {
+          "id": "family_a-04",
+          "gold": "DENY",
+          "predicted": "DENY"
+        },
+        {
+          "id": "family_a-05",
+          "gold": "UNKNOWN",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_a-06",
+          "gold": "UNKNOWN",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_a-07",
+          "gold": "DENY",
+          "predicted": "DENY"
+        },
+        {
+          "id": "family_a-08",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        }
+      ],
+      "exhaustive": {
+        "evaluated": 729,
+        "different": 0,
+        "differences_on_complete": 0,
+        "false_allow": 0,
+        "false_allow_first": null,
+        "first_difference": null
+      }
+    },
+    "batch": {
+      "citation_required_covered": 3,
+      "citation_required_total": 3,
+      "citation_extra": [
+        "M37.txt",
+        "M64.txt"
+      ],
+      "citation_missing": [],
+      "citation_invalid": [],
+      "heldout_correct": 8,
+      "heldout_total": 8,
+      "heldout_false_allow": 0,
+      "cases": [
+        {
+          "id": "family_a-01",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        },
+        {
+          "id": "family_a-02",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        },
+        {
+          "id": "family_a-03",
+          "gold": "DENY",
+          "predicted": "DENY"
+        },
+        {
+          "id": "family_a-04",
+          "gold": "DENY",
+          "predicted": "DENY"
+        },
+        {
+          "id": "family_a-05",
+          "gold": "UNKNOWN",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_a-06",
+          "gold": "UNKNOWN",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_a-07",
+          "gold": "DENY",
+          "predicted": "DENY"
+        },
+        {
+          "id": "family_a-08",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        }
+      ],
+      "exhaustive": {
+        "evaluated": 729,
+        "different": 0,
+        "differences_on_complete": 0,
+        "false_allow": 0,
+        "false_allow_first": null,
+        "first_difference": null
+      }
+    },
+    "review": {
+      "citation_required_covered": 3,
+      "citation_required_total": 3,
+      "citation_extra": [
+        "M37.txt",
+        "M64.txt"
+      ],
+      "citation_missing": [],
+      "citation_invalid": [],
+      "heldout_correct": 8,
+      "heldout_total": 8,
+      "heldout_false_allow": 0,
+      "cases": [
+        {
+          "id": "family_a-01",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        },
+        {
+          "id": "family_a-02",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        },
+        {
+          "id": "family_a-03",
+          "gold": "DENY",
+          "predicted": "DENY"
+        },
+        {
+          "id": "family_a-04",
+          "gold": "DENY",
+          "predicted": "DENY"
+        },
+        {
+          "id": "family_a-05",
+          "gold": "UNKNOWN",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_a-06",
+          "gold": "UNKNOWN",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_a-07",
+          "gold": "DENY",
+          "predicted": "DENY"
+        },
+        {
+          "id": "family_a-08",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        }
+      ],
+      "exhaustive": {
+        "evaluated": 729,
+        "different": 0,
+        "differences_on_complete": 0,
+        "false_allow": 0,
+        "false_allow_first": null,
+        "first_difference": null
+      }
+    },
+    "batch_draft": {
+      "citation_required_covered": 1,
+      "citation_required_total": 3,
+      "citation_extra": [
+        "M37.txt"
+      ],
+      "citation_missing": [
+        "M29.txt",
+        "M83.txt"
+      ],
+      "citation_invalid": [],
+      "heldout_correct": 2,
+      "heldout_total": 8,
+      "heldout_false_allow": 0,
+      "cases": [
+        {
+          "id": "family_a-01",
+          "gold": "ALLOW",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_a-02",
+          "gold": "ALLOW",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_a-03",
+          "gold": "DENY",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_a-04",
+          "gold": "DENY",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_a-05",
+          "gold": "UNKNOWN",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_a-06",
+          "gold": "UNKNOWN",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_a-07",
+          "gold": "DENY",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_a-08",
+          "gold": "ALLOW",
+          "predicted": "UNKNOWN"
+        }
+      ],
+      "exhaustive": {
+        "evaluated": 729,
+        "different": 510,
+        "differences_on_complete": 64,
+        "false_allow": 0,
+        "false_allow_first": null,
+        "first_difference": {
+          "facts": {
+            "active_pause": false,
+            "person_verified": false,
+            "receipt_loss_recorded": false,
+            "receipt_packet_complete": false,
+            "review_registered": false,
+            "witness_record_complete": false
+          },
+          "gold": "DENY",
+          "predicted": "UNKNOWN"
+        }
+      }
+    },
+    "review_draft": {
+      "citation_required_covered": 3,
+      "citation_required_total": 3,
+      "citation_extra": [],
+      "citation_missing": [],
+      "citation_invalid": [],
+      "heldout_correct": 8,
+      "heldout_total": 8,
+      "heldout_false_allow": 0,
+      "cases": [
+        {
+          "id": "family_a-01",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        },
+        {
+          "id": "family_a-02",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        },
+        {
+          "id": "family_a-03",
+          "gold": "DENY",
+          "predicted": "DENY"
+        },
+        {
+          "id": "family_a-04",
+          "gold": "DENY",
+          "predicted": "DENY"
+        },
+        {
+          "id": "family_a-05",
+          "gold": "UNKNOWN",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_a-06",
+          "gold": "UNKNOWN",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_a-07",
+          "gold": "DENY",
+          "predicted": "DENY"
+        },
+        {
+          "id": "family_a-08",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        }
+      ],
+      "exhaustive": {
+        "evaluated": 729,
+        "different": 0,
+        "differences_on_complete": 0,
+        "false_allow": 0,
+        "false_allow_first": null,
+        "first_difference": null
+      }
+    }
+  },
+  "b": {
+    "one": {
+      "citation_required_covered": 3,
+      "citation_required_total": 3,
+      "citation_extra": [],
+      "citation_missing": [],
+      "citation_invalid": [],
+      "heldout_correct": 8,
+      "heldout_total": 8,
+      "heldout_false_allow": 0,
+      "cases": [
+        {
+          "id": "family_b-01",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        },
+        {
+          "id": "family_b-02",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        },
+        {
+          "id": "family_b-03",
+          "gold": "UNKNOWN",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_b-04",
+          "gold": "DENY",
+          "predicted": "DENY"
+        },
+        {
+          "id": "family_b-05",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        },
+        {
+          "id": "family_b-06",
+          "gold": "UNKNOWN",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_b-07",
+          "gold": "DENY",
+          "predicted": "DENY"
+        },
+        {
+          "id": "family_b-08",
+          "gold": "DENY",
+          "predicted": "DENY"
+        }
+      ],
+      "exhaustive": {
+        "evaluated": 729,
+        "different": 0,
+        "differences_on_complete": 0,
+        "false_allow": 0,
+        "false_allow_first": null,
+        "first_difference": null
+      }
+    },
+    "batch": {
+      "citation_required_covered": 3,
+      "citation_required_total": 3,
+      "citation_extra": [
+        "R06.txt",
+        "R74.txt"
+      ],
+      "citation_missing": [],
+      "citation_invalid": [],
+      "heldout_correct": 8,
+      "heldout_total": 8,
+      "heldout_false_allow": 0,
+      "cases": [
+        {
+          "id": "family_b-01",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        },
+        {
+          "id": "family_b-02",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        },
+        {
+          "id": "family_b-03",
+          "gold": "UNKNOWN",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_b-04",
+          "gold": "DENY",
+          "predicted": "DENY"
+        },
+        {
+          "id": "family_b-05",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        },
+        {
+          "id": "family_b-06",
+          "gold": "UNKNOWN",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_b-07",
+          "gold": "DENY",
+          "predicted": "DENY"
+        },
+        {
+          "id": "family_b-08",
+          "gold": "DENY",
+          "predicted": "DENY"
+        }
+      ],
+      "exhaustive": {
+        "evaluated": 729,
+        "different": 0,
+        "differences_on_complete": 0,
+        "false_allow": 0,
+        "false_allow_first": null,
+        "first_difference": null
+      }
+    },
+    "review": {
+      "citation_required_covered": 3,
+      "citation_required_total": 3,
+      "citation_extra": [
+        "R06.txt",
+        "R74.txt"
+      ],
+      "citation_missing": [],
+      "citation_invalid": [],
+      "heldout_correct": 8,
+      "heldout_total": 8,
+      "heldout_false_allow": 0,
+      "cases": [
+        {
+          "id": "family_b-01",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        },
+        {
+          "id": "family_b-02",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        },
+        {
+          "id": "family_b-03",
+          "gold": "UNKNOWN",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_b-04",
+          "gold": "DENY",
+          "predicted": "DENY"
+        },
+        {
+          "id": "family_b-05",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        },
+        {
+          "id": "family_b-06",
+          "gold": "UNKNOWN",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_b-07",
+          "gold": "DENY",
+          "predicted": "DENY"
+        },
+        {
+          "id": "family_b-08",
+          "gold": "DENY",
+          "predicted": "DENY"
+        }
+      ],
+      "exhaustive": {
+        "evaluated": 729,
+        "different": 0,
+        "differences_on_complete": 0,
+        "false_allow": 0,
+        "false_allow_first": null,
+        "first_difference": null
+      }
+    },
+    "batch_draft": {
+      "citation_required_covered": 1,
+      "citation_required_total": 3,
+      "citation_extra": [
+        "R06.txt"
+      ],
+      "citation_missing": [
+        "R32.txt",
+        "R91.txt"
+      ],
+      "citation_invalid": [],
+      "heldout_correct": 2,
+      "heldout_total": 8,
+      "heldout_false_allow": 0,
+      "cases": [
+        {
+          "id": "family_b-01",
+          "gold": "ALLOW",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_b-02",
+          "gold": "ALLOW",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_b-03",
+          "gold": "UNKNOWN",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_b-04",
+          "gold": "DENY",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_b-05",
+          "gold": "ALLOW",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_b-06",
+          "gold": "UNKNOWN",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_b-07",
+          "gold": "DENY",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_b-08",
+          "gold": "DENY",
+          "predicted": "UNKNOWN"
+        }
+      ],
+      "exhaustive": {
+        "evaluated": 729,
+        "different": 498,
+        "differences_on_complete": 64,
+        "false_allow": 0,
+        "false_allow_first": null,
+        "first_difference": {
+          "facts": {
+            "damage_found": false,
+            "followup_opened": false,
+            "handover_received": false,
+            "open_dispute": false,
+            "original_stocked": false,
+            "replacement_registered": false
+          },
+          "gold": "DENY",
+          "predicted": "UNKNOWN"
+        }
+      }
+    },
+    "review_draft": {
+      "citation_required_covered": 3,
+      "citation_required_total": 3,
+      "citation_extra": [],
+      "citation_missing": [],
+      "citation_invalid": [],
+      "heldout_correct": 8,
+      "heldout_total": 8,
+      "heldout_false_allow": 0,
+      "cases": [
+        {
+          "id": "family_b-01",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        },
+        {
+          "id": "family_b-02",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        },
+        {
+          "id": "family_b-03",
+          "gold": "UNKNOWN",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_b-04",
+          "gold": "DENY",
+          "predicted": "DENY"
+        },
+        {
+          "id": "family_b-05",
+          "gold": "ALLOW",
+          "predicted": "ALLOW"
+        },
+        {
+          "id": "family_b-06",
+          "gold": "UNKNOWN",
+          "predicted": "UNKNOWN"
+        },
+        {
+          "id": "family_b-07",
+          "gold": "DENY",
+          "predicted": "DENY"
+        },
+        {
+          "id": "family_b-08",
+          "gold": "DENY",
+          "predicted": "DENY"
+        }
+      ],
+      "exhaustive": {
+        "evaluated": 729,
+        "different": 0,
+        "differences_on_complete": 0,
+        "false_allow": 0,
+        "false_allow_first": null,
+        "first_difference": null
+      }
+    }
+  }
+}

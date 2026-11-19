@@ -1,0 +1,33 @@
+{
+  "synthetic": true,
+  "scope": "映禾公司借用设备记录进入返还核对队列",
+  "field_type": "boolean_or_null",
+  "null_means": "证据不可得或尚未确认；不得推断为false。",
+  "fields": [
+    {
+      "name": "handover_received",
+      "observable": "借用设备的交接接收登记是否完成。"
+    },
+    {
+      "name": "original_stocked",
+      "observable": "原借用设备回库记录是否完成。"
+    },
+    {
+      "name": "replacement_registered",
+      "observable": "对应借用记录的替代设备交接登记是否完成。"
+    },
+    {
+      "name": "damage_found",
+      "observable": "设备检查是否明确发现损伤；明确未发现为false。"
+    },
+    {
+      "name": "followup_opened",
+      "observable": "对应维修跟进单是否已建立。"
+    },
+    {
+      "name": "open_dispute",
+      "observable": "是否存在未解决的争议。"
+    }
+  ],
+  "exclusions": "不得从金额、语气、相邻记录、字段名称或其他业务操作推断字段值。预声明字段仅约束候选表达式词表，不给出组合逻辑。"
+}

@@ -1,0 +1,38 @@
+{
+  "family_a": {
+    "source_order": [
+      "M37.txt",
+      "M12.txt",
+      "M64.txt",
+      "M29.txt",
+      "M83.txt"
+    ],
+    "task": "family_a/task.json",
+    "dictionary": "family_a/dictionary.json",
+    "source_files": [
+      "family_a/M37.txt",
+      "family_a/M12.txt",
+      "family_a/M64.txt",
+      "family_a/M29.txt",
+      "family_a/M83.txt"
+    ]
+  },
+  "family_b": {
+    "source_order": [
+      "R58.txt",
+      "R06.txt",
+      "R91.txt",
+      "R32.txt",
+      "R74.txt"
+    ],
+    "task": "family_b/task.json",
+    "dictionary": "family_b/dictionary.json",
+    "source_files": [
+      "family_b/R58.txt",
+      "family_b/R06.txt",
+      "family_b/R91.txt",
+      "family_b/R32.txt",
+      "family_b/R74.txt"
+    ]
+  }
+}

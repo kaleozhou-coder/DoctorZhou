@@ -1,0 +1,129 @@
+{
+  "synthetic": true,
+  "evaluation_date": "2026-08-15",
+  "scope": "映禾公司借用设备记录进入返还核对队列",
+  "expression": [
+    "and",
+    "handover_received",
+    [
+      "or",
+      "original_stocked",
+      "replacement_registered"
+    ],
+    [
+      "or",
+      [
+        "not",
+        "damage_found"
+      ],
+      "followup_opened"
+    ],
+    [
+      "not",
+      "open_dispute"
+    ]
+  ],
+  "required_files": [
+    "R32.txt",
+    "R58.txt",
+    "R91.txt"
+  ],
+  "cases": [
+    {
+      "id": "family_b-01",
+      "facts": {
+        "handover_received": true,
+        "original_stocked": true,
+        "replacement_registered": false,
+        "damage_found": false,
+        "followup_opened": false,
+        "open_dispute": false
+      },
+      "expected": "ALLOW"
+    },
+    {
+      "id": "family_b-02",
+      "facts": {
+        "handover_received": true,
+        "original_stocked": false,
+        "replacement_registered": true,
+        "damage_found": true,
+        "followup_opened": true,
+        "open_dispute": false
+      },
+      "expected": "ALLOW"
+    },
+    {
+      "id": "family_b-03",
+      "facts": {
+        "handover_received": true,
+        "original_stocked": true,
+        "replacement_registered": false,
+        "damage_found": null,
+        "followup_opened": false,
+        "open_dispute": false
+      },
+      "expected": "UNKNOWN"
+    },
+    {
+      "id": "family_b-04",
+      "facts": {
+        "handover_received": true,
+        "original_stocked": false,
+        "replacement_registered": false,
+        "damage_found": null,
+        "followup_opened": false,
+        "open_dispute": false
+      },
+      "expected": "DENY"
+    },
+    {
+      "id": "family_b-05",
+      "facts": {
+        "handover_received": true,
+        "original_stocked": null,
+        "replacement_registered": true,
+        "damage_found": null,
+        "followup_opened": true,
+        "open_dispute": false
+      },
+      "expected": "ALLOW"
+    },
+    {
+      "id": "family_b-06",
+      "facts": {
+        "handover_received": true,
+        "original_stocked": true,
+        "replacement_registered": false,
+        "damage_found": false,
+        "followup_opened": false,
+        "open_dispute": null
+      },
+      "expected": "UNKNOWN"
+    },
+    {
+      "id": "family_b-07",
+      "facts": {
+        "handover_received": true,
+        "original_stocked": true,
+        "replacement_registered": true,
+        "damage_found": true,
+        "followup_opened": false,
+        "open_dispute": false
+      },
+      "expected": "DENY"
+    },
+    {
+      "id": "family_b-08",
+      "facts": {
+        "handover_received": false,
+        "original_stocked": true,
+        "replacement_registered": true,
+        "damage_found": false,
+        "followup_opened": true,
+        "open_dispute": true
+      },
+      "expected": "DENY"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "synthetic": true,
+  "evaluation_date": "2026-08-15",
+  "scope": "澄川公司差旅借款资料进入归档复核队列",
+  "expression": [
+    "and",
+    "person_verified",
+    [
+      "not",
+      "active_pause"
+    ],
+    [
+      "or",
+      "receipt_packet_complete",
+      [
+        "and",
+        "receipt_loss_recorded",
+        "witness_record_complete",
+        "review_registered"
+      ]
+    ]
+  ],
+  "required_files": [
+    "M29.txt",
+    "M12.txt",
+    "M83.txt"
+  ],
+  "cases": [
+    {
+      "id": "family_a-01",
+      "facts": {
+        "person_verified": true,
+        "active_pause": false,
+        "receipt_packet_complete": true,
+        "receipt_loss_recorded": false,
+        "witness_record_complete": null,
+        "review_registered": false
+      },
+      "expected": "ALLOW"
+    },
+    {
+      "id": "family_a-02",
+      "facts": {
+        "person_verified": true,
+        "active_pause": false,
+        "receipt_packet_complete": false,
+        "receipt_loss_recorded": true,
+        "witness_record_complete": true,
+        "review_registered": true
+      },
+      "expected": "ALLOW"
+    },
+    {
+      "id": "family_a-03",
+      "facts": {
+        "person_verified": true,
+        "active_pause": false,
+        "receipt_packet_complete": false,
+        "receipt_loss_recorded": true,
+        "witness_record_complete": false,
+        "review_registered": true
+      },
+      "expected": "DENY"
+    },
+    {
+      "id": "family_a-04",
+      "facts": {
+        "person_verified": true,
+        "active_pause": true,
+        "receipt_packet_complete": true,
+        "receipt_loss_recorded": true,
+        "witness_record_complete": true,
+        "review_registered": true
+      },
+      "expected": "DENY"
+    },
+    {
+      "id": "family_a-05",
+      "facts": {
+        "person_verified": true,
+        "active_pause": false,
+        "receipt_packet_complete": false,
+        "receipt_loss_recorded": true,
+        "witness_record_complete": null,
+        "review_registered": true
+      },
+      "expected": "UNKNOWN"
+    },
+    {
+      "id": "family_a-06",
+      "facts": {
+        "person_verified": true,
+        "active_pause": false,
+        "receipt_packet_complete": null,
+        "receipt_loss_recorded": false,
+        "witness_record_complete": true,
+        "review_registered": true
+      },
+      "expected": "UNKNOWN"
+    },
+    {
+      "id": "family_a-07",
+      "facts": {
+        "person_verified": false,
+        "active_pause": null,
+        "receipt_packet_complete": true,
+        "receipt_loss_recorded": true,
+        "witness_record_complete": true,
+        "review_registered": true
+      },
+      "expected": "DENY"
+    },
+    {
+      "id": "family_a-08",
+      "facts": {
+        "person_verified": true,
+        "active_pause": false,
+        "receipt_packet_complete": true,
+        "receipt_loss_recorded": null,
+        "witness_record_complete": null,
+        "review_registered": null
+      },
+      "expected": "ALLOW"
+    }
+  ]
+}
