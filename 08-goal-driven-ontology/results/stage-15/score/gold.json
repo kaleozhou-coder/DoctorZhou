@@ -1,0 +1,160 @@
+{
+  "complete": {
+    "sign_days": {
+      "value": 30,
+      "source": "R7"
+    },
+    "sign_trigger": {
+      "value": "award_notice_issued",
+      "source": "R7"
+    },
+    "advance_pct": {
+      "value": 30,
+      "source": "R7"
+    },
+    "advance_workdays": {
+      "value": 10,
+      "source": "R7"
+    },
+    "advance_guarantee": {
+      "value": "if_required",
+      "source": "R7"
+    },
+    "install_days": {
+      "value": 30,
+      "source": "A"
+    },
+    "install_trigger": {
+      "value": "buyer_install_notice",
+      "source": "A"
+    },
+    "missing_docs": []
+  },
+  "withheld": {
+    "sign_days": {
+      "value": null,
+      "source": "M"
+    },
+    "sign_trigger": {
+      "value": null,
+      "source": "M"
+    },
+    "advance_pct": {
+      "value": null,
+      "source": "M"
+    },
+    "advance_workdays": {
+      "value": null,
+      "source": "M"
+    },
+    "advance_guarantee": {
+      "value": null,
+      "source": "M"
+    },
+    "install_days": {
+      "value": 30,
+      "source": "A"
+    },
+    "install_trigger": {
+      "value": "buyer_install_notice",
+      "source": "A"
+    },
+    "missing_docs": [
+      "R7"
+    ]
+  },
+  "historical_days": 12,
+  "purpose": "冻结规则值、直接证据和边界用例；不提交给抽取者。",
+  "cases": [
+    [
+      "s12",
+      "sign",
+      12,
+      "award_notice_issued",
+      "PASS",
+      "UNKNOWN",
+      "PASS"
+    ],
+    [
+      "s13",
+      "sign",
+      13,
+      "award_notice_issued",
+      "PASS",
+      "UNKNOWN",
+      "FAIL"
+    ],
+    [
+      "s20",
+      "sign",
+      20,
+      "award_notice_issued",
+      "PASS",
+      "UNKNOWN",
+      "FAIL"
+    ],
+    [
+      "s30",
+      "sign",
+      30,
+      "award_notice_issued",
+      "PASS",
+      "UNKNOWN",
+      "FAIL"
+    ],
+    [
+      "s31",
+      "sign",
+      31,
+      "award_notice_issued",
+      "FAIL",
+      "UNKNOWN",
+      "FAIL"
+    ],
+    [
+      "sU",
+      "sign",
+      20,
+      null,
+      "UNKNOWN",
+      "UNKNOWN",
+      "UNKNOWN"
+    ],
+    [
+      "sB",
+      "sign",
+      20,
+      "buyer_install_notice",
+      "UNKNOWN",
+      "UNKNOWN",
+      "UNKNOWN"
+    ],
+    [
+      "i30",
+      "install",
+      30,
+      "buyer_install_notice",
+      "PASS",
+      "PASS",
+      "PASS"
+    ],
+    [
+      "i31",
+      "install",
+      31,
+      "buyer_install_notice",
+      "FAIL",
+      "FAIL",
+      "FAIL"
+    ],
+    [
+      "iA",
+      "install",
+      20,
+      "award_notice_issued",
+      "UNKNOWN",
+      "UNKNOWN",
+      "UNKNOWN"
+    ]
+  ]
+}

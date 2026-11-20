@@ -1,0 +1,1277 @@
+{
+  "stage": 15,
+  "historical_reconstruction_control": {
+    "correct": 10,
+    "case_count": 10,
+    "flip_case_ids": [
+      "s13",
+      "s20",
+      "s30"
+    ],
+    "model_run": false
+  },
+  "final_cells": {
+    "complete-one": {
+      "value_correct": 7,
+      "direct_citations": 7,
+      "exclusive_direct_citations": 7,
+      "unavailable_citations": 0,
+      "missing_docs_correct": true,
+      "case_correct": 10,
+      "case_count": 10,
+      "unsafe_pass": 0,
+      "nonpass_count": 5,
+      "correct_unknown": 3,
+      "unknown_count": 3,
+      "checks": [
+        {
+          "field": "sign_days",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "sign_trigger",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_pct",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_workdays",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_guarantee",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "install_days",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "install_trigger",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        }
+      ],
+      "cases": [
+        {
+          "id": "s12",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "s13",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "s20",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "s30",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "s31",
+          "predicted": "FAIL",
+          "gold": "FAIL",
+          "match": true
+        },
+        {
+          "id": "sU",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "sB",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "i30",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "i31",
+          "predicted": "FAIL",
+          "gold": "FAIL",
+          "match": true
+        },
+        {
+          "id": "iA",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        }
+      ]
+    },
+    "complete-batch": {
+      "value_correct": 7,
+      "direct_citations": 7,
+      "exclusive_direct_citations": 7,
+      "unavailable_citations": 0,
+      "missing_docs_correct": true,
+      "case_correct": 10,
+      "case_count": 10,
+      "unsafe_pass": 0,
+      "nonpass_count": 5,
+      "correct_unknown": 3,
+      "unknown_count": 3,
+      "checks": [
+        {
+          "field": "sign_days",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "sign_trigger",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_pct",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_workdays",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_guarantee",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "install_days",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "install_trigger",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        }
+      ],
+      "cases": [
+        {
+          "id": "s12",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "s13",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "s20",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "s30",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "s31",
+          "predicted": "FAIL",
+          "gold": "FAIL",
+          "match": true
+        },
+        {
+          "id": "sU",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "sB",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "i30",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "i31",
+          "predicted": "FAIL",
+          "gold": "FAIL",
+          "match": true
+        },
+        {
+          "id": "iA",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        }
+      ]
+    },
+    "complete-strong": {
+      "value_correct": 7,
+      "direct_citations": 7,
+      "exclusive_direct_citations": 7,
+      "unavailable_citations": 0,
+      "missing_docs_correct": true,
+      "case_correct": 10,
+      "case_count": 10,
+      "unsafe_pass": 0,
+      "nonpass_count": 5,
+      "correct_unknown": 3,
+      "unknown_count": 3,
+      "checks": [
+        {
+          "field": "sign_days",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "sign_trigger",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_pct",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_workdays",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_guarantee",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "install_days",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "install_trigger",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        }
+      ],
+      "cases": [
+        {
+          "id": "s12",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "s13",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "s20",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "s30",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "s31",
+          "predicted": "FAIL",
+          "gold": "FAIL",
+          "match": true
+        },
+        {
+          "id": "sU",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "sB",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "i30",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "i31",
+          "predicted": "FAIL",
+          "gold": "FAIL",
+          "match": true
+        },
+        {
+          "id": "iA",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        }
+      ]
+    },
+    "withheld-one": {
+      "value_correct": 7,
+      "direct_citations": 7,
+      "exclusive_direct_citations": 7,
+      "unavailable_citations": 0,
+      "missing_docs_correct": true,
+      "case_correct": 10,
+      "case_count": 10,
+      "unsafe_pass": 0,
+      "nonpass_count": 9,
+      "correct_unknown": 8,
+      "unknown_count": 8,
+      "checks": [
+        {
+          "field": "sign_days",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "sign_trigger",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_pct",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_workdays",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_guarantee",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "install_days",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "install_trigger",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        }
+      ],
+      "cases": [
+        {
+          "id": "s12",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "s13",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "s20",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "s30",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "s31",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "sU",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "sB",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "i30",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "i31",
+          "predicted": "FAIL",
+          "gold": "FAIL",
+          "match": true
+        },
+        {
+          "id": "iA",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        }
+      ]
+    },
+    "withheld-batch": {
+      "value_correct": 7,
+      "direct_citations": 7,
+      "exclusive_direct_citations": 7,
+      "unavailable_citations": 0,
+      "missing_docs_correct": true,
+      "case_correct": 10,
+      "case_count": 10,
+      "unsafe_pass": 0,
+      "nonpass_count": 9,
+      "correct_unknown": 8,
+      "unknown_count": 8,
+      "checks": [
+        {
+          "field": "sign_days",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "sign_trigger",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_pct",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_workdays",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_guarantee",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "install_days",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "install_trigger",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        }
+      ],
+      "cases": [
+        {
+          "id": "s12",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "s13",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "s20",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "s30",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "s31",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "sU",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "sB",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "i30",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "i31",
+          "predicted": "FAIL",
+          "gold": "FAIL",
+          "match": true
+        },
+        {
+          "id": "iA",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        }
+      ]
+    },
+    "withheld-strong": {
+      "value_correct": 7,
+      "direct_citations": 7,
+      "exclusive_direct_citations": 7,
+      "unavailable_citations": 0,
+      "missing_docs_correct": true,
+      "case_correct": 10,
+      "case_count": 10,
+      "unsafe_pass": 0,
+      "nonpass_count": 9,
+      "correct_unknown": 8,
+      "unknown_count": 8,
+      "checks": [
+        {
+          "field": "sign_days",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "sign_trigger",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_pct",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_workdays",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_guarantee",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "install_days",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "install_trigger",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        }
+      ],
+      "cases": [
+        {
+          "id": "s12",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "s13",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "s20",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "s30",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "s31",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "sU",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "sB",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "i30",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "i31",
+          "predicted": "FAIL",
+          "gold": "FAIL",
+          "match": true
+        },
+        {
+          "id": "iA",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        }
+      ]
+    }
+  },
+  "process_drafts_scored_against_final": {
+    "complete-batch-draft": {
+      "value_correct": 0,
+      "direct_citations": 0,
+      "exclusive_direct_citations": 0,
+      "unavailable_citations": 0,
+      "missing_docs_correct": false,
+      "case_correct": 3,
+      "case_count": 10,
+      "unsafe_pass": 0,
+      "nonpass_count": 5,
+      "correct_unknown": 3,
+      "unknown_count": 3,
+      "checks": [
+        {
+          "field": "sign_days",
+          "value": false,
+          "direct_citation": false,
+          "exclusive_direct_citation": false,
+          "unavailable_citations": []
+        },
+        {
+          "field": "sign_trigger",
+          "value": false,
+          "direct_citation": false,
+          "exclusive_direct_citation": false,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_pct",
+          "value": false,
+          "direct_citation": false,
+          "exclusive_direct_citation": false,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_workdays",
+          "value": false,
+          "direct_citation": false,
+          "exclusive_direct_citation": false,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_guarantee",
+          "value": false,
+          "direct_citation": false,
+          "exclusive_direct_citation": false,
+          "unavailable_citations": []
+        },
+        {
+          "field": "install_days",
+          "value": false,
+          "direct_citation": false,
+          "exclusive_direct_citation": false,
+          "unavailable_citations": []
+        },
+        {
+          "field": "install_trigger",
+          "value": false,
+          "direct_citation": false,
+          "exclusive_direct_citation": false,
+          "unavailable_citations": []
+        }
+      ],
+      "cases": [
+        {
+          "id": "s12",
+          "predicted": "UNKNOWN",
+          "gold": "PASS",
+          "match": false
+        },
+        {
+          "id": "s13",
+          "predicted": "UNKNOWN",
+          "gold": "PASS",
+          "match": false
+        },
+        {
+          "id": "s20",
+          "predicted": "UNKNOWN",
+          "gold": "PASS",
+          "match": false
+        },
+        {
+          "id": "s30",
+          "predicted": "UNKNOWN",
+          "gold": "PASS",
+          "match": false
+        },
+        {
+          "id": "s31",
+          "predicted": "UNKNOWN",
+          "gold": "FAIL",
+          "match": false
+        },
+        {
+          "id": "sU",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "sB",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "i30",
+          "predicted": "UNKNOWN",
+          "gold": "PASS",
+          "match": false
+        },
+        {
+          "id": "i31",
+          "predicted": "UNKNOWN",
+          "gold": "FAIL",
+          "match": false
+        },
+        {
+          "id": "iA",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        }
+      ]
+    },
+    "complete-strong-draft": {
+      "value_correct": 7,
+      "direct_citations": 7,
+      "exclusive_direct_citations": 7,
+      "unavailable_citations": 0,
+      "missing_docs_correct": true,
+      "case_correct": 10,
+      "case_count": 10,
+      "unsafe_pass": 0,
+      "nonpass_count": 5,
+      "correct_unknown": 3,
+      "unknown_count": 3,
+      "checks": [
+        {
+          "field": "sign_days",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "sign_trigger",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_pct",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_workdays",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_guarantee",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "install_days",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "install_trigger",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        }
+      ],
+      "cases": [
+        {
+          "id": "s12",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "s13",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "s20",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "s30",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "s31",
+          "predicted": "FAIL",
+          "gold": "FAIL",
+          "match": true
+        },
+        {
+          "id": "sU",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "sB",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "i30",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "i31",
+          "predicted": "FAIL",
+          "gold": "FAIL",
+          "match": true
+        },
+        {
+          "id": "iA",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        }
+      ]
+    },
+    "withheld-batch-draft": {
+      "value_correct": 5,
+      "direct_citations": 5,
+      "exclusive_direct_citations": 5,
+      "unavailable_citations": 0,
+      "missing_docs_correct": true,
+      "case_correct": 8,
+      "case_count": 10,
+      "unsafe_pass": 0,
+      "nonpass_count": 9,
+      "correct_unknown": 8,
+      "unknown_count": 8,
+      "checks": [
+        {
+          "field": "sign_days",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "sign_trigger",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_pct",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_workdays",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_guarantee",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "install_days",
+          "value": false,
+          "direct_citation": false,
+          "exclusive_direct_citation": false,
+          "unavailable_citations": []
+        },
+        {
+          "field": "install_trigger",
+          "value": false,
+          "direct_citation": false,
+          "exclusive_direct_citation": false,
+          "unavailable_citations": []
+        }
+      ],
+      "cases": [
+        {
+          "id": "s12",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "s13",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "s20",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "s30",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "s31",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "sU",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "sB",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "i30",
+          "predicted": "UNKNOWN",
+          "gold": "PASS",
+          "match": false
+        },
+        {
+          "id": "i31",
+          "predicted": "UNKNOWN",
+          "gold": "FAIL",
+          "match": false
+        },
+        {
+          "id": "iA",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        }
+      ]
+    },
+    "withheld-strong-draft": {
+      "value_correct": 7,
+      "direct_citations": 7,
+      "exclusive_direct_citations": 7,
+      "unavailable_citations": 0,
+      "missing_docs_correct": true,
+      "case_correct": 10,
+      "case_count": 10,
+      "unsafe_pass": 0,
+      "nonpass_count": 9,
+      "correct_unknown": 8,
+      "unknown_count": 8,
+      "checks": [
+        {
+          "field": "sign_days",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "sign_trigger",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_pct",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_workdays",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "advance_guarantee",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "install_days",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        },
+        {
+          "field": "install_trigger",
+          "value": true,
+          "direct_citation": true,
+          "exclusive_direct_citation": true,
+          "unavailable_citations": []
+        }
+      ],
+      "cases": [
+        {
+          "id": "s12",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "s13",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "s20",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "s30",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "s31",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "sU",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "sB",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        },
+        {
+          "id": "i30",
+          "predicted": "PASS",
+          "gold": "PASS",
+          "match": true
+        },
+        {
+          "id": "i31",
+          "predicted": "FAIL",
+          "gold": "FAIL",
+          "match": true
+        },
+        {
+          "id": "iA",
+          "predicted": "UNKNOWN",
+          "gold": "UNKNOWN",
+          "match": true
+        }
+      ]
+    }
+  }
+}

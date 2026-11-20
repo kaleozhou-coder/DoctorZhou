@@ -1,0 +1,26 @@
+{
+  "M": {
+    "kind": "synthetic_fixture_control",
+    "note": "人为标注更正替代关系，帮模型明确区分原版有效事实与据已知更正但缺正文。不是官网独立清单。"
+  },
+  "O": {
+    "kind": "derived_paraphrase_old_text",
+    "source": "https://czj.huaian.gov.cn/col/17161_228874/content/17802432/ff8080819f0f9c46019f116080d90004.html",
+    "section": "二、更正信息第1、2项的原文部分；无独立 Word 原始字节"
+  },
+  "R7": {
+    "kind": "derived_paraphrase_revised_text",
+    "source": "https://czj.huaian.gov.cn/col/17161_228874/content/17802432/ff8080819f0f9c46019f116080d90004.html",
+    "section": "二、更正信息第1、2项的新版部分；未核 Word 或真实履约"
+  },
+  "A": {
+    "kind": "derived_paraphrase_installation",
+    "source": "https://czj.huaian.gov.cn/col/17089_262412/content/17802432/ff8080819ec7833d019eca7f263b0040.html",
+    "section": "一、基本情况中的合同履行期限"
+  },
+  "B": {
+    "kind": "derived_paraphrase_different_round",
+    "source": "https://czj.huaian.gov.cn/col/17073_285261/content/17881920/ff808081a0637ffa01a066805641002b.html",
+    "section": "项目编号与合同签订日期；只保留非个人字段"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "sign_days": {"value": null, "evidence": ["M"]},
+  "sign_trigger": {"value": null, "evidence": ["M"]},
+  "advance_pct": {"value": null, "evidence": ["M"]},
+  "advance_workdays": {"value": null, "evidence": ["M"]},
+  "advance_guarantee": {"value": null, "evidence": ["M"]},
+  "install_days": {"value": null, "evidence": []},
+  "install_trigger": {"value": null, "evidence": []},
+  "missing_docs": ["R7"]
+}

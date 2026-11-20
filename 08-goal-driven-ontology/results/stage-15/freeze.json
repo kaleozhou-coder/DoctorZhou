@@ -1,0 +1,15 @@
+{
+  "frozen_before_calls": true,
+  "protocol": "three methods \u00d7 two source packets; one isolated cell per combination; no causal order comparison",
+  "hashes": {
+    "packets/A.txt": "603a970ea33a1b58e4640e26c816472842d8b084e076c4b092a7512f9b26c7fc",
+    "packets/B.txt": "e85f0e13ca0a2356710c47cc85e0d87733ec07be204821d27369737b4f1ad131",
+    "packets/M.txt": "8e1c45878201abf5c5eff27375742cae47de43b906c1bc9fb117b85c9ed76a2e",
+    "packets/O.txt": "f127d374408540ff5ebeef4c068420945b0f65f32806b3e6c3c56b6b4310a5bb",
+    "packets/R7.txt": "8ca46d1d1ecdee03f0070c90dc623c1112d587658828fc8fc509658227b365a8",
+    "packets/order.json": "d52d34ffaf2282df7b6b7694c8a07edd0aa19afb4e66412a2e033c88d1159551",
+    "packets/task.txt": "a13a522860e58bc795264f92b880aaafdcb0ddd2134928acac14e4fefe725d4f",
+    "score/gold.json": "8a9804495c0fecec377923a5d078d3693da7fffe1b9962d4d63231cea2b250c3",
+    "source-map.json": "69d46f9866d604a750628d3feaa13c59c74453451f7ddea8c7f4c7f2866a945f"
+  }
+}
