@@ -1,0 +1,88 @@
+{
+  "q_type_basis": [
+    "SPEC",
+    [
+      "Q6"
+    ]
+  ],
+  "q_allowed_type": [
+    "OEM_ONLY",
+    [
+      "Q6"
+    ]
+  ],
+  "q_size_basis": [
+    "BOQ",
+    [
+      "Q4"
+    ]
+  ],
+  "q_mcc2205": [
+    "NOT_REQUIRED",
+    [
+      "Q4"
+    ]
+  ],
+  "q_opening": [
+    "2026-07-16",
+    [
+      "Q0",
+      "QA"
+    ]
+  ],
+  "q_last_platform_notice_label": [
+    "NOTICE_08",
+    [
+      "QA"
+    ]
+  ],
+  "m_current_material_basis": [
+    "UNKNOWN",
+    [
+      "M5",
+      "M0"
+    ]
+  ],
+  "m_color": [
+    "GRAY",
+    [
+      "M5"
+    ]
+  ],
+  "m_missing_locator": [
+    "J8",
+    [
+      "M0"
+    ]
+  ],
+  "n_material": [
+    "ALUMINUM",
+    [
+      "N4"
+    ]
+  ],
+  "n_color": [
+    "BLUE",
+    [
+      "N4"
+    ]
+  ],
+  "n_missing_locator": [
+    "NONE",
+    [
+      "N0"
+    ]
+  ],
+  "y_proposal_status": [
+    "NOT_ADOPTED_IN_REPLY",
+    [
+      "Y1"
+    ]
+  ],
+  "y_current_ratio": [
+    "UNKNOWN",
+    [
+      "Y1"
+    ]
+  ]
+}

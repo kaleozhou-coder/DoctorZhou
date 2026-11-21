@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-21",
+  "public_material_is_paraphrased": true,
+  "input_provenance": [
+    {
+      "ids": ["Q0","Q4","Q6","Q9","QA"],
+      "url": "https://ggzy.qingdao.gov.cn/c/TradeDetals-ZtbShow/180342-5021-0-0-0/f898fd50-fe09-46db-af63-08b3fda20f52-B03CE5B6FC1D2D3C2D5FCEBC39AA2406.html",
+      "anchors": {"Q0":"2026年项目和标段；答疑板块","Q4":"平台第4版答疑通知（04）问题八1至3","Q6":"平台第6版答疑（06）第一节和第二节","Q9":"平台第9版改期开标室","QA":"平台第10版、通知（08），供电专业和第二节"},
+      "adaptation": "节选转述；Q6未保留原答复和显式更正措辞；不含个人联系方式、全部技术附件、定标或履约材料。"
+    },
+    {
+      "ids": ["Y1"],
+      "url": "https://ggzy.sc.yichang.gov.cn/jyxx/003001/003001003/20250618/000a2752-85a7-402b-8e51-99f287252632.html",
+      "anchors": "2025-06-18首次澄清第42问、正式回复及正文第二节",
+      "adaptation": "仅转述月进度款建议及正式回复；大量上下文与个人联系方式未进入输入；不确定有效合同中的实际值。"
+    },
+    {
+      "ids": ["M0","M5","M9","N0","N4","N6","N9"],
+      "type": "SYNTHETIC",
+      "adaptation": "两个人造独立项目。J8定位在M0，正文不存在于材料；N6正文写L-8、不适用于L-7。"
+    }
+  ],
+  "related_work": "https://aclanthology.org/2020.acl-main.442/"
+}

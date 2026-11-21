@@ -1,0 +1,435 @@
+{
+  "front-one": {
+    "final": {
+      "value": 14,
+      "joint": 13,
+      "posthoc_relaxed_joint": 14,
+      "wrong_values": [],
+      "non_gold_evidence": [
+        "q_opening"
+      ],
+      "group_joint": {
+        "public_amendment": 5,
+        "missing_body": 3,
+        "complete_other_lot": 3,
+        "speaker": 2
+      },
+      "unresolved_as_concrete": [],
+      "check_score": 12,
+      "false_positive_checks": [],
+      "unexpected_checks": [],
+      "check_outcomes": {
+        "Q-OK": "pass",
+        "Q-ALT": "fail",
+        "Q-DRAW": "fail",
+        "Q-ABSENT": "unknown",
+        "M-MAT-SPEC": "unknown",
+        "M-MAT-PRE": "unknown",
+        "M-COLOR": "pass",
+        "M-NEAR": "fail",
+        "N-KEEP": "pass",
+        "N-WRONG-LOT": "fail",
+        "N-MISSING-OFFER": "unknown",
+        "Y-PROPOSED": "unknown"
+      },
+      "missing_known_revision": false,
+      "false_missing_when_complete": false
+    }
+  },
+  "front-batch": {
+    "final": {
+      "value": 14,
+      "joint": 13,
+      "posthoc_relaxed_joint": 14,
+      "wrong_values": [],
+      "non_gold_evidence": [
+        "q_opening"
+      ],
+      "group_joint": {
+        "public_amendment": 5,
+        "missing_body": 3,
+        "complete_other_lot": 3,
+        "speaker": 2
+      },
+      "unresolved_as_concrete": [],
+      "check_score": 12,
+      "false_positive_checks": [],
+      "unexpected_checks": [],
+      "check_outcomes": {
+        "Q-OK": "pass",
+        "Q-ALT": "fail",
+        "Q-DRAW": "fail",
+        "Q-ABSENT": "unknown",
+        "M-MAT-SPEC": "unknown",
+        "M-MAT-PRE": "unknown",
+        "M-COLOR": "pass",
+        "M-NEAR": "fail",
+        "N-KEEP": "pass",
+        "N-WRONG-LOT": "fail",
+        "N-MISSING-OFFER": "unknown",
+        "Y-PROPOSED": "unknown"
+      },
+      "missing_known_revision": false,
+      "false_missing_when_complete": false
+    },
+    "draft": {
+      "value": 9,
+      "joint": 6,
+      "posthoc_relaxed_joint": 7,
+      "wrong_values": [
+        "m_color",
+        "n_material",
+        "n_color",
+        "n_missing_locator",
+        "y_proposal_status"
+      ],
+      "non_gold_evidence": [
+        "q_opening",
+        "m_current_material_basis",
+        "y_current_ratio"
+      ],
+      "group_joint": {
+        "public_amendment": 5,
+        "missing_body": 1,
+        "complete_other_lot": 0,
+        "speaker": 0
+      },
+      "unresolved_as_concrete": [],
+      "check_score": 8,
+      "false_positive_checks": [],
+      "unexpected_checks": [
+        "M-COLOR",
+        "M-NEAR",
+        "N-KEEP",
+        "N-WRONG-LOT"
+      ],
+      "check_outcomes": {
+        "Q-OK": "pass",
+        "Q-ALT": "fail",
+        "Q-DRAW": "fail",
+        "Q-ABSENT": "unknown",
+        "M-MAT-SPEC": "unknown",
+        "M-MAT-PRE": "unknown",
+        "M-COLOR": "unknown",
+        "M-NEAR": "unknown",
+        "N-KEEP": "unknown",
+        "N-WRONG-LOT": "unknown",
+        "N-MISSING-OFFER": "unknown",
+        "Y-PROPOSED": "unknown"
+      },
+      "missing_known_revision": false,
+      "false_missing_when_complete": false
+    },
+    "revised_value": [
+      "m_color",
+      "n_material",
+      "n_color",
+      "n_missing_locator",
+      "y_proposal_status"
+    ],
+    "revised_clauses": [
+      "m_current_material_basis",
+      "m_color",
+      "n_material",
+      "n_color",
+      "n_missing_locator",
+      "y_proposal_status",
+      "y_current_ratio"
+    ]
+  },
+  "front-strong": {
+    "final": {
+      "value": 14,
+      "joint": 12,
+      "posthoc_relaxed_joint": 14,
+      "wrong_values": [],
+      "non_gold_evidence": [
+        "q_opening",
+        "m_missing_locator"
+      ],
+      "group_joint": {
+        "public_amendment": 5,
+        "missing_body": 2,
+        "complete_other_lot": 3,
+        "speaker": 2
+      },
+      "unresolved_as_concrete": [],
+      "check_score": 12,
+      "false_positive_checks": [],
+      "unexpected_checks": [],
+      "check_outcomes": {
+        "Q-OK": "pass",
+        "Q-ALT": "fail",
+        "Q-DRAW": "fail",
+        "Q-ABSENT": "unknown",
+        "M-MAT-SPEC": "unknown",
+        "M-MAT-PRE": "unknown",
+        "M-COLOR": "pass",
+        "M-NEAR": "fail",
+        "N-KEEP": "pass",
+        "N-WRONG-LOT": "fail",
+        "N-MISSING-OFFER": "unknown",
+        "Y-PROPOSED": "unknown"
+      },
+      "missing_known_revision": false,
+      "false_missing_when_complete": false
+    },
+    "draft": {
+      "value": 14,
+      "joint": 13,
+      "posthoc_relaxed_joint": 14,
+      "wrong_values": [],
+      "non_gold_evidence": [
+        "q_opening"
+      ],
+      "group_joint": {
+        "public_amendment": 5,
+        "missing_body": 3,
+        "complete_other_lot": 3,
+        "speaker": 2
+      },
+      "unresolved_as_concrete": [],
+      "check_score": 12,
+      "false_positive_checks": [],
+      "unexpected_checks": [],
+      "check_outcomes": {
+        "Q-OK": "pass",
+        "Q-ALT": "fail",
+        "Q-DRAW": "fail",
+        "Q-ABSENT": "unknown",
+        "M-MAT-SPEC": "unknown",
+        "M-MAT-PRE": "unknown",
+        "M-COLOR": "pass",
+        "M-NEAR": "fail",
+        "N-KEEP": "pass",
+        "N-WRONG-LOT": "fail",
+        "N-MISSING-OFFER": "unknown",
+        "Y-PROPOSED": "unknown"
+      },
+      "missing_known_revision": false,
+      "false_missing_when_complete": false
+    },
+    "revised_value": [],
+    "revised_clauses": [
+      "m_current_material_basis",
+      "m_missing_locator"
+    ]
+  },
+  "end-one": {
+    "final": {
+      "value": 14,
+      "joint": 13,
+      "posthoc_relaxed_joint": 14,
+      "wrong_values": [],
+      "non_gold_evidence": [
+        "q_opening"
+      ],
+      "group_joint": {
+        "public_amendment": 5,
+        "missing_body": 3,
+        "complete_other_lot": 3,
+        "speaker": 2
+      },
+      "unresolved_as_concrete": [],
+      "check_score": 12,
+      "false_positive_checks": [],
+      "unexpected_checks": [],
+      "check_outcomes": {
+        "Q-OK": "pass",
+        "Q-ALT": "fail",
+        "Q-DRAW": "fail",
+        "Q-ABSENT": "unknown",
+        "M-MAT-SPEC": "unknown",
+        "M-MAT-PRE": "unknown",
+        "M-COLOR": "pass",
+        "M-NEAR": "fail",
+        "N-KEEP": "pass",
+        "N-WRONG-LOT": "fail",
+        "N-MISSING-OFFER": "unknown",
+        "Y-PROPOSED": "unknown"
+      },
+      "missing_known_revision": false,
+      "false_missing_when_complete": false
+    }
+  },
+  "end-batch": {
+    "final": {
+      "value": 14,
+      "joint": 11,
+      "posthoc_relaxed_joint": 12,
+      "wrong_values": [],
+      "non_gold_evidence": [
+        "q_opening",
+        "m_current_material_basis",
+        "y_current_ratio"
+      ],
+      "group_joint": {
+        "public_amendment": 5,
+        "missing_body": 2,
+        "complete_other_lot": 3,
+        "speaker": 1
+      },
+      "unresolved_as_concrete": [],
+      "check_score": 12,
+      "false_positive_checks": [],
+      "unexpected_checks": [],
+      "check_outcomes": {
+        "Q-OK": "pass",
+        "Q-ALT": "fail",
+        "Q-DRAW": "fail",
+        "Q-ABSENT": "unknown",
+        "M-MAT-SPEC": "unknown",
+        "M-MAT-PRE": "unknown",
+        "M-COLOR": "pass",
+        "M-NEAR": "fail",
+        "N-KEEP": "pass",
+        "N-WRONG-LOT": "fail",
+        "N-MISSING-OFFER": "unknown",
+        "Y-PROPOSED": "unknown"
+      },
+      "missing_known_revision": false,
+      "false_missing_when_complete": false
+    },
+    "draft": {
+      "value": 8,
+      "joint": 5,
+      "posthoc_relaxed_joint": 6,
+      "wrong_values": [
+        "q_type_basis",
+        "q_allowed_type",
+        "n_material",
+        "n_color",
+        "n_missing_locator",
+        "y_proposal_status"
+      ],
+      "non_gold_evidence": [
+        "q_opening",
+        "m_current_material_basis",
+        "y_current_ratio"
+      ],
+      "group_joint": {
+        "public_amendment": 3,
+        "missing_body": 2,
+        "complete_other_lot": 0,
+        "speaker": 0
+      },
+      "unresolved_as_concrete": [],
+      "check_score": 8,
+      "false_positive_checks": [],
+      "unexpected_checks": [
+        "N-KEEP",
+        "N-WRONG-LOT",
+        "Q-ALT",
+        "Q-OK"
+      ],
+      "check_outcomes": {
+        "Q-OK": "unknown",
+        "Q-ALT": "unknown",
+        "Q-DRAW": "fail",
+        "Q-ABSENT": "unknown",
+        "M-MAT-SPEC": "unknown",
+        "M-MAT-PRE": "unknown",
+        "M-COLOR": "pass",
+        "M-NEAR": "fail",
+        "N-KEEP": "unknown",
+        "N-WRONG-LOT": "unknown",
+        "N-MISSING-OFFER": "unknown",
+        "Y-PROPOSED": "unknown"
+      },
+      "missing_known_revision": false,
+      "false_missing_when_complete": false
+    },
+    "revised_value": [
+      "q_type_basis",
+      "q_allowed_type",
+      "n_material",
+      "n_color",
+      "n_missing_locator",
+      "y_proposal_status"
+    ],
+    "revised_clauses": [
+      "q_type_basis",
+      "q_allowed_type",
+      "n_material",
+      "n_color",
+      "n_missing_locator",
+      "y_proposal_status"
+    ]
+  },
+  "end-strong": {
+    "final": {
+      "value": 14,
+      "joint": 13,
+      "posthoc_relaxed_joint": 14,
+      "wrong_values": [],
+      "non_gold_evidence": [
+        "q_opening"
+      ],
+      "group_joint": {
+        "public_amendment": 5,
+        "missing_body": 3,
+        "complete_other_lot": 3,
+        "speaker": 2
+      },
+      "unresolved_as_concrete": [],
+      "check_score": 12,
+      "false_positive_checks": [],
+      "unexpected_checks": [],
+      "check_outcomes": {
+        "Q-OK": "pass",
+        "Q-ALT": "fail",
+        "Q-DRAW": "fail",
+        "Q-ABSENT": "unknown",
+        "M-MAT-SPEC": "unknown",
+        "M-MAT-PRE": "unknown",
+        "M-COLOR": "pass",
+        "M-NEAR": "fail",
+        "N-KEEP": "pass",
+        "N-WRONG-LOT": "fail",
+        "N-MISSING-OFFER": "unknown",
+        "Y-PROPOSED": "unknown"
+      },
+      "missing_known_revision": false,
+      "false_missing_when_complete": false
+    },
+    "draft": {
+      "value": 14,
+      "joint": 13,
+      "posthoc_relaxed_joint": 14,
+      "wrong_values": [],
+      "non_gold_evidence": [
+        "q_opening"
+      ],
+      "group_joint": {
+        "public_amendment": 5,
+        "missing_body": 3,
+        "complete_other_lot": 3,
+        "speaker": 2
+      },
+      "unresolved_as_concrete": [],
+      "check_score": 12,
+      "false_positive_checks": [],
+      "unexpected_checks": [],
+      "check_outcomes": {
+        "Q-OK": "pass",
+        "Q-ALT": "fail",
+        "Q-DRAW": "fail",
+        "Q-ABSENT": "unknown",
+        "M-MAT-SPEC": "unknown",
+        "M-MAT-PRE": "unknown",
+        "M-COLOR": "pass",
+        "M-NEAR": "fail",
+        "N-KEEP": "pass",
+        "N-WRONG-LOT": "fail",
+        "N-MISSING-OFFER": "unknown",
+        "Y-PROPOSED": "unknown"
+      },
+      "missing_known_revision": false,
+      "false_missing_when_complete": false
+    },
+    "revised_value": [],
+    "revised_clauses": [
+      "m_current_material_basis"
+    ]
+  }
+}

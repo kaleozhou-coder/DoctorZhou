@@ -1,0 +1,14 @@
+[
+ {"id":"Q-OK","fields":{"q_allowed_type":"OEM_ONLY","q_size_basis":"BOQ"},"expected":"pass"},
+ {"id":"Q-ALT","fields":{"q_allowed_type":"OEM_OR_AUTHORIZED","q_size_basis":"BOQ"},"expected":"fail"},
+ {"id":"Q-DRAW","fields":{"q_allowed_type":"OEM_ONLY","q_size_basis":"DRAWING"},"expected":"fail"},
+ {"id":"Q-ABSENT","fields":{"q_allowed_type":null,"q_size_basis":"BOQ"},"expected":"unknown"},
+ {"id":"M-MAT-SPEC","fields":{"m_current_material_basis":"SPEC"},"expected":"unknown"},
+ {"id":"M-MAT-PRE","fields":{"m_current_material_basis":"DRAWING"},"expected":"unknown"},
+ {"id":"M-COLOR","fields":{"m_color":"GRAY"},"expected":"pass"},
+ {"id":"M-NEAR","fields":{"m_current_material_basis":"SPEC","m_color":"BLUE"},"expected":"fail"},
+ {"id":"N-KEEP","fields":{"n_material":"ALUMINUM","n_color":"BLUE"},"expected":"pass"},
+ {"id":"N-WRONG-LOT","fields":{"n_material":"STEEL","n_color":"YELLOW"},"expected":"fail"},
+ {"id":"N-MISSING-OFFER","fields":{"n_material":null,"n_color":"BLUE"},"expected":"unknown"},
+ {"id":"Y-PROPOSED","fields":{"y_current_ratio":"80"},"expected":"unknown"}
+]

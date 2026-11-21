@@ -1,0 +1,16 @@
+{
+  "q_type_basis": ["DRAWING", ["Q4"]],
+  "q_allowed_type": ["UNKNOWN", []],
+  "q_size_basis": ["BOQ", ["Q4"]],
+  "q_mcc2205": ["NOT_REQUIRED", ["Q4"]],
+  "q_opening": ["2026-07-16", ["Q0", "QA"]],
+  "q_last_platform_notice_label": ["NOTICE_08", ["QA"]],
+  "m_current_material_basis": ["UNKNOWN", []],
+  "m_color": ["GRAY", ["M5"]],
+  "m_missing_locator": ["J8", ["M0"]],
+  "n_material": ["UNKNOWN", []],
+  "n_color": ["UNKNOWN", []],
+  "n_missing_locator": ["UNKNOWN", []],
+  "y_proposal_status": ["UNKNOWN", []],
+  "y_current_ratio": ["UNKNOWN", []]
+}
