@@ -1,0 +1,61 @@
+[
+  {
+    "case": "label_seeded_exact_control",
+    "n_questions": 9,
+    "totals": {
+      "VALUE_MATCH": 9,
+      "ANCHOR_OK": 9,
+      "SUPPORT_OK": 9,
+      "JOINT": 9
+    }
+  },
+  {
+    "case": "same_words_unsigned_draft",
+    "id": "Q6",
+    "value_matches": true,
+    "anchor_ok": true,
+    "support_ok": false,
+    "joint": false,
+    "anchor_status": "MATCH"
+  },
+  {
+    "case": "missing_second_half_of_gap_proof",
+    "id": "Q5",
+    "value_matches": true,
+    "anchor_ok": true,
+    "support_ok": false,
+    "joint": false,
+    "anchor_status": "MATCH"
+  },
+  {
+    "case": "ambiguous_short_string",
+    "id": "Q7",
+    "value_matches": true,
+    "anchor_ok": false,
+    "support_ok": false,
+    "joint": false,
+    "anchor_status": "QUOTE_NOT_UNIQUE"
+  },
+  {
+    "case": "fabricated_span",
+    "id": "Q6",
+    "value_matches": true,
+    "anchor_ok": false,
+    "support_ok": false,
+    "joint": false,
+    "anchor_status": "QUOTE_NOT_IN_DOCUMENT"
+  },
+  {
+    "case": "unknown_document",
+    "id": "Q6",
+    "value_matches": true,
+    "anchor_ok": false,
+    "support_ok": false,
+    "joint": false,
+    "anchor_status": "UNKNOWN_OR_UNAUTHORIZED_DOCUMENT"
+  },
+  {
+    "case": "raw_changed_same_normalized_rendition",
+    "error": "document snapshot hash mismatch"
+  }
+]

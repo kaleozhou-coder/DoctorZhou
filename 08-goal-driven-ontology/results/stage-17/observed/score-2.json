@@ -1,0 +1,256 @@
+{
+  "n_questions": 9,
+  "profile": "utf8-no-bom-lf-nfc-codepoint-v1",
+  "questions": [
+    {
+      "ANCHOR_OK": true,
+      "JOINT": true,
+      "SUPPORT_OK": true,
+      "VALUE_MATCH": true,
+      "anchors": [
+        {
+          "doc": "D2",
+          "end": 92,
+          "normalized_sha256": "b64ba874846d90e4268088814a9c993bdbf56e1032286b82a5d6f28f45f0f668",
+          "quote": "仅调整R-17一标段的避雷器额定电压为300 V；二标段和其余参数不在本次调整范围。",
+          "raw_sha256": "b64ba874846d90e4268088814a9c993bdbf56e1032286b82a5d6f28f45f0f668",
+          "start": 50,
+          "status": "MATCH"
+        }
+      ],
+      "id": "Q1",
+      "out_of_scope_anchored_docs": [],
+      "proof_alternatives_matched": [
+        1
+      ]
+    },
+    {
+      "ANCHOR_OK": true,
+      "JOINT": true,
+      "SUPPORT_OK": true,
+      "VALUE_MATCH": true,
+      "anchors": [
+        {
+          "doc": "D1",
+          "end": 89,
+          "normalized_sha256": "af9b384bac44e17ccb1d72a52a45158e2f58d0c62159b514e3baccf47eb48876",
+          "quote": "R-17一标段的避雷器额定电压为275 V，包装防护等级至少IP54",
+          "raw_sha256": "af9b384bac44e17ccb1d72a52a45158e2f58d0c62159b514e3baccf47eb48876",
+          "start": 55,
+          "status": "MATCH"
+        },
+        {
+          "doc": "D2",
+          "end": 92,
+          "normalized_sha256": "b64ba874846d90e4268088814a9c993bdbf56e1032286b82a5d6f28f45f0f668",
+          "quote": "仅调整R-17一标段的避雷器额定电压为300 V；二标段和其余参数不在本次调整范围。",
+          "raw_sha256": "b64ba874846d90e4268088814a9c993bdbf56e1032286b82a5d6f28f45f0f668",
+          "start": 50,
+          "status": "MATCH"
+        }
+      ],
+      "id": "Q2",
+      "out_of_scope_anchored_docs": [],
+      "proof_alternatives_matched": [
+        1
+      ]
+    },
+    {
+      "ANCHOR_OK": true,
+      "JOINT": true,
+      "SUPPORT_OK": true,
+      "VALUE_MATCH": true,
+      "anchors": [
+        {
+          "doc": "D1",
+          "end": 100,
+          "normalized_sha256": "af9b384bac44e17ccb1d72a52a45158e2f58d0c62159b514e3baccf47eb48876",
+          "quote": "R-17一标段的避雷器额定电压为275 V，包装防护等级至少IP54；二标段为320 V。",
+          "raw_sha256": "af9b384bac44e17ccb1d72a52a45158e2f58d0c62159b514e3baccf47eb48876",
+          "start": 55,
+          "status": "MATCH"
+        },
+        {
+          "doc": "D2",
+          "end": 92,
+          "normalized_sha256": "b64ba874846d90e4268088814a9c993bdbf56e1032286b82a5d6f28f45f0f668",
+          "quote": "仅调整R-17一标段的避雷器额定电压为300 V；二标段和其余参数不在本次调整范围。",
+          "raw_sha256": "b64ba874846d90e4268088814a9c993bdbf56e1032286b82a5d6f28f45f0f668",
+          "start": 50,
+          "status": "MATCH"
+        }
+      ],
+      "id": "Q3",
+      "out_of_scope_anchored_docs": [],
+      "proof_alternatives_matched": [
+        1
+      ]
+    },
+    {
+      "ANCHOR_OK": true,
+      "JOINT": true,
+      "SUPPORT_OK": true,
+      "VALUE_MATCH": true,
+      "anchors": [
+        {
+          "doc": "D3",
+          "end": 86,
+          "normalized_sha256": "c4880db747974c56e2a28143e38346b20f472a5f37fa0725fd03390d656bfa01",
+          "quote": "R-17两标段均从签发投运验收单之日起保修36个月。",
+          "raw_sha256": "c4880db747974c56e2a28143e38346b20f472a5f37fa0725fd03390d656bfa01",
+          "start": 60,
+          "status": "MATCH"
+        }
+      ],
+      "id": "Q4",
+      "out_of_scope_anchored_docs": [],
+      "proof_alternatives_matched": [
+        1
+      ]
+    },
+    {
+      "ANCHOR_OK": true,
+      "JOINT": true,
+      "SUPPORT_OK": true,
+      "VALUE_MATCH": true,
+      "anchors": [
+        {
+          "doc": "D1",
+          "end": 176,
+          "normalized_sha256": "af9b384bac44e17ccb1d72a52a45158e2f58d0c62159b514e3baccf47eb48876",
+          "quote": "投运验收所需的现场照片数量见该附件§7。本批由资料室导出的目录注明：附件X尚未收到。",
+          "raw_sha256": "af9b384bac44e17ccb1d72a52a45158e2f58d0c62159b514e3baccf47eb48876",
+          "start": 134,
+          "status": "MATCH"
+        },
+        {
+          "doc": "D2",
+          "end": 118,
+          "normalized_sha256": "b64ba874846d90e4268088814a9c993bdbf56e1032286b82a5d6f28f45f0f668",
+          "quote": "现发附件X第3条单页，其余条款仍不能从本次发件取得。",
+          "raw_sha256": "b64ba874846d90e4268088814a9c993bdbf56e1032286b82a5d6f28f45f0f668",
+          "start": 92,
+          "status": "MATCH"
+        }
+      ],
+      "id": "Q5",
+      "out_of_scope_anchored_docs": [],
+      "proof_alternatives_matched": [
+        1
+      ]
+    },
+    {
+      "ANCHOR_OK": true,
+      "JOINT": true,
+      "SUPPORT_OK": true,
+      "VALUE_MATCH": true,
+      "anchors": [
+        {
+          "doc": "D7",
+          "end": 76,
+          "normalized_sha256": "29d0a464d5f6f05c79d65c574de8ba465b7758090709143a4049a570b1114c04",
+          "quote": "围绕甲包《服务及交割条件》，批准末句“夜间自助通道开放至22:30”",
+          "raw_sha256": "29d0a464d5f6f05c79d65c574de8ba465b7758090709143a4049a570b1114c04",
+          "start": 42,
+          "status": "MATCH"
+        }
+      ],
+      "id": "Q6",
+      "out_of_scope_anchored_docs": [],
+      "proof_alternatives_matched": [
+        1
+      ]
+    },
+    {
+      "ANCHOR_OK": true,
+      "JOINT": true,
+      "SUPPORT_OK": true,
+      "VALUE_MATCH": true,
+      "anchors": [
+        {
+          "doc": "D5",
+          "end": 72,
+          "normalized_sha256": "ecb2f83bc9a86f0a724fe7ed17e6ed319c2d1c392775226d2d4343ad1f320ea1",
+          "quote": "标包甲：服务可用率按自然月计算，不低于99.5%",
+          "raw_sha256": "ecb2f83bc9a86f0a724fe7ed17e6ed319c2d1c392775226d2d4343ad1f320ea1",
+          "start": 48,
+          "status": "MATCH"
+        },
+        {
+          "doc": "D7",
+          "end": 93,
+          "normalized_sha256": "29d0a464d5f6f05c79d65c574de8ba465b7758090709143a4049a570b1114c04",
+          "quote": "不得按拟稿修改99.5%的指标。",
+          "raw_sha256": "29d0a464d5f6f05c79d65c574de8ba465b7758090709143a4049a570b1114c04",
+          "start": 77,
+          "status": "MATCH"
+        }
+      ],
+      "id": "Q7",
+      "out_of_scope_anchored_docs": [],
+      "proof_alternatives_matched": [
+        1
+      ]
+    },
+    {
+      "ANCHOR_OK": true,
+      "JOINT": true,
+      "SUPPORT_OK": true,
+      "VALUE_MATCH": true,
+      "anchors": [
+        {
+          "doc": "D8",
+          "end": 71,
+          "normalized_sha256": "a3541fddbdc2984a6b7eeada0154357d568eab9c57f4467c33c98720ff23f44a",
+          "quote": "历史读者账户自正式移交日算起最多保留180天。",
+          "raw_sha256": "a3541fddbdc2984a6b7eeada0154357d568eab9c57f4467c33c98720ff23f44a",
+          "start": 48,
+          "status": "MATCH"
+        }
+      ],
+      "id": "Q8",
+      "out_of_scope_anchored_docs": [],
+      "proof_alternatives_matched": [
+        1
+      ]
+    },
+    {
+      "ANCHOR_OK": true,
+      "JOINT": true,
+      "SUPPORT_OK": true,
+      "VALUE_MATCH": true,
+      "anchors": [
+        {
+          "doc": "D5",
+          "end": 161,
+          "normalized_sha256": "ecb2f83bc9a86f0a724fe7ed17e6ed319c2d1c392775226d2d4343ad1f320ea1",
+          "quote": "关于维护故障电话，文件没有列联系人或号码。",
+          "raw_sha256": "ecb2f83bc9a86f0a724fe7ed17e6ed319c2d1c392775226d2d4343ad1f320ea1",
+          "start": 140,
+          "status": "MATCH"
+        },
+        {
+          "doc": "D7",
+          "end": 137,
+          "normalized_sha256": "29d0a464d5f6f05c79d65c574de8ba465b7758090709143a4049a570b1114c04",
+          "quote": "对于维护电话，本次只明确由中标方在交割前提供；号码尚未列定，不得使用公共服务台号码替代。",
+          "raw_sha256": "29d0a464d5f6f05c79d65c574de8ba465b7758090709143a4049a570b1114c04",
+          "start": 93,
+          "status": "MATCH"
+        }
+      ],
+      "id": "Q9",
+      "out_of_scope_anchored_docs": [],
+      "proof_alternatives_matched": [
+        1
+      ]
+    }
+  ],
+  "schema": "stage17-audit-v1",
+  "totals": {
+    "ANCHOR_OK": 9,
+    "JOINT": 9,
+    "SUPPORT_OK": 9,
+    "VALUE_MATCH": 9
+  }
+}

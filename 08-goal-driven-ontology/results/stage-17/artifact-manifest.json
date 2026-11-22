@@ -1,0 +1,149 @@
+{
+  "schema": "stage17-artifact-v1",
+  "files": {
+    "frozen/01-theory.zh.md": {
+      "sha256": "f6fdfe224b1be959e4cad1cc40f6059ca29d009159db9251f8b0b8db71686968",
+      "bytes": 1163
+    },
+    "frozen/02-overview.zh.md": {
+      "sha256": "4b753a717d6ccb24ec923e6085486452e9c6a69fdfcf54ccc7bcf1ffb36e639e",
+      "bytes": 784
+    },
+    "frozen/03-detail.zh.md": {
+      "sha256": "168f38c9724ca6ea5d0fde56978234548a1933c9b08d8ceb811b4a1669decde8",
+      "bytes": 2293
+    },
+    "frozen/04-run-protocol.zh.md": {
+      "sha256": "0dc8e5063d0159ad7d2a23d93c62afe0351dd130c93b28db78c73521d3e9cdca",
+      "bytes": 1972
+    },
+    "frozen/design-frozen-at.txt": {
+      "sha256": "e657b960527c470f193885a427ab229ca37330dc0c3a3d4f634ec61e8e71ae0b",
+      "bytes": 21
+    },
+    "frozen/design-sha256.txt": {
+      "sha256": "a488875f17e38666cc744ffbf20b7893fb3d07925bbaea55b4151aa1ef85340f",
+      "bytes": 248
+    },
+    "frozen/execution-frozen-at.txt": {
+      "sha256": "c6cf6267ece107abd90867c38a7b896498cdd1eb3b24f6aa3d07d9bffea0f670",
+      "bytes": 21
+    },
+    "frozen/execution-sha256.txt": {
+      "sha256": "e83bc1452a11afc70c38fb7e00c93ff614de6f9f6261595262523702df5fe920",
+      "bytes": 2084
+    },
+    "frozen/gold.json": {
+      "sha256": "f935a22745e159ae2415da06cdaea046418bc01832626a61228f7991fa8d76e7",
+      "bytes": 3365
+    },
+    "frozen/manifest.json": {
+      "sha256": "21aa6128cabed65cf1dc4d782b63bb79dd7a8ecc1ec001617f146f1268728637",
+      "bytes": 2033
+    },
+    "frozen/model-prompt.zh.txt": {
+      "sha256": "523e4b64973d10db2142680f9bf3a5245aba379e21c5176feb661d5fbf38747e",
+      "bytes": 4316
+    },
+    "frozen/prompt-template.zh.md": {
+      "sha256": "a7fd697acabefa253bf6edf338bded4d26b5e8baa598cd29d64beb25fa122811",
+      "bytes": 1061
+    },
+    "frozen/protocol-sha256.txt": {
+      "sha256": "46f4b6f98bf93196e0829705053e7015b5783728361355fa338f5b17745dde72",
+      "bytes": 88
+    },
+    "frozen/questions.json": {
+      "sha256": "3c2a3109008eb5afbc70ea52cabeada530fa9499f281649287cc6478a407800f",
+      "bytes": 1271
+    },
+    "frozen/documents/D1.txt": {
+      "sha256": "af9b384bac44e17ccb1d72a52a45158e2f58d0c62159b514e3baccf47eb48876",
+      "bytes": 446
+    },
+    "frozen/documents/D2.txt": {
+      "sha256": "b64ba874846d90e4268088814a9c993bdbf56e1032286b82a5d6f28f45f0f668",
+      "bytes": 304
+    },
+    "frozen/documents/D3.txt": {
+      "sha256": "c4880db747974c56e2a28143e38346b20f472a5f37fa0725fd03390d656bfa01",
+      "bytes": 214
+    },
+    "frozen/documents/D4.txt": {
+      "sha256": "9dcedfab5b8cb21d634f1bfe0cd30f524671b357bdc7d3eda85b429c2f0899e7",
+      "bytes": 179
+    },
+    "frozen/documents/D5.txt": {
+      "sha256": "ecb2f83bc9a86f0a724fe7ed17e6ed319c2d1c392775226d2d4343ad1f320ea1",
+      "bytes": 439
+    },
+    "frozen/documents/D6.txt": {
+      "sha256": "8cce389ff78dded5266dc207de2b7d2170b3ba8d1102d5e26eb1bceeb3d1bb1d",
+      "bytes": 214
+    },
+    "frozen/documents/D7.txt": {
+      "sha256": "29d0a464d5f6f05c79d65c574de8ba465b7758090709143a4049a570b1114c04",
+      "bytes": 367
+    },
+    "frozen/documents/D8.txt": {
+      "sha256": "a3541fddbdc2984a6b7eeada0154357d568eab9c57f4467c33c98720ff23f44a",
+      "bytes": 183
+    },
+    "observed/controls.json": {
+      "sha256": "fd9e9342d70868f748c4067ede39f9502caeb1bd1169acd34dc0a14e4af0169c",
+      "bytes": 1285
+    },
+    "observed/python3.12-tests.log": {
+      "sha256": "55860451c70458dea40e0cc780272bda311731c1291f987d2001c015003dade7",
+      "bytes": 2142
+    },
+    "observed/python3.13-tests.log": {
+      "sha256": "858c6d3868805b53a6a5ceebaa3b3d73824f179a21be7dc0d4ce36a1217d10c5",
+      "bytes": 2141
+    },
+    "observed/run-1.json": {
+      "sha256": "cbc1761b17ea49746c2c28f0a9e3deb14aaa221b9f3e194ad1fdee2f878fc1d1",
+      "bytes": 3256
+    },
+    "observed/run-2.json": {
+      "sha256": "c8b72dba21f5e140e7853e04adb2842783a7d6b6ce726497fc80e3c0f36c2c51",
+      "bytes": 2687
+    },
+    "observed/run-context.json": {
+      "sha256": "263d46f77d4e3524f964a31105eb2c1bec0eeb84d708a4156c5c98b49712a55f",
+      "bytes": 563
+    },
+    "observed/score-1.json": {
+      "sha256": "90dc4e1aad47e82d04abb95aeb6cf73258c248eba7bbe36a98d0c7046d5c1b4f",
+      "bytes": 9540
+    },
+    "observed/score-2.json": {
+      "sha256": "826faa7fb23a482bf6556789b217cbcf4f0d3819cff8d42104d8c99d24801c25",
+      "bytes": 8335
+    },
+    "reproduction/README.md": {
+      "sha256": "02e2413ea6be6443a4ca96a1925411045d28a294b2f7b3fd19aeb0a01c3015e5",
+      "bytes": 1144
+    },
+    "reproduction/audit.py": {
+      "sha256": "3536e826b0f4f5c64070aed225882d7f5daa4a6faf64e5a857430b75602d9fb1",
+      "bytes": 13877
+    },
+    "reproduction/test_audit.py": {
+      "sha256": "cf340cc0dd4c07b37957e57d1ab666193e23b7fefd32c48b0759b405f976b6f9",
+      "bytes": 9987
+    },
+    "reproduction/run_controls.py": {
+      "sha256": "920a123de1d9f7bdfbded1ffec14ec5e33a487cad525004ab263279593fab333",
+      "bytes": 3139
+    },
+    "report.zh.md": {
+      "sha256": "a92de4b8b8369fdb4267565558171447a2f42cd008a3de542b0d1578034b787b",
+      "bytes": 5546
+    },
+    "design-update.zh.md": {
+      "sha256": "50b75d5cd684c0fcd8b4b89e1d4e3cbcc545760737960660dfeecd2f906b24aa",
+      "bytes": 2523
+    }
+  }
+}

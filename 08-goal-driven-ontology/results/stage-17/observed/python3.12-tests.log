@@ -1,0 +1,22 @@
+Python 3.12.14
+test_allowed_background_is_not_required_but_is_permitted (test_audit.AuditTests.test_allowed_background_is_not_required_but_is_permitted) ... ok
+test_alternatives_require_complete_group (test_audit.AuditTests.test_alternatives_require_complete_group) ... ok
+test_anchored_wrong_scope_is_not_support (test_audit.AuditTests.test_anchored_wrong_scope_is_not_support) ... ok
+test_cli_reports_error_without_partial_score (test_audit.AuditTests.test_cli_reports_error_without_partial_score) ... ok
+test_duplicate_citation_is_rejected_even_if_proof_already_covered (test_audit.AuditTests.test_duplicate_citation_is_rejected_even_if_proof_already_covered) ... ok
+test_exact_value_mismatch_independent_from_support (test_audit.AuditTests.test_exact_value_mismatch_independent_from_support) ... ok
+test_gold_disallowed_extra_ref_blocks_joint (test_audit.AuditTests.test_gold_disallowed_extra_ref_blocks_joint) ... ok
+test_invalid_answer_shape_and_type (test_audit.AuditTests.test_invalid_answer_shape_and_type) ... ok
+test_invalid_gold_support_is_not_silently_ignored (test_audit.AuditTests.test_invalid_gold_support_is_not_silently_ignored) ... ok
+test_invalid_paths_or_duplicate_manifest_labels (test_audit.AuditTests.test_invalid_paths_or_duplicate_manifest_labels) ... ok
+test_json_duplicate_keys_and_non_json_constants_rejected (test_audit.AuditTests.test_json_duplicate_keys_and_non_json_constants_rejected) ... ok
+test_no_quote_and_wrong_quote_are_not_credited (test_audit.AuditTests.test_no_quote_and_wrong_quote_are_not_credited) ... ok
+test_normalization_codepoint_offsets_and_sha (test_audit.AuditTests.test_normalization_codepoint_offsets_and_sha) ... ok
+test_overlap_repetition_is_ambiguous (test_audit.AuditTests.test_overlap_repetition_is_ambiguous) ... ok
+test_snapshot_rejects_raw_change_even_if_normalization_equal (test_audit.AuditTests.test_snapshot_rejects_raw_change_even_if_normalization_equal) ... ok
+test_strict_utf8_and_bom_even_ascii_tail (test_audit.AuditTests.test_strict_utf8_and_bom_even_ascii_tail) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.186s
+
+OK

@@ -1,0 +1,171 @@
+{
+  "schema": "stage17-gold-v1",
+  "questions": [
+    {
+      "id": "Q1",
+      "status": "KNOWN",
+      "value": "300",
+      "alternatives": [
+        [
+          {
+            "doc": "D2",
+            "contains": "仅调整R-17一标段的避雷器额定电压为300 V"
+          }
+        ]
+      ],
+      "allowed_docs": [
+        "D2"
+      ]
+    },
+    {
+      "id": "Q2",
+      "status": "KNOWN",
+      "value": "IP54",
+      "alternatives": [
+        [
+          {
+            "doc": "D1",
+            "contains": "包装防护等级至少IP54"
+          },
+          {
+            "doc": "D2",
+            "contains": "二标段和其余参数不在本次调整范围"
+          }
+        ]
+      ],
+      "allowed_docs": [
+        "D1",
+        "D2"
+      ]
+    },
+    {
+      "id": "Q3",
+      "status": "KNOWN",
+      "value": "320",
+      "alternatives": [
+        [
+          {
+            "doc": "D1",
+            "contains": "二标段为320 V"
+          },
+          {
+            "doc": "D2",
+            "contains": "二标段和其余参数不在本次调整范围"
+          }
+        ]
+      ],
+      "allowed_docs": [
+        "D1",
+        "D2"
+      ]
+    },
+    {
+      "id": "Q4",
+      "status": "KNOWN",
+      "value": "36",
+      "alternatives": [
+        [
+          {
+            "doc": "D3",
+            "contains": "R-17两标段均从签发投运验收单之日起保修36个月"
+          }
+        ]
+      ],
+      "allowed_docs": [
+        "D3",
+        "D2"
+      ]
+    },
+    {
+      "id": "Q5",
+      "status": "UNKNOWN",
+      "value": null,
+      "alternatives": [
+        [
+          {
+            "doc": "D1",
+            "contains": "现场照片数量见该附件§7"
+          },
+          {
+            "doc": "D2",
+            "contains": "现发附件X第3条单页，其余条款仍不能从本次发件取得"
+          }
+        ]
+      ],
+      "allowed_docs": [
+        "D1",
+        "D2"
+      ]
+    },
+    {
+      "id": "Q6",
+      "status": "KNOWN",
+      "value": "22:30",
+      "alternatives": [
+        [
+          {
+            "doc": "D7",
+            "contains": "批准末句“夜间自助通道开放至22:30”"
+          }
+        ]
+      ],
+      "allowed_docs": [
+        "D7"
+      ]
+    },
+    {
+      "id": "Q7",
+      "status": "KNOWN",
+      "value": "99.5%",
+      "alternatives": [
+        [
+          {
+            "doc": "D5",
+            "contains": "服务可用率按自然月计算，不低于99.5%"
+          },
+          {
+            "doc": "D7",
+            "contains": "不得按拟稿修改99.5%的指标"
+          }
+        ]
+      ],
+      "allowed_docs": [
+        "D5",
+        "D7"
+      ]
+    },
+    {
+      "id": "Q8",
+      "status": "KNOWN",
+      "value": "180",
+      "alternatives": [
+        [
+          {
+            "doc": "D8",
+            "contains": "历史读者账户自正式移交日算起最多保留180天"
+          }
+        ]
+      ],
+      "allowed_docs": [
+        "D8"
+      ]
+    },
+    {
+      "id": "Q9",
+      "status": "UNKNOWN",
+      "value": null,
+      "alternatives": [
+        [
+          {
+            "doc": "D7",
+            "contains": "对于维护电话，本次只明确由中标方在交割前提供；号码尚未列定"
+          }
+        ]
+      ],
+      "allowed_docs": [
+        "D5",
+        "D7"
+      ]
+    }
+  ]
+}

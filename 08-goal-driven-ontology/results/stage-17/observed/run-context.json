@@ -1,0 +1,13 @@
+{
+  "schedule_date": "2026-11-22",
+  "trial_count": 2,
+  "corpus": "two independently written fictional procurement families; same bundle across both trials",
+  "input": "frozen/model-prompt.zh.txt",
+  "input_sha256": "523e4b64973d10db2142680f9bf3a5245aba379e21c5176feb661d5fbf38747e",
+  "answer_record": "raw JSON text copied from completed isolated runs",
+  "other_retrieval_or_retry_requested": false,
+  "exact_backend_build_temperature_usage": null,
+  "human_expert_gold": false,
+  "controls_are_model_outputs": false,
+  "production_platform_tested": false
+}

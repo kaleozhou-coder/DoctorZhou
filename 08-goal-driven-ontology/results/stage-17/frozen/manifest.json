@@ -1,0 +1,53 @@
+{
+  "schema": "stage17-corpus-v1",
+  "documents": [
+    {
+      "id": "D1",
+      "path": "documents/D1.txt",
+      "raw_sha256": "af9b384bac44e17ccb1d72a52a45158e2f58d0c62159b514e3baccf47eb48876",
+      "normalized_sha256": "af9b384bac44e17ccb1d72a52a45158e2f58d0c62159b514e3baccf47eb48876"
+    },
+    {
+      "id": "D2",
+      "path": "documents/D2.txt",
+      "raw_sha256": "b64ba874846d90e4268088814a9c993bdbf56e1032286b82a5d6f28f45f0f668",
+      "normalized_sha256": "b64ba874846d90e4268088814a9c993bdbf56e1032286b82a5d6f28f45f0f668"
+    },
+    {
+      "id": "D3",
+      "path": "documents/D3.txt",
+      "raw_sha256": "c4880db747974c56e2a28143e38346b20f472a5f37fa0725fd03390d656bfa01",
+      "normalized_sha256": "c4880db747974c56e2a28143e38346b20f472a5f37fa0725fd03390d656bfa01"
+    },
+    {
+      "id": "D4",
+      "path": "documents/D4.txt",
+      "raw_sha256": "9dcedfab5b8cb21d634f1bfe0cd30f524671b357bdc7d3eda85b429c2f0899e7",
+      "normalized_sha256": "9dcedfab5b8cb21d634f1bfe0cd30f524671b357bdc7d3eda85b429c2f0899e7"
+    },
+    {
+      "id": "D5",
+      "path": "documents/D5.txt",
+      "raw_sha256": "ecb2f83bc9a86f0a724fe7ed17e6ed319c2d1c392775226d2d4343ad1f320ea1",
+      "normalized_sha256": "ecb2f83bc9a86f0a724fe7ed17e6ed319c2d1c392775226d2d4343ad1f320ea1"
+    },
+    {
+      "id": "D6",
+      "path": "documents/D6.txt",
+      "raw_sha256": "8cce389ff78dded5266dc207de2b7d2170b3ba8d1102d5e26eb1bceeb3d1bb1d",
+      "normalized_sha256": "8cce389ff78dded5266dc207de2b7d2170b3ba8d1102d5e26eb1bceeb3d1bb1d"
+    },
+    {
+      "id": "D7",
+      "path": "documents/D7.txt",
+      "raw_sha256": "29d0a464d5f6f05c79d65c574de8ba465b7758090709143a4049a570b1114c04",
+      "normalized_sha256": "29d0a464d5f6f05c79d65c574de8ba465b7758090709143a4049a570b1114c04"
+    },
+    {
+      "id": "D8",
+      "path": "documents/D8.txt",
+      "raw_sha256": "a3541fddbdc2984a6b7eeada0154357d568eab9c57f4467c33c98720ff23f44a",
+      "normalized_sha256": "a3541fddbdc2984a6b7eeada0154357d568eab9c57f4467c33c98720ff23f44a"
+    }
+  ]
+}
