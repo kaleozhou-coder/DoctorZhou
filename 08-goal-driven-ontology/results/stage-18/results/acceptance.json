@@ -1,0 +1,293 @@
+{
+  "cases": 21,
+  "counts": {
+    "correct_eligible": 4,
+    "correct_pending": 2,
+    "expected_BLOCKED": 15,
+    "expected_ELIGIBLE": 4,
+    "expected_PENDING": 2,
+    "incorrect_eligible": 0,
+    "joint_exact": 21,
+    "observed_BLOCKED": 15,
+    "observed_ELIGIBLE": 4,
+    "observed_PENDING": 2,
+    "status_exact": 21,
+    "ungated_known_unsafe": 12
+  },
+  "families": 6,
+  "rows": [
+    {
+      "expected": {
+        "reason": "DIRECT_VERIFIED",
+        "status": "ELIGIBLE"
+      },
+      "family": "RB-41-角色语境",
+      "id": "RB-01",
+      "joint_exact": true,
+      "observed": {
+        "reason": "DIRECT_VERIFIED",
+        "status": "ELIGIBLE"
+      }
+    },
+    {
+      "expected": {
+        "reason": "REQUIRED_DIRECT_MISSING",
+        "status": "BLOCKED"
+      },
+      "family": "RB-41-角色语境",
+      "id": "RB-02",
+      "joint_exact": true,
+      "observed": {
+        "reason": "REQUIRED_DIRECT_MISSING",
+        "status": "BLOCKED"
+      }
+    },
+    {
+      "expected": {
+        "reason": "EVIDENCE_ROLE_MISMATCH",
+        "status": "BLOCKED"
+      },
+      "family": "RB-41-角色语境",
+      "id": "RB-03",
+      "joint_exact": true,
+      "observed": {
+        "reason": "EVIDENCE_ROLE_MISMATCH",
+        "status": "BLOCKED"
+      }
+    },
+    {
+      "expected": {
+        "reason": "DIRECT_VERIFIED",
+        "status": "ELIGIBLE"
+      },
+      "family": "PC-08-同版错标段",
+      "id": "PC-01",
+      "joint_exact": true,
+      "observed": {
+        "reason": "DIRECT_VERIFIED",
+        "status": "ELIGIBLE"
+      }
+    },
+    {
+      "expected": {
+        "reason": "DIRECT_SCOPE_MISMATCH",
+        "status": "BLOCKED"
+      },
+      "family": "PC-08-同版错标段",
+      "id": "PC-02",
+      "joint_exact": true,
+      "observed": {
+        "reason": "DIRECT_SCOPE_MISMATCH",
+        "status": "BLOCKED"
+      }
+    },
+    {
+      "expected": {
+        "reason": "DIRECT_SCOPE_MISMATCH",
+        "status": "BLOCKED"
+      },
+      "family": "PC-08-同版错标段",
+      "id": "PC-03",
+      "joint_exact": true,
+      "observed": {
+        "reason": "DIRECT_SCOPE_MISMATCH",
+        "status": "BLOCKED"
+      }
+    },
+    {
+      "expected": {
+        "reason": "DIRECT_VERIFIED",
+        "status": "ELIGIBLE"
+      },
+      "family": "QG-60-同文无签署",
+      "id": "QG-01",
+      "joint_exact": true,
+      "observed": {
+        "reason": "DIRECT_VERIFIED",
+        "status": "ELIGIBLE"
+      }
+    },
+    {
+      "expected": {
+        "reason": "EVIDENCE_ROLE_MISMATCH",
+        "status": "BLOCKED"
+      },
+      "family": "QG-60-同文无签署",
+      "id": "QG-02",
+      "joint_exact": true,
+      "observed": {
+        "reason": "EVIDENCE_ROLE_MISMATCH",
+        "status": "BLOCKED"
+      }
+    },
+    {
+      "expected": {
+        "reason": "REQUIRED_DIRECT_MISSING",
+        "status": "BLOCKED"
+      },
+      "family": "QG-60-同文无签署",
+      "id": "QG-03",
+      "joint_exact": true,
+      "observed": {
+        "reason": "REQUIRED_DIRECT_MISSING",
+        "status": "BLOCKED"
+      }
+    },
+    {
+      "expected": {
+        "reason": "SOURCE_NOT_ADMISSIBLE",
+        "status": "BLOCKED"
+      },
+      "family": "QG-60-同文无签署",
+      "id": "QG-04",
+      "joint_exact": true,
+      "observed": {
+        "reason": "SOURCE_NOT_ADMISSIBLE",
+        "status": "BLOCKED"
+      }
+    },
+    {
+      "expected": {
+        "reason": "REQUIRED_GAP_VERIFIED",
+        "status": "PENDING"
+      },
+      "family": "WD-33-撤回且替代正文缺件",
+      "id": "WD-01",
+      "joint_exact": true,
+      "observed": {
+        "reason": "REQUIRED_GAP_VERIFIED",
+        "status": "PENDING"
+      }
+    },
+    {
+      "expected": {
+        "reason": "EVIDENCE_ROLE_MISMATCH",
+        "status": "BLOCKED"
+      },
+      "family": "WD-33-撤回且替代正文缺件",
+      "id": "WD-02",
+      "joint_exact": true,
+      "observed": {
+        "reason": "EVIDENCE_ROLE_MISMATCH",
+        "status": "BLOCKED"
+      }
+    },
+    {
+      "expected": {
+        "reason": "REQUIRED_GAP_MISMATCH",
+        "status": "BLOCKED"
+      },
+      "family": "WD-33-撤回且替代正文缺件",
+      "id": "WD-03",
+      "joint_exact": true,
+      "observed": {
+        "reason": "REQUIRED_GAP_MISMATCH",
+        "status": "BLOCKED"
+      }
+    },
+    {
+      "expected": {
+        "reason": "DIRECT_VERIFIED",
+        "status": "ELIGIBLE"
+      },
+      "family": "SP-71-完整补件两段联合",
+      "id": "SP-01",
+      "joint_exact": true,
+      "observed": {
+        "reason": "DIRECT_VERIFIED",
+        "status": "ELIGIBLE"
+      }
+    },
+    {
+      "expected": {
+        "reason": "REQUIRED_DIRECT_MISSING",
+        "status": "BLOCKED"
+      },
+      "family": "SP-71-完整补件两段联合",
+      "id": "SP-02",
+      "joint_exact": true,
+      "observed": {
+        "reason": "REQUIRED_DIRECT_MISSING",
+        "status": "BLOCKED"
+      }
+    },
+    {
+      "expected": {
+        "reason": "DIRECT_VALUE_MISMATCH",
+        "status": "BLOCKED"
+      },
+      "family": "SP-71-完整补件两段联合",
+      "id": "SP-03",
+      "joint_exact": true,
+      "observed": {
+        "reason": "DIRECT_VALUE_MISMATCH",
+        "status": "BLOCKED"
+      }
+    },
+    {
+      "expected": {
+        "reason": "EVIDENCE_HASH_MISMATCH",
+        "status": "BLOCKED"
+      },
+      "family": "SP-71-完整补件两段联合",
+      "id": "SP-04",
+      "joint_exact": true,
+      "observed": {
+        "reason": "EVIDENCE_HASH_MISMATCH",
+        "status": "BLOCKED"
+      }
+    },
+    {
+      "expected": {
+        "reason": "REQUIRED_GAP_VERIFIED",
+        "status": "PENDING"
+      },
+      "family": "LM-23-到件仅封面仍缺正文",
+      "id": "LM-01",
+      "joint_exact": true,
+      "observed": {
+        "reason": "REQUIRED_GAP_VERIFIED",
+        "status": "PENDING"
+      }
+    },
+    {
+      "expected": {
+        "reason": "REQUIRED_GAP_MISMATCH",
+        "status": "BLOCKED"
+      },
+      "family": "LM-23-到件仅封面仍缺正文",
+      "id": "LM-02",
+      "joint_exact": true,
+      "observed": {
+        "reason": "REQUIRED_GAP_MISMATCH",
+        "status": "BLOCKED"
+      }
+    },
+    {
+      "expected": {
+        "reason": "EVIDENCE_ROLE_MISMATCH",
+        "status": "BLOCKED"
+      },
+      "family": "LM-23-到件仅封面仍缺正文",
+      "id": "LM-03",
+      "joint_exact": true,
+      "observed": {
+        "reason": "EVIDENCE_ROLE_MISMATCH",
+        "status": "BLOCKED"
+      }
+    },
+    {
+      "expected": {
+        "reason": "QUOTE_SPAN_MISMATCH",
+        "status": "BLOCKED"
+      },
+      "family": "LM-23-到件仅封面仍缺正文",
+      "id": "LM-04",
+      "joint_exact": true,
+      "observed": {
+        "reason": "QUOTE_SPAN_MISMATCH",
+        "status": "BLOCKED"
+      }
+    }
+  ]
+}

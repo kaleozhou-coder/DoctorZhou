@@ -1,0 +1,26 @@
+test_active_conflict_cannot_be_omitted (test_gate.GateTests.test_active_conflict_cannot_be_omitted) ... ok
+test_ambiguous_overlap_rejected_only_in_unpositioned_tier (test_gate.GateTests.test_ambiguous_overlap_rejected_only_in_unpositioned_tier) ... ok
+test_bom_and_invalid_utf8 (test_gate.GateTests.test_bom_and_invalid_utf8) ... ok
+test_cli_shapes_and_leak_free_invalid_output (test_gate.GateTests.test_cli_shapes_and_leak_free_invalid_output) ... ok
+test_direct_complement_requires_some_asserted_value_and_all_agree (test_gate.GateTests.test_direct_complement_requires_some_asserted_value_and_all_agree) ... ok
+test_duplicate_citation_cannot_hide_failure (test_gate.GateTests.test_duplicate_citation_cannot_hide_failure) ... ok
+test_exact_direct_set_no_vacuous_or_extra (test_gate.GateTests.test_exact_direct_set_no_vacuous_or_extra) ... ok
+test_exact_gap_is_pending_and_wrong_version_or_locator_is_blocked (test_gate.GateTests.test_exact_gap_is_pending_and_wrong_version_or_locator_is_blocked) ... ok
+test_gap_cannot_be_solved_with_direct_or_known_assertion (test_gate.GateTests.test_gap_cannot_be_solved_with_direct_or_known_assertion) ... ok
+test_hash_mismatch_even_if_normalized_text_equal (test_gate.GateTests.test_hash_mismatch_even_if_normalized_text_equal) ... ok
+test_invalid_model_shape_no_verdict (test_gate.GateTests.test_invalid_model_shape_no_verdict) ... ok
+test_invalid_registry_cannot_establish_authority (test_gate.GateTests.test_invalid_registry_cannot_establish_authority) ... ok
+test_matching_quote_cannot_cross_scope_field_or_project (test_gate.GateTests.test_matching_quote_cannot_cross_scope_field_or_project) ... ok
+test_normalized_hash_mismatch (test_gate.GateTests.test_normalized_hash_mismatch) ... ok
+test_role_promotion_rejected_and_context_alone_not_enough (test_gate.GateTests.test_role_promotion_rejected_and_context_alone_not_enough) ... ok
+test_unapproved_clause (test_gate.GateTests.test_unapproved_clause) ... ok
+test_unapproved_versions_and_renditions (test_gate.GateTests.test_unapproved_versions_and_renditions) ... ok
+test_unreadable_without_disclosure_even_if_hash_is_wrong (test_gate.GateTests.test_unreadable_without_disclosure_even_if_hash_is_wrong) ... ok
+test_verified_normalized_cp_with_raw_identity (test_gate.GateTests.test_verified_normalized_cp_with_raw_identity) ... ok
+test_wrong_quote_or_bad_span (test_gate.GateTests.test_wrong_quote_or_bad_span) ... ok
+test_wrong_value_despite_valid_proof_position (test_gate.GateTests.test_wrong_value_despite_valid_proof_position) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.087s
+
+OK

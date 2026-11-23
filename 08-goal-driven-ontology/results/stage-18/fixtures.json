@@ -1,0 +1,1267 @@
+[
+  {
+    "family": "RB-41-角色语境",
+    "registry": {
+      "question": {
+        "project": "RB-41",
+        "scope": "SHELF-A",
+        "field": "inspection_period_days"
+      },
+      "documents": [
+        {
+          "doc": "RB-ORDER",
+          "rev": "B2",
+          "rendition": "TXT",
+          "project": "RB-41",
+          "text": "完全虚构资料｜测试工件\nRB-41 货架 A 段：正式签发的巡检方案规定本段巡检周期为 12 自然日。\n（记录结束）\n",
+          "readable": true,
+          "clauses": [
+            {
+              "id": "A1",
+              "scope": "SHELF-A",
+              "field": "inspection_period_days",
+              "role": "DIRECT",
+              "quote": "RB-41 货架 A 段：正式签发的巡检方案规定本段巡检周期为 12 自然日。",
+              "start": 12,
+              "end": 51,
+              "value": "12"
+            }
+          ]
+        },
+        {
+          "doc": "RB-GUIDE",
+          "rev": "G4",
+          "rendition": "TXT",
+          "project": "RB-41",
+          "text": "完全虚构资料｜测试工件\nRB-41 货架 A 段配套培训讲义：练习中用 12 自然日举例；本页不发布正式巡检规范。\n（记录结束）\n",
+          "readable": true,
+          "clauses": [
+            {
+              "id": "B7",
+              "scope": "SHELF-A",
+              "field": "inspection_period_days",
+              "role": "CONTEXT",
+              "quote": "RB-41 货架 A 段配套培训讲义：练习中用 12 自然日举例；本页不发布正式巡检规范。",
+              "start": 12,
+              "end": 57
+            }
+          ]
+        },
+        {
+          "doc": "RB-REQUEST",
+          "rev": "P3",
+          "rendition": "TXT",
+          "project": "RB-41",
+          "text": "完全虚构资料｜测试工件\nRB-41 货架 A 段运营建议单拟改为 8 自然日，未获发布，作为被拒建议保留。\n（记录结束）\n",
+          "readable": true,
+          "clauses": [
+            {
+              "id": "E1",
+              "scope": "SHELF-A",
+              "field": "inspection_period_days",
+              "role": "CONTEXT",
+              "quote": "RB-41 货架 A 段运营建议单拟改为 8 自然日，未获发布，作为被拒建议保留。",
+              "start": 12,
+              "end": 53
+            }
+          ]
+        }
+      ],
+      "required_direct": [
+        "RB-ORDER:B2:TXT:A1"
+      ],
+      "required_gap": null
+    },
+    "cases": [
+      {
+        "id": "RB-01",
+        "candidate": {
+          "decision": {
+            "state": "KNOWN",
+            "value": "12"
+          },
+          "evidence": [
+            {
+              "doc": "RB-ORDER",
+              "rev": "B2",
+              "rendition": "TXT",
+              "clause": "A1",
+              "role": "DIRECT",
+              "quote": "RB-41 货架 A 段：正式签发的巡检方案规定本段巡检周期为 12 自然日。",
+              "start": 12,
+              "end": 51,
+              "raw_sha256": "0eee93b5559abb8a96335d431fc4f0f24443af391e21fe2debc4107dabea12ee",
+              "normalized_sha256": "0eee93b5559abb8a96335d431fc4f0f24443af391e21fe2debc4107dabea12ee"
+            },
+            {
+              "doc": "RB-GUIDE",
+              "rev": "G4",
+              "rendition": "TXT",
+              "clause": "B7",
+              "role": "CONTEXT",
+              "quote": "RB-41 货架 A 段配套培训讲义：练习中用 12 自然日举例；本页不发布正式巡检规范。",
+              "start": 12,
+              "end": 57,
+              "raw_sha256": "f05a375718cb3d5202fae985fa64af70dee975e8f1afbab9800b6613da95c923",
+              "normalized_sha256": "f05a375718cb3d5202fae985fa64af70dee975e8f1afbab9800b6613da95c923"
+            },
+            {
+              "doc": "RB-REQUEST",
+              "rev": "P3",
+              "rendition": "TXT",
+              "clause": "E1",
+              "role": "CONTEXT",
+              "quote": "RB-41 货架 A 段运营建议单拟改为 8 自然日，未获发布，作为被拒建议保留。",
+              "start": 12,
+              "end": 53,
+              "raw_sha256": "57f9abec664ea1f36a00df59c4f172e67fc4c1bad7242d95f3640b8a7d98665c",
+              "normalized_sha256": "57f9abec664ea1f36a00df59c4f172e67fc4c1bad7242d95f3640b8a7d98665c"
+            }
+          ],
+          "gap": null
+        },
+        "expected": {
+          "status": "ELIGIBLE",
+          "reason": "DIRECT_VERIFIED"
+        }
+      },
+      {
+        "id": "RB-02",
+        "candidate": {
+          "decision": {
+            "state": "KNOWN",
+            "value": "12"
+          },
+          "evidence": [
+            {
+              "doc": "RB-GUIDE",
+              "rev": "G4",
+              "rendition": "TXT",
+              "clause": "B7",
+              "role": "CONTEXT",
+              "quote": "RB-41 货架 A 段配套培训讲义：练习中用 12 自然日举例；本页不发布正式巡检规范。",
+              "start": 12,
+              "end": 57,
+              "raw_sha256": "f05a375718cb3d5202fae985fa64af70dee975e8f1afbab9800b6613da95c923",
+              "normalized_sha256": "f05a375718cb3d5202fae985fa64af70dee975e8f1afbab9800b6613da95c923"
+            },
+            {
+              "doc": "RB-REQUEST",
+              "rev": "P3",
+              "rendition": "TXT",
+              "clause": "E1",
+              "role": "CONTEXT",
+              "quote": "RB-41 货架 A 段运营建议单拟改为 8 自然日，未获发布，作为被拒建议保留。",
+              "start": 12,
+              "end": 53,
+              "raw_sha256": "57f9abec664ea1f36a00df59c4f172e67fc4c1bad7242d95f3640b8a7d98665c",
+              "normalized_sha256": "57f9abec664ea1f36a00df59c4f172e67fc4c1bad7242d95f3640b8a7d98665c"
+            }
+          ],
+          "gap": null
+        },
+        "expected": {
+          "status": "BLOCKED",
+          "reason": "REQUIRED_DIRECT_MISSING"
+        }
+      },
+      {
+        "id": "RB-03",
+        "candidate": {
+          "decision": {
+            "state": "KNOWN",
+            "value": "12"
+          },
+          "evidence": [
+            {
+              "doc": "RB-GUIDE",
+              "rev": "G4",
+              "rendition": "TXT",
+              "clause": "B7",
+              "role": "DIRECT",
+              "quote": "RB-41 货架 A 段配套培训讲义：练习中用 12 自然日举例；本页不发布正式巡检规范。",
+              "start": 12,
+              "end": 57,
+              "raw_sha256": "f05a375718cb3d5202fae985fa64af70dee975e8f1afbab9800b6613da95c923",
+              "normalized_sha256": "f05a375718cb3d5202fae985fa64af70dee975e8f1afbab9800b6613da95c923"
+            }
+          ],
+          "gap": null
+        },
+        "expected": {
+          "status": "BLOCKED",
+          "reason": "EVIDENCE_ROLE_MISMATCH"
+        }
+      }
+    ]
+  },
+  {
+    "family": "PC-08-同版错标段",
+    "registry": {
+      "question": {
+        "project": "PC-08",
+        "scope": "LOT-B",
+        "field": "notice_days"
+      },
+      "documents": [
+        {
+          "doc": "PC-TENDER",
+          "rev": "R7",
+          "rendition": "TXT",
+          "project": "PC-08",
+          "text": "完全虚构资料｜测试工件\nPC-08 标段 B 的现行 R7 正式澄清：交付验收预约须提前 6 自然日通知。\n（记录结束）\n完全虚构资料｜测试工件\nPC-08 标段 C 的同一 R7 正式澄清：交付验收预约须提前 6 自然日通知。\n（记录结束）\n",
+          "readable": true,
+          "clauses": [
+            {
+              "id": "L18",
+              "scope": "LOT-B",
+              "field": "notice_days",
+              "role": "DIRECT",
+              "quote": "PC-08 标段 B 的现行 R7 正式澄清：交付验收预约须提前 6 自然日通知。",
+              "start": 12,
+              "end": 53,
+              "value": "6"
+            },
+            {
+              "id": "L19",
+              "scope": "LOT-C",
+              "field": "notice_days",
+              "role": "DIRECT",
+              "quote": "PC-08 标段 C 的同一 R7 正式澄清：交付验收预约须提前 6 自然日通知。",
+              "start": 73,
+              "end": 114,
+              "value": "6"
+            }
+          ]
+        },
+        {
+          "doc": "PC-SCOPE",
+          "rev": "L1",
+          "rendition": "TXT",
+          "project": "PC-08",
+          "text": "完全虚构资料｜测试工件\nPC-08 分标说明：B 为消防传感器，C 为排风风机；同版号不代表跨标段共用条款。\n（记录结束）\n",
+          "readable": true,
+          "clauses": [
+            {
+              "id": "S1",
+              "scope": "LOT-B",
+              "field": "notice_days",
+              "role": "CONTEXT",
+              "quote": "PC-08 分标说明：B 为消防传感器，C 为排风风机；同版号不代表跨标段共用条款。",
+              "start": 12,
+              "end": 54
+            }
+          ]
+        }
+      ],
+      "required_direct": [
+        "PC-TENDER:R7:TXT:L18"
+      ],
+      "required_gap": null
+    },
+    "cases": [
+      {
+        "id": "PC-01",
+        "candidate": {
+          "decision": {
+            "state": "KNOWN",
+            "value": "6"
+          },
+          "evidence": [
+            {
+              "doc": "PC-TENDER",
+              "rev": "R7",
+              "rendition": "TXT",
+              "clause": "L18",
+              "role": "DIRECT",
+              "quote": "PC-08 标段 B 的现行 R7 正式澄清：交付验收预约须提前 6 自然日通知。",
+              "start": 12,
+              "end": 53,
+              "raw_sha256": "fe5864f4d8a73850fa05c0571bc9900df19b56d54d90737fbc0eb7593af2843e",
+              "normalized_sha256": "fe5864f4d8a73850fa05c0571bc9900df19b56d54d90737fbc0eb7593af2843e"
+            },
+            {
+              "doc": "PC-SCOPE",
+              "rev": "L1",
+              "rendition": "TXT",
+              "clause": "S1",
+              "role": "CONTEXT",
+              "quote": "PC-08 分标说明：B 为消防传感器，C 为排风风机；同版号不代表跨标段共用条款。",
+              "start": 12,
+              "end": 54,
+              "raw_sha256": "185967e0e07cc3a0aee26c10e7eeb0fa4f51f275afd0aa27f595b1dc99bf4607",
+              "normalized_sha256": "185967e0e07cc3a0aee26c10e7eeb0fa4f51f275afd0aa27f595b1dc99bf4607"
+            }
+          ],
+          "gap": null
+        },
+        "expected": {
+          "status": "ELIGIBLE",
+          "reason": "DIRECT_VERIFIED"
+        }
+      },
+      {
+        "id": "PC-02",
+        "candidate": {
+          "decision": {
+            "state": "KNOWN",
+            "value": "6"
+          },
+          "evidence": [
+            {
+              "doc": "PC-TENDER",
+              "rev": "R7",
+              "rendition": "TXT",
+              "clause": "L19",
+              "role": "DIRECT",
+              "quote": "PC-08 标段 C 的同一 R7 正式澄清：交付验收预约须提前 6 自然日通知。",
+              "start": 73,
+              "end": 114,
+              "raw_sha256": "fe5864f4d8a73850fa05c0571bc9900df19b56d54d90737fbc0eb7593af2843e",
+              "normalized_sha256": "fe5864f4d8a73850fa05c0571bc9900df19b56d54d90737fbc0eb7593af2843e"
+            }
+          ],
+          "gap": null
+        },
+        "expected": {
+          "status": "BLOCKED",
+          "reason": "DIRECT_SCOPE_MISMATCH"
+        }
+      },
+      {
+        "id": "PC-03",
+        "candidate": {
+          "decision": {
+            "state": "KNOWN",
+            "value": "6"
+          },
+          "evidence": [
+            {
+              "doc": "PC-TENDER",
+              "rev": "R7",
+              "rendition": "TXT",
+              "clause": "L18",
+              "role": "DIRECT",
+              "quote": "PC-08 标段 B 的现行 R7 正式澄清：交付验收预约须提前 6 自然日通知。",
+              "start": 12,
+              "end": 53,
+              "raw_sha256": "fe5864f4d8a73850fa05c0571bc9900df19b56d54d90737fbc0eb7593af2843e",
+              "normalized_sha256": "fe5864f4d8a73850fa05c0571bc9900df19b56d54d90737fbc0eb7593af2843e"
+            },
+            {
+              "doc": "PC-TENDER",
+              "rev": "R7",
+              "rendition": "TXT",
+              "clause": "L19",
+              "role": "DIRECT",
+              "quote": "PC-08 标段 C 的同一 R7 正式澄清：交付验收预约须提前 6 自然日通知。",
+              "start": 73,
+              "end": 114,
+              "raw_sha256": "fe5864f4d8a73850fa05c0571bc9900df19b56d54d90737fbc0eb7593af2843e",
+              "normalized_sha256": "fe5864f4d8a73850fa05c0571bc9900df19b56d54d90737fbc0eb7593af2843e"
+            }
+          ],
+          "gap": null
+        },
+        "expected": {
+          "status": "BLOCKED",
+          "reason": "DIRECT_SCOPE_MISMATCH"
+        }
+      }
+    ]
+  },
+  {
+    "family": "QG-60-同文无签署",
+    "registry": {
+      "question": {
+        "project": "QG-60",
+        "scope": "CENTRE",
+        "field": "replacement_years"
+      },
+      "documents": [
+        {
+          "doc": "QG-MANUAL",
+          "rev": "FINAL",
+          "rendition": "TXT",
+          "project": "QG-60",
+          "text": "完全虚构资料｜已完成签发的中央库手册\nQG-60 中央库：防水圈的周期性更换期限为 4 年。\n（记录结束）\n",
+          "readable": true,
+          "clauses": [
+            {
+              "id": "P4",
+              "scope": "CENTRE",
+              "field": "replacement_years",
+              "role": "DIRECT",
+              "quote": "QG-60 中央库：防水圈的周期性更换期限为 4 年。",
+              "start": 19,
+              "end": 46,
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "doc": "QG-MANUAL",
+          "rev": "DRAFT",
+          "rendition": "TXT",
+          "project": "QG-60",
+          "text": "完全虚构资料｜同文送审样，未签发\nQG-60 中央库：防水圈的周期性更换期限为 4 年。\n（记录结束）\n",
+          "readable": true,
+          "clauses": [
+            {
+              "id": "P4",
+              "scope": "CENTRE",
+              "field": "replacement_years",
+              "role": "CONTEXT",
+              "quote": "QG-60 中央库：防水圈的周期性更换期限为 4 年。",
+              "start": 17,
+              "end": 44
+            }
+          ]
+        },
+        {
+          "doc": "QG-MANUAL",
+          "rev": "FINAL",
+          "rendition": "PRIVATE",
+          "project": "QG-60",
+          "text": "完全虚构资料｜不可访问的另一复本\nQG-60 中央库：防水圈的周期性更换期限为 4 年。\n（记录结束）\n",
+          "readable": false,
+          "clauses": [
+            {
+              "id": "P4",
+              "scope": "CENTRE",
+              "field": "replacement_years",
+              "role": "DIRECT",
+              "quote": "QG-60 中央库：防水圈的周期性更换期限为 4 年。",
+              "start": 17,
+              "end": 44,
+              "value": "4"
+            }
+          ]
+        }
+      ],
+      "required_direct": [
+        "QG-MANUAL:FINAL:TXT:P4"
+      ],
+      "required_gap": null
+    },
+    "cases": [
+      {
+        "id": "QG-01",
+        "candidate": {
+          "decision": {
+            "state": "KNOWN",
+            "value": "4"
+          },
+          "evidence": [
+            {
+              "doc": "QG-MANUAL",
+              "rev": "FINAL",
+              "rendition": "TXT",
+              "clause": "P4",
+              "role": "DIRECT",
+              "quote": "QG-60 中央库：防水圈的周期性更换期限为 4 年。",
+              "start": 19,
+              "end": 46,
+              "raw_sha256": "3cc5b90d46cdacd5122ea78a26e280a464d2475f7a61a3688c2feeac54119875",
+              "normalized_sha256": "3cc5b90d46cdacd5122ea78a26e280a464d2475f7a61a3688c2feeac54119875"
+            },
+            {
+              "doc": "QG-MANUAL",
+              "rev": "DRAFT",
+              "rendition": "TXT",
+              "clause": "P4",
+              "role": "CONTEXT",
+              "quote": "QG-60 中央库：防水圈的周期性更换期限为 4 年。",
+              "start": 17,
+              "end": 44,
+              "raw_sha256": "9450a34db1899c9215d46dd108d5149735325cde556047ce5238227e6fce18d8",
+              "normalized_sha256": "9450a34db1899c9215d46dd108d5149735325cde556047ce5238227e6fce18d8"
+            }
+          ],
+          "gap": null
+        },
+        "expected": {
+          "status": "ELIGIBLE",
+          "reason": "DIRECT_VERIFIED"
+        }
+      },
+      {
+        "id": "QG-02",
+        "candidate": {
+          "decision": {
+            "state": "KNOWN",
+            "value": "4"
+          },
+          "evidence": [
+            {
+              "doc": "QG-MANUAL",
+              "rev": "DRAFT",
+              "rendition": "TXT",
+              "clause": "P4",
+              "role": "DIRECT",
+              "quote": "QG-60 中央库：防水圈的周期性更换期限为 4 年。",
+              "start": 17,
+              "end": 44,
+              "raw_sha256": "9450a34db1899c9215d46dd108d5149735325cde556047ce5238227e6fce18d8",
+              "normalized_sha256": "9450a34db1899c9215d46dd108d5149735325cde556047ce5238227e6fce18d8"
+            }
+          ],
+          "gap": null
+        },
+        "expected": {
+          "status": "BLOCKED",
+          "reason": "EVIDENCE_ROLE_MISMATCH"
+        }
+      },
+      {
+        "id": "QG-03",
+        "candidate": {
+          "decision": {
+            "state": "KNOWN",
+            "value": "4"
+          },
+          "evidence": [
+            {
+              "doc": "QG-MANUAL",
+              "rev": "DRAFT",
+              "rendition": "TXT",
+              "clause": "P4",
+              "role": "CONTEXT",
+              "quote": "QG-60 中央库：防水圈的周期性更换期限为 4 年。",
+              "start": 17,
+              "end": 44,
+              "raw_sha256": "9450a34db1899c9215d46dd108d5149735325cde556047ce5238227e6fce18d8",
+              "normalized_sha256": "9450a34db1899c9215d46dd108d5149735325cde556047ce5238227e6fce18d8"
+            }
+          ],
+          "gap": null
+        },
+        "expected": {
+          "status": "BLOCKED",
+          "reason": "REQUIRED_DIRECT_MISSING"
+        }
+      },
+      {
+        "id": "QG-04",
+        "candidate": {
+          "decision": {
+            "state": "KNOWN",
+            "value": "4"
+          },
+          "evidence": [
+            {
+              "doc": "QG-MANUAL",
+              "rev": "FINAL",
+              "rendition": "TXT",
+              "clause": "P4",
+              "role": "DIRECT",
+              "quote": "QG-60 中央库：防水圈的周期性更换期限为 4 年。",
+              "start": 19,
+              "end": 46,
+              "raw_sha256": "3cc5b90d46cdacd5122ea78a26e280a464d2475f7a61a3688c2feeac54119875",
+              "normalized_sha256": "3cc5b90d46cdacd5122ea78a26e280a464d2475f7a61a3688c2feeac54119875"
+            },
+            {
+              "doc": "QG-MANUAL",
+              "rev": "FINAL",
+              "rendition": "PRIVATE",
+              "clause": "P4",
+              "role": "DIRECT",
+              "quote": "QG-60 中央库：防水圈的周期性更换期限为 4 年。",
+              "start": 17,
+              "end": 44,
+              "raw_sha256": "2bb124185cde83b2aa6780e6e6e58bf786b4f47f77692040d33111fd5de73f0e",
+              "normalized_sha256": "2bb124185cde83b2aa6780e6e6e58bf786b4f47f77692040d33111fd5de73f0e"
+            }
+          ],
+          "gap": null
+        },
+        "expected": {
+          "status": "BLOCKED",
+          "reason": "SOURCE_NOT_ADMISSIBLE"
+        }
+      }
+    ]
+  },
+  {
+    "family": "WD-33-撤回且替代正文缺件",
+    "registry": {
+      "question": {
+        "project": "WD-33",
+        "scope": "DEPOT-N",
+        "field": "initial_training_hours"
+      },
+      "documents": [
+        {
+          "doc": "WD-OLD",
+          "rev": "V1",
+          "rendition": "TXT",
+          "project": "WD-33",
+          "text": "完全虚构资料｜测试工件\nWD-33 北库先前手册 V1 写首训 16 小时；对应条款已被撤回，不能作为现行规定。\n（记录结束）\n",
+          "readable": true,
+          "clauses": [
+            {
+              "id": "R3",
+              "scope": "DEPOT-N",
+              "field": "initial_training_hours",
+              "role": "CONFLICT",
+              "quote": "WD-33 北库先前手册 V1 写首训 16 小时；对应条款已被撤回，不能作为现行规定。",
+              "start": 12,
+              "end": 56
+            }
+          ]
+        },
+        {
+          "doc": "WD-CIRC",
+          "rev": "V2",
+          "rendition": "TXT",
+          "project": "WD-33",
+          "text": "完全虚构资料｜测试工件\nWD-33 北库正式撤回通知 W9 撤回 V1 的 R3；首训时长以 WD-NEW V3 的 T2 正文为准。该正文未随本批资料传入。\n（记录结束）\n",
+          "readable": true,
+          "clauses": [
+            {
+              "id": "W9",
+              "scope": "DEPOT-N",
+              "field": "initial_training_hours",
+              "role": "CONTEXT",
+              "quote": "WD-33 北库正式撤回通知 W9 撤回 V1 的 R3；首训时长以 WD-NEW V3 的 T2 正文为准。该正文未随本批资料传入。",
+              "start": 12,
+              "end": 79
+            }
+          ]
+        }
+      ],
+      "required_direct": [],
+      "required_gap": {
+        "doc": "WD-NEW",
+        "rev": "V3",
+        "clause": "T2",
+        "scope": "DEPOT-N",
+        "field": "initial_training_hours",
+        "locator": "WD-CIRC:V2:TXT:W9"
+      }
+    },
+    "cases": [
+      {
+        "id": "WD-01",
+        "candidate": {
+          "decision": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "evidence": [
+            {
+              "doc": "WD-CIRC",
+              "rev": "V2",
+              "rendition": "TXT",
+              "clause": "W9",
+              "role": "CONTEXT",
+              "quote": "WD-33 北库正式撤回通知 W9 撤回 V1 的 R3；首训时长以 WD-NEW V3 的 T2 正文为准。该正文未随本批资料传入。",
+              "start": 12,
+              "end": 79,
+              "raw_sha256": "cfe2f7e6e47728cafa751bb33345ade8697090b830c585b0c77fb35f5aeb6832",
+              "normalized_sha256": "cfe2f7e6e47728cafa751bb33345ade8697090b830c585b0c77fb35f5aeb6832"
+            },
+            {
+              "doc": "WD-OLD",
+              "rev": "V1",
+              "rendition": "TXT",
+              "clause": "R3",
+              "role": "CONFLICT",
+              "quote": "WD-33 北库先前手册 V1 写首训 16 小时；对应条款已被撤回，不能作为现行规定。",
+              "start": 12,
+              "end": 56,
+              "raw_sha256": "50b27c82b605969d5cffe239de733bcc3d25bfd970ce49282a1f1ded3756895e",
+              "normalized_sha256": "50b27c82b605969d5cffe239de733bcc3d25bfd970ce49282a1f1ded3756895e"
+            }
+          ],
+          "gap": {
+            "doc": "WD-NEW",
+            "rev": "V3",
+            "clause": "T2",
+            "scope": "DEPOT-N",
+            "field": "initial_training_hours",
+            "locator": "WD-CIRC:V2:TXT:W9"
+          }
+        },
+        "expected": {
+          "status": "PENDING",
+          "reason": "REQUIRED_GAP_VERIFIED"
+        }
+      },
+      {
+        "id": "WD-02",
+        "candidate": {
+          "decision": {
+            "state": "KNOWN",
+            "value": "16"
+          },
+          "evidence": [
+            {
+              "doc": "WD-OLD",
+              "rev": "V1",
+              "rendition": "TXT",
+              "clause": "R3",
+              "role": "DIRECT",
+              "quote": "WD-33 北库先前手册 V1 写首训 16 小时；对应条款已被撤回，不能作为现行规定。",
+              "start": 12,
+              "end": 56,
+              "raw_sha256": "50b27c82b605969d5cffe239de733bcc3d25bfd970ce49282a1f1ded3756895e",
+              "normalized_sha256": "50b27c82b605969d5cffe239de733bcc3d25bfd970ce49282a1f1ded3756895e"
+            },
+            {
+              "doc": "WD-CIRC",
+              "rev": "V2",
+              "rendition": "TXT",
+              "clause": "W9",
+              "role": "CONTEXT",
+              "quote": "WD-33 北库正式撤回通知 W9 撤回 V1 的 R3；首训时长以 WD-NEW V3 的 T2 正文为准。该正文未随本批资料传入。",
+              "start": 12,
+              "end": 79,
+              "raw_sha256": "cfe2f7e6e47728cafa751bb33345ade8697090b830c585b0c77fb35f5aeb6832",
+              "normalized_sha256": "cfe2f7e6e47728cafa751bb33345ade8697090b830c585b0c77fb35f5aeb6832"
+            }
+          ],
+          "gap": null
+        },
+        "expected": {
+          "status": "BLOCKED",
+          "reason": "EVIDENCE_ROLE_MISMATCH"
+        }
+      },
+      {
+        "id": "WD-03",
+        "candidate": {
+          "decision": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "evidence": [
+            {
+              "doc": "WD-CIRC",
+              "rev": "V2",
+              "rendition": "TXT",
+              "clause": "W9",
+              "role": "CONTEXT",
+              "quote": "WD-33 北库正式撤回通知 W9 撤回 V1 的 R3；首训时长以 WD-NEW V3 的 T2 正文为准。该正文未随本批资料传入。",
+              "start": 12,
+              "end": 79,
+              "raw_sha256": "cfe2f7e6e47728cafa751bb33345ade8697090b830c585b0c77fb35f5aeb6832",
+              "normalized_sha256": "cfe2f7e6e47728cafa751bb33345ade8697090b830c585b0c77fb35f5aeb6832"
+            }
+          ],
+          "gap": {
+            "doc": "WD-NEW",
+            "rev": "V3",
+            "clause": "T3",
+            "scope": "DEPOT-N",
+            "field": "initial_training_hours",
+            "locator": "WD-CIRC:V2:TXT:W9"
+          }
+        },
+        "expected": {
+          "status": "BLOCKED",
+          "reason": "REQUIRED_GAP_MISMATCH"
+        }
+      }
+    ]
+  },
+  {
+    "family": "SP-71-完整补件两段联合",
+    "registry": {
+      "question": {
+        "project": "SP-71",
+        "scope": "KIOSK-X",
+        "field": "reset_wait_hours"
+      },
+      "documents": [
+        {
+          "doc": "SP-RATIFY",
+          "rev": "R5",
+          "rendition": "TXT",
+          "project": "SP-71",
+          "text": "完全虚构资料｜测试工件\nSP-71 X 区终端的正式生效签发页 C2 指定 SP-ANNEX R5 第 B11 条为断电复位等待时间的现行规定；本签发页不载数值。\n（记录结束）\n",
+          "readable": true,
+          "clauses": [
+            {
+              "id": "C2",
+              "scope": "KIOSK-X",
+              "field": "reset_wait_hours",
+              "role": "DIRECT",
+              "quote": "SP-71 X 区终端的正式生效签发页 C2 指定 SP-ANNEX R5 第 B11 条为断电复位等待时间的现行规定；本签发页不载数值。",
+              "start": 12,
+              "end": 81
+            }
+          ]
+        },
+        {
+          "doc": "SP-ANNEX",
+          "rev": "R5",
+          "rendition": "TXT",
+          "project": "SP-71",
+          "text": "完全虚构资料｜测试工件\nSP-71 X 区终端 R5 附页 B11：断电复位至少等待 9 小时。\n（记录结束）\n",
+          "readable": true,
+          "clauses": [
+            {
+              "id": "B11",
+              "scope": "KIOSK-X",
+              "field": "reset_wait_hours",
+              "role": "DIRECT",
+              "quote": "SP-71 X 区终端 R5 附页 B11：断电复位至少等待 9 小时。",
+              "start": 12,
+              "end": 48,
+              "value": "9"
+            }
+          ]
+        },
+        {
+          "doc": "SP-CHANGE",
+          "rev": "R4",
+          "rendition": "TXT",
+          "project": "SP-71",
+          "text": "完全虚构资料｜测试工件\nSP-71 X 区终端升级背景：更换控制器但不据此推定复位等待时长。\n（记录结束）\n",
+          "readable": true,
+          "clauses": [
+            {
+              "id": "H1",
+              "scope": "KIOSK-X",
+              "field": "reset_wait_hours",
+              "role": "CONTEXT",
+              "quote": "SP-71 X 区终端升级背景：更换控制器但不据此推定复位等待时长。",
+              "start": 12,
+              "end": 46
+            }
+          ]
+        }
+      ],
+      "required_direct": [
+        "SP-RATIFY:R5:TXT:C2",
+        "SP-ANNEX:R5:TXT:B11"
+      ],
+      "required_gap": null
+    },
+    "cases": [
+      {
+        "id": "SP-01",
+        "candidate": {
+          "decision": {
+            "state": "KNOWN",
+            "value": "9"
+          },
+          "evidence": [
+            {
+              "doc": "SP-RATIFY",
+              "rev": "R5",
+              "rendition": "TXT",
+              "clause": "C2",
+              "role": "DIRECT",
+              "quote": "SP-71 X 区终端的正式生效签发页 C2 指定 SP-ANNEX R5 第 B11 条为断电复位等待时间的现行规定；本签发页不载数值。",
+              "start": 12,
+              "end": 81,
+              "raw_sha256": "8358b3c8bc1a2d8cfc1e3f740c3d8e9ad0a6f8e244b88fa5129f6649494cd55a",
+              "normalized_sha256": "8358b3c8bc1a2d8cfc1e3f740c3d8e9ad0a6f8e244b88fa5129f6649494cd55a"
+            },
+            {
+              "doc": "SP-ANNEX",
+              "rev": "R5",
+              "rendition": "TXT",
+              "clause": "B11",
+              "role": "DIRECT",
+              "quote": "SP-71 X 区终端 R5 附页 B11：断电复位至少等待 9 小时。",
+              "start": 12,
+              "end": 48,
+              "raw_sha256": "d9e971dca24e12e4a74f3425da2e552c4ddfe4cefe6eaf75e76c56b420cd1e7d",
+              "normalized_sha256": "d9e971dca24e12e4a74f3425da2e552c4ddfe4cefe6eaf75e76c56b420cd1e7d"
+            },
+            {
+              "doc": "SP-CHANGE",
+              "rev": "R4",
+              "rendition": "TXT",
+              "clause": "H1",
+              "role": "CONTEXT",
+              "quote": "SP-71 X 区终端升级背景：更换控制器但不据此推定复位等待时长。",
+              "start": 12,
+              "end": 46,
+              "raw_sha256": "0c04851dc88e6f9d1aa0767aa98aab8131a1d58f8689ba318cb4a2301fd7091c",
+              "normalized_sha256": "0c04851dc88e6f9d1aa0767aa98aab8131a1d58f8689ba318cb4a2301fd7091c"
+            }
+          ],
+          "gap": null
+        },
+        "expected": {
+          "status": "ELIGIBLE",
+          "reason": "DIRECT_VERIFIED"
+        }
+      },
+      {
+        "id": "SP-02",
+        "candidate": {
+          "decision": {
+            "state": "KNOWN",
+            "value": "9"
+          },
+          "evidence": [
+            {
+              "doc": "SP-ANNEX",
+              "rev": "R5",
+              "rendition": "TXT",
+              "clause": "B11",
+              "role": "DIRECT",
+              "quote": "SP-71 X 区终端 R5 附页 B11：断电复位至少等待 9 小时。",
+              "start": 12,
+              "end": 48,
+              "raw_sha256": "d9e971dca24e12e4a74f3425da2e552c4ddfe4cefe6eaf75e76c56b420cd1e7d",
+              "normalized_sha256": "d9e971dca24e12e4a74f3425da2e552c4ddfe4cefe6eaf75e76c56b420cd1e7d"
+            },
+            {
+              "doc": "SP-CHANGE",
+              "rev": "R4",
+              "rendition": "TXT",
+              "clause": "H1",
+              "role": "CONTEXT",
+              "quote": "SP-71 X 区终端升级背景：更换控制器但不据此推定复位等待时长。",
+              "start": 12,
+              "end": 46,
+              "raw_sha256": "0c04851dc88e6f9d1aa0767aa98aab8131a1d58f8689ba318cb4a2301fd7091c",
+              "normalized_sha256": "0c04851dc88e6f9d1aa0767aa98aab8131a1d58f8689ba318cb4a2301fd7091c"
+            }
+          ],
+          "gap": null
+        },
+        "expected": {
+          "status": "BLOCKED",
+          "reason": "REQUIRED_DIRECT_MISSING"
+        }
+      },
+      {
+        "id": "SP-03",
+        "candidate": {
+          "decision": {
+            "state": "KNOWN",
+            "value": "8"
+          },
+          "evidence": [
+            {
+              "doc": "SP-RATIFY",
+              "rev": "R5",
+              "rendition": "TXT",
+              "clause": "C2",
+              "role": "DIRECT",
+              "quote": "SP-71 X 区终端的正式生效签发页 C2 指定 SP-ANNEX R5 第 B11 条为断电复位等待时间的现行规定；本签发页不载数值。",
+              "start": 12,
+              "end": 81,
+              "raw_sha256": "8358b3c8bc1a2d8cfc1e3f740c3d8e9ad0a6f8e244b88fa5129f6649494cd55a",
+              "normalized_sha256": "8358b3c8bc1a2d8cfc1e3f740c3d8e9ad0a6f8e244b88fa5129f6649494cd55a"
+            },
+            {
+              "doc": "SP-ANNEX",
+              "rev": "R5",
+              "rendition": "TXT",
+              "clause": "B11",
+              "role": "DIRECT",
+              "quote": "SP-71 X 区终端 R5 附页 B11：断电复位至少等待 9 小时。",
+              "start": 12,
+              "end": 48,
+              "raw_sha256": "d9e971dca24e12e4a74f3425da2e552c4ddfe4cefe6eaf75e76c56b420cd1e7d",
+              "normalized_sha256": "d9e971dca24e12e4a74f3425da2e552c4ddfe4cefe6eaf75e76c56b420cd1e7d"
+            }
+          ],
+          "gap": null
+        },
+        "expected": {
+          "status": "BLOCKED",
+          "reason": "DIRECT_VALUE_MISMATCH"
+        }
+      },
+      {
+        "id": "SP-04",
+        "candidate": {
+          "decision": {
+            "state": "KNOWN",
+            "value": "9"
+          },
+          "evidence": [
+            {
+              "doc": "SP-RATIFY",
+              "rev": "R5",
+              "rendition": "TXT",
+              "clause": "C2",
+              "role": "DIRECT",
+              "quote": "SP-71 X 区终端的正式生效签发页 C2 指定 SP-ANNEX R5 第 B11 条为断电复位等待时间的现行规定；本签发页不载数值。",
+              "start": 12,
+              "end": 81,
+              "raw_sha256": "8358b3c8bc1a2d8cfc1e3f740c3d8e9ad0a6f8e244b88fa5129f6649494cd55a",
+              "normalized_sha256": "8358b3c8bc1a2d8cfc1e3f740c3d8e9ad0a6f8e244b88fa5129f6649494cd55a"
+            },
+            {
+              "doc": "SP-ANNEX",
+              "rev": "R5",
+              "rendition": "TXT",
+              "clause": "B11",
+              "role": "DIRECT",
+              "quote": "SP-71 X 区终端 R5 附页 B11：断电复位至少等待 9 小时。",
+              "start": 12,
+              "end": 48,
+              "raw_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+              "normalized_sha256": "d9e971dca24e12e4a74f3425da2e552c4ddfe4cefe6eaf75e76c56b420cd1e7d"
+            }
+          ],
+          "gap": null
+        },
+        "expected": {
+          "status": "BLOCKED",
+          "reason": "EVIDENCE_HASH_MISMATCH"
+        }
+      }
+    ]
+  },
+  {
+    "family": "LM-23-到件仅封面仍缺正文",
+    "registry": {
+      "question": {
+        "project": "LM-23",
+        "scope": "PLANT-W",
+        "field": "noise_limit_dba"
+      },
+      "documents": [
+        {
+          "doc": "LM-INDEX",
+          "rev": "C1",
+          "rendition": "TXT",
+          "project": "LM-23",
+          "text": "完全虚构资料｜测试工件\nLM-23 西区机房勘验移交目录 I2 载明夜间噪声限值见 LM-ATT C3 §Q7；收到的附件只有封面与页码登记，尚无 Q7 正文。\n（记录结束）\n",
+          "readable": true,
+          "clauses": [
+            {
+              "id": "I2",
+              "scope": "PLANT-W",
+              "field": "noise_limit_dba",
+              "role": "CONTEXT",
+              "quote": "LM-23 西区机房勘验移交目录 I2 载明夜间噪声限值见 LM-ATT C3 §Q7；收到的附件只有封面与页码登记，尚无 Q7 正文。",
+              "start": 12,
+              "end": 80
+            }
+          ]
+        },
+        {
+          "doc": "LM-ATT",
+          "rev": "C3",
+          "rendition": "TXT",
+          "project": "LM-23",
+          "text": "完全虚构资料｜测试工件\nLM-23 西区机房 C3 扫描覆盖页：页脚出现「65 dBA」制表测试字样，但未载 Q7 或发布夜间限值。\n（记录结束）\n",
+          "readable": true,
+          "clauses": [
+            {
+              "id": "COVER",
+              "scope": "PLANT-W",
+              "field": "noise_limit_dba",
+              "role": "CONTEXT",
+              "quote": "LM-23 西区机房 C3 扫描覆盖页：页脚出现「65 dBA」制表测试字样，但未载 Q7 或发布夜间限值。",
+              "start": 12,
+              "end": 66
+            }
+          ]
+        },
+        {
+          "doc": "LM-REC",
+          "rev": "C2",
+          "rendition": "TXT",
+          "project": "LM-23",
+          "text": "完全虚构资料｜测试工件\nLM-23 西区机房项目经理向签发组建议夜间用 65 dBA；未采纳，最终条款不可由此推断。\n（记录结束）\n",
+          "readable": true,
+          "clauses": [
+            {
+              "id": "S2",
+              "scope": "PLANT-W",
+              "field": "noise_limit_dba",
+              "role": "CONFLICT",
+              "quote": "LM-23 西区机房项目经理向签发组建议夜间用 65 dBA；未采纳，最终条款不可由此推断。",
+              "start": 12,
+              "end": 58
+            }
+          ]
+        }
+      ],
+      "required_direct": [],
+      "required_gap": {
+        "doc": "LM-ATT",
+        "rev": "C3",
+        "clause": "Q7",
+        "scope": "PLANT-W",
+        "field": "noise_limit_dba",
+        "locator": "LM-INDEX:C1:TXT:I2"
+      }
+    },
+    "cases": [
+      {
+        "id": "LM-01",
+        "candidate": {
+          "decision": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "evidence": [
+            {
+              "doc": "LM-INDEX",
+              "rev": "C1",
+              "rendition": "TXT",
+              "clause": "I2",
+              "role": "CONTEXT",
+              "quote": "LM-23 西区机房勘验移交目录 I2 载明夜间噪声限值见 LM-ATT C3 §Q7；收到的附件只有封面与页码登记，尚无 Q7 正文。",
+              "start": 12,
+              "end": 80,
+              "raw_sha256": "9224c966331ad5189fa23ecf34f59cc7a7ec279cb51674000f798ddff9ed6be1",
+              "normalized_sha256": "9224c966331ad5189fa23ecf34f59cc7a7ec279cb51674000f798ddff9ed6be1"
+            },
+            {
+              "doc": "LM-ATT",
+              "rev": "C3",
+              "rendition": "TXT",
+              "clause": "COVER",
+              "role": "CONTEXT",
+              "quote": "LM-23 西区机房 C3 扫描覆盖页：页脚出现「65 dBA」制表测试字样，但未载 Q7 或发布夜间限值。",
+              "start": 12,
+              "end": 66,
+              "raw_sha256": "e23c53c9c007996efe408321dffceefe3405c027ee6dad57d13b0ba4b6143fa2",
+              "normalized_sha256": "e23c53c9c007996efe408321dffceefe3405c027ee6dad57d13b0ba4b6143fa2"
+            },
+            {
+              "doc": "LM-REC",
+              "rev": "C2",
+              "rendition": "TXT",
+              "clause": "S2",
+              "role": "CONFLICT",
+              "quote": "LM-23 西区机房项目经理向签发组建议夜间用 65 dBA；未采纳，最终条款不可由此推断。",
+              "start": 12,
+              "end": 58,
+              "raw_sha256": "b11fd2d20e7f7eb4dc01b9ebc1a011054f8898da8576536a1c37642052d0ee3e",
+              "normalized_sha256": "b11fd2d20e7f7eb4dc01b9ebc1a011054f8898da8576536a1c37642052d0ee3e"
+            }
+          ],
+          "gap": {
+            "doc": "LM-ATT",
+            "rev": "C3",
+            "clause": "Q7",
+            "scope": "PLANT-W",
+            "field": "noise_limit_dba",
+            "locator": "LM-INDEX:C1:TXT:I2"
+          }
+        },
+        "expected": {
+          "status": "PENDING",
+          "reason": "REQUIRED_GAP_VERIFIED"
+        }
+      },
+      {
+        "id": "LM-02",
+        "candidate": {
+          "decision": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "evidence": [
+            {
+              "doc": "LM-ATT",
+              "rev": "C3",
+              "rendition": "TXT",
+              "clause": "COVER",
+              "role": "CONTEXT",
+              "quote": "LM-23 西区机房 C3 扫描覆盖页：页脚出现「65 dBA」制表测试字样，但未载 Q7 或发布夜间限值。",
+              "start": 12,
+              "end": 66,
+              "raw_sha256": "e23c53c9c007996efe408321dffceefe3405c027ee6dad57d13b0ba4b6143fa2",
+              "normalized_sha256": "e23c53c9c007996efe408321dffceefe3405c027ee6dad57d13b0ba4b6143fa2"
+            }
+          ],
+          "gap": {
+            "doc": "LM-ATT",
+            "rev": "C3",
+            "clause": "Q7",
+            "scope": "PLANT-W",
+            "field": "noise_limit_dba",
+            "locator": "LM-ATT:C3:TXT:COVER"
+          }
+        },
+        "expected": {
+          "status": "BLOCKED",
+          "reason": "REQUIRED_GAP_MISMATCH"
+        }
+      },
+      {
+        "id": "LM-03",
+        "candidate": {
+          "decision": {
+            "state": "KNOWN",
+            "value": "65"
+          },
+          "evidence": [
+            {
+              "doc": "LM-ATT",
+              "rev": "C3",
+              "rendition": "TXT",
+              "clause": "COVER",
+              "role": "DIRECT",
+              "quote": "LM-23 西区机房 C3 扫描覆盖页：页脚出现「65 dBA」制表测试字样，但未载 Q7 或发布夜间限值。",
+              "start": 12,
+              "end": 66,
+              "raw_sha256": "e23c53c9c007996efe408321dffceefe3405c027ee6dad57d13b0ba4b6143fa2",
+              "normalized_sha256": "e23c53c9c007996efe408321dffceefe3405c027ee6dad57d13b0ba4b6143fa2"
+            }
+          ],
+          "gap": null
+        },
+        "expected": {
+          "status": "BLOCKED",
+          "reason": "EVIDENCE_ROLE_MISMATCH"
+        }
+      },
+      {
+        "id": "LM-04",
+        "candidate": {
+          "decision": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "evidence": [
+            {
+              "doc": "LM-INDEX",
+              "rev": "C1",
+              "rendition": "TXT",
+              "clause": "I2",
+              "role": "CONTEXT",
+              "quote": "LM-23 西区机房勘验移交目录 I2 载明夜间噪声限值见 LM-ATT C3 §Q7；收到的附件只有封面与页码登记，尚无 Q7 正文。",
+              "start": 13,
+              "end": 80,
+              "raw_sha256": "9224c966331ad5189fa23ecf34f59cc7a7ec279cb51674000f798ddff9ed6be1",
+              "normalized_sha256": "9224c966331ad5189fa23ecf34f59cc7a7ec279cb51674000f798ddff9ed6be1"
+            },
+            {
+              "doc": "LM-ATT",
+              "rev": "C3",
+              "rendition": "TXT",
+              "clause": "COVER",
+              "role": "CONTEXT",
+              "quote": "LM-23 西区机房 C3 扫描覆盖页：页脚出现「65 dBA」制表测试字样，但未载 Q7 或发布夜间限值。",
+              "start": 12,
+              "end": 66,
+              "raw_sha256": "e23c53c9c007996efe408321dffceefe3405c027ee6dad57d13b0ba4b6143fa2",
+              "normalized_sha256": "e23c53c9c007996efe408321dffceefe3405c027ee6dad57d13b0ba4b6143fa2"
+            }
+          ],
+          "gap": {
+            "doc": "LM-ATT",
+            "rev": "C3",
+            "clause": "Q7",
+            "scope": "PLANT-W",
+            "field": "noise_limit_dba",
+            "locator": "LM-INDEX:C1:TXT:I2"
+          }
+        },
+        "expected": {
+          "status": "BLOCKED",
+          "reason": "QUOTE_SPAN_MISMATCH"
+        }
+      }
+    ]
+  }
+]
