@@ -1,0 +1,2 @@
+arm-a python -B first-attempt/source/src/stage19.py run --input corpus.json --arm A
+arm-b python -B first-attempt/source/src/stage19.py run --input corpus.json --arm B

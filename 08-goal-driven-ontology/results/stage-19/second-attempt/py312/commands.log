@@ -1,0 +1,3 @@
+arm-a python -B second-attempt/source/src/stage19.py run --input corpus.json --arm A
+arm-b python -B second-attempt/source/src/stage19.py run --input corpus.json --arm B
+score python -B second-attempt/source/src/stage19.py score --observed-a second-attempt/py312/arm-a.json --observed-b second-attempt/py312/arm-b.json --gold gold.json

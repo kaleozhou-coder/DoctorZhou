@@ -1,0 +1,610 @@
+{
+  "families": [
+    {
+      "family": "IR14",
+      "slots": [
+        {
+          "id": "N01",
+          "transition": "update_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "5"
+          }
+        },
+        {
+          "id": "N02",
+          "transition": "reopen_known",
+          "expected": {
+            "status": "PENDING",
+            "reason": "REQUIRED_GAP_VERIFIED"
+          },
+          "final": {
+            "state": "UNKNOWN",
+            "value": null
+          }
+        },
+        {
+          "id": "N03",
+          "transition": "update_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "3"
+          }
+        },
+        {
+          "id": "S01",
+          "transition": "stable_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "18"
+          }
+        },
+        {
+          "id": "S02",
+          "transition": "stable_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "4"
+          }
+        },
+        {
+          "id": "O01",
+          "transition": "recover_unknown",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "8"
+          }
+        },
+        {
+          "id": "O02",
+          "transition": "stay_unknown",
+          "expected": {
+            "status": "PENDING",
+            "reason": "REQUIRED_GAP_VERIFIED"
+          },
+          "final": {
+            "state": "UNKNOWN",
+            "value": null
+          }
+        },
+        {
+          "id": "O03",
+          "transition": "stay_unknown",
+          "expected": {
+            "status": "PENDING",
+            "reason": "REQUIRED_GAP_VERIFIED"
+          },
+          "final": {
+            "state": "UNKNOWN",
+            "value": null
+          }
+        }
+      ]
+    },
+    {
+      "family": "LX22",
+      "slots": [
+        {
+          "id": "N01",
+          "transition": "update_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "10"
+          }
+        },
+        {
+          "id": "N02",
+          "transition": "reopen_known",
+          "expected": {
+            "status": "PENDING",
+            "reason": "REQUIRED_GAP_VERIFIED"
+          },
+          "final": {
+            "state": "UNKNOWN",
+            "value": null
+          }
+        },
+        {
+          "id": "N03",
+          "transition": "update_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "4"
+          }
+        },
+        {
+          "id": "S01",
+          "transition": "stable_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "6"
+          }
+        },
+        {
+          "id": "S02",
+          "transition": "stable_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "24"
+          }
+        },
+        {
+          "id": "O01",
+          "transition": "recover_unknown",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "16"
+          }
+        },
+        {
+          "id": "O02",
+          "transition": "stay_unknown",
+          "expected": {
+            "status": "PENDING",
+            "reason": "REQUIRED_GAP_VERIFIED"
+          },
+          "final": {
+            "state": "UNKNOWN",
+            "value": null
+          }
+        },
+        {
+          "id": "O03",
+          "transition": "stay_unknown",
+          "expected": {
+            "status": "PENDING",
+            "reason": "REQUIRED_GAP_VERIFIED"
+          },
+          "final": {
+            "state": "UNKNOWN",
+            "value": null
+          }
+        }
+      ]
+    },
+    {
+      "family": "CN36",
+      "slots": [
+        {
+          "id": "N01",
+          "transition": "update_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "9"
+          }
+        },
+        {
+          "id": "N02",
+          "transition": "reopen_known",
+          "expected": {
+            "status": "PENDING",
+            "reason": "REQUIRED_GAP_VERIFIED"
+          },
+          "final": {
+            "state": "UNKNOWN",
+            "value": null
+          }
+        },
+        {
+          "id": "N03",
+          "transition": "update_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "5"
+          }
+        },
+        {
+          "id": "S01",
+          "transition": "stable_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "10"
+          }
+        },
+        {
+          "id": "S02",
+          "transition": "stable_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "32"
+          }
+        },
+        {
+          "id": "O01",
+          "transition": "recover_unknown",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "20"
+          }
+        },
+        {
+          "id": "O02",
+          "transition": "stay_unknown",
+          "expected": {
+            "status": "PENDING",
+            "reason": "REQUIRED_GAP_VERIFIED"
+          },
+          "final": {
+            "state": "UNKNOWN",
+            "value": null
+          }
+        },
+        {
+          "id": "O03",
+          "transition": "stay_unknown",
+          "expected": {
+            "status": "PENDING",
+            "reason": "REQUIRED_GAP_VERIFIED"
+          },
+          "final": {
+            "state": "UNKNOWN",
+            "value": null
+          }
+        }
+      ]
+    },
+    {
+      "family": "KT41",
+      "slots": [
+        {
+          "id": "N01",
+          "transition": "update_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "11"
+          }
+        },
+        {
+          "id": "N02",
+          "transition": "reopen_known",
+          "expected": {
+            "status": "PENDING",
+            "reason": "REQUIRED_GAP_VERIFIED"
+          },
+          "final": {
+            "state": "UNKNOWN",
+            "value": null
+          }
+        },
+        {
+          "id": "N03",
+          "transition": "update_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "6"
+          }
+        },
+        {
+          "id": "S01",
+          "transition": "stable_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "15"
+          }
+        },
+        {
+          "id": "S02",
+          "transition": "stable_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "30"
+          }
+        },
+        {
+          "id": "O01",
+          "transition": "recover_unknown",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "6"
+          }
+        },
+        {
+          "id": "O02",
+          "transition": "stay_unknown",
+          "expected": {
+            "status": "PENDING",
+            "reason": "REQUIRED_GAP_VERIFIED"
+          },
+          "final": {
+            "state": "UNKNOWN",
+            "value": null
+          }
+        },
+        {
+          "id": "O03",
+          "transition": "stay_unknown",
+          "expected": {
+            "status": "PENDING",
+            "reason": "REQUIRED_GAP_VERIFIED"
+          },
+          "final": {
+            "state": "UNKNOWN",
+            "value": null
+          }
+        }
+      ]
+    },
+    {
+      "family": "EV55",
+      "slots": [
+        {
+          "id": "N01",
+          "transition": "update_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "6"
+          }
+        },
+        {
+          "id": "N02",
+          "transition": "reopen_known",
+          "expected": {
+            "status": "PENDING",
+            "reason": "REQUIRED_GAP_VERIFIED"
+          },
+          "final": {
+            "state": "UNKNOWN",
+            "value": null
+          }
+        },
+        {
+          "id": "N03",
+          "transition": "update_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "7"
+          }
+        },
+        {
+          "id": "S01",
+          "transition": "stable_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "7"
+          }
+        },
+        {
+          "id": "S02",
+          "transition": "stable_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "3"
+          }
+        },
+        {
+          "id": "O01",
+          "transition": "recover_unknown",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "5"
+          }
+        },
+        {
+          "id": "O02",
+          "transition": "stay_unknown",
+          "expected": {
+            "status": "PENDING",
+            "reason": "REQUIRED_GAP_VERIFIED"
+          },
+          "final": {
+            "state": "UNKNOWN",
+            "value": null
+          }
+        },
+        {
+          "id": "O03",
+          "transition": "stay_unknown",
+          "expected": {
+            "status": "PENDING",
+            "reason": "REQUIRED_GAP_VERIFIED"
+          },
+          "final": {
+            "state": "UNKNOWN",
+            "value": null
+          }
+        }
+      ]
+    },
+    {
+      "family": "HP09",
+      "slots": [
+        {
+          "id": "N01",
+          "transition": "update_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "21"
+          }
+        },
+        {
+          "id": "N02",
+          "transition": "reopen_known",
+          "expected": {
+            "status": "PENDING",
+            "reason": "REQUIRED_GAP_VERIFIED"
+          },
+          "final": {
+            "state": "UNKNOWN",
+            "value": null
+          }
+        },
+        {
+          "id": "N03",
+          "transition": "update_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "8"
+          }
+        },
+        {
+          "id": "S01",
+          "transition": "stable_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "2"
+          }
+        },
+        {
+          "id": "S02",
+          "transition": "stable_known",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "48"
+          }
+        },
+        {
+          "id": "O01",
+          "transition": "recover_unknown",
+          "expected": {
+            "status": "ELIGIBLE",
+            "reason": "DIRECT_VERIFIED"
+          },
+          "final": {
+            "state": "KNOWN",
+            "value": "12"
+          }
+        },
+        {
+          "id": "O02",
+          "transition": "stay_unknown",
+          "expected": {
+            "status": "PENDING",
+            "reason": "REQUIRED_GAP_VERIFIED"
+          },
+          "final": {
+            "state": "UNKNOWN",
+            "value": null
+          }
+        },
+        {
+          "id": "O03",
+          "transition": "stay_unknown",
+          "expected": {
+            "status": "PENDING",
+            "reason": "REQUIRED_GAP_VERIFIED"
+          },
+          "final": {
+            "state": "UNKNOWN",
+            "value": null
+          }
+        }
+      ]
+    }
+  ]
+}

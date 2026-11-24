@@ -1,0 +1,4774 @@
+{
+  "families": [
+    {
+      "family": "IR14",
+      "title": "河滨泵站质保交割",
+      "slots": [
+        {
+          "id": "N01",
+          "priority": 1,
+          "intake_signal": "已登记正式更正通知，处理主批次",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "3"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "IR14 河滨泵站质保交割 LOT-N01 的正式首批条款：设备到货提前通知日为 3。",
+                "start": 24,
+                "end": 67,
+                "raw_sha256": "d2aebc0db28a71addc203f37bbbbf5048508072f6592f9353c123bc28ed3a1f6",
+                "normalized_sha256": "d2aebc0db28a71addc203f37bbbbf5048508072f6592f9353c123bc28ed3a1f6"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "5"
+            },
+            "evidence": [
+              {
+                "doc": "ANN-N01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "A2",
+                "role": "DIRECT",
+                "quote": "IR14 河滨泵站质保交割已签发的 LOT-N01 生效条款：设备到货提前通知日为 5；以本条为准。",
+                "start": 25,
+                "end": 75,
+                "raw_sha256": "e19083f2aca5a25ca58e58c5d13edbbf05b72f192e9d75b969a123375cafc5d3",
+                "normalized_sha256": "e19083f2aca5a25ca58e58c5d13edbbf05b72f192e9d75b969a123375cafc5d3"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "IR14",
+              "scope": "LOT-N01",
+              "field": "设备到货提前通知日"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "IR14",
+                "text": "完全虚构合成资料｜IR14｜INTAKE R1\nIR14 河滨泵站质保交割 LOT-N01 的正式首批条款：设备到货提前通知日为 3。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-N01",
+                    "field": "设备到货提前通知日",
+                    "role": "CONTEXT",
+                    "quote": "IR14 河滨泵站质保交割 LOT-N01 的正式首批条款：设备到货提前通知日为 3。",
+                    "start": 24,
+                    "end": 67
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-N01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "IR14",
+                "text": "完全虚构合成资料｜IR14｜ANN-N01 R2\nIR14 河滨泵站质保交割已签发的 LOT-N01 生效条款：设备到货提前通知日为 5；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-N01",
+                    "field": "设备到货提前通知日",
+                    "role": "DIRECT",
+                    "quote": "IR14 河滨泵站质保交割已签发的 LOT-N01 生效条款：设备到货提前通知日为 5；以本条为准。",
+                    "start": 25,
+                    "end": 75,
+                    "value": "5"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "ANN-N01:R2:TXT:A2"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "N02",
+          "priority": 3,
+          "intake_signal": "对来文撤回通知进行影响复核",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "5"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "IR14 河滨泵站质保交割 LOT-N02 的正式首批条款：安全停止后必要复核时长为 5。",
+                "start": 24,
+                "end": 69,
+                "raw_sha256": "e2ac8c0c5fd7860173c239edb8f3f710bd03a4e0c635892eb0d5346e31d43781",
+                "normalized_sha256": "e2ac8c0c5fd7860173c239edb8f3f710bd03a4e0c635892eb0d5346e31d43781"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "CHANGE",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "R4",
+                "role": "CONTEXT",
+                "quote": "IR14 河滨泵站质保交割的新签发通知明确撤回 LOT-N02 的旧安全停止后必要复核时长，待 ANN-N02 R2 §A2；本次发件不含替代正文。",
+                "start": 24,
+                "end": 98,
+                "raw_sha256": "5d654bce95fe433cb6ef6f8bb06af006073f2f1af6f4b477c7cef779637dd99a",
+                "normalized_sha256": "5d654bce95fe433cb6ef6f8bb06af006073f2f1af6f4b477c7cef779637dd99a"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-N02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-N02",
+              "field": "安全停止后必要复核时长",
+              "locator": "CHANGE:R2:TXT:R4"
+            }
+          },
+          "gate_registry": {
+            "question": {
+              "project": "IR14",
+              "scope": "LOT-N02",
+              "field": "安全停止后必要复核时长"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "IR14",
+                "text": "完全虚构合成资料｜IR14｜INTAKE R1\nIR14 河滨泵站质保交割 LOT-N02 的正式首批条款：安全停止后必要复核时长为 5。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-N02",
+                    "field": "安全停止后必要复核时长",
+                    "role": "CONTEXT",
+                    "quote": "IR14 河滨泵站质保交割 LOT-N02 的正式首批条款：安全停止后必要复核时长为 5。",
+                    "start": 24,
+                    "end": 69
+                  }
+                ]
+              },
+              {
+                "doc": "CHANGE",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "IR14",
+                "text": "完全虚构合成资料｜IR14｜CHANGE R2\nIR14 河滨泵站质保交割的新签发通知明确撤回 LOT-N02 的旧安全停止后必要复核时长，待 ANN-N02 R2 §A2；本次发件不含替代正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "R4",
+                    "scope": "LOT-N02",
+                    "field": "安全停止后必要复核时长",
+                    "role": "CONTEXT",
+                    "quote": "IR14 河滨泵站质保交割的新签发通知明确撤回 LOT-N02 的旧安全停止后必要复核时长，待 ANN-N02 R2 §A2；本次发件不含替代正文。",
+                    "start": 24,
+                    "end": 98
+                  }
+                ]
+              }
+            ],
+            "required_direct": [],
+            "required_gap": {
+              "doc": "ANN-N02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-N02",
+              "field": "安全停止后必要复核时长",
+              "locator": "CHANGE:R2:TXT:R4"
+            }
+          }
+        },
+        {
+          "id": "N03",
+          "priority": 4,
+          "intake_signal": "赶在汛前交货的盖章变更",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "1"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "IR14 河滨泵站质保交割 LOT-N03 的正式首批条款：夜检记录明确移交份数为 1。",
+                "start": 24,
+                "end": 68,
+                "raw_sha256": "55fd6bf640b1a44a81410c0a5bb197257f7cbc4fb08feb3fa18cabbf8ab6120c",
+                "normalized_sha256": "55fd6bf640b1a44a81410c0a5bb197257f7cbc4fb08feb3fa18cabbf8ab6120c"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "3"
+            },
+            "evidence": [
+              {
+                "doc": "ANN-N03",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "A2",
+                "role": "DIRECT",
+                "quote": "IR14 河滨泵站质保交割已签发的 LOT-N03 生效条款：夜检记录明确移交份数为 3；以本条为准。",
+                "start": 25,
+                "end": 76,
+                "raw_sha256": "742743df21d16e4d97494bb2492e178f315d25186fb21940cd1c62c9e4619f55",
+                "normalized_sha256": "742743df21d16e4d97494bb2492e178f315d25186fb21940cd1c62c9e4619f55"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "IR14",
+              "scope": "LOT-N03",
+              "field": "夜检记录明确移交份数"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "IR14",
+                "text": "完全虚构合成资料｜IR14｜INTAKE R1\nIR14 河滨泵站质保交割 LOT-N03 的正式首批条款：夜检记录明确移交份数为 1。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-N03",
+                    "field": "夜检记录明确移交份数",
+                    "role": "CONTEXT",
+                    "quote": "IR14 河滨泵站质保交割 LOT-N03 的正式首批条款：夜检记录明确移交份数为 1。",
+                    "start": 24,
+                    "end": 68
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-N03",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "IR14",
+                "text": "完全虚构合成资料｜IR14｜ANN-N03 R2\nIR14 河滨泵站质保交割已签发的 LOT-N03 生效条款：夜检记录明确移交份数为 3；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-N03",
+                    "field": "夜检记录明确移交份数",
+                    "role": "DIRECT",
+                    "quote": "IR14 河滨泵站质保交割已签发的 LOT-N03 生效条款：夜检记录明确移交份数为 3；以本条为准。",
+                    "start": 25,
+                    "end": 76,
+                    "value": "3"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "ANN-N03:R2:TXT:A2"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "S01",
+          "priority": 5,
+          "intake_signal": "近期复核过；仅例行检查",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "18"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "IR14 河滨泵站质保交割 LOT-S01 的正式首批条款：质保期（月）为 18。",
+                "start": 24,
+                "end": 65,
+                "raw_sha256": "d23d8e780548f6b6b3bb86e0507f0f7824ec3246d4d140ae4bdf18060933be10",
+                "normalized_sha256": "d23d8e780548f6b6b3bb86e0507f0f7824ec3246d4d140ae4bdf18060933be10"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "18"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "IR14 河滨泵站质保交割 LOT-S01 的正式首批条款：质保期（月）为 18。",
+                "start": 24,
+                "end": 65,
+                "raw_sha256": "d23d8e780548f6b6b3bb86e0507f0f7824ec3246d4d140ae4bdf18060933be10",
+                "normalized_sha256": "d23d8e780548f6b6b3bb86e0507f0f7824ec3246d4d140ae4bdf18060933be10"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "IR14",
+              "scope": "LOT-S01",
+              "field": "质保期（月）"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "IR14",
+                "text": "完全虚构合成资料｜IR14｜INTAKE R1\nIR14 河滨泵站质保交割 LOT-S01 的正式首批条款：质保期（月）为 18。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-S01",
+                    "field": "质保期（月）",
+                    "role": "DIRECT",
+                    "quote": "IR14 河滨泵站质保交割 LOT-S01 的正式首批条款：质保期（月）为 18。",
+                    "start": 24,
+                    "end": 65,
+                    "value": "18"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "INTAKE:R1:TXT:S1"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "S02",
+          "priority": 9,
+          "intake_signal": "未出现在新来文主题",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "4"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "IR14 河滨泵站质保交割 LOT-S02 的正式首批条款：既有按月巡查值为 4。",
+                "start": 24,
+                "end": 65,
+                "raw_sha256": "c1f3fd88362667413454c8272eff218171e2126ef48a60bd7d9a0eed2efdcd84",
+                "normalized_sha256": "c1f3fd88362667413454c8272eff218171e2126ef48a60bd7d9a0eed2efdcd84"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "4"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "IR14 河滨泵站质保交割 LOT-S02 的正式首批条款：既有按月巡查值为 4。",
+                "start": 24,
+                "end": 65,
+                "raw_sha256": "c1f3fd88362667413454c8272eff218171e2126ef48a60bd7d9a0eed2efdcd84",
+                "normalized_sha256": "c1f3fd88362667413454c8272eff218171e2126ef48a60bd7d9a0eed2efdcd84"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "IR14",
+              "scope": "LOT-S02",
+              "field": "既有按月巡查值"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "IR14",
+                "text": "完全虚构合成资料｜IR14｜INTAKE R1\nIR14 河滨泵站质保交割 LOT-S02 的正式首批条款：既有按月巡查值为 4。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-S02",
+                    "field": "既有按月巡查值",
+                    "role": "DIRECT",
+                    "quote": "IR14 河滨泵站质保交割 LOT-S02 的正式首批条款：既有按月巡查值为 4。",
+                    "start": 24,
+                    "end": 65,
+                    "value": "4"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "INTAKE:R1:TXT:S1"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "O01",
+          "priority": 2,
+          "intake_signal": "收到关联来文，队列按接收等级而非内容最终结论",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "IR14 LOT-O01 首批登记：维保响应上限小时需核 ANN-O01 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 77,
+                "raw_sha256": "65292efef2d8857ca14d5a11ae4c903bad4cd58af937eb69540da2313c4f2c6d",
+                "normalized_sha256": "65292efef2d8857ca14d5a11ae4c903bad4cd58af937eb69540da2313c4f2c6d"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O01",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O01",
+              "field": "维保响应上限小时",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "8"
+            },
+            "evidence": [
+              {
+                "doc": "ANN-O01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "A2",
+                "role": "DIRECT",
+                "quote": "IR14 河滨泵站质保交割已签发的 LOT-O01 生效条款：维保响应上限小时为 8；以本条为准。",
+                "start": 25,
+                "end": 74,
+                "raw_sha256": "f8b215972b711132340153bc52bdaf7f299ac1b5c412f3317801825666166850",
+                "normalized_sha256": "f8b215972b711132340153bc52bdaf7f299ac1b5c412f3317801825666166850"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "IR14",
+              "scope": "LOT-O01",
+              "field": "维保响应上限小时"
+            },
+            "documents": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "IR14",
+                "text": "完全虚构合成资料｜IR14｜COVER R1\nIR14 LOT-O01 首批登记：维保响应上限小时需核 ANN-O01 R2 §A2 后确定，未收到正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "C1",
+                    "scope": "LOT-O01",
+                    "field": "维保响应上限小时",
+                    "role": "CONTEXT",
+                    "quote": "IR14 LOT-O01 首批登记：维保响应上限小时需核 ANN-O01 R2 §A2 后确定，未收到正文。",
+                    "start": 23,
+                    "end": 77
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-O01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "IR14",
+                "text": "完全虚构合成资料｜IR14｜ANN-O01 R2\nIR14 河滨泵站质保交割已签发的 LOT-O01 生效条款：维保响应上限小时为 8；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-O01",
+                    "field": "维保响应上限小时",
+                    "role": "DIRECT",
+                    "quote": "IR14 河滨泵站质保交割已签发的 LOT-O01 生效条款：维保响应上限小时为 8；以本条为准。",
+                    "start": 25,
+                    "end": 74,
+                    "value": "8"
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-O01",
+                "rev": "DRAFT3",
+                "rendition": "TXT",
+                "project": "IR14",
+                "text": "完全虚构合成资料｜IR14｜ANN-O01 DRAFT3\nIR14 河滨泵站质保交割已签发的 LOT-O01 生效条款：维保响应上限小时为 8；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-O01",
+                    "field": "维保响应上限小时",
+                    "role": "CONTEXT",
+                    "quote": "IR14 河滨泵站质保交割已签发的 LOT-O01 生效条款：维保响应上限小时为 8；以本条为准。",
+                    "start": 29,
+                    "end": 78
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "ANN-O01:R2:TXT:A2"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "O02",
+          "priority": 8,
+          "intake_signal": "巡检照片到底含不含夜间尚待原件",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "IR14 LOT-O02 首批登记：井位照片最低张数需核 ANN-O02 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 77,
+                "raw_sha256": "bb7e788b4567f0cb2e2503a4abca9fd26c331c75912b92ae971466e9fa25fb3f",
+                "normalized_sha256": "bb7e788b4567f0cb2e2503a4abca9fd26c331c75912b92ae971466e9fa25fb3f"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O02",
+              "field": "井位照片最低张数",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "reviewed": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "IR14 LOT-O02 首批登记：井位照片最低张数需核 ANN-O02 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 77,
+                "raw_sha256": "bb7e788b4567f0cb2e2503a4abca9fd26c331c75912b92ae971466e9fa25fb3f",
+                "normalized_sha256": "bb7e788b4567f0cb2e2503a4abca9fd26c331c75912b92ae971466e9fa25fb3f"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O02",
+              "field": "井位照片最低张数",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "gate_registry": {
+            "question": {
+              "project": "IR14",
+              "scope": "LOT-O02",
+              "field": "井位照片最低张数"
+            },
+            "documents": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "IR14",
+                "text": "完全虚构合成资料｜IR14｜COVER R1\nIR14 LOT-O02 首批登记：井位照片最低张数需核 ANN-O02 R2 §A2 后确定，未收到正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "C1",
+                    "scope": "LOT-O02",
+                    "field": "井位照片最低张数",
+                    "role": "CONTEXT",
+                    "quote": "IR14 LOT-O02 首批登记：井位照片最低张数需核 ANN-O02 R2 §A2 后确定，未收到正文。",
+                    "start": 23,
+                    "end": 77
+                  }
+                ]
+              }
+            ],
+            "required_direct": [],
+            "required_gap": {
+              "doc": "ANN-O02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O02",
+              "field": "井位照片最低张数",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          }
+        },
+        {
+          "id": "O03",
+          "priority": 10,
+          "intake_signal": "旧缺件且无新来文对应题名",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "IR14 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 77,
+                "raw_sha256": "234bdb71a5e36ae6c02154d3e4de2de7ecda963dc744f98dcf6163c1540143bb",
+                "normalized_sha256": "234bdb71a5e36ae6c02154d3e4de2de7ecda963dc744f98dcf6163c1540143bb"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O03",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "reviewed": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "IR14 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 77,
+                "raw_sha256": "234bdb71a5e36ae6c02154d3e4de2de7ecda963dc744f98dcf6163c1540143bb",
+                "normalized_sha256": "234bdb71a5e36ae6c02154d3e4de2de7ecda963dc744f98dcf6163c1540143bb"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O03",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "gate_registry": {
+            "question": {
+              "project": "IR14",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求"
+            },
+            "documents": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "IR14",
+                "text": "完全虚构合成资料｜IR14｜COVER R1\nIR14 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "C1",
+                    "scope": "LOT-O03",
+                    "field": "滞后退场取样要求",
+                    "role": "CONTEXT",
+                    "quote": "IR14 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。",
+                    "start": 23,
+                    "end": 77
+                  }
+                ]
+              }
+            ],
+            "required_direct": [],
+            "required_gap": {
+              "doc": "ANN-O03",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "family": "LX22",
+      "title": "档案馆搬库及保密箱交接",
+      "slots": [
+        {
+          "id": "N01",
+          "priority": 1,
+          "intake_signal": "已登记正式更正通知，处理主批次",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "12"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "LX22 档案馆搬库及保密箱交接 LOT-N01 的正式首批条款：搬库暂停阈值箱数为 12。",
+                "start": 24,
+                "end": 70,
+                "raw_sha256": "4e6f8a18030af33aa9695a0d3f8d95263dbe0deb14c61ee1f687ffc8d26da100",
+                "normalized_sha256": "4e6f8a18030af33aa9695a0d3f8d95263dbe0deb14c61ee1f687ffc8d26da100"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "10"
+            },
+            "evidence": [
+              {
+                "doc": "ANN-N01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "A2",
+                "role": "DIRECT",
+                "quote": "LX22 档案馆搬库及保密箱交接已签发的 LOT-N01 生效条款：搬库暂停阈值箱数为 10；以本条为准。",
+                "start": 25,
+                "end": 78,
+                "raw_sha256": "e4984caa4418660b60542e9607e2f90375e4efe4cd5994513cbf69efb0edbaf8",
+                "normalized_sha256": "e4984caa4418660b60542e9607e2f90375e4efe4cd5994513cbf69efb0edbaf8"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "LX22",
+              "scope": "LOT-N01",
+              "field": "搬库暂停阈值箱数"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "LX22",
+                "text": "完全虚构合成资料｜LX22｜INTAKE R1\nLX22 档案馆搬库及保密箱交接 LOT-N01 的正式首批条款：搬库暂停阈值箱数为 12。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-N01",
+                    "field": "搬库暂停阈值箱数",
+                    "role": "CONTEXT",
+                    "quote": "LX22 档案馆搬库及保密箱交接 LOT-N01 的正式首批条款：搬库暂停阈值箱数为 12。",
+                    "start": 24,
+                    "end": 70
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-N01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "LX22",
+                "text": "完全虚构合成资料｜LX22｜ANN-N01 R2\nLX22 档案馆搬库及保密箱交接已签发的 LOT-N01 生效条款：搬库暂停阈值箱数为 10；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-N01",
+                    "field": "搬库暂停阈值箱数",
+                    "role": "DIRECT",
+                    "quote": "LX22 档案馆搬库及保密箱交接已签发的 LOT-N01 生效条款：搬库暂停阈值箱数为 10；以本条为准。",
+                    "start": 25,
+                    "end": 78,
+                    "value": "10"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "ANN-N01:R2:TXT:A2"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "N02",
+          "priority": 3,
+          "intake_signal": "对来文撤回通知进行影响复核",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "6"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "LX22 档案馆搬库及保密箱交接 LOT-N02 的正式首批条款：安全停止后必要复核时长为 6。",
+                "start": 24,
+                "end": 72,
+                "raw_sha256": "81a47703d6c43a392e33ab9c89ca5b2d5fc43a9a16a37ddeb19c8c937d259ef8",
+                "normalized_sha256": "81a47703d6c43a392e33ab9c89ca5b2d5fc43a9a16a37ddeb19c8c937d259ef8"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "CHANGE",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "R4",
+                "role": "CONTEXT",
+                "quote": "LX22 档案馆搬库及保密箱交接的新签发通知明确撤回 LOT-N02 的旧安全停止后必要复核时长，待 ANN-N02 R2 §A2；本次发件不含替代正文。",
+                "start": 24,
+                "end": 101,
+                "raw_sha256": "91bc3a91fdd1b51532756686729091959ae579a7754f2b7998d4659ed92ee4ee",
+                "normalized_sha256": "91bc3a91fdd1b51532756686729091959ae579a7754f2b7998d4659ed92ee4ee"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-N02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-N02",
+              "field": "安全停止后必要复核时长",
+              "locator": "CHANGE:R2:TXT:R4"
+            }
+          },
+          "gate_registry": {
+            "question": {
+              "project": "LX22",
+              "scope": "LOT-N02",
+              "field": "安全停止后必要复核时长"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "LX22",
+                "text": "完全虚构合成资料｜LX22｜INTAKE R1\nLX22 档案馆搬库及保密箱交接 LOT-N02 的正式首批条款：安全停止后必要复核时长为 6。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-N02",
+                    "field": "安全停止后必要复核时长",
+                    "role": "CONTEXT",
+                    "quote": "LX22 档案馆搬库及保密箱交接 LOT-N02 的正式首批条款：安全停止后必要复核时长为 6。",
+                    "start": 24,
+                    "end": 72
+                  }
+                ]
+              },
+              {
+                "doc": "CHANGE",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "LX22",
+                "text": "完全虚构合成资料｜LX22｜CHANGE R2\nLX22 档案馆搬库及保密箱交接的新签发通知明确撤回 LOT-N02 的旧安全停止后必要复核时长，待 ANN-N02 R2 §A2；本次发件不含替代正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "R4",
+                    "scope": "LOT-N02",
+                    "field": "安全停止后必要复核时长",
+                    "role": "CONTEXT",
+                    "quote": "LX22 档案馆搬库及保密箱交接的新签发通知明确撤回 LOT-N02 的旧安全停止后必要复核时长，待 ANN-N02 R2 §A2；本次发件不含替代正文。",
+                    "start": 24,
+                    "end": 101
+                  }
+                ]
+              }
+            ],
+            "required_direct": [],
+            "required_gap": {
+              "doc": "ANN-N02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-N02",
+              "field": "安全停止后必要复核时长",
+              "locator": "CHANGE:R2:TXT:R4"
+            }
+          }
+        },
+        {
+          "id": "N03",
+          "priority": 4,
+          "intake_signal": "档案组补发跨楼层暂停令",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "2"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "LX22 档案馆搬库及保密箱交接 LOT-N03 的正式首批条款：夜检记录明确移交份数为 2。",
+                "start": 24,
+                "end": 71,
+                "raw_sha256": "57888451815a13173b219200c7c095145f726fbf3c5cc12840a9491a1c75cd91",
+                "normalized_sha256": "57888451815a13173b219200c7c095145f726fbf3c5cc12840a9491a1c75cd91"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "4"
+            },
+            "evidence": [
+              {
+                "doc": "ANN-N03",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "A2",
+                "role": "DIRECT",
+                "quote": "LX22 档案馆搬库及保密箱交接已签发的 LOT-N03 生效条款：夜检记录明确移交份数为 4；以本条为准。",
+                "start": 25,
+                "end": 79,
+                "raw_sha256": "16844ff038a325f3374152bd4c0bdbc3617a03b9696fbcc77b5e17ec1b35ebae",
+                "normalized_sha256": "16844ff038a325f3374152bd4c0bdbc3617a03b9696fbcc77b5e17ec1b35ebae"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "LX22",
+              "scope": "LOT-N03",
+              "field": "夜检记录明确移交份数"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "LX22",
+                "text": "完全虚构合成资料｜LX22｜INTAKE R1\nLX22 档案馆搬库及保密箱交接 LOT-N03 的正式首批条款：夜检记录明确移交份数为 2。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-N03",
+                    "field": "夜检记录明确移交份数",
+                    "role": "CONTEXT",
+                    "quote": "LX22 档案馆搬库及保密箱交接 LOT-N03 的正式首批条款：夜检记录明确移交份数为 2。",
+                    "start": 24,
+                    "end": 71
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-N03",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "LX22",
+                "text": "完全虚构合成资料｜LX22｜ANN-N03 R2\nLX22 档案馆搬库及保密箱交接已签发的 LOT-N03 生效条款：夜检记录明确移交份数为 4；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-N03",
+                    "field": "夜检记录明确移交份数",
+                    "role": "DIRECT",
+                    "quote": "LX22 档案馆搬库及保密箱交接已签发的 LOT-N03 生效条款：夜检记录明确移交份数为 4；以本条为准。",
+                    "start": 25,
+                    "end": 79,
+                    "value": "4"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "ANN-N03:R2:TXT:A2"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "S01",
+          "priority": 5,
+          "intake_signal": "近期复核过；仅例行检查",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "6"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "LX22 档案馆搬库及保密箱交接 LOT-S01 的正式首批条款：运输批次数为 6。",
+                "start": 24,
+                "end": 66,
+                "raw_sha256": "3fc141592843ca0d59a0220f0125b9aed75745eb82fb032e3fce145e82205f34",
+                "normalized_sha256": "3fc141592843ca0d59a0220f0125b9aed75745eb82fb032e3fce145e82205f34"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "6"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "LX22 档案馆搬库及保密箱交接 LOT-S01 的正式首批条款：运输批次数为 6。",
+                "start": 24,
+                "end": 66,
+                "raw_sha256": "3fc141592843ca0d59a0220f0125b9aed75745eb82fb032e3fce145e82205f34",
+                "normalized_sha256": "3fc141592843ca0d59a0220f0125b9aed75745eb82fb032e3fce145e82205f34"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "LX22",
+              "scope": "LOT-S01",
+              "field": "运输批次数"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "LX22",
+                "text": "完全虚构合成资料｜LX22｜INTAKE R1\nLX22 档案馆搬库及保密箱交接 LOT-S01 的正式首批条款：运输批次数为 6。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-S01",
+                    "field": "运输批次数",
+                    "role": "DIRECT",
+                    "quote": "LX22 档案馆搬库及保密箱交接 LOT-S01 的正式首批条款：运输批次数为 6。",
+                    "start": 24,
+                    "end": 66,
+                    "value": "6"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "INTAKE:R1:TXT:S1"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "S02",
+          "priority": 9,
+          "intake_signal": "未出现在新来文主题",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "24"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "LX22 档案馆搬库及保密箱交接 LOT-S02 的正式首批条款：既有按月巡查值为 24。",
+                "start": 24,
+                "end": 69,
+                "raw_sha256": "3b44662be7a7ffaffc2cb21103f2e3f8ad365f677a7c850feadb1671d2288c13",
+                "normalized_sha256": "3b44662be7a7ffaffc2cb21103f2e3f8ad365f677a7c850feadb1671d2288c13"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "24"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "LX22 档案馆搬库及保密箱交接 LOT-S02 的正式首批条款：既有按月巡查值为 24。",
+                "start": 24,
+                "end": 69,
+                "raw_sha256": "3b44662be7a7ffaffc2cb21103f2e3f8ad365f677a7c850feadb1671d2288c13",
+                "normalized_sha256": "3b44662be7a7ffaffc2cb21103f2e3f8ad365f677a7c850feadb1671d2288c13"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "LX22",
+              "scope": "LOT-S02",
+              "field": "既有按月巡查值"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "LX22",
+                "text": "完全虚构合成资料｜LX22｜INTAKE R1\nLX22 档案馆搬库及保密箱交接 LOT-S02 的正式首批条款：既有按月巡查值为 24。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-S02",
+                    "field": "既有按月巡查值",
+                    "role": "DIRECT",
+                    "quote": "LX22 档案馆搬库及保密箱交接 LOT-S02 的正式首批条款：既有按月巡查值为 24。",
+                    "start": 24,
+                    "end": 69,
+                    "value": "24"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "INTAKE:R1:TXT:S1"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "O01",
+          "priority": 6,
+          "intake_signal": "收到关联来文，队列按接收等级而非内容最终结论",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "LX22 LOT-O01 首批登记：加固周转箱每车上限需核 ANN-O01 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 78,
+                "raw_sha256": "39bfac73c2d6c96ba296bad1300ca28888eaa72941152f4e5391676adb6c4ea5",
+                "normalized_sha256": "39bfac73c2d6c96ba296bad1300ca28888eaa72941152f4e5391676adb6c4ea5"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O01",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O01",
+              "field": "加固周转箱每车上限",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "16"
+            },
+            "evidence": [
+              {
+                "doc": "ANN-O01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "A2",
+                "role": "DIRECT",
+                "quote": "LX22 档案馆搬库及保密箱交接已签发的 LOT-O01 生效条款：加固周转箱每车上限为 16；以本条为准。",
+                "start": 25,
+                "end": 79,
+                "raw_sha256": "b4480fd430cc7508c240f8520a114e98a50ecc73b85b66804b6d57f5938c1aa1",
+                "normalized_sha256": "b4480fd430cc7508c240f8520a114e98a50ecc73b85b66804b6d57f5938c1aa1"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "LX22",
+              "scope": "LOT-O01",
+              "field": "加固周转箱每车上限"
+            },
+            "documents": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "LX22",
+                "text": "完全虚构合成资料｜LX22｜COVER R1\nLX22 LOT-O01 首批登记：加固周转箱每车上限需核 ANN-O01 R2 §A2 后确定，未收到正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "C1",
+                    "scope": "LOT-O01",
+                    "field": "加固周转箱每车上限",
+                    "role": "CONTEXT",
+                    "quote": "LX22 LOT-O01 首批登记：加固周转箱每车上限需核 ANN-O01 R2 §A2 后确定，未收到正文。",
+                    "start": 23,
+                    "end": 78
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-O01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "LX22",
+                "text": "完全虚构合成资料｜LX22｜ANN-O01 R2\nLX22 档案馆搬库及保密箱交接已签发的 LOT-O01 生效条款：加固周转箱每车上限为 16；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-O01",
+                    "field": "加固周转箱每车上限",
+                    "role": "DIRECT",
+                    "quote": "LX22 档案馆搬库及保密箱交接已签发的 LOT-O01 生效条款：加固周转箱每车上限为 16；以本条为准。",
+                    "start": 25,
+                    "end": 79,
+                    "value": "16"
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-O01",
+                "rev": "DRAFT3",
+                "rendition": "TXT",
+                "project": "LX22",
+                "text": "完全虚构合成资料｜LX22｜ANN-O01 DRAFT3\nLX22 档案馆搬库及保密箱交接已签发的 LOT-O01 生效条款：加固周转箱每车上限为 16；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-O01",
+                    "field": "加固周转箱每车上限",
+                    "role": "CONTEXT",
+                    "quote": "LX22 档案馆搬库及保密箱交接已签发的 LOT-O01 生效条款：加固周转箱每车上限为 16；以本条为准。",
+                    "start": 29,
+                    "end": 83
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "ANN-O01:R2:TXT:A2"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "O02",
+          "priority": 7,
+          "intake_signal": "销毁工单只补列表",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "LX22 LOT-O02 首批登记：销毁前复核等待小时需核 ANN-O02 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 78,
+                "raw_sha256": "30527b8db91642b1d17de13de6a1c32bbe9092b167a21538baf2de03438d2ae9",
+                "normalized_sha256": "30527b8db91642b1d17de13de6a1c32bbe9092b167a21538baf2de03438d2ae9"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O02",
+              "field": "销毁前复核等待小时",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "reviewed": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "LX22 LOT-O02 首批登记：销毁前复核等待小时需核 ANN-O02 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 78,
+                "raw_sha256": "30527b8db91642b1d17de13de6a1c32bbe9092b167a21538baf2de03438d2ae9",
+                "normalized_sha256": "30527b8db91642b1d17de13de6a1c32bbe9092b167a21538baf2de03438d2ae9"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O02",
+              "field": "销毁前复核等待小时",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "gate_registry": {
+            "question": {
+              "project": "LX22",
+              "scope": "LOT-O02",
+              "field": "销毁前复核等待小时"
+            },
+            "documents": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "LX22",
+                "text": "完全虚构合成资料｜LX22｜COVER R1\nLX22 LOT-O02 首批登记：销毁前复核等待小时需核 ANN-O02 R2 §A2 后确定，未收到正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "C1",
+                    "scope": "LOT-O02",
+                    "field": "销毁前复核等待小时",
+                    "role": "CONTEXT",
+                    "quote": "LX22 LOT-O02 首批登记：销毁前复核等待小时需核 ANN-O02 R2 §A2 后确定，未收到正文。",
+                    "start": 23,
+                    "end": 78
+                  }
+                ]
+              }
+            ],
+            "required_direct": [],
+            "required_gap": {
+              "doc": "ANN-O02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O02",
+              "field": "销毁前复核等待小时",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          }
+        },
+        {
+          "id": "O03",
+          "priority": 10,
+          "intake_signal": "旧缺件且无新来文对应题名",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "LX22 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 77,
+                "raw_sha256": "5ff1e0efce6e594d2d78f9df0925cdb1004de555da6707b2a5074cffb571e89a",
+                "normalized_sha256": "5ff1e0efce6e594d2d78f9df0925cdb1004de555da6707b2a5074cffb571e89a"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O03",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "reviewed": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "LX22 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 77,
+                "raw_sha256": "5ff1e0efce6e594d2d78f9df0925cdb1004de555da6707b2a5074cffb571e89a",
+                "normalized_sha256": "5ff1e0efce6e594d2d78f9df0925cdb1004de555da6707b2a5074cffb571e89a"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O03",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "gate_registry": {
+            "question": {
+              "project": "LX22",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求"
+            },
+            "documents": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "LX22",
+                "text": "完全虚构合成资料｜LX22｜COVER R1\nLX22 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "C1",
+                    "scope": "LOT-O03",
+                    "field": "滞后退场取样要求",
+                    "role": "CONTEXT",
+                    "quote": "LX22 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。",
+                    "start": 23,
+                    "end": 77
+                  }
+                ]
+              }
+            ],
+            "required_direct": [],
+            "required_gap": {
+              "doc": "ANN-O03",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "family": "CN36",
+      "title": "校园餐具清洗验收",
+      "slots": [
+        {
+          "id": "N01",
+          "priority": 1,
+          "intake_signal": "已登记正式更正通知，处理主批次",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "5"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "CN36 校园餐具清洗验收 LOT-N01 的正式首批条款：清洗液残留抽验件数为 5。",
+                "start": 24,
+                "end": 67,
+                "raw_sha256": "b28e322d652b9ba46ba87947fbdfa55eaa8699cdfc191f62ee9bf4d132d614b1",
+                "normalized_sha256": "b28e322d652b9ba46ba87947fbdfa55eaa8699cdfc191f62ee9bf4d132d614b1"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "9"
+            },
+            "evidence": [
+              {
+                "doc": "ANN-N01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "A2",
+                "role": "DIRECT",
+                "quote": "CN36 校园餐具清洗验收已签发的 LOT-N01 生效条款：清洗液残留抽验件数为 9；以本条为准。",
+                "start": 25,
+                "end": 75,
+                "raw_sha256": "0c67a0403fcac1318f53310a10fdde7340f59b2bb4f9b98b1995827bcdb19def",
+                "normalized_sha256": "0c67a0403fcac1318f53310a10fdde7340f59b2bb4f9b98b1995827bcdb19def"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "CN36",
+              "scope": "LOT-N01",
+              "field": "清洗液残留抽验件数"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "CN36",
+                "text": "完全虚构合成资料｜CN36｜INTAKE R1\nCN36 校园餐具清洗验收 LOT-N01 的正式首批条款：清洗液残留抽验件数为 5。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-N01",
+                    "field": "清洗液残留抽验件数",
+                    "role": "CONTEXT",
+                    "quote": "CN36 校园餐具清洗验收 LOT-N01 的正式首批条款：清洗液残留抽验件数为 5。",
+                    "start": 24,
+                    "end": 67
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-N01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "CN36",
+                "text": "完全虚构合成资料｜CN36｜ANN-N01 R2\nCN36 校园餐具清洗验收已签发的 LOT-N01 生效条款：清洗液残留抽验件数为 9；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-N01",
+                    "field": "清洗液残留抽验件数",
+                    "role": "DIRECT",
+                    "quote": "CN36 校园餐具清洗验收已签发的 LOT-N01 生效条款：清洗液残留抽验件数为 9；以本条为准。",
+                    "start": 25,
+                    "end": 75,
+                    "value": "9"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "ANN-N01:R2:TXT:A2"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "N02",
+          "priority": 3,
+          "intake_signal": "对来文撤回通知进行影响复核",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "7"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "CN36 校园餐具清洗验收 LOT-N02 的正式首批条款：安全停止后必要复核时长为 7。",
+                "start": 24,
+                "end": 69,
+                "raw_sha256": "fc1f756eba69b9c5318505a96d43dc69cada95e632b1b04d47b0b0dd4bf01c99",
+                "normalized_sha256": "fc1f756eba69b9c5318505a96d43dc69cada95e632b1b04d47b0b0dd4bf01c99"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "CHANGE",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "R4",
+                "role": "CONTEXT",
+                "quote": "CN36 校园餐具清洗验收的新签发通知明确撤回 LOT-N02 的旧安全停止后必要复核时长，待 ANN-N02 R2 §A2；本次发件不含替代正文。",
+                "start": 24,
+                "end": 98,
+                "raw_sha256": "92f01014bb93b592c9414882d57e3641dbc0508e11fcf6d11c229569036cefbd",
+                "normalized_sha256": "92f01014bb93b592c9414882d57e3641dbc0508e11fcf6d11c229569036cefbd"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-N02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-N02",
+              "field": "安全停止后必要复核时长",
+              "locator": "CHANGE:R2:TXT:R4"
+            }
+          },
+          "gate_registry": {
+            "question": {
+              "project": "CN36",
+              "scope": "LOT-N02",
+              "field": "安全停止后必要复核时长"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "CN36",
+                "text": "完全虚构合成资料｜CN36｜INTAKE R1\nCN36 校园餐具清洗验收 LOT-N02 的正式首批条款：安全停止后必要复核时长为 7。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-N02",
+                    "field": "安全停止后必要复核时长",
+                    "role": "CONTEXT",
+                    "quote": "CN36 校园餐具清洗验收 LOT-N02 的正式首批条款：安全停止后必要复核时长为 7。",
+                    "start": 24,
+                    "end": 69
+                  }
+                ]
+              },
+              {
+                "doc": "CHANGE",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "CN36",
+                "text": "完全虚构合成资料｜CN36｜CHANGE R2\nCN36 校园餐具清洗验收的新签发通知明确撤回 LOT-N02 的旧安全停止后必要复核时长，待 ANN-N02 R2 §A2；本次发件不含替代正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "R4",
+                    "scope": "LOT-N02",
+                    "field": "安全停止后必要复核时长",
+                    "role": "CONTEXT",
+                    "quote": "CN36 校园餐具清洗验收的新签发通知明确撤回 LOT-N02 的旧安全停止后必要复核时长，待 ANN-N02 R2 §A2；本次发件不含替代正文。",
+                    "start": 24,
+                    "end": 98
+                  }
+                ]
+              }
+            ],
+            "required_direct": [],
+            "required_gap": {
+              "doc": "ANN-N02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-N02",
+              "field": "安全停止后必要复核时长",
+              "locator": "CHANGE:R2:TXT:R4"
+            }
+          }
+        },
+        {
+          "id": "N03",
+          "priority": 4,
+          "intake_signal": "食安组电子签名决定",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "3"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "CN36 校园餐具清洗验收 LOT-N03 的正式首批条款：夜检记录明确移交份数为 3。",
+                "start": 24,
+                "end": 68,
+                "raw_sha256": "ce8c2057a5ab7bef9ce0c7684229ef7410643f20575dd5d37a92b9ffceb35bee",
+                "normalized_sha256": "ce8c2057a5ab7bef9ce0c7684229ef7410643f20575dd5d37a92b9ffceb35bee"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "5"
+            },
+            "evidence": [
+              {
+                "doc": "ANN-N03",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "A2",
+                "role": "DIRECT",
+                "quote": "CN36 校园餐具清洗验收已签发的 LOT-N03 生效条款：夜检记录明确移交份数为 5；以本条为准。",
+                "start": 25,
+                "end": 76,
+                "raw_sha256": "0b6b368caa48b6cebb12b20b9abad528290ebf02faa23a75f2012f78c6df658f",
+                "normalized_sha256": "0b6b368caa48b6cebb12b20b9abad528290ebf02faa23a75f2012f78c6df658f"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "CN36",
+              "scope": "LOT-N03",
+              "field": "夜检记录明确移交份数"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "CN36",
+                "text": "完全虚构合成资料｜CN36｜INTAKE R1\nCN36 校园餐具清洗验收 LOT-N03 的正式首批条款：夜检记录明确移交份数为 3。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-N03",
+                    "field": "夜检记录明确移交份数",
+                    "role": "CONTEXT",
+                    "quote": "CN36 校园餐具清洗验收 LOT-N03 的正式首批条款：夜检记录明确移交份数为 3。",
+                    "start": 24,
+                    "end": 68
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-N03",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "CN36",
+                "text": "完全虚构合成资料｜CN36｜ANN-N03 R2\nCN36 校园餐具清洗验收已签发的 LOT-N03 生效条款：夜检记录明确移交份数为 5；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-N03",
+                    "field": "夜检记录明确移交份数",
+                    "role": "DIRECT",
+                    "quote": "CN36 校园餐具清洗验收已签发的 LOT-N03 生效条款：夜检记录明确移交份数为 5；以本条为准。",
+                    "start": 25,
+                    "end": 76,
+                    "value": "5"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "ANN-N03:R2:TXT:A2"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "S01",
+          "priority": 5,
+          "intake_signal": "近期复核过；仅例行检查",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "10"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "CN36 校园餐具清洗验收 LOT-S01 的正式首批条款：饭盒封签最低号码段为 10。",
+                "start": 24,
+                "end": 68,
+                "raw_sha256": "8917f4d7d7f5cab74d716e934e539ec45d8834b01518a78f09ff911b9c75f6a8",
+                "normalized_sha256": "8917f4d7d7f5cab74d716e934e539ec45d8834b01518a78f09ff911b9c75f6a8"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "10"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "CN36 校园餐具清洗验收 LOT-S01 的正式首批条款：饭盒封签最低号码段为 10。",
+                "start": 24,
+                "end": 68,
+                "raw_sha256": "8917f4d7d7f5cab74d716e934e539ec45d8834b01518a78f09ff911b9c75f6a8",
+                "normalized_sha256": "8917f4d7d7f5cab74d716e934e539ec45d8834b01518a78f09ff911b9c75f6a8"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "CN36",
+              "scope": "LOT-S01",
+              "field": "饭盒封签最低号码段"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "CN36",
+                "text": "完全虚构合成资料｜CN36｜INTAKE R1\nCN36 校园餐具清洗验收 LOT-S01 的正式首批条款：饭盒封签最低号码段为 10。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-S01",
+                    "field": "饭盒封签最低号码段",
+                    "role": "DIRECT",
+                    "quote": "CN36 校园餐具清洗验收 LOT-S01 的正式首批条款：饭盒封签最低号码段为 10。",
+                    "start": 24,
+                    "end": 68,
+                    "value": "10"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "INTAKE:R1:TXT:S1"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "S02",
+          "priority": 9,
+          "intake_signal": "未出现在新来文主题",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "32"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "CN36 校园餐具清洗验收 LOT-S02 的正式首批条款：既有按月巡查值为 32。",
+                "start": 24,
+                "end": 66,
+                "raw_sha256": "f29bf35120253555eccff6aea09e002a38b78a5ca34db8db5cc92a234862661d",
+                "normalized_sha256": "f29bf35120253555eccff6aea09e002a38b78a5ca34db8db5cc92a234862661d"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "32"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "CN36 校园餐具清洗验收 LOT-S02 的正式首批条款：既有按月巡查值为 32。",
+                "start": 24,
+                "end": 66,
+                "raw_sha256": "f29bf35120253555eccff6aea09e002a38b78a5ca34db8db5cc92a234862661d",
+                "normalized_sha256": "f29bf35120253555eccff6aea09e002a38b78a5ca34db8db5cc92a234862661d"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "CN36",
+              "scope": "LOT-S02",
+              "field": "既有按月巡查值"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "CN36",
+                "text": "完全虚构合成资料｜CN36｜INTAKE R1\nCN36 校园餐具清洗验收 LOT-S02 的正式首批条款：既有按月巡查值为 32。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-S02",
+                    "field": "既有按月巡查值",
+                    "role": "DIRECT",
+                    "quote": "CN36 校园餐具清洗验收 LOT-S02 的正式首批条款：既有按月巡查值为 32。",
+                    "start": 24,
+                    "end": 66,
+                    "value": "32"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "INTAKE:R1:TXT:S1"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "O01",
+          "priority": 8,
+          "intake_signal": "收到关联来文，队列按接收等级而非内容最终结论",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "CN36 LOT-O01 首批登记：每批随机复验套数需核 ANN-O01 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 77,
+                "raw_sha256": "667ac64f92e319fcf6d07985349fc81d6e1ecb412a1c94cc27da3fe787d6fc05",
+                "normalized_sha256": "667ac64f92e319fcf6d07985349fc81d6e1ecb412a1c94cc27da3fe787d6fc05"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O01",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O01",
+              "field": "每批随机复验套数",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "20"
+            },
+            "evidence": [
+              {
+                "doc": "ANN-O01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "A2",
+                "role": "DIRECT",
+                "quote": "CN36 校园餐具清洗验收已签发的 LOT-O01 生效条款：每批随机复验套数为 20；以本条为准。",
+                "start": 25,
+                "end": 75,
+                "raw_sha256": "656189928a367ac1b63248c3e86894cd30840b6cc1de73fcd9498a8ea0fe5c45",
+                "normalized_sha256": "656189928a367ac1b63248c3e86894cd30840b6cc1de73fcd9498a8ea0fe5c45"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "CN36",
+              "scope": "LOT-O01",
+              "field": "每批随机复验套数"
+            },
+            "documents": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "CN36",
+                "text": "完全虚构合成资料｜CN36｜COVER R1\nCN36 LOT-O01 首批登记：每批随机复验套数需核 ANN-O01 R2 §A2 后确定，未收到正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "C1",
+                    "scope": "LOT-O01",
+                    "field": "每批随机复验套数",
+                    "role": "CONTEXT",
+                    "quote": "CN36 LOT-O01 首批登记：每批随机复验套数需核 ANN-O01 R2 §A2 后确定，未收到正文。",
+                    "start": 23,
+                    "end": 77
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-O01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "CN36",
+                "text": "完全虚构合成资料｜CN36｜ANN-O01 R2\nCN36 校园餐具清洗验收已签发的 LOT-O01 生效条款：每批随机复验套数为 20；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-O01",
+                    "field": "每批随机复验套数",
+                    "role": "DIRECT",
+                    "quote": "CN36 校园餐具清洗验收已签发的 LOT-O01 生效条款：每批随机复验套数为 20；以本条为准。",
+                    "start": 25,
+                    "end": 75,
+                    "value": "20"
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-O01",
+                "rev": "DRAFT3",
+                "rendition": "TXT",
+                "project": "CN36",
+                "text": "完全虚构合成资料｜CN36｜ANN-O01 DRAFT3\nCN36 校园餐具清洗验收已签发的 LOT-O01 生效条款：每批随机复验套数为 20；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-O01",
+                    "field": "每批随机复验套数",
+                    "role": "CONTEXT",
+                    "quote": "CN36 校园餐具清洗验收已签发的 LOT-O01 生效条款：每批随机复验套数为 20；以本条为准。",
+                    "start": 29,
+                    "end": 79
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "ANN-O01:R2:TXT:A2"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "O02",
+          "priority": 7,
+          "intake_signal": "供应商周末补送承诺尚无正式版本",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "CN36 LOT-O02 首批登记：周末补送免收费本数需核 ANN-O02 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 78,
+                "raw_sha256": "7dd98827e27cbe48aa2ad7ac1d471a514a7cae6b4cf3b85427d3f75c78ac6030",
+                "normalized_sha256": "7dd98827e27cbe48aa2ad7ac1d471a514a7cae6b4cf3b85427d3f75c78ac6030"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O02",
+              "field": "周末补送免收费本数",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "reviewed": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "CN36 LOT-O02 首批登记：周末补送免收费本数需核 ANN-O02 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 78,
+                "raw_sha256": "7dd98827e27cbe48aa2ad7ac1d471a514a7cae6b4cf3b85427d3f75c78ac6030",
+                "normalized_sha256": "7dd98827e27cbe48aa2ad7ac1d471a514a7cae6b4cf3b85427d3f75c78ac6030"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O02",
+              "field": "周末补送免收费本数",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "gate_registry": {
+            "question": {
+              "project": "CN36",
+              "scope": "LOT-O02",
+              "field": "周末补送免收费本数"
+            },
+            "documents": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "CN36",
+                "text": "完全虚构合成资料｜CN36｜COVER R1\nCN36 LOT-O02 首批登记：周末补送免收费本数需核 ANN-O02 R2 §A2 后确定，未收到正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "C1",
+                    "scope": "LOT-O02",
+                    "field": "周末补送免收费本数",
+                    "role": "CONTEXT",
+                    "quote": "CN36 LOT-O02 首批登记：周末补送免收费本数需核 ANN-O02 R2 §A2 后确定，未收到正文。",
+                    "start": 23,
+                    "end": 78
+                  }
+                ]
+              }
+            ],
+            "required_direct": [],
+            "required_gap": {
+              "doc": "ANN-O02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O02",
+              "field": "周末补送免收费本数",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          }
+        },
+        {
+          "id": "O03",
+          "priority": 10,
+          "intake_signal": "旧缺件且无新来文对应题名",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "CN36 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 77,
+                "raw_sha256": "f336635c5172fb523e2e6030f71e8bbdd61d5ccbe15259be1d60f5b98d7eb411",
+                "normalized_sha256": "f336635c5172fb523e2e6030f71e8bbdd61d5ccbe15259be1d60f5b98d7eb411"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O03",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "reviewed": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "CN36 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 77,
+                "raw_sha256": "f336635c5172fb523e2e6030f71e8bbdd61d5ccbe15259be1d60f5b98d7eb411",
+                "normalized_sha256": "f336635c5172fb523e2e6030f71e8bbdd61d5ccbe15259be1d60f5b98d7eb411"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O03",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "gate_registry": {
+            "question": {
+              "project": "CN36",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求"
+            },
+            "documents": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "CN36",
+                "text": "完全虚构合成资料｜CN36｜COVER R1\nCN36 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "C1",
+                    "scope": "LOT-O03",
+                    "field": "滞后退场取样要求",
+                    "role": "CONTEXT",
+                    "quote": "CN36 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。",
+                    "start": 23,
+                    "end": 77
+                  }
+                ]
+              }
+            ],
+            "required_direct": [],
+            "required_gap": {
+              "doc": "ANN-O03",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "family": "KT41",
+      "title": "医院床帘阶段供货",
+      "slots": [
+        {
+          "id": "N01",
+          "priority": 1,
+          "intake_signal": "已登记正式更正通知，处理主批次",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "8"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "KT41 医院床帘阶段供货 LOT-N01 的正式首批条款：首批检验权重（%）为 8。",
+                "start": 24,
+                "end": 67,
+                "raw_sha256": "083b0367fb65ca767220387c6f6ba98036fcca2e828d4e3e7ea36363b31858bd",
+                "normalized_sha256": "083b0367fb65ca767220387c6f6ba98036fcca2e828d4e3e7ea36363b31858bd"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "11"
+            },
+            "evidence": [
+              {
+                "doc": "ANN-N01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "A2",
+                "role": "DIRECT",
+                "quote": "KT41 医院床帘阶段供货已签发的 LOT-N01 生效条款：首批检验权重（%）为 11；以本条为准。",
+                "start": 25,
+                "end": 76,
+                "raw_sha256": "7d0f6324b1b22dfbeea2358744bfaf53f4809e72aad33bdfd4dd5b72a11208e3",
+                "normalized_sha256": "7d0f6324b1b22dfbeea2358744bfaf53f4809e72aad33bdfd4dd5b72a11208e3"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "KT41",
+              "scope": "LOT-N01",
+              "field": "首批检验权重（%）"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "KT41",
+                "text": "完全虚构合成资料｜KT41｜INTAKE R1\nKT41 医院床帘阶段供货 LOT-N01 的正式首批条款：首批检验权重（%）为 8。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-N01",
+                    "field": "首批检验权重（%）",
+                    "role": "CONTEXT",
+                    "quote": "KT41 医院床帘阶段供货 LOT-N01 的正式首批条款：首批检验权重（%）为 8。",
+                    "start": 24,
+                    "end": 67
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-N01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "KT41",
+                "text": "完全虚构合成资料｜KT41｜ANN-N01 R2\nKT41 医院床帘阶段供货已签发的 LOT-N01 生效条款：首批检验权重（%）为 11；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-N01",
+                    "field": "首批检验权重（%）",
+                    "role": "DIRECT",
+                    "quote": "KT41 医院床帘阶段供货已签发的 LOT-N01 生效条款：首批检验权重（%）为 11；以本条为准。",
+                    "start": 25,
+                    "end": 76,
+                    "value": "11"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "ANN-N01:R2:TXT:A2"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "N02",
+          "priority": 3,
+          "intake_signal": "对来文撤回通知进行影响复核",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "8"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "KT41 医院床帘阶段供货 LOT-N02 的正式首批条款：安全停止后必要复核时长为 8。",
+                "start": 24,
+                "end": 69,
+                "raw_sha256": "b9707a2ab14cd4e88e7dd85762853f457b0f50a6a311ac6835d14e047dd6b3df",
+                "normalized_sha256": "b9707a2ab14cd4e88e7dd85762853f457b0f50a6a311ac6835d14e047dd6b3df"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "CHANGE",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "R4",
+                "role": "CONTEXT",
+                "quote": "KT41 医院床帘阶段供货的新签发通知明确撤回 LOT-N02 的旧安全停止后必要复核时长，待 ANN-N02 R2 §A2；本次发件不含替代正文。",
+                "start": 24,
+                "end": 98,
+                "raw_sha256": "ba2bb0c7a3fc03c13fa909f18488b9e564c1bcfd864c3f886b41f668551ec434",
+                "normalized_sha256": "ba2bb0c7a3fc03c13fa909f18488b9e564c1bcfd864c3f886b41f668551ec434"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-N02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-N02",
+              "field": "安全停止后必要复核时长",
+              "locator": "CHANGE:R2:TXT:R4"
+            }
+          },
+          "gate_registry": {
+            "question": {
+              "project": "KT41",
+              "scope": "LOT-N02",
+              "field": "安全停止后必要复核时长"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "KT41",
+                "text": "完全虚构合成资料｜KT41｜INTAKE R1\nKT41 医院床帘阶段供货 LOT-N02 的正式首批条款：安全停止后必要复核时长为 8。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-N02",
+                    "field": "安全停止后必要复核时长",
+                    "role": "CONTEXT",
+                    "quote": "KT41 医院床帘阶段供货 LOT-N02 的正式首批条款：安全停止后必要复核时长为 8。",
+                    "start": 24,
+                    "end": 69
+                  }
+                ]
+              },
+              {
+                "doc": "CHANGE",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "KT41",
+                "text": "完全虚构合成资料｜KT41｜CHANGE R2\nKT41 医院床帘阶段供货的新签发通知明确撤回 LOT-N02 的旧安全停止后必要复核时长，待 ANN-N02 R2 §A2；本次发件不含替代正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "R4",
+                    "scope": "LOT-N02",
+                    "field": "安全停止后必要复核时长",
+                    "role": "CONTEXT",
+                    "quote": "KT41 医院床帘阶段供货的新签发通知明确撤回 LOT-N02 的旧安全停止后必要复核时长，待 ANN-N02 R2 §A2；本次发件不含替代正文。",
+                    "start": 24,
+                    "end": 98
+                  }
+                ]
+              }
+            ],
+            "required_direct": [],
+            "required_gap": {
+              "doc": "ANN-N02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-N02",
+              "field": "安全停止后必要复核时长",
+              "locator": "CHANGE:R2:TXT:R4"
+            }
+          }
+        },
+        {
+          "id": "N03",
+          "priority": 4,
+          "intake_signal": "第三次采购更正的明确计分表",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "4"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "KT41 医院床帘阶段供货 LOT-N03 的正式首批条款：夜检记录明确移交份数为 4。",
+                "start": 24,
+                "end": 68,
+                "raw_sha256": "9398647a73310eca4c8a268ae7f5e3b2ffd382d0ee967a54aa237613f435bb93",
+                "normalized_sha256": "9398647a73310eca4c8a268ae7f5e3b2ffd382d0ee967a54aa237613f435bb93"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "6"
+            },
+            "evidence": [
+              {
+                "doc": "ANN-N03",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "A2",
+                "role": "DIRECT",
+                "quote": "KT41 医院床帘阶段供货已签发的 LOT-N03 生效条款：夜检记录明确移交份数为 6；以本条为准。",
+                "start": 25,
+                "end": 76,
+                "raw_sha256": "a1527e0a24687f5a21c64734cf31b7038076e97bc33b4812216143716d4696ae",
+                "normalized_sha256": "a1527e0a24687f5a21c64734cf31b7038076e97bc33b4812216143716d4696ae"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "KT41",
+              "scope": "LOT-N03",
+              "field": "夜检记录明确移交份数"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "KT41",
+                "text": "完全虚构合成资料｜KT41｜INTAKE R1\nKT41 医院床帘阶段供货 LOT-N03 的正式首批条款：夜检记录明确移交份数为 4。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-N03",
+                    "field": "夜检记录明确移交份数",
+                    "role": "CONTEXT",
+                    "quote": "KT41 医院床帘阶段供货 LOT-N03 的正式首批条款：夜检记录明确移交份数为 4。",
+                    "start": 24,
+                    "end": 68
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-N03",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "KT41",
+                "text": "完全虚构合成资料｜KT41｜ANN-N03 R2\nKT41 医院床帘阶段供货已签发的 LOT-N03 生效条款：夜检记录明确移交份数为 6；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-N03",
+                    "field": "夜检记录明确移交份数",
+                    "role": "DIRECT",
+                    "quote": "KT41 医院床帘阶段供货已签发的 LOT-N03 生效条款：夜检记录明确移交份数为 6；以本条为准。",
+                    "start": 25,
+                    "end": 76,
+                    "value": "6"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "ANN-N03:R2:TXT:A2"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "S01",
+          "priority": 5,
+          "intake_signal": "近期复核过；仅例行检查",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "15"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "KT41 医院床帘阶段供货 LOT-S01 的正式首批条款：首次到场工期（日）为 15。",
+                "start": 24,
+                "end": 68,
+                "raw_sha256": "e6015ec42e0918b6531a2dc597f0fd978f62eea40c060cf91328eabb23588bbd",
+                "normalized_sha256": "e6015ec42e0918b6531a2dc597f0fd978f62eea40c060cf91328eabb23588bbd"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "15"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "KT41 医院床帘阶段供货 LOT-S01 的正式首批条款：首次到场工期（日）为 15。",
+                "start": 24,
+                "end": 68,
+                "raw_sha256": "e6015ec42e0918b6531a2dc597f0fd978f62eea40c060cf91328eabb23588bbd",
+                "normalized_sha256": "e6015ec42e0918b6531a2dc597f0fd978f62eea40c060cf91328eabb23588bbd"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "KT41",
+              "scope": "LOT-S01",
+              "field": "首次到场工期（日）"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "KT41",
+                "text": "完全虚构合成资料｜KT41｜INTAKE R1\nKT41 医院床帘阶段供货 LOT-S01 的正式首批条款：首次到场工期（日）为 15。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-S01",
+                    "field": "首次到场工期（日）",
+                    "role": "DIRECT",
+                    "quote": "KT41 医院床帘阶段供货 LOT-S01 的正式首批条款：首次到场工期（日）为 15。",
+                    "start": 24,
+                    "end": 68,
+                    "value": "15"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "INTAKE:R1:TXT:S1"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "S02",
+          "priority": 9,
+          "intake_signal": "未出现在新来文主题",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "30"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "KT41 医院床帘阶段供货 LOT-S02 的正式首批条款：既有按月巡查值为 30。",
+                "start": 24,
+                "end": 66,
+                "raw_sha256": "7d5a2282d413a00a859244dd66e9b19f28a5cdf0d51e766e42b39c7d3b89b246",
+                "normalized_sha256": "7d5a2282d413a00a859244dd66e9b19f28a5cdf0d51e766e42b39c7d3b89b246"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "30"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "KT41 医院床帘阶段供货 LOT-S02 的正式首批条款：既有按月巡查值为 30。",
+                "start": 24,
+                "end": 66,
+                "raw_sha256": "7d5a2282d413a00a859244dd66e9b19f28a5cdf0d51e766e42b39c7d3b89b246",
+                "normalized_sha256": "7d5a2282d413a00a859244dd66e9b19f28a5cdf0d51e766e42b39c7d3b89b246"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "KT41",
+              "scope": "LOT-S02",
+              "field": "既有按月巡查值"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "KT41",
+                "text": "完全虚构合成资料｜KT41｜INTAKE R1\nKT41 医院床帘阶段供货 LOT-S02 的正式首批条款：既有按月巡查值为 30。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-S02",
+                    "field": "既有按月巡查值",
+                    "role": "DIRECT",
+                    "quote": "KT41 医院床帘阶段供货 LOT-S02 的正式首批条款：既有按月巡查值为 30。",
+                    "start": 24,
+                    "end": 66,
+                    "value": "30"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "INTAKE:R1:TXT:S1"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "O01",
+          "priority": 5,
+          "intake_signal": "收到关联来文，队列按接收等级而非内容最终结论",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "KT41 LOT-O01 首批登记：每抽样组经向检测片数需核 ANN-O01 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 79,
+                "raw_sha256": "6478d3f0a03052b4fcb94c1fed615557f07147dbb34b8c4d881db7bc05e5ee50",
+                "normalized_sha256": "6478d3f0a03052b4fcb94c1fed615557f07147dbb34b8c4d881db7bc05e5ee50"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O01",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O01",
+              "field": "每抽样组经向检测片数",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "6"
+            },
+            "evidence": [
+              {
+                "doc": "ANN-O01",
+                "rev": "DRAFT3",
+                "rendition": "TXT",
+                "clause": "A2",
+                "role": "DIRECT",
+                "quote": "KT41 医院床帘阶段供货已签发的 LOT-O01 生效条款：每抽样组经向检测片数为 6；以本条为准。",
+                "start": 29,
+                "end": 80,
+                "raw_sha256": "7d5bdd2a986fa02eca5f3db6b248e85e1b313c40d6d38d817ab2b28f36bf67db",
+                "normalized_sha256": "7d5bdd2a986fa02eca5f3db6b248e85e1b313c40d6d38d817ab2b28f36bf67db"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "KT41",
+              "scope": "LOT-O01",
+              "field": "每抽样组经向检测片数"
+            },
+            "documents": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "KT41",
+                "text": "完全虚构合成资料｜KT41｜COVER R1\nKT41 LOT-O01 首批登记：每抽样组经向检测片数需核 ANN-O01 R2 §A2 后确定，未收到正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "C1",
+                    "scope": "LOT-O01",
+                    "field": "每抽样组经向检测片数",
+                    "role": "CONTEXT",
+                    "quote": "KT41 LOT-O01 首批登记：每抽样组经向检测片数需核 ANN-O01 R2 §A2 后确定，未收到正文。",
+                    "start": 23,
+                    "end": 79
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-O01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "KT41",
+                "text": "完全虚构合成资料｜KT41｜ANN-O01 R2\nKT41 医院床帘阶段供货已签发的 LOT-O01 生效条款：每抽样组经向检测片数为 6；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-O01",
+                    "field": "每抽样组经向检测片数",
+                    "role": "DIRECT",
+                    "quote": "KT41 医院床帘阶段供货已签发的 LOT-O01 生效条款：每抽样组经向检测片数为 6；以本条为准。",
+                    "start": 25,
+                    "end": 76,
+                    "value": "6"
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-O01",
+                "rev": "DRAFT3",
+                "rendition": "TXT",
+                "project": "KT41",
+                "text": "完全虚构合成资料｜KT41｜ANN-O01 DRAFT3\nKT41 医院床帘阶段供货已签发的 LOT-O01 生效条款：每抽样组经向检测片数为 6；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-O01",
+                    "field": "每抽样组经向检测片数",
+                    "role": "CONTEXT",
+                    "quote": "KT41 医院床帘阶段供货已签发的 LOT-O01 生效条款：每抽样组经向检测片数为 6；以本条为准。",
+                    "start": 29,
+                    "end": 80
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "ANN-O01:R2:TXT:A2"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "O02",
+          "priority": 7,
+          "intake_signal": "拆分项价格表有修订目录，无签发正文",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "KT41 LOT-O02 首批登记：第三阶段安装补贴比例需核 ANN-O02 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 79,
+                "raw_sha256": "0f235840c4d5bb41d647c31fe9e4b8988172166c43d431aa2cafafd6ba7e43dc",
+                "normalized_sha256": "0f235840c4d5bb41d647c31fe9e4b8988172166c43d431aa2cafafd6ba7e43dc"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O02",
+              "field": "第三阶段安装补贴比例",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "reviewed": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "KT41 LOT-O02 首批登记：第三阶段安装补贴比例需核 ANN-O02 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 79,
+                "raw_sha256": "0f235840c4d5bb41d647c31fe9e4b8988172166c43d431aa2cafafd6ba7e43dc",
+                "normalized_sha256": "0f235840c4d5bb41d647c31fe9e4b8988172166c43d431aa2cafafd6ba7e43dc"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O02",
+              "field": "第三阶段安装补贴比例",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "gate_registry": {
+            "question": {
+              "project": "KT41",
+              "scope": "LOT-O02",
+              "field": "第三阶段安装补贴比例"
+            },
+            "documents": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "KT41",
+                "text": "完全虚构合成资料｜KT41｜COVER R1\nKT41 LOT-O02 首批登记：第三阶段安装补贴比例需核 ANN-O02 R2 §A2 后确定，未收到正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "C1",
+                    "scope": "LOT-O02",
+                    "field": "第三阶段安装补贴比例",
+                    "role": "CONTEXT",
+                    "quote": "KT41 LOT-O02 首批登记：第三阶段安装补贴比例需核 ANN-O02 R2 §A2 后确定，未收到正文。",
+                    "start": 23,
+                    "end": 79
+                  }
+                ]
+              }
+            ],
+            "required_direct": [],
+            "required_gap": {
+              "doc": "ANN-O02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O02",
+              "field": "第三阶段安装补贴比例",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          }
+        },
+        {
+          "id": "O03",
+          "priority": 10,
+          "intake_signal": "旧缺件且无新来文对应题名",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "KT41 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 77,
+                "raw_sha256": "c31419c9068c17bbfbaf761cf760a0b9f7fe908192a2425e7254deb465053364",
+                "normalized_sha256": "c31419c9068c17bbfbaf761cf760a0b9f7fe908192a2425e7254deb465053364"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O03",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "reviewed": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "KT41 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 77,
+                "raw_sha256": "c31419c9068c17bbfbaf761cf760a0b9f7fe908192a2425e7254deb465053364",
+                "normalized_sha256": "c31419c9068c17bbfbaf761cf760a0b9f7fe908192a2425e7254deb465053364"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O03",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "gate_registry": {
+            "question": {
+              "project": "KT41",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求"
+            },
+            "documents": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "KT41",
+                "text": "完全虚构合成资料｜KT41｜COVER R1\nKT41 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "C1",
+                    "scope": "LOT-O03",
+                    "field": "滞后退场取样要求",
+                    "role": "CONTEXT",
+                    "quote": "KT41 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。",
+                    "start": 23,
+                    "end": 77
+                  }
+                ]
+              }
+            ],
+            "required_direct": [],
+            "required_gap": {
+              "doc": "ANN-O03",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "family": "EV55",
+      "title": "会展临时电设施退租",
+      "slots": [
+        {
+          "id": "N01",
+          "priority": 1,
+          "intake_signal": "已登记正式更正通知，处理主批次",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "4"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "EV55 会展临时电设施退租 LOT-N01 的正式首批条款：布设巡查提前小时为 4。",
+                "start": 24,
+                "end": 67,
+                "raw_sha256": "8c6e34626e9289ce33d00b92cc57e16b52374c6ee1164ceaa9dc110fca56b833",
+                "normalized_sha256": "8c6e34626e9289ce33d00b92cc57e16b52374c6ee1164ceaa9dc110fca56b833"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "6"
+            },
+            "evidence": [
+              {
+                "doc": "ANN-N01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "A2",
+                "role": "DIRECT",
+                "quote": "EV55 会展临时电设施退租已签发的 LOT-N01 生效条款：布设巡查提前小时为 6；以本条为准。",
+                "start": 25,
+                "end": 75,
+                "raw_sha256": "c43f0ebe524e519017282c13e42daf7f3d0ef6f77279131eb8fbde409d77e289",
+                "normalized_sha256": "c43f0ebe524e519017282c13e42daf7f3d0ef6f77279131eb8fbde409d77e289"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "EV55",
+              "scope": "LOT-N01",
+              "field": "布设巡查提前小时"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "EV55",
+                "text": "完全虚构合成资料｜EV55｜INTAKE R1\nEV55 会展临时电设施退租 LOT-N01 的正式首批条款：布设巡查提前小时为 4。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-N01",
+                    "field": "布设巡查提前小时",
+                    "role": "CONTEXT",
+                    "quote": "EV55 会展临时电设施退租 LOT-N01 的正式首批条款：布设巡查提前小时为 4。",
+                    "start": 24,
+                    "end": 67
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-N01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "EV55",
+                "text": "完全虚构合成资料｜EV55｜ANN-N01 R2\nEV55 会展临时电设施退租已签发的 LOT-N01 生效条款：布设巡查提前小时为 6；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-N01",
+                    "field": "布设巡查提前小时",
+                    "role": "DIRECT",
+                    "quote": "EV55 会展临时电设施退租已签发的 LOT-N01 生效条款：布设巡查提前小时为 6；以本条为准。",
+                    "start": 25,
+                    "end": 75,
+                    "value": "6"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "ANN-N01:R2:TXT:A2"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "N02",
+          "priority": 3,
+          "intake_signal": "对来文撤回通知进行影响复核",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "9"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "EV55 会展临时电设施退租 LOT-N02 的正式首批条款：安全停止后必要复核时长为 9。",
+                "start": 24,
+                "end": 70,
+                "raw_sha256": "e62d2cef91098308ad4ebed8dfe9a5560c5a9de4110b22171c8060e676d43edd",
+                "normalized_sha256": "e62d2cef91098308ad4ebed8dfe9a5560c5a9de4110b22171c8060e676d43edd"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "CHANGE",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "R4",
+                "role": "CONTEXT",
+                "quote": "EV55 会展临时电设施退租的新签发通知明确撤回 LOT-N02 的旧安全停止后必要复核时长，待 ANN-N02 R2 §A2；本次发件不含替代正文。",
+                "start": 24,
+                "end": 99,
+                "raw_sha256": "42658ac98900db794b38af266b9ea772c40bad540c67350f34396d5960a46c2d",
+                "normalized_sha256": "42658ac98900db794b38af266b9ea772c40bad540c67350f34396d5960a46c2d"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-N02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-N02",
+              "field": "安全停止后必要复核时长",
+              "locator": "CHANGE:R2:TXT:R4"
+            }
+          },
+          "gate_registry": {
+            "question": {
+              "project": "EV55",
+              "scope": "LOT-N02",
+              "field": "安全停止后必要复核时长"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "EV55",
+                "text": "完全虚构合成资料｜EV55｜INTAKE R1\nEV55 会展临时电设施退租 LOT-N02 的正式首批条款：安全停止后必要复核时长为 9。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-N02",
+                    "field": "安全停止后必要复核时长",
+                    "role": "CONTEXT",
+                    "quote": "EV55 会展临时电设施退租 LOT-N02 的正式首批条款：安全停止后必要复核时长为 9。",
+                    "start": 24,
+                    "end": 70
+                  }
+                ]
+              },
+              {
+                "doc": "CHANGE",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "EV55",
+                "text": "完全虚构合成资料｜EV55｜CHANGE R2\nEV55 会展临时电设施退租的新签发通知明确撤回 LOT-N02 的旧安全停止后必要复核时长，待 ANN-N02 R2 §A2；本次发件不含替代正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "R4",
+                    "scope": "LOT-N02",
+                    "field": "安全停止后必要复核时长",
+                    "role": "CONTEXT",
+                    "quote": "EV55 会展临时电设施退租的新签发通知明确撤回 LOT-N02 的旧安全停止后必要复核时长，待 ANN-N02 R2 §A2；本次发件不含替代正文。",
+                    "start": 24,
+                    "end": 99
+                  }
+                ]
+              }
+            ],
+            "required_direct": [],
+            "required_gap": {
+              "doc": "ANN-N02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-N02",
+              "field": "安全停止后必要复核时长",
+              "locator": "CHANGE:R2:TXT:R4"
+            }
+          }
+        },
+        {
+          "id": "N03",
+          "priority": 2,
+          "intake_signal": "值班签收的调整记录",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "5"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "EV55 会展临时电设施退租 LOT-N03 的正式首批条款：夜检记录明确移交份数为 5。",
+                "start": 24,
+                "end": 69,
+                "raw_sha256": "9e18b31cd4077ea5818c35a98438edb33282918382e42eeaf4b2f52589223562",
+                "normalized_sha256": "9e18b31cd4077ea5818c35a98438edb33282918382e42eeaf4b2f52589223562"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "7"
+            },
+            "evidence": [
+              {
+                "doc": "ANN-N03",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "A2",
+                "role": "DIRECT",
+                "quote": "EV55 会展临时电设施退租已签发的 LOT-N03 生效条款：夜检记录明确移交份数为 7；以本条为准。",
+                "start": 25,
+                "end": 77,
+                "raw_sha256": "5dae3a62886e2b39461e552213ad461268035f051d105277498798d10184ce07",
+                "normalized_sha256": "5dae3a62886e2b39461e552213ad461268035f051d105277498798d10184ce07"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "EV55",
+              "scope": "LOT-N03",
+              "field": "夜检记录明确移交份数"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "EV55",
+                "text": "完全虚构合成资料｜EV55｜INTAKE R1\nEV55 会展临时电设施退租 LOT-N03 的正式首批条款：夜检记录明确移交份数为 5。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-N03",
+                    "field": "夜检记录明确移交份数",
+                    "role": "CONTEXT",
+                    "quote": "EV55 会展临时电设施退租 LOT-N03 的正式首批条款：夜检记录明确移交份数为 5。",
+                    "start": 24,
+                    "end": 69
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-N03",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "EV55",
+                "text": "完全虚构合成资料｜EV55｜ANN-N03 R2\nEV55 会展临时电设施退租已签发的 LOT-N03 生效条款：夜检记录明确移交份数为 7；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-N03",
+                    "field": "夜检记录明确移交份数",
+                    "role": "DIRECT",
+                    "quote": "EV55 会展临时电设施退租已签发的 LOT-N03 生效条款：夜检记录明确移交份数为 7；以本条为准。",
+                    "start": 25,
+                    "end": 77,
+                    "value": "7"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "ANN-N03:R2:TXT:A2"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "S01",
+          "priority": 5,
+          "intake_signal": "近期复核过；仅例行检查",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "7"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "EV55 会展临时电设施退租 LOT-S01 的正式首批条款：入口编号为 7。",
+                "start": 24,
+                "end": 63,
+                "raw_sha256": "53a8e6e78188bfda9995dee5e5506597483f749a1da64ba1568088c4958cca84",
+                "normalized_sha256": "53a8e6e78188bfda9995dee5e5506597483f749a1da64ba1568088c4958cca84"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "7"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "EV55 会展临时电设施退租 LOT-S01 的正式首批条款：入口编号为 7。",
+                "start": 24,
+                "end": 63,
+                "raw_sha256": "53a8e6e78188bfda9995dee5e5506597483f749a1da64ba1568088c4958cca84",
+                "normalized_sha256": "53a8e6e78188bfda9995dee5e5506597483f749a1da64ba1568088c4958cca84"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "EV55",
+              "scope": "LOT-S01",
+              "field": "入口编号"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "EV55",
+                "text": "完全虚构合成资料｜EV55｜INTAKE R1\nEV55 会展临时电设施退租 LOT-S01 的正式首批条款：入口编号为 7。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-S01",
+                    "field": "入口编号",
+                    "role": "DIRECT",
+                    "quote": "EV55 会展临时电设施退租 LOT-S01 的正式首批条款：入口编号为 7。",
+                    "start": 24,
+                    "end": 63,
+                    "value": "7"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "INTAKE:R1:TXT:S1"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "S02",
+          "priority": 9,
+          "intake_signal": "未出现在新来文主题",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "3"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "EV55 会展临时电设施退租 LOT-S02 的正式首批条款：既有按月巡查值为 3。",
+                "start": 24,
+                "end": 66,
+                "raw_sha256": "1e9834cf68b1aafb489954c6947e3eb36fd75e9c209794da26ef70f19c0c5bc9",
+                "normalized_sha256": "1e9834cf68b1aafb489954c6947e3eb36fd75e9c209794da26ef70f19c0c5bc9"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "3"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "EV55 会展临时电设施退租 LOT-S02 的正式首批条款：既有按月巡查值为 3。",
+                "start": 24,
+                "end": 66,
+                "raw_sha256": "1e9834cf68b1aafb489954c6947e3eb36fd75e9c209794da26ef70f19c0c5bc9",
+                "normalized_sha256": "1e9834cf68b1aafb489954c6947e3eb36fd75e9c209794da26ef70f19c0c5bc9"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "EV55",
+              "scope": "LOT-S02",
+              "field": "既有按月巡查值"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "EV55",
+                "text": "完全虚构合成资料｜EV55｜INTAKE R1\nEV55 会展临时电设施退租 LOT-S02 的正式首批条款：既有按月巡查值为 3。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-S02",
+                    "field": "既有按月巡查值",
+                    "role": "DIRECT",
+                    "quote": "EV55 会展临时电设施退租 LOT-S02 的正式首批条款：既有按月巡查值为 3。",
+                    "start": 24,
+                    "end": 66,
+                    "value": "3"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "INTAKE:R1:TXT:S1"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "O01",
+          "priority": 6,
+          "intake_signal": "收到关联来文，队列按接收等级而非内容最终结论",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "EV55 LOT-O01 首批登记：雨后复用前绝缘复查点数需核 ANN-O01 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 80,
+                "raw_sha256": "7bacf5b124d15976b90b6ffbdb5f8a0076d8aa031dca2731e06c82f291417234",
+                "normalized_sha256": "7bacf5b124d15976b90b6ffbdb5f8a0076d8aa031dca2731e06c82f291417234"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O01",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O01",
+              "field": "雨后复用前绝缘复查点数",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "5"
+            },
+            "evidence": [
+              {
+                "doc": "ANN-O01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "A2",
+                "role": "DIRECT",
+                "quote": "EV55 会展临时电设施退租已签发的 LOT-O01 生效条款：雨后复用前绝缘复查点数为 5；以本条为准。",
+                "start": 25,
+                "end": 78,
+                "raw_sha256": "02cbcc660edbda2016d81be74262025d58363716e7427c22df5f39ecdc1ff0f1",
+                "normalized_sha256": "02cbcc660edbda2016d81be74262025d58363716e7427c22df5f39ecdc1ff0f1"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "EV55",
+              "scope": "LOT-O01",
+              "field": "雨后复用前绝缘复查点数"
+            },
+            "documents": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "EV55",
+                "text": "完全虚构合成资料｜EV55｜COVER R1\nEV55 LOT-O01 首批登记：雨后复用前绝缘复查点数需核 ANN-O01 R2 §A2 后确定，未收到正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "C1",
+                    "scope": "LOT-O01",
+                    "field": "雨后复用前绝缘复查点数",
+                    "role": "CONTEXT",
+                    "quote": "EV55 LOT-O01 首批登记：雨后复用前绝缘复查点数需核 ANN-O01 R2 §A2 后确定，未收到正文。",
+                    "start": 23,
+                    "end": 80
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-O01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "EV55",
+                "text": "完全虚构合成资料｜EV55｜ANN-O01 R2\nEV55 会展临时电设施退租已签发的 LOT-O01 生效条款：雨后复用前绝缘复查点数为 5；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-O01",
+                    "field": "雨后复用前绝缘复查点数",
+                    "role": "DIRECT",
+                    "quote": "EV55 会展临时电设施退租已签发的 LOT-O01 生效条款：雨后复用前绝缘复查点数为 5；以本条为准。",
+                    "start": 25,
+                    "end": 78,
+                    "value": "5"
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-O01",
+                "rev": "DRAFT3",
+                "rendition": "TXT",
+                "project": "EV55",
+                "text": "完全虚构合成资料｜EV55｜ANN-O01 DRAFT3\nEV55 会展临时电设施退租已签发的 LOT-O01 生效条款：雨后复用前绝缘复查点数为 5；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-O01",
+                    "field": "雨后复用前绝缘复查点数",
+                    "role": "CONTEXT",
+                    "quote": "EV55 会展临时电设施退租已签发的 LOT-O01 生效条款：雨后复用前绝缘复查点数为 5；以本条为准。",
+                    "start": 29,
+                    "end": 82
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "ANN-O01:R2:TXT:A2"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "O02",
+          "priority": 6,
+          "intake_signal": "人数计划是草稿，须班组审定",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "EV55 LOT-O02 首批登记：第二次夜班交接名单份数需核 ANN-O02 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 80,
+                "raw_sha256": "32b7d33ab794ec274cdba3d0b21e49eca97e9aebb0d773612fa3b4b664aaa2d4",
+                "normalized_sha256": "32b7d33ab794ec274cdba3d0b21e49eca97e9aebb0d773612fa3b4b664aaa2d4"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O02",
+              "field": "第二次夜班交接名单份数",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "reviewed": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "EV55 LOT-O02 首批登记：第二次夜班交接名单份数需核 ANN-O02 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 80,
+                "raw_sha256": "32b7d33ab794ec274cdba3d0b21e49eca97e9aebb0d773612fa3b4b664aaa2d4",
+                "normalized_sha256": "32b7d33ab794ec274cdba3d0b21e49eca97e9aebb0d773612fa3b4b664aaa2d4"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O02",
+              "field": "第二次夜班交接名单份数",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "gate_registry": {
+            "question": {
+              "project": "EV55",
+              "scope": "LOT-O02",
+              "field": "第二次夜班交接名单份数"
+            },
+            "documents": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "EV55",
+                "text": "完全虚构合成资料｜EV55｜COVER R1\nEV55 LOT-O02 首批登记：第二次夜班交接名单份数需核 ANN-O02 R2 §A2 后确定，未收到正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "C1",
+                    "scope": "LOT-O02",
+                    "field": "第二次夜班交接名单份数",
+                    "role": "CONTEXT",
+                    "quote": "EV55 LOT-O02 首批登记：第二次夜班交接名单份数需核 ANN-O02 R2 §A2 后确定，未收到正文。",
+                    "start": 23,
+                    "end": 80
+                  }
+                ]
+              }
+            ],
+            "required_direct": [],
+            "required_gap": {
+              "doc": "ANN-O02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O02",
+              "field": "第二次夜班交接名单份数",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          }
+        },
+        {
+          "id": "O03",
+          "priority": 10,
+          "intake_signal": "旧缺件且无新来文对应题名",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "EV55 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 77,
+                "raw_sha256": "d69ddfef0f5662d4fa1e3f94709fe463718f234744f84d186da2764e968bf113",
+                "normalized_sha256": "d69ddfef0f5662d4fa1e3f94709fe463718f234744f84d186da2764e968bf113"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O03",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "reviewed": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "EV55 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 77,
+                "raw_sha256": "d69ddfef0f5662d4fa1e3f94709fe463718f234744f84d186da2764e968bf113",
+                "normalized_sha256": "d69ddfef0f5662d4fa1e3f94709fe463718f234744f84d186da2764e968bf113"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O03",
+              "rev": "R2",
+              "clause": "A3",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "gate_registry": {
+            "question": {
+              "project": "EV55",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求"
+            },
+            "documents": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "EV55",
+                "text": "完全虚构合成资料｜EV55｜COVER R1\nEV55 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "C1",
+                    "scope": "LOT-O03",
+                    "field": "滞后退场取样要求",
+                    "role": "CONTEXT",
+                    "quote": "EV55 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。",
+                    "start": 23,
+                    "end": 77
+                  }
+                ]
+              }
+            ],
+            "required_direct": [],
+            "required_gap": {
+              "doc": "ANN-O03",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "family": "HP09",
+      "title": "乡镇图书车数字平台迁移",
+      "slots": [
+        {
+          "id": "N01",
+          "priority": 1,
+          "intake_signal": "已登记正式更正通知，处理主批次",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "14"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "HP09 乡镇图书车数字平台迁移 LOT-N01 的正式首批条款：甲线路备份留存天数为 14。",
+                "start": 24,
+                "end": 71,
+                "raw_sha256": "7d462c4b59ecdb28a27c5f7268f6a85d87a69e211d9e0c50f514dab7267c61bf",
+                "normalized_sha256": "7d462c4b59ecdb28a27c5f7268f6a85d87a69e211d9e0c50f514dab7267c61bf"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "21"
+            },
+            "evidence": [
+              {
+                "doc": "ANN-N01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "A2",
+                "role": "DIRECT",
+                "quote": "HP09 乡镇图书车数字平台迁移已签发的 LOT-N01 生效条款：甲线路备份留存天数为 21；以本条为准。",
+                "start": 25,
+                "end": 79,
+                "raw_sha256": "4fcfd0455b3ca7f02eed4856125b9aa53a31d608231cf86ac275a293dab64c3c",
+                "normalized_sha256": "4fcfd0455b3ca7f02eed4856125b9aa53a31d608231cf86ac275a293dab64c3c"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "HP09",
+              "scope": "LOT-N01",
+              "field": "甲线路备份留存天数"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "HP09",
+                "text": "完全虚构合成资料｜HP09｜INTAKE R1\nHP09 乡镇图书车数字平台迁移 LOT-N01 的正式首批条款：甲线路备份留存天数为 14。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-N01",
+                    "field": "甲线路备份留存天数",
+                    "role": "CONTEXT",
+                    "quote": "HP09 乡镇图书车数字平台迁移 LOT-N01 的正式首批条款：甲线路备份留存天数为 14。",
+                    "start": 24,
+                    "end": 71
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-N01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "HP09",
+                "text": "完全虚构合成资料｜HP09｜ANN-N01 R2\nHP09 乡镇图书车数字平台迁移已签发的 LOT-N01 生效条款：甲线路备份留存天数为 21；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-N01",
+                    "field": "甲线路备份留存天数",
+                    "role": "DIRECT",
+                    "quote": "HP09 乡镇图书车数字平台迁移已签发的 LOT-N01 生效条款：甲线路备份留存天数为 21；以本条为准。",
+                    "start": 25,
+                    "end": 79,
+                    "value": "21"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "ANN-N01:R2:TXT:A2"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "N02",
+          "priority": 3,
+          "intake_signal": "对来文撤回通知进行影响复核",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "10"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "HP09 乡镇图书车数字平台迁移 LOT-N02 的正式首批条款：安全停止后必要复核时长为 10。",
+                "start": 24,
+                "end": 73,
+                "raw_sha256": "6e2741ae1075104c8558b9236fff1c747ca9a0990a5d64b4cc99696aa7d3972b",
+                "normalized_sha256": "6e2741ae1075104c8558b9236fff1c747ca9a0990a5d64b4cc99696aa7d3972b"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "CHANGE",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "R4",
+                "role": "CONTEXT",
+                "quote": "HP09 乡镇图书车数字平台迁移的新签发通知明确撤回 LOT-N02 的旧安全停止后必要复核时长，待 ANN-N02 R2 §A2；本次发件不含替代正文。",
+                "start": 24,
+                "end": 101,
+                "raw_sha256": "f489ea537458bf724bf5020194fed5d76ebed8263b2dfc12bc5b6b60a33cd13f",
+                "normalized_sha256": "f489ea537458bf724bf5020194fed5d76ebed8263b2dfc12bc5b6b60a33cd13f"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-N02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-N02",
+              "field": "安全停止后必要复核时长",
+              "locator": "CHANGE:R2:TXT:R4"
+            }
+          },
+          "gate_registry": {
+            "question": {
+              "project": "HP09",
+              "scope": "LOT-N02",
+              "field": "安全停止后必要复核时长"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "HP09",
+                "text": "完全虚构合成资料｜HP09｜INTAKE R1\nHP09 乡镇图书车数字平台迁移 LOT-N02 的正式首批条款：安全停止后必要复核时长为 10。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-N02",
+                    "field": "安全停止后必要复核时长",
+                    "role": "CONTEXT",
+                    "quote": "HP09 乡镇图书车数字平台迁移 LOT-N02 的正式首批条款：安全停止后必要复核时长为 10。",
+                    "start": 24,
+                    "end": 73
+                  }
+                ]
+              },
+              {
+                "doc": "CHANGE",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "HP09",
+                "text": "完全虚构合成资料｜HP09｜CHANGE R2\nHP09 乡镇图书车数字平台迁移的新签发通知明确撤回 LOT-N02 的旧安全停止后必要复核时长，待 ANN-N02 R2 §A2；本次发件不含替代正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "R4",
+                    "scope": "LOT-N02",
+                    "field": "安全停止后必要复核时长",
+                    "role": "CONTEXT",
+                    "quote": "HP09 乡镇图书车数字平台迁移的新签发通知明确撤回 LOT-N02 的旧安全停止后必要复核时长，待 ANN-N02 R2 §A2；本次发件不含替代正文。",
+                    "start": 24,
+                    "end": 101
+                  }
+                ]
+              }
+            ],
+            "required_direct": [],
+            "required_gap": {
+              "doc": "ANN-N02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-N02",
+              "field": "安全停止后必要复核时长",
+              "locator": "CHANGE:R2:TXT:R4"
+            }
+          }
+        },
+        {
+          "id": "N03",
+          "priority": 4,
+          "intake_signal": "运营方签发经权限核对的移交清单",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "6"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "HP09 乡镇图书车数字平台迁移 LOT-N03 的正式首批条款：夜检记录明确移交份数为 6。",
+                "start": 24,
+                "end": 71,
+                "raw_sha256": "bd202c95435341c741414c8f98a88af724fec415e648a416d17cf8516145bd60",
+                "normalized_sha256": "bd202c95435341c741414c8f98a88af724fec415e648a416d17cf8516145bd60"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "8"
+            },
+            "evidence": [
+              {
+                "doc": "ANN-N03",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "A2",
+                "role": "DIRECT",
+                "quote": "HP09 乡镇图书车数字平台迁移已签发的 LOT-N03 生效条款：夜检记录明确移交份数为 8；以本条为准。",
+                "start": 25,
+                "end": 79,
+                "raw_sha256": "6d7059c8335c8d292f7c6e9fb294cac300d137ad7abd9dc0b9c28504d83ee2ff",
+                "normalized_sha256": "6d7059c8335c8d292f7c6e9fb294cac300d137ad7abd9dc0b9c28504d83ee2ff"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "HP09",
+              "scope": "LOT-N03",
+              "field": "夜检记录明确移交份数"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "HP09",
+                "text": "完全虚构合成资料｜HP09｜INTAKE R1\nHP09 乡镇图书车数字平台迁移 LOT-N03 的正式首批条款：夜检记录明确移交份数为 6。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-N03",
+                    "field": "夜检记录明确移交份数",
+                    "role": "CONTEXT",
+                    "quote": "HP09 乡镇图书车数字平台迁移 LOT-N03 的正式首批条款：夜检记录明确移交份数为 6。",
+                    "start": 24,
+                    "end": 71
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-N03",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "HP09",
+                "text": "完全虚构合成资料｜HP09｜ANN-N03 R2\nHP09 乡镇图书车数字平台迁移已签发的 LOT-N03 生效条款：夜检记录明确移交份数为 8；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-N03",
+                    "field": "夜检记录明确移交份数",
+                    "role": "DIRECT",
+                    "quote": "HP09 乡镇图书车数字平台迁移已签发的 LOT-N03 生效条款：夜检记录明确移交份数为 8；以本条为准。",
+                    "start": 25,
+                    "end": 79,
+                    "value": "8"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "ANN-N03:R2:TXT:A2"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "S01",
+          "priority": 5,
+          "intake_signal": "近期复核过；仅例行检查",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "2"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "HP09 乡镇图书车数字平台迁移 LOT-S01 的正式首批条款：离线借阅限量为 2。",
+                "start": 24,
+                "end": 67,
+                "raw_sha256": "2cb4b0b91f6672c2970c1c5e64109ef608845ceb2714fcf77c295b052cd15d75",
+                "normalized_sha256": "2cb4b0b91f6672c2970c1c5e64109ef608845ceb2714fcf77c295b052cd15d75"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "2"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "HP09 乡镇图书车数字平台迁移 LOT-S01 的正式首批条款：离线借阅限量为 2。",
+                "start": 24,
+                "end": 67,
+                "raw_sha256": "2cb4b0b91f6672c2970c1c5e64109ef608845ceb2714fcf77c295b052cd15d75",
+                "normalized_sha256": "2cb4b0b91f6672c2970c1c5e64109ef608845ceb2714fcf77c295b052cd15d75"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "HP09",
+              "scope": "LOT-S01",
+              "field": "离线借阅限量"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "HP09",
+                "text": "完全虚构合成资料｜HP09｜INTAKE R1\nHP09 乡镇图书车数字平台迁移 LOT-S01 的正式首批条款：离线借阅限量为 2。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-S01",
+                    "field": "离线借阅限量",
+                    "role": "DIRECT",
+                    "quote": "HP09 乡镇图书车数字平台迁移 LOT-S01 的正式首批条款：离线借阅限量为 2。",
+                    "start": 24,
+                    "end": 67,
+                    "value": "2"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "INTAKE:R1:TXT:S1"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "S02",
+          "priority": 9,
+          "intake_signal": "未出现在新来文主题",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "48"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "HP09 乡镇图书车数字平台迁移 LOT-S02 的正式首批条款：既有按月巡查值为 48。",
+                "start": 24,
+                "end": 69,
+                "raw_sha256": "2667b0a2ae6ca42796d94eef17d1ed6900bca6f50e4192e6de6ed23eb202488f",
+                "normalized_sha256": "2667b0a2ae6ca42796d94eef17d1ed6900bca6f50e4192e6de6ed23eb202488f"
+              }
+            ],
+            "gap": null
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "48"
+            },
+            "evidence": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "S1",
+                "role": "DIRECT",
+                "quote": "HP09 乡镇图书车数字平台迁移 LOT-S02 的正式首批条款：既有按月巡查值为 48。",
+                "start": 24,
+                "end": 69,
+                "raw_sha256": "2667b0a2ae6ca42796d94eef17d1ed6900bca6f50e4192e6de6ed23eb202488f",
+                "normalized_sha256": "2667b0a2ae6ca42796d94eef17d1ed6900bca6f50e4192e6de6ed23eb202488f"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "HP09",
+              "scope": "LOT-S02",
+              "field": "既有按月巡查值"
+            },
+            "documents": [
+              {
+                "doc": "INTAKE",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "HP09",
+                "text": "完全虚构合成资料｜HP09｜INTAKE R1\nHP09 乡镇图书车数字平台迁移 LOT-S02 的正式首批条款：既有按月巡查值为 48。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "S1",
+                    "scope": "LOT-S02",
+                    "field": "既有按月巡查值",
+                    "role": "DIRECT",
+                    "quote": "HP09 乡镇图书车数字平台迁移 LOT-S02 的正式首批条款：既有按月巡查值为 48。",
+                    "start": 24,
+                    "end": 69,
+                    "value": "48"
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "INTAKE:R1:TXT:S1"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "O01",
+          "priority": 7,
+          "intake_signal": "收到关联来文，队列按接收等级而非内容最终结论",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "HP09 LOT-O01 首批登记：账号回放抽检数量需核 ANN-O01 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 77,
+                "raw_sha256": "1b7e67b275252966f5e8be1e73caa114394b552ac3c83305aab9f695844b28b6",
+                "normalized_sha256": "1b7e67b275252966f5e8be1e73caa114394b552ac3c83305aab9f695844b28b6"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O01",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O01",
+              "field": "账号回放抽检数量",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "reviewed": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "12"
+            },
+            "evidence": [
+              {
+                "doc": "ANN-O01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "clause": "A2",
+                "role": "DIRECT",
+                "quote": "HP09 乡镇图书车数字平台迁移已签发的 LOT-O01 生效条款：账号回放抽检数量为 12；以本条为准。",
+                "start": 25,
+                "end": 78,
+                "raw_sha256": "88cb20bc1ccb8f0d2faf44596f54f15e58c1b53f6fb2c7654dc65dfc8e1a62bc",
+                "normalized_sha256": "88cb20bc1ccb8f0d2faf44596f54f15e58c1b53f6fb2c7654dc65dfc8e1a62bc"
+              }
+            ],
+            "gap": null
+          },
+          "gate_registry": {
+            "question": {
+              "project": "HP09",
+              "scope": "LOT-O01",
+              "field": "账号回放抽检数量"
+            },
+            "documents": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "HP09",
+                "text": "完全虚构合成资料｜HP09｜COVER R1\nHP09 LOT-O01 首批登记：账号回放抽检数量需核 ANN-O01 R2 §A2 后确定，未收到正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "C1",
+                    "scope": "LOT-O01",
+                    "field": "账号回放抽检数量",
+                    "role": "CONTEXT",
+                    "quote": "HP09 LOT-O01 首批登记：账号回放抽检数量需核 ANN-O01 R2 §A2 后确定，未收到正文。",
+                    "start": 23,
+                    "end": 77
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-O01",
+                "rev": "R2",
+                "rendition": "TXT",
+                "project": "HP09",
+                "text": "完全虚构合成资料｜HP09｜ANN-O01 R2\nHP09 乡镇图书车数字平台迁移已签发的 LOT-O01 生效条款：账号回放抽检数量为 12；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-O01",
+                    "field": "账号回放抽检数量",
+                    "role": "DIRECT",
+                    "quote": "HP09 乡镇图书车数字平台迁移已签发的 LOT-O01 生效条款：账号回放抽检数量为 12；以本条为准。",
+                    "start": 25,
+                    "end": 78,
+                    "value": "12"
+                  }
+                ]
+              },
+              {
+                "doc": "ANN-O01",
+                "rev": "DRAFT3",
+                "rendition": "TXT",
+                "project": "HP09",
+                "text": "完全虚构合成资料｜HP09｜ANN-O01 DRAFT3\nHP09 乡镇图书车数字平台迁移已签发的 LOT-O01 生效条款：账号回放抽检数量为 12；以本条为准。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "A2",
+                    "scope": "LOT-O01",
+                    "field": "账号回放抽检数量",
+                    "role": "CONTEXT",
+                    "quote": "HP09 乡镇图书车数字平台迁移已签发的 LOT-O01 生效条款：账号回放抽检数量为 12；以本条为准。",
+                    "start": 29,
+                    "end": 82
+                  }
+                ]
+              }
+            ],
+            "required_direct": [
+              "ANN-O01:R2:TXT:A2"
+            ],
+            "required_gap": null
+          }
+        },
+        {
+          "id": "O02",
+          "priority": 6,
+          "intake_signal": "补报指向旧系统附件且正文尚未提交",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "HP09 LOT-O02 首批登记：遗留借阅冻结小时需核 ANN-O02 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 77,
+                "raw_sha256": "06018009d6094f9cd6cd8c55c4c76913e0230e1a3b709a37c121cff89e567c76",
+                "normalized_sha256": "06018009d6094f9cd6cd8c55c4c76913e0230e1a3b709a37c121cff89e567c76"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O02",
+              "field": "遗留借阅冻结小时",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "reviewed": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "HP09 LOT-O02 首批登记：遗留借阅冻结小时需核 ANN-O02 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 77,
+                "raw_sha256": "06018009d6094f9cd6cd8c55c4c76913e0230e1a3b709a37c121cff89e567c76",
+                "normalized_sha256": "06018009d6094f9cd6cd8c55c4c76913e0230e1a3b709a37c121cff89e567c76"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O02",
+              "field": "遗留借阅冻结小时",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "gate_registry": {
+            "question": {
+              "project": "HP09",
+              "scope": "LOT-O02",
+              "field": "遗留借阅冻结小时"
+            },
+            "documents": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "HP09",
+                "text": "完全虚构合成资料｜HP09｜COVER R1\nHP09 LOT-O02 首批登记：遗留借阅冻结小时需核 ANN-O02 R2 §A2 后确定，未收到正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "C1",
+                    "scope": "LOT-O02",
+                    "field": "遗留借阅冻结小时",
+                    "role": "CONTEXT",
+                    "quote": "HP09 LOT-O02 首批登记：遗留借阅冻结小时需核 ANN-O02 R2 §A2 后确定，未收到正文。",
+                    "start": 23,
+                    "end": 77
+                  }
+                ]
+              }
+            ],
+            "required_direct": [],
+            "required_gap": {
+              "doc": "ANN-O02",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O02",
+              "field": "遗留借阅冻结小时",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          }
+        },
+        {
+          "id": "O03",
+          "priority": 10,
+          "intake_signal": "旧缺件且无新来文对应题名",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "HP09 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 77,
+                "raw_sha256": "2ed9fdb96be011cc3ca8cbd2eff223695348ec6d20f69ec5c01120e91eeb13ed",
+                "normalized_sha256": "2ed9fdb96be011cc3ca8cbd2eff223695348ec6d20f69ec5c01120e91eeb13ed"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O03",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "reviewed": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "evidence": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "clause": "C1",
+                "role": "CONTEXT",
+                "quote": "HP09 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。",
+                "start": 23,
+                "end": 77,
+                "raw_sha256": "2ed9fdb96be011cc3ca8cbd2eff223695348ec6d20f69ec5c01120e91eeb13ed",
+                "normalized_sha256": "2ed9fdb96be011cc3ca8cbd2eff223695348ec6d20f69ec5c01120e91eeb13ed"
+              }
+            ],
+            "gap": {
+              "doc": "ANN-O03",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          },
+          "gate_registry": {
+            "question": {
+              "project": "HP09",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求"
+            },
+            "documents": [
+              {
+                "doc": "COVER",
+                "rev": "R1",
+                "rendition": "TXT",
+                "project": "HP09",
+                "text": "完全虚构合成资料｜HP09｜COVER R1\nHP09 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。\n（本条结束）\n",
+                "readable": true,
+                "clauses": [
+                  {
+                    "id": "C1",
+                    "scope": "LOT-O03",
+                    "field": "滞后退场取样要求",
+                    "role": "CONTEXT",
+                    "quote": "HP09 LOT-O03 首批登记：滞后退场取样要求需核 ANN-O03 R2 §A2 后确定，未收到正文。",
+                    "start": 23,
+                    "end": 77
+                  }
+                ]
+              }
+            ],
+            "required_direct": [],
+            "required_gap": {
+              "doc": "ANN-O03",
+              "rev": "R2",
+              "clause": "A2",
+              "scope": "LOT-O03",
+              "field": "滞后退场取样要求",
+              "locator": "COVER:R1:TXT:C1"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

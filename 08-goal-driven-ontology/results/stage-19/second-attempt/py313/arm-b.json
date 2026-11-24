@@ -1,0 +1,1302 @@
+{
+  "arm": "B",
+  "families": [
+    {
+      "arm": "B",
+      "budget": 4,
+      "family": "CN36",
+      "ranked": [
+        "N01",
+        "N02",
+        "N03",
+        "S01",
+        "O02",
+        "O01",
+        "S02",
+        "O03"
+      ],
+      "selected": [
+        "O02",
+        "O01",
+        "N01",
+        "N02"
+      ],
+      "selected_old_unknown": 2,
+      "slots": [
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "9"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "N01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "5"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "id": "N02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "7"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "3"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "id": "N03",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "3"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": false
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "20"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "O01",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "id": "O02",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "id": "O03",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "selected": false
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "10"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "S01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "10"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "selected": false
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "32"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "S02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "32"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "selected": false
+        }
+      ]
+    },
+    {
+      "arm": "B",
+      "budget": 4,
+      "family": "EV55",
+      "ranked": [
+        "N01",
+        "N03",
+        "N02",
+        "S01",
+        "O01",
+        "O02",
+        "S02",
+        "O03"
+      ],
+      "selected": [
+        "O01",
+        "O02",
+        "N01",
+        "N03"
+      ],
+      "selected_old_unknown": 2,
+      "slots": [
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "6"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "N01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "4"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "9"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "id": "N02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "9"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": false
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "7"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "N03",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "5"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "5"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "O01",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "id": "O02",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "id": "O03",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "selected": false
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "7"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "S01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "7"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "selected": false
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "3"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "S02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "3"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "selected": false
+        }
+      ]
+    },
+    {
+      "arm": "B",
+      "budget": 4,
+      "family": "HP09",
+      "ranked": [
+        "N01",
+        "N02",
+        "N03",
+        "S01",
+        "O02",
+        "O01",
+        "S02",
+        "O03"
+      ],
+      "selected": [
+        "O02",
+        "O01",
+        "N01",
+        "N02"
+      ],
+      "selected_old_unknown": 2,
+      "slots": [
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "21"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "N01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "14"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "id": "N02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "10"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "6"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "id": "N03",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "6"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": false
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "12"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "O01",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "id": "O02",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "id": "O03",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "selected": false
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "2"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "S01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "2"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "selected": false
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "48"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "S02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "48"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "selected": false
+        }
+      ]
+    },
+    {
+      "arm": "B",
+      "budget": 4,
+      "family": "IR14",
+      "ranked": [
+        "N01",
+        "O01",
+        "N02",
+        "N03",
+        "S01",
+        "O02",
+        "S02",
+        "O03"
+      ],
+      "selected": [
+        "O01",
+        "O02",
+        "N01",
+        "N02"
+      ],
+      "selected_old_unknown": 2,
+      "slots": [
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "5"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "N01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "3"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "id": "N02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "5"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "1"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "id": "N03",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "1"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": false
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "8"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "O01",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "id": "O02",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "id": "O03",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "selected": false
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "18"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "S01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "18"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "selected": false
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "4"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "S02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "4"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "selected": false
+        }
+      ]
+    },
+    {
+      "arm": "B",
+      "budget": 4,
+      "family": "KT41",
+      "ranked": [
+        "N01",
+        "N02",
+        "N03",
+        "O01",
+        "S01",
+        "O02",
+        "S02",
+        "O03"
+      ],
+      "selected": [
+        "O01",
+        "O02",
+        "N01",
+        "N02"
+      ],
+      "selected_old_unknown": 2,
+      "slots": [
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "11"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "N01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "8"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "id": "N02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "8"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "4"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "id": "N03",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "4"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": false
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "6"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "id": "O01",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "id": "O02",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "id": "O03",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "selected": false
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "15"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "S01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "15"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "selected": false
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "30"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "S02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "30"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "selected": false
+        }
+      ]
+    },
+    {
+      "arm": "B",
+      "budget": 4,
+      "family": "LX22",
+      "ranked": [
+        "N01",
+        "N02",
+        "N03",
+        "S01",
+        "O01",
+        "O02",
+        "S02",
+        "O03"
+      ],
+      "selected": [
+        "O01",
+        "O02",
+        "N01",
+        "N02"
+      ],
+      "selected_old_unknown": 2,
+      "slots": [
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "10"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "N01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "12"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "id": "N02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "6"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "2"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "id": "N03",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "2"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": false
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "16"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "O01",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "id": "O02",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "selected": true
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "id": "O03",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "selected": false
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "6"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "S01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "6"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "selected": false
+        },
+        {
+          "final": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "24"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "id": "S02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "24"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "selected": false
+        }
+      ]
+    }
+  ],
+  "schema": "stage19-simulation-v1"
+}

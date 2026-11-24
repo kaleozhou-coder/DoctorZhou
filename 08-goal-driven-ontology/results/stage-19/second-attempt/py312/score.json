@@ -1,0 +1,3418 @@
+{
+  "families": [
+    {
+      "A": {
+        "candidate_blocked_on_ideal_target": 1,
+        "eligible_correct": 4,
+        "false_eligible": 0,
+        "gate_exact": 7,
+        "joint": 7,
+        "missed_review_eligibility": 1,
+        "missed_update_known": 0,
+        "newly_recovered_unknown": 0,
+        "old_system_failure": 0,
+        "previously_joint_stable_known": 2,
+        "recover_unknown_total": 1,
+        "recovered_unknown": 0,
+        "reopen_known_total": 1,
+        "reopened_known": 1,
+        "retained_unknown": 2,
+        "retained_unknown_state": 2,
+        "reviewed": 4,
+        "reviewed_old_unknown": 0,
+        "role_mismatch_block": 0,
+        "slots": 8,
+        "stable_known_regression": 0,
+        "stable_known_total": 2,
+        "stay_unknown_total": 2,
+        "system_failure": 0,
+        "update_known_total": 2,
+        "updated_known": 2,
+        "value_correct": 7,
+        "value_correct_without_joint": 0
+      },
+      "B": {
+        "candidate_blocked_on_ideal_target": 1,
+        "eligible_correct": 4,
+        "false_eligible": 0,
+        "gate_exact": 7,
+        "joint": 7,
+        "missed_review_eligibility": 1,
+        "missed_update_known": 1,
+        "newly_recovered_unknown": 1,
+        "old_system_failure": 0,
+        "previously_joint_stable_known": 2,
+        "recover_unknown_total": 1,
+        "recovered_unknown": 1,
+        "reopen_known_total": 1,
+        "reopened_known": 1,
+        "retained_unknown": 2,
+        "retained_unknown_state": 2,
+        "reviewed": 4,
+        "reviewed_old_unknown": 2,
+        "role_mismatch_block": 1,
+        "slots": 8,
+        "stable_known_regression": 0,
+        "stable_known_total": 2,
+        "stay_unknown_total": 2,
+        "system_failure": 0,
+        "update_known_total": 2,
+        "updated_known": 1,
+        "value_correct": 7,
+        "value_correct_without_joint": 0
+      },
+      "delta_B_minus_A": {
+        "candidate_blocked_on_ideal_target": 0,
+        "eligible_correct": 0,
+        "false_eligible": 0,
+        "gate_exact": 0,
+        "joint": 0,
+        "missed_review_eligibility": 0,
+        "missed_update_known": 1,
+        "newly_recovered_unknown": 1,
+        "old_system_failure": 0,
+        "previously_joint_stable_known": 0,
+        "recover_unknown_total": 0,
+        "recovered_unknown": 1,
+        "reopen_known_total": 0,
+        "reopened_known": 0,
+        "retained_unknown": 0,
+        "retained_unknown_state": 0,
+        "reviewed": 0,
+        "reviewed_old_unknown": 2,
+        "role_mismatch_block": 1,
+        "slots": 0,
+        "stable_known_regression": 0,
+        "stable_known_total": 0,
+        "stay_unknown_total": 0,
+        "system_failure": 0,
+        "update_known_total": 0,
+        "updated_known": -1,
+        "value_correct": 0,
+        "value_correct_without_joint": 0
+      },
+      "family": "CN36",
+      "fields": [
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "9"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "9"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "9"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "N01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "5"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "update_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "expected_gate": {
+            "reason": "REQUIRED_GAP_VERIFIED",
+            "status": "PENDING"
+          },
+          "id": "N02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "7"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "reopen_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "5"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "3"
+              },
+              "gate": {
+                "reason": "EVIDENCE_ROLE_MISMATCH",
+                "status": "BLOCKED"
+              }
+            },
+            "gate_exact": false,
+            "joint": false,
+            "selected": false,
+            "value_correct": false
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "5"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "N03",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "3"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "update_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_MISMATCH",
+                "status": "BLOCKED"
+              }
+            },
+            "gate_exact": false,
+            "joint": false,
+            "selected": false,
+            "value_correct": false
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "20"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "20"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "O01",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "recover_unknown"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "expected_gate": {
+            "reason": "REQUIRED_GAP_VERIFIED",
+            "status": "PENDING"
+          },
+          "id": "O02",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "old_joint": true,
+          "transition": "stay_unknown"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "expected_gate": {
+            "reason": "REQUIRED_GAP_VERIFIED",
+            "status": "PENDING"
+          },
+          "id": "O03",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "old_joint": true,
+          "transition": "stay_unknown"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "10"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "10"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "10"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "S01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "10"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "old_joint": true,
+          "transition": "stable_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "32"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "32"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "32"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "S02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "32"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "old_joint": true,
+          "transition": "stable_known"
+        }
+      ],
+      "paired_recovery": {
+        "A_only": 0,
+        "B_only": 1,
+        "both": 0,
+        "denominator": 1,
+        "neither": 0
+      },
+      "recovery_direction": "B_higher",
+      "selection": {
+        "A_only": [
+          "N03",
+          "S01"
+        ],
+        "B_only": [
+          "O01",
+          "O02"
+        ],
+        "both": [
+          "N01",
+          "N02"
+        ]
+      }
+    },
+    {
+      "A": {
+        "candidate_blocked_on_ideal_target": 1,
+        "eligible_correct": 4,
+        "false_eligible": 0,
+        "gate_exact": 7,
+        "joint": 7,
+        "missed_review_eligibility": 1,
+        "missed_update_known": 0,
+        "newly_recovered_unknown": 0,
+        "old_system_failure": 0,
+        "previously_joint_stable_known": 2,
+        "recover_unknown_total": 1,
+        "recovered_unknown": 0,
+        "reopen_known_total": 1,
+        "reopened_known": 1,
+        "retained_unknown": 2,
+        "retained_unknown_state": 2,
+        "reviewed": 4,
+        "reviewed_old_unknown": 0,
+        "role_mismatch_block": 0,
+        "slots": 8,
+        "stable_known_regression": 0,
+        "stable_known_total": 2,
+        "stay_unknown_total": 2,
+        "system_failure": 0,
+        "update_known_total": 2,
+        "updated_known": 2,
+        "value_correct": 7,
+        "value_correct_without_joint": 0
+      },
+      "B": {
+        "candidate_blocked_on_ideal_target": 1,
+        "eligible_correct": 5,
+        "false_eligible": 0,
+        "gate_exact": 7,
+        "joint": 7,
+        "missed_review_eligibility": 0,
+        "missed_update_known": 0,
+        "newly_recovered_unknown": 1,
+        "old_system_failure": 0,
+        "previously_joint_stable_known": 2,
+        "recover_unknown_total": 1,
+        "recovered_unknown": 1,
+        "reopen_known_total": 1,
+        "reopened_known": 0,
+        "retained_unknown": 2,
+        "retained_unknown_state": 2,
+        "reviewed": 4,
+        "reviewed_old_unknown": 2,
+        "role_mismatch_block": 1,
+        "slots": 8,
+        "stable_known_regression": 0,
+        "stable_known_total": 2,
+        "stay_unknown_total": 2,
+        "system_failure": 0,
+        "update_known_total": 2,
+        "updated_known": 2,
+        "value_correct": 7,
+        "value_correct_without_joint": 0
+      },
+      "delta_B_minus_A": {
+        "candidate_blocked_on_ideal_target": 0,
+        "eligible_correct": 1,
+        "false_eligible": 0,
+        "gate_exact": 0,
+        "joint": 0,
+        "missed_review_eligibility": -1,
+        "missed_update_known": 0,
+        "newly_recovered_unknown": 1,
+        "old_system_failure": 0,
+        "previously_joint_stable_known": 0,
+        "recover_unknown_total": 0,
+        "recovered_unknown": 1,
+        "reopen_known_total": 0,
+        "reopened_known": -1,
+        "retained_unknown": 0,
+        "retained_unknown_state": 0,
+        "reviewed": 0,
+        "reviewed_old_unknown": 2,
+        "role_mismatch_block": 1,
+        "slots": 0,
+        "stable_known_regression": 0,
+        "stable_known_total": 0,
+        "stay_unknown_total": 0,
+        "system_failure": 0,
+        "update_known_total": 0,
+        "updated_known": 0,
+        "value_correct": 0,
+        "value_correct_without_joint": 0
+      },
+      "family": "EV55",
+      "fields": [
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "6"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "6"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "6"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "N01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "4"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "update_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "9"
+              },
+              "gate": {
+                "reason": "EVIDENCE_ROLE_MISMATCH",
+                "status": "BLOCKED"
+              }
+            },
+            "gate_exact": false,
+            "joint": false,
+            "selected": false,
+            "value_correct": false
+          },
+          "expected": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "expected_gate": {
+            "reason": "REQUIRED_GAP_VERIFIED",
+            "status": "PENDING"
+          },
+          "id": "N02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "9"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "reopen_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "7"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "7"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "7"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "N03",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "5"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "update_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_MISMATCH",
+                "status": "BLOCKED"
+              }
+            },
+            "gate_exact": false,
+            "joint": false,
+            "selected": false,
+            "value_correct": false
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "5"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "5"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "O01",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "recover_unknown"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "expected_gate": {
+            "reason": "REQUIRED_GAP_VERIFIED",
+            "status": "PENDING"
+          },
+          "id": "O02",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "old_joint": true,
+          "transition": "stay_unknown"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "expected_gate": {
+            "reason": "REQUIRED_GAP_VERIFIED",
+            "status": "PENDING"
+          },
+          "id": "O03",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "old_joint": true,
+          "transition": "stay_unknown"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "7"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "7"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "7"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "S01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "7"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "old_joint": true,
+          "transition": "stable_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "3"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "3"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "3"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "S02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "3"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "old_joint": true,
+          "transition": "stable_known"
+        }
+      ],
+      "paired_recovery": {
+        "A_only": 0,
+        "B_only": 1,
+        "both": 0,
+        "denominator": 1,
+        "neither": 0
+      },
+      "recovery_direction": "B_higher",
+      "selection": {
+        "A_only": [
+          "N02",
+          "S01"
+        ],
+        "B_only": [
+          "O01",
+          "O02"
+        ],
+        "both": [
+          "N01",
+          "N03"
+        ]
+      }
+    },
+    {
+      "A": {
+        "candidate_blocked_on_ideal_target": 1,
+        "eligible_correct": 4,
+        "false_eligible": 0,
+        "gate_exact": 7,
+        "joint": 7,
+        "missed_review_eligibility": 1,
+        "missed_update_known": 0,
+        "newly_recovered_unknown": 0,
+        "old_system_failure": 0,
+        "previously_joint_stable_known": 2,
+        "recover_unknown_total": 1,
+        "recovered_unknown": 0,
+        "reopen_known_total": 1,
+        "reopened_known": 1,
+        "retained_unknown": 2,
+        "retained_unknown_state": 2,
+        "reviewed": 4,
+        "reviewed_old_unknown": 0,
+        "role_mismatch_block": 0,
+        "slots": 8,
+        "stable_known_regression": 0,
+        "stable_known_total": 2,
+        "stay_unknown_total": 2,
+        "system_failure": 0,
+        "update_known_total": 2,
+        "updated_known": 2,
+        "value_correct": 7,
+        "value_correct_without_joint": 0
+      },
+      "B": {
+        "candidate_blocked_on_ideal_target": 1,
+        "eligible_correct": 4,
+        "false_eligible": 0,
+        "gate_exact": 7,
+        "joint": 7,
+        "missed_review_eligibility": 1,
+        "missed_update_known": 1,
+        "newly_recovered_unknown": 1,
+        "old_system_failure": 0,
+        "previously_joint_stable_known": 2,
+        "recover_unknown_total": 1,
+        "recovered_unknown": 1,
+        "reopen_known_total": 1,
+        "reopened_known": 1,
+        "retained_unknown": 2,
+        "retained_unknown_state": 2,
+        "reviewed": 4,
+        "reviewed_old_unknown": 2,
+        "role_mismatch_block": 1,
+        "slots": 8,
+        "stable_known_regression": 0,
+        "stable_known_total": 2,
+        "stay_unknown_total": 2,
+        "system_failure": 0,
+        "update_known_total": 2,
+        "updated_known": 1,
+        "value_correct": 7,
+        "value_correct_without_joint": 0
+      },
+      "delta_B_minus_A": {
+        "candidate_blocked_on_ideal_target": 0,
+        "eligible_correct": 0,
+        "false_eligible": 0,
+        "gate_exact": 0,
+        "joint": 0,
+        "missed_review_eligibility": 0,
+        "missed_update_known": 1,
+        "newly_recovered_unknown": 1,
+        "old_system_failure": 0,
+        "previously_joint_stable_known": 0,
+        "recover_unknown_total": 0,
+        "recovered_unknown": 1,
+        "reopen_known_total": 0,
+        "reopened_known": 0,
+        "retained_unknown": 0,
+        "retained_unknown_state": 0,
+        "reviewed": 0,
+        "reviewed_old_unknown": 2,
+        "role_mismatch_block": 1,
+        "slots": 0,
+        "stable_known_regression": 0,
+        "stable_known_total": 0,
+        "stay_unknown_total": 0,
+        "system_failure": 0,
+        "update_known_total": 0,
+        "updated_known": -1,
+        "value_correct": 0,
+        "value_correct_without_joint": 0
+      },
+      "family": "HP09",
+      "fields": [
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "21"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "21"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "21"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "N01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "14"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "update_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "expected_gate": {
+            "reason": "REQUIRED_GAP_VERIFIED",
+            "status": "PENDING"
+          },
+          "id": "N02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "10"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "reopen_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "8"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "6"
+              },
+              "gate": {
+                "reason": "EVIDENCE_ROLE_MISMATCH",
+                "status": "BLOCKED"
+              }
+            },
+            "gate_exact": false,
+            "joint": false,
+            "selected": false,
+            "value_correct": false
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "8"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "N03",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "6"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "update_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_MISMATCH",
+                "status": "BLOCKED"
+              }
+            },
+            "gate_exact": false,
+            "joint": false,
+            "selected": false,
+            "value_correct": false
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "12"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "12"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "O01",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "recover_unknown"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "expected_gate": {
+            "reason": "REQUIRED_GAP_VERIFIED",
+            "status": "PENDING"
+          },
+          "id": "O02",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "old_joint": true,
+          "transition": "stay_unknown"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "expected_gate": {
+            "reason": "REQUIRED_GAP_VERIFIED",
+            "status": "PENDING"
+          },
+          "id": "O03",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "old_joint": true,
+          "transition": "stay_unknown"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "2"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "2"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "2"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "S01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "2"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "old_joint": true,
+          "transition": "stable_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "48"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "48"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "48"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "S02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "48"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "old_joint": true,
+          "transition": "stable_known"
+        }
+      ],
+      "paired_recovery": {
+        "A_only": 0,
+        "B_only": 1,
+        "both": 0,
+        "denominator": 1,
+        "neither": 0
+      },
+      "recovery_direction": "B_higher",
+      "selection": {
+        "A_only": [
+          "N03",
+          "S01"
+        ],
+        "B_only": [
+          "O01",
+          "O02"
+        ],
+        "both": [
+          "N01",
+          "N02"
+        ]
+      }
+    },
+    {
+      "A": {
+        "candidate_blocked_on_ideal_target": 0,
+        "eligible_correct": 5,
+        "false_eligible": 0,
+        "gate_exact": 8,
+        "joint": 8,
+        "missed_review_eligibility": 0,
+        "missed_update_known": 0,
+        "newly_recovered_unknown": 1,
+        "old_system_failure": 0,
+        "previously_joint_stable_known": 2,
+        "recover_unknown_total": 1,
+        "recovered_unknown": 1,
+        "reopen_known_total": 1,
+        "reopened_known": 1,
+        "retained_unknown": 2,
+        "retained_unknown_state": 2,
+        "reviewed": 4,
+        "reviewed_old_unknown": 1,
+        "role_mismatch_block": 0,
+        "slots": 8,
+        "stable_known_regression": 0,
+        "stable_known_total": 2,
+        "stay_unknown_total": 2,
+        "system_failure": 0,
+        "update_known_total": 2,
+        "updated_known": 2,
+        "value_correct": 8,
+        "value_correct_without_joint": 0
+      },
+      "B": {
+        "candidate_blocked_on_ideal_target": 1,
+        "eligible_correct": 4,
+        "false_eligible": 0,
+        "gate_exact": 7,
+        "joint": 7,
+        "missed_review_eligibility": 1,
+        "missed_update_known": 1,
+        "newly_recovered_unknown": 1,
+        "old_system_failure": 0,
+        "previously_joint_stable_known": 2,
+        "recover_unknown_total": 1,
+        "recovered_unknown": 1,
+        "reopen_known_total": 1,
+        "reopened_known": 1,
+        "retained_unknown": 2,
+        "retained_unknown_state": 2,
+        "reviewed": 4,
+        "reviewed_old_unknown": 2,
+        "role_mismatch_block": 1,
+        "slots": 8,
+        "stable_known_regression": 0,
+        "stable_known_total": 2,
+        "stay_unknown_total": 2,
+        "system_failure": 0,
+        "update_known_total": 2,
+        "updated_known": 1,
+        "value_correct": 7,
+        "value_correct_without_joint": 0
+      },
+      "delta_B_minus_A": {
+        "candidate_blocked_on_ideal_target": 1,
+        "eligible_correct": -1,
+        "false_eligible": 0,
+        "gate_exact": -1,
+        "joint": -1,
+        "missed_review_eligibility": 1,
+        "missed_update_known": 1,
+        "newly_recovered_unknown": 0,
+        "old_system_failure": 0,
+        "previously_joint_stable_known": 0,
+        "recover_unknown_total": 0,
+        "recovered_unknown": 0,
+        "reopen_known_total": 0,
+        "reopened_known": 0,
+        "retained_unknown": 0,
+        "retained_unknown_state": 0,
+        "reviewed": 0,
+        "reviewed_old_unknown": 1,
+        "role_mismatch_block": 1,
+        "slots": 0,
+        "stable_known_regression": 0,
+        "stable_known_total": 0,
+        "stay_unknown_total": 0,
+        "system_failure": 0,
+        "update_known_total": 0,
+        "updated_known": -1,
+        "value_correct": -1,
+        "value_correct_without_joint": 0
+      },
+      "family": "IR14",
+      "fields": [
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "5"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "5"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "5"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "N01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "3"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "update_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "expected_gate": {
+            "reason": "REQUIRED_GAP_VERIFIED",
+            "status": "PENDING"
+          },
+          "id": "N02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "5"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "reopen_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "3"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "1"
+              },
+              "gate": {
+                "reason": "EVIDENCE_ROLE_MISMATCH",
+                "status": "BLOCKED"
+              }
+            },
+            "gate_exact": false,
+            "joint": false,
+            "selected": false,
+            "value_correct": false
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "3"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "N03",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "1"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "update_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "8"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "8"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "8"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "O01",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "recover_unknown"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "expected_gate": {
+            "reason": "REQUIRED_GAP_VERIFIED",
+            "status": "PENDING"
+          },
+          "id": "O02",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "old_joint": true,
+          "transition": "stay_unknown"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "expected_gate": {
+            "reason": "REQUIRED_GAP_VERIFIED",
+            "status": "PENDING"
+          },
+          "id": "O03",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "old_joint": true,
+          "transition": "stay_unknown"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "18"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "18"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "18"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "S01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "18"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "old_joint": true,
+          "transition": "stable_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "4"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "4"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "4"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "S02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "4"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "old_joint": true,
+          "transition": "stable_known"
+        }
+      ],
+      "paired_recovery": {
+        "A_only": 0,
+        "B_only": 0,
+        "both": 1,
+        "denominator": 1,
+        "neither": 0
+      },
+      "recovery_direction": "tie",
+      "selection": {
+        "A_only": [
+          "N03"
+        ],
+        "B_only": [
+          "O02"
+        ],
+        "both": [
+          "N01",
+          "N02",
+          "O01"
+        ]
+      }
+    },
+    {
+      "A": {
+        "candidate_blocked_on_ideal_target": 1,
+        "eligible_correct": 4,
+        "false_eligible": 0,
+        "gate_exact": 7,
+        "joint": 7,
+        "missed_review_eligibility": 1,
+        "missed_update_known": 0,
+        "newly_recovered_unknown": 0,
+        "old_system_failure": 0,
+        "previously_joint_stable_known": 2,
+        "recover_unknown_total": 1,
+        "recovered_unknown": 0,
+        "reopen_known_total": 1,
+        "reopened_known": 1,
+        "retained_unknown": 2,
+        "retained_unknown_state": 2,
+        "reviewed": 4,
+        "reviewed_old_unknown": 1,
+        "role_mismatch_block": 1,
+        "slots": 8,
+        "stable_known_regression": 0,
+        "stable_known_total": 2,
+        "stay_unknown_total": 2,
+        "system_failure": 0,
+        "update_known_total": 2,
+        "updated_known": 2,
+        "value_correct": 8,
+        "value_correct_without_joint": 1
+      },
+      "B": {
+        "candidate_blocked_on_ideal_target": 2,
+        "eligible_correct": 3,
+        "false_eligible": 0,
+        "gate_exact": 6,
+        "joint": 6,
+        "missed_review_eligibility": 2,
+        "missed_update_known": 1,
+        "newly_recovered_unknown": 0,
+        "old_system_failure": 0,
+        "previously_joint_stable_known": 2,
+        "recover_unknown_total": 1,
+        "recovered_unknown": 0,
+        "reopen_known_total": 1,
+        "reopened_known": 1,
+        "retained_unknown": 2,
+        "retained_unknown_state": 2,
+        "reviewed": 4,
+        "reviewed_old_unknown": 2,
+        "role_mismatch_block": 2,
+        "slots": 8,
+        "stable_known_regression": 0,
+        "stable_known_total": 2,
+        "stay_unknown_total": 2,
+        "system_failure": 0,
+        "update_known_total": 2,
+        "updated_known": 1,
+        "value_correct": 7,
+        "value_correct_without_joint": 1
+      },
+      "delta_B_minus_A": {
+        "candidate_blocked_on_ideal_target": 1,
+        "eligible_correct": -1,
+        "false_eligible": 0,
+        "gate_exact": -1,
+        "joint": -1,
+        "missed_review_eligibility": 1,
+        "missed_update_known": 1,
+        "newly_recovered_unknown": 0,
+        "old_system_failure": 0,
+        "previously_joint_stable_known": 0,
+        "recover_unknown_total": 0,
+        "recovered_unknown": 0,
+        "reopen_known_total": 0,
+        "reopened_known": 0,
+        "retained_unknown": 0,
+        "retained_unknown_state": 0,
+        "reviewed": 0,
+        "reviewed_old_unknown": 1,
+        "role_mismatch_block": 1,
+        "slots": 0,
+        "stable_known_regression": 0,
+        "stable_known_total": 0,
+        "stay_unknown_total": 0,
+        "system_failure": 0,
+        "update_known_total": 0,
+        "updated_known": -1,
+        "value_correct": -1,
+        "value_correct_without_joint": 0
+      },
+      "family": "KT41",
+      "fields": [
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "11"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "11"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "11"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "N01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "8"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "update_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "expected_gate": {
+            "reason": "REQUIRED_GAP_VERIFIED",
+            "status": "PENDING"
+          },
+          "id": "N02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "8"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "reopen_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "6"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "4"
+              },
+              "gate": {
+                "reason": "EVIDENCE_ROLE_MISMATCH",
+                "status": "BLOCKED"
+              }
+            },
+            "gate_exact": false,
+            "joint": false,
+            "selected": false,
+            "value_correct": false
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "6"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "N03",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "4"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "update_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "6"
+              },
+              "gate": {
+                "reason": "EVIDENCE_ROLE_MISMATCH",
+                "status": "BLOCKED"
+              }
+            },
+            "gate_exact": false,
+            "joint": false,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "6"
+              },
+              "gate": {
+                "reason": "EVIDENCE_ROLE_MISMATCH",
+                "status": "BLOCKED"
+              }
+            },
+            "gate_exact": false,
+            "joint": false,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "6"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "O01",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "recover_unknown"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "expected_gate": {
+            "reason": "REQUIRED_GAP_VERIFIED",
+            "status": "PENDING"
+          },
+          "id": "O02",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "old_joint": true,
+          "transition": "stay_unknown"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "expected_gate": {
+            "reason": "REQUIRED_GAP_VERIFIED",
+            "status": "PENDING"
+          },
+          "id": "O03",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "old_joint": true,
+          "transition": "stay_unknown"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "15"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "15"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "15"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "S01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "15"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "old_joint": true,
+          "transition": "stable_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "30"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "30"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "30"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "S02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "30"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "old_joint": true,
+          "transition": "stable_known"
+        }
+      ],
+      "paired_recovery": {
+        "A_only": 0,
+        "B_only": 0,
+        "both": 0,
+        "denominator": 1,
+        "neither": 1
+      },
+      "recovery_direction": "tie",
+      "selection": {
+        "A_only": [
+          "N03"
+        ],
+        "B_only": [
+          "O02"
+        ],
+        "both": [
+          "N01",
+          "N02",
+          "O01"
+        ]
+      }
+    },
+    {
+      "A": {
+        "candidate_blocked_on_ideal_target": 1,
+        "eligible_correct": 4,
+        "false_eligible": 0,
+        "gate_exact": 7,
+        "joint": 7,
+        "missed_review_eligibility": 1,
+        "missed_update_known": 0,
+        "newly_recovered_unknown": 0,
+        "old_system_failure": 0,
+        "previously_joint_stable_known": 2,
+        "recover_unknown_total": 1,
+        "recovered_unknown": 0,
+        "reopen_known_total": 1,
+        "reopened_known": 1,
+        "retained_unknown": 2,
+        "retained_unknown_state": 2,
+        "reviewed": 4,
+        "reviewed_old_unknown": 0,
+        "role_mismatch_block": 0,
+        "slots": 8,
+        "stable_known_regression": 0,
+        "stable_known_total": 2,
+        "stay_unknown_total": 2,
+        "system_failure": 0,
+        "update_known_total": 2,
+        "updated_known": 2,
+        "value_correct": 7,
+        "value_correct_without_joint": 0
+      },
+      "B": {
+        "candidate_blocked_on_ideal_target": 1,
+        "eligible_correct": 4,
+        "false_eligible": 0,
+        "gate_exact": 7,
+        "joint": 7,
+        "missed_review_eligibility": 1,
+        "missed_update_known": 1,
+        "newly_recovered_unknown": 1,
+        "old_system_failure": 0,
+        "previously_joint_stable_known": 2,
+        "recover_unknown_total": 1,
+        "recovered_unknown": 1,
+        "reopen_known_total": 1,
+        "reopened_known": 1,
+        "retained_unknown": 2,
+        "retained_unknown_state": 2,
+        "reviewed": 4,
+        "reviewed_old_unknown": 2,
+        "role_mismatch_block": 1,
+        "slots": 8,
+        "stable_known_regression": 0,
+        "stable_known_total": 2,
+        "stay_unknown_total": 2,
+        "system_failure": 0,
+        "update_known_total": 2,
+        "updated_known": 1,
+        "value_correct": 7,
+        "value_correct_without_joint": 0
+      },
+      "delta_B_minus_A": {
+        "candidate_blocked_on_ideal_target": 0,
+        "eligible_correct": 0,
+        "false_eligible": 0,
+        "gate_exact": 0,
+        "joint": 0,
+        "missed_review_eligibility": 0,
+        "missed_update_known": 1,
+        "newly_recovered_unknown": 1,
+        "old_system_failure": 0,
+        "previously_joint_stable_known": 0,
+        "recover_unknown_total": 0,
+        "recovered_unknown": 1,
+        "reopen_known_total": 0,
+        "reopened_known": 0,
+        "retained_unknown": 0,
+        "retained_unknown_state": 0,
+        "reviewed": 0,
+        "reviewed_old_unknown": 2,
+        "role_mismatch_block": 1,
+        "slots": 0,
+        "stable_known_regression": 0,
+        "stable_known_total": 0,
+        "stay_unknown_total": 0,
+        "system_failure": 0,
+        "update_known_total": 0,
+        "updated_known": -1,
+        "value_correct": 0,
+        "value_correct_without_joint": 0
+      },
+      "family": "LX22",
+      "fields": [
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "10"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "10"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "10"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "N01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "12"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "update_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "expected_gate": {
+            "reason": "REQUIRED_GAP_VERIFIED",
+            "status": "PENDING"
+          },
+          "id": "N02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "6"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "reopen_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "4"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "2"
+              },
+              "gate": {
+                "reason": "EVIDENCE_ROLE_MISMATCH",
+                "status": "BLOCKED"
+              }
+            },
+            "gate_exact": false,
+            "joint": false,
+            "selected": false,
+            "value_correct": false
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "4"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "N03",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "2"
+            },
+            "gate": {
+              "reason": "EVIDENCE_ROLE_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "update_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_MISMATCH",
+                "status": "BLOCKED"
+              }
+            },
+            "gate_exact": false,
+            "joint": false,
+            "selected": false,
+            "value_correct": false
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "16"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "16"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "O01",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_MISMATCH",
+              "status": "BLOCKED"
+            }
+          },
+          "old_joint": false,
+          "transition": "recover_unknown"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "expected_gate": {
+            "reason": "REQUIRED_GAP_VERIFIED",
+            "status": "PENDING"
+          },
+          "id": "O02",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "old_joint": true,
+          "transition": "stay_unknown"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "UNKNOWN",
+                "value": null
+              },
+              "gate": {
+                "reason": "REQUIRED_GAP_VERIFIED",
+                "status": "PENDING"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "UNKNOWN",
+            "value": null
+          },
+          "expected_gate": {
+            "reason": "REQUIRED_GAP_VERIFIED",
+            "status": "PENDING"
+          },
+          "id": "O03",
+          "old": {
+            "decision": {
+              "state": "UNKNOWN",
+              "value": null
+            },
+            "gate": {
+              "reason": "REQUIRED_GAP_VERIFIED",
+              "status": "PENDING"
+            }
+          },
+          "old_joint": true,
+          "transition": "stay_unknown"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "6"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": true,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "6"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "6"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "S01",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "6"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "old_joint": true,
+          "transition": "stable_known"
+        },
+        {
+          "A": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "24"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "B": {
+            "final": {
+              "decision": {
+                "state": "KNOWN",
+                "value": "24"
+              },
+              "gate": {
+                "reason": "DIRECT_VERIFIED",
+                "status": "ELIGIBLE"
+              }
+            },
+            "gate_exact": true,
+            "joint": true,
+            "selected": false,
+            "value_correct": true
+          },
+          "expected": {
+            "state": "KNOWN",
+            "value": "24"
+          },
+          "expected_gate": {
+            "reason": "DIRECT_VERIFIED",
+            "status": "ELIGIBLE"
+          },
+          "id": "S02",
+          "old": {
+            "decision": {
+              "state": "KNOWN",
+              "value": "24"
+            },
+            "gate": {
+              "reason": "DIRECT_VERIFIED",
+              "status": "ELIGIBLE"
+            }
+          },
+          "old_joint": true,
+          "transition": "stable_known"
+        }
+      ],
+      "paired_recovery": {
+        "A_only": 0,
+        "B_only": 1,
+        "both": 0,
+        "denominator": 1,
+        "neither": 0
+      },
+      "recovery_direction": "B_higher",
+      "selection": {
+        "A_only": [
+          "N03",
+          "S01"
+        ],
+        "B_only": [
+          "O01",
+          "O02"
+        ],
+        "both": [
+          "N01",
+          "N02"
+        ]
+      }
+    }
+  ],
+  "gate_false_block_technical": {
+    "reason": "NO_INDEPENDENT_ACTUAL_CANDIDATE_LABELS",
+    "status": "N/A"
+  },
+  "n_families": 6,
+  "recovery_direction_by_family": {
+    "A_higher": 0,
+    "B_higher": 4,
+    "N/A": 0,
+    "tie": 2
+  },
+  "schema": "stage19-scored-v1",
+  "total_fields_descriptive_only": {
+    "A": {
+      "candidate_blocked_on_ideal_target": 5,
+      "eligible_correct": 25,
+      "false_eligible": 0,
+      "gate_exact": 43,
+      "joint": 43,
+      "missed_review_eligibility": 5,
+      "missed_update_known": 0,
+      "newly_recovered_unknown": 1,
+      "old_system_failure": 0,
+      "previously_joint_stable_known": 12,
+      "recover_unknown_total": 6,
+      "recovered_unknown": 1,
+      "reopen_known_total": 6,
+      "reopened_known": 6,
+      "retained_unknown": 12,
+      "retained_unknown_state": 12,
+      "reviewed": 24,
+      "reviewed_old_unknown": 2,
+      "role_mismatch_block": 1,
+      "slots": 48,
+      "stable_known_regression": 0,
+      "stable_known_total": 12,
+      "stay_unknown_total": 12,
+      "system_failure": 0,
+      "update_known_total": 12,
+      "updated_known": 12,
+      "value_correct": 44,
+      "value_correct_without_joint": 1
+    },
+    "B": {
+      "candidate_blocked_on_ideal_target": 7,
+      "eligible_correct": 24,
+      "false_eligible": 0,
+      "gate_exact": 41,
+      "joint": 41,
+      "missed_review_eligibility": 6,
+      "missed_update_known": 5,
+      "newly_recovered_unknown": 5,
+      "old_system_failure": 0,
+      "previously_joint_stable_known": 12,
+      "recover_unknown_total": 6,
+      "recovered_unknown": 5,
+      "reopen_known_total": 6,
+      "reopened_known": 5,
+      "retained_unknown": 12,
+      "retained_unknown_state": 12,
+      "reviewed": 24,
+      "reviewed_old_unknown": 12,
+      "role_mismatch_block": 7,
+      "slots": 48,
+      "stable_known_regression": 0,
+      "stable_known_total": 12,
+      "stay_unknown_total": 12,
+      "system_failure": 0,
+      "update_known_total": 12,
+      "updated_known": 7,
+      "value_correct": 42,
+      "value_correct_without_joint": 1
+    }
+  }
+}
